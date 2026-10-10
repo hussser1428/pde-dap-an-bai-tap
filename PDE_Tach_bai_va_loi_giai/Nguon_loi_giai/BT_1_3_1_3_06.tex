@@ -1,0 +1,46 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{fontspec,amsmath,amssymb,graphicx}
+\usepackage[margin=18mm]{geometry}
+\setmainfont{Times New Roman}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\allowdisplaybreaks
+\sloppy
+\emergencystretch=2em
+\begin{document}
+\section*{BT\_1\_3\_1\_3\_06 — Lời giải bổ sung}
+\subsection*{Kiến thức và trình tự giải}
+\textbf{Mục tiêu.} Với $A(x,y)u_x+B(x,y)u_y+C(x,y)u=R(x,y)$, tìm các đường mà trên đó PDE trở thành một ODE. Dùng chữ $R$ cho vế phải để không nhầm với hàm tùy ý $F$.
+
+\textbf{Bước 1 — Đọc các hệ số và lập hệ đặc trưng.} Đặt $U(s)=u(X(s),Y(s))$. Quy tắc dây chuyền cho $U'=u_xX'+u_yY'$. Chọn $X'=A$, $Y'=B$, khi đó
+
+\[
+X'=A(X,Y),\qquad Y'=B(X,Y),\qquad U'+C(X,Y)U=R(X,Y).
+\]
+
+Nếu $A\ne0$, có thể dùng $x$ làm tham số: $dy/dx=B/A$, $du/dx+(C/A)u=R/A$. Nếu $A=0$, chọn biến khác hoặc giữ hệ theo $s$; không chia cho hệ số bằng 0.
+
+\textbf{Bước 2 — Tìm bất biến để phân biệt các đặc trưng.} Tích phân hai phương trình đầu để tìm $\rho(X,Y)$ không đổi. Kiểm tra $A\rho_x+B\rho_y=0$. Hệ số hằng cho $\rho=Bx-Ay$. Ví dụ $X'=X,Y'=-Y$ cho $(XY)'=0$; $X'=-Y,Y'=X$ cho $(X^2+Y^2)'=0$. Khi đặc trưng là vòng kín, cần kiểm tra nghiệm sau một vòng trở về cùng giá trị.
+
+\textbf{Bước 3 — Giải ODE của ẩn trên từng đường.} Đặt $M(s)=\exp(\int C(X(s),Y(s))ds)$. Nhân phương trình của $U$ với $M$:
+
+\[
+(MU)'=MR,\qquad
+U(s)=M(s)^{-1}\left[K+\int M(s)R(X(s),Y(s))ds\right].
+\]
+
+$K$ hằng trên một đường, nhưng thay đổi giữa các đường, nên viết $K=F(\rho)$. Nếu tìm được nghiệm riêng $u_p$, có thể giải phương trình thuần nhất cho $u-u_p$ để giảm tính toán. Nếu đổi biến $(\rho,z)$, phải tính Jacobian và dùng quy tắc dây chuyền để thấy PDE chỉ còn đạo hàm theo $z$.
+
+\textbf{Bước 4 — Thế dữ liệu và tìm hàm tùy ý.} Với đường dữ liệu $(x_0(r),y_0(r))$, $u=h(r)$, thế vào nghiệm tổng quát để thu được $F(\rho_0(r))=H(r)$, trong đó $\rho_0=\rho(x_0,y_0)$. Nếu $\rho_0$ khả nghịch, đặt $r=\rho_0^{-1}(z)$ rồi viết $F(z)=H(\rho_0^{-1}(z))$. Nếu hai giá trị $r_1,r_2$ có cùng $\rho_0$, phải có $H(r_1)=H(r_2)$. Nếu đường dữ liệu chính là đặc trưng, dữ liệu phải thỏa ODE trên đường đó và thường không xác định hết $F$.
+
+\textbf{Bước 5 — Xác định miền tồn tại và duy nhất.} Điều kiện không đặc trưng là $x_0'B-y_0'A\ne0$ trên đường dữ liệu. Nó cho khả nghịch cục bộ dưới giả thiết trơn thích hợp; không tự cho duy nhất trên cả mặt phẳng. Chỉ những đặc trưng gặp dữ liệu mới được xác định. Tại gốc, trục hoặc đường hệ số suy biến, kiểm tra riêng và ghép các biểu thức đủ trơn.
+
+\textbf{Bước 6 — Kiểm tra kết quả.} Tính $u_x,u_y$ bằng quy tắc dây chuyền, thay vào $Au_x+Bu_y+Cu$ và kiểm tra bằng $R$. Sau đó thế lại điều kiện đầu/biên. Nêu rõ nếu chỉ có nghiệm cục bộ, nghiệm từng miền hoặc không có nghiệm trong lớp trơn yêu cầu.
+
+\textbf{Chi tiết bước tích phân ODE.} Sau khi tìm bất biến $\rho$, viết $U'+P(s,\rho)U=Q(s,\rho)$. Chọn $M=\exp(\int_{s_0}^{s}P(r,\rho)dr)$; tính $M'=PM$, nên $MU'+M'U=MQ$. Tích phân từ $s_0$: $M(s)U(s)-U(s_0)=\int_{s_0}^sM(r)Q(r)dr$. Hằng số $U(s_0)$ phụ thuộc $\rho$; thay dữ liệu để tìm nó rồi mới đổi về tọa độ gốc.
+\subsection*{Lời giải áp dụng cho bài}
+\textbf{Bước 1 — Đặc trưng của $au_x+bu_y=0$.} Giải $X'=a,Y'=b$; tính $(bX-aY)'=0$, nên bất biến $\rho=bx-ay$.
+
+\textbf{Bước 2 — Tích phân ẩn.} $U'=0$ cho $U$ hằng trên mỗi đặc trưng, nhưng hằng có thể khác giữa các đường. Suy $u=F(bx-ay)$ với $(a,b)\ne(0,0)$.
+
+\textbf{Bước 3 — Kiểm tra và ngoại lệ.} $u_x=bF'$, $u_y=-aF'$ nên PDE đúng. Nếu $a=b=0$, phương trình không ràng buộc, mọi hàm đủ trơn là nghiệm; không dùng dạng $F(0)$ để thu hẹp sai họ nghiệm.\end{document}

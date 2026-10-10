@@ -1,0 +1,82 @@
+%ID VD_3_2_2_01
+\textbf{Bước 1. Chia dữ liệu và hai sóng.} $a=1$, $f(s)=s(s+1)$ trên $[-1,0]$, bằng $0$ ngoài đoạn, $g=0$. Vì vậy $A=B=f/2$, không cần nguyên hàm vận tốc.
+
+\textbf{Bước 2. Dịch từng đoạn.} Sóng phải $A(x-t)$ khác không khi $t-1<x<t$, sóng trái $B(x+t)$ khác không khi $-t-1<x<-t$. Nghiệm chính xác là
+\[u(x,t)=\tfrac12(x-t)(x-t+1)\chi_{[-1,0]}(x-t)+\tfrac12(x+t)(x+t+1)\chi_{[-1,0]}(x+t).\]
+Khi hai đoạn chồng nhau, cộng hai đa thức; khi chỉ một đoạn hiện diện lấy một hạng; ngoài cả hai đoạn lấy $0$. Đây cũng là cách dựng các hình trong sách.
+
+\textbf{Bước 3. Xét tính trơn.} $f$ bằng $0$ tại hai đầu nên $u$ liên tục. $f'$ trong đoạn bằng $2s+1$, có bước nhảy tại $-1,0$, nên các đường gãy cấp một là $x\pm t=-1,0$. Ở giao điểm $(-1/2,1/2)$, lát cắt $u(x,1/2)$ có đạo hàm trái theo $x$ bằng $1/2$, đạo hàm phải bằng $-1/2$; vì vậy điểm ấy vẫn không $C^1$. Tại giao của các mặt sóng phải so trực tiếp các đạo hàm một phía, không mặc nhiên giả sử chúng triệt tiêu.
+
+\textbf{Bước 4. Kiểm tra.} Thế $t=0$ cho $u=f$, còn đạo hàm theo $t$ của hai sóng đối nhau nên vận tốc đầu bằng $0$ nơi $f'$ tồn tại. Mỗi đa thức của $x\pm t$ thỏa PDE; toàn nghiệm đúng theo nghĩa yếu trên các đường gãy.
+%ID VD_3_2_2_02
+\textbf{Bước 1. Tích phân vận tốc.} $f=0$, $g=\chi_{[-1,0]}$, $a=1$. Chọn
+\[H(s)=\begin{cases}0&s\le-1,\\s+1&-1<s<0,\\1&s\ge0.\end{cases}\]
+Hai hằng số đuôi đã nối liên tục với nhánh giữa.
+
+\textbf{Bước 2. Tách và ghép sóng.} $A=-H/2$, $B=H/2$, nên $u=(H(x+t)-H(x-t))/2$. Tương đương
+\[u=\tfrac12\big[\min(x+t,0)-\max(x-t,-1)\big]_+.\]
+Biểu thức trong ngoặc là độ dài giao của khoảng ảnh hưởng với hỗ trợ vận tốc. Trên mỗi miền mà các min/max chọn cùng nhánh, $u$ là affine theo $x,t$.
+
+\textbf{Bước 3. Miền gãy và giá trị lâu dài.} $H$ liên tục nên $u$ liên tục. $H'$ nhảy tại $-1,0$, phát sinh các đường $x\pm t=-1,0$ mất trơn cấp một. Với mỗi $x$ cố định, khi $t>\max(|x|,|x+1|)$, toàn đoạn $[-1,0]$ nằm trong khoảng ảnh hưởng, nên $u=1/2$. Kiểm tra tại $t=0$ có hiệu $H=0$ và $u_t=g$ tại các điểm liên tục của dữ liệu.
+%ID VD_3_2_2_03
+\textbf{Bước 1. Phản xạ Dirichlet.} $a=2$, $f=0$, $g=\chi_{[1,2]}$ trên nửa trục, biên $u(0,t)=0$. Mở rộng vận tốc lẻ: bằng $1$ trên $(1,2)$, $-1$ trên $(-2,-1)$, bằng $0$ còn lại.
+
+\textbf{Bước 2. Nguyên hàm chẵn.} Với $H(0)=0$, trên đối số dương $H=0$ trước $1$, $s-1$ trên $(1,2)$, $1$ sau $2$; phản xạ được $H(s)=[|s|-1]_0^1$. Vì thế
+\[A=-H/4,\quad B=H/4,\qquad u=\frac{[|x+2t|-1]_0^1-[|x-2t|-1]_0^1}{4}.\]
+\textbf{Bước 3. Kiểm tra biên và mặt sóng.} Tại $x=0$, hai cận có cùng trị tuyệt đối nên $u=0$. $u_t(x,0)=H'(x)=g(x)$ tại điểm liên tục. Nghiệm liên tục nhưng không $C^1$ trên các nhánh $x\pm2t=\pm1,\pm2$ nằm trong $x,t>0$. Chúng chia đồ thị thành các đoạn thẳng. Tại mỗi $x$ cố định, sau $t>(x+2)/2$, hai đuôi bằng nhau và $u=0$.
+%ID VD_3_2_2_04
+\textbf{Bước 1. Phản xạ Neumann.} Dữ liệu như Ví dụ 3, nhưng $u_x(0,t)=0$. Mở rộng vận tốc chẵn thành $\chi_{[1,2]}(|s|)$, nên nguyên hàm phải lẻ, không dùng nguyên hàm chẵn của ví dụ trước.
+
+\textbf{Bước 2. Tính hai sóng.}
+\[H(s)=\operatorname{sgn}(s)[|s|-1]_0^1,\quad A=-H/4,\quad B=H/4,\quad u=\frac{H(x+2t)-H(x-2t)}4.\]
+Trước $x=2t$ vẫn có thể dùng các cận dương; sau đó giá trị $H(x-2t)$ âm, tạo xung phản xạ cùng dấu.
+
+\textbf{Bước 3. Kiểm tra.} $u_x(0,t)=(H'(2t)-H'(-2t))/4=0$. $u$ liên tục, gãy cấp một trên $x\pm2t=\pm1,\pm2$. Độ dịch đúng là $2t$ vì PDE có hệ số $4$; những chỗ ghi $x\pm t$ trong hình/công thức cần hiểu theo tốc độ thật. Sau $t>(x+2)/2$, hai đuôi $H$ là $1,-1$, nên $u=1/2$, khác phản xạ Dirichlet trở về $0$.
+%ID VD_3_2_2_05
+\textbf{Bước 1. Phản xạ hai biên cố định.} $a=L=1$, $f=\chi_{[1/4,1/3]}$, $g=4\chi_{[2/3,3/4]}$. Mở rộng lẻ tại $0,1$ cho chu kỳ $2$. Đặt $r=\operatorname{mod}(s,2)$: $f_e(s)=f(r)$ nếu $r\le1$, $-f(2-r)$ nếu $r>1$; vận tốc mở rộng tương tự.
+
+\textbf{Bước 2. Nguyên hàm trong một chu kỳ.} Trên $[0,1]$, $H(s)=4[s-2/3]_0^{1/12}$; nó tăng từ $0$ lên $1/3$. Trên $[1,2]$, $H(s)=H(2-s)$, sau đó mở rộng chu kỳ $2$. Sự giảm trên nửa sau do vận tốc phản xạ âm, nên $H(2)=0$.
+
+\textbf{Bước 3. Ghép nghiệm.}
+\[u=\tfrac12[f_e(x-t)+f_e(x+t)]+\tfrac12[H(x+t)-H(x-t)].\]
+Hai sóng chạy là $A=f_e/2-H/2$, $B=f_e/2+H/2$. Tính từng hình bằng giảm các đối số về $[0,2]$, rồi chọn các nhánh trên; không cần viết một danh sách dài công thức thời gian.
+
+\textbf{Bước 4. Chu kỳ và tính trơn.} Cả $f_e,H$ có chu kỳ $2$, nên $u(t+2)=u(t)$. Li độ bước nhảy gây gián đoạn trên các đường $x\pm t=\pm1/4+2k,\pm1/3+2k$; vận tốc gây gãy cấp một trên $x\pm t=\pm2/3+2k,\pm3/4+2k$, $k\in\mathbb Z$. Ngoài các đường ấy, nghiệm affine cộng hằng. Biên $u(0,t)=u(1,t)=0$ theo tính lẻ tại hai đầu; dữ liệu ban đầu đúng trong miền theo nghĩa yếu.
+%ID VD_3_2_2_06
+\textbf{Bước 1. Phản xạ biên hỗn hợp.} Dữ liệu giống Ví dụ 5, nhưng $u(0,t)=0$, $u_x(1,t)=0$. Trên $[0,2]$, mở rộng $f_e(s)=f(s)$ nếu $s\le1$, $f(2-s)$ nếu $s\ge1$; sau đó $f_e(s+2)=-f_e(s)$ và chu kỳ $4$. Làm tương tự với $g_e$.
+
+\textbf{Bước 2. Tính nguyên hàm bốn nhánh.} Đặt $h(s)=4[s-2/3]_0^{1/12}$ trên $[0,1]$. Trên $[0,4]$:
+\[H(s)=\begin{cases}h(s)&0\le s\le1,\\2/3-h(2-s)&1\le s\le2,\\2/3-H(s-2)&2\le s\le4.\end{cases}\]
+Hạng $2/3$ là tích phân vận tốc trên $[0,2]$; toàn chu kỳ $4$ có trung bình bằng $0$, nên mở rộng $H$ chu kỳ $4$.
+
+\textbf{Bước 3. Nghiệm và phản chu kỳ.} Vẫn dùng $u=(f_e(x-t)+f_e(x+t))/2+(H(x+t)-H(x-t))/2$. Ta có $H(s+2)=2/3-H(s)$, nên
+\[u(x,t+2)=-u(x,t),\qquad u(x,t+4)=u(x,t).\]
+Vì dữ liệu khác không, không có chu kỳ $2$; câu yêu cầu chu kỳ $2$ trong sách cần sửa thành phản chu kỳ $2$ và chu kỳ $4$. Mode đầu khác không (tích phân $f\sin(\pi x/2)>0$), xác nhận chu kỳ cơ bản $4$.
+
+\textbf{Bước 4. Kiểm tra biên.} $f_e,g_e$ lẻ tại $0$, chẵn tại $1$, nên nghiệm có đúng vết Dirichlet và Neumann nơi vết đạo hàm tồn tại. Các bước nhảy dữ liệu lan dọc $x\pm t=b$, trong đó $b$ là các điểm biên hỗ trợ cùng các ảnh phản xạ đã xây dựng. Mức trơn là nghiệm từng miền/ nghiệm yếu, không $C^2$ trên toàn hình chữ nhật.
+%ID BT_3_2_3_LT_01
+\textbf{Bước 1. Tính liên tục tuyệt đối.} Với $F(x)=\int_0^xf(s)ds$, trên đoạn hữu hạn $[a,b]$ hàm Riemann khả tích $f$ bị chặn bởi $M$. Với các khoảng rời nhau $(a_j,b_j)$,
+\[\sum_j|F(b_j)-F(a_j)|\le M\sum_j(b_j-a_j).\]
+Chọn tổng độ dài nhỏ hơn $\varepsilon/M$ chứng minh liên tục tuyệt đối (trường hợp $M=0$ hiển nhiên), và $F'=f$ tại mọi điểm liên tục của $f$.
+
+\textbf{Bước 2. Tính chẵn/lẻ.} Đổi biến $s=-r$ cho $F(-x)=-\int_0^xf(-r)dr$. Nếu $f$ lẻ, kết quả là $F(x)$; nếu $f$ chẵn, kết quả là $-F(x)$. Vì vậy nguyên hàm lấy gốc tại $0$ đổi tính chẵn/lẻ.
+
+\textbf{Bước 3. Điều kiện tuần hoàn.} Nếu $f$ có chu kỳ $L$ thì
+\[F(x+L)-F(x)=\int_x^{x+L}f(s)ds=\int_0^Lf(s)ds.\]
+Do đó $F$ có chu kỳ $L$ khi và chỉ khi trung bình của $f$ bằng $0$. Nếu $f$ lẻ và tuần hoàn, tích phân trên chu kỳ đối xứng $[-L/2,L/2]$ bằng $0$, nên điều kiện đúng. Ví dụ $f=1$ tuần hoàn nhưng $F=x$ không tuần hoàn, cho thấy không được bỏ điều kiện trung bình.
+%ID BT_3_2_3_LT_02
+\textbf{Bước 1. Dùng đối xứng của dữ liệu.} Với biên cố định hai đầu và $f(L-x)=f(x)$, $g(L-x)=g(x)$, hệ số sine $A_n=(2/L)\int_0^Lf(x)\sin(n\pi x/L)dx$. Đổi $y=L-x$ cho $A_n=(-1)^{n+1}A_n$; do đó $A_n=0$ khi $n$ chẵn. Cùng lập luận cho $B_n$.
+
+\textbf{Bước 2. Dịch thời gian từng mode còn lại.} Với $n$ lẻ, $\omega_n=n\pi c/L$ và $\omega_nL/c=n\pi$, nên cả cos và sin đổi dấu khi dịch $L/c$. Vì vậy $u(x,t+L/c)=-u(x,t)$ và chu kỳ $2L/c$.
+
+\textbf{Bước 3. Chứng minh bằng phản xạ nếu dữ liệu chưa trơn.} Mở rộng lẻ chu kỳ $2L$ của một hàm đối xứng giữa đoạn thỏa $f_e(s+L)=-f_e(s)$; tương tự $g_e$. Với $H'=g_e$, $H(s+L)=C-H(s)$. Thế vào d'Alembert, hằng số $C$ triệt tiêu, thu cùng phản chu kỳ. Lập luận này áp dụng trực tiếp cho dữ liệu chia đoạn, không cần đạo hàm chuỗi Fourier.
+%ID BT_3_2_3_LT_03
+\textbf{Bước 1. Viết hàm đường thẳng dưới dạng affine.} $f(x)=m_1x+b_1$, $g(x)=m_2x+b_2$ trên đoạn xét. Với hai hệ số $a,b$,
+\[af+bg=(am_1+bm_2)x+ab_1+bb_2.\]
+Đây vẫn là hàm affine, có thể là hằng nếu hệ số góc bằng $0$.
+
+\textbf{Bước 2. Co giãn và tịnh tiến đối số.} $f(ax)=m_1ax+b_1$, $f(x-h)=m_1x+b_1-m_1h$. Phải giới hạn $x$ để $ax$ hoặc $x-h$ nằm trong đoạn định nghĩa ban đầu; nếu $a<0$, chiều của đoạn đảo; nếu $a=0$, cần $0$ thuộc miền của $f$ và kết quả là hằng.
+
+\textbf{Bước 3. Hiệu của hai dịch chuyển bậc hai.} Với $f(s)=As^2+Bs+C$, khai triển hai bình phương và triệt tiêu $Aa^2x^2,C$:
+\[f(ax+h_1)-f(ax+h_2)=2Aa(h_1-h_2)x+A(h_1^2-h_2^2)+B(h_1-h_2).\]
+Kết quả affine trên giao hai miền hợp lệ. Vì vậy tích phân một vận tốc affine cho nguyên hàm bậc hai, nhưng hiệu hai cận dịch cùng tốc độ có thể trở lại affine; đây là cơ sở của các đoạn thẳng trong đồ thị sóng ở mục 3.2.

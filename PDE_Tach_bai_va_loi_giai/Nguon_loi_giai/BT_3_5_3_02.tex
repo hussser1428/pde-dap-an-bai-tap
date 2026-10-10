@@ -1,0 +1,133 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{fontspec,amsmath,amssymb,graphicx}
+\usepackage[margin=18mm]{geometry}
+\setmainfont{Times New Roman}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\allowdisplaybreaks
+\sloppy
+\emergencystretch=2em
+\begin{document}
+\section*{BT\_3\_5\_3\_02 — Lời giải bổ sung}
+\subsection*{Kiến thức và trình tự giải}
+\textbf{Bước 1 — Chọn năng lượng theo toán tử.} Với sóng dùng $E=\frac12\int(u_t^2+a^2u_x^2)dx$. Với Klein–Gordon có thêm $u$, thêm $\frac12\int u^2dx$. Với dầm $u_{tt}=-a^2u_{xxxx}$ dùng $E=\frac12\int(u_t^2+a^2u_{xx}^2)dx$, không thay $u_{xx}$ bằng $u_x$.
+
+\textbf{Bước 2 — Đạo hàm và tích phân từng phần.} Với $u_{tt}-a^2u_{xx}+\gamma u_t+\kappa u=F$, năng lượng có hạng $\kappa u^2$ cho
+
+
+\[
+E'=a^2[u_tu_x]_0^L-\gamma\int u_t^2dx+\int Fu_tdx.
+\]
+
+
+Với dầm, tích phân hai lần cho $E'=a^2[u_{tx}u_{xx}-u_tu_{xxx}]_0^L$. Viết riêng từng hạng biên rồi dùng điều kiện biên và đạo hàm theo thời gian của điều kiện đó để cho chúng bằng không.
+
+\textbf{Bước 3 — Suy hệ quả.} Không cản, không nguồn thì $E$ bảo toàn. Có cản $\gamma>0$ thì $E'\le0$; nếu $E$ không có hệ số $1/2$, $E'=-2\gamma\int u_t^2\ge-2\gamma E$, suy $e^{-2\gamma t}E(0)\le E(t)\le E(0)$. Với hiệu hai nghiệm cùng dữ liệu, $E(0)=0$ nên có duy nhất.
+
+\textbf{Bước 4 — Tách biến nếu phải tìm nghiệm cụ thể.} Sóng có cản $\gamma=1$ cho $T''+T'+a^2\lambda T=0$. Đặt $T=e^{-t/2}Y$, thu $Y''+(a^2\lambda-1/4)Y=0$, $Y(0)=A$, $Y'(0)=B+A/2$. Phân biệt dao động, nghiệm kép và hàm hyperbolic. Dầm cho $X''''=k^4X$, $T''+a^2k^4T=0$; dùng đủ bốn điều kiện biên để tìm phương trình của $kL$.
+
+\textbf{Bước 5 — Kiểm tra hệ số và khẳng định của đề.} Năng lượng đầu chứa cả $g^2$ và các đạo hàm của $f$. Thử $f=0$, $g\ne0$ để phát hiện công thức bỏ vận tốc. Với dầm, nghiệm $k=0$ phải giải trực tiếp bằng đa thức bậc ba; nghiệm $0$ của phương trình lượng giác–hyperbolic có thể chỉ là nghiệm giả do cơ sở suy biến.
+
+\textbf{Chi tiết phép triệt tiêu tích phân.} Đạo hàm động năng cho $\int u_tu_{tt}$; dùng PDE thay $u_{tt}$. Với sóng, $\int u_tu_{xx}=[u_tu_x]-\int u_{tx}u_x$, và tích phân cuối triệt tiêu đạo hàm thế năng $\int u_xu_{xt}$. Với dầm,
+
+
+\[
+\int u_tu_{xxxx}=[u_tu_{xxx}-u_{tx}u_{xx}]+\int u_{txx}u_{xx}.
+\]
+
+
+Tích phân cuối triệt tiêu đạo hàm $\frac12\int u_{xx}^2$ sau khi nhân hệ số và giữ đúng dấu PDE. Viết hạng biên trước, sau đó mới dùng điều kiện của từng đầu.
+
+\textbf{Bước 1 — Tách biến và chọn bài toán trị riêng theo biên.} Đặt $u=X(x)T(t)$ trong $u_{tt}=a^2u_{xx}$, suy $X''+\lambda X=0$, $T''+a^2\lambda T=0$. Tích phân từng phần cho $\lambda\int X^2=\int (X')^2$ khi hạng biên bằng không; do đó $\lambda\ge0$. Giải cả trường hợp $\lambda=0$ trước khi xét $\lambda=k^2>0$.
+
+\textbf{Bước 2 — Tìm hệ hàm riêng.} Trên $(0,L)$: Dirichlet hai đầu dùng $\sin(n\pi x/L)$, $n\ge1$; Neumann hai đầu dùng $1$ và $\cos(n\pi x/L)$; Dirichlet–Neumann dùng $\sin((n+1/2)\pi x/L)$, $n\ge0$; Neumann–Dirichlet dùng cos của các tần số nửa nguyên ấy. Chuẩn bình phương của mode khác không là $L/2$, của mode hằng là $L$.
+
+\textbf{Bước 3 — Chiếu cả hai dữ liệu.} Với mode khác không đặt
+
+
+\[
+A_n=\frac2L\int_0^L fX_n\,dx,\quad B_n=\frac2L\int_0^L gX_n\,dx,\quad \omega_n=ak_n.
+\]
+
+
+Tích phân từng khoảng nếu dữ liệu chia đoạn; dùng tích phân từng phần hoặc công thức tích–tổng khi là đa thức/lượng giác. Hệ số $B_n$ là hệ số của vận tốc, nên hệ số đứng trước $\sin\omega_nt$ phải là $B_n/\omega_n$.
+
+\textbf{Bước 4 — Ghép nghiệm và xét mode hằng.}
+
+
+\[
+u=\sum_n\left(A_n\cos\omega_nt+\frac{B_n}{\omega_n}\sin\omega_nt\right)X_n.
+\]
+
+
+Với Neumann hai đầu, thêm $A_0+B_0t$, trong đó $A_0=L^{-1}\int f$, $B_0=L^{-1}\int g$. Với tần số bị thay đổi bởi hạng $u$ hoặc cản $u_t$, giải lại ODE của từng mode; không dùng nguyên tần số $ak_n$.
+
+\textbf{Bước 5 — Kiểm tra biên, dữ liệu và hội tụ.} Mỗi mode thỏa biên; tại $t=0$ hai chuỗi cho khai triển của $f,g$. Nếu dữ liệu không tương thích ở góc, giải theo nghĩa năng lượng hoặc từng miền và nêu đường mất tính trơn; không đạo hàm một chuỗi yếu tùy ý. Chu kỳ được suy từ tất cả mode có hệ số khác không, kể cả mode hằng; hai tần số có tỷ số vô tỷ ngăn một chu kỳ chung.
+
+\textbf{Chi tiết tính tích phân hệ số.} Với $k=n\pi/L$, hai nguyên hàm thường dùng là
+
+
+\[
+\int x\sin kx\,dx=-x\cos kx/k+\sin kx/k^2,\qquad
+\int x\cos kx\,dx=x\sin kx/k+\cos kx/k^2.
+\]
+
+
+Với đa thức $P$, ghi cả hai lần tích phân:
+
+
+\[
+\int_0^L P\sin kx\,dx
+=\left[-P\cos kx/k\right]_0^L+
+\left[P'\sin kx/k^2\right]_0^L-
+\frac1{k^2}\int_0^L P''\sin kx\,dx.
+\]
+
+
+Chỉ bỏ hạng biên sau khi thế $0,L$ và điều kiện thực sự của $P$. Nếu dữ liệu chia đoạn, áp dụng công thức trên từng đoạn, rồi cộng các hạng tại điểm chia. Cuối cùng nhân nghịch đảo chuẩn của hàm riêng; nếu hệ số là của vận tốc, chia thêm tần số khi ghép nghiệm. Với mẫu số bằng $0$ trong tích–tổng, quay lại tích phân gốc để tính riêng.
+\subsection*{Lời giải áp dụng cho bài}
+\textbf{Bước 1. Năng lượng và tính duy nhất.} Dầm $u_{tt}=-a^2u_{xxxx}$ dùng $E=\frac12\int(u_t^2+a^2u_{xx}^2)$, không phải năng lượng chứa $u_x^2$. Tích phân hai lần cho $E'=a^2[u_{tx}u_{xx}-u_tu_{xxx}]_0^L$. Mỗi cặp điều kiện trong đề làm cả hai tích biên bằng $0$: ngàm có $u_t=u_{tx}=0$; tựa có $u_t=u_{xx}=0$; đầu trượt có $u_{tx}=u_{xxx}=0$. Do đó $E$ bảo toàn. Hiệu hai nghiệm có $E=0$, $u_t=u_{xx}=0$, rồi dữ liệu đầu loại hàm affine còn lại, chứng minh duy nhất.
+
+\textbf{Bước 2. Đọc đúng năm kiểu biên của bản scan.} (a) ngàm trái, tựa phải: $X(0)=X'(0)=X(L)=X''(L)=0$. (b) ngàm trái, trượt phải: $X(0)=X'(0)=X'(L)=X'''(L)=0$. Hai kiểu này khác hai đầu ngàm/ngàm–tự do của lời giải cũ.
+
+\textbf{Bước 3. Giải phương trình đặc trưng.} Đặt $X''''=k^4X$, $\beta=kL$. Với (a),(b), hai điều kiện trái cho $X=A(\cosh kx-\cos kx)+B(\sinh kx-\sin kx)$.
+
+(a) Từ $X(L)=X''(L)=0$, cộng/trừ suy $A\cosh\beta+B\sinh\beta=0$, $A\cos\beta+B\sin\beta=0$. Định thức cho $\cosh\beta\sin\beta-\sinh\beta\cos\beta=0$, hay $\tan\beta=\tanh\beta$. Chọn
+\[X=\cosh kx-\cos kx-\coth\beta(\sinh kx-\sin kx).\]
+Nghiệm dương đầu $\beta_1\approx3.926602312$.
+
+(b) Từ $X'(L)=X'''(L)=0$, suy $A\sinh\beta+B\cosh\beta=0$, $A\sin\beta-B\cos\beta=0$. Định thức cho $\sinh\beta\cos\beta+\cosh\beta\sin\beta=0$, hay $\tan\beta=-\tanh\beta$. Chọn
+\[X=\cosh kx-\cos kx-\tanh\beta(\sinh kx-\sin kx),\]
+nghiệm dương đầu $\beta_1\approx2.365020372$.
+
+(c) Tựa hai đầu $X=X''=0$: điều kiện trái loại cos/cosh, điều kiện phải loại sinh, nên $k_n=n\pi/L$, $X_n=\sin k_nx$, $n\ge1$.
+
+(d) Tựa trái, trượt phải $X(0)=X''(0)=X'(L)=X'''(L)=0$: còn sine và sinh; cộng/trừ hai điều kiện phải loại sinh rồi cho $\cos kL=0$. $k_n=(n+1/2)\pi/L$, $X_n=\sin k_nx$, $n\ge0$.
+
+(e) $X'=X'''=0$ hai đầu: $X_n=\cos(n\pi x/L)$, $n\ge1$, cộng mode $X_0=1$, $\lambda_0=0$.
+
+\textbf{Bước 4. Dương, trực giao và nghiệm.} Tích phân hai lần cho $\lambda\int X^2=\int(X'')^2\ge0$ dưới cả năm kiểu biên. Nếu $\lambda=0$, $X$ affine; chỉ (e) giữ hằng. Các nghiệm $\beta=0$ trong (a),(b) phải loại bằng kiểm tra đa thức, không coi là mode. Trừ hai phương trình tích phân chứng minh trực giao với các trị riêng khác nhau. Lấy $A_n=\int fX_n/\int X_n^2$, $B_n=\int gX_n/\int X_n^2$:
+\[u=\sum_n[A_n\cos(ak_n^2t)+B_n\sin(ak_n^2t)/(ak_n^2)]X_n.\]
+Ở (e) thêm $\bar f+t\bar g$. Với $a=L=1$, mỗi kiểu lấy $f$ là hàm riêng dương đầu vừa tìm, $g=0$, cho ví dụ $u=X_1\cos(k_1^2t)$; đồ thị kèm đủ năm kiểu biên và không dùng nhầm các phương trình $\cos\beta\cosh\beta=\pm1$.
+
+\textbf{Chi tiết giải đủ các điều kiện của (a),(b).} Viết $C=\cosh\beta,c=\cos\beta,S=\sinh\beta,s=\sin\beta$.
+Ở (a), $X(L)=A(C-c)+B(S-s)=0$, $X''(L)/k^2=A(C+c)+B(S+s)=0$. Cộng hai dòng rồi chia $2$ cho $AC+BS=0$; lấy dòng sau trừ dòng trước rồi chia $2$ cho $Ac+Bs=0$. Định thức của hệ này là $Cs-Sc=0$, và $B/A=-C/S=-\coth\beta$.
+
+Ở (b), $X'(L)/k=A(S+s)+B(C-c)=0$, $X'''(L)/k^3=A(S-s)+B(C+c)=0$. Cộng cho $AS+BC=0$; lấy dòng đầu trừ dòng sau cho $As-Bc=0$. Định thức là $-Sc-Cs=0$, và $B/A=-S/C=-\tanh\beta$. Với $\beta>0$, $\sinh\beta,\cosh\beta$ khác $0$; $\cos\beta=0$ không thỏa các định thức, nên các phép chia để viết tan hợp lệ tại nghiệm.
+
+\textbf{Chi tiết ba kiểu còn lại.} Từ $X=A\cosh kx+B\sinh kx+C\cos kx+D\sin kx$, ở (c),(d), $X(0)=A+C=0$, $X''(0)/k^2=A-C=0$ cho $A=C=0$. (c) Hai dòng phải $B\sinh\beta+D\sin\beta=0$, $B\sinh\beta-D\sin\beta=0$ cho $B=0$, $\sin\beta=0$. (d) Hai dòng phải $B\cosh\beta+D\cos\beta=0$, $B\cosh\beta-D\cos\beta=0$ cho $B=0$, $\cos\beta=0$.
+
+Ở (e), $X'(0)/k=B+D=0$, $X'''(0)/k^3=B-D=0$ cho $B=D=0$. Hai dòng phải $A\sinh\beta-C\sin\beta=0$, $A\sinh\beta+C\sin\beta=0$ cho $A=0$, $\sin\beta=0$. Riêng $\lambda=0$, $X''''=0$ cho $X=A+Bx+Cx^2+Dx^3$; $X'''=0$ cho $D=0$, $X'(0)=0$ cho $B=0$, $X'(L)=0$ cho $C=0$, còn hằng $A$.
+
+\textbf{Chi tiết tích phân chứng minh trực giao dầm.} Tích phân từng phần hai lần:
+\[\int_0^L(X_m''''X_n-X_n''''X_m)dx=
+[X_m'''X_n-X_m''X_n'-X_n'''X_m+X_n''X_m']_0^L.\]
+Hai tích phân còn lại là $\int X_m''X_n''$ và $\int X_n''X_m''$, triệt tiêu khi trừ. Tại đầu ngàm $X=X'=0$, đầu tựa $X=X''=0$, đầu trượt $X'=X'''=0$, mỗi tích biên mất một thừa số. Thay phương trình hàm riêng cho $(\lambda_m-\lambda_n)\int X_mX_n=0$, rồi chia hiệu trị riêng.
+
+\textbf{Chi tiết hai lần tích phân từng phần của dầm.}
+\[\int_0^L u_tu_{xxxx}dx
+=[u_tu_{xxx}]_0^L-\int_0^Lu_{tx}u_{xxx}dx
+=[u_tu_{xxx}-u_{tx}u_{xx}]_0^L+\int_0^Lu_{txx}u_{xx}dx.\]
+Thế $u_{tt}=-a^2u_{xxxx}$ vào đạo hàm động năng. Tích phân cuối cùng triệt tiêu với đạo hàm $\frac{a^2}{2}\int u_{xx}^2$, còn $E'=a^2[u_{tx}u_{xx}-u_tu_{xxx}]_0^L$.
+\begin{center}\includegraphics[width=.97\linewidth,height=11cm,keepaspectratio]{Do_thi/BT_3_5_3_02.png}\end{center}
+\textit{Đồ thị minh họa; với nghiệm số, xem phương pháp và tham số trong mã Python kèm theo.}\end{document}

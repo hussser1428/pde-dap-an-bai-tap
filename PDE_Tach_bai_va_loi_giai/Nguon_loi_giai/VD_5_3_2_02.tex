@@ -1,0 +1,16 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{fontspec,amsmath,amssymb,graphicx}
+\usepackage[margin=18mm]{geometry}
+\setmainfont{Times New Roman}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\allowdisplaybreaks
+\sloppy
+\emergencystretch=2em
+\begin{document}
+\section*{VD\_5\_3\_2\_02 — Lời giải bổ sung}
+Trong bản in, biên cạnh là $-u_\theta(r,0)=g_0(r),u_\theta(r,\alpha)=g_1(r)$; thông lượng pháp tuyến thực tế lần lượt là $g_0/r,g_1/r$, vì đạo hàm theo góc có thừa số $1/r$. Biên cung có thông lượng $\varphi$. Green cho duy nhất modulo hằng. Điều kiện tương thích:
+\[\int_0^R\frac{g_0+g_1}{r}dr+R\int_0^\alpha\varphi(\theta)d\theta=\int_0^R\int_0^\alpha F(r,\theta)r\,d\theta dr.\]
+Có thể khử biên cạnh bằng $b$ rồi khai triển cosine $\cos(n\pi\theta/\alpha)$; mỗi hệ số giải $(rW_n')'-k_n^2W_n/r=r(F-\Delta b)_n$, với đạo hàm đã cho tại $R$. Mode 0 chính là điều kiện tương thích trên, hằng tích phân còn lại tùy ý.
+
+Câu (iii) của ví dụ chỉ ghi $R=1,\varphi=x^2-2xy+k$; chưa ghi $F,\alpha,g_0,g_1$. Vì vậy không đủ xác định một nghiệm cụ thể trong hình quạt. Khi các dữ liệu đó được chọn, phương trình trên xác định $k$ và các hệ số. Nếu ý định là đĩa toàn phần, $F=0$, thì $k=-1/2,u=(x^2-y^2)/4-xy+C$ như ví dụ 5.2.2.3; đây là một bài đã sửa, không phải dữ kiện gốc.\end{document}

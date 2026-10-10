@@ -1,0 +1,14 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{fontspec,amsmath,amssymb,graphicx}
+\usepackage[margin=18mm]{geometry}
+\setmainfont{Times New Roman}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\allowdisplaybreaks
+\sloppy
+\emergencystretch=2em
+\begin{document}
+\section*{BT\_5\_6\_3\_09 — Lời giải bổ sung}
+Đặt $u=2x-1+w$. Khi đó $w(0,y)=w(1,y)=0$, $w_y(x,0)=w_y(x,1)=0$, $\Delta w=y$. Cosine của $y$ trên $(0,1)$ có $a_0=1/2$, $a_n=2[(-1)^n-1]/(n^2\pi^2)$. Mode 0 $w_0=x(x-1)/4$. Với $k_n=n\pi$,
+\[w_n=\frac{a_n}{k_n^2}\left[\frac{\cosh(k_n(x-1/2))}{\cosh(k_n/2)}-1\right].\]
+Vậy $u=2x-1+x(x-1)/4+\sum_{n\ge1}w_n(x)\cos n\pi y$. Mỗi mode giải $w_n''-k_n^2w_n=a_n$, đúng biên, chứng minh công thức.\end{document}

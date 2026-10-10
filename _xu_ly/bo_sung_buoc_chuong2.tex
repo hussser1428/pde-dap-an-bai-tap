@@ -1,0 +1,166 @@
+%ID VD_2_2_03
+\textbf{Chi tiết gom hệ số và đổi ẩn phụ.} Ba hệ số cấp hai là $2-2+1=1$ của $v_{\xi\xi}$, $2-2=0$ của $v_{\xi\eta}$, và $1$ của $v_{\eta\eta}$. Với $v=e^{-\eta/2}w$,
+\[v_{\xi\xi}=e^{-\eta/2}w_{\xi\xi},\quad v_\eta=e^{-\eta/2}(w_\eta-w/2),\quad
+v_{\eta\eta}=e^{-\eta/2}(w_{\eta\eta}-w_\eta+w/4).\]
+Thế rồi chia $e^{-\eta/2}$: hai hạng $w_\eta$ triệt tiêu, hệ số $w$ là $1/4-1/2-1=-5/4$.
+
+%ID VD_2_2_04
+\textbf{Chi tiết ba đạo hàm cấp hai.} Từ $u_x=v_s+v_z,u_y=v_s$,
+\[u_{xx}=v_{ss}+2v_{sz}+v_{zz},\quad u_{xy}=v_{ss}+v_{sz},\quad u_{yy}=v_{ss}.\]
+Nhân với $1,-2,1$ và cộng, hệ số $v_{ss}$ là $1-2+1=0$, hệ số $v_{sz}$ là $2-2=0$, còn $v_{zz}$. Với $v=1+w$, phương trình thuần nhất $w_{zz}+w_z+w=0$ có $\lambda=(-1\pm\sqrt{-3})/2=-1/2\pm i\sqrt3/2$, cho hai nghiệm thực đã viết.
+
+%ID VD_2_2_05
+\textbf{Chi tiết đạo hàm tích cho hai dòng còn lại.} Ngoài các hệ số đã tính, $D_ys=c^2/r$, $D_y(c/r)=-2sc/r^2$. Vì $D_yv_r=sv_{rr}+cv_{r\theta}/r$, $D_yv_\theta=sv_{r\theta}+cv_{\theta\theta}/r$,
+\[\begin{aligned}
+u_{xy}&=-scv_r/r+c(sv_{rr}+cv_{r\theta}/r)
+-(c^2-s^2)v_\theta/r^2-(s/r)(sv_{r\theta}+cv_{\theta\theta}/r),\\
+u_{yy}&=c^2v_r/r+s(sv_{rr}+cv_{r\theta}/r)
+-2scv_\theta/r^2+(c/r)(sv_{r\theta}+cv_{\theta\theta}/r).
+\end{aligned}\]
+Gom các hạng cùng đạo hàm cho đúng hai dòng ở bước 3.
+
+%ID VD_2_2_06
+\textbf{Chi tiết thế đạo hàm ở (i).} $u_{xx}=v_{\xi\xi}+2v_{\xi\eta}+v_{\eta\eta}$, $u_{xy}=-v_{\xi\xi}-3v_{\xi\eta}-2v_{\eta\eta}$, $u_{yy}=v_{\xi\xi}+4v_{\xi\eta}+4v_{\eta\eta}$. Phần chính có hệ số $2-3+1=0$, $4-9+4=-1$, $2-6+4=0$, lần lượt theo $v_{\xi\xi},v_{\xi\eta},v_{\eta\eta}$.
+
+\textbf{Chi tiết Leibniz ở (ii).} Đặt $\ell=2t+x-2y$, $h=t+x-y$. Vì tích phân trong bằng $0$ tại $t=y$,
+\[F_x=\int_0^y[f(h,t)-f(\ell,t)]dt,\quad
+F_y=\int_0^y[-f(h,t)+2f(\ell,t)]dt.\]
+Vậy $F_x+F_y=\int_0^yf(\ell,t)dt=:I$. Lấy $I_x=\int_0^yf_x(\ell,t)dt$ và $I_y=f(x,y)-2\int_0^yf_x(\ell,t)dt$, suy $2I_x+I_y=f(x,y)$. Đây là phép triệt tiêu tạo ra $LF=f$.
+
+%ID VD_2_2_07
+\textbf{Chi tiết thế và hai lần tích phân.} Với $s=x+y,z=x$,
+\[u_{xx}=v_{ss}+2v_{sz}+v_{zz},\quad u_{xy}=v_{ss}+v_{sz},\quad u_{yy}=v_{ss}.\]
+Vậy $u_{xx}-2u_{xy}+u_{yy}=(1-2+1)v_{ss}+(2-2)v_{sz}+v_{zz}$. Ở (ii.a), lần đầu $v_z=P(s)+\int_0^zf(t,s-t)dt$; lần sau
+\[v=Q(s)+zP(s)+\int_0^z\int_0^r f(t,s-t)dt\,dr.\]
+Đổi thứ tự trên tam giác $0\le t\le r\le z$ được $\int_0^z(z-t)f(t,s-t)dt$ khi $z\ge0$. Với $z<0$, cùng công thức suy trực tiếp bằng hai đạo hàm và hai vết tại $z=0$, nên vẫn đúng với tích phân có hướng.
+
+%ID VD_2_2_08
+\textbf{Chi tiết giải PDE và khử hằng số.} Phần chính từ phép đổi $\xi=x-y,\eta=x-2y$ bằng $-v_{\xi\eta}$; $u_x+u_y=-v_\eta$. Do đó PDE là $v_{\xi\eta}+v_\eta=0$. Đặt $w=v_\eta$, nhân $e^\xi$ cho $(e^\xi w)_\xi=0$, nên $w=e^{-\xi}A(\eta)$; tích phân theo $\eta$ cho $v=F(\xi)+e^{-\xi}G(\eta)$. Ở (i),
+\[G(\eta)-G(\xi)=-\int_\xi^\eta e^r[u_0'(r)+u_1(r)]dr,\quad
+v=u_0(\xi)+e^{-\xi}[G(\eta)-G(\xi)].\]
+Mọi hằng số cộng vào $G$ mất trong hiệu này. Ở (iii), tại $(x,x)$ có $\xi=0,\eta=-x$, nên $u=u_1(0)+u_0(x)-k=u_0(x)$; tại $(2x,x)$ có $\xi=x,\eta=0$, nên $u=u_1(x)+e^{-x}(u_0(0)-k)=u_1(x)$.
+
+%ID VD_2_2_09
+\textbf{Chi tiết gom năm hệ số trong tọa độ cực.} Viết $c=\cos\theta,s=\sin\theta$, $xy=r^2cs$, $y^2-x^2=r^2(s^2-c^2)$. Dùng ba đạo hàm cực, hệ số lần lượt là
+\[\begin{aligned}
+v_{rr}:&\quad r^2[cs\,c^2+(s^2-c^2)cs-cs\,s^2]=0,\\
+v_{r\theta}:&\quad r[-2c^2s^2-(c^2-s^2)^2-2c^2s^2]=-r,\\
+v_{\theta\theta}:&\quad cs\,s^2-(s^2-c^2)cs-cs\,c^2=0,\\
+v_r:&\quad r[cs\,s^2-(s^2-c^2)cs-cs\,c^2]=0,\\
+v_\theta:&\quad 2c^2s^2+(c^2-s^2)^2+2c^2s^2=1.
+\end{aligned}\]
+Đã dùng $4c^2s^2+(c^2-s^2)^2=(c^2+s^2)^2=1$. Vì vậy toán tử đúng bằng $-rv_{r\theta}+v_\theta$, kể cả tại các hướng có $x=0$ trong miền $y>0$.
+
+%ID BT_2_3_01
+\textbf{Chi tiết tạo Hessian và lấy vết.} Trong hệ trụ, $D_1c=s^2/r$, $D_1(-s/r)=2sc/r^2$, $D_2c=-sc/r$, $D_2(-s/r)=-(c^2-s^2)/r^2$. Thế các hệ số này vào $D_i(cv_r-sv_\theta/r)$ cho $u_{11},u_{12}$; làm tương tự với $sv_r+cv_\theta/r$ cho $u_{22}$. $D_3$ không tác động lên $r,\theta$, nên $u_{13},u_{23}$ chỉ lấy thêm đạo hàm $z$.
+
+Với cầu và xuyến, lấy $e_r=(sp,sq,c)$, $e_\theta=(cp,cq,-s)$, $e_\varphi=(-q,p,0)$. Có $\partial_\theta e_r=e_\theta$, $\partial_\theta e_\theta=-e_r$ và $\partial_\varphi e_r=s e_\varphi$, $\partial_\varphi e_\theta=c e_\varphi$, $\partial_\varphi e_\varphi=-s e_r-c e_\theta$. Gradient là $v_re_r+(v_\theta/r)e_\theta+(v_\varphi/\rho)e_\varphi$. Đạo hàm gradient theo ba hướng $\partial_r,r^{-1}\partial_\theta,\rho^{-1}\partial_\varphi$ rồi chiếu lên cơ sở cho sáu $H$ đã ghi. Chẳng hạn
+\[e_\theta\cdot(r^{-1}\partial_\theta\nabla u)=v_r/r+v_{\theta\theta}/r^2,\quad
+e_\varphi\cdot(\rho^{-1}\partial_\varphi\nabla u)
+=sv_r/\rho+cv_\theta/(r\rho)+v_{\varphi\varphi}/\rho^2.\]
+Khi cộng $u_{11}+u_{22}+u_{33}$, hệ số của mỗi $H_{rr},H_{\theta\theta},H_{\varphi\varphi}$ là $1$, các hệ số ngoài đường chéo bằng $0$ bởi trực chuẩn. Vậy
+\[\Delta u=v_{rr}+\left(\frac1r+\frac s\rho\right)v_r+
+\frac{v_{\theta\theta}}{r^2}+\frac c{r\rho}v_\theta+\frac{v_{\varphi\varphi}}{\rho^2}.\]
+Thế $\rho=rs$ cho $1/r+s/\rho=2/r$, $c/(r\rho)=\cot\theta/r^2$; thế $\rho=R+rs$ cho dạng xuyến.
+
+%ID BT_2_3_02
+\textbf{Chi tiết gom hệ số cho sáu phương trình hai biến.} Với $Lu=Au_{xx}+2Bu_{xy}+Cu_{yy}+Du_x+Eu_y+Ku$, phép đổi $\xi=h(x),\eta=y+k(x)$ cho
+\[\begin{aligned}
+L u={}&Ah'^2v_{\xi\xi}+2h'(Ak'+B)v_{\xi\eta}
++(Ak'^2+2Bk'+C)v_{\eta\eta}\\
+&+(Ah''+Dh')v_\xi+(Ak''+Dk'+E)v_\eta+Kv.
+\end{aligned}\]
+Các hệ số dưới đây được tính trước khi chia bất kỳ biểu thức nào:
+
+(a) $A=1,B=2,C=5,D=x$: hỗn hợp $2(1)(-2+2)=0$; thuần theo $\eta$ là $4-8+5=1$. Cấp một: $0+x=x$, $0-2x=-2x$.
+
+(b) $A=1,B=4x,C=\sin^2x+16x^2,D=\sin x$: hỗn hợp $2\sin x(-4x+4x)=0$; thuần theo $\eta$ là $16x^2-32x^2+\sin^2x+16x^2=\sin^2x$. Cấp một: $\cos x+\sin x\sin x=\cos x+\sin^2x$, $-4+\sin x(-4x)=-4-4x\sin x$.
+
+(c) $A=1,B=\sin x,C=\sin^2x+4x^2,D=x,E=-1$: hỗn hợp $4x(-\sin x+\sin x)=0$; thuần theo $\eta$ là $\sin^2x-2\sin^2x+\sin^2x+4x^2=4x^2$. Cấp một: $2+x(2x)=2+2x^2$, $-\cos x-x\sin x-1$.
+
+(d) Giữ ký hiệu $h=\xi_x,k=\eta_x$ của ý này: $Ah^2=a(3\sin x/a)^2=9\sin^2x/a$; hỗn hợp $2h(ak+4x)=0$; thuần theo $\eta$ là
+\[\frac{16x^2}a-\frac{32x^2}a+1=\frac{a-16x^2}a=\frac{9\sin^2x}a.\]
+Đạo hàm thương $h'=3\cos x/a-3\sin x\,a'/a^2$, $k'=-4/a+4xa'/a^2$ rồi nhân $a$ và cộng $h,k$ cho hai hệ số cấp một đã ghi.
+
+(e) $h'=1,k'=\sin x,A=1,B=-\sin x,C=\sin^2x,D=y,E=-x$: hỗn hợp $2(\sin x-\sin x)=0$, thuần theo $\eta$ là $\sin^2x-2\sin^2x+\sin^2x=0$. Cấp một $y$, $\cos x+y\sin x-x$.
+
+(f) Đặt $p=-\sin x-2,q=-\sin x+2$. Ba đạo hàm là
+\[u_{xx}=p^2v_{\xi\xi}+2pqv_{\xi\eta}+q^2v_{\eta\eta}-\cos x(v_\xi+v_\eta),\quad
+u_{xy}=pv_{\xi\xi}+(p+q)v_{\xi\eta}+qv_{\eta\eta},\quad
+u_{yy}=v_{\xi\xi}+2v_{\xi\eta}+v_{\eta\eta}.\]
+Với $B=\sin x,C=\sin^2x-4$, các hệ số thuần là $(p+\sin x)^2-4=0$ và $(q+\sin x)^2-4=0$; hỗn hợp là
+\[2[pq+\sin x(p+q)+\sin^2x-4]
+=2[(\sin^2x-4)-2\sin^2x+\sin^2x-4]=-16.\]
+Hạng $xu_y=x(v_\xi+v_\eta)$ cộng vào hệ số hai đạo hàm cấp một, cho $(x-\cos x)(v_\xi+v_\eta)$.
+
+\textbf{Chi tiết nhân ma trận cho ba phương trình ba biến.} Gọi $T$ là ma trận các hàng gradient tọa độ mới, $N=TMT^T$.
+
+(ii.a)
+\[M=\begin{pmatrix}1&1&1\\1&2&0\\1&0&3\end{pmatrix},\quad
+T=\begin{pmatrix}1&0&0\\-1&1&0\\-2&1&1\end{pmatrix},\quad
+TM=\begin{pmatrix}1&1&1\\0&1&-1\\0&0&1\end{pmatrix}.\]
+Nhân từng hàng của $TM$ với ba hàng của $T$: hàng đầu cho $1,-1+1,-2+1+1$; hàng hai cho $0,1,1-1$; hàng ba cho $0,0,1$. Vậy $N=\operatorname{diag}(1,1,1)$.
+
+(ii.b) Đặt $b=1/(3\sqrt3)$, nên
+\[M=\begin{pmatrix}1&2&6\\2&4&3\\6&3&9\end{pmatrix},\quad
+T=\begin{pmatrix}1&0&0\\0&3b&-b\\-6b&0&b\end{pmatrix},\quad
+TM=\begin{pmatrix}1&2&6\\0&9b&0\\0&-9b&-27b\end{pmatrix}.\]
+Các tích trên đường chéo là $1$, $27b^2=1$, $-27b^2=-1$; ngoài đường chéo là $6b-6b=0$, $0$, $-27b^2+27b^2=0$. Vậy $N=\operatorname{diag}(1,1,-1)$.
+
+(ii.c) Đặt $a=1/\sqrt3,b=\sqrt{3/5},c=\sqrt{5/3}$. Khi đó
+\[M=\begin{pmatrix}3&-1&1\\-1&2&2\\1&2&3\end{pmatrix},\quad
+T=\begin{pmatrix}a&0&0\\b/3&b&0\\-4c/5&-7c/5&c\end{pmatrix},\quad
+TM=\begin{pmatrix}3a&-a&a\\0&5b/3&7b/3\\0&0&-3c/5\end{pmatrix}.\]
+Đường chéo là $3a^2=1,5b^2/3=1,-3c^2/5=-1$. Hai tích hàng đầu với hàng sau là $ab-ab=0$ và $(-12+7+5)ac/5=0$; tích hàng hai với hàng ba là $-7bc/3+7bc/3=0$. Vậy $N=\operatorname{diag}(1,1,-1)$, xác nhận mọi hệ số hỗn hợp bằng $0$.
+
+%ID BT_2_3_04
+\textbf{Chi tiết phương trình hàm ở (c).} Trên $(3t,t)$, $P=3t^2/10$, nên $F(-2t)+G(6t)=\sin t-3t^2/10$. Với $s=-2t$, $t=-s/2$, $6t=-3s$, ta có
+\[F(s)+G(-3s)=\sin(-s/2)-3s^2/40.\]
+Thế $G(-3s)=-3s-3s^2/10-F(-3s)$ rồi chuyển vế cho $R(s)$ đã ghi. Đặt $q=-1/3$, phương trình tại $qs$ là $F(qs)-F(s)=R(qs)$; lặp $N$ lần:
+\[F(s)=F(q^Ns)-\sum_{j=1}^{N}R(q^js).\]
+Cho $N\to\infty$ và dùng liên tục của $F$ tại $0$ được chuỗi.
+
+\textbf{Chi tiết tích phân ở (e).} $H'=1-(1+s)e^s/24$, nên
+\[3H'-K=2-\sin s-e^s/8,\qquad F'=1/4-\sin s/8-e^s/64.\]
+Tích phân từ $0$ đến $s$ được $F=s/4+(\cos s-1)/8-(e^s-1)/64$, đúng biểu thức sử dụng.
+
+%ID BT_2_3_07
+\textbf{Chi tiết tích phân theo biến còn lại.} Với $s=3x+y,z=x$, $u_x=3v_s+v_z,u_y=v_s$,
+\[u_{xx}=9v_{ss}+6v_{sz}+v_{zz},\quad u_{xy}=3v_{ss}+v_{sz},\quad u_{yy}=v_{ss}.\]
+Phần chính $u_{xx}-6u_{xy}+9u_{yy}$ có các hệ số $9-18+9=0$, $6-6=0$, còn $v_{zz}$. Tích phân $v_{zz}=e^z$ lần đầu được $v_z=e^z+F(s)$, lần sau $v=e^z+zF(s)+G(s)$.
+
+%ID BT_2_3_08
+\textbf{Chi tiết tích phân và so hệ số.} $4v_{zz}=e^z$ cho $v_z=e^z/4+F(s)$ rồi $v=e^z/4+zF(s)+G(s)$. Từ $(1/4-C_1)e^{2t}+2tF(0)+G(0)=0$, đạo hàm hai lần cho $4(1/4-C_1)e^{2t}=0$, suy $C_1=1/4$; còn $2tF(0)+G(0)=0$ cho $F(0)=G(0)=0$. Với $4tF'(0)+2G'(0)=C_2t^2+t+1$, so hệ số $t^2,t,1$ lần lượt cho $C_2=0,F'(0)=1/4,G'(0)=1/2$.
+
+%ID BT_2_3_09
+\textbf{Chi tiết tính độc lập của ba hàm.} Đặt $a=1-C,b=F(0)-1,c=G(0)$. Từ $ae^x+be^{2x/5}+c=0$, đạo hàm lần thứ nhất và thứ hai:
+\[ae^x+\tfrac25be^{2x/5}=0,\quad ae^x+\tfrac4{25}be^{2x/5}=0.\]
+Trừ hai dòng cho $(6/25)be^{2x/5}=0$, suy $b=0$; thế ngược cho $a=0$, rồi $c=0$. Do đó $C=1,F(0)=1,G(0)=0$ như kết luận.
+
+%ID BT_2_3_11
+\textbf{Chi tiết đổi tỉ lệ và khử hằng số.} Vì $\partial_x=\sqrt3\partial_X,\partial_y=\sqrt2\partial_Y$, $xy=XY/\sqrt6$, phần chính biến thành $\sqrt6[XYu_{XX}+(Y^2-X^2)u_{XY}-XYu_{YY}]$. Viết $X=rc,Y=rs$, thế đạo hàm cực: các hệ số $v_{rr},v_{\theta\theta},v_r$ bằng $0$; hệ số $v_{r\theta}$ là $-r[4c^2s^2+(c^2-s^2)^2]=-r$, hệ số $v_\theta$ là $1$. Với $w=v/r$, $v_\theta=rw_\theta$, $v_{r\theta}=w_\theta+rw_{r\theta}$, nên $rv_{r\theta}-v_\theta=r^2w_{r\theta}$.
+
+Trong (c), $F=(\cos\theta-k)/\sqrt3$, $F(0)=(1-k)/\sqrt3$, $G=1-r(1-k)/\sqrt3$. Cộng:
+\[rF+G=\frac r{\sqrt3}\cos\theta-\frac{rk}{\sqrt3}+1-\frac r{\sqrt3}+\frac{rk}{\sqrt3}
+=x+1-\frac r{\sqrt3}.\]
+Vì $r/\sqrt3=\sqrt{x^2+2y^2/3}$, thu nghiệm đã nêu.
+
+%ID BT_2_3_12
+\textbf{Chi tiết tích phân hệ dữ liệu đầu.} Chọn mốc $z_0>0$ và $F(z_0)=c$. Từ $F'=(\Phi'+\Psi)/2$,
+\[F(s)=c+\frac{\Phi(s)-\Phi(z_0)}2+\frac12\int_{z_0}^{s}\Psi(r)dr,\quad G(s)=\Phi(s)-F(s).\]
+Thế $F(z+t)+G(z-t)=F(z+t)-F(z-t)+\Phi(z-t)$; hai hằng số mất, các tích phân gộp thành $\int_{z-t}^{z+t}\Psi$, cho đúng d'Alembert với $z-t>0$.
+
+%ID BT_2_3_15
+\textbf{Chi tiết chứng minh độc lập và dữ liệu biên.} Từ $(1-a)x+F(0)+(G(0)-b)\sin x=0$, đạo hàm hai lần theo $x$ cho $-(G(0)-b)\sin x=0$. Trên khoảng đang xét $\sin x>0$, nên $G(0)=b$; phương trình còn $(1-a)x+F(0)=0$, đạo hàm cho $a=1$ rồi $F(0)=0$. Không có điều kiện nào còn lại để cố định $b$.
+
+%ID BT_2_3_17
+\textbf{Chi tiết đạo hàm cấp hai và triệt tiêu.} Đặt $h=y-\arctan y,k=\frac12\log(1+y^2)$, $u=v(x+h,k)$. Khi đó
+\[u_{xx}=v_{\xi\xi},\quad u_{xy}=h'v_{\xi\xi}+k'v_{\xi\eta},\quad
+u_{yy}=h'^2v_{\xi\xi}+2h'k'v_{\xi\eta}+k'^2v_{\eta\eta}+h''v_\xi+k''v_\eta.\]
+Đặt $D=1+y^2$. Hệ số $v_{\xi\xi}$ là $y^2-2y^2(y^2/D)+D(y^4/D^2)=y^2/D$; hỗn hợp $2k'(-y^2+Dh')=0$; hệ số $v_{\eta\eta}$ là $D(y/D)^2=y^2/D$. Hai hệ số cấp một:
+\[\frac{2y}D-y-\frac{(1-y^2)y}D
+=\frac{2y-y-y^3-y+y^3}D=0,\quad
+\frac{1-y^2}D-\frac{1-y^2}D=0.\]
+Để kiểm tra trực tiếp, đặt $A=x+h-L$, có $u_y=h'\log D+2Ay/D$,
+\[u_{yy}=h''\log D+\frac{4yh'}D+\frac{2A(1-y^2)}{D^2}.\]
+Thế vào PDE: nhóm $\log D$ có hệ số $Dh''-y-(1-y^2)h'/y=0$; nhóm $A$ có hệ số $2(1-y^2)/D-2(1-y^2)/D=0$; nhóm còn lại $-4y^3/D+4yh'=0$.

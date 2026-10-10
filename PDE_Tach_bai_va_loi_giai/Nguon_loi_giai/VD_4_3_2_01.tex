@@ -1,0 +1,54 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{fontspec,amsmath,amssymb,graphicx}
+\usepackage[margin=18mm]{geometry}
+\setmainfont{Times New Roman}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\allowdisplaybreaks
+\sloppy
+\emergencystretch=2em
+\begin{document}
+\section*{VD\_4\_3\_2\_01 — Lời giải bổ sung}
+\subsection*{Kiến thức và trình tự giải}
+\textbf{Bước 1 — Tìm cơ sở và chuẩn.} Giải $-X_n''=\lambda_nX_n$ với đúng biên thuần nhất. Đặt $N_n=\int_0^LX_n^2dx$; các hàm riêng ở biên Robin không có chuẩn mặc định $L/2$. Từ $c_n=N_n^{-1}\int fX_n$ trong chuỗi nghiệm, đổi thứ tự tổng–tích phân với $t>0$ để nhận ra
+
+
+\[
+G(x,y,t)=\sum_n\frac{X_n(x)X_n(y)}{N_n}e^{-K\lambda_nt},\qquad
+u(x,t)=\int_0^LG(x,y,t)f(y)dy.
+\]
+
+
+\textbf{Bước 2 — Tính chuẩn Robin đến biểu thức sơ cấp.} Nếu $X=\cos kx+\sin kx/k$, dùng
+
+
+\[
+N=\frac L2(1+k^{-2})+\frac{\sin(2kL)}{4k}(1-k^{-2})+\frac{\sin^2(kL)}{k^2}.
+\]
+
+
+Nếu $X=\cos kx$, $N=L/2+\sin(2kL)/(4k)$. Hai biên tuần hoàn có mode hằng $1/L$ trong $G$ và cặp sine/cosine tần số $2n\pi/L$.
+
+\textbf{Bước 3 — Kiểm tra PDE, biên và đối xứng.} Đạo hàm $e^{-K\lambda_nt}X_n(x)$ cho $G_t=KG_{xx}$; đạo hàm theo $y$ tương tự. Biên được kiểm tra trên từng $X_n$. Mỗi tích $X_n(x)X_n(y)$ đối xứng; hội tụ đều của chuỗi đạo hàm trên $t\ge\varepsilon$ biện minh các thao tác. Dữ liệu delta ban đầu hiểu qua $\int Gf\to f$ trong miền hoặc trong $L^2$, không bằng cách thế $t=0$ trực tiếp vào một chuỗi không hội tụ.
+
+\textbf{Bước 4 — Chứng minh dương và khối lượng.} Nguyên lý cực đại cho $\int Gf\ge0$ với $f\ge0$, suy $G\ge0$ bằng cách lấy $f$ tập trung gần một điểm. Kết hợp tính nửa nhóm và nguyên lý mạnh để suy $G>0$ trong miền. $m(x,t)=\int G(x,y,t)dy$ là nghiệm có dữ liệu đầu $1$. Neumann/tuần hoàn giữ $m=1$; Dirichlet hoặc Robin hấp thụ cho $0<m<1$.
+
+\textbf{Bước 5 — Nửa nhóm và thời gian dài.} Trực giao cho $\int G(x,z,s)G(z,y,t)dz=G(x,y,s+t)$. Với $H(t)=\max_xm(x,t)$ ở Dirichlet, $m(x,t+s)\le H(t)m(x,s)$, nên $H(t+s)\le H(t)H(s)<H(t)$. Để chứng minh $H(t)\to1$ lúc đầu, giữ một $x_0$ trong miền, dùng $m(x_0,t)\to1$ và $m(x_0,t)\le H(t)\le1$.
+\subsection*{Lời giải áp dụng cho bài}
+\textbf{Bước 1. Nhận diện hàm Green từ chuỗi Neumann.}
+Với $u_t=Ku_{xx}$, $u_x(0,t)=u_x(L,t)=0$, hệ riêng là $X_0=1$, $\lambda_0=0$, $N_0=L$ và $X_n=\cos(n\pi x/L)$, $\lambda_n=(n\pi/L)^2$, $N_n=L/2$. Chiếu dữ liệu rồi đổi tổng–tích phân với $t>0$:
+\begin{align*}
+u(x,t)&=\frac1L\int_0^Lf(y)dy+
+\sum_{n\ge1}\frac2L e^{-K(n\pi/L)^2t}\cos(n\pi x/L)\int_0^Lf(y)\cos(n\pi y/L)dy\\
+&=\int_0^LG_N(x,y,t)f(y)dy,\\
+G_N(x,y,t)&=\frac1L+\frac2L\sum_{n\ge1}e^{-K(n\pi/L)^2t}
+\cos(n\pi x/L)\cos(n\pi y/L).
+\end{align*}
+\textbf{Bước 2. Kiểm tra đạo hàm, biên và đối xứng.}
+Mỗi đạo hàm cấp hữu hạn bị chặn bởi hằng nhân $n^m e^{-K(n\pi/L)^2\varepsilon}$ khi $t\ge\varepsilon>0$; tổng này hội tụ. Do đó được đạo hàm từng số hạng. Đạo hàm theo $t$ nhân $-K(n\pi/L)^2$, đạo hàm theo $x$ hai lần nhân $-(n\pi/L)^2$, nên $G_{Nt}=KG_{Nxx}=KG_{Nyy}$. Tích hai cosine đối xứng theo $x,y$ và tuần hoàn $2L$ theo từng biến; đạo hàm theo $x$ chứa sine, bằng $0$ tại $0,L$.
+\textbf{Bước 3. Tính khối lượng và chứng minh dương.} Vì $\int_0^L\cos(n\pi y/L)dy=0$,
+\[\int_0^LG_N(x,y,t)dy=1.\]
+Đặt $g_K(z,t)=(4\pi Kt)^{-1/2}e^{-z^2/(4Kt)}$. Phản xạ chẵn và tuần hoàn cho
+\[G_N(x,y,t)=\sum_{j\in\mathbb Z}\{g_K(x-y+2jL,t)+g_K(x+y+2jL,t)\}.\]
+Có thể kiểm tra đẳng thức bằng hệ số Fourier: nhân tuần hoàn $\sum_jg_K(z+2jL,t)$ có hệ số $(2L)^{-1}e^{-K(n\pi/L)^2t}$; cộng hai ảnh và dùng $\cos(a-b)+\cos(a+b)=2\cos a\cos b$ trả lại chuỗi trên. Mỗi Gauss dương nên $G_N>0$.
+\textbf{Bước 4. Dữ liệu đầu, nửa nhóm và giới hạn.} Với $f$ liên tục, xấp xỉ đơn vị của nhân nhiệt trên hàm mở rộng chẵn cho $u\to f$ đều. Trực giao cosine cho $\int_0^LG_N(x,z,s)G_N(z,y,t)dz=G_N(x,y,s+t)$. Vì $G_N>0$ và tổng trọng số $1$, $\min f\le u\le\max f$; tính đối xứng cho $\int_0^Lu(x,t)dx=\int f$. Các mode dương giảm theo mũ, nên $u\to L^{-1}\int f$ đều. Không đòi $\int G_N$ bằng $1$ bằng một phép tích phân trên toàn trục: tích phân chuẩn hóa ở đây là trên một đoạn $[0,L]$.\end{document}

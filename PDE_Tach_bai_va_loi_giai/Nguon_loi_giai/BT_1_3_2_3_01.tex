@@ -1,0 +1,52 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{fontspec,amsmath,amssymb,graphicx}
+\usepackage[margin=18mm]{geometry}
+\setmainfont{Times New Roman}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\allowdisplaybreaks
+\sloppy
+\emergencystretch=2em
+\begin{document}
+\section*{BT\_1\_3\_2\_3\_01 — Lời giải bổ sung}
+\subsection*{Kiến thức và trình tự giải}
+\textbf{Mục tiêu.} Với $A(x,y)u_x+B(x,y)u_y+C(x,y)u=R(x,y)$, tìm các đường mà trên đó PDE trở thành một ODE. Dùng chữ $R$ cho vế phải để không nhầm với hàm tùy ý $F$.
+
+\textbf{Bước 1 — Đọc các hệ số và lập hệ đặc trưng.} Đặt $U(s)=u(X(s),Y(s))$. Quy tắc dây chuyền cho $U'=u_xX'+u_yY'$. Chọn $X'=A$, $Y'=B$, khi đó
+
+\[
+X'=A(X,Y),\qquad Y'=B(X,Y),\qquad U'+C(X,Y)U=R(X,Y).
+\]
+
+Nếu $A\ne0$, có thể dùng $x$ làm tham số: $dy/dx=B/A$, $du/dx+(C/A)u=R/A$. Nếu $A=0$, chọn biến khác hoặc giữ hệ theo $s$; không chia cho hệ số bằng 0.
+
+\textbf{Bước 2 — Tìm bất biến để phân biệt các đặc trưng.} Tích phân hai phương trình đầu để tìm $\rho(X,Y)$ không đổi. Kiểm tra $A\rho_x+B\rho_y=0$. Hệ số hằng cho $\rho=Bx-Ay$. Ví dụ $X'=X,Y'=-Y$ cho $(XY)'=0$; $X'=-Y,Y'=X$ cho $(X^2+Y^2)'=0$. Khi đặc trưng là vòng kín, cần kiểm tra nghiệm sau một vòng trở về cùng giá trị.
+
+\textbf{Bước 3 — Giải ODE của ẩn trên từng đường.} Đặt $M(s)=\exp(\int C(X(s),Y(s))ds)$. Nhân phương trình của $U$ với $M$:
+
+\[
+(MU)'=MR,\qquad
+U(s)=M(s)^{-1}\left[K+\int M(s)R(X(s),Y(s))ds\right].
+\]
+
+$K$ hằng trên một đường, nhưng thay đổi giữa các đường, nên viết $K=F(\rho)$. Nếu tìm được nghiệm riêng $u_p$, có thể giải phương trình thuần nhất cho $u-u_p$ để giảm tính toán. Nếu đổi biến $(\rho,z)$, phải tính Jacobian và dùng quy tắc dây chuyền để thấy PDE chỉ còn đạo hàm theo $z$.
+
+\textbf{Bước 4 — Thế dữ liệu và tìm hàm tùy ý.} Với đường dữ liệu $(x_0(r),y_0(r))$, $u=h(r)$, thế vào nghiệm tổng quát để thu được $F(\rho_0(r))=H(r)$, trong đó $\rho_0=\rho(x_0,y_0)$. Nếu $\rho_0$ khả nghịch, đặt $r=\rho_0^{-1}(z)$ rồi viết $F(z)=H(\rho_0^{-1}(z))$. Nếu hai giá trị $r_1,r_2$ có cùng $\rho_0$, phải có $H(r_1)=H(r_2)$. Nếu đường dữ liệu chính là đặc trưng, dữ liệu phải thỏa ODE trên đường đó và thường không xác định hết $F$.
+
+\textbf{Bước 5 — Xác định miền tồn tại và duy nhất.} Điều kiện không đặc trưng là $x_0'B-y_0'A\ne0$ trên đường dữ liệu. Nó cho khả nghịch cục bộ dưới giả thiết trơn thích hợp; không tự cho duy nhất trên cả mặt phẳng. Chỉ những đặc trưng gặp dữ liệu mới được xác định. Tại gốc, trục hoặc đường hệ số suy biến, kiểm tra riêng và ghép các biểu thức đủ trơn.
+
+\textbf{Bước 6 — Kiểm tra kết quả.} Tính $u_x,u_y$ bằng quy tắc dây chuyền, thay vào $Au_x+Bu_y+Cu$ và kiểm tra bằng $R$. Sau đó thế lại điều kiện đầu/biên. Nêu rõ nếu chỉ có nghiệm cục bộ, nghiệm từng miền hoặc không có nghiệm trong lớp trơn yêu cầu.
+
+\textbf{Chi tiết bước tích phân ODE.} Sau khi tìm bất biến $\rho$, viết $U'+P(s,\rho)U=Q(s,\rho)$. Chọn $M=\exp(\int_{s_0}^{s}P(r,\rho)dr)$; tính $M'=PM$, nên $MU'+M'U=MQ$. Tích phân từ $s_0$: $M(s)U(s)-U(s_0)=\int_{s_0}^sM(r)Q(r)dr$. Hằng số $U(s_0)$ phụ thuộc $\rho$; thay dữ liệu để tìm nó rồi mới đổi về tọa độ gốc.
+\subsection*{Lời giải áp dụng cho bài}
+\textbf{Ý (a).} Với $u_x+\sin x\,u_y=0$, tích phân $dy/dx=\sin x$ cho $\rho=y+\cos x$. $U'=0$ nên $u=F(\rho)$. Kiểm tra $u_x+\sin x\,u_y=-\sin xF'+\sin xF'=0$.
+
+\textbf{Ý (b).} Với $xu_x+yu_y=0$, $X=x_0e^s,Y=y_0e^s$, nên $u$ hằng trên tia. Trên từng miền $x>0$ hoặc $x<0$, $u=F(y/x)$; dùng tọa độ $x/y$ trên miền $y\ne0$. Nếu cần liên tục trên toàn mặt phẳng, co giãn mỗi điểm về gốc cho $u(x,y)=u(0,0)$, nên chỉ có nghiệm hằng.
+
+\textbf{Ý (c).} Với $xu_x+2yu_y=0$ trong $x,y>0$, $X'=X,Y'=2Y$. Tính $(Y/X^2)'=0$, nên $\rho=y/x^2$. $U'=0$ cho $u=F(y/x^2)$. Kiểm tra $u_x=-2yF'/x^3$, $u_y=F'/x^2$, hai hạng của PDE triệt tiêu.
+
+\textbf{Ý (d).} Với $yu_x-4xu_y=2xy$, trường $V=y\partial_x-4x\partial_y$ có bất biến $r=y^2+4x^2$ vì $Vr=2y(-4x)+8xy=0$. Chọn nghiệm riêng $P=-y^2/4$, có $VP=2xy$. Đặt $w=u-P$, $Vw=0$. Các mức $r>0$ là ellipse liên thông và đặc trưng kín, nên
+\[u=-y^2/4+F(y^2+4x^2).\]
+Đạo hàm của phần $F$ cho $V=0$; phần riêng cho đúng nguồn. Để có nghiệm toàn mặt phẳng, tổ hợp xuyên tâm ellipse phải đủ trơn tại gốc; $F\in C^1([0,\infty))$ là một điều kiện đủ, nhưng không phải mô tả duy nhất của lớp trơn ở gốc.
+
+\textbf{Chi tiết hệ đặc trưng ở (d).} Giải $X'=Y,Y'=-4X$: $X''=-4X$, nên $X=A\cos2s+B\sin2s$, $Y=-2A\sin2s+2B\cos2s$. Vì $4X^2+Y^2=4(A^2+B^2)$, hệ đi hết một ellipse sau chu kỳ $\pi$. Với $U'=2XY$, có $(Y^2/4)'=YY'/2=-2XY$, do đó $(U+Y^2/4)'=0$. Hằng số trên ellipse là $F(4X^2+Y^2)$, dẫn tới $u=-y^2/4+F(4x^2+y^2)$.\end{document}

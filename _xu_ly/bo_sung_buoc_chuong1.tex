@@ -1,0 +1,151 @@
+%ID BT_1_3_1_3_03
+\textbf{Chi tiết thế đa thức dữ liệu vào bốn nghiệm ở (e).} Với $h(s)=2s^2+3s$, các công thức lần lượt là
+\[\begin{aligned}
+u_a&=2(x-ay/b)^2+3(x-ay/b)+fy/b &&(b\ne0),\\
+u_b&=\tfrac12+e^{-y}[2(x-y/2)^2+3(x-y/2)-\tfrac12],\\
+u_c&=\frac{x^2}{6}+\frac{e^x}{3}+\frac{11}{6}(x+3y/4)^2+3(x+3y/4)-\frac{e^{x+3y/4}}3,\\
+u_d&=y^3+2(x-y/3)^2+3(x-y/3).
+\end{aligned}\]
+Ở (b), đặt $z=x-y/2,Q=h(z)-1/2$; $u_x=e^{-y}h'(z)$, $u_y=-e^{-y}Q-e^{-y}h'(z)/2$. Vậy $u_x+2u_y+2u=1$. Ở (c), đặt $z=x+3y/4$, $u_x=P'(x)+h'(z)-P'(z)$, $u_y=3[h'(z)-P'(z)]/4$; thế vào $3u_x-4u_y$ còn $3P'(x)=x+e^x$. Ở (d), $u_x=h'(x-y/3)$, $u_y=3y^2-h'(x-y/3)/3$, cho $u_x+3u_y=9y^2$.
+
+%ID BT_1_3_1_3_04
+\textbf{Chi tiết thay $F$ và viết nghiệm cuối của (a),(b),(c).} Trong $u=-e^{x+y}+e^{4x}F(y-2x)$:
+\[\begin{aligned}
+(a)\quad u&=-e^{x+y}+e^{4x}(y-2x)^2+e^{2x+y},\\
+(b)\quad u&=-e^{x+y}+\frac{3+2x-y}{3}e^{4(x+y)/3},\\
+(c)\quad u&=-e^{x+y}+\frac{(y-2x)^2}{4}e^{8x-2y}+e^{3x+y/2}.
+\end{aligned}\]
+Ở (b), $4x+4(y-2x)/3=4(x+y)/3$; ở (c), $4x-2(y-2x)=8x-2y$ và $4x+(y-2x)/2=3x+y/2$. Các bước này giữ nguyên thừa số mũ khi thế $F(s)=s^2e^{-2s}/4+e^{s/2}$.
+Thế $x=0$ vào (a): $-e^y+y^2+e^y=y^2$. Thế $y=-x$ vào (b): $-1+(3+3x)/3=x$. Thế $y=4x$ vào $u_c$: $-e^{5x}+x^2+e^{5x}=x^2$.
+
+%ID BT_1_3_2_3_07
+\textbf{Chi tiết giải hệ trên ellipse.} Từ $X'=-2Y,Y'=X$, suy $X''=-2X$. Với $\omega=\sqrt2$,
+\[X=x_0\cos\omega s-\omega y_0\sin\omega s,\quad
+Y=y_0\cos\omega s+\frac{x_0}{\omega}\sin\omega s.\]
+Thế vào $X^2+2Y^2$ cho $x_0^2+2y_0^2$. Chu kỳ $2\pi/\sqrt2$ đi hết ellipse; $U'=0$ cho hằng số trên toàn ellipse, thay vì chỉ trên một cung.
+
+%ID BT_1_3_2_3_08
+\textbf{Chi tiết hệ hyperbola của (d),(e).} Với $X'=Y,Y'=X$, đặt $S=X+Y,T=X-Y$. Khi đó $S'=S,T'=-T$, nên $S=S_0e^s,T=T_0e^{-s}$ và $ST=X^2-Y^2=\rho$. Ở (d), $U'=0$ nên $U$ hằng trên từng thành phần hyperbola; trên trục $x=0$ có $\rho=-y^2$ và dữ liệu $e^{-y^2}=e^\rho$, quyết định các thành phần từ trục ấy. Ở (e), $U'=XY$ và $(Y^2/2)'=YY'=XY$, nên $(U-Y^2/2)'=0$. Bởi vậy $u=y^2/2+H(\rho)$ trước khi dùng hai vết. Đạo hàm hai biểu thức của $H$ tại $0$: $(e^{-r})'|_0=-1$, $(e^r+r/2)'|_0=1+1/2=3/2$, giải thích sự không ghép $C^1$.
+
+%ID BT_1_2_3_03
+\textbf{Chi tiết tìm họ nghiệm ở (a).} Đặc trưng là $X'=2,Y'=3,U'=2U$. Tích phân từ $(x_0,y_0,u_0)$ được $X=x_0+2s,Y=y_0+3s,U=u_0e^{2s}$. Vì $3X-2Y=3x_0-2y_0$ và $e^{-X}U=e^{-x_0}u_0$, đặt giá trị bất biến thứ hai là $F(3X-2Y)$. Đổi về $x,y$ được $u=e^xF(3x-2y)$. Kiểm tra bằng các đạo hàm $u_x=e^x(F+3F')$, $u_y=-2e^xF'$: $2u_x+3u_y-2u=e^x(2F+6F'-6F'-2F)=0$.
+
+%ID BT_1_2_3_05
+\textbf{Chi tiết xử lý điểm $x=0$ ở (b).} Chọn hai hệ số từ các vết tại $y=0$: $A(x)=u(x,0)$, $B(x)=u_y(x,0)$. Khi $x\ne0$, giải hệ $C+D=A$, $x(C-D)=B$ cho $C=(A+B/x)/2,D=(A-B/x)/2$, rồi gom hai hàm mũ thành $A\cosh(xy)+B\sinh(xy)/x$. Khai triển $\sinh(xy)/x=y+x^2y^3/3!+\cdots$ cho giới hạn $y$ và vết $u(0,y)=A(0)+B(0)y$; không loại nghiệm tuyến tính này khi hai nghiệm mũ trùng nhau.
+
+%ID VD_1_3_1_2_08
+\textbf{Chi tiết dựng nghiệm tổng quát trước khi dùng vết.} Với $u_x+u_y=u$, chọn $x$ làm tham số: $Y'=1$, $U'=U$. Tích phân $Y=x+\rho$ và $(e^{-x}U)'=0$ cho $e^{-x}U=F(\rho)$. Vì $\rho=y-x$, thu $u=e^xF(y-x)$. Như vậy công thức dùng ở bước 1 xuất phát từ chính hệ đặc trưng của bài này.
+
+%ID VD_1_3_2_2_05
+\textbf{Chi tiết giải lại PDE.} Hệ $X'=X,Y'=-2Y$ cho $X=x_0e^s,Y=y_0e^{-2s}$, nên $X^2Y=x_0^2y_0=\rho$. Vì $dX/ds=X>0$, phương trình của ẩn theo $x$ là $dU/dx+U/x=e^x/x$. Nhân $x$ rồi tích phân: $d(xU)/dx=e^x$, $xU=e^x+F(\rho)$. Do đó $u=(e^x+F(x^2y))/x$, trước khi thế $x=1$ như trong bước 2.
+
+%ID VD_1_3_2_2_06
+\textbf{Chi tiết nguồn gốc của hàm tùy ý.} Dọc $X'=X,Y'=-2Y$, tính $(X^2Y)'=2X^2Y-2X^2Y=0$. Phương trình $dU/dx+U/x=e^x/x$ cho $(xU)'=e^x$, rồi $xU=e^x+F(X^2Y)$. Đường $y=0$ chỉ gặp chỉ số $\rho=0$, nên nó chỉ quyết định $F(0)$; các giá trị $F(\rho)$ với $\rho\ne0$ không được quyết định.
+
+%ID BT_1_3_2_3_01
+\textbf{Chi tiết hệ đặc trưng ở (d).} Giải $X'=Y,Y'=-4X$: $X''=-4X$, nên $X=A\cos2s+B\sin2s$, $Y=-2A\sin2s+2B\cos2s$. Vì $4X^2+Y^2=4(A^2+B^2)$, hệ đi hết một ellipse sau chu kỳ $\pi$. Với $U'=2XY$, có $(Y^2/4)'=YY'/2=-2XY$, do đó $(U+Y^2/4)'=0$. Hằng số trên ellipse là $F(4X^2+Y^2)$, dẫn tới $u=-y^2/4+F(4x^2+y^2)$.
+
+%ID BT_1_3_2_3_02
+\textbf{Chi tiết tích phân hệ quay.} Từ $X'=-Y,Y'=X$, lấy đạo hàm dòng đầu được $X''+X=0$. Với điểm đầu $(x_0,y_0)$, $X=x_0\cos s-y_0\sin s$, $Y=x_0\sin s+y_0\cos s$. Tính $X^2+Y^2=x_0^2+y_0^2$ và $U'=0$ cho $U=u_0$. Sau góc $\pi$, $(r,0)$ đi tới $(-r,0)$ mà $U$ không đổi; đây là lý do hai giá trị dữ liệu phải bằng nhau.
+
+%ID BT_1_3_2_3_03
+\textbf{Chi tiết từ hệ đặc trưng đến nghiệm xuyên tâm.} Hệ $X'=-Y,Y'=X,U'=0$ có nghiệm $X=x_0\cos s-y_0\sin s$, $Y=x_0\sin s+y_0\cos s$, $U=u_0$. Mỗi quỹ đạo $r>0$ đi hết vòng $X^2+Y^2=r^2$, nên giá trị chỉ có thể phụ thuộc $r$. Ở gốc đặt $u(0,0)=f(0)$. Vì $f$ chẵn và khả vi, $f'(0)=-f'(0)$, suy $f'(0)=0$. Hơn nữa $|u(x,y)-u(0,0)|/r=|f(r)-f(0)|/r\to0$, nên $u$ khả vi ở gốc với gradient $0$; các công thức gradient ngoài gốc tiến về cùng giá trị ấy.
+
+%ID BT_1_3_2_3_05
+\textbf{Chi tiết tích phân từng phần.} Khi $Y\ne0$, $ds=-dY/Y$, nên $\int Y^2e^{-Y}ds=-\int Ye^{-Y}dY$. Chọn $a=Y,db=e^{-Y}dY$, được $\int Ye^{-Y}dY=-Ye^{-Y}-e^{-Y}=-(Y+1)e^{-Y}$. Vậy $e^{-Y}U=(Y+1)e^{-Y}+F(XY)$, nhân lại $e^Y$ cho công thức đã nêu. Với $u_h=e^yF(xy)$, $u_{h,x}=ye^yF'$, $u_{h,y}=e^yF+xe^yF'$ và $xu_{h,x}-yu_{h,y}+yu_h=0$ bằng triệt tiêu từng hạng.
+
+%ID BT_1_3_2_3_06
+\textbf{Chi tiết hai công thức dùng ở bước 1.} Đặc trưng $X'=X,Y'=-Y$ cho $XY=\rho$. Với phương trình thuần nhất, $(e^{-Y}U)'=0$ nên $u=e^yF(\rho)$. Với phương trình có nguồn $y^2$, $(e^{-Y}U)'=Y^2e^{-Y}$; đổi $ds=-dY/Y$ và tích phân được $(Y+1)e^{-Y}+F(\rho)$, tức $u=y+1+e^yF(\rho)$. Ở (b), đường $x=1$ cho $\rho=y=s$, nên thay $s=xy$ vào $F(s)=s^2e^{-s}$ hoặc $F(s)=(s^2-s-1)e^{-s}$; đây là phép thế tạo ra hai nghiệm đã viết.
+
+%ID VD_1_4_2_01
+\textbf{Chi tiết phân thức ở (b).} $\frac1{U(U+1)}=\frac1U-\frac1{U+1}$, nên $\int dU/[U(U+1)]=\log|U|-\log|U+1|$. Sau khi tích phân theo $s$, viết $U/(U+1)=A(r)e^s$ với dấu được gộp vào $A$. Nhân chéo: $U=Ae^sU+Ae^s$, tức $(1-Ae^s)U=Ae^s$; chia khi mẫu khác $0$ được công thức. Hai giá trị cân bằng $0,-1$ phải được xét trước phép chia.
+
+%ID VD_1_4_2_02
+\textbf{Chi tiết tích phân ở (c).} Đặt $J(t)=\int_0^t s^2e^{-s}ds$. Lần thứ nhất:
+\[J=-t^2e^{-t}+2\int_0^t se^{-s}ds.\]
+Lần thứ hai:
+\[\int_0^t se^{-s}ds=-te^{-t}+\int_0^t e^{-s}ds=-te^{-t}+1-e^{-t}.\]
+Thế lại được $J=2-(t^2+2t+2)e^{-t}$, rồi $X-\xi=-f(\xi)J(t)$. Ở (b), tích phân tương tự trực tiếp: $X-\xi=-f(\xi)^2\int_0^te^{6s}ds=-f(\xi)^2(e^{6t}-1)/6$.
+
+%ID VD_1_5_2_01
+\textbf{Chi tiết khử tham số và chọn gradient.} Ở (a) với $f=s/2$, $q_0=\varepsilon\sqrt3/2$, $X=s+\tau$, $Y=\varepsilon\sqrt3\tau$, $U=s/2+2\tau$. Do đó $\tau=\varepsilon y/\sqrt3$, $s=x-\tau$, $U=x/2+3\tau/2=x/2+\varepsilon\sqrt3 y/2$. Ở (b), đặt tiếp tuyến $e_\theta=(-\sin s,\cos s)$ và pháp tuyến $e_r=(\cos s,\sin s)$. Viết $(p_0,q_0)=Ae_r+Be_\theta$; dữ liệu cho $B=0$, PDE cho $A^2+B^2=1$, nên $A=\varepsilon$. Từ $r=1+2\varepsilon\tau$ có $\tau=\varepsilon(r-1)/2$, $U=2\tau=\varepsilon(r-1)$.
+
+%ID VD_1_5_2_02
+\textbf{Chi tiết giải hai ODE tuyến tính.} Đặt $c=q_0-s$, hằng theo $\tau$. Từ $X'-2X=2c$, nhân $e^{-2\tau}$ và tích phân từ $0$:
+\[e^{-2\tau}X-s=c(1-e^{-2\tau}),\quad X=(s+c)e^{2\tau}-c.\]
+Tương tự $e^{-2\tau}Y=c(1-e^{-2\tau})$, nên $Y=c(e^{2\tau}-1)$. Vì $s+c=q_0$, đây đúng các công thức ở bước 2. Nhánh $q_0=2s$ cho $X-2Y=s$, $p=X-s=2Y$, $q=Y+2s=2X-3Y$. Tích phân $u_x=2y$ cho $u=2xy+C(y)$; phương trình $u_y=2x-3y$ cho $C'=-3y$, rồi $C=-3y^2/2$ nhờ vết ban đầu.
+
+%ID BT_1_5_3_01
+\textbf{Chi tiết tích phân và khử.} $p'=5p$ cho $p=p_0e^{5\tau}$, $q'=5q$ cho $q=8se^{5\tau}$; $U'=p(2p+q)=2(p^2+pq)=10U$ cho $U=4s^2e^{10\tau}$. Vì $\int_0^\tau e^{5r}dr=(E-1)/5$, tích phân $X',Y'$ được các công thức ở bước 2. Với $p_0=2s$: $X=12s(E-1)/5$, $Y=s+2s(E-1)/5$, nên $X/2+2Y=2s+2s(E-1)=2sE$. Với $p_0=-10s$: $X=-12s(E-1)/5$, $Y=s-2s(E-1)$, nên $5X/2-2Y=-2sE$. Bình phương cả hai cho $U$.
+
+%ID BT_1_5_3_02
+\textbf{Chi tiết nghiệm bậc hai và khử.} $4q_0^2+4sq_0-3s^2=(2q_0-s)(2q_0+3s)$, nên $q_0=s/2,-3s/2$; lấy $p_0=2s-q_0$. Nhánh $(7s/2,-3s/2)$ có $X=s+7s(E-1)$, $Y=s+15s(E-1)$, do đó $7X-3Y=4s+4s(E-1)=4sE$. Nhánh $(3s/2,s/2)$ có $X=s+3s(E-1)$, $Y=s-5s(E-1)$, nên $3X+Y=4sE$. Do $U=s^2E^2$, mỗi tổ hợp chia $4$ rồi bình phương cho nghiệm tương ứng.
+
+%ID BT_1_5_3_03
+\textbf{Chi tiết biệt thức và tích phân $Y$.} Với $a=1-8s,b=8s^2-4s,c=4s^2$,
+\[\Delta=b^2-4ac=64s^4-64s^3+16s^2-16s^2+128s^3=64s^3(s+1).\]
+Với $Q\ne0$, nhân $Y'+16QY=8s^2e^{-8Q\tau}$ bởi $e^{16Q\tau}$:
+\[e^{16Q\tau}Y-s=8s^2\int_0^\tau e^{8Qr}dr=\frac{s^2}{Q}(e^{8Q\tau}-1).\]
+Nhân $e^{-16Q\tau}$ được $Y=sE^2+(s^2/Q)(E-E^2)$. Đồng thời $X-s=2p_0\int_0^\tau e^{-8Qr}dr=p_0(1-E)/(4Q)$. Các hằng số đều lấy từ dữ liệu tại $\tau=0$.
+
+%ID BT_1_5_3_05
+\textbf{Chi tiết thừa số tích phân.} $R'=0$ cho $R=R_0$; $D'=4D$ cho $D=D_0e^{4\tau}$. Với $S'-2S=2R_0$, có $(e^{-2\tau}S)'=2R_0e^{-2\tau}$, nên $e^{-2\tau}S=s+R_0(1-e^{-2\tau})$. Với $T'+2T=2D_0e^{4\tau}$, có $(e^{2\tau}T)'=2D_0e^{6\tau}$, nên $e^{2\tau}T=s+D_0(e^{6\tau}-1)/3$. Đây là hai công thức $S,T$ trong bước 2. Ở nhánh $R=-S,D=3T$, $p=(-S+3T)/2,q=(-S-3T)/2$, và
+\[p^2+q^2=(S^2+9T^2)/2,\quad 2Yp+2Xq=-S^2-3T^2.\]
+Vậy $2U=(-S^2+3T^2)/2$, tức $U=(3T^2-S^2)/4$.
+
+%ID BT_1_5_3_06
+\textbf{Chi tiết tích phân và rút gọn nhánh thứ hai.} Vì $p'=X'$, $p-X=-s$; vì $q'=4Y'$, $q-4Y=q_0$. Giải $X'-8X=-8s+4q_0$ bằng nhân $e^{-8\tau}$ cho $X=s+q_0(E-1)/2$. Tương tự $Y'-8Y=2q_0-4s$ cho $Y=(q_0/4-s/2)(E-1)$. Khi $q_0=4s$, $X-s=2s(E-1)=4Y$, nên $p=4Y,q=4X-12Y$. Thế vào PDE:
+\[4p^2+q^2+4(p-X)(q-4Y)
+=64Y^2+(4X-12Y)^2-16(X-4Y)^2
+=32XY-48Y^2.\]
+Chia $8$ cho $U=4XY-6Y^2$.
+
+%ID BT_1_5_3_07
+\textbf{Chi tiết chọn nghiệm bậc hai.} Khi $y\ne0$, $ys^2+s-x=0$ cho $s=(-1\pm\sqrt{1+4xy})/(2y)$. Nhánh dấu cộng có giới hạn $x$ khi $y\to0$; nhân tử số và mẫu với $1+\sqrt{1+4xy}$ cho $s=2x/(1+\sqrt{1+4xy})$. Nhánh dấu trừ không về dữ liệu $s=x>0$. Sau đó $\tau=sy$ và $U=\log s+2\tau$ cho nghiệm.
+
+%ID BT_1_5_3_13
+\textbf{Chi tiết xác nhận gradient của nghiệm tham số.} Đặt $h=2\sqrt{s^2+1}$, $a=h'$, $a^2+b^2=1$. Với $X=s+\tau a,Y=\tau b,v=h+\tau$, tính $dv=a\,ds+d\tau$. Mặt khác
+\[a\,dX+b\,dY=a\,ds+(a^2+b^2)d\tau+\tau(aa'+bb')ds=a\,ds+d\tau,\]
+vì đạo hàm $a^2+b^2=1$ cho $aa'+bb'=0$. Trên miền ánh xạ khả nghịch, so hệ số vi phân được $v_x=a,v_y=b$, nên $|\nabla v|^2=1$. Đổi $u=v^2/4$ cho $|\nabla u|^2=(v^2/4)|\nabla v|^2=u$.
+
+%ID BT_1_5_3_16
+\textbf{Chi tiết đổi ẩn và tia pháp tuyến.} $v=2\sqrt u$ cho $v_x=u_x/\sqrt u,v_y=u_y/\sqrt u$, nên $|\nabla v|^2=(p^2+q^2)/u=1$. Lấy điểm đầu $(\cos s,\sin s)$, gradient $\varepsilon(\cos s,\sin s)$, tham số độ dài $\tau$. Hệ cho $(X,Y)=(1+\varepsilon\tau)(\cos s,\sin s)$, $v=2+\tau$. Gần vòng tròn, $r=1+\varepsilon\tau$, tức $\tau=\varepsilon(r-1)$, nên $v=2+\varepsilon(r-1)$. Bình phương rồi chia $4$ cho hai công thức của $u$.
+
+%ID BT_1_5_3_17
+\textbf{Chi tiết phương trình khử và gradient.} Thế $\tau=s-x$ vào $y=2Q(s)\tau$ được một phương trình một ẩn $y=2Q(s)(s-x)$. Đạo hàm theo $s$ là $2Q+2(s-x)Q'$, khác $0$ tại dữ liệu khi $f'>0$, nên giải cục bộ được $s=s(x,y)$. Đặt $P=f'=Q^2$; từ $X=s-\tau,Y=2Q\tau,U=f+P\tau$, tính
+\[dU=(P+\tau P')ds+P\,d\tau=P\,dX+Q\,dY,\]
+vì $P'=2QQ'$. So hệ số vi phân cho $u_x=P,u_y=Q$, xác nhận $u_y^2=u_x$.
+
+%ID BT_1_6_3_08
+\textbf{Chi tiết rút gọn tốc độ.} Với $F(u)=u-u^2$,
+\[\frac{F(u_L)-F(u_R)}{u_L-u_R}
+=\frac{(u_L-u_R)-(u_L^2-u_R^2)}{u_L-u_R}
+=1-u_L-u_R.\]
+Thế $(u_L,u_R)=(0,1/2)$ cho $1/2$, $(1/2,1)$ cho $-1/2$, và $(0,1)$ cho $0$ sau tương tác.
+
+%ID NC_1_7_02
+\textbf{Chi tiết tích phân và khử nhân tử.} Gọi $z=\xi_s$. Tích phân $( (1-z^2)^2t)'=2(1-z^2)$ theo $z$ cho $(1-z^2)^2t=2z-2z^3/3+C$. Khi $z\to-1$, vế trái về $0$, nên $C=4/3$. Phân tích
+\[2z-\tfrac23z^3+\tfrac43=\tfrac23(2-z)(z+1)^2,\quad
+(1-z^2)^2=(1-z)^2(1+z)^2.\]
+Trên $-1<z<0$, khử $(1+z)^2$ được $t=2(2-z)/[3(1-z)^2]$. Đạo hàm $dt/dz=2(3-z)/[3(1-z)^3]>0$, và giới hạn tại $z=-1,0$ là $1/2,4/3$, chứng minh nhãn xác định duy nhất.
+
+%ID BT_1_6_3_10
+\textbf{Chi tiết ODE và khối lượng sau gặp.} Đặt $q=s+1>0$, có $q'=q/(3t)$, nên $q'/q=1/(3t)$. Tích phân từ $3$ đến $t$ cho $\log(q/3)=\frac13\log(t/3)$, tức $q=3^{2/3}t^{1/3}$. Khối lượng là
+\[\int_{-1}^{s}\sqrt{\frac{x+1}{t}}dx
+=\frac1{\sqrt t}\left[\frac23(x+1)^{3/2}\right]_{-1}^{s}
+=\frac{2q^{3/2}}{3\sqrt t}=2.\]
+
+%ID BT_1_6_3_11
+\textbf{Chi tiết tích phân sau tương tác.} Đặt $q=1-s>0$. Từ $s'=(s-1)/(2t)$ suy $q'=q/(2t)$. Tích phân $q'/q=1/(2t)$ từ $2$ cho $\log(q/2)=\frac12\log(t/2)$; vậy $q=\sqrt{2t}$, $s=1-\sqrt{2t}$. Phần dư khối lượng là $\int_s^1(1-x)dx/t=(1-s)^2/(2t)=1$.
+
+%ID BT_1_6_3_12
+\textbf{Chi tiết hai lần tích phân và kiểm tra khối lượng.} Trong quạt, $s'=s/(2t)$ cho $\log(s/2)=\frac12\log t$ bởi $s(1)=2$, nên $s=2\sqrt t$. Giải $2\sqrt t=t$ với $t>0$: chia $\sqrt t$ được $\sqrt t=2$, tức $t=4$ (loại $t=0$ ngoài giai đoạn). Sau đó $s'=1/2$ cho $s-4=(t-4)/2$. Khối lượng ở ba giai đoạn:
+\[\begin{aligned}
+M&=t+\int_t^{2t}\frac xtdx+2(1+t-2t)=2+t/2 &&(0<t<1),\\
+M&=t+\int_t^{2\sqrt t}\frac xtdx=t+\frac{4t-t^2}{2t}=2+t/2 &&(1\le t<4),\\
+M&=\int_0^{t/2+2}1\,dx=2+t/2 &&(t\ge4).
+\end{aligned}\]
+Do đó $M'=1/2$ ở mọi giai đoạn, đúng thông lượng vào $F(1)$.
+
+%ID NC_1_7_04
+\textbf{Chi tiết hằng số trên các nhánh cong.} Khi sốc đi qua quạt $R_1$, đặt $q=s+1$, $q'/q=1/(2t)$, nên $q=C\sqrt t$. Dùng $q(9/8)=9/2$ cho $C=(9/2)/\sqrt{9/8}=3\sqrt2$. Sau giai đoạn trạng thái $1$, tại $t=20$ có $s=18$; trong quạt $R_0$, đặt $q=s+2$, $q'/q=1/(2t)$ và $q(20)=20$, nên $q=\sqrt{20t}$. Vì vậy nhánh cuối $s=\sqrt{20t}-2$. Các hằng số khác nhau vì sốc đi qua hai quạt có tâm lần lượt $-1$ và $-2$.

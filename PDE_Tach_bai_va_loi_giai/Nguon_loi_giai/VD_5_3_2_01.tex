@@ -1,0 +1,18 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{fontspec,amsmath,amssymb,graphicx}
+\usepackage[margin=18mm]{geometry}
+\setmainfont{Times New Roman}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\allowdisplaybreaks
+\sloppy
+\emergencystretch=2em
+\begin{document}
+\section*{VD\_5\_3\_2\_01 — Lời giải bổ sung}
+Với hình quạt $0<r<R,0<\theta<\alpha$, đặt $b=(1-\theta/\alpha)g_0(r)+(\theta/\alpha)g_1(r)$, $w=u-b$, $H=F-\Delta b$, $h(\theta)=\varphi(\theta)-b(R,\theta)$. Đặt $k_n=n\pi/\alpha$, $H_n=2\alpha^{-1}\int_0^\alpha H\sin k_n\theta$, $h_n$ tương tự. Khi đó
+\[u=b+\sum_{n\ge1}\left[h_n(r/R)^{k_n}+\int_0^R\mathcal G_n(r,s)H_n(s)s\,ds\right]\sin k_n\theta,\]
+\[\mathcal G_n=-\frac1{2k_n}\left[(r_</r_>)^{k_n}-(r_<r_>/R^2)^{k_n}\right].\]
+Đây là Green của ODE xuyên tâm, bị chặn tại 0 và bằng 0 tại $R$. Năng lượng Dirichlet cho duy nhất. Để nghiệm liên tục tại đỉnh, $g_0(0)=g_1(0)$ và dữ liệu phải tương thích.
+Câu cụ thể (i) $\alpha=\pi/2,F=0,g_0=g_1=0,\varphi=xy$: $u=xy$ vì điều hòa và đúng cả ba biên. (ii) $\alpha=\pi,F=1$, mọi biên 0: đặt $k_n=n$, $H_n=2(1-(-1)^n)/(\pi n)$. Với $n$ lẻ,
+\[u=\sum_{n\text{ lẻ}}\frac{H_n}{4-n^2}[r^2-R^2(r/R)^n]\sin n\theta.\]
+Các mode chẵn bằng 0; mode cộng hưởng $n=2$ không có nguồn nên không xuất hiện. Thế Laplace cho $1$.\end{document}

@@ -1,0 +1,22 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{fontspec,amsmath,amssymb,graphicx}
+\usepackage[margin=18mm]{geometry}
+\setmainfont{Times New Roman}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\allowdisplaybreaks
+\sloppy
+\emergencystretch=2em
+\begin{document}
+\section*{BT\_6\_1\_1\_2\_06 — Lời giải bổ sung}
+Dùng $f=\sum b_n\sin k_nx$ và $f=a_0+\sum a_n\cos k_nx$, $k_n=n\pi/L$. Hệ số lần lượt $b_n=2L^{-1}\int_0^Lf\sin$, $a_n=2L^{-1}\int_0^Lf\cos$, $a_0=L^{-1}\int_0^Lf$.
+(a) $b_n=2(1-(-1)^n)/(n\pi)$; cosine chỉ có $a_0=1$.
+(b) $a_0=(1-\cos\alpha L)/(\alpha L)$,
+\[b_n=\frac{2(-1)^nk_n\sin\alpha L}{L(\alpha^2-k_n^2)},\quad a_n=\frac{2\alpha(1-(-1)^n\cos\alpha L)}{L(\alpha^2-k_n^2)}.\]
+Ở cộng hưởng lấy giới hạn; ví dụ $\alpha=k_N$ cho $b_N=1$, $b_n=0$ với $n\ne N$.
+(c) $a_0=(e^{\alpha L}-1)/(\alpha L)$,
+\[b_n=\frac{2k_n(1-(-1)^ne^{\alpha L})}{L(\alpha^2+k_n^2)},\quad a_n=\frac{2\alpha((-1)^ne^{\alpha L}-1)}{L(\alpha^2+k_n^2)}.\]
+(d) $L=\pi$: $b_n=4(1-(-1)^n)/(\pi n^3)$, $a_0=\pi^2/6$, $a_n=-2(1+(-1)^n)/n^2$.
+(e) $L=1$: $b_n=2[1+(-1)^n-2\cos(n\pi/2)]/(n\pi)$, $a_0=0$, $a_n=4\sin(n\pi/2)/(n\pi)$.
+
+Sine là Fourier của thác triển lẻ chu kỳ $2L$, cosine là của thác triển chẵn. Tại điểm nội liên tục, cả hai về $f$; tại bước nhảy về trung bình hai phía. Sine luôn về 0 ở $0,L$, nên nếu $f$ không bằng 0 tại đó không có hội tụ đến giá trị biên. Cosine về giá trị biên một phía. Các cosine của (a)--(d) và sine của (b),(d) khi dữ liệu vanishes ở hai đầu có hội tụ đều nếu thác triển liên tục và các hệ số suy đủ nhanh; trường hợp bước nhảy (e) không đều. Các công thức hệ số chính xác ở trên cũng cho kiểm tra từng điều kiện biên.\end{document}

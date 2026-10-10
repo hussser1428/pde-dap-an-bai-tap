@@ -1,0 +1,14 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{fontspec,amsmath,amssymb,graphicx}
+\usepackage[margin=18mm]{geometry}
+\setmainfont{Times New Roman}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\allowdisplaybreaks
+\sloppy
+\emergencystretch=2em
+\begin{document}
+\section*{BT\_5\_4\_3\_17 — Lời giải bổ sung}
+Chuẩn $\|u\|=|u(0)|+\sup_B(1-|x|)|\nabla u|$ có tính đồng nhất và tam giác; chuẩn 0 buộc $\nabla u=0,u(0)=0$, nên $u=0$. Với dãy Cauchy $u_j$, tích phân trên đoạn từ 0 đến $x$ cho
+\[|u_j(x)-u_k(x)|\le\|u_j-u_k\|\left[1+\log\frac1{1-|x|}\right].\]
+Do đó hội tụ đều trên compact đến $u$. Tính giá trị trung bình hoặc ước lượng đạo hàm cho $u$ điều hòa và $\nabla u_j\to\nabla u$ trên compact. Cho $k\to\infty$ trong $\sup(1-|x|)|\nabla(u_j-u_k)|\le\varepsilon$ được cùng cận cho $u_j-u$; giá trị tại 0 cũng hội tụ. Vậy $u_j\to u$ theo chuẩn, chứng minh Banach.\end{document}

@@ -1,0 +1,107 @@
+%ID VD_4_2_2_01
+\textbf{Bước 1. Đọc đúng dữ liệu.} Đề là $u_t=u_{xx}$ trên $0<x<1$, biên $u(0,t)=u(1,t)=0$ và $f=\sin^2(\pi x)$. Ký hiệu trong bản scan là $\pi$, không phải tần số nguyên $n$; không cần đặt lại miền hay giới hạn $n$.
+\textbf{Bước 2. Chọn hai nghiệm so sánh.} Đặt $v=0$, $V=e^{-\pi^2t}\sin\pi x$. Tính $V_t=-\pi^2V=V_{xx}$, $V(0,t)=V(1,t)=0$. Trên $[0,1]$, $0\le\sin\pi x\le1$, nên $0\le\sin^2\pi x\le\sin\pi x$.
+\textbf{Bước 3. Áp dụng cực đại cho hai hiệu.} $v-u=-u$ giải phương trình nhiệt, dữ liệu đầu và biên không dương, nên $-u\le0$. Tương tự $u-V$ có dữ liệu đầu $\sin\pi x(\sin\pi x-1)\le0$ và biên $0$, nên $u-V\le0$. Kết luận
+\[0\le u(x,t)\le e^{-\pi^2t}\sin\pi x,\quad 0\le x\le1,\ t\ge0.\]
+Nếu cần chứng minh cực đại yếu, xét mỗi hiệu trừ $\varepsilon e^t$; toán tử $\partial_t-\partial_{xx}$ cho giá trị âm nghiêm ngặt, loại cực đại dương, rồi cho $\varepsilon\downarrow0$.
+
+%ID VD_4_2_2_02
+\textbf{Bước 1. Cận dữ liệu và rào trên đoạn lớn.} Giả thiết $u$ bị chặn trên $\mathbb R\times[0,T]$. Đặt $M=\sup_{\mathbb R\times[0,T]}u$, $N=\sup_xu(x,0)$ và cố định $(x_0,t_0)$, $0<t_0\le T$. Với $\varepsilon>0$,
+\[w_\varepsilon=u-\varepsilon\{(x-x_0)^2+2Kt\}.\]
+Tính $(w_\varepsilon)_t-K(w_\varepsilon)_{xx}=0$, vì $2K-K\cdot2=0$.
+\textbf{Bước 2. Kiểm tra toàn bộ biên.} Trên mặt $t=0$, $w_\varepsilon\le N$. Trên $x=x_0\pm R$, $w_\varepsilon\le M-\varepsilon R^2$. Chọn $R>|x_0|+1$ đủ lớn để $M-\varepsilon R^2\le N$; áp dụng cực đại trên $(x_0-R,x_0+R)\times(0,t_0]$ được $w_\varepsilon\le N$.
+\textbf{Bước 3. Bỏ rào và chứng minh cận dưới.} Tại điểm cố định,
+\[u(x_0,t_0)\le N+2K\varepsilon t_0.\]
+Cho $\varepsilon\downarrow0$, suy $u\le N$. Áp dụng cùng lập luận cho $-u$ cho $u\ge\inf_xu(x,0)$. Do $(x_0,t_0)$ tùy ý,
+\[\inf_yu(y,0)\le u(x,t)\le\sup_yu(y,0).\]
+Giả thiết bị chặn chính là điều cho phép chọn $R$ bằng cận $M$ độc lập theo $x$; không bỏ bước này trên miền vô hạn.
+
+%ID VD_4_2_2_03
+\textbf{Bước 1. Đổi biên Neumann thành điểm trong bằng phản xạ.} Mở rộng $u$ chẵn qua $0$, rồi chẵn qua $L$, và tuần hoàn chu kỳ $2L$. $u_x(0,t)=u_x(L,t)=0$ làm đạo hàm cấp một ghép liên tục; đạo hàm cấp hai và $u_t$ ghép theo tính chẵn và PDE, nên hàm mở rộng giải phương trình nhiệt với $t>0$.
+\textbf{Bước 2. Áp dụng cực đại trên đường tròn.} Đặt $m=\min_{[0,L]}f$, $M=\max_{[0,L]}f$. Hai hằng $m,M$ đều giải PDE và có biên Neumann. Với $w=u-M$, xét $w_\varepsilon=w-\varepsilon e^t$ trên miền tuần hoàn. Vì $(\partial_t-K\partial_{xx})w_\varepsilon=-\varepsilon e^t<0$, cực đại dương không thể ở $t>0$; ở $t=0$ cũng không dương. Do đó $u\le M+\varepsilon e^t$, cho $\varepsilon\downarrow0$ suy $u\le M$. Thay $u$ bằng $-u$ suy $u\ge m$.
+\textbf{Bước 3. Kết luận.}
+\[\min_{y\in[0,L]}u(y,0)\le u(x,t)\le\max_{y\in[0,L]}u(y,0).\]
+Nếu dữ liệu không khớp đạo hàm tại góc, phản xạ vẫn dùng cho $t>0$; tính liên tục của nghiệm đến mặt đầu đủ để áp dụng cực đại.
+
+%ID BT_4_2_3_01
+\textbf{Bước 1. Phát biểu cận riêng cho từng biên.} Với thời gian $[0,T]$, đặt $m_f=\min f$, $M_f=\max f$. Ở (a),
+\[\min(m_f,\inf_{0\le s\le T}\mu(s))\le u\le
+\max(M_f,\sup_{0\le s\le T}\mu(s)).\]
+Ở (b), thêm mức $0$ do biên Robin:
+\[\min(0,m_f,\inf_s\nu(s))\le u\le\max(0,M_f,\sup_s\nu(s)).\]
+Ở (c),(d), $\min(0,m_f)\le u\le\max(0,M_f)$. Ở (e), $m_f\le u\le M_f$.
+
+\textbf{Bước 2. Kiểm tra các nghiệm trên hằng.} Gọi cận trên là $C$, $w=u-C$. Ở (a), $w_x(0)=0$, $w(L)=\mu-C\le0$. Ở (b), pháp tuyến trái là $-\partial_x$, nên $(\partial_\nu+1)w=-C\le0$ tại $0$, và $w(L)=\nu-C\le0$. Ở (c), $w_x(0)=0$, $(\partial_\nu+1)w=-C\le0$ tại $L$. Ở (d), biểu thức Robin này bằng $-C\le0$ ở cả hai đầu. Lý do chọn $C\ge0$ ở Robin nằm chính ở dấu $-C$.
+
+\textbf{Bước 3. Loại cực đại dương.} Trong miền, dùng $w-\varepsilon e^{\gamma t}$ như chứng minh cực đại yếu. Biên Dirichlet không dương. Neumann phản xạ chẵn để trở thành điểm trong, hoặc dùng Hopf; Robin ở cực đại dương không hằng có $\partial_\nu w>0$, nên $\partial_\nu w+w>0$, trái với biểu thức không dương. Trường hợp hằng dương cũng bị dữ liệu đầu và/hoặc Robin loại. Biên (e) ghép thành đường tròn vì cả giá trị và đạo hàm bằng nhau; cực đại tại đường ghép vẫn là cực đại trong. Suy $w\le0$.
+
+\textbf{Bước 4. Cận dưới.} Áp dụng cận trên cho $-u$, với dữ liệu $-f,-\mu,-\nu$, rồi đổi dấu. Điều này trả lại đúng năm cận đã phát biểu, gồm các mức $0$ cần thiết ở Robin.
+
+%ID BT_4_2_3_02
+\textbf{Bước 1. Phát biểu trên nửa trục.} Với nghiệm bị chặn trên $[0,\infty)\times[0,T]$ và $f=u(\cdot,0)$:
+\begin{align*}
+(a)&:\quad \min(\inf_{x\ge0}f,\inf_{0\le s\le T}\mu(s))
+\le u\le\max(\sup_{x\ge0}f,\sup_s\mu(s));\\
+(b)&:\quad \inf_{x\ge0}f\le u\le\sup_{x\ge0}f.
+\end{align*}
+\textbf{Bước 2. Dirichlet và vô cực.} Gọi cận trên (a) là $C$, đặt $w=u-C\le0$ trên mặt đầu và tại $x=0$. Xét $w_\varepsilon=w-\varepsilon(x^2+2Kt)$: vẫn giải PDE, không dương trên hai phần biên này. Vì $w$ bị chặn, chọn $R$ lớn làm $w_\varepsilon(R,t)\le0$ cho $0\le t\le T$. Cực đại trên $(0,R)$ cho $w_\varepsilon\le0$. Với $(x,t)$ cố định, cho $\varepsilon\downarrow0$ được $w\le0$. Áp dụng cho $-u$ được cận dưới.
+\textbf{Bước 3. Neumann.} Mở rộng chẵn $\widetilde u(x,t)=u(|x|,t)$. Biên $u_x(0,t)=0$ làm nghiệm mở rộng trơn qua $0$ với $t>0$, bị chặn trên toàn trục. Cận toàn trục bằng rào bậc hai cho $\inf f\le\widetilde u\le\sup f$, hạn chế lại $x\ge0$ là kết quả (b).
+Miền in $\mathbb R$ ở dòng PDE không khớp phần mở đầu nửa trục; chứng minh dùng miền $x>0$ và biên được nêu trong bài.
+
+%ID BT_4_2_3_03
+\textbf{Bước 1. Đặt $P=\partial_t-a\partial_{xx}-b\partial_x-c$, $a\ge0,c\le0$.}
+(a) Nếu $w$ có cực đại địa phương dương ở một điểm trong, thì $w_x=0,w_{xx}\le0,w_t=0$, nên $Pw=-aw_{xx}-cw\ge0$, trái với $Pw<0$. Nếu điểm ở mặt thời gian trên thì $w_t\ge0$ một phía vẫn cho cùng mâu thuẫn.
+
+(b) Đặt $v=u-\varepsilon e^t$. $Pv=Pu-\varepsilon(1-c)e^t<0$ và $v<0$ trên biên parabol. Nếu $v$ dương ở đâu, cực đại dương trên bao đóng phải ở trong hoặc mặt thời gian trên, trái với (a). Vì thế $u\le\varepsilon e^t$; cho $\varepsilon\downarrow0$ được $u\le0$.
+
+(c) Đặt $C=\max(0,\max_{\partial_pQ_T}u)$. Vì $P(u-C)=cC\le0$ và $u-C\le0$ trên biên, (b) cho $u\le C$. Nếu cực đại toàn miền dương, cận này buộc cực đại bằng cực đại biên. Còn trường hợp cực đại bằng $0$, cần loại khả năng mọi giá trị biên đều âm.
+Nếu $\max_{\partial_pQ_T}u=-\eta<0$, tính liên tục trên bao đóng cho một dải gần mặt đầu và hai biên không gian mà $u<-\eta/2$. Cắt bỏ các dải này để được hình trụ nhỏ hơn chứa điểm có $u=0$, với biên parabol $u\le-\eta/2$. Trên hình trụ nhỏ, $c$ có cận $|c|\le C_0$ vì liên tục trên tập compact nằm trong miền. Lấy $t_*$ là thời gian đầu của hình trụ đó và $V=-(\eta/2)e^{-C_0(t-t_*)}$. Khi đó $PV=(-C_0-c)V\ge0$, $u\le V$ trên biên. Áp dụng (b) cho $u-V$ được $u\le V<0$, mâu thuẫn điểm có $u=0$. Vậy cực đại không âm cũng đạt trên biên parabol. Đổi $u$ thành $-u$ cho phát biểu và chứng minh tương tự: cực tiểu không dương đạt trên biên.
+
+(d) Sửa $M$ thành $M=\max_{\partial_pQ_T}|u|$. Đặt $V=M+Nt\ge0$. Khi đó $PV=N-cV\ge N\ge F$. Do $P(u-V)=F-PV\le0$ và $u-V\le0$ trên biên, suy $u\le V$. Với $-u$, nguồn là $-F\le N$, suy $-u\le V$. Vậy
+\[|u(x,t)|\le M+Nt\le M+NT.\]
+Nếu giữ $M=\max_{\partial_pQ_T}u$ có dấu như bản in, kết luận sai: chọn $a=1,b=c=0,F=0,u=-1$ thì $M=-1,N=0$, không thể có $1\le-1$.
+
+%ID BT_4_2_3_04
+\textbf{(a) Tìm nghiệm dừng.} Đặt $u=p(x)$, PDE thành $-p''=1$. Tích phân hai lần: $p=-x^2/2+Ax+B$. Từ $p(0)=p(1)=0$, $B=0,A=1/2$, nên $p=x(1-x)/2$.
+\textbf{(b) Chọn và kiểm tra hai rào.} Đặt $v=p(1-e^{-8t})$. Vì $p''=-1$,
+\[v_t=8pe^{-8t},\quad v_{xx}=-(1-e^{-8t}),\quad
+v_t-v_{xx}=1+e^{-8t}(8p-1).\]
+Trên $[0,1]$, $0\le p\le1/8$, nên $8p-1\le0$, suy $Pv\le1=Pu= Pp$, với $P=\partial_t-\partial_{xx}$. Hai rào có biên $0$, và $v(x,0)=0=u(x,0)\le p(x)$.
+\textbf{Áp dụng so sánh.} $P(v-u)\le0$, dữ liệu của $v-u$ không dương, nên $v\le u$. Tương tự $P(u-p)=0$, dữ liệu đầu $-p\le0$, nên $u\le p$. Kết luận
+\[\frac{x(1-x)}2(1-e^{-8t})\le u(x,t)\le\frac{x(1-x)}2.\]
+Hai rào cùng tiến về $p$ đều, nên còn có $u\to p$ đều theo $x$.
+
+%ID BT_4_2_3_05
+\textbf{Bước 1. So dữ liệu đầu.} Trên $0\le x\le\pi$, đặt $s=\sin x\in[0,1]$. Vì $s^2\le s$, $0\le f=\sin^2x\le\sin x$.
+\textbf{Bước 2. Kiểm tra nghiệm so sánh.} $V=e^{-t}\sin x$ có $V_t=-e^{-t}\sin x=V_{xx}$, $V(0,t)=V(\pi,t)=0$, $V(x,0)=\sin x$. Hàm $0$ cũng giải PDE và biên.
+\textbf{Bước 3. Dùng nguyên lý cực đại cho hiệu.} $P(-u)=0$, biên $0$, dữ liệu đầu $-\sin^2x\le0$, nên $u\ge0$. $P(u-V)=0$, biên $0$, dữ liệu đầu $\sin x(\sin x-1)\le0$, nên $u\le V$. Vì thế
+\[0\le u(x,t)\le e^{-t}\sin x.\]
+Kết quả đúng trên mọi dải thời gian hữu hạn, nên đúng với mọi $t\ge0$; cận trên còn chứng minh suy giảm đều về $0$.
+
+%ID BT_4_2_3_06
+\textbf{Bước 1. Đúng điều kiện biên.} Bài có $u(0,t)=0$, $u_x(\pi,t)=0$, là Dirichlet–Neumann; không phải Neumann ở cả hai đầu. $f=\sin x+\frac12\sin2x=\sin x(1+\cos x)\ge0$ trên $[0,\pi]$.
+\textbf{Bước 2. Tính cực đại của $f$.}
+\[f'=\cos x+\cos2x=2\cos^2x+\cos x-1
+=(2\cos x-1)(\cos x+1).\]
+Trong $(0,\pi)$, điểm tới hạn là $\cos x=1/2$, tức $x=\pi/3$. Hai đầu có $f=0$, còn
+\[f(\pi/3)=\frac{\sqrt3}2\left(1+\frac12\right)=\frac{3\sqrt3}4.\]
+Vậy $\min f=0$, $\max f=3\sqrt3/4$.
+\textbf{Bước 3. So sánh hằng.} Hằng $0$ và $C=3\sqrt3/4$ giải PDE, có đạo hàm bằng $0$ tại $\pi$. Tại biên Dirichlet $0$, $0=u(0,t)\le C$; mặt đầu có $0\le f\le C$. Phản xạ chẵn tại $\pi$ hoặc dùng nguyên lý cực đại cho biên hỗn hợp suy
+\[0\le u(x,t)\le\frac{3\sqrt3}4.\]
+Không bảo toàn trung bình: nhiệt thoát qua đầu Dirichlet. Nếu xét thời gian dài, cơ sở sine nửa nguyên $k_n=n+1/2$ chỉ có trị riêng dương, nên nghiệm tiến về $0$, không phải $2/\pi$.
+
+%ID BT_4_2_3_07
+\textbf{Bước 1. Tìm cận dữ liệu biên.} Đặt $h(t)=te^{-t}$. $h'(t)=e^{-t}(1-t)$, nên tăng trên $[0,1]$, giảm sau $1$, $h(1)=e^{-1}$. Vì vậy $0\le h(t)\le e^{-1}$.
+\textbf{Bước 2. Kiểm tra hiệu trên biên parabol.} $P=\partial_t-\partial_{xx}$; $Pu=0$. Với $w=u-e^{-1}$, $Pw=0$, mặt đầu $w=-e^{-1}$, tại $x=0$ có $w=te^{-t}-e^{-1}\le0$, tại $x=1$ có $w=-e^{-1}$. Cực đại yếu cho $u\le e^{-1}$. Với $-u$, cả dữ liệu đầu lẫn hai biên không dương, nên $u\ge0$.
+\textbf{Bước 3. Kết luận.} Trên từng dải $[0,T]$,
+\[0\le u(x,t)\le e^{-1}.\]
+Do $T$ tùy ý, cận đúng với mọi $t>0$. Dữ liệu đầu tại $x=0$ khớp $h(0)=0$, nên không có mâu thuẫn góc về giá trị.
+
+%ID BT_4_2_3_08
+\textbf{(a) Thế trực tiếp nghiệm.} Với $u=(t+1)x(1-x)$,
+\[u_t=x(1-x),\quad u_x=(t+1)(1-2x),\quad u_{xx}=-2(t+1).\]
+Suy $u_t-u_{xx}=x(1-x)+2(t+1)$, đúng nguồn. Tại $x=0,1$, $u=0$; tại $t=0$, $u=x(1-x)$.
+\textbf{(b) Cực trị dữ liệu.} $f'=1-2x=0$ cho $x=1/2$, $f(1/2)=1/4$; hai đầu bằng $0$ và $f\ge0$. Biên cũng bằng $0$, nên $m=0$, $M=1/4$.
+\textbf{(c) Nhiệt độ vượt $M$.} Tại $x=1/2$,
+\[u(1/2,t)=\frac{t+1}4>\frac14=M\quad\text{với mọi }t>0.\]
+Ví dụ $t=1$ cho $u=1/2$. Nguyên lý cực đại của phương trình thuần nhất không áp dụng trực tiếp vì $Pu=2(t+1)+x(1-x)>0$; nguồn dương làm nhiệt tăng.

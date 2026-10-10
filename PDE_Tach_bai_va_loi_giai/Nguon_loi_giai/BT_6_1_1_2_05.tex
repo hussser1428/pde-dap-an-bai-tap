@@ -1,0 +1,14 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{fontspec,amsmath,amssymb,graphicx}
+\usepackage[margin=18mm]{geometry}
+\setmainfont{Times New Roman}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\allowdisplaybreaks
+\sloppy
+\emergencystretch=2em
+\begin{document}
+\section*{BT\_6\_1\_1\_2\_05 — Lời giải bổ sung}
+Tích thành tổng cho tích phân sine bằng
+\[\frac{\sin((n-m)\pi/2)}{n-m}-\frac{\sin((n+m)\pi/2)}{n+m},\]
+và cosine thay dấu trừ thành cộng. Vì $n-m$ chẵn nên $n+m$ cũng chẵn, hai tử bằng 0. Tuy nhiên đề cho $m,n\in\mathbb Z$ và chỉ loại $n=m$, chưa loại $n=-m$. Nếu $n=-m\ne0$, hai hàm cùng tần số và tích phân sine bằng $-\pi/2$, cosine bằng $\pi/2$, không bằng 0. Kết luận đúng với $n\ne\pm m$ (hoặc $m,n$ không âm khác nhau). Trường hợp chỉ số 0 xử lý trực tiếp; sine 0 đồng nhất 0.\end{document}

@@ -1,0 +1,24 @@
+{
+  "1": {
+    "items": 93,
+    "expanded": 33,
+    "solution_pages": 120,
+    "max_solution_pages": 2,
+    "complete_Markdown_LaTeX_PDF": "passed"
+  },
+  "2": {
+    "items": 27,
+    "expanded": 21,
+    "solution_pages": 53,
+    "max_solution_pages": 3,
+    "complete_Markdown_LaTeX_PDF": "passed"
+  },
+  "3": {
+    "items": 85,
+    "expanded": 44,
+    "solution_pages": 154,
+    "max_solution_pages": 3,
+    "complete_Markdown_LaTeX_PDF": "passed"
+  },
+  "master_pages": 469
+}

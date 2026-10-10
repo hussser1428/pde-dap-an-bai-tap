@@ -1,0 +1,98 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{fontspec,amsmath,amssymb,graphicx}
+\usepackage[margin=18mm]{geometry}
+\setmainfont{Times New Roman}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\allowdisplaybreaks
+\sloppy
+\emergencystretch=2em
+\begin{document}
+\section*{BT\_3\_3\_3\_01 — Lời giải bổ sung}
+\subsection*{Kiến thức và trình tự giải}
+\textbf{Bước 1 — Tách biến và chọn bài toán trị riêng theo biên.} Đặt $u=X(x)T(t)$ trong $u_{tt}=a^2u_{xx}$, suy $X''+\lambda X=0$, $T''+a^2\lambda T=0$. Tích phân từng phần cho $\lambda\int X^2=\int (X')^2$ khi hạng biên bằng không; do đó $\lambda\ge0$. Giải cả trường hợp $\lambda=0$ trước khi xét $\lambda=k^2>0$.
+
+\textbf{Bước 2 — Tìm hệ hàm riêng.} Trên $(0,L)$: Dirichlet hai đầu dùng $\sin(n\pi x/L)$, $n\ge1$; Neumann hai đầu dùng $1$ và $\cos(n\pi x/L)$; Dirichlet–Neumann dùng $\sin((n+1/2)\pi x/L)$, $n\ge0$; Neumann–Dirichlet dùng cos của các tần số nửa nguyên ấy. Chuẩn bình phương của mode khác không là $L/2$, của mode hằng là $L$.
+
+\textbf{Bước 3 — Chiếu cả hai dữ liệu.} Với mode khác không đặt
+
+
+\[
+A_n=\frac2L\int_0^L fX_n\,dx,\quad B_n=\frac2L\int_0^L gX_n\,dx,\quad \omega_n=ak_n.
+\]
+
+
+Tích phân từng khoảng nếu dữ liệu chia đoạn; dùng tích phân từng phần hoặc công thức tích–tổng khi là đa thức/lượng giác. Hệ số $B_n$ là hệ số của vận tốc, nên hệ số đứng trước $\sin\omega_nt$ phải là $B_n/\omega_n$.
+
+\textbf{Bước 4 — Ghép nghiệm và xét mode hằng.}
+
+
+\[
+u=\sum_n\left(A_n\cos\omega_nt+\frac{B_n}{\omega_n}\sin\omega_nt\right)X_n.
+\]
+
+
+Với Neumann hai đầu, thêm $A_0+B_0t$, trong đó $A_0=L^{-1}\int f$, $B_0=L^{-1}\int g$. Với tần số bị thay đổi bởi hạng $u$ hoặc cản $u_t$, giải lại ODE của từng mode; không dùng nguyên tần số $ak_n$.
+
+\textbf{Bước 5 — Kiểm tra biên, dữ liệu và hội tụ.} Mỗi mode thỏa biên; tại $t=0$ hai chuỗi cho khai triển của $f,g$. Nếu dữ liệu không tương thích ở góc, giải theo nghĩa năng lượng hoặc từng miền và nêu đường mất tính trơn; không đạo hàm một chuỗi yếu tùy ý. Chu kỳ được suy từ tất cả mode có hệ số khác không, kể cả mode hằng; hai tần số có tỷ số vô tỷ ngăn một chu kỳ chung.
+
+\textbf{Chi tiết tính tích phân hệ số.} Với $k=n\pi/L$, hai nguyên hàm thường dùng là
+
+
+\[
+\int x\sin kx\,dx=-x\cos kx/k+\sin kx/k^2,\qquad
+\int x\cos kx\,dx=x\sin kx/k+\cos kx/k^2.
+\]
+
+
+Với đa thức $P$, ghi cả hai lần tích phân:
+
+
+\[
+\int_0^L P\sin kx\,dx
+=\left[-P\cos kx/k\right]_0^L+
+\left[P'\sin kx/k^2\right]_0^L-
+\frac1{k^2}\int_0^L P''\sin kx\,dx.
+\]
+
+
+Chỉ bỏ hạng biên sau khi thế $0,L$ và điều kiện thực sự của $P$. Nếu dữ liệu chia đoạn, áp dụng công thức trên từng đoạn, rồi cộng các hạng tại điểm chia. Cuối cùng nhân nghịch đảo chuẩn của hàm riêng; nếu hệ số là của vận tốc, chia thêm tần số khi ghép nghiệm. Với mẫu số bằng $0$ trong tích–tổng, quay lại tích phân gốc để tính riêng.
+\subsection*{Lời giải áp dụng cho bài}
+\textbf{Bước 1. Công thức chung.} Hai biên cố định cho $X_n=\sin(n\pi x/L)$, $\omega_n=an\pi/L$ và hệ số $A_n=(2/L)\int fX_n$, $B_n=(2/L)\int gX_n$. Dùng $u=\sum(A_n\cos\omega_nt+B_n\sin\omega_nt/\omega_n)X_n$.
+
+\textbf{Bước 2. Tính hệ số từng dữ liệu.}
+
+(i) $a=L=1$. $A_1=1$, còn lại $0$. Hai lần tích phân từng phần cho
+\[\int_0^1x(1-x)\sin(n\pi x)dx=\frac{2(1-(-1)^n)}{n^3\pi^3}.\]
+Do đó $B_n=4(1-(-1)^n)/(n^3\pi^3)$, và
+\[u=\sin\pi x\cos\pi t+\sum_{n\text{ lẻ}}\frac8{n^4\pi^4}\sin(n\pi t)\sin(n\pi x).\]
+Chu kỳ $2$; dữ liệu tương thích cho $C^2$.
+
+(ii) $a=2$, $L=\pi$, $f=\sin x$, $g=1$. $A_1=1$; $B_n=(2/\pi)\int_0^\pi\sin nx=2(1-(-1)^n)/(\pi n)$. Suy $u=\sin x\cos2t+\sum_{n\text{ lẻ}}2\sin2nt\sin nx/(\pi n^2)$, chu kỳ $\pi$. Vận tốc không tương thích ở hai đầu, nên có gãy cấp một.
+
+(iii) $a=1$, $L=\pi$, $f=1$, $g=0$. Cùng tích phân trên cho $A_n=2(1-(-1)^n)/(\pi n)$, nên $u=\sum_{n\text{ lẻ}}4\cos nt\sin nx/(\pi n)$. Chu kỳ $2\pi$; li độ không tương thích biên tạo bước nhảy.
+
+(iv) $a=L=1$, $f=x(1-x)/4$, $g=0$. Chia hệ số của đa thức ở (i) cho $4$: $A_n=(1-(-1)^n)/(n^3\pi^3)$. Vậy $u=\sum_{n\text{ lẻ}}2\cos(n\pi t)\sin(n\pi x)/(n^3\pi^3)$, chu kỳ $2$. $f''(0)=f''(1)=-1/2$ không khớp biên cấp hai, nên không $C^2$ qua mặt phản xạ, dù nghiệm $C^1$.
+
+(v) Cùng $f$, $g=-1$: giữ $A_n$ trên, thêm $B_n=-2(1-(-1)^n)/(n\pi)$. Nghiệm theo công thức chung, chu kỳ $2$, không $C^1$ qua mặt sóng từ góc vì vận tốc biên khác không.
+
+(vi) $f=0$, $g=-1/2$ trên $(0,1/2)$, $1/2$ trên $(1/2,1)$. Tách tích phân tại $1/2$:
+\[B_n=-\int_0^{1/2}\sin(n\pi x)dx+\int_{1/2}^1\sin(n\pi x)dx
+=\frac{2\cos(n\pi/2)-1-(-1)^n}{n\pi}.\]
+Chỉ $n\equiv2\pmod4$ khác không, với $B_n=-4/(n\pi)$. Nghiệm $u=-\sum_{n\equiv2\ (4)}4\sin(n\pi t)\sin(n\pi x)/(n^2\pi^2)$ có chu kỳ cơ bản $1$. Vận tốc bước nhảy cho nghiệm liên tục nhưng gãy cấp một.
+
+\textbf{Bước 3. Kiểm tra.} Mỗi mode thỏa PDE và biên, hai chuỗi tại $t=0$ đúng các hệ số đã tính. Chỉ đạo hàm chuỗi ở nơi hội tụ đủ; với dữ liệu không tương thích dùng phản xạ để xác định các mặt gãy, không khẳng định cổ điển toàn miền.
+
+\textbf{Chi tiết hai lần tích phân từng phần ở (i).} Đặt $k=n\pi$, $P=x(1-x)$, $P'=1-2x$, $P''=-2$.
+\[\begin{aligned}
+I&=\int_0^1P\sin kx\,dx
+=\left[-P\frac{\cos kx}{k}\right]_0^1+\frac1k\int_0^1P'\cos kx\,dx\\
+&=\frac1k\left[\frac{P'\sin kx}{k}\right]_0^1-\frac1{k^2}\int_0^1P''\sin kx\,dx\\
+&=\frac2{k^2}\left[-\frac{\cos kx}{k}\right]_0^1=\frac{2(1-(-1)^n)}{k^3}.
+\end{aligned}\]
+Hạng biên lần đầu hết vì $P(0)=P(1)=0$; lần sau hết vì $\sin0=\sin n\pi=0$. Hệ số vận tốc là $B_n=2I$; khi ghép nghiệm còn chia $\omega_n=k$. Với $n$ lẻ, $2I/k=8/k^4$, không bỏ hệ số chia tần số này.
+
+Ở (ii),(iii),(v), dùng $\int_0^L\sin(n\pi x/L)dx=L(1-(-1)^n)/(n\pi)$, rồi nhân $2/L$ và giá trị hằng của dữ liệu. Ở (iv), $\int fX_n=I/4$ nên $A_n=I/2=(1-(-1)^n)/k^3$. Ở (vi),
+\[-\int_0^{1/2}\sin kx\,dx=\frac{\cos(k/2)-1}{k},\quad
+\int_{1/2}^1\sin kx\,dx=\frac{\cos(k/2)-\cos k}{k}.\]
+Cộng rồi xét $n$ lẻ, $n\equiv0\pmod4$, $n\equiv2\pmod4$ cho lần lượt $0,0,-4/k$.\end{document}

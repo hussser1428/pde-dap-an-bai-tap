@@ -1,0 +1,1001 @@
+%ID VD_4_1_2_01
+\textbf{Bước 1. Tách biến theo hai biên Dirichlet.}
+Với $u_t=Ku_{xx}$, $u(0,t)=u(L,t)=0$, đặt $u=XT$. Ta có $X''+\lambda X=0$, $T'+K\lambda T=0$. Điều kiện $X(0)=X(L)=0$ cho $X_n=\sin(n\pi x/L)$, $\lambda_n=(n\pi/L)^2$, chuẩn $L/2$. Vì vậy $u=\sum c_ne^{-K\lambda_nt}X_n$, $c_n=(2/L)\int_0^LfX_n$.
+
+\textbf{Bước 2. Tính riêng từng dữ liệu.}
+(i) $K=L=1$. Từ $\sin3z=3\sin z-4\sin^3z$ suy $\sin^3(\pi x)=3\sin(\pi x)/4-\sin(3\pi x)/4$. Trực giao cho $c_1=3/4,c_3=-1/4$, các hệ số khác bằng không. Do đó
+\[u=\frac34e^{-\pi^2t}\sin\pi x-\frac14e^{-9\pi^2t}\sin3\pi x.\]
+Tại $t=0$, công thức trả lại $f$; hai sine bằng không ở hai đầu. Đạo hàm mỗi hạng theo $t$ bằng đạo hàm theo $x$ cấp hai, nên PDE đúng. Đây là nghiệm trơn đến $t=0$.
+
+(ii) $K=2,L=\pi$, nhưng $f=\sin(\pi x)$, không phải $\sin x$. Dùng $2\sin(\pi x)\sin(nx)=\cos((\pi-n)x)-\cos((\pi+n)x)$:
+\begin{align*}
+c_n&=\frac1\pi\left[\frac{\sin((\pi-n)x)}{\pi-n}-\frac{\sin((\pi+n)x)}{\pi+n}\right]_0^\pi\\
+&=\frac{(-1)^n\sin(\pi^2)}{\pi}\left(\frac1{\pi-n}-\frac1{\pi+n}\right)
+=\frac{2(-1)^nn\sin(\pi^2)}{\pi(\pi^2-n^2)}.
+\end{align*}
+Không có mẫu bằng không vì $\pi$ không nguyên. Nghiệm là
+\[u=\frac{2\sin(\pi^2)}{\pi}\sum_{n=1}^\infty\frac{(-1)^nn}{\pi^2-n^2}e^{-2n^2t}\sin nx.\]
+\textbf{Bước 3. Kiểm tra ý nghĩa nghiệm.} Chuỗi trơn với $t>0$, có biên $0$, và tiến về $f(x)$ khi $0<x<\pi$, $t\downarrow0$. Tuy nhiên $f(\pi)=\sin(\pi^2)\ne0$: không có nghiệm liên tục đến góc $(\pi,0)$ thỏa mọi dữ kiện. Khái niệm nghiệm thông thường nếu chỉ yêu cầu liên tục trên toàn bao đóng không được thỏa ở câu này.
+
+%ID VD_4_1_2_02
+\textbf{Bước 1. Cơ sở Neumann.} $X'(0)=X'(L)=0$ cho mode hằng $1$ và $X_n=\cos(n\pi x/L)$, $n\ge1$. Chuẩn lần lượt $L,L/2$, nên
+\[u=c_0+\sum_{n\ge1}c_ne^{-K(n\pi/L)^2t}\cos(n\pi x/L),\quad c_0=\frac1L\int f,\quad c_n=\frac2L\int f\cos(n\pi x/L).\]
+\textbf{Bước 2. Dữ liệu (i).} $\cos^2(\pi x)=(1+\cos2\pi x)/2$, nên với $K=L=1$, $c_0=c_2=1/2$, các hệ số khác bằng không:
+\[u=\frac12+\frac12e^{-4\pi^2t}\cos2\pi x.\]
+Đạo hàm biên là $-\pi e^{-4\pi^2t}\sin2\pi x$, bằng không ở $0,1$. Thế $t=0$ trả lại $\cos^2\pi x$; đạo hàm $u_t,u_{xx}$ đều bằng $-2\pi^2e^{-4\pi^2t}\cos2\pi x$. Nghiệm trơn và tiến đều về $1/2$.
+
+\textbf{Bước 3. Dữ liệu (ii).} $K=2,L=\pi,f=\sin x$, $c_0=2/\pi$. Với $n\ne1$,
+\begin{align*}
+\int_0^\pi\sin x\cos nx\,dx
+&=\frac12\int_0^\pi[\sin((1+n)x)+\sin((1-n)x)]dx\\
+&=\frac{1+(-1)^n}{1-n^2}.
+\end{align*}
+Khi $n=1$, $\int\sin x\cos x=[\sin^2x/2]_0^\pi=0$. Vì thế $c_n=0$ khi $n$ lẻ, $c_{2j}=4/[\pi(1-4j^2)]$. Suy
+\[u=\frac2\pi+\frac4\pi\sum_{j\ge1}\frac{e^{-8j^2t}}{1-4j^2}\cos2jx.\]
+\textbf{Bước 4. Kiểm tra tính thông thường.} Hệ số $O(j^{-2})$ cho hội tụ đều đến $t=0$, trả lại $f$ liên tục. Khi $t>0$, chuỗi đạo hàm hội tụ đều, đúng PDE và Neumann. Vì $f'(0)=1,f'(\pi)=-1$, đạo hàm không thể liên tục đến hai góc và đồng thời bằng $0$ trên biên. Nghiệm vẫn thuộc lớp $C^{2,1}$ với $t>0$ và liên tục trên bao đóng, là lớp nghiệm thông thường được dùng trong ví dụ; không khẳng định trơn đến góc. Ước lượng
+\[\left|u-\frac2\pi\right|\le\frac4\pi e^{-8t}\sum_{j\ge1}\frac1{4j^2-1}\longrightarrow0\]
+chứng minh giới hạn đều $2/\pi$.
+
+%ID VD_4_1_2_03
+\textbf{Bước 1. Năng lượng và duy nhất.} Biên là $u_x(0)=u(0)$, $u_x(L)=0$. Tích phân từng phần:
+\[I'=\int uu_t=K[uu_x]_0^L-K\int u_x^2
+=-K u(0,t)^2-K\int_0^Lu_x^2dx\le0.\]
+Áp dụng cho hiệu hai nghiệm có dữ liệu đầu $0$ cho $I(0)=0$, nên hiệu bằng không.
+
+\textbf{Bước 2. Trị riêng và trực giao.} Thế $u=XT$ cho $X''+\lambda X=0$, $X'(0)=X(0)$, $X'(L)=0$, $T'=-K\lambda T$. Nhân ODE với $X$:
+\[\lambda\int X^2=\int(X')^2+X(0)^2.\]
+Nếu $\lambda=0$, $X'=0$ và $X(0)=0$, suy $X=0$; mọi trị riêng không tầm thường có $\lambda>0$. Trừ hai phương trình như đẳng thức Green cho $(\lambda_n-\lambda_m)\int X_nX_m=[X_nX_m'-X_n'X_m]_0^L=0$, nên trực giao.
+
+\textbf{Bước 3. Tìm $k$ và chuẩn hóa.} Với $\lambda=k^2$, $X=A\cos kx+B\sin kx$. Biên trái cho $A=kB$; chọn $A=1$, được $X=\cos kx+\sin kx/k$. Biên phải cho $-k\sin kL+\cos kL=0$, tức $k\tan kL=1$. Trên mỗi khoảng $((n-1)\pi/L,(n-1/2)\pi/L)$, $k\tan kL$ tăng từ $0$ đến $\infty$, nên có đúng một nghiệm $k_n$, $n\ge1$. Chuẩn là
+\[N(k)=\frac L2(1+k^{-2})+\frac{\sin2kL}{4k}(1-k^{-2})+\frac{\sin^2kL}{k^2}.\]
+Do đó $u=\sum c_ne^{-Kk_n^2t}X_n$, $c_n=\int fX_n/N(k_n)$.
+
+\textbf{Bước 4. Tính dữ liệu cụ thể $K=2,L=\pi,f=1+2\sin(x/2)$.}
+Đặt $q=1/2$, và với $r\ne0$ đặt $D(r)=(1-\cos\pi r)/r$, $E(r)=\sin\pi r/r$, mở rộng $D(0)=0,E(0)=\pi$ theo giới hạn. Tích–tổng và tích phân từng hạng cho
+\begin{align*}
+J(k)=\int_0^\pi fX\,dx
+={}&\frac{\sin\pi k}{k}+\frac{1-\cos\pi k}{k^2}\\
+&+D(q+k)+D(q-k)+\frac{E(q-k)-E(q+k)}k.
+\end{align*}
+Vậy $c_n=J(k_n)/N(k_n)$ và
+\[u(x,t)=\sum_{n\ge1}\frac{J(k_n)}{N(k_n)}e^{-2k_n^2t}
+\left(\cos k_nx+\frac{\sin k_nx}{k_n}\right).\]
+Không còn tích phân hệ số chưa tính. Với $L=\pi$, các nghiệm đầu là $0.3834486028,1.2187220137,2.1391968186$. Mỗi hạng thỏa hai biên và PDE. $f'(0)=1=f(0)$, $f'(\pi)=0$, nên dữ liệu khớp biên; chuỗi trả lại $f$ theo khai triển Sturm–Liouville và trơn khi $t>0$. Tất cả $k_n>0$, suy giới hạn đều bằng $0$. Không mặc định các đạo hàm cấp cao liên tục ở góc, vì điều đó cần thêm tương thích.
+
+%ID BT_4_1_3_01
+\textbf{Bước 1. Đọc hệ số trước khi tách biến.} Phương trình (4.1.1) của sách là $u_t=Ku_{xx}$, nhưng bài ghi $a$ mà không định nghĩa quan hệ giữa $a$ và $K$. Vì vậy giữ $K$ trong công thức tổng quát; ở đáp án số dưới đây đọc $a$ là lỗi ký hiệu thay cho $K$. Nếu một quy ước riêng là $K=a^2$, cần thay lại $K$ và ghi rõ, không tự suy từ đề. Hai biên Dirichlet cho $k_n=n\pi/L$, $X_n=\sin k_nx$ và
+\[u=\sum_{n\ge1}c_ne^{-Kk_n^2t}\sin k_nx,\qquad c_n=\frac2L\int_0^Lf(x)\sin k_nx\,dx.\]
+\textbf{Bước 2. Câu (i), đọc $K=L=1,f=x(1-x)$.} Đặt $k=n\pi$. Tích phân từng phần hai lần, dùng $f(0)=f(1)=0$, $f''=-2$:
+\begin{align*}
+\int_0^1f\sin kx\,dx
+&=\frac1k\int_0^1f'\cos kx\,dx
+=-\frac1{k^2}\int_0^1f''\sin kx\,dx\\
+&=\frac2{k^2}\left[-\frac{\cos kx}k\right]_0^1
+=\frac{2(1-(-1)^n)}{k^3}.
+\end{align*}
+Nhân với $2$ cho $c_n=4(1-(-1)^n)/(n^3\pi^3)$, tức $0$ khi $n$ chẵn, $8/(n^3\pi^3)$ khi $n$ lẻ:
+\[u=\sum_{\substack{n\ge1\\n\ {\rm lẻ}}}\frac8{n^3\pi^3}e^{-n^2\pi^2t}\sin n\pi x.\]
+\textbf{Bước 3. Câu (ii), $L=\pi,f=\sin x$.} Trực giao $\int_0^\pi\sin x\sin nx=\pi\delta_{n1}/2$ cho $c_1=1$, các hệ số khác $0$. Công thức không phụ thuộc cách hiểu ký hiệu là
+\[u=e^{-Kt}\sin x.\]
+Nếu $a=2$ là $K=2$, nghiệm là $e^{-2t}\sin x$. Nếu bổ sung quy ước $K=a^2=4$, nghiệm là $e^{-4t}\sin x$. Bản lời giải ngắn trước đây mặc định $K=a^2$; không có căn cứ cho sự mặc định đó trong (4.1.1).
+\textbf{Bước 4. Kiểm tra và chu kỳ.} Hai nghiệm thỏa biên, PDE trên $t>0$ và trả lại $f$ liên tục lúc đầu. Câu (i) không trơn cấp hai đến góc theo mọi hướng vì $f''(0)=f''(1)=-2$, còn biên cố định có $u_t=0$; điều này không ngăn nghiệm thông thường trơn trong miền và liên tục trên bao đóng. Nếu có chu kỳ $T>0$, hệ số mode đầu sẽ thỏa $c_1e^{-Kk_1^2(t+T)}=c_1e^{-Kk_1^2t}$, suy $e^{-Kk_1^2T}=1$, vô lý với $K>0$. Cả hai nghiệm đều không tuần hoàn theo thời gian.
+
+%ID BT_4_1_3_02
+\textbf{(a) Duy nhất bằng năng lượng.} Lấy $w=u_1-u_2$. Khi đó $w_t=Kw_{xx}$, $w(x,0)=0$; hai biên Dirichlet hoặc Neumann thuần nhất cho $[ww_x]_0^L=0$. Vì
+\[I'=\int_0^Lww_tdx=K[ww_x]_0^L-K\int_0^Lw_x^2dx\le0,\qquad I(0)=0,\]
+nên $0\le I(t)\le0$, $w=0$. Nếu nghiệm chỉ trơn với $t>0$, tích phân từ $\varepsilon$ đến $t$ rồi cho $\varepsilon\downarrow0$ trong lớp có dữ liệu đầu liên tục/$L^2$ thích hợp.
+
+\textbf{(b) Giới hạn đều với $f\in L^1$, không cần giả thiết $L^2$.}
+Với Dirichlet, $|c_n|\le2\|f\|_1/L$. Đặt $\gamma=K\pi^2/L^2$, và dùng $n^2\ge1+3(n-1)$, $n\ge1$:
+\[\sup_{x\in[0,L]}|u(x,t)|
+\le\frac{2\|f\|_1}L\sum_{n\ge1}e^{-\gamma n^2t}
+\le\frac{2\|f\|_1}L\frac{e^{-\gamma t}}{1-e^{-3\gamma t}}
+\longrightarrow0.\]
+Với Neumann, $c_0=L^{-1}\int_0^Lf$, và $|c_n|\le2\|f\|_1/L$ cho $n\ge1$. Cùng ước lượng cho
+\[\sup_x|u(x,t)-c_0|\le\frac{2\|f\|_1}L
+\frac{e^{-\gamma t}}{1-e^{-3\gamma t}}\longrightarrow0.\]
+Đây là giới hạn đều được yêu cầu. Với dữ liệu $L^1$ bất kỳ, nghiệm lấy theo nhân nhiệt và trả lại dữ liệu trong $L^1$ khi $t\downarrow0$; không buộc phải liên tục đến mặt đầu.
+
+%ID BT_4_1_3_03
+\textbf{Bước 1. Cơ sở sine.} Đề ghi $a=1$ trong khi (4.1.1) dùng $K$; lời giải đọc $a$ thay $K$, tức $K=1$. Nếu dùng một quy ước $K=a^2$, ở $a=1$ vẫn cho cùng hệ số $K=1$. $L=\pi$ cho $X_n=\sin nx$, tốc độ giảm $n^2$, $c_n=2\int_0^\pi f\sin nx/\pi$.
+\textbf{Bước 2. Câu (i).} $\cos^2x=(1+\cos2x)/2$, $\sin x\cos2x=(\sin3x-\sin x)/2$, nên
+\[\sin x\cos^2x=\frac14(\sin x+\sin3x),\qquad
+u=\frac14(e^{-t}\sin x+e^{-9t}\sin3x).\]
+Thế $t=0$ và hai đầu mút kiểm tra trực tiếp; đạo hàm mỗi mode cho đúng PDE.
+\textbf{Bước 3. Câu (ii).} Vì $f=1$ trên $(0,\pi/2]$ và $0$ trên $(\pi/2,\pi]$,
+\[c_n=\frac2\pi\int_0^{\pi/2}\sin nx\,dx
+=\frac2{\pi n}(1-\cos(n\pi/2)).\]
+Theo $n$ modulo $4$: $c_n=0$ khi $n=4j$, $4/(\pi n)$ khi $n=4j+2$, $2/(\pi n)$ khi $n$ lẻ. Do đó
+\[u=\sum_{n\ge1}\frac{2(1-\cos(n\pi/2))}{\pi n}e^{-n^2t}\sin nx.\]
+\textbf{Bước 4. Dữ liệu gián đoạn.} Với $t>0$, chuỗi trơn và biên $0$. Khi $t\downarrow0$, nghiệm tiến về $1$ trên $0<x<\pi/2$, về $0$ trên $\pi/2<x<\pi$, và về $1/2$ tại $\pi/2$. Giá trị đầu in bằng $1$ ở điểm nhảy không tạo một nghiệm liên tục tại điểm đó; nghiệm được hiểu theo nghĩa $L^p$ hoặc tại các điểm liên tục. Mọi mode đều giảm nên giới hạn lâu dài bằng $0$.
+
+%ID BT_4_1_3_04
+\textbf{Bước 1. Khai triển Neumann.} Phương trình (4.1.1) dùng $K$, nhưng bài cho $a$ mà không định nghĩa quan hệ. Giữ $K$ trong công thức tổng quát và đọc $a$ thay $K$ ở đáp án số; một quy ước $K=a^2$ sẽ cho tốc độ khác ở câu (ii). Ta có $u=c_0+\sum_{n\ge1}c_ne^{-K(n\pi/L)^2t}\cos(n\pi x/L)$, $c_0=L^{-1}\int f$, $c_n=2L^{-1}\int f\cos(n\pi x/L)$.
+\textbf{Bước 2. Câu (i).} Đọc $K=L=1$, $\sin^2(2\pi x)=(1-\cos4\pi x)/2$. Do đó
+\[u=\frac12-\frac12e^{-16\pi^2t}\cos4\pi x.\]
+Biên đạo hàm đúng vì sine bằng $0$ ở $0,1$; tại $t=0$ trả lại $f$, và $u_t=u_{xx}=8\pi^2e^{-16\pi^2t}\cos4\pi x$. Nghiệm trơn đến mặt đầu và tiến đều về $1/2$.
+\textbf{Bước 3. Câu (ii).} $L=\pi$, $f=\sin3x$. Trung bình là
+\[c_0=\frac1\pi[-\cos3x/3]_0^\pi=\frac2{3\pi}.\]
+Với $n\ne3$, tích–tổng cho
+\begin{align*}
+\int_0^\pi\sin3x\cos nx\,dx
+&=\frac12\left[\frac{1-\cos((3+n)\pi)}{3+n}
++\frac{1-\cos((3-n)\pi)}{3-n}\right]\\
+&=\frac{3(1+(-1)^n)}{9-n^2}.
+\end{align*}
+Khi $n=3$, tích phân bằng $[\sin^23x/6]_0^\pi=0$. Vậy
+\[u=\frac2{3\pi}+\sum_{\substack{n\ge2\\n\ {\rm chẵn}}}
+\frac{12}{\pi(9-n^2)}e^{-Kn^2t}\cos nx.\]
+Nếu đọc $a=2$ thay $K$, mũ là $-2n^2t$; nếu bổ sung $K=a^2$, mũ là $-4n^2t$. Các hệ số không gian và trung bình không đổi. Giữ cả hai cách đọc để không mặc nhiên sửa định nghĩa hệ số của đề.
+\textbf{Bước 4. Kiểm tra tính trơn.} Hệ số $O(n^{-2})$ cho hội tụ đều và liên tục đến mặt đầu; chuỗi đạo hàm trơn với $t>0$. $f'(0)=3$, $f'(\pi)=-3$ không bằng đạo hàm biên Neumann $0$, nên không trơn đến góc. Trong lớp thông thường của sách, trơn với $t>0$ và liên tục trên bao đóng vẫn được thỏa. Giới hạn đều bằng trung bình $2/(3\pi)$.
+
+%ID BT_4_1_3_05
+\textbf{Bước 1. Thay từng biên vào năng lượng.}
+\[I'=K\{u(L)u_x(L)-u(0)u_x(0)-\int_0^Lu_x^2dx\}.\]
+Ở (a), Neumann trái và Dirichlet phải cho hạng biên $0$. Ở (b), $u_x(0)=u(0),u(L)=0$ cho $-u(0)^2$. Ở (c), $u_x(0)=0,u_x(L)=-u(L)$ cho $-u(L)^2$. Ở (d), tổng hai đầu là $-u(0)^2-u(L)^2$. Ở (e), hai giá trị và hai đạo hàm bằng nhau nên triệt tiêu. Do đó (a)--(e) có $I'\le0$.
+
+\textbf{Bước 2. Trị riêng và trực giao cho (a)--(e).}
+Đặt $u=XT$: $X''+\lambda X=0$, $T'=-K\lambda T$. Nhân ODE với $X$ cho $\lambda\int X^2=\int(X')^2-[XX']_0^L$. Các hạng biên là các số không âm vừa tính. Với $\lambda=0$, $X$ hằng; (a)--(d) buộc hằng bằng $0$, còn (e) cho $X=1$. Vì vậy dòng đề nói (d) có trị riêng $0$ phải sửa thành (e). Đẳng thức $(\lambda_n-\lambda_m)\int X_nX_m=[X_nX_m'-X_n'X_m]_0^L$ có vế phải $0$ ở từng biên (a)--(e); suy trực giao khi hai trị riêng khác nhau.
+
+\textbf{Bước 3. Giải đầy đủ các điều kiện trên $A,B$.}
+Với $X=A\cos kx+B\sin kx$, $k>0$:
+\begin{align*}
+(a)&:\ B=0,\ \cos kL=0;\quad k_n=(n+1/2)\pi/L,\ X_n=\cos k_nx,\ n\ge0;\\
+(b)&:\ A=kB,\ X=\cos kx+\sin kx/k;\quad k\cos kL+\sin kL=0;\\
+(c)&:\ B=0,\ -k\sin kL+\cos kL=0;\quad X=\cos kx;\\
+(d)&:\ A=kB,\quad (1-k^2)\sin kL+2k\cos kL=0;\\
+(e)&:\ k_n=2n\pi/L,\quad 1,\cos k_nx,\sin k_nx.
+\end{align*}
+Ở (b),(c),(d) chỉ lấy các nghiệm $k>0$; $k=0$ sinh ra sau nhân mẫu ở (d) là nghiệm ngoại lai. Với $X=\cos kx$, $N=L/2+\sin2kL/(4k)$. Với $X=\cos kx+\sin kx/k$,
+\[N=\frac L2(1+k^{-2})+\frac{\sin2kL}{4k}(1-k^{-2})+\frac{\sin^2kL}{k^2}.\]
+Nghiệm (a)--(d) là $\sum (\int fX_n/N_n)e^{-Kk_n^2t}X_n$. Nghiệm (e) có thêm trung bình và hai hệ số $2\int f\cos/L$, $2\int f\sin/L$. Với $f\in L^1$, nhân nhiệt làm trơn dữ liệu và các mode dương suy giảm đều; (a)--(d) tiến về $0$, (e) tiến về $L^{-1}\int f$.
+
+\textbf{Bước 4. Điều kiện (f) không có tính chất năng lượng mà đề yêu cầu.}
+Ở đây $u(0)=0$, $u_x(0)=-u_x(L)$, nên hạng biên là $u(L)u_x(L)$, không xác định dấu. Phản ví dụ cụ thể: đặt $y=x/L$ và
+\[f(x)=y-3y(1-y)^{10}+y^{10}(y-1).\]
+Ta có $f(0)=0$, $f(L)=1$, $f'(0)=-2/L$, $f'(L)=2/L$, đúng biên (f). Với $p(y)=y(1-y)^{10}$, $\int_0^1(p')^2dy=10/399$, và $q(y)=y^{10}(y-1)$ có cùng chuẩn đạo hàm, $\int p'=\int q'=0$. Bất đẳng thức tam giác trong $L^2$ cho
+\[\int_0^L(f')^2dx\le\frac1L\left(1+16\frac{10}{399}\right)<\frac2L=f(L)f'(L).\]
+Vì vậy $I'(0)>0$ cho nghiệm có dữ liệu này, theo vết đạo hàm tại $0+$; không thể chứng minh năng lượng không tăng.
+
+\textbf{Bước 5. Khai triển đúng cho (f) phải có hàm liên kết.}
+$X(0)=0$ cho $X=\sin kx$, biên đạo hàm cho $\cos kL=-1$, tức $k_n=(2n+1)\pi/L$, $n\ge0$. Nhưng các sine này chỉ biểu diễn phần đối xứng quanh $L/2$. Đặt $Y_n=x\cos k_nx$; cả $X_n,Y_n$ đều thỏa (f) và $Y_n''=-k_n^2Y_n-2k_nX_n$. Tách dữ liệu
+\[d(x)=f(x)-f(L-x),\quad r(x)=f(x)-\frac xL d(x).\]
+$d$ phản đối xứng, $r$ đối xứng. Khai triển cosine lẻ và sine lẻ cho
+\[b_n=\frac2{L^2}\int_0^Ld(x)\cos k_nx\,dx,\qquad
+a_n=\frac2L\int_0^Lr(x)\sin k_nx\,dx.\]
+Khi đó $f=\sum(a_nX_n+b_nY_n)$ trong $L^2$, vì $\sum b_nY_n=xd(x)/L$. Nghiệm là
+\[u=\sum_{n\ge0}e^{-Kk_n^2t}
+\{(a_n-2Kk_nb_nt)\sin k_nx+b_nx\cos k_nx\}.\]
+Đạo hàm trực tiếp dùng đẳng thức của $Y_n''$ kiểm tra PDE, biên và dữ liệu. Với $f\in L^1$, các hệ số $a_n,b_n$ bị chặn bởi hằng nhân $\|f\|_1$; thừa số $(1+k_nt)e^{-Kk_n^2t}$ suy giảm đều, nên giới hạn vẫn bằng $0$, dù năng lượng không nhất thiết giảm ở mọi thời điểm.
+
+\textbf{Bước 6. Chọn dữ kiện cụ thể và tính cho đủ sáu biên.}
+Lấy $K=L=1$ ở tất cả các ví dụ sau. Ở (a), $k=\pi/2$, chọn $f=\cos(\pi x/2)$; $\int fX=N=1/2$, nên hệ số duy nhất bằng $1$ và $u=e^{-\pi^2t/4}\cos(\pi x/2)$.
+Ở (b), chọn nghiệm dương đầu $k=2.0287578381$ của $k\cos k+\sin k=0$, $f=\cos kx+\sin kx/k$. Vì $f=X_1$, $\int fX_1/N_1=1$ và mọi hệ số khác bằng $0$ do trực giao, nên $u=e^{-k^2t}(\cos kx+\sin kx/k)$. Ở (c), chọn $k=0.8603335890$ của $k\sin k=\cos k$, $f=\cos kx$; cùng phép chiếu cho $u=e^{-k^2t}\cos kx$. Ở (d), chọn $k=1.3065423742$ của $(1-k^2)\sin k+2k\cos k=0$, $f=\cos kx+\sin kx/k$, nên $u=e^{-k^2t}f(x)$. Các số thập phân chỉ là xấp xỉ; công thức chính xác dùng nghiệm của phương trình tương ứng.
+Ở (e), chọn $f=1+\cos2\pi x$. Các tích phân cho $c_0=\int f=1$, $c_1=2\int f\cos2\pi x=1$, các hệ số khác bằng $0$. Vậy $u=1+e^{-4\pi^2t}\cos2\pi x$.
+Ở (f), chọn $f=x\cos\pi x$. $d(x)=\cos\pi x$, $r(x)=0$, nên $b_0=2\int_0^1\cos^2\pi x\,dx=1$, $a_n=0$, các $b_n$ khác bằng $0$. Do đó $u=e^{-\pi^2t}(x\cos\pi x-2\pi t\sin\pi x)$. Đây là phép tính hệ số cụ thể với hàm liên kết. Thế từng $f$ vào cặp biên và từng $u$ vào PDE kiểm tra đúng sáu bài đã chọn.
+
+%ID VD_4_2_2_01
+\textbf{Bước 1. Đọc đúng dữ liệu.} Đề là $u_t=u_{xx}$ trên $0<x<1$, biên $u(0,t)=u(1,t)=0$ và $f=\sin^2(\pi x)$. Ký hiệu trong bản scan là $\pi$, không phải tần số nguyên $n$; không cần đặt lại miền hay giới hạn $n$.
+\textbf{Bước 2. Chọn hai nghiệm so sánh.} Đặt $v=0$, $V=e^{-\pi^2t}\sin\pi x$. Tính $V_t=-\pi^2V=V_{xx}$, $V(0,t)=V(1,t)=0$. Trên $[0,1]$, $0\le\sin\pi x\le1$, nên $0\le\sin^2\pi x\le\sin\pi x$.
+\textbf{Bước 3. Áp dụng cực đại cho hai hiệu.} $v-u=-u$ giải phương trình nhiệt, dữ liệu đầu và biên không dương, nên $-u\le0$. Tương tự $u-V$ có dữ liệu đầu $\sin\pi x(\sin\pi x-1)\le0$ và biên $0$, nên $u-V\le0$. Kết luận
+\[0\le u(x,t)\le e^{-\pi^2t}\sin\pi x,\quad 0\le x\le1,\ t\ge0.\]
+Nếu cần chứng minh cực đại yếu, xét mỗi hiệu trừ $\varepsilon e^t$; toán tử $\partial_t-\partial_{xx}$ cho giá trị âm nghiêm ngặt, loại cực đại dương, rồi cho $\varepsilon\downarrow0$.
+
+%ID VD_4_2_2_02
+\textbf{Bước 1. Cận dữ liệu và rào trên đoạn lớn.} Giả thiết $u$ bị chặn trên $\mathbb R\times[0,T]$. Đặt $M=\sup_{\mathbb R\times[0,T]}u$, $N=\sup_xu(x,0)$ và cố định $(x_0,t_0)$, $0<t_0\le T$. Với $\varepsilon>0$,
+\[w_\varepsilon=u-\varepsilon\{(x-x_0)^2+2Kt\}.\]
+Tính $(w_\varepsilon)_t-K(w_\varepsilon)_{xx}=0$, vì $2K-K\cdot2=0$.
+\textbf{Bước 2. Kiểm tra toàn bộ biên.} Trên mặt $t=0$, $w_\varepsilon\le N$. Trên $x=x_0\pm R$, $w_\varepsilon\le M-\varepsilon R^2$. Chọn $R>|x_0|+1$ đủ lớn để $M-\varepsilon R^2\le N$; áp dụng cực đại trên $(x_0-R,x_0+R)\times(0,t_0]$ được $w_\varepsilon\le N$.
+\textbf{Bước 3. Bỏ rào và chứng minh cận dưới.} Tại điểm cố định,
+\[u(x_0,t_0)\le N+2K\varepsilon t_0.\]
+Cho $\varepsilon\downarrow0$, suy $u\le N$. Áp dụng cùng lập luận cho $-u$ cho $u\ge\inf_xu(x,0)$. Do $(x_0,t_0)$ tùy ý,
+\[\inf_yu(y,0)\le u(x,t)\le\sup_yu(y,0).\]
+Giả thiết bị chặn chính là điều cho phép chọn $R$ bằng cận $M$ độc lập theo $x$; không bỏ bước này trên miền vô hạn.
+
+%ID VD_4_2_2_03
+\textbf{Bước 1. Đổi biên Neumann thành điểm trong bằng phản xạ.} Mở rộng $u$ chẵn qua $0$, rồi chẵn qua $L$, và tuần hoàn chu kỳ $2L$. $u_x(0,t)=u_x(L,t)=0$ làm đạo hàm cấp một ghép liên tục; đạo hàm cấp hai và $u_t$ ghép theo tính chẵn và PDE, nên hàm mở rộng giải phương trình nhiệt với $t>0$.
+\textbf{Bước 2. Áp dụng cực đại trên đường tròn.} Đặt $m=\min_{[0,L]}f$, $M=\max_{[0,L]}f$. Hai hằng $m,M$ đều giải PDE và có biên Neumann. Với $w=u-M$, xét $w_\varepsilon=w-\varepsilon e^t$ trên miền tuần hoàn. Vì $(\partial_t-K\partial_{xx})w_\varepsilon=-\varepsilon e^t<0$, cực đại dương không thể ở $t>0$; ở $t=0$ cũng không dương. Do đó $u\le M+\varepsilon e^t$, cho $\varepsilon\downarrow0$ suy $u\le M$. Thay $u$ bằng $-u$ suy $u\ge m$.
+\textbf{Bước 3. Kết luận.}
+\[\min_{y\in[0,L]}u(y,0)\le u(x,t)\le\max_{y\in[0,L]}u(y,0).\]
+Nếu dữ liệu không khớp đạo hàm tại góc, phản xạ vẫn dùng cho $t>0$; tính liên tục của nghiệm đến mặt đầu đủ để áp dụng cực đại.
+
+%ID BT_4_2_3_01
+\textbf{Bước 1. Phát biểu cận riêng cho từng biên.} Với thời gian $[0,T]$, đặt $m_f=\min f$, $M_f=\max f$. Ở (a),
+\[\min(m_f,\inf_{0\le s\le T}\mu(s))\le u\le
+\max(M_f,\sup_{0\le s\le T}\mu(s)).\]
+Ở (b), thêm mức $0$ do biên Robin:
+\[\min(0,m_f,\inf_s\nu(s))\le u\le\max(0,M_f,\sup_s\nu(s)).\]
+Ở (c),(d), $\min(0,m_f)\le u\le\max(0,M_f)$. Ở (e), $m_f\le u\le M_f$.
+
+\textbf{Bước 2. Kiểm tra các nghiệm trên hằng.} Gọi cận trên là $C$, $w=u-C$. Ở (a), $w_x(0)=0$, $w(L)=\mu-C\le0$. Ở (b), pháp tuyến trái là $-\partial_x$, nên $(\partial_\nu+1)w=-C\le0$ tại $0$, và $w(L)=\nu-C\le0$. Ở (c), $w_x(0)=0$, $(\partial_\nu+1)w=-C\le0$ tại $L$. Ở (d), biểu thức Robin này bằng $-C\le0$ ở cả hai đầu. Lý do chọn $C\ge0$ ở Robin nằm chính ở dấu $-C$.
+
+\textbf{Bước 3. Loại cực đại dương.} Trong miền, dùng $w-\varepsilon e^{\gamma t}$ như chứng minh cực đại yếu. Biên Dirichlet không dương. Neumann phản xạ chẵn để trở thành điểm trong, hoặc dùng Hopf; Robin ở cực đại dương không hằng có $\partial_\nu w>0$, nên $\partial_\nu w+w>0$, trái với biểu thức không dương. Trường hợp hằng dương cũng bị dữ liệu đầu và/hoặc Robin loại. Biên (e) ghép thành đường tròn vì cả giá trị và đạo hàm bằng nhau; cực đại tại đường ghép vẫn là cực đại trong. Suy $w\le0$.
+
+\textbf{Bước 4. Cận dưới.} Áp dụng cận trên cho $-u$, với dữ liệu $-f,-\mu,-\nu$, rồi đổi dấu. Điều này trả lại đúng năm cận đã phát biểu, gồm các mức $0$ cần thiết ở Robin.
+
+%ID BT_4_2_3_02
+\textbf{Bước 1. Phát biểu trên nửa trục.} Với nghiệm bị chặn trên $[0,\infty)\times[0,T]$ và $f=u(\cdot,0)$:
+\begin{align*}
+(a)&:\quad \min(\inf_{x\ge0}f,\inf_{0\le s\le T}\mu(s))
+\le u\le\max(\sup_{x\ge0}f,\sup_s\mu(s));\\
+(b)&:\quad \inf_{x\ge0}f\le u\le\sup_{x\ge0}f.
+\end{align*}
+\textbf{Bước 2. Dirichlet và vô cực.} Gọi cận trên (a) là $C$, đặt $w=u-C\le0$ trên mặt đầu và tại $x=0$. Xét $w_\varepsilon=w-\varepsilon(x^2+2Kt)$: vẫn giải PDE, không dương trên hai phần biên này. Vì $w$ bị chặn, chọn $R$ lớn làm $w_\varepsilon(R,t)\le0$ cho $0\le t\le T$. Cực đại trên $(0,R)$ cho $w_\varepsilon\le0$. Với $(x,t)$ cố định, cho $\varepsilon\downarrow0$ được $w\le0$. Áp dụng cho $-u$ được cận dưới.
+\textbf{Bước 3. Neumann.} Mở rộng chẵn $\widetilde u(x,t)=u(|x|,t)$. Biên $u_x(0,t)=0$ làm nghiệm mở rộng trơn qua $0$ với $t>0$, bị chặn trên toàn trục. Cận toàn trục bằng rào bậc hai cho $\inf f\le\widetilde u\le\sup f$, hạn chế lại $x\ge0$ là kết quả (b).
+Miền in $\mathbb R$ ở dòng PDE không khớp phần mở đầu nửa trục; chứng minh dùng miền $x>0$ và biên được nêu trong bài.
+
+%ID BT_4_2_3_03
+\textbf{Bước 1. Đặt $P=\partial_t-a\partial_{xx}-b\partial_x-c$, $a\ge0,c\le0$.}
+(a) Nếu $w$ có cực đại địa phương dương ở một điểm trong, thì $w_x=0,w_{xx}\le0,w_t=0$, nên $Pw=-aw_{xx}-cw\ge0$, trái với $Pw<0$. Nếu điểm ở mặt thời gian trên thì $w_t\ge0$ một phía vẫn cho cùng mâu thuẫn.
+
+(b) Đặt $v=u-\varepsilon e^t$. $Pv=Pu-\varepsilon(1-c)e^t<0$ và $v<0$ trên biên parabol. Nếu $v$ dương ở đâu, cực đại dương trên bao đóng phải ở trong hoặc mặt thời gian trên, trái với (a). Vì thế $u\le\varepsilon e^t$; cho $\varepsilon\downarrow0$ được $u\le0$.
+
+(c) Đặt $C=\max(0,\max_{\partial_pQ_T}u)$. Vì $P(u-C)=cC\le0$ và $u-C\le0$ trên biên, (b) cho $u\le C$. Nếu cực đại toàn miền dương, cận này buộc cực đại bằng cực đại biên. Còn trường hợp cực đại bằng $0$, cần loại khả năng mọi giá trị biên đều âm.
+Nếu $\max_{\partial_pQ_T}u=-\eta<0$, tính liên tục trên bao đóng cho một dải gần mặt đầu và hai biên không gian mà $u<-\eta/2$. Cắt bỏ các dải này để được hình trụ nhỏ hơn chứa điểm có $u=0$, với biên parabol $u\le-\eta/2$. Trên hình trụ nhỏ, $c$ có cận $|c|\le C_0$ vì liên tục trên tập compact nằm trong miền. Lấy $t_*$ là thời gian đầu của hình trụ đó và $V=-(\eta/2)e^{-C_0(t-t_*)}$. Khi đó $PV=(-C_0-c)V\ge0$, $u\le V$ trên biên. Áp dụng (b) cho $u-V$ được $u\le V<0$, mâu thuẫn điểm có $u=0$. Vậy cực đại không âm cũng đạt trên biên parabol. Đổi $u$ thành $-u$ cho phát biểu và chứng minh tương tự: cực tiểu không dương đạt trên biên.
+
+(d) Sửa $M$ thành $M=\max_{\partial_pQ_T}|u|$. Đặt $V=M+Nt\ge0$. Khi đó $PV=N-cV\ge N\ge F$. Do $P(u-V)=F-PV\le0$ và $u-V\le0$ trên biên, suy $u\le V$. Với $-u$, nguồn là $-F\le N$, suy $-u\le V$. Vậy
+\[|u(x,t)|\le M+Nt\le M+NT.\]
+Nếu giữ $M=\max_{\partial_pQ_T}u$ có dấu như bản in, kết luận sai: chọn $a=1,b=c=0,F=0,u=-1$ thì $M=-1,N=0$, không thể có $1\le-1$.
+
+%ID BT_4_2_3_04
+\textbf{(a) Tìm nghiệm dừng.} Đặt $u=p(x)$, PDE thành $-p''=1$. Tích phân hai lần: $p=-x^2/2+Ax+B$. Từ $p(0)=p(1)=0$, $B=0,A=1/2$, nên $p=x(1-x)/2$.
+\textbf{(b) Chọn và kiểm tra hai rào.} Đặt $v=p(1-e^{-8t})$. Vì $p''=-1$,
+\[v_t=8pe^{-8t},\quad v_{xx}=-(1-e^{-8t}),\quad
+v_t-v_{xx}=1+e^{-8t}(8p-1).\]
+Trên $[0,1]$, $0\le p\le1/8$, nên $8p-1\le0$, suy $Pv\le1=Pu= Pp$, với $P=\partial_t-\partial_{xx}$. Hai rào có biên $0$, và $v(x,0)=0=u(x,0)\le p(x)$.
+\textbf{Áp dụng so sánh.} $P(v-u)\le0$, dữ liệu của $v-u$ không dương, nên $v\le u$. Tương tự $P(u-p)=0$, dữ liệu đầu $-p\le0$, nên $u\le p$. Kết luận
+\[\frac{x(1-x)}2(1-e^{-8t})\le u(x,t)\le\frac{x(1-x)}2.\]
+Hai rào cùng tiến về $p$ đều, nên còn có $u\to p$ đều theo $x$.
+
+%ID BT_4_2_3_05
+\textbf{Bước 1. So dữ liệu đầu.} Trên $0\le x\le\pi$, đặt $s=\sin x\in[0,1]$. Vì $s^2\le s$, $0\le f=\sin^2x\le\sin x$.
+\textbf{Bước 2. Kiểm tra nghiệm so sánh.} $V=e^{-t}\sin x$ có $V_t=-e^{-t}\sin x=V_{xx}$, $V(0,t)=V(\pi,t)=0$, $V(x,0)=\sin x$. Hàm $0$ cũng giải PDE và biên.
+\textbf{Bước 3. Dùng nguyên lý cực đại cho hiệu.} $P(-u)=0$, biên $0$, dữ liệu đầu $-\sin^2x\le0$, nên $u\ge0$. $P(u-V)=0$, biên $0$, dữ liệu đầu $\sin x(\sin x-1)\le0$, nên $u\le V$. Vì thế
+\[0\le u(x,t)\le e^{-t}\sin x.\]
+Kết quả đúng trên mọi dải thời gian hữu hạn, nên đúng với mọi $t\ge0$; cận trên còn chứng minh suy giảm đều về $0$.
+
+%ID BT_4_2_3_06
+\textbf{Bước 1. Đúng điều kiện biên.} Bài có $u(0,t)=0$, $u_x(\pi,t)=0$, là Dirichlet–Neumann; không phải Neumann ở cả hai đầu. $f=\sin x+\frac12\sin2x=\sin x(1+\cos x)\ge0$ trên $[0,\pi]$.
+\textbf{Bước 2. Tính cực đại của $f$.}
+\[f'=\cos x+\cos2x=2\cos^2x+\cos x-1
+=(2\cos x-1)(\cos x+1).\]
+Trong $(0,\pi)$, điểm tới hạn là $\cos x=1/2$, tức $x=\pi/3$. Hai đầu có $f=0$, còn
+\[f(\pi/3)=\frac{\sqrt3}2\left(1+\frac12\right)=\frac{3\sqrt3}4.\]
+Vậy $\min f=0$, $\max f=3\sqrt3/4$.
+\textbf{Bước 3. So sánh hằng.} Hằng $0$ và $C=3\sqrt3/4$ giải PDE, có đạo hàm bằng $0$ tại $\pi$. Tại biên Dirichlet $0$, $0=u(0,t)\le C$; mặt đầu có $0\le f\le C$. Phản xạ chẵn tại $\pi$ hoặc dùng nguyên lý cực đại cho biên hỗn hợp suy
+\[0\le u(x,t)\le\frac{3\sqrt3}4.\]
+Không bảo toàn trung bình: nhiệt thoát qua đầu Dirichlet. Nếu xét thời gian dài, cơ sở sine nửa nguyên $k_n=n+1/2$ chỉ có trị riêng dương, nên nghiệm tiến về $0$, không phải $2/\pi$.
+
+%ID BT_4_2_3_07
+\textbf{Bước 1. Tìm cận dữ liệu biên.} Đặt $h(t)=te^{-t}$. $h'(t)=e^{-t}(1-t)$, nên tăng trên $[0,1]$, giảm sau $1$, $h(1)=e^{-1}$. Vì vậy $0\le h(t)\le e^{-1}$.
+\textbf{Bước 2. Kiểm tra hiệu trên biên parabol.} $P=\partial_t-\partial_{xx}$; $Pu=0$. Với $w=u-e^{-1}$, $Pw=0$, mặt đầu $w=-e^{-1}$, tại $x=0$ có $w=te^{-t}-e^{-1}\le0$, tại $x=1$ có $w=-e^{-1}$. Cực đại yếu cho $u\le e^{-1}$. Với $-u$, cả dữ liệu đầu lẫn hai biên không dương, nên $u\ge0$.
+\textbf{Bước 3. Kết luận.} Trên từng dải $[0,T]$,
+\[0\le u(x,t)\le e^{-1}.\]
+Do $T$ tùy ý, cận đúng với mọi $t>0$. Dữ liệu đầu tại $x=0$ khớp $h(0)=0$, nên không có mâu thuẫn góc về giá trị.
+
+%ID BT_4_2_3_08
+\textbf{(a) Thế trực tiếp nghiệm.} Với $u=(t+1)x(1-x)$,
+\[u_t=x(1-x),\quad u_x=(t+1)(1-2x),\quad u_{xx}=-2(t+1).\]
+Suy $u_t-u_{xx}=x(1-x)+2(t+1)$, đúng nguồn. Tại $x=0,1$, $u=0$; tại $t=0$, $u=x(1-x)$.
+\textbf{(b) Cực trị dữ liệu.} $f'=1-2x=0$ cho $x=1/2$, $f(1/2)=1/4$; hai đầu bằng $0$ và $f\ge0$. Biên cũng bằng $0$, nên $m=0$, $M=1/4$.
+\textbf{(c) Nhiệt độ vượt $M$.} Tại $x=1/2$,
+\[u(1/2,t)=\frac{t+1}4>\frac14=M\quad\text{với mọi }t>0.\]
+Ví dụ $t=1$ cho $u=1/2$. Nguyên lý cực đại của phương trình thuần nhất không áp dụng trực tiếp vì $Pu=2(t+1)+x(1-x)>0$; nguồn dương làm nhiệt tăng.
+
+%ID VD_4_3_2_01
+\textbf{Bước 1. Nhận diện hàm Green từ chuỗi Neumann.}
+Với $u_t=Ku_{xx}$, $u_x(0,t)=u_x(L,t)=0$, hệ riêng là $X_0=1$, $\lambda_0=0$, $N_0=L$ và $X_n=\cos(n\pi x/L)$, $\lambda_n=(n\pi/L)^2$, $N_n=L/2$. Chiếu dữ liệu rồi đổi tổng–tích phân với $t>0$:
+\begin{align*}
+u(x,t)&=\frac1L\int_0^Lf(y)dy+
+\sum_{n\ge1}\frac2L e^{-K(n\pi/L)^2t}\cos(n\pi x/L)\int_0^Lf(y)\cos(n\pi y/L)dy\\
+&=\int_0^LG_N(x,y,t)f(y)dy,\\
+G_N(x,y,t)&=\frac1L+\frac2L\sum_{n\ge1}e^{-K(n\pi/L)^2t}
+\cos(n\pi x/L)\cos(n\pi y/L).
+\end{align*}
+\textbf{Bước 2. Kiểm tra đạo hàm, biên và đối xứng.}
+Mỗi đạo hàm cấp hữu hạn bị chặn bởi hằng nhân $n^m e^{-K(n\pi/L)^2\varepsilon}$ khi $t\ge\varepsilon>0$; tổng này hội tụ. Do đó được đạo hàm từng số hạng. Đạo hàm theo $t$ nhân $-K(n\pi/L)^2$, đạo hàm theo $x$ hai lần nhân $-(n\pi/L)^2$, nên $G_{Nt}=KG_{Nxx}=KG_{Nyy}$. Tích hai cosine đối xứng theo $x,y$ và tuần hoàn $2L$ theo từng biến; đạo hàm theo $x$ chứa sine, bằng $0$ tại $0,L$.
+\textbf{Bước 3. Tính khối lượng và chứng minh dương.} Vì $\int_0^L\cos(n\pi y/L)dy=0$,
+\[\int_0^LG_N(x,y,t)dy=1.\]
+Đặt $g_K(z,t)=(4\pi Kt)^{-1/2}e^{-z^2/(4Kt)}$. Phản xạ chẵn và tuần hoàn cho
+\[G_N(x,y,t)=\sum_{j\in\mathbb Z}\{g_K(x-y+2jL,t)+g_K(x+y+2jL,t)\}.\]
+Có thể kiểm tra đẳng thức bằng hệ số Fourier: nhân tuần hoàn $\sum_jg_K(z+2jL,t)$ có hệ số $(2L)^{-1}e^{-K(n\pi/L)^2t}$; cộng hai ảnh và dùng $\cos(a-b)+\cos(a+b)=2\cos a\cos b$ trả lại chuỗi trên. Mỗi Gauss dương nên $G_N>0$.
+\textbf{Bước 4. Dữ liệu đầu, nửa nhóm và giới hạn.} Với $f$ liên tục, xấp xỉ đơn vị của nhân nhiệt trên hàm mở rộng chẵn cho $u\to f$ đều. Trực giao cosine cho $\int_0^LG_N(x,z,s)G_N(z,y,t)dz=G_N(x,y,s+t)$. Vì $G_N>0$ và tổng trọng số $1$, $\min f\le u\le\max f$; tính đối xứng cho $\int_0^Lu(x,t)dx=\int f$. Các mode dương giảm theo mũ, nên $u\to L^{-1}\int f$ đều. Không đòi $\int G_N$ bằng $1$ bằng một phép tích phân trên toàn trục: tích phân chuẩn hóa ở đây là trên một đoạn $[0,L]$.
+
+%ID BT_4_3_3_01
+\textbf{Bước 1. Nhân Dirichlet và hội tụ.}
+\[G(x,y,t)=\frac2L\sum_{n\ge1}e^{-K(n\pi/L)^2t}
+\sin(n\pi x/L)\sin(n\pi y/L).\]
+Với $t\ge\varepsilon>0$, chuỗi và các đạo hàm hội tụ đều. Với dữ liệu $f$, $u=\int Gf$ giải PDE, biên $0$ và trả lại $f$ tại các điểm liên tục.
+
+\textbf{(a) Dương yếu rồi dương nghiêm ngặt.}
+Nếu $f\ge0$, cực đại cho $u\ge0$. Nếu $f\not\equiv0$, nguyên lý cực đại mạnh cho $u(x,t)>0$ khi $0<x<L,t>0$. Để suy $G\ge0$, nếu $G(x_0,y_0,t_0)<0$, tính liên tục theo $y$ cho một khoảng mà $G<0$; chọn $f\ge0$, không bằng $0$, hỗ trợ trong khoảng này, sẽ có $\int G(x_0,y,t_0)f(y)dy<0$, mâu thuẫn. Để chứng minh $G>0$ tại mọi điểm, chú ý
+\[G(y,y,s)=\frac2L\sum_{n\ge1}e^{-K(n\pi/L)^2s}\sin^2(n\pi y/L)>0\quad(0<y<L).\]
+Với $s=t/2$, hàm $G(\cdot,y,s)\ge0$ và không bằng không. Nguyên lý mạnh cho nghiệm tiến thêm $s$; tính nửa nhóm suy $G(x,y,t)>0$.
+
+\textbf{(b) Cận nhỏ hơn $1$ và khối lượng.}
+Với $f\le1$, hàm $1-u$ giải PDE, dữ liệu đầu không âm và biên bằng $1$, nên $1-u>0$ trong miền, tức $\int Gf<1$. Để chuyển từ $f$ vanishing ở hai đầu sang dữ liệu $1$, chọn $f_j(y)=\min(1,jy,j(L-y))$: $0\le f_j\uparrow1$ trong miền, $f_j(0)=f_j(L)=0$. Vì $G\ge0$, hội tụ đơn điệu cho
+\[m(x,t)=\int_0^LG(x,y,t)dy=\lim_j\int Gf_j\le1.\]
+Hàm $m$ là nghiệm với dữ liệu đầu $1$ trong miền và biên $0$ cho $t>0$. Nguyên lý mạnh cho $m>0$ và $1-m>0$ trong miền; vì thế $0<m<1$, $m(0,t)=m(L,t)=0$. Tính liên tục trên đoạn với $t>0$ cho $H(t)=\max_xm(x,t)$ thỏa $0<H(t)<1$.
+
+\textbf{(c) Tính giảm nghiêm ngặt và giới hạn đầu.}
+Trực giao sine cho đẳng thức nửa nhóm; tích phân theo $y$ rồi dùng $m(z,t)\le H(t)$:
+\[m(x,t+s)=\int_0^LG(x,z,s)m(z,t)dz\le H(t)m(x,s).\]
+Lấy maximum theo $x$: $H(t+s)\le H(t)H(s)<H(t)$ với mọi $s,t>0$, nên $H$ giảm chặt. Giữ $x_0=L/2$: dữ liệu $1$ liên tục gần $x_0$ cho $m(x_0,t)\to1$ khi $t\downarrow0$. Vì $m(x_0,t)\le H(t)\le1$, định lý kẹp cho $\lim_{t\downarrow0}H(t)=1$. Không yêu cầu hội tụ đều của $m$ đến $1$ ở hai đầu, vì $m$ luôn bằng $0$ tại đó.
+
+%ID BT_4_3_3_02
+\textbf{Bước 1. Tách biến và giải từng điều kiện biên.}
+Đặt $X=A\cos kx+B\sin kx$, $-X''=k^2X$.
+(a) $X'(0)=0$ cho $B=0$, $X(L)=0$ cho $\cos kL=0$. Vậy $k_n=(n+1/2)\pi/L$, $X_n=\cos k_nx$, $N_n=L/2$, $n\ge0$:
+\[G_a=\frac2L\sum_{n\ge0}e^{-Kk_n^2t}\cos k_nx\cos k_ny.\]
+(b) $X(0)=X'(0)$ cho $A=kB$, chọn $X=\cos kx+\sin kx/k$. Biên $X(L)=0$ cho $k\cos kL+\sin kL=0$.
+(c) $X'(0)=0$ cho $X=\cos kx$, $X(L)+X'(L)=0$ cho $\cos kL-k\sin kL=0$.
+(d) $X'(0)=X(0)$ cho $X=\cos kx+\sin kx/k$, và $X(L)+X'(L)=0$ cho $(1-k^2)\sin kL+2k\cos kL=0$.
+
+\textbf{Bước 2. Chuẩn hóa các biên Robin đến công thức rõ.}
+Ở (b),(d), dùng $\cos^2kx=(1+\cos2kx)/2$, $\sin^2kx=(1-\cos2kx)/2$ và $2\sin kx\cos kx=\sin2kx$:
+\[N(k)=\int_0^LX^2dx
+=\frac L2(1+k^{-2})+\frac{\sin2kL}{4k}(1-k^{-2})+\frac{\sin^2kL}{k^2}.\]
+Ở (c), $N(k)=L/2+\sin2kL/(4k)$. Vì vậy trong mỗi trường hợp (b),(c),(d),
+\[G_j(x,y,t)=\sum_{k_n>0}\frac{X_n(x)X_n(y)}{N(k_n)}e^{-Kk_n^2t},\quad j=b,c,d,\]
+với $k_n,X_n$ vừa xác định. Đây là các chuẩn đã tính, không bỏ lại $\int X_n^2$ chưa thực hiện. Trị riêng $0$ không có: $X=A+Bx$ thay vào từng cặp biên buộc $A=B=0$. Bỏ nghiệm $k=0$ ngoại lai của phương trình ở (d).
+
+\textbf{Bước 3. Biên tuần hoàn (e).}
+Các mode $1,\cos(2n\pi x/L),\sin(2n\pi x/L)$ có chuẩn $L,L/2,L/2$. Cộng hai tích bằng $\cos(a-b)$:
+\[G_e=\frac1L+\frac2L\sum_{n\ge1}e^{-K(2n\pi/L)^2t}\cos\frac{2n\pi(x-y)}L.\]
+Biểu diễn ảnh theo một chu kỳ là $G_e=\sum_{j\in\mathbb Z}g_K(x-y+jL,t)$; mỗi hạng dương và $\int_0^LG_e\,dy=\int_{\mathbb R}g_K\,dy=1$.
+
+\textbf{Bước 4. Chứng minh các tính chất cho từng nhân.}
+Trên $t\ge\varepsilon$, các hệ có $k_n$ tăng tuyến tính và chuẩn không suy biến, nên chuỗi đạo hàm hội tụ đều. Từ $X_n''=-k_n^2X_n$ suy $G_t=KG_{xx}=KG_{yy}$; từng $X_n$ cho đúng cặp biên (a)--(e); tích $X_n(x)X_n(y)$ cho đối xứng. Định lý khai triển Sturm–Liouville tự liên hợp ở (a)--(d), hoặc Fourier tuần hoàn ở (e), cho $\int G_jf\to f$ trong $L^2$ và tại điểm liên tục thích hợp. Trực giao cho tính nửa nhóm.
+
+Nguyên lý cực đại ở từng biên cho $\int G_jf\ge0$ nếu $f\ge0$, suy $G_j\ge0$ bằng dữ liệu tập trung. Cùng lập luận nửa nhóm và nguyên lý mạnh cho $G_j>0$ trong miền. $m_j=\int G_jdy$ có dữ liệu đầu $1$: ở (a)--(d), biên Dirichlet hoặc Robin hấp thụ làm $0<m_j<1$ trong miền, còn (e) giữ $m_e=1$. Tất cả mode ở (a)--(d) dương, nên $G_j\to0$; ở (e), $G_e\to1/L$. Do đó nghiệm lần lượt tiến về $0$ hoặc trung bình dữ liệu. Các kết luận về dương, khối lượng và giới hạn được chứng minh bằng đúng biên của từng trường hợp.
+
+%ID VD_4_4_2_01
+\textbf{Bước 1. Công thức mode có nguồn.}
+Với Dirichlet thuần nhất trên $(0,\pi)$, đặt $u=\sum T_n\sin nx$. Chiếu PDE cho $T_n'+n^2T_n=F_n$, $T_n(0)=f_n$. Nhân với $e^{n^2t}$ rồi tích phân:
+\[T_n=f_ne^{-n^2t}+\int_0^te^{-n^2(t-s)}F_n(s)ds.\]
+\textbf{Bước 2. Ví dụ 1(i), $F=1,f=0$.}
+\[F_n=\frac2\pi[-\cos ny/n]_0^\pi=\frac{2(1-(-1)^n)}{\pi n}.\]
+Vì $\int_0^te^{-n^2(t-s)}ds=(1-e^{-n^2t})/n^2$,
+\[u=\sum_{n\ge1}\frac{2(1-(-1)^n)}{\pi n^3}(1-e^{-n^2t})\sin nx.\]
+Trạng thái dừng giải $P''=-1$, $P(0)=P(\pi)=0$, nên $P=x(\pi-x)/2$. Hệ số sine của $P$ chính là $F_n/n^2$; do đó $u\to P$, không tiến về hằng $1$. Đồ thị trong sách cần được đối chiếu với nghiệm này.
+
+\textbf{Bước 3. Ví dụ 1(ii), biên $T_1,T_2$, nguồn và dữ liệu đầu bằng không.}
+Đặt $b=T_1+(T_2-T_1)x/\pi$ và $w=u-b$. $b_t=b_{xx}=0$, nên $w_t=w_{xx}$, biên $0$, dữ liệu đầu $-b$. Tích phân từng phần:
+\[\int_0^\pi b\sin nx\,dx
+=\left[-\frac{b\cos nx}n\right]_0^\pi+\frac{b'}n\int_0^\pi\cos nx\,dx
+=\frac{T_1-(-1)^nT_2}n.\]
+Vì vậy
+\[u=b-\sum_{n\ge1}\frac{2(T_1-(-1)^nT_2)}{\pi n}e^{-n^2t}\sin nx.\]
+Biên được bảo đảm bởi $b$, mặt đầu trong miền bằng $0$ theo khai triển sine của $b$, và $u\to b$ đều lúc thời gian dài. Nếu $T_1$ hoặc $T_2$ khác $0$, không có liên tục tại góc tương ứng với dữ liệu đầu $0$.
+
+\textbf{Bước 4. Ví dụ 2 nằm tiếp trong cùng phần scan: Neumann có nguồn.}
+Với $u_x(0)=\mu,u_x(L)=\nu$, chọn $b=\mu x+(\nu-\mu)x^2/(2L)$. Khi đó $w=u-b$ có biên Neumann $0$, nguồn $Q=F+K(\nu-\mu)/L-b_t$, dữ liệu $f-b_0$. Nhân Green Neumann cho $w=\int G_N(f-b_0)+\int_0^t\int G_NQ$. Cũng có công thức trực tiếp
+\[u=\int_0^LG_N(x,y,t)f(y)dy+
+\int_0^t\!\int_0^LG_N(x,y,t-s)F(y,s)dy\,ds+
+K\int_0^t\{G_N(x,L,t-s)\nu(s)-G_N(x,0,t-s)\mu(s)\}ds.\]
+Dấu hai đầu được suy từ $K[G_Nu_y-(G_N)_yu]_0^L$.
+Với $K=2,L=1,\mu=\nu=f=0,F=e^{-t}\cos^2\pi x$, dùng $\cos^2\pi x=(1+\cos2\pi x)/2$. Chỉ có mode $0,2$:
+\[T_0'=\tfrac12e^{-t},\quad T_2'+8\pi^2T_2=\tfrac12e^{-t},\quad T_0(0)=T_2(0)=0.\]
+Tích phân cho
+\[u=\frac{1-e^{-t}}2+\frac{e^{-t}-e^{-8\pi^2t}}{2(8\pi^2-1)}\cos2\pi x.\]
+Đúng biên, nguồn, mặt đầu; giới hạn bằng $1/2$. Hai ví dụ có đánh số 1 và 2 được giữ chung ở đây vì cùng nằm trong ảnh đề của mục này.
+
+%ID BT_4_4_3_01
+\textbf{Bước 1. Khử biên Dirichlet và dùng Duhamel.}
+Đặt $b=\mu+(\nu-\mu)x/L$, $w=u-b$. Khi đó $w_t=Kw_{xx}+F-b_t$, biên $0$, mặt đầu $f-b_0$. Với $k_n=n\pi/L$ và hệ số sine chuẩn $q_n=(2/L)\int q\sin k_nx$,
+\[u=b+\sum_{n\ge1}\left[(f-b_0)_ne^{-Kk_n^2t}
++\int_0^te^{-Kk_n^2(t-s)}(F-b_t)_n(s)ds\right]\sin k_nx.\]
+
+\textbf{Bước 2. Câu (i).} $K=1,L=2,b=1+x$, $q=f-b=x^2-2x-2$, $k=n\pi/2$. Tích phân hai lần cho
+\begin{align*}
+d_n=\int_0^2q\sin kx\,dx
+&=\left[-q\cos kx/k\right]_0^2-\frac1{k^2}\int_0^2q''\sin kx\,dx\\
+&=\frac{2((-1)^n-1)}k-\frac{2(1-(-1)^n)}{k^3}
+=-2(1-(-1)^n)(k^{-1}+k^{-3}).
+\end{align*}
+Nguồn bằng $0$, nên
+\[u=1+x-\sum_{n\ge1}2(1-(-1)^n)(k_n^{-1}+k_n^{-3})e^{-k_n^2t}\sin k_nx.\]
+Thời gian dài các mode mất đi đều: $u\to1+x$. $f(0)=-1\ne1$, $f(2)=1\ne3$, nên không liên tục tại hai góc; chuỗi trả lại $f$ trong miền và biên được giữ bởi $b$ khi $t>0$.
+
+\textbf{Bước 3. Câu (ii).} $b=0,f=2x-x^2,F=1-|x-1|$, $k=n\pi/2$. Vì $f(0)=f(2)=0,f''=-2$,
+\[f_n=-\frac1{k^2}\int_0^2f''\sin kx\,dx=\frac{2(1-(-1)^n)}{k^3}.\]
+Tách nguồn tại $1$, dùng nguyên hàm của $x\sin kx$:
+\begin{align*}
+F_n&=\int_0^1x\sin kx\,dx+\int_1^2(2-x)\sin kx\,dx\\
+&=\left[-\frac{x\cos kx}k+\frac{\sin kx}{k^2}\right]_0^1
++\left[-\frac{(2-x)\cos kx}k-\frac{\sin kx}{k^2}\right]_1^2
+=\frac{2\sin k}{k^2}.
+\end{align*}
+Do nguồn hằng theo thời gian,
+\[u=\sum_{n\ge1}\left[\frac{2(1-(-1)^n)}{k_n^3}e^{-k_n^2t}
++\frac{2\sin k_n}{k_n^4}(1-e^{-k_n^2t})\right]\sin k_nx.\]
+Trạng thái dừng giải $-P''=F$, biên $0$. Đối xứng quanh $1$ cho
+\[P(x)=\begin{cases}x/2-x^3/6,&0\le x\le1,\\(2-x)/2-(2-x)^3/6,&1\le x\le2.\end{cases}\]
+Hai vết $P,P'$ tại $1$ bằng nhau; $P''=-F$, $P(0)=P(2)=0$. Các hệ số dừng bằng $F_n/k_n^2$, nên $u\to P$ đều.
+
+%ID BT_4_4_3_02
+\textbf{Bước 1. Công thức Neumann có nguồn và biên không thuần nhất.}
+Chọn $b=\mu x+(\nu-\mu)x^2/(2L)$, $w=u-b$, $Q=F+K(\nu-\mu)/L-b_t$, $q=f-b_0$. Đặt $q_0=L^{-1}\int q$, $q_n=(2/L)\int q\cos(n\pi x/L)$, tương tự $Q_n$. Khi đó
+\[u=b+q_0+\int_0^tQ_0(s)ds+
+\sum_{n\ge1}\left[q_ne^{-Kk_n^2t}+
+\int_0^te^{-Kk_n^2(t-s)}Q_n(s)ds\right]\cos k_nx.\]
+Mode $0$ không được bỏ.
+
+\textbf{Bước 2. Câu (i), $K=1,L=\pi,F=\cos x,f=\cos x+\cos2x$, biên $0$.}
+Trực giao cosine cho $f_1=f_2=1$, $F_1=1$, các hệ số khác bằng $0$. Hai ODE là $T_1'+T_1=1,T_1(0)=1$ và $T_2'+4T_2=0,T_2(0)=1$. Suy $T_1=1,T_2=e^{-4t}$:
+\[u=\cos x+e^{-4t}\cos2x,\qquad u\to\cos x.\]
+Kiểm tra $u_t=-4e^{-4t}\cos2x=u_{xx}+\cos x$, $u_x(0)=u_x(\pi)=0$, mặt đầu đúng.
+Nếu thay đạo hàm trái bằng $1$, phải đọc đầu phải là $\pi$ theo miền; dòng $2\pi$ trong đề không thuộc đoạn. Khi đó
+\[\frac d{dt}\int_0^\pi u\,dx=[u_x]_0^\pi+\int_0^\pi\cos x\,dx=-1.\]
+Tổng nhiệt giảm tuyến tính, không có giới hạn dừng hữu hạn. Tương đương, bài dừng $P''+\cos x=0$ buộc $P'(\pi)-P'(0)=0$, trái với $0-1=-1$.
+
+\textbf{Bước 3. Câu (ii), $\mu=\nu=A,F=0$.}
+Đặt $b=Ax$. $b_t=b_{xx}=0$, nên $w=u-Ax$ giải Neumann thuần nhất với $q=f-Ax$. Giới hạn đều của $w$ là $q_0=L^{-1}\int_0^L(f(y)-Ay)dy$. Do đó
+\[v(x)=Ax+\frac1L\int_0^Lf(y)dy-\frac{AL}2.\]
+Tính $v''=0$, $v'(0)=v'(L)=A$, đúng bài dừng. Hằng được xác định bởi bảo toàn $\int u=\int f$; các nghiệm dừng khác $Ax+C$ có tổng nhiệt khác và không phải giới hạn của cùng dữ liệu.
+
+%ID BT_4_4_3_03
+\textbf{Bước 1. Biên Neumann–Dirichlet và Green.}
+Chọn $b=\nu+\mu(x-L)$, có $b_x(0)=\mu,b(L)=\nu$, $b_{xx}=0$. Khi $w=u-b$, nguồn $Q=F-b_t$, dữ liệu $q=f-b_0$, cơ sở $X_n=\cos k_nx$, $k_n=(n+1/2)\pi/L$, $N_n=L/2$. Nhân $G=\sum X_n(x)X_n(y)e^{-Kk_n^2t}/N_n$ cho
+\[u=b+\int_0^LGq+\int_0^t\!\int_0^LG(x,y,t-s)Q(y,s)dy\,ds.\]
+Công thức trực tiếp, suy bằng $K[Gu_y-G_yu]_0^L$, có thêm các biên $-K\int_0^t\{G(x,0,t-s)\mu(s)+G_y(x,L,t-s)\nu(s)\}ds$ vào phần dữ liệu đầu và nguồn của $u$.
+
+\textbf{Bước 2. Tính hệ số câu cụ thể.}
+$K=2,L=1,\mu=\nu=f=0,F=e^{-t}\cos^2\pi x$, nên $b=0$. Với $k=(n+1/2)\pi$, dùng tích–tổng:
+\begin{align*}
+C_n=2\int_0^1\cos^2\pi y\cos ky\,dy
+&=\frac{\sin k}k+\frac12\left(\frac{\sin(k+2\pi)}{k+2\pi}
++\frac{\sin(k-2\pi)}{k-2\pi}\right)\\
+&=\frac{2\sin k(k^2-2\pi^2)}{k(k^2-4\pi^2)}
+=\frac{2(-1)^n(k^2-2\pi^2)}{k(k^2-4\pi^2)}.
+\end{align*}
+\textbf{Bước 3. Thực hiện tích phân thời gian.}
+$T_n'+2k_n^2T_n=C_ne^{-t},T_n(0)=0$, nên
+\[T_n=C_ne^{-2k_n^2t}\int_0^te^{(2k_n^2-1)s}ds
+=C_n\frac{e^{-t}-e^{-2k_n^2t}}{2k_n^2-1}.\]
+Vậy $u=\sum_{n\ge0}T_n\cos k_nx$. Mỗi cosine có $X_n'(0)=0,X_n(1)=0$; ODE chứng minh đúng nguồn và $T_n(0)=0$ trả lại mặt đầu. Hai số mũ đều âm, nên $u\to0$ đều.
+
+%ID BT_4_4_3_04
+\textbf{Bước 1. Khử Robin trái–Dirichlet phải.}
+Với $b=a+dx$, $b(0)-b_x(0)=a-d=\mu$, $b(L)=a+dL=\nu$, nên $d=(\nu-\mu)/(L+1)$, $a=\mu+d$. $w=u-b$ có nguồn $Q=F-b_t$, dữ liệu $q=f-b_0$.
+$X=\cos kx+\sin kx/k$ thỏa $X(0)-X'(0)=0$; $X(L)=0$ cho $k\cos kL+\sin kL=0$. Chuẩn
+\[N(k)=\frac L2(1+k^{-2})+\frac{\sin2kL}{4k}(1-k^{-2})+\frac{\sin^2kL}{k^2}.\]
+Nhân Green $G=\sum XXe^{-Kk^2t}/N$ cho $u=b+\int Gq+\int_0^t\int GQ$. Công thức trực tiếp cho $u$ có hạng biên $K\int_0^t[G(x,0,t-s)\mu(s)-G_y(x,L,t-s)\nu(s)]ds$, vì $G_y(0)=G(0),G(L)=0$.
+
+\textbf{Bước 2. Tính hệ số cụ thể $K=2,L=1$, các biên và mặt đầu bằng $0$.}
+Đặt
+\[A(k)=\int_0^1\cos^2\pi y\cos ky\,dy
+=\frac{\sin k(k^2-2\pi^2)}{k(k^2-4\pi^2)},\quad
+B(k)=\int_0^1\cos^2\pi y\sin ky\,dy
+=\frac{(1-\cos k)(k^2-2\pi^2)}{k(k^2-4\pi^2)}.\]
+Các đẳng thức có được bằng $\cos^2\pi y=(1+\cos2\pi y)/2$ và tích–tổng, rồi tích phân $\cos ry,\sin ry$ trên $0,1$. Các nghiệm riêng không bằng $0,2\pi$, nên các mẫu ở đây không bằng không. Hệ số nguồn là
+\[C_n=\frac{A(k_n)+B(k_n)/k_n}{N(k_n)},\qquad k_n\cos k_n+\sin k_n=0.\]
+\textbf{Bước 3. Giải ODE và ghép.}
+\[u=\sum_{n\ge1}\frac{A(k_n)+B(k_n)/k_n}{N(k_n)}
+\frac{e^{-t}-e^{-2k_n^2t}}{2k_n^2-1}
+\left(\cos k_nx+\frac{\sin k_nx}{k_n}\right).\]
+Thương thời gian xuất phát từ $e^{-2k_n^2t}\int_0^te^{(2k_n^2-1)s}ds$; nếu trùng tốc độ thì dùng $te^{-t}$. Mỗi mode thỏa hai biên; $T_n'+2k_n^2T_n=C_ne^{-t}$ cho đúng nguồn, $T_n(0)=0$ cho dữ liệu đầu. Tất cả tốc độ giảm dương, nên giới hạn bằng $0$.
+
+%ID BT_4_4_3_05
+\textbf{Bước 1. Khử Neumann trái–Robin phải.}
+Lấy $b=\nu-\mu(L+1)+\mu x$. Khi đó $b_x(0)=\mu$, $b(L)+b_x(L)=\nu$, $b_{xx}=0$; $w=u-b$ có nguồn $Q=F-b_t$, mặt đầu $q=f-b_0$. $X'(0)=0$ cho $X=\cos kx$, biên phải cho $\cos kL-k\sin kL=0$, chuẩn $N(k)=L/2+\sin2kL/(4k)$. Đặt $G=\sum X(x)X(y)e^{-Kk^2t}/N$. Công thức Green là $u=b+\int Gq+\int_0^t\int GQ$; nếu dùng dữ liệu gốc, hạng biên là $K\int_0^t[G(x,L,t-s)\nu(s)-G(x,0,t-s)\mu(s)]ds$.
+
+\textbf{Bước 2. Tính nguồn cụ thể.}
+$K=2,L=1,\mu=\nu=f=0$. Đặt $k_n>0$ là nghiệm $k\sin k=\cos k$. Từ tích–tổng,
+\begin{align*}
+A(k)&=\int_0^1\cos^2\pi y\cos ky\,dy\\
+&=\frac{\sin k}{2k}+\frac14\left(\frac{\sin(k+2\pi)}{k+2\pi}+\frac{\sin(k-2\pi)}{k-2\pi}\right)
+=\frac{\sin k(k^2-2\pi^2)}{k(k^2-4\pi^2)}.
+\end{align*}
+Vậy $C_n=A(k_n)/N(k_n)$, $N(k_n)=1/2+\sin2k_n/(4k_n)$.
+\textbf{Bước 3. Tích phân thời gian và kiểm tra.}
+\[u=\sum_{n\ge1}\frac{A(k_n)}{N(k_n)}
+\frac{e^{-t}-e^{-2k_n^2t}}{2k_n^2-1}\cos k_nx.\]
+Thế $T_n$ vào $T_n'+2k_n^2T_n=C_ne^{-t}$ trả lại nguồn; $T_n(0)=0$. $X_n'(0)=0$ và $X_n(1)+X_n'(1)=0$ trả lại hai biên. Nếu một mẫu thời gian bằng $0$, biểu thức được hiểu bằng $te^{-t}$, không bỏ mode đó. Vì các trị riêng đều dương, nghiệm tiến đều về $0$.
+
+%ID BT_4_4_3_06
+\textbf{Bước 1. Giải hệ nâng hai biên Robin.}
+Với $b=a+dx$, $a-d=\mu$, $a+dL+d=\nu$. Trừ hai phương trình được $d=(\nu-\mu)/(L+2)$, $a=\mu+d$. Đặt $w=u-b$, $Q=F-b_t$, $q=f-b_0$. Hàm riêng là $X=\cos kx+\sin kx/k$; biên trái đúng sẵn, biên phải cho
+\[(1-k^2)\sin kL+2k\cos kL=0.\]
+Lấy $k>0$. Ở $k=0$, $X=A+Bx$ cho $A=B$ và $A+B(L+1)=0$, suy $A=B=0$, nên không có trị riêng $0$.
+\textbf{Bước 2. Chuẩn và Green.}
+\[N(k)=\frac L2(1+k^{-2})+\frac{\sin2kL}{4k}(1-k^{-2})+\frac{\sin^2kL}{k^2},\quad
+G=\sum\frac{X_n(x)X_n(y)}{N(k_n)}e^{-Kk_n^2t}.\]
+Vậy $u=b+\int Gq+\int_0^t\int GQ$. Công thức trên dữ liệu gốc có hai hạng biên cùng dấu dương:
+\[K\int_0^t\{G(x,0,t-s)\mu(s)+G(x,L,t-s)\nu(s)\}ds.\]
+Thật vậy $G_y(0)=G(0)$ và $G_y(L)=-G(L)$ trong $K[Gu_y-G_yu]_0^L$.
+\textbf{Bước 3. Tính các tích phân của câu cụ thể $K=2,L=1$, dữ liệu đầu và biên $0$.}
+Tích–tổng trên $[0,1]$ cho
+\[A(k)=\frac{\sin k(k^2-2\pi^2)}{k(k^2-4\pi^2)},\qquad
+B(k)=\frac{(1-\cos k)(k^2-2\pi^2)}{k(k^2-4\pi^2)}.\]
+Chúng lần lượt là tích phân của $\cos^2\pi y$ nhân với $\cos ky$ và $\sin ky$. Do đó $C_n=(A(k_n)+B(k_n)/k_n)/N(k_n)$, không còn tích phân không gian chưa tính.
+\textbf{Bước 4. Mode nguồn.}
+\[T_n=C_ne^{-2k_n^2t}\int_0^te^{(2k_n^2-1)s}ds
+=C_n\frac{e^{-t}-e^{-2k_n^2t}}{2k_n^2-1},\qquad
+u=\sum_{n\ge1}T_nX_n.\]
+Thương bằng $te^{-t}$ khi $2k_n^2=1$. ODE và từng hàm riêng kiểm tra đầy đủ PDE, biên, mặt đầu; các mode giảm cho giới hạn $0$.
+
+%ID BT_4_4_3_07
+\textbf{Bước 1. Biên Dirichlet–Neumann và công thức Green.}
+Lấy $b=\mu+x\nu$, $w=u-b$, $Q=F-b_t$, $q=f-b_0$. Biên thuần nhất có $X_n=\sin k_nx$, $k_n=(n+1/2)\pi/L$, $N_n=L/2$. Nhân $G=\sum XXe^{-Kk^2t}/N$ cho $u=b+\int Gq+\int_0^t\int GQ$. Công thức trực tiếp có hạng biên
+\[K\int_0^t\{G_y(x,0,t-s)\mu(s)+G(x,L,t-s)\nu(s)\}ds,\]
+do $G(0)=0,G_y(L)=0$. Dòng tham chiếu (4.4.34) trong đề phải đọc theo biên Dirichlet–Neumann (4.4.33) được nêu ngay trước.
+
+\textbf{Bước 2. Dữ kiện cụ thể.}
+$K=L=1,\mu=1-e^{-t},\nu=e^{-t}-1$, $f=F=0$. Khi đó $b=(1-x)(1-e^{-t})$, $b_t=(1-x)e^{-t}$, $q=0$, $Q=-(1-x)e^{-t}$.
+Với $k=(n+1/2)\pi$, $\cos k=0,\sin k=(-1)^n$,
+\begin{align*}
+c_n&=2\int_0^1(1-y)\sin ky\,dy\\
+&=2\left[\frac{-(1-y)\cos ky}k-\frac{\sin ky}{k^2}\right]_0^1
+=2\left(\frac1k-\frac{(-1)^n}{k^2}\right).
+\end{align*}
+\textbf{Bước 3. Tích phân và ghép.}
+$T_n'+k_n^2T_n=-c_ne^{-t}$, $T_n(0)=0$, nên
+\[u=(1-x)(1-e^{-t})
+-\sum_{n\ge0}c_n\frac{e^{-t}-e^{-k_n^2t}}{k_n^2-1}\sin k_nx.\]
+$k_n$ nửa nguyên nhân $\pi$, không bằng $1$. Thế biên: tại $0$, chuỗi bằng $0$, $u=1-e^{-t}$; đạo hàm tại $1$ của chuỗi bằng $0$, $u_x=e^{-t}-1$. Tại $t=0$ mọi hạng bằng $0$. Nguồn phụ $-b_t$ bị triệt tiêu khi cộng lại $b_t$, cho PDE gốc không nguồn.
+\textbf{Bước 4. Giới hạn.} $b\to1-x$ đều. Các hệ số quá độ $O(k_n^{-3})$ và hai mũ giảm cho chuỗi tiến đều về $0$, nên $\lim_{t\to\infty}u=1-x$.
+
+%ID BT_4_4_3_08
+\textbf{Bước 1. Cơ sở cosine và mode trung bình.}
+Đặt $f_0=\int_0^1f$, $g_0=\int_0^1g$, $f_n=2\int_0^1f(y)\cos n\pi y\,dy$, $g_n=2\int_0^1g(y)\cos n\pi y\,dy$, $n\ge1$. Hai biên Neumann $0$ cho
+\[u=T_0+\sum_{n\ge1}T_n\cos n\pi x.\]
+Chiếu PDE: $T_0'=g_0e^{-2t},T_0(0)=f_0$; $T_n'+n^2\pi^2T_n=g_ne^{-2t},T_n(0)=f_n$.
+\textbf{Bước 2. Giải từng ODE, kể cả mode $0$.}
+\[T_0=f_0+\frac{g_0}2(1-e^{-2t}),\quad
+T_n=f_ne^{-n^2\pi^2t}+g_ne^{-n^2\pi^2t}
+\int_0^te^{(n^2\pi^2-2)s}ds.\]
+Vì $n^2\pi^2>2$, tích phân cuối bằng $(e^{(n^2\pi^2-2)t}-1)/(n^2\pi^2-2)$:
+\[u=f_0+\frac{g_0}2(1-e^{-2t})+
+\sum_{n\ge1}\left[f_ne^{-n^2\pi^2t}
++g_n\frac{e^{-2t}-e^{-n^2\pi^2t}}{n^2\pi^2-2}\right]\cos n\pi x.\]
+\textbf{Bước 3. Kiểm tra và giới hạn đều.}
+Đạo hàm cosine bằng $0$ ở hai đầu; ODE kiểm tra PDE; $T_n(0)=f_n$ trả lại mặt đầu. Nếu $f,g\in L^1$, $|f_n|\le2\|f\|_1$, $|g_n|\le2\|g\|_1$. Phần đầu của chuỗi bị chặn bởi $2\|f\|_1\sum e^{-n^2\pi^2t}\to0$. Phần nguồn bị chặn bởi $2\|g\|_1(e^{-2t}+e^{-\pi^2t})\sum(n^2\pi^2-2)^{-1}\to0$. Suy
+\[\lim_{t\to\infty}u(x,t)=\int_0^1f(y)dy+\frac12\int_0^1g(y)dy\]
+đều theo $x$. Tích phân PDE cho tổng nhiệt $E'=g_0e^{-2t}$ cũng kiểm tra độc lập mode trung bình và giới hạn này.
+
+%ID VD_4_5_2_01
+\textbf{Bước 1. Tính phép đổi ẩn.}
+Đặt $u=e^{-hx}v$, $h=A/(2K)$. Khi đó $u_x=e^{-hx}(v_x-hv)$, $u_{xx}=e^{-hx}(v_{xx}-2hv_x+h^2v)$, $u_t=e^{-hx}v_t$. Thay vào $u_t=Ku_{xx}+Au_x+Bu$ cho
+\[v_t=Kv_{xx}+(B-A^2/(4K))v,\quad v(x,0)=e^{hx}f(x).\]
+Hai biên Dirichlet vẫn bằng $0$, nên $u=e^{-hx}\sum c_ne^{[B-A^2/(4K)-Kn^2]t}\sin nx$ khi $L=\pi$.
+
+\textbf{Bước 2. Câu (i), $K=1,A=0,B=-1,f=x$.}
+\[c_n=\frac2\pi\int_0^\pi x\sin nx\,dx
+=\frac2\pi\left[-\frac{x\cos nx}n+\frac{\sin nx}{n^2}\right]_0^\pi
+=\frac{2(-1)^{n+1}}n.\]
+Vì vậy $u=\sum_{n\ge1}2(-1)^{n+1}e^{-(n^2+1)t}\sin nx/n$.
+
+\textbf{Bước 3. Câu (ii), $K=1,A=-1,B=0,f=1$.}
+$h=-1/2$, nên dữ liệu của $v$ là $e^{-x/2}$. Nguyên hàm $\int e^{hx}\sin nx=e^{hx}(h\sin nx-n\cos nx)/(h^2+n^2)$ cho
+\[c_n=\frac2\pi\left[\frac{e^{-x/2}(-\sin nx/2-n\cos nx)}{n^2+1/4}\right]_0^\pi
+=\frac{2n(1-(-1)^ne^{-\pi/2})}{\pi(n^2+1/4)}.\]
+Suy $u=e^{x/2}\sum c_ne^{-(n^2+1/4)t}\sin nx$.
+
+\textbf{Bước 4. Duy nhất và kiểm tra.}
+Với hiệu $w$ có dữ liệu đầu $0$, biên $0$,
+\begin{align*}
+I'&=K[ww_x]_0^\pi-K\int w_x^2+\frac A2[w^2]_0^\pi+B\int w^2\\
+&=-K\int w_x^2+2BI\le0
+\end{align*}
+trong cả hai câu vì $B\le0$. $I(0)=0$ suy $w=0$. Phép đổi ẩn và các ODE mode kiểm tra PDE; sine kiểm tra biên; Fourier trả lại dữ liệu trong miền. $f(\pi)=\pi$ ở (i), và $f(0)=f(\pi)=1$ ở (ii) không khớp biên $0$, nên không liên tục tại các góc này. Hai nghiệm trơn khi $t>0$ và đều tiến về $0$.
+
+%ID VD_4_5_2_02
+\textbf{Bước 1. Năng lượng bậc ba và tính duy nhất.}
+Với $K>0$, $u_t=Ku_{xxx}$, $u(0)=u_x(0)=u(L)=0$, hai lần tích phân từng phần cho
+\[I'=K\int uu_{xxx}
+=K[uu_{xx}]_0^L-\frac K2[u_x^2]_0^L
+=-\frac K2u_x(L,t)^2\le0.\]
+Bản in bỏ hệ số $1/2$ ở đẳng thức cuối; dấu suy giảm vẫn đúng. Áp dụng cho hiệu hai nghiệm có mặt đầu $0$, suy $I=0$, tức duy nhất trong lớp nghiệm đủ trơn/năng lượng thích hợp.
+
+\textbf{Bước 2. Vì sao không dùng cơ sở trực giao cấp hai.}
+Tách biến $u=XT$ cho $X'''=\lambda X$, $T'=K\lambda T$ và ba biên $X(0)=X'(0)=X(L)=0$. Với hàm riêng phức, lấy phần thực của tích phân với $\overline X$:
+\[\operatorname{Re}\lambda\int_0^L|X|^2dx=-\frac12|X'(L)|^2\le0.\]
+Điều này không chứng minh $\lambda$ thực. Toán tử $D^3$ không tự liên hợp; liên hợp là $-D^3$ với biên $Y(0)=Y(L)=Y'(L)=0$, suy từ hạng $[X''\overline Y-X'\overline{Y'}+X\overline{Y''}]_0^L$. Vì vậy chưa được khẳng định dãy hàm riêng thực trong sách là cơ sở đầy đủ.
+Nếu chỉ xét nhánh thực $\lambda=-k^3$, nghiệm thỏa hai biên trái là
+\[X=e^{-kx}-e^{kx/2}\cos(\sqrt3kx/2)+\sqrt3e^{kx/2}\sin(\sqrt3kx/2)
+=e^{-kx}+2e^{kx/2}\sin(\sqrt3kx/2-\pi/6).\]
+Biên phải cho $e^{-3kL/2}=-2\sin(\sqrt3kL/2-\pi/6)$. Dấu trước sine trong $X$ phải là $+$; dấu $-$ ở công thức hàm riêng của bản in làm $X(0)=2$, sai biên.
+
+\textbf{Bước 3. Giải đầy đủ bằng Laplace, không giả định cơ sở chưa chứng minh.}
+Đặt $U(x,p)=\int_0^\infty e^{-pt}u(x,t)dt$, $\operatorname{Re}p>0$. Từ $pU-f=KU'''$:
+\[U'''-\frac pK U=-\frac fK,\quad U(0,p)=U_x(0,p)=U(L,p)=0.\]
+Đặt nghiệm cơ bản
+\[S_p(x)=\sum_{m=0}^\infty\frac{(p/K)^m x^{3m+2}}{(3m+2)!}.\]
+Đạo hàm chuỗi cho $S_p'''=(p/K)S_p$, $S_p(0)=S_p'(0)=0,S_p''(0)=1$. Biến thiên hằng số cho
+\[U(x,p)=C(p)S_p(x)-\frac1K\int_0^xS_p(x-y)f(y)dy.\]
+Đạo hàm tích phân ba lần tạo đúng $f(x)$ nhờ $S_p''(0)=1$. Biên $U(L)=0$ xác định
+\[C(p)=\frac{\int_0^LS_p(L-y)f(y)dy}{KS_p(L)}.\]
+Mẫu không bằng $0$ khi $\operatorname{Re}p>0$: nếu $S_p(L)=0$, $S_p$ là hàm riêng không tầm thường với trị riêng $p/K$ có phần thực dương, trái đẳng thức năng lượng.
+
+\textbf{Bước 4. Công thức nghiệm và kiểm tra.}
+\[
+u(x,t)=\mathcal L^{-1}_{p\to t}
+\left\{\frac{S_p(x)}{KS_p(L)}\int_0^LS_p(L-y)f(y)dy
+-\frac1K\int_0^xS_p(x-y)f(y)dy\right\}.
+\]
+Ở đây $\mathcal L^{-1}H=(2\pi i)^{-1}\int_{\gamma-i\infty}^{\gamma+i\infty}e^{pt}H(p)dp$, $\gamma>0$, hiểu theo phép đảo Laplace trong lớp năng lượng; với dữ liệu trơn tương thích có nghiệm cổ điển. Công thức $U$ thỏa ODE, cả ba biên và hạng mặt đầu $f$ trong $pU-f=KU'''$, nên phép đảo trả lại đúng bài toán. Với $f\in L^2$, nghiệm được hiểu là nửa nhóm co sinh bởi $KD^3$ trên miền $H^3$ có ba biên trên; tiêu tán vừa chứng minh và nghiệm resolvent cho mọi $p>0$ bảo đảm tồn tại và duy nhất. Đây là công thức giải cho dữ liệu tổng quát mà không bỏ các thành phần phổ phức hoặc giả định các hệ số trực giao.
+
+%ID BT_4_5_3_01
+\textbf{Bước 1. Phép đổi ẩn cho hai biên Dirichlet.}
+$u=e^{-Ax/(2K)}v$ cho $v_t=Kv_{xx}+(B-A^2/(4K))v$, dữ liệu $e^{Ax/(2K)}f$, biên $0$. Cơ sở là $\sin nx$ vì $L=\pi$.
+\textbf{Bước 2. Câu (i), $A=-1,B=0,K=1,f=1$.}
+Đặt $h=-1/2$, dùng nguyên hàm $e^{hx}(h\sin nx-n\cos nx)/(h^2+n^2)$:
+\[c_n=\frac2\pi\int_0^\pi e^{-y/2}\sin ny\,dy
+=\frac{2n(1-(-1)^ne^{-\pi/2})}{\pi(n^2+1/4)}.\]
+Suy
+\[u=e^{x/2}\sum_{n\ge1}c_ne^{-(n^2+1/4)t}\sin nx.\]
+\textbf{Bước 3. Câu (ii), $A=0,B=-1,K=1,f=x$.}
+Tích phân từng phần:
+\[c_n=\frac2\pi[-y\cos ny/n+\sin ny/n^2]_0^\pi
+=\frac{2(-1)^{n+1}}n,\qquad
+u=\sum_{n\ge1}\frac{2(-1)^{n+1}}n e^{-(n^2+1)t}\sin nx.\]
+\textbf{Bước 4. Chứng minh duy nhất bằng năng lượng.}
+Hiệu $w$ có dữ liệu $0$ và biên $0$. Tính
+\[I'=K[ww_x]_0^\pi+\frac A2[w^2]_0^\pi-K\int w_x^2+B\int w^2
+=-K\int w_x^2+2BI\le0.\]
+Vì $I(0)=0$, $w=0$. Phép đổi ẩn kiểm tra PDE, các sine kiểm tra biên, Fourier kiểm tra dữ liệu đầu trong miền. Dữ liệu không khớp Dirichlet tại các góc như đã thấy từ $f=1$ hoặc $f(\pi)=\pi$; nghiệm trơn khi $t>0$ và tiến đều về $0$.
+
+%ID BT_4_5_3_02
+\textbf{Bước 1. Câu (i), phản ứng $\alpha u$.}
+$K=L=1,A=0,B=\alpha$. Với $f=x(1-x)$, tích phân từng phần hai lần, $f''=-2$, cho
+\[c_n=2\int_0^1f\sin n\pi x\,dx
+=\frac{4(1-(-1)^n)}{n^3\pi^3}.\]
+$T_n'+(n^2\pi^2-\alpha)T_n=0$, nên
+\[u=\sum_{\substack{n\ge1\\n\ {\rm lẻ}}}\frac8{n^3\pi^3}
+e^{(\alpha-n^2\pi^2)t}\sin n\pi x.\]
+Mode đầu có hệ số $8/\pi^3>0$. Nếu $\alpha<\pi^2$, mọi mode giảm và giới hạn đều bằng $0$; nếu $\alpha=\pi^2$, chỉ mode đầu đứng yên và giới hạn là $8\sin\pi x/\pi^3$; nếu $\alpha>\pi^2$, mode đầu tăng, nghiệm không bị chặn theo thời gian.
+
+\textbf{Bước 2. Câu (ii), vận chuyển $\alpha u_x$.}
+Đặt $h=\alpha/2$, $u=e^{-hx}v$. Đạo hàm cho $v_t=v_{xx}-h^2v$ và $v(x,0)=e^{hx}x(1-x)$. Với $k=n\pi$, $s_n=(-1)^n$, đặt $D=h^2+k^2$, $E=s_ne^h$.
+\textbf{Bước 3. Tính hệ số không để lại tích phân.}
+\[J(h)=\int_0^1e^{hy}\sin ky\,dy=\frac{k(1-E)}D.\]
+Do $\partial_h(e^{hy})=ye^{hy}$, $\int e^{hy}y(1-y)\sin ky=J'-J''$. Tính
+\[J'=-\frac{kE}D-\frac{2kh(1-E)}{D^2},\quad
+J''=-\frac{kE}D+\frac{4khE-2k(1-E)}{D^2}
++\frac{8kh^2(1-E)}{D^3}.\]
+Vì vậy hệ số $c_n=2(J'-J'')$ là
+\[c_n=\frac{4k\{(1-h)-(1+h)E\}}{D^2}
+-\frac{16kh^2(1-E)}{D^3}.\]
+Nghiệm:
+\[u=e^{-hx}\sum_{n\ge1}c_ne^{-(n^2\pi^2+h^2)t}\sin n\pi x.\]
+Mọi tốc độ giảm đều dương với $\alpha$ thực, nên giới hạn đều bằng $0$. Khi $\alpha=0$, công thức hệ số trở về $4(1-(-1)^n)/(n^3\pi^3)$, kiểm tra khớp câu (i) với $\alpha=0$. Các mode và phép đổi ẩn kiểm tra PDE, biên, dữ liệu của từng câu.
+
+%ID BT_4_5_3_03
+\textbf{Bước 1. Chỉ ra chỗ thiếu của đề gốc.}
+PDE và dữ liệu đầu ghi $0<x<2$, nhưng hai biên đặt tại $0$ và $1$, không có biên tại $2$. Không thể dùng sine $n\pi x$ như một cơ sở Dirichlet trên toàn $(0,2)$ rồi tự coi $1$ là đầu phải. Đây không phải bài Dirichlet trên đoạn được ghi. Trong lớp nghiệm cổ điển với $t>0$ và liên tục đến dữ liệu đầu trong miền, còn có mâu thuẫn: nghiệm trên $(0,1)$ được xác định duy nhất bởi hai biên $0$. Nghiệm nhiệt hệ số hằng giải tích theo $x$ ở thời gian dương, nên thác triển qua điểm trong $1$ buộc trùng phản xạ lẻ của nghiệm sine. Khi $1<x<2$, mặt đầu thác triển là $-f(2-x)=x^2-3x+2$, khác $f=x-x^2$ đã in, với hiệu $-2(x-1)^2$. Vì vậy cần sửa miền hoặc biên/dữ liệu để có nghiệm trong lớp này.
+\textbf{Bước 2. Nếu miền dự kiến là $(0,1)$.}
+Đây là giả thiết sửa đề, cần ghi riêng. Khi ấy $X_n=\sin n\pi x$, $\lambda_n=n^2\pi^2$. Với $f=x-x^2$,
+\[c_n=2\int_0^1f\sin kx\,dx
+=-\frac2{k^2}\int_0^1(-2)\sin kx\,dx
+=\frac{4(1-(-1)^n)}{k^3},\quad k=n\pi.\]
+Mode thỏa $T_n'=(\alpha-k^2)T_n$:
+\[u=\sum_{\substack{n\ge1\\n\ {\rm lẻ}}}\frac8{n^3\pi^3}
+e^{(\alpha-n^2\pi^2)t}\sin n\pi x,\quad 0<x<1.\]
+Sine bằng $0$ ở $0,1$, chuỗi đầu bằng $x-x^2$, và $u_t-u_{xx}=\alpha u$ theo từng mode. Nếu $\alpha<\pi^2$, giới hạn $0$; nếu bằng $\pi^2$, giới hạn $8\sin\pi x/\pi^3$; nếu lớn hơn, mode đầu tăng. Những kết quả này giải bài đã sửa miền, không tự bổ sung điều kiện cho phần $(1,2)$ của đề gốc.
+
+%ID BT_4_5_3_04
+\textbf{Bước 1. Kiểm tra miền.}
+Đề ghi PDE trên $(0,2)$, hai biên tại $0,1$ và dữ liệu đầu chỉ trên $(0,1)$. Vì $1$ là điểm trong của miền PDE, đây không phải bài Dirichlet chuẩn trên đoạn $(0,2)$. Cần làm rõ miền dự kiến trước khi đưa ra đáp án theo tách biến trên đoạn.
+\textbf{Bước 2. Giải bài nếu miền dự kiến là $(0,1)$.}
+Đặt $h=\beta/2$, $u=e^{-hx}v$. Tính $u_x=e^{-hx}(v_x-hv)$, $u_{xx}=e^{-hx}(v_{xx}-2hv_x+h^2v)$; suy $v_t=v_{xx}-h^2v$ và $v(x,0)=e^{hx}x(1-x)$.
+\textbf{Bước 3. Thực hiện tích phân hệ số.}
+Với $k=n\pi$, $D=h^2+k^2,E=(-1)^ne^h$, nguyên hàm cho $J=\int_0^1e^{hy}\sin ky=k(1-E)/D$. Hệ số $2\int e^{hy}y(1-y)\sin ky=2(J'-J'')$:
+\[c_n=\frac{4k\{(1-h)-(1+h)E\}}{D^2}
+-\frac{16kh^2(1-E)}{D^3}.\]
+Đạo hàm được tính từ $E'=E,D'=2h$: $J'=-kE/D-2kh(1-E)/D^2$ và $J''=-kE/D+(4khE-2k(1-E))/D^2+8kh^2(1-E)/D^3$.
+\textbf{Bước 4. Ghép và kiểm tra.}
+\[u=e^{-hx}\sum_{n\ge1}c_ne^{-(n^2\pi^2+h^2)t}\sin n\pi x,\quad0<x<1.\]
+Mỗi mode thỏa biên, ODE và dữ liệu biến đổi; cộng lại trả về PDE gốc. Mọi mũ âm, nên giới hạn đều $0$ với mọi $\beta$ thực. Công thức trên giải miền sửa $(0,1)$. Nếu chủ ý giữ miền PDE $(0,2)$ và yêu cầu nghiệm cổ điển qua $1$ với $t>0$, tính giải tích theo không gian buộc thác triển khác: với $v=e^{hx}u$, phản xạ lẻ qua $1$ cho $u(x,t)=-e^{2h(1-x)}u(2-x,t)$ trên $(1,2)$. Nó xác định dữ liệu và biên phía phải không được in; không được tự coi sine $n\pi x$ là cơ sở Dirichlet tại $2$.
+
+%ID BT_4_5_3_05
+\textbf{Bước 1. Phân biệt tổng nhiệt với năng lượng bình phương.}
+Đề đặt $E(t)=\int_0^Lu(x,t)dx$, là tổng nhiệt có dấu. Với $u_t=ku_{xx}-ru$ và hai biên Neumann $0$,
+\begin{align*}
+E'(t)&=\int_0^Lu_tdx=k\int_0^Lu_{xx}dx-r\int_0^Lu\,dx\\
+&=k(u_x(L,t)-u_x(0,t))-rE(t)=-rE(t).
+\end{align*}
+\textbf{Bước 2. Giải ODE.}
+Nhân với $e^{rt}$ cho $(e^{rt}E)'=0$, nên $e^{rt}E(t)=E(0)=\int_0^Lf$. Do đó
+\[E(t)=e^{-rt}\int_0^Lf(x)dx.\]
+Kết quả đúng cả khi $r=0$ (bảo toàn), $r>0$ (giảm độ lớn) và $r<0$ (tăng độ lớn). Với dữ liệu không trơn, thực hiện từ $\varepsilon>0$ rồi lấy giới hạn nếu $u(\cdot,t)\to f$ trong $L^1$.
+\textbf{Bước 3. Kiểm tra bằng mode hằng.}
+Nhân cosine có mode trung bình $c_0(t)=E(t)/L$; PDE chiếu lên $1$ cho $c_0'=-rc_0$. Các cosine khác có tích phân bằng $0$, nên không đóng góp tổng nhiệt. Không thay $E$ bằng $\frac12\int u^2$, vì đại lượng sau còn có hạng $-k\int u_x^2$ trong đạo hàm.
+
+%ID BT_4_5_3_06
+\textbf{(i) Dữ liệu đầu và biên đều bằng $0$.}
+Với $u_t=u_{xx}+2u_x$ trên $(0,\pi)$, $u=0$ thỏa mọi dữ kiện. Hiệu nghiệm có $I'=-\int u_x^2+[u^2]_0^\pi=-\int u_x^2\le0$ và $I(0)=0$, nên đây là nghiệm duy nhất.
+
+\textbf{(ii) Hệ số $x^2$, biên tại $1,e$.}
+Đặt $z=\ln x$, $U(z,t)=u(e^z,t)$. Tính $u_x=U_z/x$, $x^2u_{xx}=U_{zz}-U_z$, nên $U_t=U_{zz}-U_z+4U$ trên $0<z<1$. Đặt $U=e^{z/2}v$:
+\[U_{zz}-U_z+4U=e^{z/2}(v_{zz}+15v/4),\quad v_t=v_{zz}+15v/4.\]
+Biên $v(0)=-1$, $v(1)=e^{-1/2}$, dữ liệu đầu $v(z,0)=e^{z/2}$. Đặt $b=\sqrt{15}/2$, $D=(e^{-1/2}+\cos b)/\sin b$. Nghiệm dừng $S=-\cos bz+D\sin bz$ giải $S''+b^2S=0$, đúng hai biên. Vì $v-S$ có biên $0$,
+\[u=P(x)+\sqrt x\sum_{n\ge1}A_ne^{(15/4-n^2\pi^2)t}\sin(n\pi\ln x),\quad
+P(x)=\sqrt x\,S(\ln x).\]
+Để tính $A_n$, đặt $k=n\pi,s=(-1)^n$:
+\begin{align*}
+\int_0^1e^{z/2}\sin kz\,dz&=\frac{k(1-se^{1/2})}{k^2+1/4},\\
+\int_0^1\cos bz\sin kz\,dz&=\frac{k(1-s\cos b)}{k^2-b^2},\\
+\int_0^1\sin bz\sin kz\,dz&=-\frac{sk\sin b}{k^2-b^2}.
+\end{align*}
+Các đẳng thức lần lượt dùng nguyên hàm mũ–sine và tích–tổng. Cộng theo dữ liệu $e^{z/2}+\cos bz-D\sin bz$ cho
+\[A_n=2k\left\{\frac{1-se^{1/2}}{k^2+1/4}
++\frac{1+se^{-1/2}}{k^2-15/4}\right\}.\]
+Mọi $15/4-n^2\pi^2<0$, nên $u\to P$ đều. $P(1)=-1,P(e)=1$, $x^2P''+4P=0$; dữ liệu đầu $x$ không khớp giá trị biên tại góc, nên chỉ có liên tục đến mặt đầu trong miền.
+
+\textbf{(iii) Vận chuyển với dữ liệu $x$ trên $(0,1)$.}
+Đặt $u=e^{-x}v$ cho $v_t=v_{xx}-v$, $v(x,0)=xe^x$, biên $0$. Với $k=n\pi,s=(-1)^n$, nguyên hàm cho $J(h)=\int_0^1e^{hy}\sin ky=k(1-se^h)/(h^2+k^2)$. Do đó
+\[A_n=2J'(1)=-\frac{2kse}{1+k^2}-\frac{4k(1-se)}{(1+k^2)^2},\qquad
+u=e^{-x}\sum_{n\ge1}A_ne^{-(n^2\pi^2+1)t}\sin n\pi x.\]
+Tại $t=0$, sine trả lại $xe^x$, rồi nhân $e^{-x}$ trả lại $x$ trong miền. Sine kiểm tra hai biên; phép đổi ẩn kiểm tra PDE. Giá trị $f(1)=1$ không khớp biên $0$ ở góc.
+
+\textbf{(iv) Nguồn $-x$, Dirichlet–Neumann.}
+Nghiệm dừng thỏa $P''=x,P(0)=-1,P'(\pi)=0$: tích phân cho $P=x^3/6-\pi^2x/2-1$. Khi $w=u-P$, nguồn bằng $0$, biên $w(0)=w_x(\pi)=0$, mặt đầu $q=1+\pi^2x/2$. Cơ sở $X_n=\sin k_nx$, $k_n=n+1/2$, $N_n=\pi/2$.
+\[\int_0^\pi\sin k_ny\,dy=1/k_n,\quad
+\int_0^\pi y\sin k_ny\,dy=(-1)^n/k_n^2.\]
+Vì vậy
+\[A_n=\frac2{\pi k_n}+\frac{\pi(-1)^n}{k_n^2},\qquad
+u=P+\sum_{n\ge0}A_ne^{-k_n^2t}\sin k_nx.\]
+Biên đúng, mặt đầu trong miền bằng $x^3/6$; $P''-x=0$ và từng mode cho PDE. Giới hạn đều $P$, nhưng mặt đầu không khớp $u(0,0)=-1$.
+
+\textbf{(v) Nguồn và đạo hàm biên phụ thuộc thời gian.}
+Đặt $u=xt+w$, vì $(xt)(0,t)=0$, $(xt)_x(\pi,t)=t$. Từ PDE:
+\[w_t=w_{xx}+w+\sin x+x(t-1+1/\pi),\quad
+w(0,t)=w_x(\pi,t)=0,\quad w(x,0)=0.\]
+Với $k_n=n+1/2,s_n=(-1)^n$, tích–tổng và tích phân từng phần cho
+\[S_n=\frac2\pi\int_0^\pi\sin y\sin k_ny\,dy
+=\frac{2s_n}{\pi(1-k_n^2)},\quad
+R_n=\frac2\pi\int_0^\pi y\sin k_ny\,dy=\frac{2s_n}{\pi k_n^2}.\]
+Đặt $d_n=1-k_n^2\ne0$, $C_n=S_n+R_n(-1+1/\pi)$. ODE là $T_n'=d_nT_n+R_nt+C_n$, $T_n(0)=0$. Hai tích phân thời gian thực hiện đến hết:
+\[\int_0^te^{d(t-s)}ds=\frac{e^{dt}-1}d,\quad
+\int_0^te^{d(t-s)}s\,ds=\frac{e^{dt}-1-dt}{d^2}.\]
+Do đó
+\[u=xt+\sum_{n\ge0}\left\{
+R_n\frac{e^{d_nt}-1-d_nt}{d_n^2}
++C_n\frac{e^{d_nt}-1}{d_n}\right\}\sin k_nx.\]
+Mỗi mode đúng ODE và biên thuần nhất; cộng $xt$ trả lại nguồn và đạo hàm biên. Các hệ số $O(k_n^{-4})$ ở thời gian cố định cho hội tụ của nghiệm. Mode $n=0$ có $d_0=3/4>0$; không được kết luận mọi mode đều giảm.
+
+\textbf{(vi) Biên tuần hoàn chu kỳ $1$.}
+$f=1+2\cos2\pi x-2\sin3\pi x$ đối xứng qua $1/2$, nên các hệ số sine chu kỳ $1$ bằng $0$ (đổi biến $x\mapsto1-x$ trong tích phân). Trung bình:
+\[c_0=\int_0^1f\,dx=1-\frac4{3\pi}.\]
+Với $n\ge1$, $\int_0^1\sin3\pi x\cos2n\pi x\,dx=6/[\pi(9-4n^2)]$ từ tích–tổng. Vì vậy
+\[c_n=2\delta_{n1}-\frac{24}{\pi(9-4n^2)},\qquad
+u=1-\frac4{3\pi}+\sum_{n\ge1}c_ne^{-4n^2\pi^2t}\cos2n\pi x.\]
+Các cosine có cùng giá trị và đạo hàm tại $0,1$; ODE kiểm tra PDE, chuỗi ban đầu trả lại $f$ liên tục. $f'(0)=-6\pi$, $f'(1)=6\pi$ không khớp đạo hàm tuần hoàn ở góc, nên không trơn đến góc. Giới hạn đều là $1-4/(3\pi)$.
+
+%ID VD_4_6_2_01
+\textbf{Bước 1. Nhân nhiệt trên toàn trục.}
+Đặt $g_K(z,t)=(4\pi Kt)^{-1/2}e^{-z^2/(4Kt)}$. Nghiệm $u=\int_{\mathbb R}g_K(x-y,t)f(y)dy$. Tích phân của $g_K$ bằng $1$, và biến đổi Fourier của nó là $e^{-Kt\xi^2}$, nên một mode $\cos ky$ biến thành $e^{-Kk^2t}\cos kx$.
+\textbf{Bước 2. Câu (i), $K=1,f=\cos^23x$.}
+$\cos^23x=(1+\cos6x)/2$, suy
+\[u=\frac12+\frac12e^{-36t}\cos6x.\]
+Kiểm tra $u_t=-18e^{-36t}\cos6x=u_{xx}$, $u(x,0)=\cos^23x$.
+\textbf{Bước 3. Câu (ii), $K=2,f=e^{-x^2}$.}
+\[u=\frac1{\sqrt{8\pi t}}\int_{\mathbb R}
+\exp\left(-\frac{(x-y)^2}{8t}-y^2\right)dy.\]
+Hoàn thành bình phương:
+\[-\frac{(x-y)^2}{8t}-y^2
+=-\frac{1+8t}{8t}\left(y-\frac{x}{1+8t}\right)^2-\frac{x^2}{1+8t}.\]
+Đặt $z=\sqrt{(1+8t)/(8t)}(y-x/(1+8t))$, $dy=\sqrt{8t/(1+8t)}dz$. Tích phân $\int e^{-z^2}dz=\sqrt\pi$ cho
+\[u=\frac1{\sqrt{1+8t}}\exp\left(-\frac{x^2}{1+8t}\right).\]
+\textbf{Bước 4. Kiểm tra đạo hàm.} Đặt $D=1+8t$. $u_t/u=-4/D+8x^2/D^2$, $u_{xx}/u=-2/D+4x^2/D^2$, nên $u_t=2u_{xx}$. Khi $t\downarrow0$, $D\to1$ trả lại $f$.
+
+%ID VD_4_6_2_02
+\textbf{Bước 1. Thác triển lẻ.}
+Với $u(0,t)=0$, đặt $\widetilde f(y)=f(y)$ khi $y>0$, $\widetilde f(y)=-f(-y)$ khi $y<0$. Vì Gauss chẵn, nghiệm toàn trục của dữ liệu lẻ vẫn lẻ, nên bằng $0$ tại $x=0$. Tách tích phân và đổi $y\mapsto-y$ trên nửa âm:
+\[u=\int_0^\infty[g_K(x-y,t)-g_K(x+y,t)]f(y)dy.\]
+\textbf{Bước 2. Câu cụ thể $K=2,f=e^{-y}$.}
+Đặt $I_\pm=\int_0^\infty g_2(x\mp y,t)e^{-y}dy$, trong đó $I_+$ dùng $x-y$, $I_-$ dùng $x+y$. Hoàn thành bình phương:
+\begin{align*}
+-\frac{(x-y)^2}{8t}-y&=-\frac{(y+4t-x)^2}{8t}+2t-x,\\
+-\frac{(x+y)^2}{8t}-y&=-\frac{(y+4t+x)^2}{8t}+2t+x.
+\end{align*}
+Đổi biến $z=(y+4t\mp x)/\sqrt{8t}$; cận $y=0$ trở thành $(4t\mp x)/\sqrt{8t}$, và dùng $\int_a^\infty e^{-z^2}dz=\sqrt\pi\,\operatorname{erfc}(a)/2$:
+\[I_+=\tfrac12e^{2t-x}\operatorname{erfc}\frac{4t-x}{\sqrt{8t}},\quad
+I_-=\tfrac12e^{2t+x}\operatorname{erfc}\frac{4t+x}{\sqrt{8t}}.\]
+Vậy
+\[u=\frac12e^{2t-x}\operatorname{erfc}\frac{4t-x}{\sqrt{8t}}
+-\frac12e^{2t+x}\operatorname{erfc}\frac{4t+x}{\sqrt{8t}}.\]
+\textbf{Bước 3. Kiểm tra.} Tại $x=0$ hai hạng triệt tiêu. Với $x>0,t\downarrow0$, đối số thứ nhất tiến về $-\infty$ nên erfc tiến về $2$, đối số thứ hai về $\infty$ nên erfc về $0$; suy $u\to e^{-x}$. Nhân ảnh giải PDE nên $u_t=2u_{xx}$. $f(0)=1$ không khớp biên $0$, nên không liên tục ở góc $(0,0)$; nghiệm trơn với $x\ge0,t>0$.
+
+%ID VD_4_6_2_03
+\textbf{Bước 1. Chuyển bài $u_t=u_{xx}+xu$ về nhiệt.}
+Đặt $u=e^{tx+t^3/3}v(z,t)$, $z=x+t^2$. Tính
+\begin{align*}
+u_t&=e^{tx+t^3/3}\{(x+t^2)v+2tv_z+v_t\},\\
+u_{xx}+xu&=e^{tx+t^3/3}\{(t^2+x)v+2tv_z+v_{zz}\}.
+\end{align*}
+Do đó $v_t=v_{zz}$, $v(z,0)=f(z)$. Phép đổi biến này biện minh công thức cho $f$ liên tục bị chặn mà không cần đánh giá $\widehat f$ tại tần số phức.
+\textbf{Bước 2. Fourier cho bài đã đổi.} Với quy ước $\widehat v=\int e^{-i\xi z}v\,dz$, $\widehat v_t=-\xi^2\widehat v$, suy $\widehat v=e^{-t\xi^2}\widehat f$. Biến đổi ngược cho $v=g_1*f$. Vì vậy
+\[u=e^{tx+t^3/3}\int_{\mathbb R}g_1(x+t^2-y,t)f(y)dy.\]
+Gom mũ:
+\[tx+t^3/3-\frac{(x+t^2-y)^2}{4t}
+=-\frac{(x-y)^2}{4t}+\frac{t(x+y)}2+\frac{t^3}{12}.\]
+Vậy
+\[u=\int_{\mathbb R}G(x,y,t)f(y)dy,\qquad
+G=\frac1{\sqrt{4\pi t}}
+\exp\left[-\frac{(x-y)^2}{4t}+\frac{t(x+y)}2+\frac{t^3}{12}\right].\]
+\textbf{Bước 3. Kiểm tra Green.} $G>0$, đối xứng theo $x,y$, trơn với $t>0$. Với $\ell=\log G$,
+\[\ell_x=-\frac{x-y}{2t}+\frac t2,\quad \ell_{xx}=-\frac1{2t},\quad
+\ell_t=-\frac1{2t}+\frac{(x-y)^2}{4t^2}+\frac{x+y}2+\frac{t^2}4.\]
+Ta có $\ell_t=\ell_{xx}+\ell_x^2+x$, suy $G_t=G_{xx}+xG$. Từ biểu diễn Gauss đã dịch,
+\[\int_{\mathbb R}G(x,y,t)dy=e^{tx+t^3/3}.\]
+Nhân không có tổng bằng $1$ do hạng phản ứng $xu$.
+\textbf{Bước 4. Dữ liệu đầu và sự tập trung.} Với $x$ trong tập compact, hệ số $e^{tx+t^3/3}\to1$ và tâm $x+t^2\to x$. Gauss là xấp xỉ đơn vị, nên $u(x,t)\to f(x)$ tại điểm liên tục, cũng liên tục khi $(x,t)\to(x_0,0)$. Với $\delta>0$, tích phân nhân trên $|y-x|>\delta$ tiến về $0$. Điều kiện này phải là khoảng cách $|y-x|$, không phải $|x|$ như một dòng sai biến trong bản in. Công thức không bảo đảm nghiệm bị chặn theo $x$ khi $t>0$, vì phản ứng tuyến tính theo $x$ có thể làm nghiệm tăng theo mũ.
+
+%ID VD_4_6_2_04
+\textbf{Bước 1. Nhận dạng một mode cộng hưởng.}
+Nguồn $e^{-t}\cos x$ và mặt đầu $0$ cho phép đặt $u=T(t)\cos x$. Khi đó $u_{xx}=-T\cos x$, PDE thành $T'+T=e^{-t}$, $T(0)=0$.
+\textbf{Bước 2. Thực hiện tích phân.} Nhân với $e^t$:
+\[(e^tT)'=1,\quad e^tT=t,\quad T=te^{-t}.\]
+Tương đương Duhamel: $u=\int_0^te^{-(t-s)}e^{-s}\cos x\,ds=e^{-t}\cos x\int_0^tds$.
+\textbf{Bước 3. Kiểm tra.}
+\[u=te^{-t}\cos x,\quad u_t=(1-t)e^{-t}\cos x,\quad
+u_{xx}=-te^{-t}\cos x.\]
+Suy $u_t-u_{xx}=e^{-t}\cos x$ và $u(x,0)=0$. Thừa số $t$ xuất hiện vì tốc độ giảm của nguồn bằng tốc độ giảm của mode nhiệt.
+
+%ID VD_4_6_2_05
+\textbf{(a) Nhân nhiều chiều tách tích.}
+Với $u_t=K\Delta u$ trên $\mathbb R^n$, nhân là
+\[g_K^{(n)}(x-y,t)=\prod_{j=1}^n g_K(x_j-y_j,t).\]
+Dữ liệu $f(y)=\prod f_j(y_j)$ cho, nhờ Fubini,
+\[u(x,t)=\int_{\mathbb R^n}\prod_{j=1}^n[g_K(x_j-y_j,t)f_j(y_j)]dy
+=\prod_{j=1}^nu_j(x_j,t).\]
+Kiểm tra trực tiếp cũng được: $u_t=\sum_j(u_j)_t\prod_{i\ne j}u_i$, còn $K\Delta u=\sum_jK(u_j)_{x_jx_j}\prod_{i\ne j}u_i$, bằng nhau vì mỗi $u_j$ giải nhiệt một chiều. Tại $t=0$, tích trả lại $f$.
+\textbf{(b) $n=2,K=1,f_1=\cos x_1,f_2=\sin x_2$.}
+Mode một chiều cho $u_1=e^{-t}\cos x_1$, $u_2=e^{-t}\sin x_2$. Vì vậy
+\[u=e^{-2t}\cos x_1\sin x_2.\]
+$u_t=-2u$, $\Delta u=-u-u=-2u$, và mặt đầu đúng. Tốc độ giảm tổng là tổng hai trị riêng $1+1=2$.
+
+%ID BT_4_6_3_01
+\textbf{Bước 1. Dùng tích chập Gauss.} $u=g_K*f$, $g_K=(4\pi Kt)^{-1/2}e^{-z^2/(4Kt)}$.
+\textbf{Bước 2. Câu (i), $K=4,f=\sin^3x$.}
+Từ $\sin3x=3\sin x-4\sin^3x$, $f=(3\sin x-\sin3x)/4$. Nhân nhiệt làm mode $k$ giảm với $Kk^2$, nên
+\[u=\frac34e^{-4t}\sin x-\frac14e^{-36t}\sin3x.\]
+Thế $t=0$ trả lại $f$; từng hạng có $u_t=4u_{xx}$.
+\textbf{Bước 3. Câu (ii), $K=2,f=e^{-x^2+x}$.}
+Hoàn thành bình phương ban đầu: $-y^2+y=1/4-(y-1/2)^2$. Trong tích chập,
+\[-\frac{(x-y)^2}{8t}-(y-1/2)^2
+=-\frac{1+8t}{8t}\left(y-\frac{x+4t}{1+8t}\right)^2
+-\frac{(x-1/2)^2}{1+8t}.\]
+Đổi biến $z=\sqrt{(1+8t)/(8t)}(y-(x+4t)/(1+8t))$ và tích phân Gauss cho
+\[u=\frac{e^{1/4}}{\sqrt{1+8t}}
+\exp\left[-\frac{(x-1/2)^2}{1+8t}\right].\]
+Đặt $D=1+8t$, đạo hàm $u_t/u=-4/D+8(x-1/2)^2/D^2$, $u_{xx}/u=-2/D+4(x-1/2)^2/D^2$ kiểm tra $u_t=2u_{xx}$. $D\to1$ trả lại $e^{-x^2+x}$.
+
+%ID BT_4_6_3_02
+\textbf{Bước 1. Thác triển chẵn đúng biên Neumann.}
+Đặt $\widetilde f(y)=f(|y|)$. Gauss chẵn bảo đảm nghiệm toàn trục chẵn theo $x$, nên $u_x(0,t)=0$. Tách hai nửa của tích chập rồi đổi $y\mapsto-y$:
+\[u=\int_0^\infty[g_K(x-y,t)+g_K(x+y,t)]f(y)dy.\]
+\textbf{Bước 2. Tính câu $K=2,f=e^{-y}$.}
+Hai số mũ là
+\[-(x-y)^2/(8t)-y=-(y+4t-x)^2/(8t)+2t-x,\]
+\[-(x+y)^2/(8t)-y=-(y+4t+x)^2/(8t)+2t+x.\]
+Đổi biến $z=(y+4t\mp x)/\sqrt{8t}$, các cận thành $(4t\mp x)/\sqrt{8t},\infty$. Dùng $\int_a^\infty e^{-z^2}dz=\sqrt\pi\,\operatorname{erfc}(a)/2$ cho
+\[u=\frac12e^{2t-x}\operatorname{erfc}\frac{4t-x}{\sqrt{8t}}
++\frac12e^{2t+x}\operatorname{erfc}\frac{4t+x}{\sqrt{8t}}.\]
+\textbf{Bước 3. Kiểm tra.}
+Hai hạng đổi chỗ khi $x\mapsto-x$, nên $u$ chẵn, $u_x(0,t)=0$. Với $x>0,t\downarrow0$, hai erfc lần lượt về $2,0$, nên $u\to e^{-x}$. Nhân ảnh cho $u_t=2u_{xx}$. $f'(0)=-1$ khác Neumann $0$, nên không trơn đạo hàm đến góc, dù giá trị nghiệm liên tục đến mặt đầu.
+
+%ID BT_4_6_3_03
+\textbf{Bước 1. Tích phân ba hệ số.}
+Đặt $A(t)=\int_0^ta(s)ds$, $B(t)=\int_0^tb(s)ds$, $C(t)=\int_0^tc(s)ds$. Đề giả thiết $a(t)\ge a_0>0$, nên $A(t)\ge a_0t>0$ khi $t>0$.
+\textbf{Bước 2. Tính đầy đủ phép đổi biến.}
+Đặt $z=x+B(t)$, $\tau=A(t)$ và $u=e^{C(t)}v(z,\tau)$. Quy tắc dây chuyền cho
+\[u_t=e^C(cv+bv_z+av_\tau),\quad
+u_x=e^Cv_z,\quad u_{xx}=e^Cv_{zz}.\]
+Thay vào $u_t=au_{xx}+bu_x+cu$ rồi triệt tiêu $bv_z,cv$ được $a(v_\tau-v_{zz})=0$, suy $v_\tau=v_{zz}$. Tại $t=0$, $A=B=C=0$, nên $v(z,0)=f(z)$.
+\textbf{Bước 3. Fourier và biến đổi ngược.}
+$\widehat v_\tau=-\xi^2\widehat v$ cho $\widehat v=e^{-\tau\xi^2}\widehat f$. Biến đổi ngược thành tích chập Gauss:
+\[u(x,t)=\frac{e^{C(t)}}{\sqrt{4\pi A(t)}}\int_{\mathbb R}
+\exp\left[-\frac{(x+B(t)-y)^2}{4A(t)}\right]f(y)dy.\]
+\textbf{Bước 4. Kiểm tra.}
+Phép tính bước 2 kiểm tra PDE; xấp xỉ đơn vị của Gauss và $B,C\to0$ trả lại dữ liệu đầu tại điểm liên tục. Dấu dịch $x+B$ đúng vì khi $a=c=0$, nghiệm của $u_t=b(t)u_x$ là $f(x+B(t))$. Do nhân dương, $|u|\le e^{C(t)}\|f\|_\infty$ trên mỗi dải thời gian hữu hạn.
+
+%ID BT_4_6_3_04
+\textbf{Bước 1. Quy ước Fourier và các công thức dùng chung.}
+$\widehat f(\xi)=\int e^{-i\xi x}f(x)dx$, biến đổi ngược $(2\pi)^{-1}\int e^{i\xi x}\widehat f(\xi)d\xi$. Tích phân từng phần cho $\widehat{u_{xx}}=-\xi^2\widehat u$, $\widehat{u_{xxx}}=-i\xi^3\widehat u$, $\widehat{u_{xxxx}}=\xi^4\widehat u$. Đạo hàm theo $\xi$ cho $\widehat{xu_x}=-\widehat u-\xi\widehat u_\xi$. Ký hiệu $g_K(z,t)=(4\pi Kt)^{-1/2}e^{-z^2/(4Kt)}$.
+
+\textbf{(i) $u_t=u_{xx}+xu_x$.}
+Đặt $W=\widehat u$: $W_t+\xi W_\xi=-(1+\xi^2)W$. Đặc trưng $\xi(s)=\xi_0e^s$ cho
+\[W(\xi_0e^t,t)=e^{-t}\exp[-\xi_0^2(e^{2t}-1)/2]\widehat f(\xi_0).\]
+Vì $\xi_0=e^{-t}\xi$,
+\[W=e^{-t}e^{-\xi^2(1-e^{-2t})/2}\widehat f(e^{-t}\xi).\]
+Đổi biến $\eta=e^{-t}\xi$ trong biến đổi ngược, đặt $z=e^tx,\tau=(e^{2t}-1)/2$, được
+\[u(x,t)=(g_1(\cdot,\tau)*f)(e^tx).\]
+Kiểm tra: $u_t=zv_z+e^{2t}v_\tau$, $u_{xx}=e^{2t}v_{zz}$, $xu_x=zv_z$, nên $v_\tau=v_{zz}$.
+
+\textbf{(ii) $u_t=u_{xxx}$.}
+$W_t=-i\xi^3W$ cho $W=e^{-it\xi^3}\widehat f$. Do đó
+\[u=\mathcal F^{-1}(e^{-it\xi^3}\widehat f)=A_t*f,\qquad
+A_t(x)=(3t)^{-1/3}\operatorname{Ai}(-x/(3t)^{1/3}).\]
+Để thấy dấu Airy, đổi $\eta=(3t)^{1/3}\xi$ trong $(2\pi)^{-1}\int e^{i\xi x-it\xi^3}d\xi$ rồi đổi $\eta\mapsto-\eta$, được tích phân Airy có pha $\eta^3/3-\eta x/(3t)^{1/3}$. Với dữ liệu Schwartz, công thức cho nghiệm cổ điển; với $L^2$ là nghiệm Fourier trong $L^2$. Với dữ liệu chỉ liên tục bị chặn như đề, $f$ là phân phối tempered và phép nhân $e^{-it\xi^3}\widehat f$ hợp lệ vì các đạo hàm của thừa số có tăng trưởng đa thức; kết quả được hiểu trong $\mathcal S'$. Không khẳng định tích phân $A_t*f$ hội tụ tuyệt đối hoặc nghiệm tự động là hàm cổ điển.
+
+\textbf{(iii) $u_t=-u_{xxxx}+xu_x$.}
+$W_t+\xi W_\xi=-(1+\xi^4)W$. Cùng đặc trưng $\xi=\xi_0e^t$ cho
+\[W=e^{-t}e^{-\xi^4(1-e^{-4t})/4}\widehat f(e^{-t}\xi).\]
+Đặt $z=e^tx$, $\tau=(e^{4t}-1)/4$ và
+\[B_\tau(z)=\frac1{2\pi}\int_{\mathbb R}e^{i\xi z-\tau\xi^4}d\xi.\]
+Đổi biến Fourier ngược cho $u=(B_\tau*f)(e^tx)$. Kiểm tra $u_t=zv_z+e^{4t}v_\tau$, $u_{xxxx}=e^{4t}v_{zzzz}$, nên $v_\tau=-v_{zzzz}$. $B_\tau$ là hàm Schwartz với $\tau>0$, nhưng không phải nhân Gauss dương.
+
+\textbf{(iv) $u_t=u_{xx}-xu_x$.}
+$W_t-\xi W_\xi=(1-\xi^2)W$. Đặc trưng $\xi=\xi_0e^{-t}$ cho $W=e^t e^{-\xi^2(e^{2t}-1)/2}\widehat f(e^t\xi)$. Đổi biến trong Fourier ngược, đặt $z=e^{-t}x$, $\tau=(1-e^{-2t})/2$:
+\[u(x,t)=(g_1(\cdot,\tau)*f)(e^{-t}x).\]
+Kiểm tra $u_t=-zv_z+e^{-2t}v_\tau$, $u_{xx}=e^{-2t}v_{zz}$, $-xu_x=-zv_z$, nên đúng PDE. Ở (i),(iii),(iv), khi $t\downarrow0$, $z\to x,\tau\to0$, các nhân trả lại $f$.
+
+\textbf{(v) $u_t=u_{xx}+tx$ trên nửa trục.}
+Bản in lặp lại $u(x,0)=0$ hai lần, không cho biên tại $x=0$. Một nghiệm riêng là $u_p=xt^2/2$: $(u_p)_t=tx$, $(u_p)_{xx}=0$, $u_p(x,0)=0$. Nếu bổ sung $u(0,t)=0$ và lớp tăng trưởng phù hợp, đây là nghiệm của bài bổ sung. Với bản in, còn họ nghiệm
+\[u=\frac{xt^2}2+\int_0^t
+\frac{x e^{-x^2/[4(t-s)]}}{2\sqrt\pi(t-s)^{3/2}}\mu(s)ds,\]
+với $\mu$ trơn tùy ý vanishing gần $0$. Hạng thêm giải nhiệt, dữ liệu đầu $0$ và có biên $\mu$, nên chứng minh không duy nhất khi thiếu biên. Dòng rời về $f=\chi_{(0,1)}$ không thống nhất với dữ liệu đầu $0$ đã in; không tự đưa nó vào nghiệm của hệ này.
+
+\textbf{(vi) Dirichlet nửa trục, hệ số $k>0$.}
+Thác triển lẻ $f(y)=1/(1+y^2)$ cho
+\[u=\int_0^\infty
+\frac{e^{-(x-y)^2/(4kt)}-e^{-(x+y)^2/(4kt)}}{\sqrt{4\pi kt}}
+\frac{dy}{1+y^2}.\]
+Hệ số $k$ phải có trong cả mẫu và số mũ. Hai ảnh triệt tiêu tại $x=0$; Gauss xấp xỉ đơn vị trả lại $f$ khi $x>0,t\downarrow0$; đạo hàm nhân cho $u_t=ku_{xx}$. Giá trị đầu $f(0)=1$ không khớp biên $0$ tại góc.
+
+\textbf{(vii),(viii) Nguồn trên nửa trục nhưng thiếu biên.}
+Đặt $H(x,y,t)=g_1(x-y,t)-g_1(x+y,t)$ và $P(x,t)=xe^{-x^2/(4t)}/(2\sqrt\pi\,t^{3/2})$. Với một biên Dirichlet được \emph{bổ sung} là $\mu(t)$, công thức Duhamel cho
+\[u=\int_0^\infty H(x,y,t)f(y)dy+
+\int_0^t\!\int_0^\infty H(x,y,t-s)F(y)dy\,ds+
+\int_0^tP(x,t-s)\mu(s)ds.\]
+Ở (vii), $f(y)=1/(1+y^2)$, $F(y)=e^{-y}$; ở (viii), $f=0$, $F(y)=e^{-y}/(1+y^2)$. Để kiểm tra hạng biên, đổi $r=t-s$:
+\[\int_0^tP(x,r)dr=\operatorname{erfc}\frac{x}{2\sqrt t}\longrightarrow1
+\quad(x\downarrow0).\]
+Khối lượng của $P(x,r)$ tập trung tại $r=0$ khi $x\downarrow0$, nên hạng này tiến về $\mu(t)$ nếu $\mu$ liên tục. Nó giải nhiệt và có mặt đầu $0$ với $x>0$. Chọn hai hàm $\mu$ khác nhau vanishing gần $0$ cho hai nghiệm cùng PDE và dữ liệu đầu, khác biên; do đó đề gốc không xác định duy nhất. Các tích phân không gian với $1/(1+y^2)$ là biểu diễn chính xác; chúng không phải tích phân sơ cấp cần giả tạo một nguyên hàm.
+
+\textbf{(ix) Neumann, dữ liệu $e^{-x}$, $K=1$.}
+Nhân ảnh chẵn cho $u=\int_0^\infty[g_1(x-y,t)+g_1(x+y,t)]e^{-y}dy$. Hoàn thành bình phương:
+\[-(x\mp y)^2/(4t)-y=-(y+2t\mp x)^2/(4t)+t\mp x.\]
+Đổi biến $z=(y+2t\mp x)/\sqrt{4t}$ rồi dùng erfc:
+\[u=\frac12e^{t-x}\operatorname{erfc}\frac{2t-x}{\sqrt{4t}}
++\frac12e^{t+x}\operatorname{erfc}\frac{2t+x}{\sqrt{4t}}.\]
+Hàm chẵn theo $x$ cho $u_x(0,t)=0$, hai giới hạn erfc cho $u(x,0)=e^{-x}$ với $x>0$; nhân ảnh kiểm tra PDE.
+
+\textbf{(x) Dirichlet bằng $1$.}
+Đặt $w=u-1$. Khi đó $w_t=w_{xx}$, $w(0,t)=0$, $w(x,0)=1/(1+x^2)-1$. Thác triển lẻ cho
+\[u=1+\int_0^\infty H(x,y,t)\left(\frac1{1+y^2}-1\right)dy.\]
+Tại $x=0$ nhân $H$ bằng $0$, nên $u=1$. Mặt đầu trả lại $f$, và phép cộng hằng không đổi PDE. Dữ liệu góc về giá trị khớp vì $f(0)=1$.
+
+%ID BT_4_6_3_05
+\textbf{Bước 1. Tách dữ liệu đầu và nguồn.}
+Với $K=2$, $f=\chi_{[-2,2]}$, $F=e^{-2t}\sin x$, Duhamel cho $u=u_0+u_F$:
+\[u_0=\frac1{\sqrt{8\pi t}}\int_{-2}^2e^{-(x-y)^2/(8t)}dy,\qquad
+u_F=\int_0^te^{-2(t-s)}e^{-2s}\sin x\,ds.\]
+\textbf{Bước 2. Thực hiện từng tích phân.}
+Đặt $z=(y-x)/\sqrt{8t}$. Các cận là $(-2-x)/\sqrt{8t}$ và $(2-x)/\sqrt{8t}$; dùng erf lẻ:
+\[u_0=\frac12\left[\operatorname{erf}\frac{x+2}{\sqrt{8t}}
+-\operatorname{erf}\frac{x-2}{\sqrt{8t}}\right].\]
+Trong $u_F$, hai mũ gom thành $e^{-2t}$ độc lập $s$, nên $u_F=te^{-2t}\sin x$. Vậy
+\[u=\frac12\left[\operatorname{erf}\frac{x+2}{\sqrt{8t}}
+-\operatorname{erf}\frac{x-2}{\sqrt{8t}}\right]+te^{-2t}\sin x.\]
+\textbf{Bước 3. Kiểm tra.}
+$u_0$ giải nhiệt không nguồn. $(u_F)_t-2(u_F)_{xx}=(1-2t)e^{-2t}\sin x+2te^{-2t}\sin x=e^{-2t}\sin x$. Khi $t\downarrow0$, $u_F\to0$, $u_0\to1$ nếu $|x|<2$, về $0$ nếu $|x|>2$, về $1/2$ tại $x=\pm2$. Giá trị tại hai điểm nhảy không bằng giá trị $1$ của chỉ thị đoạn đóng; điều kiện đầu phải hiểu theo $L^p$ hoặc ở điểm liên tục, không có nghiệm liên tục đến các điểm nhảy đó.
+
+%ID BT_4_6_3_06
+\textbf{(a) Duhamel nhiều chiều và tách tích phân không gian.}
+Với $f=0,F(x,t)=g(t)\prod_{j=1}^nF_j(x_j)$, nhân nhiệt $n$ chiều là $\prod_jg_K(x_j-y_j,t-s)$. Vì vậy
+\begin{align*}
+u(x,t)&=\int_0^t\!\int_{\mathbb R^n}
+g(s)\prod_{j=1}^n[g_K(x_j-y_j,t-s)F_j(y_j)]dy\,ds\\
+&=\int_0^tg(s)\prod_{j=1}^n
+\left(\int_{\mathbb R}g_K(x_j-y_j,t-s)F_j(y_j)dy_j\right)ds.
+\end{align*}
+Fubini tách các tích phân không gian; không tách tích phân thời gian thành tích của $n$ tích phân, vì tất cả thừa số dùng cùng thời gian $s$.
+\textbf{(b) $n=2,K=1,g(s)=\sin s,F_1=\cos x,F_2=e^{-2y^2}$.}
+Đặt $\tau=t-s$. Mode cosine cho $g_1(\cdot,\tau)*F_1=e^{-\tau}\cos x$. Với Gauss, hoàn thành bình phương
+\[-(y-z)^2/(4\tau)-2z^2
+=-\frac{1+8\tau}{4\tau}\left(z-\frac y{1+8\tau}\right)^2
+-\frac{2y^2}{1+8\tau},\]
+nên $g_1*F_2=e^{-2y^2/(1+8\tau)}/\sqrt{1+8\tau}$. Do đó
+\[u(x,y,t)=\cos x\int_0^t
+\frac{\sin s\,e^{-(t-s)}}{\sqrt{1+8(t-s)}}
+\exp\left[-\frac{2y^2}{1+8(t-s)}\right]ds.\]
+Tích phân thời gian hữu hạn trên hàm đã biết là biểu diễn tường minh; không có nguyên hàm sơ cấp thông thường cần tính tiếp.
+\textbf{Kiểm tra bằng đạo hàm Duhamel.}
+Gọi $V(x,y,\tau)=e^{-\tau}\cos x\,e^{-2y^2/(1+8\tau)}/\sqrt{1+8\tau}$, thì $V_\tau=\Delta V$, $V(x,y,0)=\cos x\,e^{-2y^2}$. Do đó
+\[u_t=\sin t\,V(x,y,0)+\int_0^t\sin s\,V_\tau(x,y,t-s)ds
+=\sin t\cos x\,e^{-2y^2}+\Delta u.\]
+Tại $t=0$ tích phân bằng $0$, đúng mặt đầu.

@@ -1,0 +1,1118 @@
+%ID VD_1_2_2_1_01
+\textbf{Bước 1 — Xác định cấp.} Liệt kê $u_{xxx}$ cấp 3, các đạo hàm còn lại có cấp thấp hơn. Bình phương $(u_y)^2$ vẫn chỉ chứa đạo hàm cấp 1. Do đó cấp cao nhất là $m=3$.
+
+\textbf{Bước 2 — Xét phần chính.} Đạo hàm $u_{xxx}$ xuất hiện ở lũy thừa 1 với hệ số 1, không phụ thuộc $u$ hay đạo hàm của $u$.
+
+\textbf{Bước 3 — Xét phần cấp thấp.} Hạng $(u_y)^2$ phi tuyến nên toàn phương trình không tuyến tính. Vì phi tuyến chỉ ở cấp thấp và hệ số phần chính chỉ phụ thuộc biến độc lập, kết luận: \textbf{nửa tuyến tính, cấp 3}.
+
+%ID VD_1_2_2_1_02
+\textbf{Bước 1 — Đếm cấp.} Đạo hàm cao nhất xuất hiện là $u_x$, nên $m=1$; $u^3$ là hạng không có đạo hàm.
+
+\textbf{Bước 2 — Xét tính tuyến tính theo đạo hàm cấp 1.} Coi $p=u_x$ như một biến đại số. Biểu thức lượng giác và bình phương chứa $p$ không có dạng $A(x,y,u)p+B(x,y,u)$. Như vậy phi tuyến xuất hiện ngay ở đạo hàm cấp cao nhất.
+
+\textbf{Kết luận.} Phương trình \textbf{hoàn toàn phi tuyến, cấp 1}. Hạng $u^3$ không làm tăng cấp và không phải lý do chính để phân biệt hoàn toàn phi tuyến với nửa tuyến tính.
+
+%ID VD_1_2_2_1_03
+\textbf{Bước 1 — Xác định cấp.} Các đạo hàm $u_{xx},u_{xy},u_{yy}$ đều có cấp 2, nên $m=2$.
+
+\textbf{Bước 2 — Đọc các hệ số.} Các hệ số tương ứng là $x,x-y,-y$, chỉ phụ thuộc $x,y$. Mỗi đạo hàm xuất hiện tuyến tính; không có tích giữa các đạo hàm hoặc tích với ẩn $u$.
+
+\textbf{Bước 3 — Xét nguồn.} Phương trình đã có dạng $Lu=0$, nên thuần nhất. Kết luận: \textbf{tuyến tính thuần nhất, cấp 2}. Hệ số thay đổi theo vị trí không làm mất tính tuyến tính.
+
+%ID VD_1_2_2_1_04
+\textbf{Bước 1 — Xác định cấp.} $u_{xx}$ là đạo hàm cao nhất, nên $m=2$.
+
+\textbf{Bước 2 — Xét dạng của phần cấp 2.} Đạo hàm $u_{xx}$ xuất hiện tuyến tính, nhưng hệ số là $u^2$, phụ thuộc chính ẩn cần tìm. Vì thế không thể xem phương trình là tuyến tính hoặc nửa tuyến tính theo định nghĩa trong sách.
+
+\textbf{Kết luận.} Phương trình \textbf{tựa tuyến tính, cấp 2}. Tại $u=0$, hệ số phần chính có thể triệt tiêu; cần lưu ý sự suy biến khi giải, nhưng phân loại biểu thức chung vẫn như trên.
+
+%ID VD_1_2_2_2_01
+\textbf{Bước 1 — Chọn biến tích phân.} Phương trình là $u_x=3x^2+y^2$. Giữ $y$ cố định và tích phân theo $x$.
+
+\textbf{Bước 2 — Tính từng tích phân.}
+\[u=\int3x^2\,dx+\int y^2\,dx+C(y)=x^3+xy^2+C(y).\]
+Hàm $C(y)$ xuất hiện vì đạo hàm theo $x$ của mọi hàm chỉ phụ thuộc $y$ đều bằng 0.
+
+\textbf{Bước 3 — Kiểm tra.} $u_x=3x^2+y^2$ đúng phương trình. Không có dữ liệu bổ sung để xác định $C$; chọn $C$ đủ trơn theo lớp nghiệm yêu cầu.
+
+%ID VD_1_2_2_2_02
+\textbf{Bước 1 — Giảm đạo hàm hỗn hợp.} Từ $u_{xyz}=0$, cố định $y,z$ và tích phân theo $x$, được $u_{yz}=a(y,z)$.
+
+\textbf{Bước 2 — Tích phân theo $y$, rồi $z$.} Chọn một nguyên hàm $b(y,z)$ của $a$ theo $y$, được $u_z=b(y,z)+c(x,z)$. Tích phân theo $z$:
+\[u(x,y,z)=B(y,z)+C(x,z)+A(x,y).\]
+Mỗi hàm tùy ý bỏ một biến; điều này giữ đủ các hằng số tích phân của ba lần lấy nguyên hàm. Công thức có ý nghĩa trên miền tích hoặc cục bộ nơi các phép tích phân được thực hiện.
+
+\textbf{Bước 3 — Kiểm tra.} $A$ không phụ thuộc $z$, $B$ không phụ thuộc $x$, $C$ không phụ thuộc $y$, nên đạo hàm $xyz$ của từng hạng bằng 0. Vì vậy tổng thỏa PDE.
+
+%ID VD_1_2_2_2_03
+\textbf{Bước 1 — Xét hệ số trước khi chia.} Với $yu_x=x^2y$, trên $y\ne0$ chia cho $y$ được $u_x=x^2$. Trên $y=0$ phương trình gốc là $0=0$.
+
+\textbf{Bước 2 — Tích phân theo $x$.} Giữ $y$ cố định:
+\[u(x,y)=\int x^2\,dx+C(y)=x^3/3+C(y).\]
+
+\textbf{Bước 3 — Kéo dài và kiểm tra.} Nếu miền chứa trục $y=0$ và yêu cầu nghiệm $C^1$, giá trị trên trục phải là giới hạn của công thức ở hai phía; không gán độc lập một hàm khác trên trục. Với $C$ đủ trơn, $yu_x=yx^2$ đúng cả ở $y=0$.
+
+%ID VD_1_2_2_2_04
+\textbf{Bước 1 — Đưa về ODE.} Với $u_x=2u$, coi $y$ là tham số và viết $u_x-2u=0$.
+
+\textbf{Bước 2 — Dùng thừa số tích phân.} $M=e^{-2x}$ và
+\[(e^{-2x}u)_x=e^{-2x}(u_x-2u)=0.\]
+Tích phân cho $e^{-2x}u=C(y)$, tức $u=e^{2x}C(y)$. Cách này giữ cả nghiệm $u=0$, không cần chia cho $u$.
+
+\textbf{Bước 3 — Kiểm tra.} $u_x=2e^{2x}C(y)=2u$. Chưa có dữ liệu đầu nên $C$ tùy ý đủ trơn.
+
+%ID VD_1_2_2_2_05
+\textbf{Bước 1 — Nhận dạng ODE tuyến tính.} Phương trình $u_x+2xu=4xy$ có $P(x)=2x$, nên $M=e^{\int2x\,dx}=e^{x^2}$.
+
+\textbf{Bước 2 — Nhân và tích phân.}
+\[(e^{x^2}u)_x=4xy e^{x^2}.\]
+Giữ $y$ cố định, dùng $d(e^{x^2})=2xe^{x^2}dx$:
+\[\int4xy e^{x^2}dx=2y e^{x^2},\quad e^{x^2}u=2y e^{x^2}+C(y).\]
+Suy ra $u=2y+e^{-x^2}C(y)$.
+
+\textbf{Bước 3 — Kiểm tra.} $u_x=-2xe^{-x^2}C(y)$, nên $u_x+2xu=4xy$.
+
+%ID VD_1_2_2_2_06
+\textbf{Bước 1 — Gom đạo hàm hỗn hợp.} Với $yu_{xy}+2u_x=x$, đặt $v=yu_y+2u$. Vì $y$ không đổi khi lấy đạo hàm theo $x$, $v_x=yu_{xy}+2u_x=x$.
+
+\textbf{Bước 2 — Tích phân theo $x$.} $v=x^2/2+A(y)$, tức $yu_y+2u=x^2/2+A(y)$.
+
+\textbf{Bước 3 — Giải theo $y$ trên $y\ne0$.} Chia cho $y$ rồi dùng thừa số $y^2$:
+\[(y^2u)_y=yx^2/2+yA(y).\]
+Tích phân cho $y^2u=x^2y^2/4+\int yA(y)dy+C(x)$. Đặt $B(y)=y^{-2}\int yA(y)dy$, ta được
+\[u=x^2/4+B(y)+C(x)/y^2.\]
+
+\textbf{Bước 4 — Kiểm tra và trục suy biến.} $u_x=x/2+C'(x)/y^2$, $u_{xy}=-2C'(x)/y^3$, nên $yu_{xy}+2u_x=x$. Muốn kéo dài qua $y=0$, tổ hợp $B(y)+C(x)/y^2$ phải đủ trơn; không cho phép chọn tùy ý các hạng kỳ dị. Phương trình gốc trên trục yêu cầu $2u_x(x,0)=x$.
+
+%ID VD_1_3_1_2_01
+\textbf{Bước 1 — Xác định toán tử.} Đặt $L=a\partial_x+b\partial_t$. Do lấy đạo hàm và nhân hệ số là các phép tuyến tính, với $c_1,c_2$ hằng,
+\[L(c_1u_1+c_2u_2)=c_1Lu_1+c_2Lu_2.\]
+
+\textbf{Bước 2 — Dùng giả thiết.} Nếu $Lu_1=Lu_2=0$, vế phải bằng 0, nên $c_1u_1+c_2u_2$ cũng là nghiệm. Điều này đúng cho mọi tổng hữu hạn các nghiệm.
+
+\textbf{Bước 3 — Phạm vi chồng chất.} Với PDE có nguồn $Lu=f\ne0$, tổng hai nghiệm cùng nguồn có nguồn $2f$. Khi đó dùng $u=u_p+u_h$ với $Lu_p=f$, $Lu_h=0$; hiệu hai nghiệm cùng nguồn là nghiệm thuần nhất.
+
+%ID VD_1_3_1_2_02
+\textbf{Bước 1 — Đặc trưng.} Với $au_x+bu_t=0$ và $b\ne0$, dùng $t$ làm tham số: $X'=a/b$, $U'=0$. Do đó $X=\xi+at/b$, $u=F(x-at/b)$.
+
+\textbf{Bước 2 — Áp các dữ liệu.} Với $u(x,0)=xe^{-x^2}$, $F(\xi)=\xi e^{-\xi^2}$, nên
+\[u=(x-at/b)e^{-(x-at/b)^2}.\]
+Với $u(0,t)=t$ và $a\ne0$, dùng $x$ làm tham số: $t-bx/a$ bất biến. Dữ liệu cho $u=t-bx/a$. Với $a=1,b=-2$ và dữ liệu $1/(1+x^2)$, có $u=1/[1+(x+t/2)^2]$.
+
+\textbf{Bước 3 — Kiểm tra hệ số và ngoại lệ.} Với $u=F(x-at/b)$, $au_x+bu_t=aF'-aF'=0$. Với $u=t-bx/a$, $au_x+bu_t=-b+b=0$. Các hệ số $a,b$ trong hai kết quả in trong sách đã đổi vai trò; các công thức trên sửa theo PDE. Nếu hệ số đạo hàm pháp tuyến bằng 0, đường dữ liệu là đặc trưng và dữ liệu phải hằng dọc nó; các dữ liệu không hằng ở đây không phù hợp. Nếu $a=b=0$, PDE không ràng buộc nghiệm.
+
+%ID VD_1_3_1_2_03
+\textbf{Bước 1 — Lập đặc trưng.} $u_t-2u_x=2$ cho $X'=-2$, $U'=2$ với $t$ là tham số. Từ $X+2t=\xi$, có bất biến $x+2t$.
+
+\textbf{Bước 2 — Tích phân ẩn.} $U=2t+F(\xi)$, nên $u=2t+F(x+2t)$. Cũng có thể chọn nghiệm riêng $2t$, rồi giải PDE thuần nhất cho phần còn lại.
+
+\textbf{Bước 3 — Kiểm tra.} $u_t=2+2F'$, $u_x=F'$, nên $u_t-2u_x=2$. Không có dữ liệu để xác định $F$.
+
+%ID VD_1_3_1_2_04
+\textbf{Bước 1 — Đường đặc trưng.} Với $u_x+2u_y+u=0$, dùng $x$ làm tham số: $dy/dx=2$, nên $\rho=y-2x$ không đổi.
+
+\textbf{Bước 2 — Tích phân ẩn.} Dọc đường, $dU/dx+U=0$, nên $(e^xU)'=0$. Vì vậy $u=e^{-x}F(y-2x)$.
+
+\textbf{Bước 3 — Dùng $u(x,0)=x^2$.} $F(-2x)=x^2e^x$. Đặt $s=-2x$, được $F(s)=s^2e^{-s/2}/4$; suy ra
+\[u(x,y)=\frac{(y-2x)^2}{4}e^{-y/2}.\]
+
+\textbf{Bước 4 — Kiểm tra.} Trên $y=0$ công thức bằng $x^2$. Với dạng tổng quát, $u_x=e^{-x}(-F-2F')$, $u_y=e^{-x}F'$, nên $u_x+2u_y+u=0$. Mỗi đặc trưng gặp $y=0$ đúng một lần, nên nghiệm được xác định duy nhất.
+
+%ID VD_1_3_1_2_05
+\textbf{Bước 1 — Tìm bất biến.} Với $2u_x-3u_y=x$, $dy/dx=-3/2$, nên $\rho=3x+2y$.
+
+\textbf{Bước 2 — Tích phân trên đường.} $dU/dx=x/2$, do đó $U=x^2/4+F(\rho)$ và
+\[u=x^2/4+F(3x+2y).\]
+
+\textbf{Bước 3 — Kiểm tra.} $u_x=x/2+3F'$, $u_y=2F'$, nên $2u_x-3u_y=x+6F'-6F'=x$.
+
+%ID VD_1_3_1_2_06
+\textbf{Bước 1 — Đường đặc trưng.} $u_x+2u_y-4u=e^{x+y}$ có $dy/dx=2$, nên $\rho=y-2x$. Trên một đường $y=2x+\rho$, ẩn thỏa $U'-4U=e^{3x+\rho}$.
+
+\textbf{Bước 2 — Nhân thừa số tích phân.}
+\[(e^{-4x}U)'=e^{\rho-x},\quad e^{-4x}U=-e^{\rho-x}+F(\rho).\]
+Suy ra $u=-e^{x+y}+e^{4x}F(y-2x)$. Dạng này tương đương dạng mũ $e^{4(x+y)/3}$ trong sách sau khi đổi tên hàm tùy ý.
+
+\textbf{Bước 3 — Xác định $F$ từ dữ liệu.} $u(x,0)=\sin(x^2)$ cho
+\[F(-2x)=e^{-4x}[\sin(x^2)+e^x].\]
+Đặt $s=-2x$, được $F(s)=e^{2s}\sin(s^2/4)+e^{3s/2}$, nên
+\[u=e^{2y}\sin((y-2x)^2/4)+e^{x+3y/2}-e^{x+y}.\]
+
+\textbf{Bước 4 — Kiểm tra.} Với $L=\partial_x+2\partial_y-4$, $L(e^{4x}F(\rho))=0$, còn $L(-e^{x+y})=e^{x+y}$. Trên $y=0$, hai hạng mũ triệt tiêu và còn $\sin(x^2)$. Hệ số theo $y$ khác 0 nên mỗi đặc trưng gặp dữ liệu đúng một lần.
+
+%ID VD_1_3_1_2_07
+\textbf{Bước 1 — Giải PDE.} $u_x+u_y-u=0$ cho $dy/dx=1$, $\rho=y-x$ và $U'=U$, nên $u=e^xF(y-x)$.
+
+\textbf{Bước 2 — Thế dữ liệu trên đặc trưng.} Trên $y=x$, $\rho=0$, nên $u(x,x)=e^xF(0)$. Để bằng $\tan x$, phải có $F(0)=e^{-x}\tan x$ ở mọi điểm của khoảng dữ liệu.
+
+\textbf{Bước 3 — Chứng minh mâu thuẫn.} Ở $x=0$, điều kiện cho $F(0)=0$, nhưng ở $x$ gần 0 khác 0, $e^{-x}\tan x\ne0$. Do đó không có nghiệm trên lân cận đường dữ liệu quanh gốc. Cũng có thể dùng điều kiện cần $g'=g$ trên đường; $g=\tan x$ không thỏa.
+
+%ID VD_1_3_1_2_08
+\textbf{Bước 1 — Dùng nghiệm tổng quát.} Như ví dụ trước, $u=e^xF(y-x)$. Trên $y=x$, chỉ số đặc trưng bằng 0, nên dữ liệu phải là $f(x)=e^xF(0)$.
+
+\textbf{Bước 2 — Điều kiện cần và đủ.} Đặt $A=F(0)$, ta có $f(x)=Ae^x$. Ngược lại, nếu $f$ có dạng này, mọi hàm $F$ đủ trơn thỏa $F(0)=A$ đều cho nghiệm.
+
+\textbf{Bước 3 — Giải thích không duy nhất.} Chọn $F_1(s)=A$ và $F_2(s)=A+s$ cho $u_1=Ae^x$, $u_2=e^x(A+y-x)$. Hai hàm cùng thỏa PDE và dữ liệu, nhưng khác nhau ngoài $y=x$. Dữ liệu trên một đặc trưng chỉ xác định giá trị của $F$ tại một điểm.
+
+\textbf{Chi tiết dựng nghiệm tổng quát trước khi dùng vết.} Với $u_x+u_y=u$, chọn $x$ làm tham số: $Y'=1$, $U'=U$. Tích phân $Y=x+\rho$ và $(e^{-x}U)'=0$ cho $e^{-x}U=F(\rho)$. Vì $\rho=y-x$, thu $u=e^xF(y-x)$. Như vậy công thức dùng ở bước 1 xuất phát từ chính hệ đặc trưng của bài này.
+
+%ID VD_1_3_1_2_09
+\textbf{Bước 1 — Giải theo $x$.} Với $au_x+bu_y+cu=0$, $ab\ne0$, bất biến $\rho=bx-ay$ và $dU/dx+(c/a)U=0$. Suy ra $u=e^{-cx/a}F(\rho)$.
+
+\textbf{Bước 2 — Giải theo $y$.} Tương tự $dU/dy+(c/b)U=0$, nên $u=e^{-cy/b}G(\rho)$. Cả hai cách đều đúng, với hàm tùy ý tương ứng.
+
+\textbf{Bước 3 — Chuyển giữa hai biểu thức.} Vì $x/a-y/b=(bx-ay)/(ab)=\rho/(ab)$,
+\[e^{-cx/a}F(\rho)=e^{-cy/b}e^{-c\rho/(ab)}F(\rho).\]
+Do đó đặt $G(s)=e^{-cs/(ab)}F(s)$ để được cùng nghiệm. Không cần $F=G$; hai bạn đang dùng hai cách tham số hóa cùng họ nghiệm.
+
+%ID BT_1_3_1_3_01
+\textbf{Ý (a) — Đạo hàm theo hướng.} Nếu $(a,b)\ne(0,0)$, đặt $\nu=(a,b)/\sqrt{a^2+b^2}$. Khi đó $D_\nu u=(au_x+bu_y)/\sqrt{a^2+b^2}=0$. Nghiệm không đổi khi di chuyển theo hướng $(a,b)$.
+
+\textbf{Ý (b) — Đặc trưng.} Giải $X'=a,Y'=b$: $(X,Y)=(x_0,y_0)+s(a,b)$. Tính $(bX-aY)'=ba-ab=0$, nên các đường là $bx-ay=\text{hằng}$.
+
+\textbf{Ý (c) — Nghiệm.} $U'=au_x+bu_y=0$ trên mỗi đường, nên $u=F(bx-ay)$. Kiểm tra $u_x=bF'$, $u_y=-aF'$, suy $au_x+bu_y=0$. Nếu $a=b=0$, PDE là $0=0$, mọi hàm $C^1$ là nghiệm. Trên toàn mặt phẳng, mỗi mức của bất biến là một đường liên thông; trên miền bị chia cắt cần xét từng phần đặc trưng liên thông.
+
+%ID BT_1_3_1_3_02
+\textbf{Ý (a).} $u_x+u_y-u=0$. Bước 1: $dy/dx=1$ cho $\rho=y-x$. Bước 2: $U'=U$ cho $U=e^xF(\rho)$. Bước 3: $u_x=e^x(F-F')$, $u_y=e^xF'$, nên $u_x+u_y=u$.
+
+\textbf{Ý (b).} $2u_t+3u_x=0$. Chia cho 2, dùng $t$ làm tham số: $X'=3/2$, $U'=0$. Bất biến $\rho=x-3t/2$, do đó $u=F(x-3t/2)$. Kiểm tra $2u_t+3u_x=2(-3F'/2)+3F'=0$.
+
+\textbf{Ý (c).} $au_t+bu_x=u$ với $a,b\ne0$. $X'=b/a$ và $U'=U/a$ cho bất biến $\rho=ax-bt$, $U=e^{t/a}F(\rho)$. Do đó $u=e^{t/a}F(ax-bt)$. Đạo hàm cho $au_t=e^{t/a}(F-abF')$, $bu_x=ab e^{t/a}F'$, tổng bằng $u$. Các hàm $F$ tùy ý $C^1$.
+
+%ID BT_1_3_1_3_03
+\textbf{Ý (a) — $au_x+bu_y=f$, $a,b,f$ hằng.} Nếu $a\ne0$, dùng $x$ làm tham số: $dy/dx=b/a$, nên $\rho=bx-ay$. Trên đường, $dU/dx=f/a$, tích phân cho
+\[u=fx/a+F(bx-ay).\]
+Kiểm tra $au_x+bu_y=a(f/a+bF')-abF'=f$. Nếu $a=0,b\ne0$, tích phân theo $y$ cho $u=fy/b+F(x)$. Nếu $a=b=0$, chỉ có nghiệm khi $f=0$, khi ấy mọi hàm đủ trơn đều thỏa.
+
+\textbf{Ý (b) — $u_x+2u_y+2u=1$.} Bước 1: $dy/dx=2$ cho $\rho=y-2x$. Bước 2: $U'+2U=1$. Nhân $e^{2x}$:
+\[(e^{2x}U)'=e^{2x},\quad e^{2x}U=e^{2x}/2+F(\rho).\]
+Suy $u=1/2+e^{-2x}F(y-2x)$. Bước 3: $u_x=e^{-2x}(-2F-2F')$, $u_y=e^{-2x}F'$, nên $u_x+2u_y+2u=1$.
+
+\textbf{Ý (c) — $3u_x-4u_y=x+e^x$.} $dy/dx=-4/3$ cho $\rho=4x+3y$. Dọc đường, $U'=(x+e^x)/3$; tích phân:
+\[u=x^2/6+e^x/3+F(4x+3y).\]
+Kiểm tra $3u_x=x+e^x+12F'$, $-4u_y=-12F'$, tổng bằng vế phải.
+
+\textbf{Ý (d) — $u_x+3u_y=9y^2$.} Bất biến $\rho=y-3x$. Trên đường $y=3x+\rho$, có $U'=9(3x+\rho)^2$. Vì $d[(3x+\rho)^3]/dx=9(3x+\rho)^2$, được $u=y^3+F(y-3x)$. Kiểm tra $u_x=-3F'$, $u_y=3y^2+F'$, tổng bằng $9y^2$.
+
+\textbf{Ý (e) — Dùng $h(x)=2x^2+3x$ trên $y=0$.} Thực hiện bước xác định hàm tùy ý riêng cho từng PDE:
+
+Với (a), nếu $b\ne0$, đặc trưng từ $(\xi,0)$ có $x=\xi+ay/b$. Do đó $\xi=x-ay/b$, còn $dU/dy=f/b$, $U(0)=h(\xi)$. Suy
+\[u=h(x-ay/b)+fy/b.\]
+Trên $y=0$ bằng $h(x)$; $au_x+bu_y=ah'(\xi)+b[-ah'(\xi)/b+f/b]=f$.
+
+Với (b), $h(x)=1/2+e^{-2x}F(-2x)$. Đặt $s=-2x$, được $F(s)=e^{-s}[h(-s/2)-1/2]$. Thay $s=y-2x$:
+\[u=\tfrac12+e^{-y}[h(x-y/2)-\tfrac12].\]
+
+Với (c), đặt $P(x)=x^2/6+e^x/3$. Dữ liệu cho $F(4x)=h(x)-P(x)$, nên $F(s)=h(s/4)-P(s/4)$. Suy
+\[u=P(x)+h(x+3y/4)-P(x+3y/4).\]
+
+Với (d), $F(-3x)=h(x)$, nên $F(s)=h(-s/3)$ và
+\[u=y^3+h(x-y/3).\]
+Ba công thức cuối thỏa PDE vì được lấy từ các nghiệm tổng quát đã kiểm tra; thế $y=0$ cho đúng $h(x)$.
+
+\textbf{Trường hợp đặc trưng ở (a).} Nếu $b=0$, trên dữ liệu phải có $ah'(x)=f$, tức $a(4x+3)=f$ ở cả khoảng. Với các hằng số $a,f$, điều này chỉ có thể xảy ra khi $a=f=0$. Khi ấy PDE không ràng buộc và có vô số nghiệm cùng vết $h$. Trong các trường hợp còn lại không có nghiệm thỏa dữ liệu. Khi $b\ne0$, và ở (b),(c),(d), đường $y=0$ không đặc trưng, nên dữ liệu xác định duy nhất các nghiệm trên toàn mặt phẳng.
+
+\textbf{Chi tiết thế đa thức dữ liệu vào bốn nghiệm ở (e).} Với $h(s)=2s^2+3s$, các công thức lần lượt là
+\[\begin{aligned}
+u_a&=2(x-ay/b)^2+3(x-ay/b)+fy/b &&(b\ne0),\\
+u_b&=\tfrac12+e^{-y}[2(x-y/2)^2+3(x-y/2)-\tfrac12],\\
+u_c&=\frac{x^2}{6}+\frac{e^x}{3}+\frac{11}{6}(x+3y/4)^2+3(x+3y/4)-\frac{e^{x+3y/4}}3,\\
+u_d&=y^3+2(x-y/3)^2+3(x-y/3).
+\end{aligned}\]
+Ở (b), đặt $z=x-y/2,Q=h(z)-1/2$; $u_x=e^{-y}h'(z)$, $u_y=-e^{-y}Q-e^{-y}h'(z)/2$. Vậy $u_x+2u_y+2u=1$. Ở (c), đặt $z=x+3y/4$, $u_x=P'(x)+h'(z)-P'(z)$, $u_y=3[h'(z)-P'(z)]/4$; thế vào $3u_x-4u_y$ còn $3P'(x)=x+e^x$. Ở (d), $u_x=h'(x-y/3)$, $u_y=3y^2-h'(x-y/3)/3$, cho $u_x+3u_y=9y^2$.
+
+%ID BT_1_3_1_3_04
+\textbf{Bước 1 — Giải PDE trước khi dùng dữ liệu.} $dy/dx=2$ cho $\rho=y-2x$. Trên đường, $U'-4U=e^{3x+\rho}$ và $(e^{-4x}U)'=e^{\rho-x}$. Tích phân cho
+\[u=-e^{x+y}+e^{4x}F(y-2x).\]
+
+\textbf{Bước 2 — Xác định $F$ từng ý.}
+(a) $u(0,y)=y^2$ cho $-e^y+F(y)=y^2$, nên $F(s)=s^2+e^s$.
+
+(b) $u(x,-x)=x$ cho $-1+e^{4x}F(-3x)=x$. Đặt $s=-3x$, suy $F(s)=(1-s/3)e^{4s/3}$.
+
+(c) $u(x,4x)=x^2$ cho $-e^{5x}+e^{4x}F(2x)=x^2$. Đặt $s=2x$, suy $F(s)=s^2e^{-2s}/4+e^{s/2}$.
+
+Trong mỗi ý, thay hàm $F$ vừa tìm vào công thức ở bước 1 để được nghiệm. Chú ý ở (b) cả hạng 1 và hạng $-s/3$ đều nhân $e^{4s/3}$.
+
+(d) Dữ liệu trên parabol cho
+\[F(x^2-2x)=H(x),\quad H(x)=e^{-4x}[f(x)+e^{x+x^2}].\]
+Vì $x^2-2x=(x-1)^2-1$, hai điểm $x$ và $2-x$ nằm trên cùng đặc trưng. Cần $H(x)=H(2-x)$. Khi tương thích, đặt $F(s)=H(1+\sqrt{s+1})$ trên $s\ge-1$ và kiểm tra độ trơn tại $s=-1$; đối xứng đơn thuần chưa đủ nếu $H$ thiếu trơn. Miền dữ liệu phủ là $y-2x\ge-1$. Muốn nghiệm trên toàn mặt phẳng phải có kéo dài $F$ đủ trơn qua $-1$; trên $s<-1$ kéo dài không được dữ liệu quyết định.
+
+\textbf{Bước 3 — Kiểm tra.} Với $L=\partial_x+2\partial_y-4$, phần $e^{4x}F(\rho)$ có $L=0$, phần $-e^{x+y}$ có $L=e^{x+y}$. Thế lại các đường dữ liệu vào $F$ kiểm tra đúng từng giá trị. Ở (a),(b),(c), chỉ số đặc trưng lần lượt là $y,-3x,2x$, phủ toàn trục nên cho duy nhất.
+
+\textbf{Chi tiết thay $F$ và viết nghiệm cuối của (a),(b),(c).} Trong $u=-e^{x+y}+e^{4x}F(y-2x)$:
+\[\begin{aligned}
+(a)\quad u&=-e^{x+y}+e^{4x}(y-2x)^2+e^{2x+y},\\
+(b)\quad u&=-e^{x+y}+\frac{3+2x-y}{3}e^{4(x+y)/3},\\
+(c)\quad u&=-e^{x+y}+\frac{(y-2x)^2}{4}e^{8x-2y}+e^{3x+y/2}.
+\end{aligned}\]
+Ở (b), $4x+4(y-2x)/3=4(x+y)/3$; ở (c), $4x-2(y-2x)=8x-2y$ và $4x+(y-2x)/2=3x+y/2$. Các bước này giữ nguyên thừa số mũ khi thế $F(s)=s^2e^{-2s}/4+e^{s/2}$.
+Thế $x=0$ vào (a): $-e^y+y^2+e^y=y^2$. Thế $y=-x$ vào (b): $-1+(3+3x)/3=x$. Thế $y=4x$ vào $u_c$: $-e^{5x}+x^2+e^{5x}=x^2$.
+
+%ID BT_1_3_1_3_05
+\textbf{Bước 1 — Giải dọc đặc trưng.} $u_x+3u_y+u=1$ cho $\rho=y-3x$ và $U'+U=1$. Nhân $e^x$, tích phân được $u=1+e^{-x}F(y-3x)$.
+
+\textbf{Bước 2 — Xét dữ liệu trên $y=3x$.} Trên đường này $\rho=0$, nên $g(x)=1+e^{-x}F(0)$. Do đó điều kiện cần và đủ là $g(x)=1+Ae^{-x}$ với $A$ hằng. Cũng có thể đạo hàm vết để có $g'+g=1$.
+
+\textbf{Bước 3 — Tồn tại và không duy nhất.} Nếu dữ liệu phù hợp, chọn bất kỳ $F$ đủ trơn với $F(0)=A$. Hai lựa chọn $F=A$ và $F=A+s$ cho hai nghiệm khác nhau cùng vết.
+
+\textbf{Ý (b) — Dữ liệu in trong đề.} Với $g=-1+2e^x$, ta có $g'+g=-1+4e^x$, không đồng nhất bằng 1. Vì thế vô nghiệm; không thể viết hai nghiệm cho dữ liệu này. Nếu sửa dữ liệu thành $1+2e^{-x}$, hai nghiệm là $1+2e^{-x}$ và $1+e^{-x}(2+y-3x)$. Đây là minh họa cho đề đã sửa, không phải đáp án của dữ liệu nguyên văn.
+
+%ID BT_1_3_1_3_06
+\textbf{Bước 1 — Đặc trưng của $au_x+bu_y=0$.} Giải $X'=a,Y'=b$; tính $(bX-aY)'=0$, nên bất biến $\rho=bx-ay$.
+
+\textbf{Bước 2 — Tích phân ẩn.} $U'=0$ cho $U$ hằng trên mỗi đặc trưng, nhưng hằng có thể khác giữa các đường. Suy $u=F(bx-ay)$ với $(a,b)\ne(0,0)$.
+
+\textbf{Bước 3 — Kiểm tra và ngoại lệ.} $u_x=bF'$, $u_y=-aF'$ nên PDE đúng. Nếu $a=b=0$, phương trình không ràng buộc, mọi hàm đủ trơn là nghiệm; không dùng dạng $F(0)$ để thu hẹp sai họ nghiệm.
+
+%ID BT_1_3_1_3_07
+\textbf{Bước 1 — Nghiệm tổng quát.} Với $(a,b)\ne(0,0)$, bài trước cho $u=F(bx-ay)$.
+
+\textbf{Ý (a).} Trên $bx-ay=1$, nghiệm phải bằng hằng $F(1)$. Do đó dữ liệu $h(x)$ phải có cùng giá trị tại mọi điểm thực sự nằm trên đường. Nếu $a\ne0$, $x$ chạy toàn trục và cần $h\equiv H$. Khi đó mọi $F$ với $F(1)=H$ cho nghiệm, nên không duy nhất. Nếu $a=0,b\ne0$, đường là $x=1/b$, dữ liệu chỉ gán giá trị $h(1/b)$; không đòi $h$ hằng ở những $x$ không nằm trên đường.
+
+\textbf{Ý (b).} Đường $x-y=1$ có $y=x-1$, nên $F((b-a)x+a)=h(x)$. Nếu $b\ne a$, đặt $s=(b-a)x+a$:
+\[F(s)=h\left(\frac{s-a}{b-a}\right),\quad u=h\left(\frac{bx-ay-a}{b-a}\right).\]
+Chỉ số $s$ phủ toàn trục, cho duy nhất. Nếu $b=a\ne0$, chỉ số bằng $a$, cần $h$ hằng; khi tương thích vẫn có vô số $F$ với cùng $F(a)$.
+
+\textbf{Ngoại lệ $a=b=0$.} Ở (a), tập $bx-ay=1$ rỗng, nên không có điều kiện dữ liệu thực sự. Ở (b), chỉ cần một hàm đủ trơn có vết $h$ trên đường; PDE không cho duy nhất. Các kết luận trên giả sử dữ liệu có độ trơn phù hợp.
+
+%ID BT_1_3_1_3_08
+\textbf{Bước 1 — Giải PDE.} $u_x=0$ nên $u=F(y)$: nghiệm hằng trên các đường ngang.
+
+\textbf{Bước 2 — Thế dữ liệu.} $u(x,x^2)=x$ đòi $F(x^2)=x$. Với $r>0$, hai điểm $x=\sqrt r$ và $x=-\sqrt r$ cùng cho đối số $r$, nhưng yêu cầu $F(r)=\sqrt r$ và $F(r)=-\sqrt r$.
+
+\textbf{Bước 3 — Kết luận và miền hẹp.} Không có nghiệm trên toàn đường dữ liệu. Nếu chỉ giữ nhánh $x>0$, có $F(y)=\sqrt y$ trên $y>0$. Nếu muốn gồm gốc và nghiệm $C^1$, $F'(y)=1/(2\sqrt y)$ không hữu hạn tại 0, nên cũng không có kéo dài $C^1$ theo công thức này.
+
+%ID BT_1_3_1_3_09
+\textbf{Bước 1 — Đặc trưng.} Với $u_x-2u_y=0$, $dy/dx=-2$, nên $\rho=y+2x$ và $u=F(\rho)$.
+
+\textbf{Bước 2 — Dùng dữ liệu.} Trên $y=e^x$, $F(e^x+2x)=(e^x+2x)^2$. Hàm $\phi(x)=e^x+2x$ có $\phi'=e^x+2>0$; khi $x\to-\infty$ thì $\phi\to-\infty$, khi $x\to+\infty$ thì $\phi\to+\infty$. Vì vậy mọi chỉ số đặc trưng được gặp đúng một lần, $F(s)=s^2$.
+
+\textbf{Bước 3 — Kiểm tra.} $u=(y+2x)^2$ có $u_x=4(y+2x)$, $u_y=2(y+2x)$, nên $u_x-2u_y=0$; vết trên $y=e^x$ đúng dữ liệu. Nghiệm duy nhất trên cả mặt phẳng.
+
+%ID BT_1_3_1_3_10
+\textbf{Bước 1 — Nghiệm riêng và thuần nhất.} Với $3u_x-2u_y+u=x$, thử $u_p=x-3$ và có $3+(x-3)=x$. Đặt $w=u-u_p$, thì $3w_x-2w_y+w=0$. Bất biến $\rho=2x+3y$, ODE theo $x$ là $W'+W/3=0$, nên
+\[u=x-3+e^{-x/3}F(2x+3y).\]
+
+\textbf{Ý (a).} Trên $y=x$, $u=x$ đòi $e^{-x/3}F(5x)=3$. Đặt $s=5x$, $F(s)=3e^{s/15}$, suy
+\[u=x-3+3e^{(y-x)/5}.\]
+Thế $y=x$ cho $x$; $3u_x-2u_y+u=x$ vì phần mũ có hệ số $-3/5-2/5+1=0$.
+
+\textbf{Ý (b).} Trên $2x+3y=1$, dữ liệu $u=0$ đòi $F(1)=(3-x)e^{x/3}$. Vế trái hằng nhưng đạo hàm vế phải là $-xe^{x/3}/3$, không đồng nhất bằng 0. Do đó không có nghiệm trên toàn đường. Đây là đường đặc trưng, nên phải kiểm tra tính tương thích thay vì khử $F$ như ở (a).
+
+%ID BT_1_3_1_3_11
+\textbf{Bước 1 — Nêu giả thiết mô hình.} Hiểu $y$ là tuổi, mỗi cá thể tăng tuổi với tốc độ 1. Mật độ ban đầu $P(y,0)=C(y)\ge0$, tổng dân số $N(t)=\int_0^\infty P(y,t)dy$, sinh ở tuổi 0 cho $P(0,t)=\alpha N(t)$. Nếu $y$ chỉ là tọa độ không gian thì đề còn thiếu luật vận chuyển; giả thiết tuổi là điều cần nói rõ.
+
+\textbf{Bước 2 — Giữ cách ghi chết tuyệt đối $D=k$.} Cân bằng dọc tuổi cho $P_t+P_y=-k$. Đặc trưng từ dữ liệu đầu có $y=\xi+t$ và $P'= -k$, nên trên $y>t$,
+\[P(y,t)=C(y-t)-kt.\]
+Để mật độ không âm ở mọi tuổi với $t>0$ phải có $C(\xi)\ge kt$ ở mọi $\xi>0$. Khi đó $\int C\ge\int_0^\infty kt\,d\xi=\infty$, trái giả thiết hữu hạn. Vì vậy mô hình chết tuyệt đối không cho mật độ dân số không âm hữu hạn trên mọi tuổi.
+
+\textbf{Bước 3 — Giải mô hình tỉ lệ chết nếu đó là ý định của đề.} Sửa thành $D=kP$, PDE là $P_t+P_y=-kP$. Trên một đặc trưng, $P$ giảm theo $e^{-kt}$. Từ dữ liệu đầu, $P=e^{-kt}C(y-t)$ khi $y\ge t$. Từ biên tuổi 0 ở thời điểm $t-y$, $P=e^{-ky}\alpha N(t-y)$ khi $y<t$.
+
+\textbf{Bước 4 — Tính tổng dân số.} Thế hai nhánh vào tích phân:
+\[N(t)=e^{-kt}N_0+\alpha\int_0^t e^{-k(t-s)}N(s)ds,\qquad N_0=\int_0^\infty C.\]
+Nhân $e^{kt}$, đạo hàm được $(e^{kt}N)'=\alpha e^{kt}N$, nên $N=N_0e^{(\alpha-k)t}$. Suy
+\[P(y,t)=\begin{cases}e^{-kt}C(y-t),&y\ge t,\\ \alpha N_0e^{(\alpha-k)t-\alpha y},&0\le y<t.\end{cases}\]
+
+\textbf{Bước 5 — Kiểm tra và ghép.} Hai nhánh thỏa $P_t+P_y=-kP$; tại $t=0$ đúng $C$, tại $y=0$ đúng $\alpha N(t)$. Muốn liên tục qua $y=t$ cần $C(0)=\alpha N_0$; muốn $C^1$ qua đó cần thêm $C'(0)=-\alpha^2N_0$. Nếu không tương thích, công thức mô tả nghiệm từng miền/ nghiệm vận chuyển yếu. Đây là kết quả của mô hình đã sửa, không đổi ngầm dữ kiện gốc.
+
+%ID VD_1_3_2_2_01
+\textbf{Bước 1 — Tìm bất biến của trường hệ số.} Với $Au_x+Bu_y+Cu=R$, giải đặc trưng $X'=A,Y'=B$ để tìm $\rho$ thỏa $A\rho_x+B\rho_y=0$.
+
+\textbf{Bước 2 — Chọn tọa độ còn lại.} Đặt $w=\rho(x,y)$, $z=y$, $u=v(w,z)$. Jacobian là $\rho_x$; chỉ dùng phép đổi ở nơi $\rho_x\ne0$.
+
+\textbf{Bước 3 — Tính đạo hàm và thế.}
+\[u_x=v_w\rho_x,\qquad u_y=v_w\rho_y+v_z.\]
+Do đó $Au_x+Bu_y=(A\rho_x+B\rho_y)v_w+Bv_z=Bv_z$. PDE thành $Bv_z+Cv=R$, với mọi hệ số được viết theo tọa độ mới. Nếu $B\ne0$, chia và giải ODE tuyến tính theo $z$, xem $w$ là tham số.
+
+\textbf{Bước 4 — Ngoại lệ và dữ liệu.} Nếu $\rho_x=0$, có thể chọn $z=x$ khi $\rho_y\ne0$, hoặc tìm tọa độ khác. Sau giải ODE, đổi về $x,y$, thế đường dữ liệu để tìm hàm tùy ý và kiểm tra PDE. Không dùng phép đổi suy biến để suy tính duy nhất.
+
+%ID VD_1_3_2_2_02
+\textbf{Ý (a) — $u_x+x^2u_y=0$.} Bước 1: $dy/dx=x^2$ cho $y=x^3/3+\rho$. Bước 2: $U'=0$, nên $u=F(y-x^3/3)$. Bước 3: $u_x=-x^2F'$, $u_y=F'$, thế vào PDE được 0.
+
+\textbf{Ý (b) — $e^{x^2}u_x+xu_y=0$.} Vì $e^{x^2}>0$, chọn $x$ làm tham số. $dy/dx=xe^{-x^2}$; dùng $d(e^{-x^2})=-2xe^{-x^2}dx$, suy $y=-e^{-x^2}/2+\rho/2$. Do đó $u=F(2y+e^{-x^2})$. Kiểm tra $u_x=-2xe^{-x^2}F'$, $u_y=2F'$, nên $e^{x^2}u_x+xu_y=0$. Cả hai công thức hợp lệ trên toàn mặt phẳng với $F\in C^1$.
+
+%ID VD_1_3_2_2_03
+\textbf{Ý (a) — $u_x+x^2u_y=0$.} Giải $dy/dx=x^2$ cho $\rho=y-x^3/3$, rồi $U'=0$ cho $u=F(y-x^3/3)$. Kiểm tra $u_x=-x^2F'$, $u_y=F'$, hai hạng triệt tiêu.
+
+\textbf{Ý (b) — $e^{x^2}u_x+xu_y=0$.} Vì hệ số $e^{x^2}>0$, giải $dy/dx=xe^{-x^2}$, được $\rho=y+e^{-x^2}/2$. Do $U'=0$, $u=F(\rho)$. Kiểm tra $u_x=-xe^{-x^2}F'$, $u_y=F'$, nên PDE bằng 0. Bất biến có thể nhân 2 và đổi tên $F$ để được dạng ở ví dụ 2.
+
+\textbf{Ý (c) — $u_x+\sin x\,u_y=0$.} $dy/dx=\sin x$ cho $y=-\cos x+\rho$. Dọc đường $U'=0$, nên $u=F(y+\cos x)$. Đạo hàm $u_x=-\sin x F'$, $u_y=F'$ kiểm tra PDE.
+
+\textbf{Ý (d) — $xu_x+yu_y=0$.} Giải hệ $X'=X,Y'=Y$: $X=x_0e^s,Y=y_0e^s$. Đặc trưng là các tia, không phải toàn đường thẳng qua gốc; chiều co giãn không đổi dấu của tọa độ. Trên mỗi nửa mặt phẳng $x\ne0$, $Y/X$ không đổi, nên $u=F(y/x)$; trên các miền $y\ne0$, dùng $u=G(x/y)$ để phủ các trục. Các hàm ở các miền cần ghép đủ trơn.
+
+\textbf{Tại gốc.} Nếu yêu cầu nghiệm liên tục trên cả mặt phẳng, với mỗi $(x,y)$ ta có $u(x,y)=u(e^{-s}x,e^{-s}y)$. Cho $s\to\infty$, vế phải tiến tới $u(0,0)$, nên mọi điểm có cùng giá trị. Vì vậy nghiệm toàn mặt phẳng liên tục phải hằng.
+
+%ID VD_1_3_2_2_04
+\textbf{Bước 1 — Tìm đặc trưng.} $xu_x-2yu_y+u=e^x$, $x>0$. Hệ $X'=X,Y'=-2Y$ cho $(X^2Y)'=0$, nên $\rho=x^2y$. Cách tính này bao gồm $y=0$, không cần lấy log của $y$.
+
+\textbf{Bước 2 — Giải ODE.} Dùng $x$ làm tham số, $U'+U/x=e^x/x$. Vì $x>0$, thừa số tích phân là $x$:
+\[(xU)'=e^x,\quad xU=e^x+F(\rho).\]
+Suy $u=[e^x+F(x^2y)]/x$.
+
+\textbf{Bước 3 — Kiểm tra.} Đặt $V=x\partial_x-2y\partial_y$. $V\rho=0$, $V(1/x)=-1/x$; do đó $(V+1)(F(\rho)/x)=0$. Với $e^x/x$, $(V+1)(e^x/x)=e^x$. Công thức thỏa PDE trên miền $x>0$.
+
+%ID VD_1_3_2_2_05
+\textbf{Bước 1 — Dùng nghiệm tổng quát của ví dụ 4.} $u=[e^x+F(x^2y)]/x$ trên $x>0$.
+
+\textbf{Bước 2 — Thế dữ liệu $u(1,y)=y$.} $e+F(y)=y$, nên $F(s)=s-e$. Thay lại:
+\[u(x,y)=xy+(e^x-e)/x.\]
+
+\textbf{Bước 3 — Kiểm tra và duy nhất.} Trên $x=1$, công thức bằng $y$. Phần $xy$ thỏa phương trình thuần nhất vì $x(xy)_x-2y(xy)_y+xy=0$; phần còn lại cho nguồn $e^x$. Mỗi đặc trưng $x^2y=\rho$ trong $x>0$ gặp $x=1$ đúng một lần, nên duy nhất trên miền này.
+
+\textbf{Chi tiết giải lại PDE.} Hệ $X'=X,Y'=-2Y$ cho $X=x_0e^s,Y=y_0e^{-2s}$, nên $X^2Y=x_0^2y_0=\rho$. Vì $dX/ds=X>0$, phương trình của ẩn theo $x$ là $dU/dx+U/x=e^x/x$. Nhân $x$ rồi tích phân: $d(xU)/dx=e^x$, $xU=e^x+F(\rho)$. Do đó $u=(e^x+F(x^2y))/x$, trước khi thế $x=1$ như trong bước 2.
+
+%ID VD_1_3_2_2_06
+\textbf{Bước 1 — Nhận ra đường dữ liệu là đặc trưng.} Trong nghiệm $u=[e^x+F(x^2y)]/x$, trên $y=0$ chỉ số $x^2y=0$ không đổi.
+
+\textbf{Bước 2 — Tìm điều kiện tương thích.} $u(x,0)=f(x)$ đòi $xf(x)-e^x=F(0)=C_0$, tức $f(x)=(e^x+C_0)/x$ trên $x>0$. Đây là điều kiện cần và đủ.
+
+\textbf{Bước 3 — Chỉ ra vô số nghiệm.} Nếu dữ liệu tương thích, chọn $F_\lambda(s)=C_0+\lambda s$ với mọi $\lambda\in\mathbb R$. Khi đó
+\[u_\lambda=(e^x+C_0)/x+\lambda xy.\]
+Các nghiệm đều thỏa PDE và vết $f$, nhưng khác nhau ngoài $y=0$. Có thể dùng mọi $F\in C^1$ với $F(0)=C_0$; họ vừa viết đủ chứng minh không duy nhất.
+
+\textbf{Chi tiết nguồn gốc của hàm tùy ý.} Dọc $X'=X,Y'=-2Y$, tính $(X^2Y)'=2X^2Y-2X^2Y=0$. Phương trình $dU/dx+U/x=e^x/x$ cho $(xU)'=e^x$, rồi $xU=e^x+F(X^2Y)$. Đường $y=0$ chỉ gặp chỉ số $\rho=0$, nên nó chỉ quyết định $F(0)$; các giá trị $F(\rho)$ với $\rho\ne0$ không được quyết định.
+
+%ID BT_1_3_2_3_01
+\textbf{Ý (a).} Với $u_x+\sin x\,u_y=0$, tích phân $dy/dx=\sin x$ cho $\rho=y+\cos x$. $U'=0$ nên $u=F(\rho)$. Kiểm tra $u_x+\sin x\,u_y=-\sin xF'+\sin xF'=0$.
+
+\textbf{Ý (b).} Với $xu_x+yu_y=0$, $X=x_0e^s,Y=y_0e^s$, nên $u$ hằng trên tia. Trên từng miền $x>0$ hoặc $x<0$, $u=F(y/x)$; dùng tọa độ $x/y$ trên miền $y\ne0$. Nếu cần liên tục trên toàn mặt phẳng, co giãn mỗi điểm về gốc cho $u(x,y)=u(0,0)$, nên chỉ có nghiệm hằng.
+
+\textbf{Ý (c).} Với $xu_x+2yu_y=0$ trong $x,y>0$, $X'=X,Y'=2Y$. Tính $(Y/X^2)'=0$, nên $\rho=y/x^2$. $U'=0$ cho $u=F(y/x^2)$. Kiểm tra $u_x=-2yF'/x^3$, $u_y=F'/x^2$, hai hạng của PDE triệt tiêu.
+
+\textbf{Ý (d).} Với $yu_x-4xu_y=2xy$, trường $V=y\partial_x-4x\partial_y$ có bất biến $r=y^2+4x^2$ vì $Vr=2y(-4x)+8xy=0$. Chọn nghiệm riêng $P=-y^2/4$, có $VP=2xy$. Đặt $w=u-P$, $Vw=0$. Các mức $r>0$ là ellipse liên thông và đặc trưng kín, nên
+\[u=-y^2/4+F(y^2+4x^2).\]
+Đạo hàm của phần $F$ cho $V=0$; phần riêng cho đúng nguồn. Để có nghiệm toàn mặt phẳng, tổ hợp xuyên tâm ellipse phải đủ trơn tại gốc; $F\in C^1([0,\infty))$ là một điều kiện đủ, nhưng không phải mô tả duy nhất của lớp trơn ở gốc.
+
+\textbf{Chi tiết hệ đặc trưng ở (d).} Giải $X'=Y,Y'=-4X$: $X''=-4X$, nên $X=A\cos2s+B\sin2s$, $Y=-2A\sin2s+2B\cos2s$. Vì $4X^2+Y^2=4(A^2+B^2)$, hệ đi hết một ellipse sau chu kỳ $\pi$. Với $U'=2XY$, có $(Y^2/4)'=YY'/2=-2XY$, do đó $(U+Y^2/4)'=0$. Hằng số trên ellipse là $F(4X^2+Y^2)$, dẫn tới $u=-y^2/4+F(4x^2+y^2)$.
+
+%ID BT_1_3_2_3_02
+\textbf{Bước 1 — Đặc trưng.} $-yu_x+xu_y=0$ có $X'=-Y,Y'=X$. Khi đó $X^2+Y^2$ không đổi, đặc trưng là các vòng tròn tâm gốc và $U'=0$.
+
+\textbf{Bước 2 — So sánh dữ liệu trên cùng vòng.} Vòng bán kính $r>0$ gặp trục $x$ ở $(r,0)$ và $(-r,0)$. Nghiệm phải có hai giá trị bằng nhau, trong khi dữ liệu $u(x,0)=3x$ cho $3r$ và $-3r$.
+
+\textbf{Bước 3 — Kết luận.} Không có nghiệm trên toàn mặt phẳng. Ngay trên trục cũng thấy điều kiện cần $f(r)=f(-r)$ bị vi phạm. Nếu chỉ xét miền cục bộ quanh một phần đường dữ liệu, phải nói rõ miền; kết luận toàn cục không tự áp cho mọi miền nhỏ.
+
+\textbf{Chi tiết tích phân hệ quay.} Từ $X'=-Y,Y'=X$, lấy đạo hàm dòng đầu được $X''+X=0$. Với điểm đầu $(x_0,y_0)$, $X=x_0\cos s-y_0\sin s$, $Y=x_0\sin s+y_0\cos s$. Tính $X^2+Y^2=x_0^2+y_0^2$ và $U'=0$ cho $U=u_0$. Sau góc $\pi$, $(r,0)$ đi tới $(-r,0)$ mà $U$ không đổi; đây là lý do hai giá trị dữ liệu phải bằng nhau.
+
+%ID BT_1_3_2_3_03
+\textbf{Bước 1 — Hình dạng nghiệm.} Như bài trước, nghiệm hằng trên mỗi vòng tròn nên $u=H(r)$, $r=\sqrt{x^2+y^2}$, ngoài gốc.
+
+\textbf{Bước 2 — Điều kiện dữ liệu.} Trên trục $x$, $H(|x|)=f(x)$, nên cần $f$ chẵn. Nếu $f\in C^1(\mathbb R)$ chẵn thì $f'(0)=0$, và đặt $H(r)=f(r)$, $r\ge0$.
+
+\textbf{Bước 3 — Kiểm tra độ trơn và PDE.} Với $r>0$, $u_x=f'(r)x/r$, $u_y=f'(r)y/r$, nên $-yu_x+xu_y=0$. Do $f'(r)\to0$, gradient tiến về 0 tại gốc; đạo hàm tại gốc cũng bằng 0, nên công thức cho nghiệm $C^1$ trên toàn mặt phẳng.
+
+\textbf{Bước 4 — Duy nhất.} Mọi bán kính gặp dữ liệu nên $H$ được xác định hết. Ví dụ $f=x^2$ cho $u=x^2+y^2$; $f$ không chẵn cho vô nghiệm. Với miền toàn mặt phẳng của đề, không có trường hợp dữ liệu tương thích mà không duy nhất; điều đó chỉ có thể xảy ra trên miền hoặc dữ liệu bị thu hẹp.
+
+\textbf{Chi tiết từ hệ đặc trưng đến nghiệm xuyên tâm.} Hệ $X'=-Y,Y'=X,U'=0$ có nghiệm $X=x_0\cos s-y_0\sin s$, $Y=x_0\sin s+y_0\cos s$, $U=u_0$. Mỗi quỹ đạo $r>0$ đi hết vòng $X^2+Y^2=r^2$, nên giá trị chỉ có thể phụ thuộc $r$. Ở gốc đặt $u(0,0)=f(0)$. Vì $f$ chẵn và khả vi, $f'(0)=-f'(0)$, suy $f'(0)=0$. Hơn nữa $|u(x,y)-u(0,0)|/r=|f(r)-f(0)|/r\to0$, nên $u$ khả vi ở gốc với gradient $0$; các công thức gradient ngoài gốc tiến về cùng giá trị ấy.
+
+%ID BT_1_3_2_3_04
+\textbf{Bước 1 — Giữ đúng hệ số của đề.} PDE là $xu_x-yu_y+yu=0$, có hệ số của $u$ là $y$. Hệ đặc trưng $X'=X,Y'=-Y$ cho $r=XY$ không đổi.
+
+\textbf{Bước 2 — Giải ẩn.} $U'=-YU$, còn $Y'=-Y$, nên $(e^{-Y}U)'=e^{-Y}(U'-Y'U)=0$. Do đó
+\[u(x,y)=e^yF(xy).\]
+Trên mỗi miền $x>0$ hoặc $x<0$, có thể chọn tọa độ $(r,\log|x|)$, nên công thức mô tả nghiệm trên các phần đặc trưng đó. Khi muốn qua trục, ghép đủ trơn.
+
+\textbf{Bước 3 — Kiểm tra.} $u_x=e^y yF'$, $u_y=e^y(F+xF')$, nên $xu_x-yu_y+yu=e^y[xyF'-yF-xyF'+yF]=0$. Trên $x=0,y\ne0$, PDE cho $u_y=u$, phù hợp $u(0,y)=e^yF(0)$; trên $y=0$, PDE cho $xu_x=0$.
+
+%ID BT_1_3_2_3_05
+\textbf{Bước 1 — Đặc trưng và ODE.} Với $xu_x-yu_y+yu=y^2$, bất biến vẫn là $r=xy$. Dọc đặc trưng $U'+YU=Y^2$, $Y'=-Y$.
+
+\textbf{Bước 2 — Tích phân.} Nhân $e^{-Y}$:
+\[(e^{-Y}U)'=Y^2e^{-Y}.\]
+Vì $dY=-Yds$, tích phân vế phải thành $-\int Ye^{-Y}dY=(Y+1)e^{-Y}$. Suy
+\[u=y+1+e^yF(xy).\]
+Nghiệm riêng $y+1$ giúp thấy công thức vẫn hợp lệ ở $y=0$, dù bước đổi tham số theo $Y$ cần xét riêng nơi $Y=0$.
+
+\textbf{Bước 3 — Kiểm tra.} $x(y+1)_x-y(y+1)_y+y(y+1)=-y+y^2+y=y^2$; phần $e^yF(xy)$ thỏa thuần nhất theo bài 4. Do đó tổng đúng PDE.
+
+\textbf{Chi tiết tích phân từng phần.} Khi $Y\ne0$, $ds=-dY/Y$, nên $\int Y^2e^{-Y}ds=-\int Ye^{-Y}dY$. Chọn $a=Y,db=e^{-Y}dY$, được $\int Ye^{-Y}dY=-Ye^{-Y}-e^{-Y}=-(Y+1)e^{-Y}$. Vậy $e^{-Y}U=(Y+1)e^{-Y}+F(XY)$, nhân lại $e^Y$ cho công thức đã nêu. Với $u_h=e^yF(xy)$, $u_{h,x}=ye^yF'$, $u_{h,y}=e^yF+xe^yF'$ và $xu_{h,x}-yu_{h,y}+yu_h=0$ bằng triệt tiêu từng hạng.
+
+%ID BT_1_3_2_3_06
+\textbf{Bước 1 — Dùng hai nghiệm tổng quát đã kiểm tra.} Bài 4: $u=e^yF(xy)$. Bài 5: $u=y+1+e^yF(xy)$. Xét dữ liệu cho từng phương trình.
+
+\textbf{Ý (a) — $u(x,1/x)=x$, $x>0$.} Trên đường này $xy=1$. Với bài 4 phải có $F(1)=xe^{-1/x}$; đạo hàm vế phải bằng $e^{-1/x}(1+1/x)>0$, nên không thể hằng. Với bài 5 phải có $F(1)=e^{-1/x}(x-1-1/x)$; đạo hàm bằng $e^{-1/x}(1+1/x-1/x^3)$, không đồng nhất bằng 0. Cả hai đều vô nghiệm trên toàn đường dữ liệu.
+
+\textbf{Ý (b) — $u(1,y)=y^2$.} Với bài 4, $F(y)=y^2e^{-y}$, nên
+\[u=x^2y^2e^{y-xy}.\]
+Với bài 5, $F(y)=e^{-y}(y^2-y-1)$, nên
+\[u=y+1+e^{y-xy}(x^2y^2-xy-1).\]
+Thế $x=1$ cho $y^2$ ở cả hai. Trong miền $x>0$, mọi đặc trưng gặp $x=1$ đúng một lần nên duy nhất ở miền đó; dữ liệu không tự xác định các đặc trưng trong $x<0$.
+
+\textbf{Ý (c) — $u(x,0)=x^4$.} Với cả hai PDE, đặt $y=0$ trong phương trình gốc cho $xu_x(x,0)=0$. Dữ liệu có $u_x(x,0)=4x^3$, suy $4x^4=0$, mâu thuẫn trên mọi khoảng có $x\ne0$. Vì vậy vô nghiệm. Dùng phương trình gốc ở đường suy biến tránh chia cho $y$.
+
+\textbf{Chi tiết hai công thức dùng ở bước 1.} Đặc trưng $X'=X,Y'=-Y$ cho $XY=\rho$. Với phương trình thuần nhất, $(e^{-Y}U)'=0$ nên $u=e^yF(\rho)$. Với phương trình có nguồn $y^2$, $(e^{-Y}U)'=Y^2e^{-Y}$; đổi $ds=-dY/Y$ và tích phân được $(Y+1)e^{-Y}+F(\rho)$, tức $u=y+1+e^yF(\rho)$. Ở (b), đường $x=1$ cho $\rho=y=s$, nên thay $s=xy$ vào $F(s)=s^2e^{-s}$ hoặc $F(s)=(s^2-s-1)e^{-s}$; đây là phép thế tạo ra hai nghiệm đã viết.
+
+%ID BT_1_3_2_3_07
+\textbf{Bước 1 — Bất biến.} Với $-2yu_x+xu_y=0$, $X'=-2Y,Y'=X$. Tính $(X^2+2Y^2)'=2X(-2Y)+4YX=0$.
+
+\textbf{Bước 2 — Giá trị trên ellipse.} $U'=0$, nên nghiệm hằng trên mỗi ellipse $x^2+2y^2=r>0$. Do vòng ellipse liên thông, $u=F(x^2+2y^2)$ ngoài gốc.
+
+\textbf{Bước 3 — Kiểm tra và độ trơn.} $u_x=2xF'$, $u_y=4yF'$, nên $-2yu_x+xu_y=0$. Để mô tả đúng lớp $C^1$ ở gốc, cũng có thể viết $u=H(\sqrt{x^2+2y^2})$ với $H\in C^1$, $H'(0)=0$. Yêu cầu $F'$ hữu hạn tại 0 là điều kiện đủ, nhưng có thể loại một số nghiệm $C^1$ hợp lệ.
+
+\textbf{Chi tiết giải hệ trên ellipse.} Từ $X'=-2Y,Y'=X$, suy $X''=-2X$. Với $\omega=\sqrt2$,
+\[X=x_0\cos\omega s-\omega y_0\sin\omega s,\quad
+Y=y_0\cos\omega s+\frac{x_0}{\omega}\sin\omega s.\]
+Thế vào $X^2+2Y^2$ cho $x_0^2+2y_0^2$. Chu kỳ $2\pi/\sqrt2$ đi hết ellipse; $U'=0$ cho hằng số trên toàn ellipse, thay vì chỉ trên một cung.
+
+%ID BT_1_3_2_3_08
+\textbf{Ý (a).} $yu_x-xu_y=u$ cho $X'=Y,Y'=-X,U'=U$. Đường đi là vòng tròn chu kỳ $2\pi$, nhưng $U(s+2\pi)=e^{2\pi}U(s)$. Một nghiệm đơn trị phải trở lại cùng giá trị, buộc $U=0$ trên mọi vòng. Dữ liệu $u(x,0)=x$ khác 0, nên vô nghiệm toàn cục. Cục bộ trong một góc không phủ vòng kín có thể có nghiệm, nhưng không kéo dài thành nghiệm đơn trị quanh vòng.
+
+\textbf{Ý (b).} $u_t+xtu_x=0$. Dùng $t$: $X'=tX$, $U'=0$, $X(0)=\xi$, $U(0)=\sin\xi$. Tích phân $X=\xi e^{t^2/2}$, nên $\xi=xe^{-t^2/2}$ và
+\[u=\sin(xe^{-t^2/2}).\]
+Đặt $z=xe^{-t^2/2}$, $u_t=-tz\cos z$, $xtu_x=tz\cos z$, tổng bằng 0; tại $t=0$ đúng $\sin x$.
+
+\textbf{Ý (c) — Giữ hệ số $-2xt$ trong đề.} $xu_t-2xtu_x=2tu$, $u(x,0)=x^2$. Trên $x\ne0$, chia cho $x$: $u_t-2tu_x=(2t/x)u$. Đặc trưng $X'= -2t$ cho $X=\xi-t^2$, nên $\xi=x+t^2$. Trên đường,
+\[U'=\frac{2t}{\xi-t^2}U,\quad \frac{d}{dt}[(\xi-t^2)U]=0.\]
+Ở $t=0$, tích này bằng $\xi^3$, do đó
+\[u=\frac{(x+t^2)^3}{x}.\]
+Đối với miền từ dữ liệu $x>0$, công thức hợp lệ khi $x>0$; từ dữ liệu $x<0$, cần $\xi=x+t^2<0$. Đặt $z=x+t^2$, $u_t=6tz^2/x$, $u_x=3z^2/x-z^3/x^2$, nên $xu_t-2xtu_x=2tz^3/x=2tu$. Trên $x=0,t>0$ phương trình gốc buộc $u=0$, nhưng công thức phía $x>0$ phân kỳ khi $x\downarrow0$. Vì thế không có nghiệm $C^1$ trên toàn mặt phẳng thời gian dương thỏa toàn bộ dữ liệu.
+
+\textbf{Ý (d).} $yu_x+xu_y=0$ có $r=x^2-y^2$ bất biến và $U'=0$. Trên $x=0$, $r=-y^2$; dữ liệu cho $F(r)=e^r$ với $r\le0$. Vì thế trên miền các đặc trưng từ trục $y$ phủ, có $u=e^{x^2-y^2}$. Công thức cũng là một nghiệm toàn mặt phẳng, nhưng miền $r>0$ chưa được dữ liệu xác định. Chẳng hạn thêm $\psi(r)$ với $\psi(r)=0$ khi $r\le0$, $\psi(r)=e^{-1/r}$ khi $r>0$, vẫn cho nghiệm trơn cùng dữ liệu và khác trên $r>0$.
+
+\textbf{Ý (e).} Với $V=y\partial_x+x\partial_y$, $Vr=0$ và $V(y^2/2)=xy$. Do đó $u=y^2/2+H(r)$. Trên $y=0$, $H(r)=e^{-r}$ với $r\ge0$. Trên $x=0$, $r=-y^2$, nên $H(r)=e^r+r/2$ với $r\le0$. Hai giá trị bằng nhau tại 0, nhưng $H'_+(0)=-1$, $H'_-(0)=3/2$. Trên đường $x=y>0$, $\nabla r\ne0$, nên gradient của $u$ không ghép liên tục. Kết luận: công thức ghép là nghiệm liên tục từng miền, nhưng không có nghiệm $C^1$ trên toàn góc phần tư thỏa hai vết đã cho.
+
+\textbf{Chi tiết hệ hyperbola của (d),(e).} Với $X'=Y,Y'=X$, đặt $S=X+Y,T=X-Y$. Khi đó $S'=S,T'=-T$, nên $S=S_0e^s,T=T_0e^{-s}$ và $ST=X^2-Y^2=\rho$. Ở (d), $U'=0$ nên $U$ hằng trên từng thành phần hyperbola; trên trục $x=0$ có $\rho=-y^2$ và dữ liệu $e^{-y^2}=e^\rho$, quyết định các thành phần từ trục ấy. Ở (e), $U'=XY$ và $(Y^2/2)'=YY'=XY$, nên $(U-Y^2/2)'=0$. Bởi vậy $u=y^2/2+H(\rho)$ trước khi dùng hai vết. Đạo hàm hai biểu thức của $H$ tại $0$: $(e^{-r})'|_0=-1$, $(e^r+r/2)'|_0=1+1/2=3/2$, giải thích sự không ghép $C^1$.
+
+%ID VD_1_4_2_01
+\textbf{Ý (a) — $u_t+tu_x=u^2$.} Bước 1: $X'=t$ cho $\rho=x-t^2/2$. Bước 2: $U'=U^2$. Nếu $U\ne0$, $(1/U)'=-1$, nên $u=1/[F(\rho)-t]$, ở nơi mẫu khác 0. Phải thêm nghiệm $u=0$ bị mất khi chia. Một dạng từ vết $f(\rho)$ tại $t=0$ giữ cả điểm $f=0$ là $u=f(\rho)/[1-tf(\rho)]$. Dọc đặc trưng công thức có đạo hàm bằng $U^2$, nên kiểm tra được PDE.
+
+\textbf{Ý (b) — $yu_x+xu_y=u^2+u$.} $V=y\partial_x+x\partial_y$ có bất biến $r=x^2-y^2$. Trên $x+y\ne0$, đặt $s=\log|x+y|$; $Vs=1$. ODE là $U'=U(U+1)$. Nếu $U\ne0,-1$, tích phân $dU/[U(U+1)]=ds$ cho $\log|U/(U+1)|=s+\text{hằng}$. Suy
+\[u=\frac{A(r)e^s}{1-A(r)e^s}.\]
+$u=0$ nằm trong họ khi $A=0$; thêm $u=-1$. Công thức trên mỗi biểu đồ có mẫu khác 0; trên $x+y=0$ dùng biểu đồ khác nếu trường không triệt tiêu, tại gốc PDE cho $u=0$ hoặc $-1$. Ghép đủ trơn trước khi kết luận toàn cục.
+
+\textbf{Ý (c) — $u_x+xyu_y=1/u$.} $dy/dx=xy$ cho $r=ye^{-x^2/2}$. Dọc đường, $U'=1/U$, nên $(U^2)'=2$, $U^2=2x+A(r)$. Suy $u=\pm\sqrt{2x+A(ye^{-x^2/2})}$. Chọn miền trong căn dương và dấu liên tục. Kiểm tra bằng cách đạo hàm $u^2$: $(\partial_x+xy\partial_y)u^2=2$, suy PDE vì $u\ne0$. Không thêm $u=0$ vì phương trình gốc chứa $1/u$.
+
+\textbf{Chi tiết phân thức ở (b).} $\frac1{U(U+1)}=\frac1U-\frac1{U+1}$, nên $\int dU/[U(U+1)]=\log|U|-\log|U+1|$. Sau khi tích phân theo $s$, viết $U/(U+1)=A(r)e^s$ với dấu được gộp vào $A$. Nhân chéo: $U=Ae^sU+Ae^s$, tức $(1-Ae^s)U=Ae^s$; chia khi mẫu khác $0$ được công thức. Hai giá trị cân bằng $0,-1$ phải được xét trước phép chia.
+
+%ID VD_1_4_2_02
+\textbf{Ý (a).} $u_t+uu_x=0$, $u(x,0)=3x$. $U'=0$ cho $U=3\xi$; $X'=U$ cho $X=\xi(1+3t)$. Khử $\xi=x/(1+3t)$:
+\[u=3x/(1+3t).\]
+$X_\xi=1+3t>0$ khi $t\ge0$, nên nghiệm cổ điển trên toàn miền thời gian dương. $u_t=-9x/(1+3t)^2$, $uu_x=9x/(1+3t)^2$.
+
+\textbf{Ý (b).} $u_t-u^2u_x=3u$, $u(x,0)=f(x)$. Giải $U'=3U$ trước: $U=e^{3t}f(\xi)$. Sau đó
+\[X'= -e^{6t}f(\xi)^2,\quad X=\xi-\frac{e^{6t}-1}{6}f(\xi)^2.\]
+Nghiệm là $u=e^{3t}f(\xi)$, với $\xi$ xác định từ $x=X$. Tính $X_\xi=1-(e^{6t}-1)f(\xi)f'(\xi)/3$; chỉ khử được cục bộ ở nơi khác 0. Giữ nhãn và phương trình khử là cách giải phù hợp khi $f$ tùy ý.
+
+\textbf{Ý (c).} $u_t-t^2uu_x=-u$. $U=e^{-t}f(\xi)$; $X'= -t^2e^{-t}f(\xi)$. Dùng tích phân từng phần hai lần:
+\[\int_0^t s^2e^{-s}ds=2-(t^2+2t+2)e^{-t}=:J(t).\]
+Suy $X=\xi-J(t)f(\xi)$, $u=e^{-t}f(\xi)$. Miền khử cần $1-J(t)f'(\xi)\ne0$; tại $t=0$, $J=0$, cho đúng dữ liệu.
+
+\textbf{Ý (d).} $u_t+t^2uu_x=5$, $u(x,0)=x$. $U'=5$ cho $U=\xi+5t$. Tích phân $X'=t^2(\xi+5t)$:
+\[X=\xi(1+t^3/3)+5t^4/4,\quad \xi=\frac{x-5t^4/4}{1+t^3/3}.\]
+Do đó $u=(x-5t^4/4)/(1+t^3/3)+5t$. Với $t\ge0$, $X_\xi=1+t^3/3>0$. Trên mỗi nhánh trên, $dU/dt=u_t+X'u_x$ bằng đúng nguồn của PDE và dữ liệu tại 0 được giữ, nên công thức tham số thỏa bài.
+
+\textbf{Chi tiết tích phân ở (c).} Đặt $J(t)=\int_0^t s^2e^{-s}ds$. Lần thứ nhất:
+\[J=-t^2e^{-t}+2\int_0^t se^{-s}ds.\]
+Lần thứ hai:
+\[\int_0^t se^{-s}ds=-te^{-t}+\int_0^t e^{-s}ds=-te^{-t}+1-e^{-t}.\]
+Thế lại được $J=2-(t^2+2t+2)e^{-t}$, rồi $X-\xi=-f(\xi)J(t)$. Ở (b), tích phân tương tự trực tiếp: $X-\xi=-f(\xi)^2\int_0^te^{6s}ds=-f(\xi)^2(e^{6t}-1)/6$.
+
+%ID VD_1_4_2_03
+\textbf{Bước 1 — Thông lượng và đặc trưng.} Burgers có $F=u^2/2$. Dữ liệu $u_L=1,u_R=2$ ở $x=0$ cho $X=\xi+t$ từ trái, $X=\xi+2t$ từ phải. Hai họ tách xa, để trống $t<x<2t$.
+
+\textbf{Bước 2 — Lấp bằng quạt giãn.} Đặt $z=x/t$, $u=V(z)$. PDE cho $(V-z)V'=0$, nên nhánh biến thiên có $V=z$. Nó ghép liên tục với giá trị 1 tại $x=t$ và 2 tại $x=2t$.
+
+\textbf{Bước 3 — Nghiệm và kiểm tra.}
+\[u=\begin{cases}1,&x\le t,\\x/t,&t<x<2t,\\2,&x\ge2t,\end{cases}\quad t>0.\]
+Trong quạt $u_t=-x/t^2$, $uu_x=x/t^2$, tổng bằng 0. Các mép liên tục và dữ liệu khi $t\downarrow0$ đúng ở $x\ne0$. Đây là nghiệm entropy; dữ liệu gián đoạn không cho nghiệm cổ điển qua $t=0$.
+
+%ID VD_1_5_2_01
+\textbf{Ý (a), bước 1 — Tương thích dữ liệu.} Đặt $F=p^2+q^2-1$, $X(s,0)=s,Y(s,0)=0,U(s,0)=f(s)$. Đạo hàm vết cho $p_0=f'(s)$, còn PDE cho $q_0^2=1-f'(s)^2$. Nếu $|f'(0)|>1$, không có nghiệm thực gần gốc.
+
+\textbf{Bước 2 — Không đặc trưng và hệ Charpit.} Nếu $|f'(0)|<1$ và $f\in C^2$ gần gốc, thu hẹp khoảng để $|f'(s)|<1$. Có hai nhánh $q_0=\pm\sqrt{1-f'(s)^2}$ và $J_0=F_q=2q_0\ne0$. Hệ là
+\[X'=2p,\quad Y'=2q,\quad U'=2,\quad p'=q'=0.\]
+Do đó
+\[X=s+2\tau f'(s),\quad Y=2\tau q_0(s),\quad U=f(s)+2\tau.\]
+Trên từng nhánh, khử $s,\tau$ gần dữ liệu để được một nghiệm cục bộ. Nếu $f(s)=s/2$, khử trực tiếp cho $u=x/2\pm\sqrt3\,y/2$.
+
+\textbf{Bước 3 — Trường hợp $|f'(0)|=1$.} $J_0=0$, nên không dùng định lý không đặc trưng để kết luận duy nhất. Dữ liệu $f(x)=x+x^2\operatorname{sgn}x$ có $f'(x)=1+2|x|>1$ khi $x\ne0$ gần gốc, nên vô nghiệm dù $f'(0)=1$. Dữ liệu $f(x)=x$ lại có vô số nghiệm $u_C=C-\sqrt{(x-C)^2+y^2}$ gần gốc, với $C>1$: trên $y=0,x<C$ có $u_C=x$, và $|\nabla u_C|=1$. Các ví dụ cho thấy phải xét cả dữ liệu lân cận, không chỉ giá trị đạo hàm tại gốc.
+
+\textbf{Ý (b), bước 1 — Dữ liệu trên vòng tròn.} $x_0=\cos s,y_0=\sin s,h=0$. Đạo hàm tiếp tuyến cho $-p_0\sin s+q_0\cos s=0$; PDE cho $p_0^2+q_0^2=1$. Vì vậy gradient có hai lựa chọn $(p_0,q_0)=\varepsilon(\cos s,\sin s)$, $\varepsilon=\pm1$.
+
+\textbf{Bước 2 — Tích phân và khử.} $X=(1+2\varepsilon\tau)\cos s$, $Y=(1+2\varepsilon\tau)\sin s$, $U=2\tau$. Gần vòng tròn giữ $1+2\varepsilon\tau>0$, nên $r=1+2\varepsilon\tau$ và
+\[u=\varepsilon(r-1),\qquad r=\sqrt{x^2+y^2}.\]
+
+\textbf{Bước 3 — Kiểm tra và sửa kết luận trong sách.} Hai hàm $r-1$ và $1-r$ đều có $|\nabla u|=1$ và vết 0 tại $r=1$. $J_0=-2\varepsilon\ne0$ cho duy nhất cục bộ \emph{trong từng nhánh gradient}, nhưng dữ liệu giá trị chưa chọn dấu nên có hai nhánh. Không kéo dài hai hàm xuyên tâm thành nghiệm $C^1$ qua gốc.
+
+\textbf{Chi tiết khử tham số và chọn gradient.} Ở (a) với $f=s/2$, $q_0=\varepsilon\sqrt3/2$, $X=s+\tau$, $Y=\varepsilon\sqrt3\tau$, $U=s/2+2\tau$. Do đó $\tau=\varepsilon y/\sqrt3$, $s=x-\tau$, $U=x/2+3\tau/2=x/2+\varepsilon\sqrt3 y/2$. Ở (b), đặt tiếp tuyến $e_\theta=(-\sin s,\cos s)$ và pháp tuyến $e_r=(\cos s,\sin s)$. Viết $(p_0,q_0)=Ae_r+Be_\theta$; dữ liệu cho $B=0$, PDE cho $A^2+B^2=1$, nên $A=\varepsilon$. Từ $r=1+2\varepsilon\tau$ có $\tau=\varepsilon(r-1)/2$, $U=2\tau=\varepsilon(r-1)$.
+
+%ID VD_1_5_2_02
+\textbf{Bước 1 — Tương thích.} $F=p^2+q^2+2(p-x)(q-y)-2u$, dữ liệu $(s,0,0)$ cho $p_0=0$ và $q_0(q_0-2s)=0$. Có hai nhánh $q_0=0,2s$; $J_0=2(q_0-s)$ khác 0 khi $s>0$.
+
+\textbf{Bước 2 — Hệ và các bất biến.} Tính đạo hàm của $F$:
+\[X'=2(p+q-Y),\quad Y'=2(p+q-X),\quad p'=X',\quad q'=Y'.\]
+Do đó $X-p=s$, $Y-q=-q_0$. Thế $p=X-s,q=Y+q_0$ vào hệ đường đi, được $X'=2X+2(q_0-s)$, $Y'=2Y+2(q_0-s)$. Tích phân với dữ liệu:
+\[X=q_0e^{2\tau}+s-q_0,\qquad Y=(q_0-s)(e^{2\tau}-1).\]
+Từ $F=0$,
+\[U=\frac{X^2+Y^2+s^2-2Xs+2Yq_0-2sq_0+q_0^2}{2}.\]
+
+\textbf{Bước 3 — Khử hai nhánh.} Nếu $q_0=0$, $X=s$, $Y=s(1-e^{2\tau})$, suy $p=0,q=Y$ và $u=y^2/2$. Nếu $q_0=2s$, $X=2se^{2\tau}-s$, $Y=s(e^{2\tau}-1)$, nên $s=X-2Y$, $p=2Y,q=2X-3Y$, suy $u=2xy-3y^2/2$.
+
+\textbf{Bước 4 — Kiểm tra và miền.} Với $u=y^2/2$, $p=0,q=y$ cho vế trái $y^2=2u$. Với $u=2xy-3y^2/2$, $p=2y,q=2x-3y$ cho vế trái $4xy-3y^2=2u$. Cả hai có $u(x,0)=0$. Từ đoạn dữ liệu $0\le s\le1$, nhánh thứ nhất cần $s=x$ và $e^{2\tau}=1-y/x>0$; nhánh thứ hai cần $s=x-2y$ và $e^{2\tau}=(x-y)/(x-2y)>0$. Các đa thức là nghiệm kéo dài toàn cục, nhưng dữ liệu chỉ bảo đảm duy nhất cục bộ trên mỗi nhánh ở $s>0$; gốc suy biến. Lời giải sách nói duy nhất khi đã chọn gradient ban đầu; nếu chưa chọn nhánh thì có hai nghiệm.
+
+\textbf{Chi tiết giải hai ODE tuyến tính.} Đặt $c=q_0-s$, hằng theo $\tau$. Từ $X'-2X=2c$, nhân $e^{-2\tau}$ và tích phân từ $0$:
+\[e^{-2\tau}X-s=c(1-e^{-2\tau}),\quad X=(s+c)e^{2\tau}-c.\]
+Tương tự $e^{-2\tau}Y=c(1-e^{-2\tau})$, nên $Y=c(e^{2\tau}-1)$. Vì $s+c=q_0$, đây đúng các công thức ở bước 2. Nhánh $q_0=2s$ cho $X-2Y=s$, $p=X-s=2Y$, $q=Y+2s=2X-3Y$. Tích phân $u_x=2y$ cho $u=2xy+C(y)$; phương trình $u_y=2x-3y$ cho $C'=-3y$, rồi $C=-3y^2/2$ nhờ vết ban đầu.
+
+%ID BT_1_5_3_01
+\textbf{Bước 1 — Tìm gradient trên dữ liệu.} $F=p^2+pq-5u$, dữ liệu $u(0,s)=4s^2$ cho $q_0=8s$. PDE cho $p_0^2+8sp_0-20s^2=0=(p_0-2s)(p_0+10s)$, nên $p_0=2s$ hoặc $-10s$.
+
+\textbf{Bước 2 — Giải Charpit.} $F_p=2p+q,F_q=p,F_u=-5$, nên $p'=5p,q'=5q,U'=10U$. Đặt $E=e^{5\tau}$:
+\[p=p_0E,\quad q=8sE,\quad U=4s^2E^2,\quad X=(2p_0+8s)(E-1)/5,\quad Y=s+p_0(E-1)/5.\]
+
+\textbf{Bước 3 — Khử từng nhánh.} Nếu $p_0=2s$, $X/2+2Y=2sE$, nên $u=(x/2+2y)^2$. Nếu $p_0=-10s$, $5X/2-2Y=-2sE$, nên $u=(5x/2-2y)^2$.
+
+\textbf{Bước 4 — Kiểm tra.} Với $u=L^2$, $L=ax+by$, có $p^2+pq=4a(a+b)L^2$. Hai bộ $(a,b)=(1/2,2),(5/2,-2)$ đều có $4a(a+b)=5$, nên PDE đúng; ở $x=0$ đều bằng $4y^2$. Định thức trên dữ liệu $x=0$ là $-(2p_0+q_0)=\mp12s$, nên mỗi nhánh không đặc trưng ở $s\ne0$; không suy duy nhất ở gốc.
+
+\textbf{Chi tiết tích phân và khử.} $p'=5p$ cho $p=p_0e^{5\tau}$, $q'=5q$ cho $q=8se^{5\tau}$; $U'=p(2p+q)=2(p^2+pq)=10U$ cho $U=4s^2e^{10\tau}$. Vì $\int_0^\tau e^{5r}dr=(E-1)/5$, tích phân $X',Y'$ được các công thức ở bước 2. Với $p_0=2s$: $X=12s(E-1)/5$, $Y=s+2s(E-1)/5$, nên $X/2+2Y=2s+2s(E-1)=2sE$. Với $p_0=-10s$: $X=-12s(E-1)/5$, $Y=s-2s(E-1)$, nên $5X/2-2Y=-2sE$. Bình phương cả hai cho $U$.
+
+%ID BT_1_5_3_02
+\textbf{Bước 1 — Dữ liệu trên đường chéo.} $F=p^2-5q^2-u$, $u(s,s)=s^2$ cho $p_0+q_0=2s$. Thế $p_0=2s-q_0$:
+\[(2s-q_0)^2-5q_0^2=s^2\ \Longleftrightarrow\ 4q_0^2+4sq_0-3s^2=0.\]
+Hai nhánh là $(p_0,q_0)=(7s/2,-3s/2)$ và $(3s/2,s/2)$.
+
+\textbf{Bước 2 — Hệ đặc trưng.} $X'=2p,Y'=-10q,p'=p,q'=q,U'=2U$. Đặt $E=e^\tau$, tích phân:
+\[X=s+2p_0(E-1),\quad Y=s-10q_0(E-1),\quad U=s^2E^2.\]
+
+\textbf{Bước 3 — Khử tham số.} Nhánh thứ nhất có $(7X-3Y)/4=sE$, nhánh thứ hai có $(3X+Y)/4=sE$. Vì vậy
+\[u=((7x-3y)/4)^2,\qquad u=((3x+y)/4)^2.\]
+
+\textbf{Bước 4 — Kiểm tra.} Với $u=(ax+by)^2$, PDE cần $4(a^2-5b^2)=1$, đúng cho $(7/4,-3/4)$ và $(3/4,1/4)$; $a+b=1$ cho vết $x^2$. $J_0=-10q_0-2p_0=\pm8s$, nên hai nhánh không đặc trưng ở $s\ne0$.
+
+\textbf{Chi tiết nghiệm bậc hai và khử.} $4q_0^2+4sq_0-3s^2=(2q_0-s)(2q_0+3s)$, nên $q_0=s/2,-3s/2$; lấy $p_0=2s-q_0$. Nhánh $(7s/2,-3s/2)$ có $X=s+7s(E-1)$, $Y=s+15s(E-1)$, do đó $7X-3Y=4s+4s(E-1)=4sE$. Nhánh $(3s/2,s/2)$ có $X=s+3s(E-1)$, $Y=s-5s(E-1)$, nên $3X+Y=4sE$. Do $U=s^2E^2$, mỗi tổ hợp chia $4$ rồi bình phương cho nghiệm tương ứng.
+
+%ID BT_1_5_3_03
+\textbf{Bước 1 — Giữ hệ số $y$ của đề.} $F=p^2+8qu-8yq^2$. Dữ liệu $(s,s,s^2)$ cho $p_0+q_0=2s$. Đặt $q_0=Q$, $p_0=2s-Q$, ta được
+\[(1-8s)Q^2+(8s^2-4s)Q+4s^2=0.\]
+Biệt thức là $\Delta=64s^3(s+1)$. Vì $\Delta<0$ trên $-1<s<0$, không có nghiệm thực trên lân cận toàn đường dữ liệu. Với $s>0$ hoặc $s<-1$, lấy các nhánh thực
+\[Q=\frac{4s-8s^2\pm8\sqrt{s^3(s+1)}}{2(1-8s)}\quad(s\ne1/8).\]
+Ở $s=1/8$, phương trình thành tuyến tính và cho $Q=1/6$; chọn nhánh có giới hạn hữu hạn qua điểm này.
+
+\textbf{Bước 2 — Tính và giải hệ Charpit.} $F_x=0,F_y=-8q^2,F_u=8q,F_p=2p,F_q=8u-16yq$. Do đó
+\[X'=2p,\quad Y'=8U-16Yq,\quad p'=-8pq,\quad q'=0.\]
+Trên $F=0$, $U'=2p^2+8qU-16Yq^2=-8qU$. Vì $q=Q(s)$ hằng trên đường, đặt $E=e^{-8Q\tau}$:
+\[p=p_0E,\quad q=Q,\quad U=s^2E,\quad X=s+\frac{p_0}{4Q}(1-E).\]
+Giải $Y'+16QY=8s^2E$ bằng thừa số $e^{16Q\tau}$:
+\[Y=sE^2+\frac{s^2}{Q}(E-E^2).\]
+
+\textbf{Bước 3 — Nghiệm và miền.} Nghiệm là $u(X(s,\tau),Y(s,\tau))=s^2E$, với từng nhánh $Q$ trơn, tại nơi ánh xạ khả nghịch. Ở dữ liệu,
+\[J_0=8s^2-16sQ-2p_0=8s^2-4s+2(1-8s)Q=\pm\sqrt\Delta.\]
+Vì vậy có nghiệm cục bộ trên từng nhánh khi $s>0$ hoặc $s<-1$; $s=0,-1$ suy biến cần xét riêng. Trên các khoảng không đặc trưng này, $Q\ne0$ nên các công thức chia cho $Q$ hợp lệ.
+
+\textbf{Bước 4 — Kiểm tra.} Tại $\tau=0$, $X=Y=s,U=s^2$. Thế các công thức vào $p^2+8qU-8Yq^2$ cho $E^2[p_0^2+8Qs^2-8sQ^2]=0$, theo phương trình tương thích. Hệ Charpit cùng điều kiện tiếp tuyến bảo đảm $p=u_x,q=u_y$ trên miền khả nghịch. Không bỏ hệ số $y$ để dùng công thức của một PDE khác.
+
+\textbf{Chi tiết biệt thức và tích phân $Y$.} Với $a=1-8s,b=8s^2-4s,c=4s^2$,
+\[\Delta=b^2-4ac=64s^4-64s^3+16s^2-16s^2+128s^3=64s^3(s+1).\]
+Với $Q\ne0$, nhân $Y'+16QY=8s^2e^{-8Q\tau}$ bởi $e^{16Q\tau}$:
+\[e^{16Q\tau}Y-s=8s^2\int_0^\tau e^{8Qr}dr=\frac{s^2}{Q}(e^{8Q\tau}-1).\]
+Nhân $e^{-16Q\tau}$ được $Y=sE^2+(s^2/Q)(E-E^2)$. Đồng thời $X-s=2p_0\int_0^\tau e^{-8Qr}dr=p_0(1-E)/(4Q)$. Các hằng số đều lấy từ dữ liệu tại $\tau=0$.
+
+%ID BT_1_5_3_04
+\textbf{Bước 1 — Tương thích.} $F=p^2+q^2+2xp+2yq-2u$. Dữ liệu $u(s,0)=(1-s^2)/2$ cho $p_0=-s$. Thế PDE: $s^2+q_0^2-2s^2=1-s^2$, suy $q_0^2=1$, $q_0=\pm1$.
+
+\textbf{Bước 2 — Giải Charpit.} $p'=-2p+2p=0$, $q'=-2q+2q=0$. $X'=2p+2X=2(X-s)$, $X(0)=s$, nên $X=s$. $Y'=2q_0+2Y$ cho $Y=q_0(e^{2\tau}-1)$. $U'=2+2q_0Y=2e^{2\tau}$, nên $U=(1-s^2)/2+e^{2\tau}-1$.
+
+\textbf{Bước 3 — Khử và kiểm tra.} $e^{2\tau}-1=q_0Y$, nên
+\[u=(1-x^2)/2+y,\qquad u=(1-x^2)/2-y.\]
+Với $p=-x,q=\pm1$, vế trái PDE bằng $1-x^2\pm2y=2u$ và vết đúng. $J_0=2q_0\ne0$ nên mỗi nhánh cho nghiệm cục bộ duy nhất khi gradient pháp tuyến đã chọn.
+
+%ID BT_1_5_3_05
+\textbf{Bước 1 — Gradient ban đầu.} $F=p^2+q^2+2yp+2xq-2u$. Dữ liệu $u(s,0)=s^2/2$ cho $p_0=s$ và $q_0^2+2sq_0=0$, nên $q_0=0$ hoặc $-2s$.
+
+\textbf{Bước 2 — Tách hệ Charpit.} Tính
+\[X'=2p+2Y,\quad Y'=2q+2X,\quad p'=2p-2q,\quad q'=2q-2p.\]
+Đặt $R=p+q$, $D=p-q$, $S=X+Y$, $T=X-Y$. Khi đó $R'=0,D'=4D$, $S'=2S+2R$, $T'=-2T+2D$. Với $R_0=s+q_0,D_0=s-q_0,S_0=T_0=s$, tích phân:
+\[R=R_0,\quad D=D_0e^{4\tau},\quad S=(s+R_0)e^{2\tau}-R_0,\]
+\[T=(s-D_0/3)e^{-2\tau}+(D_0/3)e^{4\tau}.\]
+Lấy $X=(S+T)/2$, $Y=(S-T)/2$, $p=(R+D)/2$, $q=(R-D)/2$. Từ PDE,
+\[U=(p^2+q^2+2Yp+2Xq)/2.\]
+Đây là công thức tham số đã tích phân bằng các hàm mũ thông thường.
+
+\textbf{Bước 3 — Hai nhánh.} Với $q_0=0$, $R_0=D_0=s$, dùng các công thức trên và khử $s,\tau$ ở nơi Jacobian khác 0; không cần ép thành một đa thức. Với $q_0=-2s$, $R_0=-s,D_0=3s$, nên $S=s,T=se^{4\tau}$, và
+\[U=(3T^2-S^2)/4,\qquad u=(x^2+y^2)/2-2xy.\]
+
+\textbf{Bước 4 — Kiểm tra và miền.} Nhánh đa thức có $p=x-2y,q=y-2x$; thế cho $p^2+q^2+2yp+2xq=x^2+y^2-4xy=2u$, vết đúng $x^2/2$. Với nhánh tham số, hệ được tích phân từ đúng Charpit và $U$ được khôi phục từ $F=0$; tại 0 đúng toàn bộ dữ liệu. $J_0=2(q_0+s)=\pm2s$, nên mỗi nhánh có thể khử cục bộ ở $s\ne0$; gốc không được định lý này bảo đảm.
+
+\textbf{Chi tiết thừa số tích phân.} $R'=0$ cho $R=R_0$; $D'=4D$ cho $D=D_0e^{4\tau}$. Với $S'-2S=2R_0$, có $(e^{-2\tau}S)'=2R_0e^{-2\tau}$, nên $e^{-2\tau}S=s+R_0(1-e^{-2\tau})$. Với $T'+2T=2D_0e^{4\tau}$, có $(e^{2\tau}T)'=2D_0e^{6\tau}$, nên $e^{2\tau}T=s+D_0(e^{6\tau}-1)/3$. Đây là hai công thức $S,T$ trong bước 2. Ở nhánh $R=-S,D=3T$, $p=(-S+3T)/2,q=(-S-3T)/2$, và
+\[p^2+q^2=(S^2+9T^2)/2,\quad 2Yp+2Xq=-S^2-3T^2.\]
+Vậy $2U=(-S^2+3T^2)/2$, tức $U=(3T^2-S^2)/4$.
+
+%ID BT_1_5_3_06
+\textbf{Bước 1 — Tương thích.} $F=4p^2+q^2+4(p-x)(q-4y)-8u$, dữ liệu $u(s,0)=0$ cho $p_0=0$ và $q_0(q_0-4s)=0$.
+
+\textbf{Bước 2 — Hệ Charpit và tổ hợp bất biến.}
+\[X'=8p+4q-16Y,\quad Y'=4p+2q-4X,\quad p'=X',\quad q'=4Y'.\]
+Suy $X-p=s$, $q-4Y=q_0$. Thế $p=X-s$, $q=4Y+q_0$ vào hai phương trình đầu:
+\[X'=8X-8s+4q_0,\quad Y'=8Y+2q_0-4s.\]
+Tích phân với $X(0)=s,Y(0)=0$, đặt $E=e^{8\tau}$:
+\[X=s+(q_0/2)(E-1),\quad Y=(q_0/4-s/2)(E-1).\]
+
+\textbf{Bước 3 — Khử.} Với $q_0=0$, $X=s,p=0,q=4Y$, PDE cho $u=2y^2$. Với $q_0=4s$, $X=s+4Y$, nên $s=X-4Y$, $p=4Y,q=4X-12Y$, PDE cho $u=4xy-6y^2$.
+
+\textbf{Bước 4 — Kiểm tra.} Nhánh đầu: $p=0,q=4y$ cho vế trái $16y^2=8u$. Nhánh sau: $p=4y,q=4x-12y$ cho vế trái $32xy-48y^2=8u$. Cả hai bằng 0 ở $y=0$. $J_0=2q_0-4s=\mp4s$ khác 0 khi $s\ne0$; hai nhánh trùng ở gốc không cho suy duy nhất tại đó.
+
+\textbf{Chi tiết tích phân và rút gọn nhánh thứ hai.} Vì $p'=X'$, $p-X=-s$; vì $q'=4Y'$, $q-4Y=q_0$. Giải $X'-8X=-8s+4q_0$ bằng nhân $e^{-8\tau}$ cho $X=s+q_0(E-1)/2$. Tương tự $Y'-8Y=2q_0-4s$ cho $Y=(q_0/4-s/2)(E-1)$. Khi $q_0=4s$, $X-s=2s(E-1)=4Y$, nên $p=4Y,q=4X-12Y$. Thế vào PDE:
+\[4p^2+q^2+4(p-X)(q-4Y)
+=64Y^2+(4X-12Y)^2-16(X-4Y)^2
+=32XY-48Y^2.\]
+Chia $8$ cho $U=4XY-6Y^2$.
+
+%ID BT_1_5_3_07
+\textbf{Bước 1 — Tương thích và miền log.} $F=pq-1$, $u(s,0)=\log s$ với $s>0$ cho $p_0=1/s$, $q_0=s$.
+
+\textbf{Bước 2 — Giải Charpit.} $p'=q'=0$, $X'=q=s$, $Y'=p=1/s$, $U'=2pq=2$. Do đó $X=s+s\tau$, $Y=\tau/s$, $U=\log s+2\tau$.
+
+\textbf{Bước 3 — Khử.} $\tau=sy$ và $x=s+s^2y$. Nghiệm của phương trình bậc hai liên tục về $s=x$ khi $y=0$ là
+\[s=\frac{2x}{1+\sqrt{1+4xy}},\qquad u=\log s+2sy.\]
+Chọn miền gần $x>0,y=0$ để $s>0$ và $1+4xy>0$.
+
+\textbf{Bước 4 — Kiểm tra.} Từ $x=s+s^2y$, $s_x=1/(1+2sy)$ và $s_y=-s^2/(1+2sy)$. Đạo hàm $u$ cho $u_x=(1/s+2y)s_x=1/s$, $u_y=(1/s+2y)s_y+2s=s$, nên $pq=1$. Tại $y=0$, $s=x$, $u=\log x$. Mẫu $1+2sy$ cũng là điều kiện khử không suy biến.
+
+\textbf{Chi tiết chọn nghiệm bậc hai.} Khi $y\ne0$, $ys^2+s-x=0$ cho $s=(-1\pm\sqrt{1+4xy})/(2y)$. Nhánh dấu cộng có giới hạn $x$ khi $y\to0$; nhân tử số và mẫu với $1+\sqrt{1+4xy}$ cho $s=2x/(1+\sqrt{1+4xy})$. Nhánh dấu trừ không về dữ liệu $s=x>0$. Sau đó $\tau=sy$ và $U=\log s+2\tau$ cho nghiệm.
+
+%ID BT_1_5_3_08
+\textbf{Bước 1 — Dữ liệu trên $y=1$.} $F=pq-u$, $u(s,1)=s$ cho $p_0=1$, $q_0=s$.
+
+\textbf{Bước 2 — Hệ đặc trưng.} $p'=p,q'=q$, $X'=q,Y'=p$, $U'=2U$. Tích phân:
+\[p=e^\tau,\quad q=se^\tau,\quad X=se^\tau,\quad Y=e^\tau,\quad U=se^{2\tau}.\]
+
+\textbf{Bước 3 — Khử và thử lại.} $U=XY$, nên $u=xy$. $u_x=y,u_y=x$ cho $pq=xy=u$, và $u(x,1)=x$. Vì dữ liệu chỉ có $0\le s\le1$, miền được đặc trưng phủ cần $y>0$ và $0\le x/y\le1$. Đa thức $xy$ là một kéo dài toàn cục; dữ liệu đoạn không tự xác định duy nhất ở mọi điểm ngoài miền phủ.
+
+%ID BT_1_5_3_09
+\textbf{Bước 1 — Tương thích.} $F=pq-2$, $u(s,s)=3s$ cho $p_0+q_0=3$, $p_0q_0=2$. Hai nghiệm của $z^2-3z+2=0$ là 1,2, nên $(p_0,q_0)=(1,2)$ hoặc $(2,1)$.
+
+\textbf{Bước 2 — Tích phân.} $p,q$ hằng; $X=s+q_0\tau$, $Y=s+p_0\tau$, $U=3s+4\tau$. Với nhánh $(1,2)$, $U=X+2Y$; nhánh $(2,1)$ cho $U=2X+Y$.
+
+\textbf{Bước 3 — Nghiệm và miền.} $u=x+2y$ hoặc $u=2x+y$. Gradient có tích 2, vết bằng $3x$, nên cả hai đúng. $J_0=p_0-q_0=\mp1$ khác 0. Từ đoạn $0\le s\le1$, nhánh đầu cần $s=2y-x\in[0,1]$, nhánh sau cần $s=2x-y\in[0,1]$. Các công thức affine kéo dài được, nhưng kết luận duy nhất cục bộ áp cho từng nhánh đã chọn.
+
+%ID BT_1_5_3_10
+\textbf{Bước 1 — Gradient đầu.} $F=p^3-q$, $u(s,0)=2s^{3/2}$, $0\le s\le1$, cho $p_0=3\sqrt s$, $q_0=p_0^3=27s^{3/2}$.
+
+\textbf{Bước 2 — Charpit.} $p,q$ hằng, $X'=3p^2=27s$, $Y'=-1$, $U'=3p^3-q=54s^{3/2}$. Suy $X=s+27s\tau$, $Y=-\tau$, $U=2s^{3/2}(1+27\tau)$.
+
+\textbf{Bước 3 — Khử.} $\tau=-y$, $s=x/(1-27y)$, nên
+\[u=2x^{3/2}/\sqrt{1-27y}.\]
+Chọn miền gần dữ liệu với $x>0$, $y<1/27$; miền từ đoạn dữ liệu còn cần $0\le x/(1-27y)\le1$.
+
+\textbf{Bước 4 — Kiểm tra.} Đặt $D=1-27y$. $u_x=3\sqrt{x}/\sqrt D$, $u_y=27x^{3/2}/D^{3/2}$, nên $u_x^3=u_y$; tại $y=0$ đúng dữ liệu. Ở $x=0$ công thức kéo dài $C^1$ từ phía phải, nhưng $u_{xx}$ không hữu hạn, nên không gọi là nghiệm $C^2$ tại đầu mút này.
+
+%ID BT_1_5_3_11
+\textbf{Bước 1 — Gradient đầu.} $F=p+q^2/2-1$, $u(0,s)=s^2$, $0\le s\le1$, cho $q_0=2s$, $p_0=1-2s^2$.
+
+\textbf{Bước 2 — Tích phân.} $p,q$ hằng, $X'=1$, $Y'=q_0=2s$, $U'=p_0+q_0^2=1+2s^2$. Do đó $X=\tau$, $Y=s(1+2\tau)$, $U=s^2+\tau(1+2s^2)$.
+
+\textbf{Bước 3 — Khử.} $\tau=x$, $s=y/(1+2x)$, suy $u=x+y^2/(1+2x)$. Miền cục bộ quanh dữ liệu lấy $1+2x>0$; còn cần $s\in[0,1]$. Công thức đại số cũng có nghĩa trên miền $x<-1/2$, nhưng miền này không nối với dữ liệu qua phép khử đang dùng.
+
+\textbf{Bước 4 — Kiểm tra.} $p=1-2y^2/(1+2x)^2$, $q=2y/(1+2x)$, nên $p+q^2/2=1$; ở $x=0$ bằng $y^2$. Đường $x=-1/2$ làm Jacobian mất khả nghịch.
+
+%ID BT_1_5_3_12
+\textbf{Bước 1 — Tương thích.} $F=2xp^2+yq-u$, $u(s,1)=s/2$ cho $p_0=1/2$. Thế PDE được $2s/4+q_0-s/2=0$, nên $q_0=0$.
+
+\textbf{Bước 2 — Giải Charpit.} $p'=p-2p^2$, $q'=0$, nên với dữ liệu này $p=1/2,q=0$. $X'=4Xp=2X$, $Y'=Y$, $U'=4Xp^2+Yq=X$. Suy $X=se^{2\tau}$, $Y=e^\tau$, $U=se^{2\tau}/2$.
+
+\textbf{Bước 3 — Khử và kiểm tra.} $U=X/2$, nên $u=x/2$. Gradient $p=1/2,q=0$ cho $2xp^2+yq=x/2=u$, và vết trên $y=1$ đúng. $J_0=F_q=1$ nên chỉ có một nhánh không đặc trưng cục bộ. Đây là trường hợp hệ có nghiệm đơn giản, không cần giữ mũ ma trận.
+
+%ID BT_1_5_3_13
+\textbf{Bước 1 — Kiểm tra tồn tại thực.} $p^2+q^2=u$, dữ liệu $u(s,0)=s^2+1$ cho $p_0=2s$, nên $q_0^2=1-3s^2$. Vì vế phải âm khi $|s|>1/\sqrt3$, không có nghiệm thực trên lân cận toàn trục dữ liệu.
+
+\textbf{Bước 2 — Đổi ẩn trên khoảng hợp lệ.} Gần dữ liệu $u>0$, đặt $v=2\sqrt u$. Vì $v_x=p/\sqrt u$, $v_y=q/\sqrt u$, có $v_x^2+v_y^2=1$ và $v(s,0)=2\sqrt{s^2+1}$. Đặt
+\[a(s)=\frac{2s}{\sqrt{s^2+1}},\qquad b(s)=\frac{\pm\sqrt{1-3s^2}}{\sqrt{s^2+1}},\quad a^2+b^2=1.\]
+
+\textbf{Bước 3 — Đặc trưng eikonal.} Dùng tham số độ dài: $X=s+\tau a$, $Y=\tau b$, $v=2\sqrt{s^2+1}+\tau$. Đổi về $u$:
+\[u(X,Y)=(\sqrt{s^2+1}+\tau/2)^2.\]
+Trên mỗi dấu, khử tham số nơi Jacobian khác 0; tại dữ liệu Jacobian bằng $b$, nên hợp lệ khi $|s|<1/\sqrt3$. Giữ $\sqrt{s^2+1}+\tau/2>0$ cho phép đổi căn.
+
+\textbf{Bước 4 — Kiểm tra.} Công thức cho $v$ có gradient đơn vị trên miền khả nghịch, nên $|\nabla u|^2=(v^2/4)|\nabla v|^2=u$. Ở $\tau=0$ đúng dữ liệu. Hai đầu $|s|=1/\sqrt3$ có $b=0$, cần xét riêng, không áp kết luận không đặc trưng.
+
+\textbf{Chi tiết xác nhận gradient của nghiệm tham số.} Đặt $h=2\sqrt{s^2+1}$, $a=h'$, $a^2+b^2=1$. Với $X=s+\tau a,Y=\tau b,v=h+\tau$, tính $dv=a\,ds+d\tau$. Mặt khác
+\[a\,dX+b\,dY=a\,ds+(a^2+b^2)d\tau+\tau(aa'+bb')ds=a\,ds+d\tau,\]
+vì đạo hàm $a^2+b^2=1$ cho $aa'+bb'=0$. Trên miền ánh xạ khả nghịch, so hệ số vi phân được $v_x=a,v_y=b$, nên $|\nabla v|^2=1$. Đổi $u=v^2/4$ cho $|\nabla u|^2=(v^2/4)|\nabla v|^2=u$.
+
+%ID BT_1_5_3_14
+\textbf{Bước 1 — Đổi ẩn.} Dữ liệu $u(x,0)=1$ dương, nên trong lân cận đủ nhỏ đặt $v=\log u$. Khi đó $v_x=p/u$, $v_y=q/u$ và PDE $p^2+q^2=u^2$ thành $v_x^2+v_y^2=1$, dữ liệu $v(x,0)=0$.
+
+\textbf{Bước 2 — Hai hướng pháp tuyến.} Đạo hàm theo $x$ của vết bằng 0, nên $v_x=0$ trên dữ liệu; PDE cho $v_y=\pm1$. Đặc trưng là đường thẳng pháp tuyến trục $x$, gradient giữ hằng, nên $v=\pm y$.
+
+\textbf{Bước 3 — Đổi lại và thử.} $u=e^y$ hoặc $u=e^{-y}$. Với $p=0,q=\pm u$, có $p^2+q^2=u^2$; trên $y=0$ đều bằng 1. Có hai nhánh cục bộ khi chỉ cho giá trị trên dữ liệu; nếu chọn dấu đạo hàm pháp tuyến thì mỗi nhánh được xác định.
+
+%ID BT_1_5_3_15
+\textbf{Bước 1 — Đổi ẩn và dữ liệu.} Đặt $v=\log u$ gần $u=1$. PDE thành $|\nabla v|^2=1$, dữ liệu $v=0$ trên $r=1$.
+
+\textbf{Bước 2 — Chọn gradient ban đầu.} Đạo hàm tiếp tuyến trên vòng tròn bằng 0, nên gradient phải theo pháp tuyến. Độ dài 1 cho hai lựa chọn $\nabla v=\pm(\cos s,\sin s)$. Các đặc trưng là tia pháp tuyến và $v$ thay đổi với tốc độ $\pm1$ theo bán kính, nên $v=\pm(r-1)$.
+
+\textbf{Bước 3 — Nghiệm và kiểm tra.} $u=e^{r-1}$ hoặc $u=e^{1-r}$ trong vành lân cận $r=1$. Vì $|\nabla r|=1$ khi $r>0$, $|\nabla u|^2=(u_r)^2=u^2$; ở $r=1$ bằng 1. Hai nhánh xuyên tâm không kéo dài $C^1$ qua gốc vì $u_r(0)$ khác 0. Dữ liệu không chọn dấu pháp tuyến nên chưa cho duy nhất giữa hai nhánh.
+
+%ID BT_1_5_3_16
+\textbf{Bước 1 — Đổi ẩn.} Với $p^2+q^2=u$, gần dữ liệu $u=1>0$, đặt $v=2\sqrt u$; tính gradient như bài 13 cho $|\nabla v|^2=1$, $v|_{r=1}=2$.
+
+\textbf{Bước 2 — Hai nhánh pháp tuyến.} Gradient tiếp tuyến bằng 0, gradient pháp tuyến là $\pm1$, nên $v=2\pm(r-1)$. Đổi lại:
+\[u=(r+1)^2/4,\qquad u=(3-r)^2/4.\]
+
+\textbf{Bước 3 — Kiểm tra và miền.} Với $r>0$, $|\nabla u|^2=(u_r)^2$; $u_r=(r+1)/2$ ở nhánh đầu, $(r-3)/2$ ở nhánh sau, nên đều có $(u_r)^2=u$. Tại $r=1$ bằng 1. Phép đổi căn cho nhánh sau dùng $v=3-r>0$, tức $r<3$ quanh dữ liệu; công thức đại số có thể giải PDE xa hơn sau khi kiểm tra trực tiếp. Cả hai nhánh không có kéo dài xuyên tâm $C^1$ qua gốc.
+
+\textbf{Chi tiết đổi ẩn và tia pháp tuyến.} $v=2\sqrt u$ cho $v_x=u_x/\sqrt u,v_y=u_y/\sqrt u$, nên $|\nabla v|^2=(p^2+q^2)/u=1$. Lấy điểm đầu $(\cos s,\sin s)$, gradient $\varepsilon(\cos s,\sin s)$, tham số độ dài $\tau$. Hệ cho $(X,Y)=(1+\varepsilon\tau)(\cos s,\sin s)$, $v=2+\tau$. Gần vòng tròn, $r=1+\varepsilon\tau$, tức $\tau=\varepsilon(r-1)$, nên $v=2+\varepsilon(r-1)$. Bình phương rồi chia $4$ cho hai công thức của $u$.
+
+%ID BT_1_5_3_17
+\textbf{Bước 1 — Điều kiện thực trên dữ liệu.} $F=q^2-p$, $u(s,0)=f(s)$ cho $p_0=f'(s)$ và $q_0^2=f'(s)$. Vì vậy cần $f'\ge0$. Nếu $f'<0$ tại một điểm thì vô nghiệm thực quanh điểm đó.
+
+\textbf{Bước 2 — Hai nhánh không đặc trưng.} Khi $f'>0$ và $f$ đủ trơn, đặt $Q=\pm\sqrt{f'}$. $F_p=-1,F_q=2q$, $p'=q'=0$, $U'=-p+2q^2=p$. Tích phân:
+\[X=s-\tau,\quad Y=2Q(s)\tau,\quad U=f(s)+f'(s)\tau.\]
+
+\textbf{Bước 3 — Khử và miền.} Giải $x=s-\tau$, $y=2Q(s)\tau$ tìm $s,\tau$, rồi $u=U$. Jacobian là $2Q+2\tau Q'$, tại dữ liệu bằng $2Q\ne0$, nên có nghiệm cục bộ trên từng dấu. Không cần một công thức tường minh theo $x,y$ cho $f$ tùy ý.
+
+\textbf{Bước 4 — Suy biến.} Nếu $f'=0$, dữ liệu đặc trưng và hai dấu trùng nhau. Dữ liệu hằng có nghiệm hằng, nhưng không suy duy nhất từ công thức ở bước 3. Trên miền khả nghịch, Charpit cho gradient $p=f'(s),q=Q(s)$, nên $q^2=p$ và tại $\tau=0$ đúng $f$.
+
+\textbf{Chi tiết phương trình khử và gradient.} Thế $\tau=s-x$ vào $y=2Q(s)\tau$ được một phương trình một ẩn $y=2Q(s)(s-x)$. Đạo hàm theo $s$ là $2Q+2(s-x)Q'$, khác $0$ tại dữ liệu khi $f'>0$, nên giải cục bộ được $s=s(x,y)$. Đặt $P=f'=Q^2$; từ $X=s-\tau,Y=2Q\tau,U=f+P\tau$, tính
+\[dU=(P+\tau P')ds+P\,d\tau=P\,dX+Q\,dY,\]
+vì $P'=2QQ'$. So hệ số vi phân cho $u_x=P,u_y=Q$, xác nhận $u_y^2=u_x$.
+
+%ID BT_1_5_3_18
+\textbf{Bước 1 — Tương thích.} $F=p^2-3q^2-u$, $u(s,0)=s^2$ cho $p_0=2s$. PDE cho $4s^2-3q_0^2=s^2$, nên $q_0=\pm s$.
+
+\textbf{Bước 2 — Tích phân Charpit.} $p'=p,q'=q,X'=2p,Y'=-6q,U'=2U$. Đặt $E=e^\tau$:
+\[X=s+4s(E-1),\quad Y=-6q_0(E-1),\quad U=s^2E^2.\]
+
+\textbf{Bước 3 — Khử.} Với $q_0=s$, $X+Y/2=sE$; với $q_0=-s$, $X-Y/2=sE$. Vì thế $u=(x+y/2)^2$ hoặc $u=(x-y/2)^2$.
+
+\textbf{Bước 4 — Kiểm tra.} Đặt $L=x\pm y/2$. $p=2L,q=\pm L$, nên $p^2-3q^2=L^2=u$, và $y=0$ cho $x^2$. $J_0=-6q_0=\mp6s$ khác 0 khi $s\ne0$; gốc là điểm suy biến.
+
+%ID BT_1_4_3_01
+\textbf{Bước 1 — Chọn phương pháp từng dữ liệu.} Trong vùng trơn dùng $U'=0$, $X'=F'(U)$; dữ liệu nhảy dùng sốc/quạt. Các thông lượng lần lượt là $u^2/2$ cho (a),(b), $u^3/3$ cho (c), $2u^2$ cho (d).
+
+\textbf{Ý (a).} Dữ liệu nhảy từ 2 lên 12 tại $x=1$. Với Burgers, tốc độ trái 2, phải 12, nên hai họ tách xa và tạo quạt. Trong quạt, $F'(u)=u=(x-1)/t$. Do đó
+\[u=\begin{cases}2,&x\le1+2t,\\(x-1)/t,&1+2t<x<1+12t,\\12,&x\ge1+12t.\end{cases}\]
+Các mép cho giá trị 2,12; trong quạt $u_t=-(x-1)/t^2$, $uu_x=(x-1)/t^2$, nên PDE đúng.
+
+\textbf{Ý (b).} Dữ liệu $u_0(\xi)=-\xi$ trơn. $U=-\xi$, $X=\xi(1-t)$. Khử $\xi=x/(1-t)$ cho $u=-x/(1-t)$ khi $0\le t<1$. $X_\xi=1-t$ triệt tiêu ở $t=1$, mọi đặc trưng hội tụ ở $x=0$. Vì vậy không kéo dài thành nghiệm cổ điển qua thời điểm đó.
+
+\textbf{Ý (c).} Trạng thái 4 trái, 3 phải ở $x=0$; $F'=u^2$ có tốc độ 16 và 9, hội tụ. Rankine–Hugoniot:
+\[\sigma=\frac{4^3/3-3^3/3}{4-3}=37/3.\]
+Suy $s=37t/3$, $u=4$ khi $x<s$, $u=3$ khi $x>s$. Entropy: $9<37/3<16$.
+
+\textbf{Ý (d).} Trạng thái 3 trái, 2 phải tại $x=1$, $F=2u^2$, tốc độ $F'=4u$ là 12 và 8. $\sigma=[2\cdot9-2\cdot4]/(3-2)=10$, nên $s=1+10t$, $u=3$ trái sốc, 2 phải sốc; $8<10<12$. Các trạng thái hằng thỏa PDE trong mỗi miền, đường sốc thỏa bảo toàn, và giới hạn $t\downarrow0$ khớp dữ liệu.
+
+%ID BT_1_4_3_02
+\textbf{Bước 1 — Các sốc trước tương tác.} Burgers có dữ liệu lần lượt 2,1,0 với bước nhảy tại 0 và 1. Cả hai bước đều giảm nên tạo sốc. Tốc độ là trung bình hai trạng thái: $\sigma_1=(2+1)/2=3/2$, $\sigma_2=(1+0)/2=1/2$. Vì vậy $s_1=3t/2$, $s_2=1+t/2$.
+
+\textbf{Bước 2 — Thời điểm gặp.} Giải $3t/2=1+t/2$ cho $t_*=1$, $x_*=3/2$. Khi $0<t<1$,
+\[u=\begin{cases}2,&x<s_1,\\1,&s_1<x<s_2,\\0,&x>s_2.\end{cases}\]
+
+\textbf{Bước 3 — Tính lại sốc sau gặp.} Trạng thái giữa biến mất; sốc nối 2 với 0 có tốc độ 1. Từ $s(1)=3/2$, $s=3/2+(t-1)=t+1/2$. Với $t\ge1$, $u=2$ khi $x<s$, $u=0$ khi $x>s$.
+
+\textbf{Bước 4 — Kiểm tra.} Các tốc độ đều nằm giữa tốc độ đặc trưng hai phía: $1<3/2<2$, $0<1/2<1$, $0<1<2$. Vị trí sốc ghép liên tục ở $t=1$ và giới hạn ban đầu đúng các đoạn dữ liệu.
+
+%ID VD_1_6_2_01
+\textbf{Bước 1 — Đặc trưng và vùng giao.} $F=u^2/2$, dữ liệu 1 khi $\xi<0$, 0 khi $\xi>0$. Vì $U'=0$, $X=\xi+t$ từ trái và $X=\xi$ từ phải. Vùng $x<0$ chỉ có đặc trưng trái, $x>t$ chỉ có đặc trưng phải; vùng $0<x<t$ hai họ giao nhau.
+
+\textbf{Bước 2 — Tìm sốc.} Nối $u_L=1,u_R=0$, Rankine–Hugoniot cho $s'=(1/2-0)/(1-0)=1/2$. Với $s(0)=0$, $s=t/2$.
+
+\textbf{Bước 3 — Nghiệm entropy.} $u=1$ khi $x<t/2$, $u=0$ khi $x>t/2$. Sốc nằm trong vùng giao $0<x<t$ và thỏa $F'(0)=0<s'<F'(1)=1$.
+
+\textbf{Bước 4 — Đọc đồ thị.} Trong mặt phẳng $(x,t)$, vẽ họ $x=\xi+t$ ở trái, họ đứng $x=\xi$ ở phải và đường $x=t/2$ phân chia; đặc trưng đi vào sốc từ cả hai phía. Đồ thị theo $x$ ở mỗi thời điểm là bước nhảy 1 xuống 0 tại $t/2$. Giá trị trên chính sốc tùy chọn không đổi nghiệm yếu.
+
+%ID VD_1_6_2_02
+\textbf{Bước 1 — Đặc trưng tách xa.} Dữ liệu Burgers 0 khi $\xi<0$, 1 khi $\xi>0$ cho $X=\xi$ từ trái, $X=\xi+t$ từ phải. Vùng $0<x<t$ không có đặc trưng từ một điểm dữ liệu trơn.
+
+\textbf{Bước 2 — Bổ sung quạt.} Tìm $u=V(z)$, $z=x/t$. Tính $u_t=-zV'/t$, $u_x=V'/t$, nên $(V-z)V'=0$. Nhánh nối liên tục 0 với 1 có $V=z$.
+
+\textbf{Bước 3 — Công thức và kiểm tra.}
+\[u=\begin{cases}0,&x\le0,\\x/t,&0<x<t,\\1,&x\ge t,\end{cases}\quad t>0.\]
+PDE đúng trong quạt và hai vùng hằng; giá trị ghép tại mép là 0,1, nên không có bước nhảy cần tính sốc.
+
+\textbf{Bước 4 — Đọc đồ thị.} Vẽ các tia $x=kt$, $0\le k\le1$ từ gốc để lấp vùng giữa hai họ ngoài. Trên mỗi tia $u=k$. Ở thời điểm cố định, đồ thị có đoạn thẳng từ $(0,0)$ đến $(t,1)$ giữa hai đoạn hằng. Giới hạn tại $t=0$ khớp dữ liệu ở $x\ne0$.
+
+%ID VD_1_6_2_03
+\textbf{Bước 1 — Sóng ban đầu.} Burgers có xung 1 trên $(0,1)$, 0 ở ngoài. Bước $0\to1$ tại 0 tạo quạt $u=x/t$ trên $0<x<t$; bước $1\to0$ tại 1 tạo sốc $s_1=1+t/2$.
+
+\textbf{Bước 2 — Thời điểm sốc gặp quạt.} Giải $1+t/2=t$, được $t_*=2,x_*=2$. Trước đó,
+\[u=\begin{cases}0,&x\le0,\\x/t,&0<x<t,\\1,&t\le x<1+t/2,\\0,&x>1+t/2.\end{cases}\quad0<t<2.\]
+
+\textbf{Bước 3 — Sốc trong quạt.} Sau $t=2$, phía trái sốc là $u_L=s/t$, phải là 0. Rankine–Hugoniot cho $s'=s/(2t)$. Tích phân $d\log s=dt/(2t)$ cho $s=C\sqrt t$; dùng $s(2)=2$, suy $s=\sqrt{2t}$. Với $t\ge2$, $u=x/t$ trên $0<x<s$, bằng 0 ở ngoài.
+
+\textbf{Bước 4 — Kiểm tra và hình học.} Sốc ghép liên tục ở 2, tốc độ sau gặp bằng nửa trạng thái trái nên thỏa entropy. Khối lượng sau gặp $\int_0^s(x/t)dx=s^2/(2t)=1$, đúng xung ban đầu. Đồ thị có quạt thẳng từ gốc và bước nhảy xuống 0 trên đường cong $x=\sqrt{2t}$; không kéo dài đường thẳng $1+t/2$ sau tương tác.
+
+%ID BT_1_6_3_01
+\textbf{Bước 1 — Thông lượng và đặc trưng.} Burgers có $F=u^2/2$. Dữ liệu 2 trái, 1 phải tại $x=1$ cho $X=\xi+2t$ ở trái, $X=\xi+t$ ở phải. Hai họ giao trong $1+t<x<1+2t$.
+
+\textbf{Bước 2 — Rankine–Hugoniot.} $s'=(2^2/2-1^2/2)/(2-1)=3/2$, $s(0)=1$, nên $s=1+3t/2$.
+
+\textbf{Bước 3 — Nghiệm và kiểm tra.} $u=2$ khi $x<s$, $u=1$ khi $x>s$. Sốc nằm giữa hai mép vùng giao và $1<3/2<2$, nên entropy đúng. Các vùng hằng thỏa PDE; khi $t\downarrow0$ có đúng bước nhảy tại 1. Vẽ đặc trưng vào sốc và đồ thị bước nhảy tại $1+3t/2$ để đọc chuyển động.
+
+%ID BT_1_6_3_02
+\textbf{Bước 1 — Thông lượng lõm.} $F=u-u^2$, $F'=1-2u$. Dữ liệu 0 trái, 1 phải tại 1 cho tốc độ 1 và $-1$. Hai họ hội tụ, tạo sốc dù bước nhảy tăng; nguyên nhân là $F''=-2<0$.
+
+\textbf{Bước 2 — Tốc độ sốc.} $F(0)=F(1)=0$, nên $s'=[F(0)-F(1)]/(0-1)=0$. Từ $s(0)=1$, $s=1$.
+
+\textbf{Bước 3 — Nghiệm và kiểm tra.} $u=0$ khi $x<1$, $u=1$ khi $x>1$. $-1<0<1$ kiểm tra entropy; đường sốc đứng yên nhưng đặc trưng vẫn đi vào từ cả hai phía. Nghiệm giữ nguyên dữ liệu ban đầu.
+
+%ID BT_1_6_3_03
+\textbf{Bước 1 — Dữ liệu đầu và biên.} Trong $x<0$, trạng thái đầu là 1, tốc độ $F'(1)=-1$; trạng thái biên tại 0 là 2, tốc độ $F'(2)=-3$, truyền vào nửa trục âm. Hai trạng thái nối theo thứ tự 1 bên trái, 2 bên phải.
+
+\textbf{Bước 2 — Tính sốc.} Với $F=u-u^2$, $F(1)=0,F(2)=-2$, nên $s'=[0-(-2)]/(1-2)=-2$. Sốc xuất phát ở góc $(0,0)$, $s=-2t$.
+
+\textbf{Bước 3 — Công thức và thử lại.} $u=1$ khi $x<-2t$, $u=2$ khi $-2t<x<0$. Entropy: $-3<-2<-1$; biên $x\uparrow0$ cho 2, còn mỗi $x<0$ cố định khi $t\downarrow0$ cho 1. Đây là nghiệm yếu với dữ liệu góc không liên tục.
+
+%ID BT_1_6_3_04
+\textbf{Bước 1 — Thông lượng và hướng truyền.} $F=u^3/3$, $F'=u^2$. Trong $x>0$, trạng thái biên 2 nằm trái, trạng thái đầu 1 nằm phải. Tốc độ là 4 và 1, đều hướng vào nửa trục dương.
+
+\textbf{Bước 2 — Sốc từ góc.} $s'=(8/3-1/3)/(2-1)=7/3$, $s(0)=0$, nên $s=7t/3$.
+
+\textbf{Bước 3 — Nghiệm và kiểm tra.} $u=2$ trên $0<x<7t/3$, $u=1$ trên $x>7t/3$. $1<7/3<4$ bảo đảm sốc nén; vết tại $x=0$ là 2 và giới hạn $t\downarrow0$ ở mọi $x>0$ là 1. Không dùng tốc độ $u$ của Burgers vì ở bài này tốc độ đặc trưng là $u^2$.
+
+%ID BT_1_6_3_05
+\textbf{Bước 1 — Nhận dạng hai quạt.} Burgers có bước $-1\to1$ tại $-1$ và $1\to2$ tại 1. Cả hai tăng nên là quạt giãn. Quạt thứ nhất có mép $-1-t,-1+t$ và giá trị $(x+1)/t$. Quạt thứ hai có mép $1+t,1+2t$ và giá trị $(x-1)/t$.
+
+\textbf{Bước 2 — Xét tương tác.} Mép phải quạt đầu và mép trái quạt sau cùng tốc độ 1, khoảng cách luôn $[1+t]-[-1+t]=2$. Vì vậy hai quạt không gặp nhau.
+
+\textbf{Bước 3 — Ghép nghiệm.}
+\[u=\begin{cases}-1,&x\le-1-t,\\(x+1)/t,&-1-t<x<-1+t,\\1,&-1+t\le x\le1+t,\\(x-1)/t,&1+t<x<1+2t,\\2,&x\ge1+2t.\end{cases}\]
+Ở các mép, công thức biến thiên bằng trạng thái hằng kề bên. Mỗi quạt có $u_t+uu_x=0$ và dữ liệu khi $t\downarrow0$ đúng từng đoạn.
+
+%ID BT_1_6_3_06
+\textbf{Bước 1 — Quạt của thông lượng lõm.} $F=u-u^2$, tốc độ $1-2u$. Trạng thái 2 bên trái cho tốc độ $-3$, trạng thái 1 bên phải cho $-1$, nên tách xa và tạo quạt ở nửa trục $x<0$.
+
+\textbf{Bước 2 — Nhánh biến thiên.} Đặt $z=x/t$, giải $F'(u)=1-2u=z$, được $u=(1-z)/2$. Mép là $x=-3t,-t$.
+
+\textbf{Bước 3 — Ghép và kiểm tra.}
+\[u=\begin{cases}2,&x\le-3t,\\(1-x/t)/2,&-3t<x<-t,\\1,&-t\le x<0.\end{cases}\]
+Trong quạt $u_t=x/(2t^2)$, $u_x=-1/(2t)$, $1-2u=x/t$, nên $u_t+(1-2u)u_x=0$. Vết biên là 1, còn trạng thái đầu ở $x<0$ là 2. Các tia trong quạt là $x=(1-2k)t$, $1\le k\le2$.
+
+%ID BT_1_6_3_07
+\textbf{Bước 1 — Xét độ lõm trên khoảng dữ liệu.} $F=u-u^3$, $F'=1-3u^2$, $F''=-6u<0$ trên $[1,2]$. Trạng thái 2 trái có tốc độ $-11$, 1 phải có tốc độ $-2$, nên là quạt giãn.
+
+\textbf{Bước 2 — Giải trong quạt.} $1-3u^2=x/t$ cho $u=\sqrt{(1-x/t)/3}$; chọn căn dương vì dữ liệu nằm trong $[1,2]$. Mép là $-11t,-2t$.
+
+\textbf{Bước 3 — Nghiệm và kiểm tra.}
+\[u=\begin{cases}2,&x\le-11t,\\\sqrt{(1-x/t)/3},&-11t<x<-2t,\\1,&-2t\le x<0.\end{cases}\]
+Đẳng thức $F'(u)=x/t$ bảo đảm PDE tự đồng dạng; các mép cho 2 và 1. Biên tại 0 bằng 1 và khi $t\downarrow0$ mọi điểm $x<0$ trở về 2.
+
+%ID BT_1_6_3_08
+\textbf{Bước 1 — Hai sốc của $F=u-u^2$.} Dữ liệu 0, $1/2$, 1 với bước tại 0 và 1. Công thức tốc độ rút gọn thành $\sigma=1-(u_L+u_R)$. Suy $\sigma_1=1/2$, $\sigma_2=-1/2$, $s_1=t/2$, $s_2=1-t/2$.
+
+\textbf{Bước 2 — Thời điểm gặp.} $t/2=1-t/2$ cho $t_*=1,x_*=1/2$. Với $0<t<1$, nghiệm là 0 ở $x<s_1$, $1/2$ giữa hai sốc, 1 ở $x>s_2$.
+
+\textbf{Bước 3 — Sốc sau gặp.} Nối trực tiếp 0 và 1, tốc độ mới $1-(0+1)=0$. Dùng $s(1)=1/2$, đường mới là $s=1/2$. Với $t\ge1$, $u=0$ trái đường, $u=1$ phải đường.
+
+\textbf{Bước 4 — Kiểm tra.} Các tốc độ nằm giữa đặc trưng: $0<1/2<1$, $-1<-1/2<0$, $-1<0<1$. Đường sóng ghép đúng điểm gặp; không tiếp tục hai đường sốc cũ sau $t=1$.
+
+\textbf{Chi tiết rút gọn tốc độ.} Với $F(u)=u-u^2$,
+\[\frac{F(u_L)-F(u_R)}{u_L-u_R}
+=\frac{(u_L-u_R)-(u_L^2-u_R^2)}{u_L-u_R}
+=1-u_L-u_R.\]
+Thế $(u_L,u_R)=(0,1/2)$ cho $1/2$, $(1/2,1)$ cho $-1/2$, và $(0,1)$ cho $0$ sau tương tác.
+
+%ID BT_1_6_3_09
+\textbf{Bước 1 — Tốc độ hai sốc.} $F=u^3/3$, các trạng thái 2,1,0, bước tại 0,1. $\sigma_1=(8-1)/[3(2-1)]=7/3$, $\sigma_2=(1-0)/[3(1-0)]=1/3$. Vì vậy $s_1=7t/3$, $s_2=1+t/3$.
+
+\textbf{Bước 2 — Tìm giao.} $7t/3=1+t/3$ cho $t_*=1/2$, $x_*=7/6$. Trước đó, $u=2$ trái $s_1$, 1 giữa hai sốc, 0 phải $s_2$.
+
+\textbf{Bước 3 — Sau gặp.} Trạng thái 1 biến mất. Sốc nối 2 với 0 có $\sigma=8/[3\cdot2]=4/3$, nên
+\[s=7/6+(4/3)(t-1/2)=4t/3+1/2.\]
+Với $t\ge1/2$, $u=2$ trái sốc, 0 phải sốc.
+
+\textbf{Bước 4 — Kiểm tra entropy.} Tốc độ đặc trưng $u^2$ cho $1<7/3<4$, $0<1/3<1$, $0<4/3<4$. Đường mới đi qua điểm gặp và các trạng thái hằng giải PDE.
+
+%ID BT_1_6_3_10
+\textbf{Bước 1 — Sóng ban đầu.} $F=u^3/3$, xung 1 trên $(-1,1)$, 0 ngoài. Tại $-1$, bước $0\to1$ tạo quạt với $u^2=(x+1)/t$, nên $u=\sqrt{(x+1)/t}$ trên $-1<x<-1+t$. Tại 1, bước $1\to0$ tạo sốc $s_1=1+t/3$.
+
+\textbf{Bước 2 — Thời điểm gặp.} $-1+t=1+t/3$ cho $t_*=3$, $x_*=2$. Khi $0<t<3$, $u=0$ ở $x\le-1$, bằng căn trong quạt, bằng 1 trên $-1+t\le x<s_1$, bằng 0 sau sốc.
+
+\textbf{Bước 3 — Sốc khi phía trái là quạt.} $u_L=\sqrt{(s+1)/t}$, $u_R=0$, nên $s'=u_L^2/3=(s+1)/(3t)$. Tích phân:
+\[\log(s+1)=\tfrac13\log t+\text{hằng},\quad s+1=Ct^{1/3}.\]
+Dùng $s(3)=2$ cho $C=3^{2/3}$. Với $t\ge3$, $s=3^{2/3}t^{1/3}-1$, $u=\sqrt{(x+1)/t}$ trên $-1<x<s$, bằng 0 ngoài.
+
+\textbf{Bước 4 — Kiểm tra.} Entropy $0<s'=u_L^2/3<u_L^2$. Khối lượng sau gặp là $2(s+1)^{3/2}/(3\sqrt t)=2$, bằng chiều dài xung ban đầu. Đường sốc liên tục ở $t=3$.
+
+\textbf{Chi tiết ODE và khối lượng sau gặp.} Đặt $q=s+1>0$, có $q'=q/(3t)$, nên $q'/q=1/(3t)$. Tích phân từ $3$ đến $t$ cho $\log(q/3)=\frac13\log(t/3)$, tức $q=3^{2/3}t^{1/3}$. Khối lượng là
+\[\int_{-1}^{s}\sqrt{\frac{x+1}{t}}dx
+=\frac1{\sqrt t}\left[\frac23(x+1)^{3/2}\right]_{-1}^{s}
+=\frac{2q^{3/2}}{3\sqrt t}=2.\]
+
+%ID BT_1_6_3_11
+\textbf{Bước 1 — Sóng trước gặp.} $F=u-u^2/2$ lõm, $F'=1-u$. Bước $1\to2$ ở 0 tạo sốc tốc độ $1-(1+2)/2=-1/2$, $s_1=-t/2$. Bước $2\to1$ ở 1 tạo quạt có mép $1-t,1$ và nhánh $u=1+(1-x)/t$.
+
+\textbf{Bước 2 — Thời điểm gặp và nghiệm trước gặp.} $-t/2=1-t$ cho $t_*=2,x_*=-1$. Với $0<t<2$,
+\[u=\begin{cases}1,&x<s_1,\\2,&s_1<x\le1-t,\\1+(1-x)/t,&1-t<x<1,\\1,&x\ge1.\end{cases}\]
+
+\textbf{Bước 3 — Sốc trong quạt.} Sau gặp, trạng thái trái là 1, phải là $1+(1-s)/t$. Tốc độ
+\[s'=1-\frac{u_L+u_R}{2}=\frac{s-1}{2t}.\]
+Tích phân $(1-s)=C\sqrt t$, dùng $s(2)=-1$ cho $C=\sqrt2$, nên $s=1-\sqrt{2t}$. Với $t\ge2$, $u=1$ khi $x<s$, bằng $1+(1-x)/t$ khi $s<x<1$, bằng 1 khi $x\ge1$.
+
+\textbf{Bước 4 — Kiểm tra.} Ở sốc, tốc độ phải $-(1-s)/t$, trái 0, còn $s'=-(1-s)/(2t)$ nằm giữa. Mép tại 1 liên tục, vị trí sốc ghép ở 2. Khối lượng phần dư $u-1$ sau gặp bằng $(1-s)^2/(2t)=1$, đúng xung ban đầu.
+
+\textbf{Chi tiết tích phân sau tương tác.} Đặt $q=1-s>0$. Từ $s'=(s-1)/(2t)$ suy $q'=q/(2t)$. Tích phân $q'/q=1/(2t)$ từ $2$ cho $\log(q/2)=\frac12\log(t/2)$; vậy $q=\sqrt{2t}$, $s=1-\sqrt{2t}$. Phần dư khối lượng là $\int_s^1(1-x)dx/t=(1-s)^2/(2t)=1$.
+
+%ID BT_1_6_3_12
+\textbf{Bước 1 — Sóng trong nửa trục dương.} Burgers có giá trị biên 1, trạng thái đầu 2 trên $(0,1)$ rồi 0. Góc biên tạo quạt nối 1 đến 2: mép $t,2t$, $u=x/t$ trong quạt. Bước tại 1 tạo sốc 2 xuống 0 với $s_1=1+t$.
+
+\textbf{Bước 2 — Tương tác thứ nhất.} $2t=1+t$ cho $t_1=1,x_1=2$. Khi $0<t<1$, $u=1$ trên $0<x\le t$, $u=x/t$ trên $t<x<2t$, $u=2$ trên $2t\le x<s_1$, 0 phía phải.
+
+\textbf{Bước 3 — Sốc xuyên qua quạt.} Với $u_L=s/t,u_R=0$, $s'=s/(2t)$ cho $s=C\sqrt t$. Dùng $s(1)=2$, được $s=2\sqrt t$. Sốc gặp mép trái $x=t$ khi $2\sqrt t=t$, tức $t_2=4,x_2=4$. Với $1\le t<4$, $u=1$ trên $0<x\le t$, $u=x/t$ trên $t<x<s$, 0 phía phải.
+
+\textbf{Bước 4 — Sau tương tác thứ hai.} Quạt đã bị sốc hấp thụ hết; trái sốc là 1, phải 0 nên tốc độ $1/2$. Từ $s(4)=4$, $s=4+(t-4)/2=t/2+2$. Với $t\ge4$, $u=1$ trên $0<x<s$, 0 phía phải.
+
+\textbf{Bước 5 — Kiểm tra.} Hai vị trí ghép đúng tại $t=1,4$. Trong quạt PDE đúng; từng sốc có tốc độ nửa trạng thái trái nên thỏa entropy. Biên luôn bằng 1; khối lượng tăng theo thông lượng vào $F(1)=1/2$, phù hợp nhánh cuối có độ dài $t/2+2$.
+
+\textbf{Chi tiết hai lần tích phân và kiểm tra khối lượng.} Trong quạt, $s'=s/(2t)$ cho $\log(s/2)=\frac12\log t$ bởi $s(1)=2$, nên $s=2\sqrt t$. Giải $2\sqrt t=t$ với $t>0$: chia $\sqrt t$ được $\sqrt t=2$, tức $t=4$ (loại $t=0$ ngoài giai đoạn). Sau đó $s'=1/2$ cho $s-4=(t-4)/2$. Khối lượng ở ba giai đoạn:
+\[\begin{aligned}
+M&=t+\int_t^{2t}\frac xtdx+2(1+t-2t)=2+t/2 &&(0<t<1),\\
+M&=t+\int_t^{2\sqrt t}\frac xtdx=t+\frac{4t-t^2}{2t}=2+t/2 &&(1\le t<4),\\
+M&=\int_0^{t/2+2}1\,dx=2+t/2 &&(t\ge4).
+\end{aligned}\]
+Do đó $M'=1/2$ ở mọi giai đoạn, đúng thông lượng vào $F(1)$.
+
+%ID NC_1_7_01
+\textbf{Bước 1 — Đặc trưng ở đoạn dốc.} Burgers có $u_0=1$ bên trái 0, $u_0=1-\xi$ trên $(0,1)$, 0 bên phải 1. Trên đoạn dốc, $X=\xi+(1-\xi)t=t+\xi(1-t)$, $U=1-\xi$.
+
+\textbf{Bước 2 — Khử trước thời điểm vỡ.} Với $t<1$, $X_\xi=1-t>0$, $\xi=(x-t)/(1-t)$, nên $u=(1-x)/(1-t)$ trên $t<x<1$. Nghiệm bằng 1 khi $x\le t$, bằng 0 khi $x\ge1$. Tại $t=1$ cả đoạn hội tụ ở $x=1$.
+
+\textbf{Bước 3 — Sau thời điểm vỡ.} Sốc nối 1 và 0 của luật Burgers gốc có tốc độ $1/2$, đi từ $(1,1)$, nên $s=1+(t-1)/2=(t+1)/2$. $u=1$ bên trái, 0 bên phải sốc; $0<1/2<1$ cho entropy.
+
+\textbf{Bước 4 — Giải thích phép nhân $u^\alpha$.} Trong vùng trơn và nơi phép tính lũy thừa hợp lệ, nhân PDE rồi lấy nguyên hàm cho
+\[\partial_t\frac{u^{\alpha+1}}{\alpha+1}+\partial_x\frac{u^{\alpha+2}}{\alpha+2}=0.\]
+Với $\alpha\ge0$, sốc $1\to0$ của luật này có tốc độ
+\[\sigma_\alpha=\frac{1/(\alpha+2)}{1/(\alpha+1)}=\frac{\alpha+1}{\alpha+2}.\]
+Nó chỉ bằng $1/2$ khi $\alpha=0$. Vì vậy phép nhân giữ tương đương cho nghiệm trơn, không giữ cùng điều kiện sốc của nghiệm yếu. Không thể yêu cầu cùng đường sốc thỏa mọi luật đã nhân; phải dùng luật gốc và entropy.
+
+%ID NC_1_7_02
+\textbf{Bước 1 — Đặc trưng và thời điểm đầu mất khả nghịch.} Burgers có $u_0=1$ trên $\xi<-1$, $u_0=\xi^2$ trên $-1<\xi<0$, 0 trên $\xi>0$. Đoạn biến thiên cho $X=\xi+\xi^2t$, $X_\xi=1+2\xi t$. Giá trị nhỏ nhất tiến về 0 tại $t=1/2,\xi=-1$, nên sốc xuất hiện từ $(-1/2,1/2)$.
+
+\textbf{Bước 2 — Nghiệm trước sốc.} Giải $t\xi^2+\xi-x=0$ và chọn nhánh về $\xi=x$ khi $t\downarrow0$:
+\[\xi(x,t)=\frac{-1+\sqrt{1+4tx}}{2t}.\]
+Với $0<t\le1/2$, $u=1$ khi $x<-1+t$, $u=\xi(x,t)^2$ khi $-1+t<x<0$, $u=0$ khi $x>0$.
+
+\textbf{Bước 3 — Sốc trong đoạn biến thiên.} Gọi $\xi_s\in(-1,0)$ là nhãn sát phải sốc, $s=\xi_s+\xi_s^2t$. Trái là 1, phải $\xi_s^2$, nên $s'=(1+\xi_s^2)/2$. Đạo hàm biểu thức $s$:
+\[(1+2t\xi_s)\xi_s'=(1-\xi_s^2)/2.\]
+Đổi coi $t$ là hàm của $\xi_s$:
+\[\frac{dt}{d\xi_s}-\frac{4\xi_s}{1-\xi_s^2}t=\frac2{1-\xi_s^2}.\]
+Thừa số tích phân $(1-\xi_s^2)^2$ cho
+\[\frac{d}{d\xi_s}[(1-\xi_s^2)^2t]=2(1-\xi_s^2).\]
+Tích phân và dùng giới hạn ở $\xi_s=-1,t=1/2$ cho
+\[t=\frac{2(2-\xi_s)}{3(1-\xi_s)^2},\qquad s=\xi_s+\xi_s^2t.\]
+Vế phải tăng từ $1/2$ đến $4/3$ khi $\xi_s$ tăng từ $-1$ đến 0, nên xác định nhãn duy nhất. Với $1/2<t<4/3$, $u=1$ trái $s$, $u=\xi(x,t)^2$ giữa $s$ và 0, $u=0$ phải 0; chọn nhánh căn như bước 2.
+
+\textbf{Bước 4 — Sau sốc tới $x=0$.} Tại $\xi_s=0$, $t=4/3,s=0$. Sau đó sốc nối 1 với 0, $s' =1/2$, nên $s=(t-4/3)/2$; $u=1$ trái, 0 phải. Mọi vị trí ghép liên tục; trong giai đoạn giữa, $\xi_s^2<(1+\xi_s^2)/2<1$ cho entropy.
+
+\textbf{Chi tiết tích phân và khử nhân tử.} Gọi $z=\xi_s$. Tích phân $( (1-z^2)^2t)'=2(1-z^2)$ theo $z$ cho $(1-z^2)^2t=2z-2z^3/3+C$. Khi $z\to-1$, vế trái về $0$, nên $C=4/3$. Phân tích
+\[2z-\tfrac23z^3+\tfrac43=\tfrac23(2-z)(z+1)^2,\quad
+(1-z^2)^2=(1-z)^2(1+z)^2.\]
+Trên $-1<z<0$, khử $(1+z)^2$ được $t=2(2-z)/[3(1-z)^2]$. Đạo hàm $dt/dz=2(3-z)/[3(1-z)^3]>0$, và giới hạn tại $z=-1,0$ là $1/2,4/3$, chứng minh nhãn xác định duy nhất.
+
+%ID NC_1_7_03
+\textbf{Bước 1 — Khử hai nhánh ban đầu.} Xung tam giác Burgers có $u_0=\xi+1$ trên $(-1,0)$, $1-\xi$ trên $(0,1)$, 0 ngoài. Nhánh tăng: $X=\xi+(\xi+1)t$ cho $u=(x+1)/(t+1)$ trên $-1<x<t$. Nhánh giảm: $X=\xi+(1-\xi)t$ cho $u=(1-x)/(1-t)$ trên $t<x<1$, khi $t<1$.
+
+\textbf{Bước 2 — Nghiệm trước vỡ.}
+\[u=\begin{cases}(x+1)/(t+1),&-1<x\le t,\\(1-x)/(1-t),&t<x<1,\\0,&x\le-1\ \text{hoặc}\ x\ge1,\end{cases}\quad0<t<1.\]
+Hai nhánh bằng 1 tại $x=t$; nhánh giảm có $X_\xi=1-t$, hội tụ ở $(1,1)$.
+
+\textbf{Bước 3 — Sốc sau vỡ.} Trái sốc là $u_L=(s+1)/(t+1)$, phải 0, nên $s'=(s+1)/[2(t+1)]$. Tích phân cho $s+1=C\sqrt{t+1}$; dùng $s(1)=1$, $C=\sqrt2$. Do đó $s=\sqrt{2(t+1)}-1$ và với $t\ge1$, $u=(x+1)/(t+1)$ trên $-1<x<s$, bằng 0 ngoài.
+
+\textbf{Bước 4 — Kiểm tra.} Trong nhánh tăng, $u_t=-(x+1)/(t+1)^2$, $uu_x=(x+1)/(t+1)^2$. Sốc thỏa bảo toàn và entropy, ghép đúng $(1,1)$. Khối lượng sau vỡ $(s+1)^2/[2(t+1)]=1$, bằng diện tích tam giác ban đầu.
+
+%ID NC_1_7_04
+\textbf{Bước 1 — Xác định dữ liệu hợp lệ.} Dòng cuối nguyên văn ghi $u_0=0$ khi $|x|>0$, chồng lên các đoạn khác, nên không xác định một hàm. Phần dưới giải phiên bản sửa $u_0=0$ khi $|x|>2$: các trạng thái lần lượt là 0 trên $x<-2$, 1 trên $(-2,-1)$, 4 trên $(-1,1)$, 1 trên $(1,2)$, 0 trên $x>2$.
+
+\textbf{Bước 2 — Sóng ban đầu.} Với Burgers, hai quạt là $R_0=(x+2)/t$ từ $-2$, mép $a=-2+t$; $R_1=(x+1)/t$ từ $-1$, mép $b=-1+t,c=-1+4t$. Hai sốc 4 xuống 1, 1 xuống 0 có $s_1=1+5t/2$, $s_2=2+t/2$.
+
+\textbf{Bước 3 — Hai sốc gặp nhau.} $s_1=s_2$ cho $t_1=1/2,x_1=9/4$. Sau gặp, sốc 4 xuống 0 có tốc độ 2, nên $s=2t+5/4$. Nó gặp mép phải $c$ của quạt $R_1$ khi $2t+5/4=-1+4t$, tức $t_2=9/8,x_2=7/2$.
+
+\textbf{Bước 4 — Sốc đi qua quạt $R_1$.} Trái sốc $u_L=(s+1)/t$, phải 0, nên $s'=(s+1)/(2t)$. Từ $s(9/8)=7/2$, được $s=3\sqrt{2t}-1$. Sốc tới mép trái $b=-1+t$ khi $3\sqrt{2t}=t$, tức $t_3=18,x_3=17$.
+
+\textbf{Bước 5 — Từ trạng thái 1 sang quạt $R_0$.} Sau $18$, sốc nối 1 với 0 có tốc độ $1/2$: $s=t/2+8$. Nó gặp mép phải $a=-2+t$ khi $t/2+8=-2+t$, tức $t_4=20,x_4=18$. Từ đó $u_L=(s+2)/t$, nên $s'=(s+2)/(2t)$; dùng $s(20)=18$ cho $s=\sqrt{20t}-2$.
+
+\textbf{Bước 6 — Viết đủ các miền.} Với $0<t<1/2$,
+\[u=\begin{cases}0,&x\le-2,\\R_0,&-2<x<a,\\1,&a\le x\le b,\\R_1,&b<x<c,\\4,&c\le x<s_1,\\1,&s_1<x<s_2,\\0,&x>s_2.\end{cases}\]
+Với $1/2\le t<9/8$, $s=2t+5/4$,
+\[u=\begin{cases}0,&x\le-2,\\R_0,&-2<x<a,\\1,&a\le x\le b,\\R_1,&b<x<c,\\4,&c\le x<s,\\0,&x>s.\end{cases}\]
+Với $9/8\le t<18$, $s=3\sqrt{2t}-1$,
+\[u=\begin{cases}0,&x\le-2,\\R_0,&-2<x<a,\\1,&a\le x\le b,\\R_1,&b<x<s,\\0,&x>s.\end{cases}\]
+Với $18\le t<20$, $s=t/2+8$, nghiệm bằng 0 khi $x\le-2$, bằng $R_0$ khi $-2<x<a$, bằng 1 khi $a\le x<s$, bằng 0 khi $x>s$. Với $t\ge20$, $s=\sqrt{20t}-2$, chỉ còn $u=R_0$ trên $-2<x<s$, bằng 0 ngoài.
+
+\textbf{Bước 7 — Kiểm tra.} Các đường sốc ghép liên tục ở bốn thời điểm vừa tính. Tốc độ luôn bằng trung bình hai trạng thái, nên bảo toàn và entropy đúng. Khối lượng ban đầu $1+8+1=10$; giai đoạn cuối có $\int_{-2}^s(x+2)dx/t=(s+2)^2/(2t)=10$. Kết quả thuộc phiên bản dữ liệu đã sửa và phải ghi rõ điều đó.
+
+\textbf{Chi tiết hằng số trên các nhánh cong.} Khi sốc đi qua quạt $R_1$, đặt $q=s+1$, $q'/q=1/(2t)$, nên $q=C\sqrt t$. Dùng $q(9/8)=9/2$ cho $C=(9/2)/\sqrt{9/8}=3\sqrt2$. Sau giai đoạn trạng thái $1$, tại $t=20$ có $s=18$; trong quạt $R_0$, đặt $q=s+2$, $q'/q=1/(2t)$ và $q(20)=20$, nên $q=\sqrt{20t}$. Vì vậy nhánh cuối $s=\sqrt{20t}-2$. Các hằng số khác nhau vì sốc đi qua hai quạt có tâm lần lượt $-1$ và $-2$.
+
+%ID BT_1_2_3_01
+\textbf{Bước 1: xác định điều cần phân loại.} Theo phần lý thuyết trong sách, ``bậc'' của câu này được hiểu là \emph{cấp phương trình}: cấp cao nhất của đạo hàm riêng xuất hiện. Số mũ của đạo hàm và hàm như $\log u,e^u$ không làm tăng cấp đạo hàm.
+
+\textbf{Bước 2: xét từng phương trình.}
+(a) $u_{xx}+u_{yy}=0$: hai đạo hàm đều cấp 2, nên cấp 2.
+(b) $u_{xxx}+u_{xy}+a(x)u_y+\log u=f(x,y)$: $u_{xxx}$ cấp 3, $u_{xy}$ cấp 2, $u_y$ cấp 1; $\log u$ cấp 0. Cấp cao nhất bằng 3. Nếu nghiệm thực, $\log u$ cần $u>0$ nhưng không thay đổi cấp.
+(c) $u_x+cu_y=d$: các đạo hàm đều cấp 1, nên cấp 1.
+(d) $uu_{xx}+u_y^2+e^u=0$: $u_{xx}$ cấp 2; $(u_y)^2$ vẫn chỉ là bình phương của đạo hàm cấp 1. Do đó cấp 2.
+
+\textbf{Kết luận:} các cấp lần lượt là $\boxed{2,3,1,2}$.
+
+%ID BT_1_2_3_02
+\textbf{Bước 1: dùng định nghĩa theo cấp cao nhất $m$.} Tuyến tính: ẩn và mọi đạo hàm xuất hiện tuyến tính, hệ số chỉ phụ thuộc biến độc lập. Nửa tuyến tính: đạo hàm cấp $m$ tuyến tính với hệ số chỉ phụ thuộc biến độc lập, nhưng các hạng cấp thấp có thể phi tuyến. Tựa tuyến tính: đạo hàm cấp $m$ tuyến tính, hệ số có thể phụ thuộc $u$ và các đạo hàm cấp thấp hơn. Hoàn toàn phi tuyến: biểu thức không tuyến tính theo đạo hàm cấp $m$. Chỉ hỏi thuần nhất khi phương trình đã tuyến tính.
+
+\textbf{Bước 2: áp dụng từng ý.}
+(a) $e^{\Delta u}=x$. Vì $\Delta u=u_{xx}+u_{yy}$ nằm trong hàm mũ, biểu thức đã cho hoàn toàn phi tuyến cấp 2. Tuy nhiên, nghiệm thực chỉ có trên $x>0$, và ở đó lấy log được phương trình tương đương $\Delta u=\log x$, tuyến tính không thuần nhất. Cần phân biệt phân loại \emph{biểu thức được in} và dạng tương đương sau biến đổi.
+
+(b) $u_t+u_{txx}+uu_x=0$. Đạo hàm cao nhất $u_{txx}$ cấp 3, tuyến tính với hệ số 1. Tích $uu_x$ phi tuyến ở cấp thấp. Kết luận: nửa tuyến tính cấp 3.
+
+(c) $u_t+(f(u))_x=0$. Quy tắc dây chuyền cho $u_t+f'(u)u_x=0$. Hạng cấp 1 tuyến tính theo $u_t,u_x$ nhưng hệ số $f'(u)$ phụ thuộc $u$, nên tựa tuyến tính cấp 1. Ngoại lệ: nếu $f(u)=au+b$, được $u_t+au_x=0$, tuyến tính thuần nhất.
+
+(d) $u_{xx}+u_{yy}-2u=x^2$. Các hạng của $u$ tuyến tính, hệ số hằng, vế phải khác 0: tuyến tính không thuần nhất cấp 2.
+
+(e) $u_{xy}=u$. Chuyển vế thành $u_{xy}-u=0$: tuyến tính thuần nhất cấp 2. Việc vế phải ban đầu là $u$ không làm phương trình không thuần nhất; phải gom tất cả hạng chứa ẩn về cùng vế.
+
+(f) $uu_x+xu_y=0$. Tuyến tính theo hai đạo hàm cấp 1, nhưng hệ số của $u_x$ là $u$. Kết luận: tựa tuyến tính cấp 1.
+
+(g) $u_x(1+u_y)=u_{xx}$. Viết $u_{xx}-u_x-u_xu_y=0$. Đạo hàm cấp 2 $u_{xx}$ tuyến tính, hệ số 1; phi tuyến $u_xu_y$ chỉ ở cấp 1. Kết luận: nửa tuyến tính cấp 2.
+
+(h) $(\sin u_x)u_x+u_y=e^x$. Đạo hàm cấp cao nhất là cấp 1 và $u_x\sin u_x$ không tuyến tính theo $u_x$. Kết luận: hoàn toàn phi tuyến cấp 1.
+
+\textbf{Bước 3: kiểm tra cách phân biệt.} Các ý (b),(g) có phi tuyến nhưng chỉ ở cấp thấp, nên nửa tuyến tính. Các ý (c),(f) có hệ số đạo hàm cấp cao nhất phụ thuộc ẩn, nên tựa tuyến tính. Các ý (a),(h) phi tuyến ngay ở đạo hàm cấp cao nhất. Với các phương trình phi tuyến không dùng phân biệt ``thuần nhất/không thuần nhất'' theo định nghĩa toán tử tuyến tính.
+
+%ID BT_1_2_3_03
+\textbf{Bước 1: tính đạo hàm của nghiệm thử.} Với $u=e^{rx+sy}$,
+\[u_x=ru,\quad u_y=su,\quad u_{xx}=r^2u,\quad u_{xy}=rsu,\quad u_{yy}=s^2u.\]
+Vì $u\ne0$, sau khi thế vào PDE có thể chia cho $u$ để có phương trình đại số theo $r,s$. Đề dùng nghiệm dạng đặc biệt; một họ nghiệm mũ không tự động là nghiệm tổng quát của mọi PDE.
+
+(a) $2u_x+3u_y-2u=0$ cho $2r+3s-2=0$. Với mỗi $s\in\mathbb R$, chọn $r=1-3s/2$, được một nghiệm $e^{(1-3s/2)x+sy}$. Để có nghiệm tổng quát, dùng bất biến $\xi=3x-2y$, đặt $u=e^xF(\xi)$. Tính đạo hàm cho $2u_x+3u_y=2u$, nên toàn bộ nghiệm là $u=e^xF(3x-2y)$.
+
+(b) Vì PDE có ba biến, dùng $u=e^{rx+sy+tz}$. Khi đó $u_{xyz}=rst\,u$, nên điều kiện là $rst=1$. Chọn $r,s\ne0$ tùy ý và $t=1/(rs)$; ví dụ $u=e^{x+y+z}$. Tuyến tính cho phép cộng hữu hạn các mode này. Không thể bỏ biến $z$ vì nghiệm không phụ thuộc $z$ có $u_{xyz}=0$.
+
+(c) $4u_{xx}-4u_{xy}+4u_{yy}=0$ cho $r^2-rs+s^2=0$. Viết $(r-s/2)^2+3s^2/4=0$: với $r,s$ thực chỉ có $r=s=0$, tức mode hằng. Với số phức, $r=(1\pm i\sqrt3)s/2$; phần thực và phần ảo của mode phức cho nghiệm thực. Nghiệm mũ thực không mô tả hết nghiệm điều hòa của phương trình elliptic này.
+
+(d) $u_{xx}+u_{yy}=u$ cho $r^2+s^2=1$. Tham số hóa $r=\cos\theta,s=\sin\theta$, được $u_\theta=e^{x\cos\theta+y\sin\theta}$. Các ví dụ $e^x,e^y,e^{(x+y)/\sqrt2}$ đều đúng; cộng các nghiệm do tính tuyến tính vẫn cho nghiệm. Thế các đạo hàm ở bước 1 kiểm tra trực tiếp từng công thức.
+
+\textbf{Chi tiết tìm họ nghiệm ở (a).} Đặc trưng là $X'=2,Y'=3,U'=2U$. Tích phân từ $(x_0,y_0,u_0)$ được $X=x_0+2s,Y=y_0+3s,U=u_0e^{2s}$. Vì $3X-2Y=3x_0-2y_0$ và $e^{-X}U=e^{-x_0}u_0$, đặt giá trị bất biến thứ hai là $F(3X-2Y)$. Đổi về $x,y$ được $u=e^xF(3x-2y)$. Kiểm tra bằng các đạo hàm $u_x=e^x(F+3F')$, $u_y=-2e^xF'$: $2u_x+3u_y-2u=e^x(2F+6F'-6F'-2F)=0$.
+
+%ID BT_1_2_3_04
+\textbf{Bước 1: tìm hai họ đặc trưng.} Nếu $a\ne0$, phương trình $am^2-bm+c=0$ có hai nghiệm thực phân biệt $m_1,m_2$ vì $\Delta=b^2-4ac>0$. Ta có $m_1+m_2=b/a$, $m_1m_2=c/a$.
+
+\textbf{Bước 2: đổi biến.} Đặt $\xi=y-m_1x,\eta=y-m_2x,u=v(\xi,\eta)$. Jacobian bằng $m_2-m_1\ne0$, nên phép đổi không suy biến. Quy tắc dây chuyền:
+\begin{align*}
+u_{xx}&=m_1^2v_{\xi\xi}+2m_1m_2v_{\xi\eta}+m_2^2v_{\eta\eta},\\
+u_{xy}&=-m_1v_{\xi\xi}-(m_1+m_2)v_{\xi\eta}-m_2v_{\eta\eta},\\
+u_{yy}&=v_{\xi\xi}+2v_{\xi\eta}+v_{\eta\eta}.
+\end{align*}
+Hai hệ số của $v_{\xi\xi},v_{\eta\eta}$ bằng 0. Hệ số hỗn hợp bằng $2am_1m_2-b(m_1+m_2)+2c=-\Delta/a\ne0$. Do đó PDE tương đương $v_{\xi\eta}=0$.
+
+\textbf{Bước 3: tích phân.} Từ $\partial_\eta(v_\xi)=0$, $v_\xi=A(\xi)$. Tích phân theo $\xi$ cho $v=F(\xi)+G(\eta)$. Suy
+\[\boxed{u=F(y-m_1x)+G(y-m_2x).}\]
+Đây là dạng yêu cầu với $\alpha=-m_1,\beta=1,\gamma=-m_2,\delta=1$.
+
+\textbf{Trường hợp $a=0$.} Khi đó $b\ne0$, PDE là $\partial_y(bu_x+cu_y)=0$. Đặt $\xi=x,\eta=y-(c/b)x$, tính được $bu_{xy}+cu_{yy}=b v_{\xi\eta}$. Vẫn có $u=F(x)+G(y-(c/b)x)$, hai dạng tuyến tính độc lập.
+
+\textbf{Kiểm tra:} thế đạo hàm của $F(y-m_ix)$ cho hệ số $am_i^2-bm_i+c=0$; từng hạng giải PDE, và tổng cũng giải do tuyến tính.
+
+%ID BT_1_2_3_05
+(a) Xem $y$ là tham số: $u_x=-u$. Nhân $e^x$ cho $(e^xu)_x=0$, nên $u=e^{-x}C(y)$. Kiểm tra $u_x+u=0$.
+
+(b) Xem $x$ là tham số. ODE theo $y$ là $u_{yy}-x^2u=0$, có phương trình đặc trưng $\lambda^2-x^2=0$. Với $x\ne0$, $u=A(x)e^{xy}+B(x)e^{-xy}$. Với $x=0$, ODE thành $u_{yy}=0$, nên vết là affine theo $y$. Một dạng thống nhất, không mất nghiệm ở $x=0$, là
+\[u=A(x)\cosh(xy)+B(x)\frac{\sinh(xy)}x,\]
+trong đó $\sinh(xy)/x=y$ tại $x=0$ theo giới hạn. Hệ số $A,B$ đủ trơn cho lớp nghiệm mong muốn.
+
+(c) Đặt $v=u_x$, được $v_x-v=0$, nên $v=B(y)e^x$. Tích phân theo $x$ cho $u=A(y)+B(y)e^x$. Đạo hàm lại cho $u_{xx}=u_x$.
+
+(d) Với nghiệm thực, $u_x^2+u_y^2=0$ là tổng hai số không âm; buộc $u_x=u_y=0$. Do đó $u$ hằng trên từng thành phần liên thông. Nếu vế phải là $k\ne0$: $k<0$ thì vô nghiệm thực; $k>0$ là eikonal $|\nabla u|=\sqrt k$. Một họ nghiệm đơn giản $u=ax+by+c$, $a^2+b^2=k$, nhưng không phải toàn bộ nghiệm.
+
+Để dựng nghiệm cục bộ tổng quát từ dữ liệu $u(\gamma(s))=h(s)$, chọn $P(s)$ thỏa $|P(s)|^2=k$ và $P(s)\cdot\gamma'(s)=h'(s)$. Hệ đặc trưng của $F=p^2+q^2-k$ có $P'=0$, $X'=2P$, $U'=2k$, nên
+\[X=\gamma(s)+2tP(s),\qquad U=h(s)+2kt.\]
+Khử $(s,t)$ ở nơi Jacobian của $X$ khác 0, được nghiệm $u(X)=U$. Đây là dạng áp dụng phương pháp đặc trưng, phân biệt với chỉ đưa ra ví dụ affine.
+
+\textbf{Chi tiết xử lý điểm $x=0$ ở (b).} Chọn hai hệ số từ các vết tại $y=0$: $A(x)=u(x,0)$, $B(x)=u_y(x,0)$. Khi $x\ne0$, giải hệ $C+D=A$, $x(C-D)=B$ cho $C=(A+B/x)/2,D=(A-B/x)/2$, rồi gom hai hàm mũ thành $A\cosh(xy)+B\sinh(xy)/x$. Khai triển $\sinh(xy)/x=y+x^2y^3/3!+\cdots$ cho giới hạn $y$ và vết $u(0,y)=A(0)+B(0)y$; không loại nghiệm tuyến tính này khi hai nghiệm mũ trùng nhau.

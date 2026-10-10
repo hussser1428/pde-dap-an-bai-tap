@@ -1,0 +1,58 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{fontspec,amsmath,amssymb,graphicx}
+\usepackage[margin=18mm]{geometry}
+\setmainfont{Times New Roman}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\allowdisplaybreaks
+\sloppy
+\emergencystretch=2em
+\begin{document}
+\section*{NC\_1\_7\_02 — Lời giải bổ sung}
+\subsection*{Kiến thức và trình tự giải}
+\textbf{Mục tiêu.} Với dữ liệu gián đoạn hoặc khi đặc trưng giao nhau, tìm nghiệm yếu thỏa entropy của luật bảo toàn $u_t+(F(u))_x=0$.
+
+\textbf{Bước 1 — Xác định thông lượng và đặc trưng.} Nếu PDE là $u_t+a(u)u_x=0$, tích phân $F'=a$. Trong vùng trơn, $u=u_0(\xi)$ và $x=\xi+F'(u_0(\xi))t$. Tính riêng tốc độ cho mỗi đoạn dữ liệu. Burgers dùng $F=u^2/2$; $u_t+u^2u_x=0$ dùng $F=u^3/3$.
+
+\textbf{Bước 2 — Nhận diện sóng tại mỗi bước nhảy.} Gọi $u_L,u_R$ là giá trị trái, phải. So sánh $F'(u_L)$ và $F'(u_R)$. Với $F$ lồi trên khoảng trạng thái, $u_L>u_R$ tạo sốc, $u_L<u_R$ tạo quạt giãn; với $F$ lõm, thứ tự trạng thái đảo lại. Nếu độ lồi đổi dấu, phải xét thêm cấu trúc entropy, không dùng quy tắc lồi trên toàn khoảng.
+
+\textbf{Bước 3 — Tính đường sốc từ bảo toàn.} Với $x=s(t)$,
+
+\[
+s'(t)=\frac{F(u_L)-F(u_R)}{u_L-u_R}.
+\]
+
+Nếu hai trạng thái hằng, tốc độ $\sigma$ hằng, nên $s=x_0+\sigma t$. Kiểm tra entropy bằng $F'(u_R)<\sigma<F'(u_L)$ đối với sốc nén có hai trạng thái phân biệt trong các bài này. Giá trị ngay trên đường sốc không ảnh hưởng nghiệm yếu.
+
+\textbf{Bước 4 — Tính quạt giãn.} Từ $(x_0,0)$, đặt $z=(x-x_0)/t$, $u=V(z)$. Thế PDE cho $(F'(V)-z)V'=0$. Trong nhánh biến thiên, $F'(V)=z$, nên giải phương trình này tìm $V$. Mép quạt là $x=x_0+F'(u_L)t$ và $x=x_0+F'(u_R)t$, theo thứ tự tốc độ tăng; ghép liên tục với hai trạng thái ngoài. Chọn căn đúng dấu theo khoảng giá trị của dữ liệu.
+
+\textbf{Bước 5 — Tìm mọi thời điểm tương tác.} Giải phương trình giao của hai sốc, sốc với mép quạt, hoặc quạt với quạt. Trước thời điểm gặp, ghép các sóng riêng. Sau khi gặp, tính lại hai trạng thái sát đường sốc. Nếu một phía nằm trong quạt, trạng thái đó phụ thuộc $s(t)$ và $t$, nên Rankine–Hugoniot trở thành ODE mới. Dùng $s(t_*)=x_*$ để tìm hằng số, rồi tiếp tục tìm lần tương tác sau.
+
+\textbf{Bước 6 — Viết nghiệm theo từng khoảng thời gian.} Với mỗi khoảng, ghi rõ các miền $x$, thứ tự đường phân cách và công thức của $u$. Trên nửa trục, kiểm tra chiều truyền từ biên vào miền và thế điều kiện biên. Với dữ liệu trơn từng đoạn, tính $\partial x/\partial\xi$ để tìm thời điểm đầu tiên mất nghiệm cổ điển.
+
+\textbf{Bước 7 — Kiểm tra.} Trong mỗi vùng trơn, thay vào PDE. Trên mỗi sốc, kiểm tra Rankine–Hugoniot và entropy; ở mép quạt, kiểm tra liên tục. Đối chiếu dữ liệu khi $t\downarrow0$, sự liên tục của vị trí sóng qua thời điểm gặp và khối lượng nếu dữ liệu có giá hữu hạn. Nhân PDE với một hàm của $u$ chỉ giữ tương đương cho nghiệm trơn; không tự áp luật đã nhân để tính cùng đường sốc.
+
+\textbf{Chi tiết tích phân đường sốc nằm trong quạt.} Nếu $s'=s/(2t)$ và $s(t_*)=x_*>0$, chia cho $s$ rồi tích phân từ $t_*$ đến $t$: $\log(s/x_*)=\frac12\log(t/t_*)$, nên $s=x_*\sqrt{t/t_*}$. Nếu quạt có tâm $x_0$, thay $s$ bằng $s-x_0$ trước khi tách biến. Khi trạng thái sát sốc thay đổi tại lần gặp tiếp theo, lập ODE mới và lấy vị trí tại lần gặp làm dữ liệu; không giữ hằng số của giai đoạn trước.
+\subsection*{Lời giải áp dụng cho bài}
+\textbf{Bước 1 — Đặc trưng và thời điểm đầu mất khả nghịch.} Burgers có $u_0=1$ trên $\xi<-1$, $u_0=\xi^2$ trên $-1<\xi<0$, 0 trên $\xi>0$. Đoạn biến thiên cho $X=\xi+\xi^2t$, $X_\xi=1+2\xi t$. Giá trị nhỏ nhất tiến về 0 tại $t=1/2,\xi=-1$, nên sốc xuất hiện từ $(-1/2,1/2)$.
+
+\textbf{Bước 2 — Nghiệm trước sốc.} Giải $t\xi^2+\xi-x=0$ và chọn nhánh về $\xi=x$ khi $t\downarrow0$:
+\[\xi(x,t)=\frac{-1+\sqrt{1+4tx}}{2t}.\]
+Với $0<t\le1/2$, $u=1$ khi $x<-1+t$, $u=\xi(x,t)^2$ khi $-1+t<x<0$, $u=0$ khi $x>0$.
+
+\textbf{Bước 3 — Sốc trong đoạn biến thiên.} Gọi $\xi_s\in(-1,0)$ là nhãn sát phải sốc, $s=\xi_s+\xi_s^2t$. Trái là 1, phải $\xi_s^2$, nên $s'=(1+\xi_s^2)/2$. Đạo hàm biểu thức $s$:
+\[(1+2t\xi_s)\xi_s'=(1-\xi_s^2)/2.\]
+Đổi coi $t$ là hàm của $\xi_s$:
+\[\frac{dt}{d\xi_s}-\frac{4\xi_s}{1-\xi_s^2}t=\frac2{1-\xi_s^2}.\]
+Thừa số tích phân $(1-\xi_s^2)^2$ cho
+\[\frac{d}{d\xi_s}[(1-\xi_s^2)^2t]=2(1-\xi_s^2).\]
+Tích phân và dùng giới hạn ở $\xi_s=-1,t=1/2$ cho
+\[t=\frac{2(2-\xi_s)}{3(1-\xi_s)^2},\qquad s=\xi_s+\xi_s^2t.\]
+Vế phải tăng từ $1/2$ đến $4/3$ khi $\xi_s$ tăng từ $-1$ đến 0, nên xác định nhãn duy nhất. Với $1/2<t<4/3$, $u=1$ trái $s$, $u=\xi(x,t)^2$ giữa $s$ và 0, $u=0$ phải 0; chọn nhánh căn như bước 2.
+
+\textbf{Bước 4 — Sau sốc tới $x=0$.} Tại $\xi_s=0$, $t=4/3,s=0$. Sau đó sốc nối 1 với 0, $s' =1/2$, nên $s=(t-4/3)/2$; $u=1$ trái, 0 phải. Mọi vị trí ghép liên tục; trong giai đoạn giữa, $\xi_s^2<(1+\xi_s^2)/2<1$ cho entropy.
+
+\textbf{Chi tiết tích phân và khử nhân tử.} Gọi $z=\xi_s$. Tích phân $( (1-z^2)^2t)'=2(1-z^2)$ theo $z$ cho $(1-z^2)^2t=2z-2z^3/3+C$. Khi $z\to-1$, vế trái về $0$, nên $C=4/3$. Phân tích
+\[2z-\tfrac23z^3+\tfrac43=\tfrac23(2-z)(z+1)^2,\quad
+(1-z^2)^2=(1-z)^2(1+z)^2.\]
+Trên $-1<z<0$, khử $(1+z)^2$ được $t=2(2-z)/[3(1-z)^2]$. Đạo hàm $dt/dz=2(3-z)/[3(1-z)^3]>0$, và giới hạn tại $z=-1,0$ là $1/2,4/3$, chứng minh nhãn xác định duy nhất.\end{document}

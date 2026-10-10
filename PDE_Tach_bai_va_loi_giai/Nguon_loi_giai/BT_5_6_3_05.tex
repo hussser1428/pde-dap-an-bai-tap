@@ -1,0 +1,17 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{fontspec,amsmath,amssymb,graphicx}
+\usepackage[margin=18mm]{geometry}
+\setmainfont{Times New Roman}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\allowdisplaybreaks
+\sloppy
+\emergencystretch=2em
+\begin{document}
+\section*{BT\_5\_6\_3\_05 — Lời giải bổ sung}
+(a) Tích phân trên chu kỳ cho $\lambda\int|\phi|^2=\int|\nabla\phi|^2\ge0$.
+(b) Cơ sở đầy đủ là $e^{i(nx+my)}$, $n,m\in\mathbb Z$, $\lambda=n^2+m^2$; phần thực là cos/sin của $nx+my$. Chỉ lấy $n,m\ge0$ như đề sẽ bỏ các mode $nx-my$.
+(c) Tích phân trực giao cần tích hai hàm (hoặc liên hợp) và hệ số chuẩn hóa, không phải $\int\phi_{nm}$ đơn lẻ như dòng đề. Cơ sở chuẩn hóa $(2\pi)^{-1}e^{i(nx+my)}$ có $\int_{(-\pi,\pi)^2}\phi_{nm}\overline\phi_{n'm'}=\delta_{nn'}\delta_{mm'}$. Trên $(0,\pi)^2$, các sóng chéo đã in không thỏa công thức trực giao ấy nói chung.
+(d) Fourier của $x$ trên $(-\pi,\pi)$ là $2\sum_{n\ge1}(-1)^{n+1}\sin nx/n$. Vì $xy$ là tích hai chuỗi,
+\[u=4\sum_{n,m\ge1}\frac{(-1)^{n+m}}{nm}e^{-(n^2+m^2)t}\sin nx\sin my.\]
+Giới hạn 0, nghiệm tuần hoàn trơn khi $t>0$; dữ liệu ban đầu được tuần hoàn hóa và có gián đoạn ở mép.\end{document}

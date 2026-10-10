@@ -1,0 +1,68 @@
+%ID BT_5_6_3_01
+Cho hàm riêng phức $\phi\ne0$, nhân $-\Delta\phi=\lambda\phi$ với $\overline\phi$ rồi tích phân:
+\[\lambda\int_\Omega|\phi|^2=\int_\Omega|\nabla\phi|^2+\frac\alpha\beta\int_{\partial\Omega}|\phi|^2.\]
+Vì $\alpha\beta>0$, $\alpha/\beta>0$, vế phải thực và dương: nếu bằng 0 thì $\phi$ hằng và biên buộc 0. Do đó mọi trị riêng thực dương.
+%ID BT_5_6_3_02
+Với $z=\ln(x+1)$, đặt $X=(x+1)^{-1/2}\sin(n\pi z)$. Tính $\partial_x[(x+1)^2X']=-(n^2\pi^2+1/4)X$. Tương tự theo $y$. Do đó
+\[L\phi_{nm}=-\left[\pi^2(n^2+m^2)+\frac12\right]\phi_{nm}.\]
+Trị riêng theo quy ước $L\phi=-\lambda\phi$ là $\lambda=\pi^2(n^2+m^2)+1/2$. Các hàm này không triệt tiêu ở $x=1,y=1$ nói chung; đề chỉ hỏi hàm riêng của toán tử, không được thêm kết luận biên Dirichlet. Nếu cần Dirichlet trên $(0,1)^2$, thay $n\pi\ln(x+1)$ bởi $n\pi\ln(x+1)/\ln2$ và sửa trị riêng tương ứng.
+%ID BT_5_6_3_03
+(a) Neumann hình chữ nhật: $\phi_{nm}=\cos(n\pi x/a)\cos(m\pi y/b)$, $\lambda_{nm}=(n\pi/a)^2+(m\pi/b)^2$, $n,m\ge0$, có $\lambda_{00}=0$.
+(b) Dirichlet trái/dưới, Neumann phải/trên: $\phi_{nm}=\sin((n+1/2)\pi x/a)\sin((m+1/2)\pi y/b)$, $\lambda$ là tổng hai bình phương, $n,m\ge0$. Dòng $\partial_x\phi(x,b)$ của đề phải sửa thành $\partial_y\phi(x,b)$ để là Neumann ở cạnh trên. Giữ $\partial_x$ nguyên văn thì đây là đạo hàm tiếp tuyến, suy $\phi$ hằng trên cạnh trên; cùng Dirichlet ở góc trái buộc cạnh trên bằng 0, tức bài Dirichlet trên, có mode $\sin(m\pi y/b)$, $m\ge1$.
+(c) Tách $\phi=XY$: giải hai bài một chiều
+\[aX''+cX'=-\lambda_xX,\ X(0)=X(a_{\rm dom})=0;\quad bY''+dY'=-\lambda_yY,\ Y(0)=Y(b_{\rm dom})=0.\]
+Trị riêng $\lambda=\lambda_x+\lambda_y$, hàm riêng $XY$. Khi $a(x),b(y)>0$, trọng số $\rho_x=a^{-1}e^{\int c/a}$, $\rho_y=b^{-1}e^{\int d/b}$ đưa về Sturm--Liouville; dữ kiện hàm tùy ý chỉ cho kết quả qua hai ODE này, không có danh sách số cụ thể.
+(d) Đề có miền $0<x<e$, hệ số $x^2$ suy biến ở 0. Đặt $z=\ln x\in(-\infty,1)$; toán tử thành $\partial_{zz}+\partial_{yy}$. Không có phổ rời rạc như hình chữ nhật hữu hạn. Trong lớp trơn và liên tục bằng 0 ở $x=0,e$, không có hàm riêng tách biến không tầm thường: mode tăng/giảm mũ theo $z$ không thể đồng thời giảm ở $-\infty$ và triệt tiêu ở 1, mode dao động không có giới hạn 0 tại $-\infty$. Với không gian trọng số $dx\,dy/x$, phổ liên tục có hàm riêng suy rộng $\sin(k(1-\ln x))\sin(m\pi y)$, $\lambda=k^2+m^2\pi^2$, $k\ge0,m\ge1$. Nếu miền dự định là $(1,e)$, phổ rời rạc là $\sin(n\pi\ln x)\sin(m\pi y)$ với $\lambda=(n^2+m^2)\pi^2$.
+%ID BT_5_6_3_04
+(a) Đặt $\phi=e^{y-x}v$. Khi đó $(\Delta+2\partial_x-2\partial_y)\phi=e^{y-x}(\Delta v-2v)$. Do đó $\phi_{nm}=e^{y-x}\sin n\pi x\sin m\pi y$, $\lambda_{nm}=\pi^2(n^2+m^2)+2$, $n,m\ge1$.
+(b) Chọn $\sigma=e^{2x-2y}$, tích có trọng số biến thành tích các sine, nên trực giao.
+(c) $u=3+e^{y-x}\sum_{n,m\ge1}c_{nm}e^{-\lambda_{nm}t}\sin n\pi x\sin m\pi y$, với $c_{nm}=4(-1)^{n+m}/(nm\pi^2)$ là hệ số sine của $xy$.
+(d) Mọi $\lambda_{nm}>0$, nên giới hạn bằng 3. Dữ liệu đầu không khớp biên ở cạnh phải/trên; nghiệm hiểu theo dữ liệu nội và biên cho $t>0$.
+%ID BT_5_6_3_05
+(a) Tích phân trên chu kỳ cho $\lambda\int|\phi|^2=\int|\nabla\phi|^2\ge0$.
+(b) Cơ sở đầy đủ là $e^{i(nx+my)}$, $n,m\in\mathbb Z$, $\lambda=n^2+m^2$; phần thực là cos/sin của $nx+my$. Chỉ lấy $n,m\ge0$ như đề sẽ bỏ các mode $nx-my$.
+(c) Tích phân trực giao cần tích hai hàm (hoặc liên hợp) và hệ số chuẩn hóa, không phải $\int\phi_{nm}$ đơn lẻ như dòng đề. Cơ sở chuẩn hóa $(2\pi)^{-1}e^{i(nx+my)}$ có $\int_{(-\pi,\pi)^2}\phi_{nm}\overline\phi_{n'm'}=\delta_{nn'}\delta_{mm'}$. Trên $(0,\pi)^2$, các sóng chéo đã in không thỏa công thức trực giao ấy nói chung.
+(d) Fourier của $x$ trên $(-\pi,\pi)$ là $2\sum_{n\ge1}(-1)^{n+1}\sin nx/n$. Vì $xy$ là tích hai chuỗi,
+\[u=4\sum_{n,m\ge1}\frac{(-1)^{n+m}}{nm}e^{-(n^2+m^2)t}\sin nx\sin my.\]
+Giới hạn 0, nghiệm tuần hoàn trơn khi $t>0$; dữ liệu ban đầu được tuần hoàn hóa và có gián đoạn ở mép.
+%ID BT_5_6_3_06
+(a) Với $k_n=(n+1/2)\pi$, $\ell_m=(m+1/2)\pi$, $X_n=\sin k_nx,Y_m=\cos\ell_my$, $\lambda=k_n^2+\ell_m^2$, đặt
+\[f_{nm}=4\int_0^1\int_0^1xX_nY_m\,dxdy,\quad F_{nm}=4\int_0^1\int_0^1xyX_nY_m\,dxdy.\]
+Nghiệm $u=\sum[f_{nm}e^{-\lambda t}+F_{nm}(1-e^{-\lambda t})/\lambda]X_nY_m$.
+
+(b) Đặt $u=e^{-x}v$. Toán tử thành $v_{xx}+v_{yy}-v$, với $v(0)=0,v_x(1)=v(1)$, $v_y(y=0)=0,v(y=1)=0$. Cơ sở $X_0=x$, $X_n=\sin k_nx$ với các nghiệm dương $\tan k_n=k_n$, và $Y_m=\cos\ell_my$. Đặt $\lambda_{nm}=k_n^2+1+\ell_m^2$ ($k_0=0$), $q_{nm}=\iint qX_nY_m/\iint X_n^2Y_m^2$. Dữ liệu của $v$ là $xe^x$, nguồn $txy e^x$:
+\[u=e^{-x}\sum X_nY_m\left[(xe^x)_{nm}e^{-\lambda t}+(xy e^x)_{nm}\left(\frac t\lambda-\frac{1-e^{-\lambda t}}{\lambda^2}\right)\right].\]
+
+(c) Dòng biến ở biên bị đảo thứ tự trong bản in; dùng cùng điều kiện hình học như (b). Sau $u=e^{-x}v$, hạng $+u$ khử $-v$, nguồn $ye^x$. Với $\Lambda=k_n^2+\ell_m^2>0$,
+\[u=e^{-x}\sum\frac{(ye^x)_{nm}}\Lambda(1-e^{-\Lambda t})X_nY_m.\]
+Các hệ số trên là tích phân một chiều của hàm sơ cấp, không chứa ẩn số chưa giải.
+%ID BT_5_6_3_07
+Đặt $\mathcal H$ là phép kéo dài điều hòa bốn cạnh trong hình chữ nhật theo công thức của bài 5.1.3.1, và $\mathcal H_N$ là phép kéo dài với hai cạnh đứng Neumann 0 (chuỗi cosine theo $x$, sinh theo $y$). Một nghiệm riêng $P$ cho nguồn giúp giải ngay $u=P+$phép kéo dài của dữ liệu biên trừ $P$.
+
+(a) $P=-\sin2\pi x/(4\pi^2)+\sin3\pi x/(3\pi^2)$; $u=P+\mathcal H[-P,-P,0,0]$ trên hình vuông đơn vị.
+(b) $P=-\sin\pi y/\pi^2$; $u=P+\mathcal H[-1,1,\sin\pi y/\pi^2,\sin\pi y/\pi^2]$.
+(c) $P=-\sin2x/4-\sin3y/9$; $u=P+\mathcal H[-1+\sin2x/4,1+\sin2x/4,-1+\sin3y/9,1+\sin3y/9]$ trên $(0,\pi)^2$.
+(d) $P=x^3y/6$; $u=P+\mathcal H[0,1-\pi x^3/6,0,-\pi^3y/6]$.
+(e) Trên $(0,\pi)^2$, lấy cơ sở $X_n=\cos nx$, biên dưới 0, trên 1. Nguồn $F=xy$ có $F_0(y)=\pi y/2$, $F_n(y)=2[(-1)^n-1]y/(\pi n^2)$, $n\ge1$. Mode 0 $U_0=y/\pi+\pi(y^3-\pi^2y)/12$. Các mode $n\ge1$:
+\[U_n(y)=\int_0^\pi\frac{-\sinh(n\min(y,s))\sinh(n[\pi-\max(y,s)])}{n\sinh n\pi}F_n(s)ds.\]
+$u=U_0+\sum U_n\cos nx$. Biên Neumann theo $x$ thỏa tự động.
+%ID BT_5_6_3_08
+Đặt $S_{nm}=\sin n\pi x\sin m\pi y$, $\lambda_{nm}=\pi^2(n^2+m^2)$, $q_{nm}=4\iint qS_{nm}$. Các hệ số cần dùng: $(xy)_{nm}=4(-1)^{n+m}/(nm\pi^2)$; $(1)_{nm}=4(1-(-1)^n)(1-(-1)^m)/(nm\pi^2)$; $(x)_{nm}=4(-1)^{n+1}(1-(-1)^m)/(nm\pi^2)$.
+
+(i) $u=\sum(xy)_{nm}e^{-\lambda t}S_{nm}$.
+(ii) $u=\sum(1)_{nm}[e^{-2\lambda t}+t/(2\lambda)-(1-e^{-2\lambda t})/(4\lambda^2)]S_{nm}$.
+(iii) Đổi thời gian $\tau=t^2$: $u=\sum(1)_{nm}e^{-\lambda t^2}S_{nm}$.
+(iv) Biên Neumann và dữ liệu 1: chỉ phụ thuộc $x$. Fourier cosine của $x$ là $1/2+\sum 2[(-1)^n-1]\cos n\pi x/(n^2\pi^2)$, nên
+\[u=1+t/2+\sum_{n\ge1}\frac{2[(-1)^n-1]}{n^4\pi^4}(1-e^{-n^2\pi^2t})\cos n\pi x.\]
+
+(v) Bản in ghi $u_t=\Delta u$ và còn cho $u_t(x,y,0)=0$. Trong miền mở, dữ liệu $xy$ có $\Delta(xy)=0$, nên điều kiện thêm tương thích và nghiệm chính là (i); không phải phương trình sóng nếu giữ dấu $u_t$.
+(vi) Bản in ghi phương trình nhiệt $u_t=2\Delta u+tx$ với $u(0)=0$ nhưng $u_t(0)=1$. Thế $t=0$ vào phương trình trong miền buộc $u_t(0)=0$, nên không có nghiệm cổ điển thỏa cả hai điều kiện. Bỏ điều kiện dư sai cho
+\[u=\sum(x)_{nm}\left[\frac t{2\lambda}-\frac{1-e^{-2\lambda t}}{4\lambda^2}\right]S_{nm}.\]
+Nếu ý định là sóng $u_{tt}=2\Delta u+tx$, nghiệm là $\sum[(1)_{nm}\sin(\sqrt{2\lambda}t)/\sqrt{2\lambda}+(x)_{nm}(t/(2\lambda)-\sin(\sqrt{2\lambda}t)/(2\lambda)^{3/2})]S_{nm}$.
+
+(vii, lần đánh số vi thứ hai) Đặt $u=P+w$, với $P$ điều hòa, $P_x(0)=P_y(y=0)=0,P(1,y)=1,P(x,1)=x$. Tính $P$ bằng chồng hai chuỗi cos nửa nguyên: $X_n=\cos((n+1/2)\pi x)$; phép kéo dài cạnh trên $x$ có hệ số $2\int_0^1xX_n dx$, nhân $\cosh(k_ny)/\cosh k_n$; phép kéo dài cạnh phải 1 tương tự theo $y$. Sau đó
+\[u=P+\sum c_{nm}e^{-(k_n^2+k_m^2)t}\cos k_nx\cos k_my,\quad c_{nm}=4\iint(xy-P)\cos k_nx\cos k_my.\]
+%ID BT_5_6_3_09
+Đặt $u=2x-1+w$. Khi đó $w(0,y)=w(1,y)=0$, $w_y(x,0)=w_y(x,1)=0$, $\Delta w=y$. Cosine của $y$ trên $(0,1)$ có $a_0=1/2$, $a_n=2[(-1)^n-1]/(n^2\pi^2)$. Mode 0 $w_0=x(x-1)/4$. Với $k_n=n\pi$,
+\[w_n=\frac{a_n}{k_n^2}\left[\frac{\cosh(k_n(x-1/2))}{\cosh(k_n/2)}-1\right].\]
+Vậy $u=2x-1+x(x-1)/4+\sum_{n\ge1}w_n(x)\cos n\pi y$. Mỗi mode giải $w_n''-k_n^2w_n=a_n$, đúng biên, chứng minh công thức.

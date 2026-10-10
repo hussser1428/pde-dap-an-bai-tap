@@ -1,0 +1,31 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{fontspec,amsmath,amssymb,graphicx}
+\usepackage[margin=18mm]{geometry}
+\setmainfont{Times New Roman}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\allowdisplaybreaks
+\sloppy
+\emergencystretch=2em
+\begin{document}
+\section*{VD\_4\_2\_2\_02 — Lời giải bổ sung}
+\subsection*{Kiến thức và trình tự giải}
+\textbf{Bước 1 — Viết toán tử và biên parabol.} Đặt $P=\partial_t-a(x,t)\partial_{xx}-b(x,t)\partial_x-c(x,t)$ với $a\ge0$, $c\le0$. Biên parabol gồm mặt $t=0$ và các biên không gian; mặt $t=T$ vẫn thuộc miền được ước lượng. Với phương trình nhiệt, $a=K>0$, $b=c=0$.
+
+\textbf{Bước 2 — Loại cực đại dương bằng dấu đạo hàm.} Tại cực đại dương nội miền, $w_x=0$, $w_{xx}\le0$, $w_t=0$; nếu cực đại trên mặt thời gian trên thì đạo hàm một phía cho $w_t\ge0$. Suy $Pw\ge0$, mâu thuẫn $Pw<0$. Với $Pw\le0$, xét $w_\varepsilon=w-\varepsilon e^{\gamma t}$, $\gamma>0$: $Pw_\varepsilon=Pw-\varepsilon(\gamma-c)e^{\gamma t}<0$. Chứng minh $w_\varepsilon\le0$ rồi cho $\varepsilon\downarrow0$.
+
+\textbf{Bước 3 — So sánh hai hàm bằng hiệu.} Để chứng minh $v\le u\le V$, kiểm tra $Pv\le Pu\le PV$ và thứ tự của dữ liệu đầu, biên. Áp dụng bước 2 cho $v-u$ và $u-V$. Nếu có nguồn dương, hằng số không nhất thiết là nghiệm trên, nên phải tính $PV-Pu$; không dùng cực đại của dữ liệu để chặn một bài có nguồn mà chưa kiểm tra.
+
+\textbf{Bước 4 — Xử lý Neumann, Robin và tuần hoàn.} Neumann thuần nhất có thể phản xạ chẵn qua đầu mút; điểm biên trở thành điểm trong. Robin viết theo pháp tuyến ngoài $\partial_\nu u+\sigma u=0$, $\sigma\ge0$. Tại cực đại dương không hằng, bổ đề Hopf cho $\partial_\nu u>0$, trái với $\partial_\nu u=-\sigma u\le0$. Với Robin phải thêm mức $0$ vào cận hằng nếu dữ liệu mang một dấu. Biên tuần hoàn ghép hai đầu thành đường tròn; không còn biên không gian.
+
+\textbf{Bước 5 — Miền vô hạn và nguồn bị chặn.} Trên toàn trục/nửa trục, cần nghiệm bị chặn trên mỗi dải thời gian (hoặc điều kiện tăng trưởng đủ dùng). Dùng rào $\varepsilon((x-x_0)^2+2Kt)$ trên đoạn lớn, áp dụng cực đại trên miền hữu hạn rồi cho $\varepsilon\downarrow0$; cách này loại ảnh hưởng từ vô cực. Nếu $|Pu|\le N$ và $|u|\le M$ trên biên parabol, đặt $V=M+Nt$. Vì $PV=N-cV\ge N$, suy $|u|\le M+Nt\le M+NT$. $M$ ở đây là cận của $|u|$, không phải cực đại có dấu.
+\subsection*{Lời giải áp dụng cho bài}
+\textbf{Bước 1. Cận dữ liệu và rào trên đoạn lớn.} Giả thiết $u$ bị chặn trên $\mathbb R\times[0,T]$. Đặt $M=\sup_{\mathbb R\times[0,T]}u$, $N=\sup_xu(x,0)$ và cố định $(x_0,t_0)$, $0<t_0\le T$. Với $\varepsilon>0$,
+\[w_\varepsilon=u-\varepsilon\{(x-x_0)^2+2Kt\}.\]
+Tính $(w_\varepsilon)_t-K(w_\varepsilon)_{xx}=0$, vì $2K-K\cdot2=0$.
+\textbf{Bước 2. Kiểm tra toàn bộ biên.} Trên mặt $t=0$, $w_\varepsilon\le N$. Trên $x=x_0\pm R$, $w_\varepsilon\le M-\varepsilon R^2$. Chọn $R>|x_0|+1$ đủ lớn để $M-\varepsilon R^2\le N$; áp dụng cực đại trên $(x_0-R,x_0+R)\times(0,t_0]$ được $w_\varepsilon\le N$.
+\textbf{Bước 3. Bỏ rào và chứng minh cận dưới.} Tại điểm cố định,
+\[u(x_0,t_0)\le N+2K\varepsilon t_0.\]
+Cho $\varepsilon\downarrow0$, suy $u\le N$. Áp dụng cùng lập luận cho $-u$ cho $u\ge\inf_xu(x,0)$. Do $(x_0,t_0)$ tùy ý,
+\[\inf_yu(y,0)\le u(x,t)\le\sup_yu(y,0).\]
+Giả thiết bị chặn chính là điều cho phép chọn $R$ bằng cận $M$ độc lập theo $x$; không bỏ bước này trên miền vô hạn.\end{document}

@@ -1,0 +1,18 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{fontspec,amsmath,amssymb,graphicx}
+\usepackage[margin=18mm]{geometry}
+\setmainfont{Times New Roman}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\allowdisplaybreaks
+\sloppy
+\emergencystretch=2em
+\begin{document}
+\section*{BT\_5\_1\_3\_06 — Lời giải bổ sung}
+Đặt $b=x^2y^2/2$, $w=u-b$. Khi đó $w_x(0)=w_x(1)=0$, $\Delta w=-x^2-y^2$, $w(x,0)=x$, $w(x,1)=-x^2/2$. Dùng cơ sở cosine $X_n=\cos n\pi x$, $q_0=\int_0^1q,q_n=2\int_0^1qX_n$:
+\[w=\sum_{n\ge0}W_n(y)X_n(x).\]
+Đặt $a_n=(x)_n$, $b_n=(-x^2/2)_n$, $F_n(y)=(-x^2-y^2)_n$ (đều là tích phân đa thức hữu hạn). Với $k=n\pi>0$,
+\[W_n=\frac{a_n\sinh k(1-y)+b_n\sinh ky}{\sinh k}+\int_0^1\frac{-\sinh(k\min(y,s))\sinh(k[1-\max(y,s)])}{k\sinh k}F_n(s)ds.\]
+Mode 0: $a_0=1/2,b_0=-1/6,F_0=-1/3-y^2$, nên
+\[W_0=1/2-5y/12-y^2/6-y^4/12.\]
+Thế vào $u=b+w$ là nghiệm; công thức Green đã giải mọi ODE hệ số.\end{document}

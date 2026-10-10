@@ -1,0 +1,751 @@
+%ID BT_2_3_01
+\textbf{(a) Phép đổi biến tuyến tính.} Đặt $\xi=Ax$, $\det A\ne0$, $v(\xi)=u(A^{-1}\xi)$. Vì $\partial\xi_k/\partial x_i=a_{ki}$ là hằng,
+\[u=v,\qquad u_{x_i}=\sum_{k=1}^3a_{ki}v_{\xi_k},\qquad
+u_{x_ix_j}=\sum_{k,l=1}^3a_{ki}a_{lj}v_{\xi_k\xi_l}.\]
+Đây cho đủ mọi đa chỉ số $|\alpha|\le2$, gồm cả sáu đạo hàm cấp hai độc lập. Viết ma trận: $\nabla_xu=A^T\nabla_\xi v$, $H_xu=A^T H_\xi v A$.
+
+\textbf{(b) Tọa độ trụ.} Viết $c=\cos\theta$, $s=\sin\theta$, $z=x_3$. Nghịch đảo vi phân $x_1=rc$, $x_2=rs$ cho
+\[D_1=c\partial_r-s\partial_\theta/r,\quad D_2=s\partial_r+c\partial_\theta/r,\quad D_3=\partial_z.\]
+Suy ra $u_1=cv_r-sv_\theta/r$, $u_2=sv_r+cv_\theta/r$, $u_3=v_z$. Đạo hàm tích thêm một lần:
+\begin{align*}
+u_{11}&=c^2v_{rr}-2scv_{r\theta}/r+s^2v_{\theta\theta}/r^2+s^2v_r/r+2scv_\theta/r^2,\\
+u_{22}&=s^2v_{rr}+2scv_{r\theta}/r+c^2v_{\theta\theta}/r^2+c^2v_r/r-2scv_\theta/r^2,\\
+u_{12}&=scv_{rr}+(c^2-s^2)v_{r\theta}/r-scv_{\theta\theta}/r^2-scv_r/r-(c^2-s^2)v_\theta/r^2,\\
+u_{13}&=cv_{rz}-sv_{\theta z}/r,\quad
+u_{23}=sv_{rz}+cv_{\theta z}/r,\quad u_{33}=v_{zz}.
+\end{align*}
+
+\textbf{(c), (d) Công thức tường minh chung cho cầu và xuyến.} Dùng $s=\sin\theta$, $c=\cos\theta$, $p=\cos\varphi$, $q=\sin\varphi$. Đặt $\rho=r s$ ở hệ cầu; đặt $\rho=R+rs$ ở hệ xuyến. Các đạo hàm cấp một là
+\[u_1=spv_r+\frac{cp}{r}v_\theta-\frac q\rho v_\varphi,\quad
+u_2=sqv_r+\frac{cq}{r}v_\theta+\frac p\rho v_\varphi,\quad
+u_3=cv_r-\frac sr v_\theta.\]
+Để trình bày đủ sáu đạo hàm cấp hai mà không lặp các biểu thức dài, đặt sáu tổ hợp đã tính hết hệ số:
+\begin{align*}
+H_{rr}&=v_{rr},& H_{r\theta}&=v_{r\theta}/r-v_\theta/r^2,\\
+H_{r\varphi}&=v_{r\varphi}/\rho-sv_\varphi/\rho^2,&
+H_{\theta\theta}&=v_{\theta\theta}/r^2+v_r/r,\\
+H_{\theta\varphi}&=v_{\theta\varphi}/(r\rho)-cv_\varphi/\rho^2,&
+H_{\varphi\varphi}&=v_{\varphi\varphi}/\rho^2+sv_r/\rho+cv_\theta/(r\rho).
+\end{align*}
+Đây là các thành phần Hessian trong cơ sở trực chuẩn
+\[e_r=(sp,sq,c),\quad e_\theta=(cp,cq,-s),\quad e_\varphi=(-q,p,0).\]
+Có thể suy ra, chẳng hạn, $H_{r\theta}=\partial_r(v_\theta/r)$ và $H_{r\varphi}=\partial_r(v_\varphi/\rho)$ vì cơ sở không đổi theo $r$. Với $H_{\varphi\varphi}$, đạo hàm của $e_\varphi$ theo cung tròn là $-(se_r+ce_\theta)/\rho$, tạo ra hai hạng cấp một. Đổi lại cơ sở Descartes cho các công thức cụ thể:
+\begin{align*}
+u_{11}&=s^2p^2H_{rr}+c^2p^2H_{\theta\theta}+q^2H_{\varphi\varphi}
++2scp^2H_{r\theta}-2spqH_{r\varphi}-2cpqH_{\theta\varphi},\\
+u_{22}&=s^2q^2H_{rr}+c^2q^2H_{\theta\theta}+p^2H_{\varphi\varphi}
++2scq^2H_{r\theta}+2spqH_{r\varphi}+2cpqH_{\theta\varphi},\\
+u_{33}&=c^2H_{rr}+s^2H_{\theta\theta}-2scH_{r\theta},\\
+u_{12}&=s^2pqH_{rr}+c^2pqH_{\theta\theta}-pqH_{\varphi\varphi}
++2scpqH_{r\theta}+s(p^2-q^2)H_{r\varphi}+c(p^2-q^2)H_{\theta\varphi},\\
+u_{13}&=scp(H_{rr}-H_{\theta\theta})+(c^2-s^2)pH_{r\theta}-cqH_{r\varphi}+sqH_{\theta\varphi},\\
+u_{23}&=scq(H_{rr}-H_{\theta\theta})+(c^2-s^2)qH_{r\theta}+cpH_{r\varphi}-spH_{\theta\varphi}.
+\end{align*}
+Thế $\rho=rs$ hoặc $\rho=R+rs$ vào sáu $H$ cho đúng từng hệ tọa độ; không còn hệ số đạo hàm nào chưa tính. Ở hệ cầu, ví dụ $H_{\varphi\varphi}=v_{\varphi\varphi}/(r^2s^2)+v_r/r+\cot\theta\,v_\theta/r^2$.
+
+\textbf{(e) Laplace và miền hợp lệ.} Lấy tổng $u_{11}+u_{22}+u_{33}$:
+\begin{align*}
+\Delta u\ \text{(tuyến tính)}&=\sum_{k,l}(AA^T)_{kl}v_{\xi_k\xi_l},\\
+\Delta u\ \text{(trụ)}&=v_{rr}+v_r/r+v_{\theta\theta}/r^2+v_{zz},\\
+\Delta u\ \text{(cầu)}&=v_{rr}+2v_r/r+(v_{\theta\theta}+\cot\theta\,v_\theta)/r^2+v_{\varphi\varphi}/(r^2\sin^2\theta),\\
+\Delta u\ \text{(xuyến)}&=v_{rr}+\left(\frac1r+\frac{\sin\theta}{\rho}\right)v_r
++\frac{v_{\theta\theta}}{r^2}+\frac{\cos\theta}{r\rho}v_\theta+\frac{v_{\varphi\varphi}}{\rho^2}.
+\end{align*}
+Ở xuyến, cùng công thức viết dạng phân kỳ là $\Delta u=(r\rho)^{-1}[\partial_r(r\rho v_r)+\partial_\theta(\rho v_\theta/r)+\partial_\varphi(rv_\varphi/\rho)]$, do hệ số độ dài là $(1,r,\rho)$. Trụ cần $r>0$, cầu cần $r>0$, $\sin\theta\ne0$, xuyến cần $r>0$, $\rho>0$; do $r<a<R$, $\rho\ge R-r>0$. Chọn các nhánh góc trên từng miền tọa độ. Kiểm tra $u=x_i$ cho Hessian bằng $0$, và $u=|x|^2$ cho $\Delta u=6$ ở cả ba hệ.
+
+\textbf{Chi tiết tạo Hessian và lấy vết.} Trong hệ trụ, $D_1c=s^2/r$, $D_1(-s/r)=2sc/r^2$, $D_2c=-sc/r$, $D_2(-s/r)=-(c^2-s^2)/r^2$. Thế các hệ số này vào $D_i(cv_r-sv_\theta/r)$ cho $u_{11},u_{12}$; làm tương tự với $sv_r+cv_\theta/r$ cho $u_{22}$. $D_3$ không tác động lên $r,\theta$, nên $u_{13},u_{23}$ chỉ lấy thêm đạo hàm $z$.
+
+Với cầu và xuyến, lấy $e_r=(sp,sq,c)$, $e_\theta=(cp,cq,-s)$, $e_\varphi=(-q,p,0)$. Có $\partial_\theta e_r=e_\theta$, $\partial_\theta e_\theta=-e_r$ và $\partial_\varphi e_r=s e_\varphi$, $\partial_\varphi e_\theta=c e_\varphi$, $\partial_\varphi e_\varphi=-s e_r-c e_\theta$. Gradient là $v_re_r+(v_\theta/r)e_\theta+(v_\varphi/\rho)e_\varphi$. Đạo hàm gradient theo ba hướng $\partial_r,r^{-1}\partial_\theta,\rho^{-1}\partial_\varphi$ rồi chiếu lên cơ sở cho sáu $H$ đã ghi. Chẳng hạn
+\[e_\theta\cdot(r^{-1}\partial_\theta\nabla u)=v_r/r+v_{\theta\theta}/r^2,\quad
+e_\varphi\cdot(\rho^{-1}\partial_\varphi\nabla u)
+=sv_r/\rho+cv_\theta/(r\rho)+v_{\varphi\varphi}/\rho^2.\]
+Khi cộng $u_{11}+u_{22}+u_{33}$, hệ số của mỗi $H_{rr},H_{\theta\theta},H_{\varphi\varphi}$ là $1$, các hệ số ngoài đường chéo bằng $0$ bởi trực chuẩn. Vậy
+\[\Delta u=v_{rr}+\left(\frac1r+\frac s\rho\right)v_r+
+\frac{v_{\theta\theta}}{r^2}+\frac c{r\rho}v_\theta+\frac{v_{\varphi\varphi}}{\rho^2}.\]
+Thế $\rho=rs$ cho $1/r+s/\rho=2/r$, $c/(r\rho)=\cot\theta/r^2$; thế $\rho=R+rs$ cho dạng xuyến.
+
+%ID BT_2_3_02
+\textbf{Quy ước.} Viết hệ số hỗn hợp là $2B$, tính $\delta=B^2-AC$; đặt $u=v(\xi,\eta)$. Với các đổi biến $\xi=h(x)$, $\eta=y+k(x)$, công thức chung là
+\begin{align*}
+u_x&=h'v_\xi+k'v_\eta,\quad u_y=v_\eta,\\
+u_{xx}&=h'^2v_{\xi\xi}+2h'k'v_{\xi\eta}+k'^2v_{\eta\eta}+h''v_\xi+k''v_\eta,\\
+u_{xy}&=h'v_{\xi\eta}+k'v_{\eta\eta},\quad u_{yy}=v_{\eta\eta}.
+\end{align*}
+Vì vậy chỉ cần nêu $h',k'$ và gom hệ số như dưới đây. Trong các dạng mới, $x,y$ được hiểu là hàm của $\xi,\eta$ trên miền đổi biến đã chọn.
+
+\textbf{(i.a)} Phần chính $u_{xx}+4u_{xy}+5u_{yy}$ có $\delta=4-5=-1$. Chọn $\xi=x$, $\eta=y-2x$, $J=1$. $h'=1$, $k'=-2$ cho phần chính $v_{\xi\xi}+v_{\eta\eta}$. Đọc hạng cuối theo dạng $xu_x-u$, kết quả
+\[v_{\xi\xi}+v_{\eta\eta}+\xi v_\xi-2\xi v_\eta-v=0.\]
+\textit{Lưu ý bản in: cuối dòng (a) là chuỗi dấu $=u=0$. Nếu hiểu đúng từng dấu bằng thì còn yêu cầu $u=0$, chỉ có nghiệm không; dạng chính tắc trên dùng cách đọc phương trình $u_{xx}+4u_{xy}+5u_{yy}+xu_x=u$. Việc phân loại phần cấp hai giống nhau trong cả hai cách đọc.}
+
+\textbf{(i.b)} $\delta=16x^2-(\sin^2x+16x^2)=-\sin^2x$. Elliptic trên mỗi miền $\sin x\ne0$, parabolic tại $x\in\pi\mathbb Z$. Chọn $\xi=-\cos x$, $\eta=y-2x^2$: $h'=\sin x$, $h''=\cos x$, $k'=-4x$, $k''=-4$, $J=\sin x$. Hệ số hỗn hợp triệt tiêu, hệ số hai đạo hàm thuần đều là $\sin^2x$:
+\[\sin^2x(v_{\xi\xi}+v_{\eta\eta})+(\cos x+\sin^2x)v_\xi-(4+4x\sin x)v_\eta-v=0.\]
+Có thể chia cho $\sin^2x$ chỉ trên các miền vừa nêu.
+
+\textbf{(i.c)} $\delta=\sin^2x-(\sin^2x+4x^2)=-4x^2$. Chọn $\xi=x^2$, $\eta=y+\cos x$: $h'=2x$, $h''=2$, $k'=-\sin x$, $k''=-\cos x$, $J=2x$. Thu được
+\[4x^2(v_{\xi\xi}+v_{\eta\eta})+(2+2x^2)v_\xi-(\cos x+x\sin x+1)v_\eta=0.\]
+Elliptic trên $x>0$ và $x<0$; trên $x=0$ phần chính chỉ còn $u_{xx}$, nên parabolic. Không dùng $x^2$ như tọa độ khả nghịch qua $x=0$.
+
+\textbf{(i.d)} Đặt $a(x)=9\sin^2x+16x^2$, $a'=18\sin x\cos x+32x$. $\delta=16x^2-a=-9\sin^2x$. Trên từng khoảng $\sin x\ne0$, chọn
+\[\xi=\int_{x_*}^x\frac{3\sin t}{a(t)}dt,\qquad
+\eta=y-\int_{x_*}^x\frac{4t}{a(t)}dt.\]
+Đặt $h=\xi_x=3\sin x/a$, $k=\eta_x=-4x/a$. Hệ số hỗn hợp $2h(ak+4x)=0$; hai hệ số thuần đều $9\sin^2x/a$. Hệ số cấp một tính rõ:
+\[a h'+h=3\cos x-\frac{3\sin x\,a'}a+\frac{3\sin x}a,\qquad
+ak'+k=-4+\frac{4xa'}a-\frac{4x}a.\]
+Dạng chính tắc:
+\[\frac{9\sin^2x}a(v_{\xi\xi}+v_{\eta\eta})+(ah'+h)v_\xi+(ak'+k)v_\eta-v=0.\]
+Ở ý này hệ số của $u_x$ trong đề là $1$, vì vậy không nhân thêm $x$ vào hai hệ số cấp một.
+Jacobian $h\ne0$. Tại $x\in\pi\mathbb Z\setminus\{0\}$, phần chính là $(4x\partial_x+\partial_y)^2$ về các hạng cấp hai, hạng một không được tự lấy từ bình phương này; đó là parabolic. Tại $x=0$, phần chính $u_{yy}$ vẫn khác $0$, cũng parabolic.
+
+\textbf{(i.e)} $\delta=0$ mọi nơi. Đặt $\xi=x$, $\eta=y-\cos x$, $k'=\sin x$, $k''=\cos x$, $J=1$. Khi thế vào phần chính $u_{xx}-2\sin x\,u_{xy}+\sin^2x\,u_{yy}$, còn $v_{\xi\xi}+\cos x\,v_\eta$. Dạng parabolic là
+\[v_{\xi\xi}+y v_\xi+(\cos x+y\sin x-x)v_\eta=0.\]
+
+\textbf{(i.f)} $\delta=\sin^2x+\cos^2x+3=4>0$. Đặc trưng $dy/dx=\sin x\pm2$ cho $y+\cos x\mp2x=\mathrm{const}$. Chọn $\xi=y+\cos x-2x$, $\eta=y+\cos x+2x$, $J=-4$. Tính $\xi_{xx}=\eta_{xx}=-\cos x$, $\xi_y=\eta_y=1$; phần chính thuần triệt tiêu, hỗn hợp bằng $-16v_{\xi\eta}$. Do đó
+\[-16v_{\xi\eta}+(x-\cos x)(v_\xi+v_\eta)=xy.\]
+
+\textbf{(ii) Ba biến: đưa về chính tắc bằng ma trận.} Gọi $M$ là ma trận đối xứng của phần chính. Nếu dạng toàn phương $\lambda^TM\lambda=\sum_j\varepsilon_j(b_j\cdot\lambda)^2$ và $B$ có các hàng $b_j$, thì $M=B^T\operatorname{diag}(\varepsilon_j)B$. Chọn tọa độ mới $\xi=B^{-T}(x,y,z)^T$ để ma trận mới đúng bằng $\operatorname{diag}(\varepsilon_j)$.
+
+\textbf{(ii.a)} Hoàn thành bình phương:
+\[Q=(\lambda_x+\lambda_y+\lambda_z)^2+(\lambda_y-\lambda_z)^2+\lambda_z^2.\]
+Ba dấu dương: elliptic. Chọn $\xi=x$, $\eta=y-x$, $\zeta=z+y-2x$; định thức $1$. Dạng chính tắc $v_{\xi\xi}+v_{\eta\eta}+v_{\zeta\zeta}=0$.
+
+\textbf{(ii.b)}
+\[Q=(\lambda_x+2\lambda_y+6\lambda_z)^2+3\lambda_y^2-3(\lambda_y+3\lambda_z)^2.\]
+Hai dấu dương, một dấu âm: hyperbolic. Chọn
+\[\xi=x,\quad\eta=\frac{3y-z}{3\sqrt3},\quad\zeta=\frac{z-6x}{3\sqrt3}.\]
+Định thức $1/9\ne0$. Dạng chính tắc $v_{\xi\xi}+v_{\eta\eta}-v_{\zeta\zeta}=0$.
+
+\textbf{(ii.c)}
+\[Q=3(\lambda_x-\lambda_y/3+\lambda_z/3)^2+\frac53(\lambda_y+7\lambda_z/5)^2-\frac35\lambda_z^2.\]
+Hai dấu dương, một dấu âm: hyperbolic. Chọn
+\[\xi=\frac{x}{\sqrt3},\quad\eta=\sqrt{\frac35}\left(y+\frac x3\right),\quad
+\zeta=\sqrt{\frac53}\left(z-\frac75y-\frac45x\right).\]
+Định thức $1/\sqrt3\ne0$. Dạng chính tắc cũng là $v_{\xi\xi}+v_{\eta\eta}-v_{\zeta\zeta}=0$. Với cả ba ý, có thể kiểm tra trực tiếp bằng phép nhân $TMT^T$; các hạng hỗn hợp đều bằng $0$.
+
+\textbf{Chi tiết gom hệ số cho sáu phương trình hai biến.} Với $Lu=Au_{xx}+2Bu_{xy}+Cu_{yy}+Du_x+Eu_y+Ku$, phép đổi $\xi=h(x),\eta=y+k(x)$ cho
+\[\begin{aligned}
+L u={}&Ah'^2v_{\xi\xi}+2h'(Ak'+B)v_{\xi\eta}
++(Ak'^2+2Bk'+C)v_{\eta\eta}\\
+&+(Ah''+Dh')v_\xi+(Ak''+Dk'+E)v_\eta+Kv.
+\end{aligned}\]
+Các hệ số dưới đây được tính trước khi chia bất kỳ biểu thức nào:
+
+(a) $A=1,B=2,C=5,D=x$: hỗn hợp $2(1)(-2+2)=0$; thuần theo $\eta$ là $4-8+5=1$. Cấp một: $0+x=x$, $0-2x=-2x$.
+
+(b) $A=1,B=4x,C=\sin^2x+16x^2,D=\sin x$: hỗn hợp $2\sin x(-4x+4x)=0$; thuần theo $\eta$ là $16x^2-32x^2+\sin^2x+16x^2=\sin^2x$. Cấp một: $\cos x+\sin x\sin x=\cos x+\sin^2x$, $-4+\sin x(-4x)=-4-4x\sin x$.
+
+(c) $A=1,B=\sin x,C=\sin^2x+4x^2,D=x,E=-1$: hỗn hợp $4x(-\sin x+\sin x)=0$; thuần theo $\eta$ là $\sin^2x-2\sin^2x+\sin^2x+4x^2=4x^2$. Cấp một: $2+x(2x)=2+2x^2$, $-\cos x-x\sin x-1$.
+
+(d) Giữ ký hiệu $h=\xi_x,k=\eta_x$ của ý này: $Ah^2=a(3\sin x/a)^2=9\sin^2x/a$; hỗn hợp $2h(ak+4x)=0$; thuần theo $\eta$ là
+\[\frac{16x^2}a-\frac{32x^2}a+1=\frac{a-16x^2}a=\frac{9\sin^2x}a.\]
+Đạo hàm thương $h'=3\cos x/a-3\sin x\,a'/a^2$, $k'=-4/a+4xa'/a^2$ rồi nhân $a$ và cộng $h,k$ cho hai hệ số cấp một đã ghi.
+
+(e) $h'=1,k'=\sin x,A=1,B=-\sin x,C=\sin^2x,D=y,E=-x$: hỗn hợp $2(\sin x-\sin x)=0$, thuần theo $\eta$ là $\sin^2x-2\sin^2x+\sin^2x=0$. Cấp một $y$, $\cos x+y\sin x-x$.
+
+(f) Đặt $p=-\sin x-2,q=-\sin x+2$. Ba đạo hàm là
+\[u_{xx}=p^2v_{\xi\xi}+2pqv_{\xi\eta}+q^2v_{\eta\eta}-\cos x(v_\xi+v_\eta),\quad
+u_{xy}=pv_{\xi\xi}+(p+q)v_{\xi\eta}+qv_{\eta\eta},\quad
+u_{yy}=v_{\xi\xi}+2v_{\xi\eta}+v_{\eta\eta}.\]
+Với $B=\sin x,C=\sin^2x-4$, các hệ số thuần là $(p+\sin x)^2-4=0$ và $(q+\sin x)^2-4=0$; hỗn hợp là
+\[2[pq+\sin x(p+q)+\sin^2x-4]
+=2[(\sin^2x-4)-2\sin^2x+\sin^2x-4]=-16.\]
+Hạng $xu_y=x(v_\xi+v_\eta)$ cộng vào hệ số hai đạo hàm cấp một, cho $(x-\cos x)(v_\xi+v_\eta)$.
+
+\textbf{Chi tiết nhân ma trận cho ba phương trình ba biến.} Gọi $T$ là ma trận các hàng gradient tọa độ mới, $N=TMT^T$.
+
+(ii.a)
+\[M=\begin{pmatrix}1&1&1\\1&2&0\\1&0&3\end{pmatrix},\quad
+T=\begin{pmatrix}1&0&0\\-1&1&0\\-2&1&1\end{pmatrix},\quad
+TM=\begin{pmatrix}1&1&1\\0&1&-1\\0&0&1\end{pmatrix}.\]
+Nhân từng hàng của $TM$ với ba hàng của $T$: hàng đầu cho $1,-1+1,-2+1+1$; hàng hai cho $0,1,1-1$; hàng ba cho $0,0,1$. Vậy $N=\operatorname{diag}(1,1,1)$.
+
+(ii.b) Đặt $b=1/(3\sqrt3)$, nên
+\[M=\begin{pmatrix}1&2&6\\2&4&3\\6&3&9\end{pmatrix},\quad
+T=\begin{pmatrix}1&0&0\\0&3b&-b\\-6b&0&b\end{pmatrix},\quad
+TM=\begin{pmatrix}1&2&6\\0&9b&0\\0&-9b&-27b\end{pmatrix}.\]
+Các tích trên đường chéo là $1$, $27b^2=1$, $-27b^2=-1$; ngoài đường chéo là $6b-6b=0$, $0$, $-27b^2+27b^2=0$. Vậy $N=\operatorname{diag}(1,1,-1)$.
+
+(ii.c) Đặt $a=1/\sqrt3,b=\sqrt{3/5},c=\sqrt{5/3}$. Khi đó
+\[M=\begin{pmatrix}3&-1&1\\-1&2&2\\1&2&3\end{pmatrix},\quad
+T=\begin{pmatrix}a&0&0\\b/3&b&0\\-4c/5&-7c/5&c\end{pmatrix},\quad
+TM=\begin{pmatrix}3a&-a&a\\0&5b/3&7b/3\\0&0&-3c/5\end{pmatrix}.\]
+Đường chéo là $3a^2=1,5b^2/3=1,-3c^2/5=-1$. Hai tích hàng đầu với hàng sau là $ab-ab=0$ và $(-12+7+5)ac/5=0$; tích hàng hai với hàng ba là $-7bc/3+7bc/3=0$. Vậy $N=\operatorname{diag}(1,1,-1)$, xác nhận mọi hệ số hỗn hợp bằng $0$.
+
+%ID BT_2_3_03
+\textbf{(a) Phân loại và đặc trưng.} $A=3$, $B=-1$, $C=-5$, $\delta=16>0$: hyperbolic. Phương trình đặc trưng $3(dy)^2+2dxdy-5(dx)^2=(dy-dx)(3dy+5dx)=0$ cho các đường $y-x=c_1$, $5x+3y=c_2$. Đặt $\xi=y-x$, $\eta=5x+3y$, $J=-8$; đổi ngược $x=(\eta-3\xi)/8$, $y=(\eta+5\xi)/8$. Có $\partial_x=-\partial_\xi+5\partial_\eta$, $\partial_y=\partial_\xi+3\partial_\eta$, nên
+\[3u_{xx}-2u_{xy}-5u_{yy}=-64v_{\xi\eta}=\widetilde f.\]
+Các đường đặc trưng cần vẽ là hai chùm thẳng có hệ số góc $1$ và $-5/3$.
+
+\textbf{(b) Tích phân.} Giữ lần lượt $\xi,\eta$ cố định:
+\[v=F(\xi)+G(\eta)-\frac1{64}\int_{\xi_0}^{\xi}\int_{\eta_0}^{\eta}\widetilde f(a,b)dbda.\]
+Nếu $f=0$, $v=F+G$ và $v_{11}+v_{22}=v_{12}+v_{21}$ cho bốn đỉnh $(\xi_i,\eta_j)$, tức hình bình hành có cạnh theo hai họ đặc trưng trong mặt phẳng gốc.
+
+\textbf{(c) Nghiệm riêng và dữ liệu.} Với $f=x+xy$, thử đa thức; lấy
+\[P(x,y)=\frac{x^3(1+y)}{18}+\frac{x^4}{108}.\]
+Ta có $P_{xx}=x(1+y)/3+x^2/9$, $P_{xy}=x^2/6$, $P_{yy}=0$, nên $3P_{xx}-2P_{xy}-5P_{yy}=x+xy$. Viết $u=P+F(\xi)+G(\eta)$. Trên $(r,r)$: $\xi=0$, $\eta=8r$, $F(0)+G(8r)=e^r-P(r,r)$. Trên $(3r,-5r)$: $\xi=-8r$, $\eta=0$, $F(-8r)+G(0)=r+1-P(3r,-5r)$. Hai dữ liệu tại gốc đều bằng $1$, nên tương thích. Lấy $F(0)=0$, $G(0)=1$ được
+\[F(\xi)=-\xi/8-P(-3\xi/8,5\xi/8),\quad
+G(\eta)=e^{\eta/8}-P(\eta/8,\eta/8).\]
+Kết quả
+\[\boxed{u=P(x,y)-\frac\xi8-P(-3\xi/8,5\xi/8)+e^{\eta/8}-P(\eta/8,\eta/8).}\]
+Thế hai đường dữ liệu vào công thức lần lượt cho $e^r$ và $r+1$; phần $F+G$ có đạo hàm hỗn hợp bằng $0$, nên kiểm tra PDE qua $LP=f$. Hai đường là hai đặc trưng giao nhau, dữ liệu trên toàn bộ chúng xác định nghiệm duy nhất trên $\mathbb R^2$. Đồ thị kèm theo biểu diễn công thức này.
+
+\textbf{Chi tiết thế ba đạo hàm cấp hai.} Với tọa độ đã chọn,
+\[u_{xx}=v_{\xi\xi}-10v_{\xi\eta}+25v_{\eta\eta},\quad u_{xy}=-v_{\xi\xi}+2v_{\xi\eta}+15v_{\eta\eta},\quad u_{yy}=v_{\xi\xi}+6v_{\xi\eta}+9v_{\eta\eta}.\]
+Nhân lần lượt với $3$,$-2$,$-5$, hệ số theo thứ tự $v_{\xi\xi},v_{\xi\eta},v_{\eta\eta}$ là
+\[3+2-5=0,\qquad -30-4-30=-64,\qquad 75-30-45=0.\]
+
+%ID BT_2_3_04
+\textbf{(a) Phân loại và chính tắc.} $A=15$, $B=-1$, $C=-1$, $\delta=16>0$. Đặc trưng $(5dy-dx)(3dy+dx)=0$ cho $x-5y=c_1$, $x+3y=c_2$. Chọn $\xi=x-5y$, $\eta=x+3y$, $J=8$, $x=(3\xi+5\eta)/8$, $y=(\eta-\xi)/8$. Với $\partial_x=\partial_\xi+\partial_\eta$, $\partial_y=-5\partial_\xi+3\partial_\eta$, phần chính là $64v_{\xi\eta}$. Dạng mới $64v_{\xi\eta}=\widetilde f$; hai chùm đặc trưng có hệ số góc $1/5$, $-1/3$.
+
+\textbf{(b) Nghiệm tổng quát và bốn đỉnh.}
+\[v=F(\xi)+G(\eta)+\frac1{64}\int_{\xi_0}^{\xi}\int_{\eta_0}^{\eta}\widetilde f(a,b)dbda.\]
+Khi $f=0$, tổng ở hai đỉnh đối diện bằng tổng ở hai đỉnh còn lại, do mỗi $F(\xi_i)$ và $G(\eta_j)$ xuất hiện một lần ở mỗi vế.
+
+\textbf{(c) $f=1$: dữ liệu trên hai đường không cùng là đặc trưng.} Chọn $P=x^2/30$ vì $15P_{xx}=1$. Dữ liệu $y=0$ cho $F(s)+G(s)=s-s^2/30$. Trên $(3t,t)$, $\xi=-2t$, $\eta=6t$; đặt $s=-2t$ rồi thay $G(-3s)=-3s-9s^2/30-F(-3s)$, được
+\[F(s)-F(-3s)=R(s),\qquad R(s)=\sin(-s/2)+3s+\frac{9s^2}{40}.\]
+Đặt $q=-1/3$. Vì $R(0)=0$, lặp ở $qs,q^2s,\ldots$ cho
+\[F(s)=F(0)-\sum_{j=1}^{\infty}R(q^js).\]
+Lấy $F(0)=0$ và $G(s)=s-s^2/30-F(s)$. Chuỗi hội tụ cùng hai đạo hàm trên mọi đoạn hữu hạn: mỗi lần đạo hàm thêm một hệ số $q^j$, còn $R(q^js)=O(|q|^j)$ ở gần $0$. Vì vậy
+\[\boxed{u_c(x,y)=\frac{x^2}{30}+F(x-5y)+G(x+3y).}\]
+Tính $F(s)-F(-3s)=R(s)$ bằng cách dịch chỉ số chuỗi kiểm tra dữ liệu thứ hai. Nếu hai nghiệm khác nhau, phần chênh $H$ thỏa $H(s)=H(-3s)$; lặp $s\mapsto qs$ và dùng liên tục ở $0$ cho $H$ hằng, rồi triệt tiêu với $G$. Do đó nghiệm liên tục, $C^2$ ở đây, là duy nhất.
+
+\textbf{(e) $f=e^{x+3y}$: dữ liệu Cauchy trên $y=0$.} Bản gốc đánh số chuyển từ (c) sang (e), không có ý (d). Chọn $P=xe^{x+3y}/24$: trong tọa độ mới $P=(3\xi+5\eta)e^\eta/192$, nên $64P_{\xi\eta}=e^\eta$. Viết $u=P+F(\xi)+G(\eta)$ và đặt
+\[H(s)=s-\frac{se^s}{24},\qquad K(s)=\sin s+1-\frac{se^s}{8}.\]
+Hai dữ liệu cho $F+G=H$, $-5F'+3G'=K$. Lấy đạo hàm phương trình thứ nhất: $F'+G'=H'$. Giải hệ:
+\[F'=\frac{3H'-K}{8},\quad G'=\frac{5H'+K}{8}.\]
+Vậy chọn $F(s)=\int_0^s(3H'(r)-K(r))dr/8=s/4+(\cos s-1)/8-(e^s-1)/64$, $G=H-F$, được
+\[\boxed{u_e=\frac{xe^{x+3y}}{24}+F(x-5y)+G(x+3y).}\]
+Thế $y=0$ cho $u=x$, $u_y=\sin x+1$. Hai đặc trưng qua $(x,y)$ gặp trục ở $A=(x-5y,0)$, $B=(x+3y,0)$; tam giác phụ thuộc có ba đỉnh $A,B,(x,y)$. Công thức chỉ cần dữ liệu trên đoạn giữa $A$ và $B$. Các đồ thị kèm theo phân biệt nghiệm của (c) và (e).
+
+\textbf{Chi tiết phương trình hàm ở (c).} Trên $(3t,t)$, $P=3t^2/10$, nên $F(-2t)+G(6t)=\sin t-3t^2/10$. Với $s=-2t$, $t=-s/2$, $6t=-3s$, ta có
+\[F(s)+G(-3s)=\sin(-s/2)-3s^2/40.\]
+Thế $G(-3s)=-3s-3s^2/10-F(-3s)$ rồi chuyển vế cho $R(s)$ đã ghi. Đặt $q=-1/3$, phương trình tại $qs$ là $F(qs)-F(s)=R(qs)$; lặp $N$ lần:
+\[F(s)=F(q^Ns)-\sum_{j=1}^{N}R(q^js).\]
+Cho $N\to\infty$ và dùng liên tục của $F$ tại $0$ được chuỗi.
+
+\textbf{Chi tiết tích phân ở (e).} $H'=1-(1+s)e^s/24$, nên
+\[3H'-K=2-\sin s-e^s/8,\qquad F'=1/4-\sin s/8-e^s/64.\]
+Tích phân từ $0$ đến $s$ được $F=s/4+(\cos s-1)/8-(e^s-1)/64$, đúng biểu thức sử dụng.
+
+\textbf{Chi tiết thế ba đạo hàm cấp hai.} Với tọa độ đã chọn,
+\[u_{xx}=v_{\xi\xi}+2v_{\xi\eta}+v_{\eta\eta},\quad u_{xy}=-5v_{\xi\xi}-2v_{\xi\eta}+3v_{\eta\eta},\quad u_{yy}=25v_{\xi\xi}-30v_{\xi\eta}+9v_{\eta\eta}.\]
+Nhân lần lượt với $15$,$-2$,$-1$, hệ số theo thứ tự $v_{\xi\xi},v_{\xi\eta},v_{\eta\eta}$ là
+\[15+10-25=0,\qquad 30+4+30=64,\qquad 15-6-9=0.\]
+
+%ID BT_2_3_05
+\textbf{(a) Phân loại, đặc trưng, đổi biến.} $A=3$, $B=1$, $C=-5$, $\delta=16>0$. Đặc trưng $(dy+dx)(3dy-5dx)=0$: $x+y=c_1$, $5x-3y=c_2$. Đặt $\xi=x+y$, $\eta=5x-3y$, $J=-8$; $x=(3\xi+\eta)/8$, $y=(5\xi-\eta)/8$. Có $\partial_x=\partial_\xi+5\partial_\eta$, $\partial_y=\partial_\xi-3\partial_\eta$, nên
+\[3u_{xx}+2u_{xy}-5u_{yy}=64v_{\xi\eta},\quad 3u_x+5u_y=8v_\xi.\]
+Dạng chính tắc $64v_{\xi\eta}+8v_\xi=0$.
+
+\textbf{(b) Giải và hình bình hành.} Đặt $w=v_\xi$; ODE $w_\eta+w/8=0$ cho $w=e^{-\eta/8}A(\xi)$. Tích phân theo $\xi$:
+\[\boxed{u=e^{-(5x-3y)/8}F(x+y)+G(5x-3y).}\]
+Với $v_{ij}=v(\xi_i,\eta_j)$,
+\[v_{22}-v_{12}=e^{-(\eta_2-\eta_1)/8}(v_{21}-v_{11}).\]
+Thật vậy, lấy hiệu hai giá trị cùng $\eta_j$ làm $G$ triệt tiêu và chỉ còn trọng số mũ nhân $F(\xi_2)-F(\xi_1)$.
+
+\textbf{(c) Điều kiện tương thích.} Trên $(3t,5t)$: $\xi=8t$, $\eta=0$. Dữ liệu giá trị cho $F(8t)+G(0)=8t$, nên $F(s)=s-g_0$, $g_0=G(0)$, $F'=1$. Từ
+\[u_y=e^{-\eta/8}\left(F'+\frac38F\right)-3G'(\eta)\]
+suy ra $u_y(3t,5t)=1+3t-3g_0/8-3G'(0)$. So với $Ct+1$ cho
+\[\boxed{C=3,\qquad G'(0)=-g_0/8.}\]
+Chỉ hai giá trị tại $0$ của $G$ bị ràng buộc, nên có vô số nghiệm. Chọn $G=0$ và $G(s)=s^2$, cùng $g_0=0$, cho
+\[u_1=(x+y)e^{-(5x-3y)/8},\qquad u_2=u_1+(5x-3y)^2.\]
+Phần chênh chỉ phụ thuộc $\eta$, nên thỏa PDE; nó và đạo hàm theo $y$ bằng $0$ khi $\eta=0$. Vì vậy cả hai thỏa đầy đủ dữ liệu. Đặc trưng cần vẽ có hệ số góc $-1$ và $5/3$.
+
+\textbf{Chi tiết thế ba đạo hàm cấp hai.} Với tọa độ đã chọn,
+\[u_{xx}=v_{\xi\xi}+10v_{\xi\eta}+25v_{\eta\eta},\quad u_{xy}=v_{\xi\xi}+2v_{\xi\eta}-15v_{\eta\eta},\quad u_{yy}=v_{\xi\xi}-6v_{\xi\eta}+9v_{\eta\eta}.\]
+Nhân lần lượt với $3$,$2$,$-5$, hệ số theo thứ tự $v_{\xi\xi},v_{\xi\eta},v_{\eta\eta}$ là
+\[3+2-5=0,\qquad 30+4+30=64,\qquad 75-30-45=0.\]
+
+%ID BT_2_3_06
+\textbf{(a) Phân loại và đổi biến.} $A=1$, $B=-5$, $C=25$ cho $\delta=0$; phần chính là $D^2$, $D=\partial_x-5\partial_y$. Đặc trưng $5x+y=s$. Đặt $s=5x+y$, $z=x$, $J=-1$. Do $Ds=0$, $Dz=1$, ta có $D=\partial_z$, dạng chính tắc $v_{zz}=e^z$.
+
+\textbf{(b) Tích phân hai lần.} Giữ $s$ cố định: $v_z=e^z+F(s)$, rồi $v=e^z+zF(s)+G(s)$. Vậy
+\[u=e^x+xF(5x+y)+G(5x+y).\]
+
+\textbf{(c) Xác định các hàm.} Dữ liệu $y=0$ và $u_y=xF'(s)+G'(s)$ cho
+\[xF(5x)+G(5x)=-\cos5x,\qquad xF'(5x)+G'(5x)=\sin5x.\]
+Lấy đạo hàm dòng đầu theo $x$ được $F(5x)+5xF'(5x)+5G'(5x)=5\sin5x$. Trừ $5$ lần dòng thứ hai, còn $F(5x)=0$ với mọi $x$. Suy ra $F=0$, $G(s)=-\cos s$:
+\[\boxed{u=e^x-\cos(5x+y).}\]
+Kiểm tra: $D(5x+y)=0$ nên $D^2[-\cos(5x+y)]=0$, $D^2e^x=e^x$. Thế $y=0$ cho đúng $u=e^x-\cos5x$, $u_y=\sin5x$. Toàn bộ $s\in\mathbb R$ đều xuất hiện trên dữ liệu, nên $F,G$ được xác định duy nhất. Đặc trưng là các đường thẳng hệ số góc $-5$.
+
+\textbf{Chi tiết thế ba đạo hàm cấp hai.} Với tọa độ đã chọn,
+\[u_{xx}=25v_{ss}+10v_{sz}+v_{zz},\quad u_{xy}=5v_{ss}+v_{sz},\quad u_{yy}=v_{ss}.\]
+Nhân lần lượt với $1$,$-10$,$25$, hệ số theo thứ tự $v_{ss},v_{sz},v_{zz}$ là
+\[25-50+25=0,\qquad 10-10+0=0,\qquad 1+0+0=1.\]
+
+%ID BT_2_3_07
+\textbf{(a) Phân loại và tọa độ.} $A=1$, $B=-3$, $C=9$, $\delta=0$. Đặt $D=\partial_x-3\partial_y$, $s=3x+y$, $z=x$, $J=-1$. Vì $Ds=0$, $Dz=1$, PDE parabolic trở thành $v_{zz}=e^z$. Đặc trưng $y=-3x+s$.
+
+\textbf{(b) Nghiệm tổng quát.} Tích phân theo $z$ hai lần:
+\[u=e^x+xF(3x+y)+G(3x+y).\]
+
+\textbf{(c) Dùng lần lượt hai đường dữ liệu.} Trên $x=0$, $s=y$, nên $1+G(y)=1+\sin y$: $G(s)=\sin s$. Trên $y=0$,
+\[e^x+xF(3x)+\sin3x=e^x+\sin3x+x^3\]
+cho $F(3x)=x^2$ khi $x\ne0$; tính liên tục xác định cả $F(0)=0$. Vì vậy $F(s)=s^2/9$ và
+\[\boxed{u=e^x+\frac{x(3x+y)^2}{9}+\sin(3x+y).}\]
+Giữ $s$ cố định thì $v_{zz}=e^z$, nên công thức thỏa PDE. Thế $y=0$ và $x=0$ kiểm tra đúng hai dữ liệu; chúng cùng bằng $1$ tại gốc. Hai đường dữ liệu đã xác định toàn bộ $F,G$, nên nghiệm là duy nhất trong lớp $C^2$ trên $\mathbb R^2$.
+
+\textbf{Chi tiết tích phân theo biến còn lại.} Với $s=3x+y,z=x$, $u_x=3v_s+v_z,u_y=v_s$,
+\[u_{xx}=9v_{ss}+6v_{sz}+v_{zz},\quad u_{xy}=3v_{ss}+v_{sz},\quad u_{yy}=v_{ss}.\]
+Phần chính $u_{xx}-6u_{xy}+9u_{yy}$ có các hệ số $9-18+9=0$, $6-6=0$, còn $v_{zz}$. Tích phân $v_{zz}=e^z$ lần đầu được $v_z=e^z+F(s)$, lần sau $v=e^z+zF(s)+G(s)$.
+
+%ID BT_2_3_08
+\textbf{(a) Phân loại và chính tắc.} $A=4$, $B=-2$, $C=1$, $\delta=0$. Phần chính $D^2$, $D=2\partial_x-\partial_y$. Bất biến $s=x+2y$; chọn $z=x$, $J=-2$. Khi đó $D=2\partial_z$, PDE trở thành $4v_{zz}=e^z$. Đặc trưng $y=-x/2+s/2$.
+
+\textbf{(b) Tích phân.} Nghiệm riêng $e^z/4$; hai lần tích phân cho
+\[u=e^x/4+xF(s)+G(s),\qquad s=x+2y.\]
+
+\textbf{(c) Tương thích trên một đặc trưng.} Trên $(2t,-t)$, $s=0$:
+\[e^{2t}/4+2tF(0)+G(0)=C_1e^{2t}.\]
+Hàm mũ không thể bằng đa thức bậc nhất trên cả trục trừ khi các hệ số chênh đều bằng $0$; có thể lấy đạo hàm hai lần để thấy ngay $C_1=1/4$. Suy ra $F(0)=G(0)=0$. Đạo hàm theo $y$ là $u_y=2xF'(s)+2G'(s)$, nên
+\[4tF'(0)+2G'(0)=C_2t^2+t+1.\]
+So sánh ba hệ số cho
+\[\boxed{C_1=1/4,\quad C_2=0,\quad F'(0)=1/4,\quad G'(0)=1/2.}\]
+Chọn $F(s)=s/4$, $G(s)=s/2$ hoặc $G(s)=s/2+s^2$:
+\[u_1=e^x/4+\frac{x(x+2y)}4+\frac{x+2y}2,\qquad u_2=u_1+(x+2y)^2.\]
+Tại đường dữ liệu, $u_j=e^{2t}/4$ và $(u_j)_y=t+1$. Cả hai thỏa PDE vì $D(s)=0$, $D^2(xF(s)+G(s))=0$. Có vô số nghiệm: thêm các hàm $F,G$ với giá trị và đạo hàm tại $0$ giữ như trên.
+
+\textbf{Chi tiết tích phân và so hệ số.} $4v_{zz}=e^z$ cho $v_z=e^z/4+F(s)$ rồi $v=e^z/4+zF(s)+G(s)$. Từ $(1/4-C_1)e^{2t}+2tF(0)+G(0)=0$, đạo hàm hai lần cho $4(1/4-C_1)e^{2t}=0$, suy $C_1=1/4$; còn $2tF(0)+G(0)=0$ cho $F(0)=G(0)=0$. Với $4tF'(0)+2G'(0)=C_2t^2+t+1$, so hệ số $t^2,t,1$ lần lượt cho $C_2=0,F'(0)=1/4,G'(0)=1/2$.
+
+\textbf{Chi tiết thế ba đạo hàm cấp hai.} Với tọa độ đã chọn,
+\[u_{xx}=v_{ss}+2v_{sz}+v_{zz},\quad u_{xy}=2v_{ss}+2v_{sz},\quad u_{yy}=4v_{ss}.\]
+Nhân lần lượt với $4$,$-4$,$1$, hệ số theo thứ tự $v_{ss},v_{sz},v_{zz}$ là
+\[4-8+4=0,\qquad 8-8+0=0,\qquad 4+0+0=4.\]
+
+%ID BT_2_3_09
+\textbf{(a) Phân loại và chính tắc.} $A=25$, $B=-5$, $C=1$, $\delta=0$. Đặt $D=5\partial_x-\partial_y$. PDE là $D^2u-2Du=15e^x$. Chọn $s=x+5y$, $z=x$, $J=-5$; $Ds=0$, $Dz=5$, nên
+\[25v_{zz}-10v_z=15e^z.\]
+Đặc trưng là $y=-x/5+s/5$.
+
+\textbf{(b) Giải ODE.} Đa thức đặc trưng $25\lambda^2-10\lambda=5\lambda(5\lambda-2)$ có nghiệm $0$, $2/5$. Nghiệm riêng $v_p=e^z$ vì $25-10=15$. Vì vậy
+\[u=e^x+e^{2x/5}F(x+5y)+G(x+5y).\]
+
+\textbf{(c) Tìm $C$ và hai nghiệm.} Trên $y=-x/5$, $s=0$, phương trình dữ liệu là
+\[(1-C)e^x+(F(0)-1)e^{2x/5}+G(0)=0.\]
+Ba hàm $e^x$, $e^{2x/5}$, $1$ độc lập tuyến tính, nên
+\[\boxed{C=1,\qquad F(0)=1,\qquad G(0)=0.}\]
+Lấy $F=1$, $G=0$ và $F=1$, $G(s)=s$ cho
+\[u_1=e^x+e^{2x/5},\qquad u_2=e^x+e^{2x/5}+x+5y.\]
+Kiểm tra: $D^2e^x-2De^x=15e^x$; $De^{2x/5}=2e^{2x/5}$ nên phần mũ thứ hai thỏa thuần nhất; $D(x+5y)=0$. Hai công thức bằng nhau trên đường dữ liệu nhưng khác ngoài nó. Dữ liệu trên một đặc trưng chỉ quy định hai giá trị $F(0),G(0)$, nên không duy nhất.
+
+\textbf{Chi tiết tính độc lập của ba hàm.} Đặt $a=1-C,b=F(0)-1,c=G(0)$. Từ $ae^x+be^{2x/5}+c=0$, đạo hàm lần thứ nhất và thứ hai:
+\[ae^x+\tfrac25be^{2x/5}=0,\quad ae^x+\tfrac4{25}be^{2x/5}=0.\]
+Trừ hai dòng cho $(6/25)be^{2x/5}=0$, suy $b=0$; thế ngược cho $a=0$, rồi $c=0$. Do đó $C=1,F(0)=1,G(0)=0$ như kết luận.
+
+\textbf{Chi tiết thế ba đạo hàm cấp hai.} Với tọa độ đã chọn,
+\[u_{xx}=v_{ss}+2v_{sz}+v_{zz},\quad u_{xy}=5v_{ss}+5v_{sz},\quad u_{yy}=25v_{ss}.\]
+Nhân lần lượt với $25$,$-10$,$1$, hệ số theo thứ tự $v_{ss},v_{sz},v_{zz}$ là
+\[25-50+25=0,\qquad 50-50+0=0,\qquad 25+0+0=25.\]
+
+%ID BT_2_3_10
+\textbf{(a) Phân loại và phép đổi biến.} $A=8$, $B=4$, $C=2$ cho $\delta=0$. Đặt $D=2\partial_x+\partial_y$; PDE là $2D^2u-Du=0$. Bất biến $s=x-2y$, chọn $z=x$, $J=2$. Do $D=2\partial_z$, dạng mới $8v_{zz}-2v_z=0$. Đặc trưng $y=x/2-s/2$.
+
+\textbf{(b) Nghiệm tổng quát.} Phương trình đặc trưng $8\lambda^2-2\lambda=0$ cho $\lambda=0,1/4$, nên
+\[u=e^{x/4}F(s)+G(s).\]
+
+\textbf{(c) Dùng Cauchy.} Trên $y=0$, $s=x$:
+\[e^{x/4}F(x)+G(x)=\cos x,\qquad
+-2[e^{x/4}F'(x)+G'(x)]=\sin x.\]
+Lấy đạo hàm phương trình thứ nhất: $e^{x/4}F/4+e^{x/4}F'+G'=-\sin x$. Dòng thứ hai cho $e^{x/4}F'+G'=-\sin x/2$, nên $F(x)=-2e^{-x/4}\sin x$, $G(x)=\cos x+2\sin x$. Thế lại:
+\[\boxed{u=\cos(x-2y)+2(1-e^{y/2})\sin(x-2y).}\]
+Để kiểm tra PDE, giữ $s$ cố định: phần biến thiên theo $z$ chỉ là một hằng cộng một bội của $e^{z/4}$, đúng ODE. Tại $y=0$, $u=\cos x$; tính $u_y$ cho $2\sin x-\sin x=\sin x$. Hai hàm $F,G$ được xác định trên toàn trục nên nghiệm duy nhất trên $\mathbb R^2$.
+
+\textbf{Chi tiết thế ba đạo hàm cấp hai.} Với tọa độ đã chọn,
+\[u_{xx}=v_{ss}+2v_{sz}+v_{zz},\quad u_{xy}=-2v_{ss}-2v_{sz},\quad u_{yy}=4v_{ss}.\]
+Nhân lần lượt với $8$,$8$,$2$, hệ số theo thứ tự $v_{ss},v_{sz},v_{zz}$ là
+\[8-16+8=0,\qquad 16-16+0=0,\qquad 8+0+0=8.\]
+
+%ID BT_2_3_11
+\textbf{(a) Phân loại và đặc trưng cong.} $A=2xy$, $B=(2y^2-3x^2)/2$, $C=-3xy$ cho
+\[\delta=(2y^2+3x^2)^2/4>0\quad(y>0).\]
+Đặc trưng phân tích thành $(xdy-ydx)(2ydy+3xdx)=0$: các tia qua gốc và các nửa ellipse $3x^2+2y^2=\mathrm{const}$. Đặt
+\[X=\sqrt3x,\quad Y=\sqrt2y,\quad r=\sqrt{3x^2+2y^2},\quad
+X=r\cos\theta,\ Y=r\sin\theta,\quad0<\theta<\pi.\]
+Trong biến $X,Y$, toán tử gốc bằng $\sqrt6[XY\partial_X^2+(Y^2-X^2)\partial_X\partial_Y-XY\partial_Y^2]$. Công thức cực ở Ví dụ 9 cho $-\sqrt6(r v_{r\theta}-v_\theta)$. Vì thế dạng chính tắc là $r v_{r\theta}-v_\theta=0$.
+
+\textbf{(b) Giải và hình bình hành.} Đặt $w=v/r$ thì $w_{r\theta}=0$, suy ra
+\[u=rF(\theta)+G(r).\]
+Đẳng thức bốn đỉnh áp dụng cho $w$: $v(r_1,\theta_1)/r_1+v(r_2,\theta_2)/r_2=v(r_1,\theta_2)/r_1+v(r_2,\theta_1)/r_2$. Trong mặt phẳng gốc, bốn cạnh là hai tia và hai cung ellipse; đó là hình chữ nhật trong tọa độ $(r,\theta)$, không phải hình bình hành thẳng thông thường.
+
+\textbf{(c) Dữ liệu và miền duy nhất.} Trên $r=\sqrt3$, dữ liệu $u=x$ cho
+\[\sqrt3F(\theta)+G(\sqrt3)=\cos\theta.\]
+Vì vậy $F(\theta)=\cos\theta/\sqrt3-k/\sqrt3$, $k=G(\sqrt3)$. Trên $y=0$, $1\le x\le2$, có $\theta=0$, $r=\sqrt3x$, dữ liệu $u=1$ cho $G(r)=1-rF(0)$ ở $\sqrt3\le r\le2\sqrt3$. Thế $F,G$ và rút gọn, mọi hằng $k$ triệt tiêu:
+\[\boxed{u=x+1-\sqrt{x^2+\frac23y^2}.}\]
+Công thức này xác định trên $y>0$ và có thể dùng như một nghiệm cụ thể ở toàn miền; nó được dữ liệu quyết định duy nhất trên
+\[\boxed{y>0,\qquad3<3x^2+2y^2<12.}\]
+Giá trị ở hai ellipse biên cũng được quyết định bằng liên tục. Ngoài khoảng bán kính này, $G$ chưa bị dữ liệu quy định. Kiểm tra: trên $r=\sqrt3$, căn bằng $1$, nên $u=x$; trên $y=0$, $x\in[1,2]$, căn bằng $x$, nên $u=1$. Nghiệm có dạng $rF(\theta)+G(r)$, do đó thỏa PDE.
+
+\textbf{Chi tiết đổi tỉ lệ và khử hằng số.} Vì $\partial_x=\sqrt3\partial_X,\partial_y=\sqrt2\partial_Y$, $xy=XY/\sqrt6$, phần chính biến thành $\sqrt6[XYu_{XX}+(Y^2-X^2)u_{XY}-XYu_{YY}]$. Viết $X=rc,Y=rs$, thế đạo hàm cực: các hệ số $v_{rr},v_{\theta\theta},v_r$ bằng $0$; hệ số $v_{r\theta}$ là $-r[4c^2s^2+(c^2-s^2)^2]=-r$, hệ số $v_\theta$ là $1$. Với $w=v/r$, $v_\theta=rw_\theta$, $v_{r\theta}=w_\theta+rw_{r\theta}$, nên $rv_{r\theta}-v_\theta=r^2w_{r\theta}$.
+
+Trong (c), $F=(\cos\theta-k)/\sqrt3$, $F(0)=(1-k)/\sqrt3$, $G=1-r(1-k)/\sqrt3$. Cộng:
+\[rF+G=\frac r{\sqrt3}\cos\theta-\frac{rk}{\sqrt3}+1-\frac r{\sqrt3}+\frac{rk}{\sqrt3}
+=x+1-\frac r{\sqrt3}.\]
+Vì $r/\sqrt3=\sqrt{x^2+2y^2/3}$, thu nghiệm đã nêu.
+
+%ID BT_2_3_12
+\textbf{(a) Phân loại và đổi biến.} Trong các biến $(x,t)$, $A=x$, $B=0$, $C=-x^5$, nên $\delta=x^6>0$ ở $x>0$. Chọn $z=x^3/3$, $u(x,t)=v(z,t)$, $z_x=x^2>0$. Tính
+\[u_x=x^2v_z,\qquad u_{xx}=2xv_z+x^4v_{zz}.\]
+Hai hạng cấp một triệt tiêu: $xu_{xx}-2u_x=x^5v_{zz}$. PDE trở thành $v_{tt}=v_{zz}$; dạng đặc trưng $(\xi,\eta)=(z+t,z-t)$ cho $v_{\xi\eta}=0$.
+
+\textbf{(b) Tổng quát.} Tích phân đạo hàm hỗn hợp bằng $0$ cho $u=F(x^3/3+t)+G(x^3/3-t)$. Hai họ đặc trưng là $x^3/3\pm t=\mathrm{const}$.
+
+\textbf{(c) Dữ liệu ban đầu.} Đặt $\Phi(z)=\varphi((3z)^{1/3})$, $\Psi(z)=\psi((3z)^{1/3})$, $z>0$. Tại $t=0$, $F+G=\Phi$, $F'-G'=\Psi$. Lấy đạo hàm phương trình đầu rồi giải hệ: $F'=(\Phi'+\Psi)/2$, $G'=(\Phi'-\Psi)/2$. Do đó công thức d'Alembert là
+\[\boxed{u=\frac{\Phi(z+t)+\Phi(z-t)}2+\frac12\int_{z-t}^{z+t}\Psi(s)ds,\quad z=x^3/3>t.}\]
+Miền duy nhất do dữ liệu ban đầu là $x>0$, $0<t<x^3/3$. Trong $0<z<t$, một đặc trưng gặp biên $z=0$ trước khi gặp trục $t=0$, nên cần thêm dữ liệu biên. Công thức kiểm tra $u(x,0)=\varphi(x)$, $u_t(x,0)=\psi(x)$ và $v_{tt}=v_{zz}$.
+
+\textbf{(iv) Chọn điều khiển để $u(x,9)=0$ với $0\le x\le3$.} Đoạn đích tương ứng $0\le z\le9$. Giả sử $\Phi,\Psi$ có các giới hạn và độ trơn cần thiết tại $z=0$. Với $0\le z\le t$, dữ liệu biên $v(0,\tau)=h(\tau)$ cho
+\[v(z,t)=h(t-z)+\frac{\Phi(t+z)-\Phi(t-z)}2+\frac12\int_{t-z}^{t+z}\Psi(s)ds.\]
+Cách suy ra: $F(t+z)+G(z-t)$ và $h(t-z)=F(t-z)+G(z-t)$, nên hiệu bằng $F(t+z)-F(t-z)$; dùng $F'=(\Phi'+\Psi)/2$. Tại $t=9$, đặt $\tau=9-z\in[0,9]$, yêu cầu bằng $0$ cho
+\[\boxed{h(\tau)=-\frac{\Phi(18-\tau)-\Phi(\tau)}2-\frac12\int_\tau^{18-\tau}\Psi(s)ds,\quad0\le\tau\le9.}\]
+Đây là điều khiển duy nhất trên khoảng thời gian cần dùng; sau $9$ có thể kéo dài đủ trơn. Tại góc $(z,t)=(0,0)$, điều kiện giá trị $h(0)=\Phi(0)$ tương đương
+\[\Phi(18)+\Phi(0)+\int_0^{18}\Psi(s)ds=0.\]
+Muốn nghiệm $C^2$ qua đặc trưng $z=t$, còn cần $h'(0)=\Psi(0)$ và $h''(0)=\Phi''(0)$. Thay công thức $h$ cho hai điều kiện cụ thể:
+\[\Phi'(18)+\Phi'(0)+\Psi(18)-\Psi(0)=0,\qquad
+\Phi''(18)+\Phi''(0)+\Psi'(18)-\Psi'(0)=0.\]
+Nếu dữ liệu không thỏa điều kiện góc tương ứng, không có nghiệm cổ điển với điều khiển này và đích đã cho trong lớp trơn ấy; không bỏ qua điểm $z=t$ khi kết luận. Với các điều kiện đúng, thế $\tau=9-z$ vào công thức vùng biên cho $v(z,9)=0$ trên toàn đoạn đích.
+
+\textbf{Chi tiết tích phân hệ dữ liệu đầu.} Chọn mốc $z_0>0$ và $F(z_0)=c$. Từ $F'=(\Phi'+\Psi)/2$,
+\[F(s)=c+\frac{\Phi(s)-\Phi(z_0)}2+\frac12\int_{z_0}^{s}\Psi(r)dr,\quad G(s)=\Phi(s)-F(s).\]
+Thế $F(z+t)+G(z-t)=F(z+t)-F(z-t)+\Phi(z-t)$; hai hằng số mất, các tích phân gộp thành $\int_{z-t}^{z+t}\Psi$, cho đúng d'Alembert với $z-t>0$.
+
+%ID BT_2_3_13
+\textbf{(a) Phân loại và đổi biến.} $A=(1+x^2)^2$, $B=0$, $C=-1$, $\delta=(1+x^2)^2>0$. Đặt $z=\arctan x\in(-\pi/2,\pi/2)$; $z_x=1/(1+x^2)$, $z_{xx}=-2x/(1+x^2)^2$. Thế vào
+\[u_x=\frac{v_z}{1+x^2},\quad u_{xx}=\frac{v_{zz}-2xv_z}{(1+x^2)^2}\]
+cho $v_{zz}-v_{yy}=0$: hai hạng $v_z$ triệt tiêu. Chọn $\xi=z+y$, $\eta=z-y$ cho $4v_{\xi\eta}=0$.
+
+\textbf{(b) Nghiệm tổng quát.} $u=F(\arctan x+y)+G(\arctan x-y)$; hai họ đặc trưng $\arctan x\pm y=\mathrm{const}$.
+
+\textbf{(c) Dữ liệu trên đặc trưng $y=z$.} Đặt $\Phi(z)=\varphi(\tan z)$, $\Psi(z)=\psi(\tan z)$. Tại $\eta=0$, $\xi=2z$,
+\[F(2z)+G(0)=\Phi(z),\qquad F'(2z)-G'(0)=\Psi(z).\]
+Lấy đạo hàm dòng đầu theo $z$ cho $2F'(2z)=\Phi'(z)$. Vậy điều kiện cần và đủ là
+\[\boxed{\frac12\Phi'(z)-\Psi(z)=\lambda\quad\text{hằng số},\quad |z|<\pi/2.}\]
+Trong biến gốc: $(1+x^2)\varphi'(x)/2-\psi(x)=\lambda$. Khi điều kiện đúng, $F(s)=\Phi(s/2)-G(0)$ ở $|s|<\pi$, còn $G$ tùy ý với $G'(0)=\lambda$. Lấy $G_1(s)=\lambda s$, $G_2(s)=\lambda s+s^2$:
+\[u_1=\varphi\!\left(\tan\frac{\arctan x+y}{2}\right)+\lambda(\arctan x-y),\qquad
+u_2=u_1+(\arctan x-y)^2.\]
+Hai công thức xác định trên miền $|\arctan x+y|<\pi$. Khi $y=\arctan x$, $u_j=\varphi(x)$ và $(u_j)_y=(1+x^2)\varphi'(x)/2-\lambda=\psi(x)$. Trong tọa độ đặc trưng, mỗi nghiệm là tổng hai hàm một biến, nên thỏa PDE. Nếu yêu cầu nghiệm trên toàn $\mathbb R^2$, phải chọn kéo dài $C^2$ của $F$ ra ngoài $(-\pi,\pi)$; dữ liệu chỉ ở $x$ hữu hạn không bảo đảm kéo dài trơn tại hai đầu nếu $\varphi$ tăng không kiểm soát. Vì vậy công thức trên khẳng định tồn tại trên miền tự nhiên chứa toàn đường dữ liệu.
+
+%ID BT_2_3_14
+\textbf{(a) Nhận dạng toán tử.} $A=e^{2x}$, $B=e^x$, $C=1$ cho $\delta=0$. Đặt $D=e^x\partial_x+\partial_y$. Do $De^x=e^{2x}$,
+\[D^2u=e^{2x}u_{xx}+2e^xu_{xy}+u_{yy}+e^{2x}u_x,\]
+đúng toàn bộ vế trái. Đặc trưng $dy/dx=e^{-x}$ có bất biến $s=y+e^{-x}$. Chọn $z=y$, $J=-e^{-x}\ne0$, $Ds=0$, $Dz=1$. Phép đổi ngược $x=-\log(s-z)$, miền $s-z>0$. Dạng chính tắc
+\[v_{zz}=(s-z)^{-2}.\]
+
+\textbf{(b) Tích phân.} Vì $[-\log(s-z)]_z=(s-z)^{-1}$ và đạo hàm tiếp bằng $(s-z)^{-2}$,
+\[v=-\log(s-z)+zF(s)+G(s),\quad
+u=x+yF(y+e^{-x})+G(y+e^{-x}).\]
+
+\textbf{(c) Dữ liệu tại $x=0$.} Khi đó $s=y+1$. Dữ liệu giá trị cho $yF(y+1)+G(y+1)=2y+1$. Vì $s_x=-e^{-x}$,
+\[u_x=1-e^{-x}[yF'(s)+G'(s)],\]
+nên dữ liệu đạo hàm cho $yF'(y+1)+G'(y+1)=1$. Lấy đạo hàm dữ liệu giá trị theo $y$ rồi trừ dòng này, suy ra $F(y+1)=1$. Do đó $F=1$ và $G(s)=s$:
+\[\boxed{u=x+2y+e^{-x}.}\]
+Kiểm tra $u_x=1-e^{-x}$, $u_{xx}=e^{-x}$, $u_{xy}=u_{yy}=0$, nên vế trái bằng $e^{2x}$. Tại $x=0$, $u=2y+1$, $u_x=0$. Dữ liệu xác định $F,G$ trên toàn trục, nên nghiệm duy nhất trên $\mathbb R^2$.
+
+%ID BT_2_3_15
+\textbf{(a) Phân loại và hướng đạo hàm.} Trên $0<x<\pi/2$, $y>0$, $A=\tan^2x$, $B=-y\tan x$, $C=y^2$, $\delta=0$. Đặt $D=\tan x\partial_x-y\partial_y$. Ta có
+\[D^2u=\tan^2x\,u_{xx}-2y\tan x\,u_{xy}+y^2u_{yy}
++\tan x\sec^2x\,u_x+y u_y.\]
+Trừ $Du$ cho hệ số $u_x$ là $\tan x(\sec^2x-1)=\tan^3x$, hệ số $u_y$ là $2y$, đúng đề. PDE là $(D^2-D)u=\tan^3x$.
+
+\textbf{Tọa độ đặc trưng.} Từ $dy/dx=-y/\tan x$, tích phân $dy/y=-\cot x\,dx$ cho $s=y\sin x$ không đổi. Chọn $z=\log\sin x$: $Dz=1$, $Ds=0$, $J=-\cos x\ne0$. Miền mới $s>0$, $z<0$. Dạng chính tắc $v_{zz}-v_z=\tan^3x(z)$.
+
+\textbf{(b) Giải ODE.} Nghiệm riêng $u_p=x$ vì $Dx=\tan x$, $D^2x-Dx=\tan x\sec^2x-\tan x=\tan^3x$. Phần thuần nhất có nghiệm $1,e^z$, nên
+\[\boxed{u=x+F(y\sin x)+\sin x\,G(y\sin x).}\]
+
+\textbf{(c) Tìm $a,b$ và hai nghiệm.} Giả sử nghiệm có vết liên tục đến $y=0$ với các hàm $F,G$ đủ trơn tại $s=0$. Trên biên, $x+F(0)+\sin xG(0)=ax+b\sin x$. Ba hàm $1,x,\sin x$ độc lập trên $(0,\pi/2)$, suy ra
+\[\boxed{a=1,\quad F(0)=0,\quad G(0)=b,\quad b\in\mathbb R\text{ tùy ý}.}\]
+Chọn $F=0$, $G=b$ và $F(s)=s$, $G=b$ cho
+\[u_1=x+b\sin x,\qquad u_2=x+b\sin x+y\sin x.\]
+Kiểm tra $D(\sin x)=\sin x$, nên $(D^2-D)(b\sin x)=0$; $D(y\sin x)=0$, nên phần chênh cũng thỏa thuần nhất. Cả hai có vết $x+b\sin x$ trên $y=0$. Có vô số nghiệm; dữ liệu biên là một đặc trưng, chỉ xác định giá trị hai hàm tùy ý tại $0$.
+
+\textbf{Chi tiết chứng minh độc lập và dữ liệu biên.} Từ $(1-a)x+F(0)+(G(0)-b)\sin x=0$, đạo hàm hai lần theo $x$ cho $-(G(0)-b)\sin x=0$. Trên khoảng đang xét $\sin x>0$, nên $G(0)=b$; phương trình còn $(1-a)x+F(0)=0$, đạo hàm cho $a=1$ rồi $F(0)=0$. Không có điều kiện nào còn lại để cố định $b$.
+
+%ID BT_2_3_16
+\textbf{(a) Phân loại và đổi biến.} $A=1$, $B=-\sin x$, $C=2-\cos^2x=1+\sin^2x$, nên $\delta=-1<0$: elliptic trên toàn mặt phẳng. Đặt $\xi=x$, $\eta=y-\cos x$, $J=1$. Tính
+\begin{align*}
+u_x&=v_\xi+\sin x\,v_\eta,\quad u_y=v_\eta,\\
+u_{xx}&=v_{\xi\xi}+2\sin x\,v_{\xi\eta}+\sin^2x\,v_{\eta\eta}+\cos x\,v_\eta,\\
+u_{xy}&=v_{\xi\eta}+\sin x\,v_{\eta\eta},\quad u_{yy}=v_{\eta\eta}.
+\end{align*}
+Thế vào PDE, hạng hỗn hợp và hạng $v_\eta$ triệt tiêu; hệ số $v_{\eta\eta}$ bằng $\sin^2x-2\sin^2x+1+\sin^2x=1$. Dạng chính tắc $v_{\xi\xi}+v_{\eta\eta}=0$.
+
+\textbf{(b) Nghiệm giải tích từ dữ liệu.} Tại $x=0$, $\xi=0$, $\eta=y-1$, $u_x=v_\xi$ vì $\sin0=0$. Vì vậy
+\[v(0,\eta)=0,\qquad v_\xi(0,\eta)=\eta.\]
+Viết $v=\sum_{n\ge0}a_n(\eta)\xi^n/n!$. PDE cho $a_{n+2}=-a_n''$, dữ liệu cho $a_0=0$, $a_1=\eta$. Do $a_0''=a_1''=0$, mọi $a_n$ với $n\ge2$ bằng $0$. Chuỗi kết thúc, nên $v=\xi\eta$, là nghiệm giải tích duy nhất.
+
+\textbf{(c) Đổi ngược và kiểm tra trực tiếp.}
+\[\boxed{u=x(y-\cos x).}\]
+Tính $u_x=y-\cos x+x\sin x$, $u_{xx}=2\sin x+x\cos x$, $u_{xy}=1$, $u_{yy}=0$, $u_y=x$. Vế trái PDE bằng $(2\sin x+x\cos x)-2\sin x-x\cos x=0$. Trên $x=0$, $u=0$, $u_x=y-1$. Công thức giải tích trên $\mathbb R^2$ và duy nhất trong lớp giải tích trên miền liên thông chứa đường dữ liệu.
+
+%ID BT_2_3_17
+\textbf{(a) Phân loại và xây dựng biến mới.} $A=y^2$, $B=-y^2$, $C=y^2+1$, $\delta=-y^2<0$ khi $y>0$. Chọn $\xi=x+h(y)$, $\eta=k(y)$. Hệ số hỗn hợp bằng $2k'[-y^2+(y^2+1)h']$, nên lấy $h'=y^2/(1+y^2)$. Khi đó hệ số $v_{\xi\xi}$ bằng $y^2/(1+y^2)$; để cân bằng, lấy $k'=y/(1+y^2)$. Tích phân:
+\[\xi=x+y-\arctan y,\qquad\eta=\tfrac12\log(1+y^2),\qquad J=\frac y{1+y^2}>0.\]
+Có $h''=2y/(1+y^2)^2$, $k''=(1-y^2)/(1+y^2)^2$. Hệ số mới của $v_\xi$ bằng
+\[(1+y^2)h''-y-\frac{1-y^2}{y}h'=0;\]
+hệ số của $v_\eta$ bằng $(1+y^2)k''-(1-y^2)k'/y=0$. Vì vậy PDE là
+\[\frac{y^2}{1+y^2}(v_{\xi\xi}+v_{\eta\eta})=0,\quad\text{tức }v_{\xi\xi}+v_{\eta\eta}=0.\]
+
+\textbf{(b) Đổi dữ liệu rồi tính chuỗi.} Đặt $L=\log2$, $\eta_0=L/2$. Tại $y=1$, $\xi=x+1-\pi/4$; dữ liệu cho $v(\xi,\eta_0)=L\xi$. Đạo hàm theo $\xi$ trên đường này bằng $L$. Mặt khác $u_y=h'v_\xi+k'v_\eta=(v_\xi+v_\eta)/2$ tại $y=1$. Dữ liệu $u_y=\xi-L/2$ cho
+\[v_\eta(\xi,\eta_0)=2\xi-2L.\]
+Viết $v=\sum b_n(\xi)(\eta-\eta_0)^n/n!$. Có $b_0=L\xi$, $b_1=2\xi-2L$, $b_{n+2}=-b_n''$. Hai hàm đầu tuyến tính theo $\xi$, nên $b_n=0$ với $n\ge2$. Do đó
+\[v=L\xi+(\eta-L/2)(2\xi-2L)=2\xi\eta-2L\eta+L^2.\]
+
+\textbf{(c) Đổi ngược và kiểm tra.}
+\[\boxed{u=(x+y-\arctan y-\log2)\log(1+y^2)+(\log2)^2.}\]
+Trong biến mới $v_{\xi\xi}=v_{\eta\eta}=0$, nên PDE gốc bằng $0$ theo phép biến đổi đã tính. Tại $y=1$, giá trị là $L\xi$; đạo hàm là $(L+2\xi-2L)/2=\xi-L/2$, đúng đề. Có thể kiểm tra trực tiếp bằng $u_x=\log(1+y^2)$, $u_{xx}=0$, $u_{xy}=2y/(1+y^2)$ và
+\[u_y=\frac{y^2}{1+y^2}\log(1+y^2)+\frac{2y}{1+y^2}(x+y-\arctan y-L).\]
+Đạo hàm dòng này thêm một lần rồi thay vào PDE cho triệt tiêu từng nhóm. Nghiệm giải tích trên $y>0$; phép đổi biến khả nghịch toàn miền với $\eta>0$, nên kết luận duy nhất giải tích theo dữ liệu.
+
+\textbf{Chi tiết đạo hàm cấp hai và triệt tiêu.} Đặt $h=y-\arctan y,k=\frac12\log(1+y^2)$, $u=v(x+h,k)$. Khi đó
+\[u_{xx}=v_{\xi\xi},\quad u_{xy}=h'v_{\xi\xi}+k'v_{\xi\eta},\quad
+u_{yy}=h'^2v_{\xi\xi}+2h'k'v_{\xi\eta}+k'^2v_{\eta\eta}+h''v_\xi+k''v_\eta.\]
+Đặt $D=1+y^2$. Hệ số $v_{\xi\xi}$ là $y^2-2y^2(y^2/D)+D(y^4/D^2)=y^2/D$; hỗn hợp $2k'(-y^2+Dh')=0$; hệ số $v_{\eta\eta}$ là $D(y/D)^2=y^2/D$. Hai hệ số cấp một:
+\[\frac{2y}D-y-\frac{(1-y^2)y}D
+=\frac{2y-y-y^3-y+y^3}D=0,\quad
+\frac{1-y^2}D-\frac{1-y^2}D=0.\]
+Để kiểm tra trực tiếp, đặt $A=x+h-L$, có $u_y=h'\log D+2Ay/D$,
+\[u_{yy}=h''\log D+\frac{4yh'}D+\frac{2A(1-y^2)}{D^2}.\]
+Thế vào PDE: nhóm $\log D$ có hệ số $Dh''-y-(1-y^2)h'/y=0$; nhóm $A$ có hệ số $2(1-y^2)/D-2(1-y^2)/D=0$; nhóm còn lại $-4y^3/D+4yh'=0$.
+
+%ID BT_2_3_18
+\textbf{(a) Phân loại và nhận dạng toán tử.} $A=1$, $B=x^2$, $C=x^4+1$, $\delta=-1<0$. Đặt $D=\partial_x+x^2\partial_y$. Quy tắc đạo hàm tích cho $D^2u=u_{xx}+2x^2u_{xy}+x^4u_{yy}+2xu_y$, nên PDE là $D^2u+u_{yy}+u=0$. Chọn $\xi=x$, $\eta=y-x^3/3$: $D\xi=1$, $D\eta=0$, $J=1$. Do đó
+\[\boxed{v_{\xi\xi}+v_{\eta\eta}+v=0.}\]
+
+\textbf{(b) Chuỗi giải tích.} Tại $x=0$, $\eta=y$, $u_x=v_\xi$, nên $v(0,\eta)=\cos\eta$, $v_\xi(0,\eta)=0$. Khai triển $v=\sum a_n(\eta)\xi^n/n!$ cho
+\[a_0=\cos\eta,\quad a_1=0,\quad a_{n+2}=-a_n''-a_n.\]
+Vì $a_0''=-a_0$, có $a_2=0$; $a_1=0$ cho $a_3=0$, rồi toàn bộ các hệ số sau bằng $0$. Vậy $v=\cos\eta$, duy nhất trong lớp giải tích.
+
+\textbf{(c) Đổi ngược và thế vào phương trình.}
+\[\boxed{u=\cos(y-x^3/3).}\]
+Đặt $s=y-x^3/3$. Ta có $u_x=x^2\sin s$, $u_y=-\sin s$, $u_{xx}=2x\sin s-x^4\cos s$, $u_{xy}=x^2\cos s$, $u_{yy}=-\cos s$. Tổng vế trái:
+\[(2x\sin s-x^4\cos s)+2x^4\cos s-(x^4+1)\cos s-2x\sin s+\cos s=0.\]
+Tại $x=0$, $u=\cos y$, $u_x=0$. Nghiệm xác định giải tích trên toàn $\mathbb R^2$.
+
+%ID VD_2_2_01
+\textbf{Bước 1. Đặt hàm mới và kiểm tra khả nghịch.} Với
+\[\xi=ax+by,\quad\eta=cx+dy,\quad J=ad-bc\ne0,\]
+ta có $x=(d\xi-b\eta)/J$, $y=(-c\xi+a\eta)/J$. Đặt $v(\xi,\eta)=u(x,y)$, tức $u(x,y)=v(ax+by,cx+dy)$.
+
+\textbf{Bước 2. Đạo hàm cấp một.} Quy tắc dây chuyền cho
+\[u_x=a v_\xi+c v_\eta,\qquad u_y=b v_\xi+d v_\eta.\]
+Tương đương $\partial_x=a\partial_\xi+c\partial_\eta$, $\partial_y=b\partial_\xi+d\partial_\eta$ khi tác động lên hàm đã đổi biến.
+
+\textbf{Bước 3. Đạo hàm cấp hai.} Các hệ số $a,b,c,d$ là hằng số, nên
+\begin{align*}
+u_{xx}&=a(av_{\xi\xi}+cv_{\xi\eta})+c(av_{\eta\xi}+cv_{\eta\eta})
+=a^2v_{\xi\xi}+2acv_{\xi\eta}+c^2v_{\eta\eta},\\
+u_{xy}&=a(bv_{\xi\xi}+dv_{\xi\eta})+c(bv_{\eta\xi}+dv_{\eta\eta})
+=abv_{\xi\xi}+(ad+bc)v_{\xi\eta}+cdv_{\eta\eta},\\
+u_{yy}&=b^2v_{\xi\xi}+2bdv_{\xi\eta}+d^2v_{\eta\eta}.
+\end{align*}
+Đã dùng $v_{\xi\eta}=v_{\eta\xi}$ vì $v\in C^2$. Nếu cần đổi một PDE, nhân ba dòng này với hệ số tương ứng rồi gom theo từng đạo hàm mới. Ma trận phần chính $M$ được biến thành $TMT^T$, với $T=\left(\begin{smallmatrix}a&b\\c&d\end{smallmatrix}\right)$.
+
+\textbf{Kiểm tra.} Chọn $v=\xi\eta$, thì $u=(ax+by)(cx+dy)$. Lấy đạo hàm trực tiếp cho $u_{xx}=2ac$, $u_{xy}=ad+bc$, $u_{yy}=2bd$, đúng với ba công thức trên.
+
+%ID VD_2_2_02
+\textbf{Bước 1. Phân loại.} Phương trình là $2u_{xx}+3u_{xy}+u_{yy}+u_x-u_y=0$. Lấy $A=2$, $B=3/2$, $C=1$, ta được $\delta=9/4-2=1/4>0$: hyperbolic trên $\mathbb R^2$.
+
+\textbf{Bước 2. Hai họ đặc trưng.} Phương trình đặc trưng
+\[2(dy)^2-3dxdy+(dx)^2=(dy-dx)(2dy-dx)=0\]
+cho $y-x=\mathrm{const}$ và $2y-x=\mathrm{const}$. Chọn $\xi=x-y$, $\eta=x-2y$. Jacobian $J=-1\ne0$; phép đổi ngược là $x=2\xi-\eta$, $y=\xi-\eta$.
+
+\textbf{Bước 3. Thay đạo hàm.} Vì $\partial_x=\partial_\xi+\partial_\eta$ và $\partial_y=-\partial_\xi-2\partial_\eta$, ta có
+\begin{align*}
+u_{xx}&=v_{\xi\xi}+2v_{\xi\eta}+v_{\eta\eta},\\
+u_{xy}&=-v_{\xi\xi}-3v_{\xi\eta}-2v_{\eta\eta},\\
+u_{yy}&=v_{\xi\xi}+4v_{\xi\eta}+4v_{\eta\eta},\\
+u_x-u_y&=2v_\xi+3v_\eta.
+\end{align*}
+Các hệ số của $v_{\xi\xi}$, $v_{\eta\eta}$ lần lượt là $2-3+1=0$, $2-6+4=0$; hệ số hỗn hợp là $4-9+4=-1$.
+
+\textbf{Kết quả.} Dạng chính tắc là
+\[\boxed{-v_{\xi\eta}+2v_\xi+3v_\eta=0.}\]
+Không bỏ các hạng cấp một khi phân loại phần chính. Có thể nhân cả phương trình với $-1$ để viết $v_{\xi\eta}-2v_\xi-3v_\eta=0$.
+
+%ID VD_2_2_03
+\textbf{Bước 1. Phân loại.} Viết $2u_{xx}+2u_{xy}+u_{yy}+u_x+u_y-u=0$. Với $A=2$, $B=1$, $C=1$, $\delta=-1<0$, phương trình elliptic. Không có hai họ đặc trưng thực.
+
+\textbf{Bước 2. Hoàn thành bình phương.} Phần chính có thể viết $(\partial_x+\partial_y)^2+\partial_x^2$. Chọn $\xi=x-y$, $\eta=y$, $J=1$. Khi đó $x=\xi+\eta$, $y=\eta$ và
+\[\partial_x=\partial_\xi,\qquad\partial_y=-\partial_\xi+\partial_\eta.\]
+
+\textbf{Bước 3. Thế cụ thể.}
+\[u_{xx}=v_{\xi\xi},\quad u_{xy}=-v_{\xi\xi}+v_{\xi\eta},\quad
+u_{yy}=v_{\xi\xi}-2v_{\xi\eta}+v_{\eta\eta}.\]
+Do đó $2u_{xx}+2u_{xy}+u_{yy}=v_{\xi\xi}+v_{\eta\eta}$ và $u_x+u_y=v_\eta$.
+
+\textbf{Kết quả.}
+\[\boxed{v_{\xi\xi}+v_{\eta\eta}+v_\eta-v=0.}\]
+Hai hệ số cấp hai đã bằng nhau và không còn đạo hàm hỗn hợp. Nếu muốn bỏ hạng $v_\eta$, đặt $v=e^{-\eta/2}w$; đạo hàm tích cho $w_{\xi\xi}+w_{\eta\eta}-\tfrac54w=0$. Đây là phép biến đổi phụ, không cần để hoàn thành yêu cầu đưa về chính tắc.
+
+\textbf{Chi tiết gom hệ số và đổi ẩn phụ.} Ba hệ số cấp hai là $2-2+1=1$ của $v_{\xi\xi}$, $2-2=0$ của $v_{\xi\eta}$, và $1$ của $v_{\eta\eta}$. Với $v=e^{-\eta/2}w$,
+\[v_{\xi\xi}=e^{-\eta/2}w_{\xi\xi},\quad v_\eta=e^{-\eta/2}(w_\eta-w/2),\quad
+v_{\eta\eta}=e^{-\eta/2}(w_{\eta\eta}-w_\eta+w/4).\]
+Thế rồi chia $e^{-\eta/2}$: hai hạng $w_\eta$ triệt tiêu, hệ số $w$ là $1/4-1/2-1=-5/4$.
+
+%ID VD_2_2_04
+\textbf{Bước 1. Phân loại và đặc trưng.} Với $u_{xx}-2u_{xy}+u_{yy}+u_x-u_y+u=1$, ta có $A=C=1$, $B=-1$, $\delta=0$ và phần chính khác $0$. Phương trình parabolic; đặc trưng $(dy+dx)^2=0$ cho $x+y=\mathrm{const}$.
+
+\textbf{Bước 2. Chọn tọa độ.} Đặt $s=x+y$, $z=x$, $J=-1$, $u=v(s,z)$. Ta có $\partial_x=\partial_s+\partial_z$, $\partial_y=\partial_s$, nên $D=\partial_x-\partial_y=\partial_z$. Vì vậy $u_x-u_y=v_z$ và $u_{xx}-2u_{xy}+u_{yy}=v_{zz}$.
+
+\textbf{Bước 3. Dạng chính tắc.}
+\[\boxed{v_{zz}+v_z+v=1.}\]
+Chỉ còn đạo hàm theo $z$; $s$ giữ vai trò tham số. Đây cũng cho phép giải thêm: nghiệm riêng $v_p=1$, phương trình đặc trưng $\lambda^2+\lambda+1=0$ có nghiệm $-1/2\pm i\sqrt3/2$.
+
+\textbf{Nghiệm tổng quát nếu cần.}
+\[u=1+e^{-x/2}\left[F(x+y)\cos\frac{\sqrt3x}{2}+G(x+y)\sin\frac{\sqrt3x}{2}\right].\]
+Với $F,G\in C^2$, áp dụng $D=\partial_z$ vào công thức cho $D^2u+Du+u=1$, kiểm tra lại phương trình gốc.
+
+\textbf{Chi tiết ba đạo hàm cấp hai.} Từ $u_x=v_s+v_z,u_y=v_s$,
+\[u_{xx}=v_{ss}+2v_{sz}+v_{zz},\quad u_{xy}=v_{ss}+v_{sz},\quad u_{yy}=v_{ss}.\]
+Nhân với $1,-2,1$ và cộng, hệ số $v_{ss}$ là $1-2+1=0$, hệ số $v_{sz}$ là $2-2=0$, còn $v_{zz}$. Với $v=1+w$, phương trình thuần nhất $w_{zz}+w_z+w=0$ có $\lambda=(-1\pm\sqrt{-3})/2=-1/2\pm i\sqrt3/2$, cho hai nghiệm thực đã viết.
+
+%ID VD_2_2_05
+\textbf{Bước 1. Nghịch đảo vi phân tọa độ cực.} Viết $c=\cos\theta$, $s=\sin\theta$, $x=rc$, $y=rs$, $r>0$. Từ $dx=c\,dr-rs\,d\theta$, $dy=s\,dr+rc\,d\theta$ suy ra
+\[dr=c\,dx+s\,dy,\qquad d\theta=-\frac{s}{r}dx+\frac{c}{r}dy.\]
+Vì vậy $D_x=c\partial_r-s\partial_\theta/r$, $D_y=s\partial_r+c\partial_\theta/r$.
+
+\textbf{Bước 2. Đạo hàm cấp một.}
+\[u_x=cv_r-\frac{s}{r}v_\theta,\qquad u_y=sv_r+\frac{c}{r}v_\theta.\]
+
+\textbf{Bước 3. Tính cả đạo hàm của hệ số.} Ta có $D_xc=s^2/r$, $D_x(-s/r)=2sc/r^2$, $D_yc=-sc/r$, $D_y(-s/r)=-(c^2-s^2)/r^2$. Ví dụ
+\[u_{xx}=(D_xc)v_r+cD_xv_r+D_x(-s/r)v_\theta-(s/r)D_xv_\theta.\]
+Khai triển cho cả ba đạo hàm:
+\begin{align*}
+u_{xx}&=c^2v_{rr}-\frac{2sc}{r}v_{r\theta}+\frac{s^2}{r^2}v_{\theta\theta}
++\frac{s^2}{r}v_r+\frac{2sc}{r^2}v_\theta,\\
+u_{xy}&=scv_{rr}+\frac{c^2-s^2}{r}v_{r\theta}-\frac{sc}{r^2}v_{\theta\theta}
+-\frac{sc}{r}v_r-\frac{c^2-s^2}{r^2}v_\theta,\\
+u_{yy}&=s^2v_{rr}+\frac{2sc}{r}v_{r\theta}+\frac{c^2}{r^2}v_{\theta\theta}
++\frac{c^2}{r}v_r-\frac{2sc}{r^2}v_\theta.
+\end{align*}
+
+\textbf{Bước 4. Cộng để được Laplace.} Dùng $c^2+s^2=1$, các hạng $v_{r\theta}$ và $v_\theta$ triệt tiêu:
+\[\boxed{\Delta u=v_{rr}+\frac1r v_r+\frac1{r^2}v_{\theta\theta}.}\]
+Kiểm tra với $u=x$, tức $v=r\cos\theta$: kết quả bằng $0$. Với $u=x^2+y^2$, $v=r^2$, kết quả bằng $4$. Tại $r=0$, phải xét hàm gốc hoặc giới hạn trơn, không thế trực tiếp vào hệ số $1/r$.
+
+\textbf{Chi tiết đạo hàm tích cho hai dòng còn lại.} Ngoài các hệ số đã tính, $D_ys=c^2/r$, $D_y(c/r)=-2sc/r^2$. Vì $D_yv_r=sv_{rr}+cv_{r\theta}/r$, $D_yv_\theta=sv_{r\theta}+cv_{\theta\theta}/r$,
+\[\begin{aligned}
+u_{xy}&=-scv_r/r+c(sv_{rr}+cv_{r\theta}/r)
+-(c^2-s^2)v_\theta/r^2-(s/r)(sv_{r\theta}+cv_{\theta\theta}/r),\\
+u_{yy}&=c^2v_r/r+s(sv_{rr}+cv_{r\theta}/r)
+-2scv_\theta/r^2+(c/r)(sv_{r\theta}+cv_{\theta\theta}/r).
+\end{aligned}\]
+Gom các hạng cùng đạo hàm cho đúng hai dòng ở bước 3.
+
+%ID VD_2_2_06
+\textbf{(i) Phân loại và đổi biến.} $A=2$, $B=3/2$, $C=1$ cho $\delta=1/4>0$. Hai họ đặc trưng là $x-y=\mathrm{const}$, $x-2y=\mathrm{const}$. Đặt $\xi=x-y$, $\eta=x-2y$, $x=2\xi-\eta$, $y=\xi-\eta$. Như Ví dụ 2, phần chính bằng $-v_{\xi\eta}$; $au_x+bu_y=(a-b)v_\xi+(a-2b)v_\eta$. Dạng chính tắc là
+\[-v_{\xi\eta}+(a-b)v_\xi+(a-2b)v_\eta+\widetilde f=0.\]
+
+\textbf{(ii) Khi $a=b=0$: kiểm tra dấu của công thức trong đề.} Gọi $L=2\partial_x^2+3\partial_x\partial_y+\partial_y^2=(2\partial_x+\partial_y)(\partial_x+\partial_y)$. Với
+\[F(x,y)=\int_0^y\int_{2t+x-2y}^{t+x-y}f(s,t)\,ds\,dt,\]
+quy tắc Leibniz cho
+\[(\partial_x+\partial_y)F=\int_0^y f(2t+x-2y,t)dt.\]
+Ở đây hạng tại cận $t=y$ của tích phân ban đầu bằng $0$, vì hai cận trong đều bằng $x$. Tác động tiếp $2\partial_x+\partial_y$ lên dòng trên: đối số $2t+x-2y$ có đạo hàm theo hướng này bằng $0$, còn cận $y$ cho $f(x,y)$. Do đó $LF=f$.
+
+\textbf{Lưu ý dấu in trong sách.} Phương trình được in là $Lu+f=0$, nên nghiệm riêng phải là $-F$, không phải $F$. Chẳng hạn $f=1$ cho $F=y^2/2$ và $LF+f=2$. Nếu viết PDE thành $Lu=f$ thì $F$ đúng. Giữ phương trình in ở đầu bài, nghiệm tổng quát là
+\[\boxed{u=-F(x,y)+P(x-y)+Q(x-2y).}\]
+Tương đương, từ $v_{\xi\eta}=\widetilde f$ có thể dùng tích phân kép trong tọa độ mới. Giả sử $f$ đủ trơn để các đạo hàm và tích phân vừa dùng có nghĩa.
+
+\textbf{(iii) Khi $a=b=1$, $f=0$.} Phương trình thành $v_{\xi\eta}+v_\eta=0$. Đặt $w=v_\eta$, giải $w_\xi+w=0$ được $w=e^{-\xi}H(\eta)$. Tích phân theo $\eta$:
+\[\boxed{u=P(x-y)+e^{-(x-y)}Q(x-2y).}\]
+Nhân $v$ với $e^\xi$ để có $e^\xi v=e^\xi P(\xi)+Q(\eta)$. Vì là tổng hai hàm một biến, bốn đỉnh hình bình hành đặc trưng thỏa
+\[e^{\xi_1}v_{11}+e^{\xi_2}v_{22}=e^{\xi_1}v_{12}+e^{\xi_2}v_{21},\]
+với $v_{ij}=v(\xi_i,\eta_j)$. Thế lại $v_{\xi\eta}=-v_\eta$ kiểm tra ngay PDE.
+
+\textbf{Chi tiết thế đạo hàm ở (i).} $u_{xx}=v_{\xi\xi}+2v_{\xi\eta}+v_{\eta\eta}$, $u_{xy}=-v_{\xi\xi}-3v_{\xi\eta}-2v_{\eta\eta}$, $u_{yy}=v_{\xi\xi}+4v_{\xi\eta}+4v_{\eta\eta}$. Phần chính có hệ số $2-3+1=0$, $4-9+4=-1$, $2-6+4=0$, lần lượt theo $v_{\xi\xi},v_{\xi\eta},v_{\eta\eta}$.
+
+\textbf{Chi tiết Leibniz ở (ii).} Đặt $\ell=2t+x-2y$, $h=t+x-y$. Vì tích phân trong bằng $0$ tại $t=y$,
+\[F_x=\int_0^y[f(h,t)-f(\ell,t)]dt,\quad
+F_y=\int_0^y[-f(h,t)+2f(\ell,t)]dt.\]
+Vậy $F_x+F_y=\int_0^yf(\ell,t)dt=:I$. Lấy $I_x=\int_0^yf_x(\ell,t)dt$ và $I_y=f(x,y)-2\int_0^yf_x(\ell,t)dt$, suy $2I_x+I_y=f(x,y)$. Đây là phép triệt tiêu tạo ra $LF=f$.
+
+%ID VD_2_2_07
+\textbf{(i) Phân loại và chính tắc.} $A=C=1$, $B=-1$, $\delta=0$: parabolic. Đặc trưng $x+y=\mathrm{const}$. Đặt $s=x+y$, $z=x$; $\partial_x=\partial_s+\partial_z$, $\partial_y=\partial_s$. Suy ra
+\[u_{xx}-2u_{xy}+u_{yy}=v_{zz},\quad au_x+bu_y=(a+b)v_s+av_z.\]
+Với $x=z$, $y=s-z$, phương trình mới là
+\[\boxed{v_{zz}+av_z+(a+b)v_s+cv=f(z,s-z).}\]
+Chỉ khi $a+b=0$ mới không còn đạo hàm theo tham số $s$.
+
+\textbf{(ii.a) $a=b=c=0$.} Giữ $s$ cố định, tích phân $v_{zz}=f(z,s-z)$ hai lần. Với mốc $z=0$,
+\[v=zP(s)+Q(s)+\int_0^z(z-t)f(t,s-t)dt.\]
+Vì đạo hàm lần thứ nhất của tích phân là $\int_0^z f(t,s-t)dt$ và lần thứ hai là $f(z,s-z)$, công thức thỏa PDE. Đổi lại:
+\[u=xP(x+y)+Q(x+y)+\int_0^x(x-t)f(t,x+y-t)dt.\]
+
+\textbf{(ii.b) $a=b=0$, $c=1$, $f=0$.} ODE $v_{zz}+v=0$ có hai nghiệm độc lập $\cos z$, $\sin z$. Hằng số tích phân phụ thuộc $s$:
+\[\boxed{u=P(x+y)\cos x+Q(x+y)\sin x.}\]
+
+\textbf{(ii.c) $a=1$, $b=-1$, $c=0$, $f=1$.} ODE $v_{zz}+v_z=1$. Đặt $p=v_z$: $(e^zp)'=e^z$, nên $p=1+C(s)e^{-z}$. Tích phân lần nữa và đổi tên hàm tùy ý:
+\[\boxed{u=x+P(x+y)+e^{-x}Q(x+y).}\]
+Thật vậy, $v_z=1-e^{-z}Q$, $v_{zz}=e^{-z}Q$, tổng bằng $1$. Các hàm tùy ý lấy đủ trơn, chẳng hạn $C^2$.
+
+\textbf{Chi tiết thế và hai lần tích phân.} Với $s=x+y,z=x$,
+\[u_{xx}=v_{ss}+2v_{sz}+v_{zz},\quad u_{xy}=v_{ss}+v_{sz},\quad u_{yy}=v_{ss}.\]
+Vậy $u_{xx}-2u_{xy}+u_{yy}=(1-2+1)v_{ss}+(2-2)v_{sz}+v_{zz}$. Ở (ii.a), lần đầu $v_z=P(s)+\int_0^zf(t,s-t)dt$; lần sau
+\[v=Q(s)+zP(s)+\int_0^z\int_0^r f(t,s-t)dt\,dr.\]
+Đổi thứ tự trên tam giác $0\le t\le r\le z$ được $\int_0^z(z-t)f(t,s-t)dt$ khi $z\ge0$. Với $z<0$, cùng công thức suy trực tiếp bằng hai đạo hàm và hai vết tại $z=0$, nên vẫn đúng với tích phân có hướng.
+
+%ID VD_2_2_08
+\textbf{Bước chung.} Đặt $\xi=x-y$, $\eta=x-2y$ như Ví dụ 6. Phương trình thành $v_{\xi\eta}+v_\eta=0$, nên
+\[v=F(\xi)+e^{-\xi}G(\eta),\qquad
+u_y=-F'(\xi)+e^{-\xi}G(\eta)-2e^{-\xi}G'(\eta).\]
+Các công thức dữ liệu dưới đây đều được suy ra từ hai dòng này.
+
+\textbf{(i) Cauchy trên $y=0$.} Lúc này $\xi=\eta=x$:
+\[F(x)+e^{-x}G(x)=u_0(x),\qquad
+-F'(x)+e^{-x}G(x)-2e^{-x}G'(x)=u_1(x).\]
+Lấy đạo hàm phương trình thứ nhất theo $x$ rồi cộng với phương trình thứ hai cho $-e^{-x}G'=u_0'+u_1$. Do đó $G'=-e^x(u_0'+u_1)$ và $F=u_0-e^{-x}G$. Hằng số của $G$ triệt tiêu khi thế lại:
+\[\boxed{u(x,y)=u_0(x-y)-e^{-(x-y)}\int_{x-y}^{x-2y}e^t[u_0'(t)+u_1(t)]dt.}\]
+Hai đặc trưng qua $(x,y)$ gặp $y=0$ ở $x-y$ và $x-2y$, nên dữ liệu trên toàn trục xác định duy nhất toàn mặt phẳng, với giả thiết trơn thích hợp.
+
+\textbf{(ii) Cauchy trên đặc trưng $y=x$.} Khi đó $\xi=0$, $\eta=-x$. Dữ liệu giá trị cho $F(0)+G(-x)=\varphi(x)$, suy ra $G'(-x)=-\varphi'(x)$. Thế vào dữ liệu đạo hàm:
+\[\psi(x)=\varphi(x)+2\varphi'(x)-F(0)-F'(0).\]
+Vậy điều kiện cần và đủ là
+\[\boxed{\psi-\varphi-2\varphi'=C\quad\text{là hằng số}.}\]
+Chuẩn hóa $F(0)=0$ bằng cách chuyển một số hạng giữa $F$ và $G$. Khi đó $G(\eta)=\varphi(-\eta)$, $F'(0)=-C$, và toàn bộ nghiệm là
+\[u=F(x-y)+e^{-(x-y)}\varphi(2y-x),\quad F(0)=0,\quad F'(0)=-C.\]
+Chọn $F(s)=-Cs$ hoặc $F(s)=-Cs+s^2$ cho hai nghiệm khác nhau. Đường dữ liệu là đặc trưng nên không có duy nhất.
+
+\textbf{(iii) Darboux--Goursat.} Hai đường $y=x$ và $x=2y$ tương ứng $\xi=0$, $\eta=0$. Tại giao điểm, bắt buộc $u_0(0)=u_1(0)=k$. Chọn $F(0)=0$: dữ liệu thứ nhất cho $G(\eta)=u_0(-\eta)$; dữ liệu thứ hai cho $F(\xi)=u_1(\xi)-e^{-\xi}k$. Do đó
+\[\boxed{u=u_1(x-y)+e^{-(x-y)}[u_0(2y-x)-k].}\]
+Thế $(x,x)$ và $(2x,x)$ kiểm tra lần lượt được $u_0(x)$, $u_1(x)$. Khi điều kiện tại giao điểm đúng và dữ liệu đủ trơn, công thức là nghiệm duy nhất.
+
+\textbf{Chi tiết giải PDE và khử hằng số.} Phần chính từ phép đổi $\xi=x-y,\eta=x-2y$ bằng $-v_{\xi\eta}$; $u_x+u_y=-v_\eta$. Do đó PDE là $v_{\xi\eta}+v_\eta=0$. Đặt $w=v_\eta$, nhân $e^\xi$ cho $(e^\xi w)_\xi=0$, nên $w=e^{-\xi}A(\eta)$; tích phân theo $\eta$ cho $v=F(\xi)+e^{-\xi}G(\eta)$. Ở (i),
+\[G(\eta)-G(\xi)=-\int_\xi^\eta e^r[u_0'(r)+u_1(r)]dr,\quad
+v=u_0(\xi)+e^{-\xi}[G(\eta)-G(\xi)].\]
+Mọi hằng số cộng vào $G$ mất trong hiệu này. Ở (iii), tại $(x,x)$ có $\xi=0,\eta=-x$, nên $u=u_1(0)+u_0(x)-k=u_0(x)$; tại $(2x,x)$ có $\xi=x,\eta=0$, nên $u=u_1(x)+e^{-x}(u_0(0)-k)=u_1(x)$.
+
+%ID VD_2_2_09
+\textbf{(i) Phân loại và tọa độ cực.} Với $A=xy$, $2B=y^2-x^2$, $C=-xy$,
+\[\delta=\frac{(y^2-x^2)^2}{4}+x^2y^2=\frac{(x^2+y^2)^2}{4}>0\quad(y>0).\]
+Đặc trưng phân tích thành $(xdy-ydx)(ydy+xdx)=0$: các tia $x/y=\mathrm{const}$ và nửa đường tròn $x^2+y^2=\mathrm{const}$. Chọn $r=\sqrt{x^2+y^2}>0$, $\theta\in(0,\pi)$, $x=r\cos\theta$, $y=r\sin\theta$. Phép đổi ngược có Jacobian $r\ne0$.
+
+\textbf{Tính toán phần chính.} Thế ba công thức đạo hàm cực ở Ví dụ 5; các hạng $v_{rr},v_{\theta\theta},v_r$ triệt tiêu, còn
+\[xyu_{xx}+(y^2-x^2)u_{xy}-xyu_{yy}=-r v_{r\theta}+v_\theta.\]
+Dạng chính tắc là $r v_{r\theta}-v_\theta=0$.
+
+\textbf{(ii) Nghiệm tổng quát.} Đặt $w=v/r$. Vì $v_{r\theta}=w_\theta+r w_{r\theta}$, phương trình cho $r^2w_{r\theta}=0$. Tích phân hai lần: $w=F(\theta)+K(r)$, tức
+\[\boxed{u=rF(\theta)+G(r).}\]
+
+\textbf{(iii) Dữ liệu $y=1$.} Từ $u(x,1)=x^2$ có $u_x(x,1)=2x$; kết hợp $u_y(x,1)=4$, quy tắc dây chuyền cho
+\[v_\theta=-y u_x+xu_y=2x\quad(y=1).\]
+Trên đường này $r=1/\sin\theta$, $x=\cot\theta$, nên $rF'(\theta)=2\cot\theta$ và $F'=2\cos\theta$. Lấy $F=2\sin\theta$ (hằng số được hấp thụ vào $G$), dữ liệu giá trị cho $G(r)=r^2-3$, $r\ge1$. Nghiệm cụ thể
+\[\boxed{u=x^2+y^2+2y-3}\]
+thỏa PDE vì $u_{xx}=u_{yy}=2$, $u_{xy}=0$, và thỏa cả hai dữ liệu. Công thức đa thức xác định trên toàn $y>0$, nhưng dữ liệu chỉ quyết định duy nhất miền $x^2+y^2>1$, $y>0$ (và giá trị giới hạn tại $r=1$). Ở $r<1$ có thể đổi $G$ bằng một hàm $C^2$ triệt tiêu cùng hai đạo hàm tại $r=1$.
+
+\textbf{(iv) Dữ liệu trên nửa đường tròn đơn vị.} Pháp tuyến ngoài là $\nu=(x,y)$, nên $\partial_\nu u=v_r$ tại $r=1$. Dữ liệu cho
+\[F(\theta)+G(1)=\varphi(\cos\theta),\qquad F(\theta)+G'(1)=\psi(\cos\theta).\]
+Điều kiện cần và đủ là $\psi(x)-\varphi(x)=C$ hằng trên $(-1,1)$. Toàn bộ nghiệm có thể viết
+\[u=r\varphi(x/r)+H(r),\qquad H(1)=0,\quad H'(1)=C.\]
+Ví dụ $H=C(r-1)$ hoặc $H=C(r-1)+(r-1)^2$; vì thế dữ liệu trên một đặc trưng không xác định duy nhất. Giả sử $\varphi$ và $H$ đủ trơn trên miền xét.
+
+\textbf{(v) Hai dữ liệu giá trị và ghép nghiệm.} Trên $r=1$ có $F(\theta)+G(1)=1$ cho mọi $\theta$, nên $F$ hằng; hấp thụ nó vào $G$ được $u=H(r)$. Dữ liệu $u(x,0)=x$, $1\le x\le2$ cho $H(r)=r$ ở $1\le r\le2$. Vậy
+\[\boxed{u=\sqrt{x^2+y^2}\quad\text{trên }1<x^2+y^2<4,\ y>0.}\]
+Đây là miền duy nhất do hai dữ liệu quyết định. Với $0<r\le1$, ghép $u=h(r)$: các điều kiện $h(1)=1$, $h'(1)=1$, $h''(1)=0$ làm giá trị và các đạo hàm đến cấp hai khớp tại $r=1$. Mọi hàm chỉ phụ thuộc $r$ đều thỏa PDE, nên phép ghép cho nghiệm $C^2$ trên $0<r<2$, $y>0$, liên tục đến phần biên đã cho. Ngoài $r=2$, có thể tiếp tục bằng $u=r$ hoặc một phần ghép đủ trơn khác.
+
+\textbf{Chi tiết gom năm hệ số trong tọa độ cực.} Viết $c=\cos\theta,s=\sin\theta$, $xy=r^2cs$, $y^2-x^2=r^2(s^2-c^2)$. Dùng ba đạo hàm cực, hệ số lần lượt là
+\[\begin{aligned}
+v_{rr}:&\quad r^2[cs\,c^2+(s^2-c^2)cs-cs\,s^2]=0,\\
+v_{r\theta}:&\quad r[-2c^2s^2-(c^2-s^2)^2-2c^2s^2]=-r,\\
+v_{\theta\theta}:&\quad cs\,s^2-(s^2-c^2)cs-cs\,c^2=0,\\
+v_r:&\quad r[cs\,s^2-(s^2-c^2)cs-cs\,c^2]=0,\\
+v_\theta:&\quad 2c^2s^2+(c^2-s^2)^2+2c^2s^2=1.
+\end{aligned}\]
+Đã dùng $4c^2s^2+(c^2-s^2)^2=(c^2+s^2)^2=1$. Vì vậy toán tử đúng bằng $-rv_{r\theta}+v_\theta$, kể cả tại các hướng có $x=0$ trong miền $y>0$.

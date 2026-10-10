@@ -1,0 +1,66 @@
+%ID VD_4_3_2_01
+\textbf{Bước 1. Nhận diện hàm Green từ chuỗi Neumann.}
+Với $u_t=Ku_{xx}$, $u_x(0,t)=u_x(L,t)=0$, hệ riêng là $X_0=1$, $\lambda_0=0$, $N_0=L$ và $X_n=\cos(n\pi x/L)$, $\lambda_n=(n\pi/L)^2$, $N_n=L/2$. Chiếu dữ liệu rồi đổi tổng–tích phân với $t>0$:
+\begin{align*}
+u(x,t)&=\frac1L\int_0^Lf(y)dy+
+\sum_{n\ge1}\frac2L e^{-K(n\pi/L)^2t}\cos(n\pi x/L)\int_0^Lf(y)\cos(n\pi y/L)dy\\
+&=\int_0^LG_N(x,y,t)f(y)dy,\\
+G_N(x,y,t)&=\frac1L+\frac2L\sum_{n\ge1}e^{-K(n\pi/L)^2t}
+\cos(n\pi x/L)\cos(n\pi y/L).
+\end{align*}
+\textbf{Bước 2. Kiểm tra đạo hàm, biên và đối xứng.}
+Mỗi đạo hàm cấp hữu hạn bị chặn bởi hằng nhân $n^m e^{-K(n\pi/L)^2\varepsilon}$ khi $t\ge\varepsilon>0$; tổng này hội tụ. Do đó được đạo hàm từng số hạng. Đạo hàm theo $t$ nhân $-K(n\pi/L)^2$, đạo hàm theo $x$ hai lần nhân $-(n\pi/L)^2$, nên $G_{Nt}=KG_{Nxx}=KG_{Nyy}$. Tích hai cosine đối xứng theo $x,y$ và tuần hoàn $2L$ theo từng biến; đạo hàm theo $x$ chứa sine, bằng $0$ tại $0,L$.
+\textbf{Bước 3. Tính khối lượng và chứng minh dương.} Vì $\int_0^L\cos(n\pi y/L)dy=0$,
+\[\int_0^LG_N(x,y,t)dy=1.\]
+Đặt $g_K(z,t)=(4\pi Kt)^{-1/2}e^{-z^2/(4Kt)}$. Phản xạ chẵn và tuần hoàn cho
+\[G_N(x,y,t)=\sum_{j\in\mathbb Z}\{g_K(x-y+2jL,t)+g_K(x+y+2jL,t)\}.\]
+Có thể kiểm tra đẳng thức bằng hệ số Fourier: nhân tuần hoàn $\sum_jg_K(z+2jL,t)$ có hệ số $(2L)^{-1}e^{-K(n\pi/L)^2t}$; cộng hai ảnh và dùng $\cos(a-b)+\cos(a+b)=2\cos a\cos b$ trả lại chuỗi trên. Mỗi Gauss dương nên $G_N>0$.
+\textbf{Bước 4. Dữ liệu đầu, nửa nhóm và giới hạn.} Với $f$ liên tục, xấp xỉ đơn vị của nhân nhiệt trên hàm mở rộng chẵn cho $u\to f$ đều. Trực giao cosine cho $\int_0^LG_N(x,z,s)G_N(z,y,t)dz=G_N(x,y,s+t)$. Vì $G_N>0$ và tổng trọng số $1$, $\min f\le u\le\max f$; tính đối xứng cho $\int_0^Lu(x,t)dx=\int f$. Các mode dương giảm theo mũ, nên $u\to L^{-1}\int f$ đều. Không đòi $\int G_N$ bằng $1$ bằng một phép tích phân trên toàn trục: tích phân chuẩn hóa ở đây là trên một đoạn $[0,L]$.
+
+%ID BT_4_3_3_01
+\textbf{Bước 1. Nhân Dirichlet và hội tụ.}
+\[G(x,y,t)=\frac2L\sum_{n\ge1}e^{-K(n\pi/L)^2t}
+\sin(n\pi x/L)\sin(n\pi y/L).\]
+Với $t\ge\varepsilon>0$, chuỗi và các đạo hàm hội tụ đều. Với dữ liệu $f$, $u=\int Gf$ giải PDE, biên $0$ và trả lại $f$ tại các điểm liên tục.
+
+\textbf{(a) Dương yếu rồi dương nghiêm ngặt.}
+Nếu $f\ge0$, cực đại cho $u\ge0$. Nếu $f\not\equiv0$, nguyên lý cực đại mạnh cho $u(x,t)>0$ khi $0<x<L,t>0$. Để suy $G\ge0$, nếu $G(x_0,y_0,t_0)<0$, tính liên tục theo $y$ cho một khoảng mà $G<0$; chọn $f\ge0$, không bằng $0$, hỗ trợ trong khoảng này, sẽ có $\int G(x_0,y,t_0)f(y)dy<0$, mâu thuẫn. Để chứng minh $G>0$ tại mọi điểm, chú ý
+\[G(y,y,s)=\frac2L\sum_{n\ge1}e^{-K(n\pi/L)^2s}\sin^2(n\pi y/L)>0\quad(0<y<L).\]
+Với $s=t/2$, hàm $G(\cdot,y,s)\ge0$ và không bằng không. Nguyên lý mạnh cho nghiệm tiến thêm $s$; tính nửa nhóm suy $G(x,y,t)>0$.
+
+\textbf{(b) Cận nhỏ hơn $1$ và khối lượng.}
+Với $f\le1$, hàm $1-u$ giải PDE, dữ liệu đầu không âm và biên bằng $1$, nên $1-u>0$ trong miền, tức $\int Gf<1$. Để chuyển từ $f$ vanishing ở hai đầu sang dữ liệu $1$, chọn $f_j(y)=\min(1,jy,j(L-y))$: $0\le f_j\uparrow1$ trong miền, $f_j(0)=f_j(L)=0$. Vì $G\ge0$, hội tụ đơn điệu cho
+\[m(x,t)=\int_0^LG(x,y,t)dy=\lim_j\int Gf_j\le1.\]
+Hàm $m$ là nghiệm với dữ liệu đầu $1$ trong miền và biên $0$ cho $t>0$. Nguyên lý mạnh cho $m>0$ và $1-m>0$ trong miền; vì thế $0<m<1$, $m(0,t)=m(L,t)=0$. Tính liên tục trên đoạn với $t>0$ cho $H(t)=\max_xm(x,t)$ thỏa $0<H(t)<1$.
+
+\textbf{(c) Tính giảm nghiêm ngặt và giới hạn đầu.}
+Trực giao sine cho đẳng thức nửa nhóm; tích phân theo $y$ rồi dùng $m(z,t)\le H(t)$:
+\[m(x,t+s)=\int_0^LG(x,z,s)m(z,t)dz\le H(t)m(x,s).\]
+Lấy maximum theo $x$: $H(t+s)\le H(t)H(s)<H(t)$ với mọi $s,t>0$, nên $H$ giảm chặt. Giữ $x_0=L/2$: dữ liệu $1$ liên tục gần $x_0$ cho $m(x_0,t)\to1$ khi $t\downarrow0$. Vì $m(x_0,t)\le H(t)\le1$, định lý kẹp cho $\lim_{t\downarrow0}H(t)=1$. Không yêu cầu hội tụ đều của $m$ đến $1$ ở hai đầu, vì $m$ luôn bằng $0$ tại đó.
+
+%ID BT_4_3_3_02
+\textbf{Bước 1. Tách biến và giải từng điều kiện biên.}
+Đặt $X=A\cos kx+B\sin kx$, $-X''=k^2X$.
+(a) $X'(0)=0$ cho $B=0$, $X(L)=0$ cho $\cos kL=0$. Vậy $k_n=(n+1/2)\pi/L$, $X_n=\cos k_nx$, $N_n=L/2$, $n\ge0$:
+\[G_a=\frac2L\sum_{n\ge0}e^{-Kk_n^2t}\cos k_nx\cos k_ny.\]
+(b) $X(0)=X'(0)$ cho $A=kB$, chọn $X=\cos kx+\sin kx/k$. Biên $X(L)=0$ cho $k\cos kL+\sin kL=0$.
+(c) $X'(0)=0$ cho $X=\cos kx$, $X(L)+X'(L)=0$ cho $\cos kL-k\sin kL=0$.
+(d) $X'(0)=X(0)$ cho $X=\cos kx+\sin kx/k$, và $X(L)+X'(L)=0$ cho $(1-k^2)\sin kL+2k\cos kL=0$.
+
+\textbf{Bước 2. Chuẩn hóa các biên Robin đến công thức rõ.}
+Ở (b),(d), dùng $\cos^2kx=(1+\cos2kx)/2$, $\sin^2kx=(1-\cos2kx)/2$ và $2\sin kx\cos kx=\sin2kx$:
+\[N(k)=\int_0^LX^2dx
+=\frac L2(1+k^{-2})+\frac{\sin2kL}{4k}(1-k^{-2})+\frac{\sin^2kL}{k^2}.\]
+Ở (c), $N(k)=L/2+\sin2kL/(4k)$. Vì vậy trong mỗi trường hợp (b),(c),(d),
+\[G_j(x,y,t)=\sum_{k_n>0}\frac{X_n(x)X_n(y)}{N(k_n)}e^{-Kk_n^2t},\quad j=b,c,d,\]
+với $k_n,X_n$ vừa xác định. Đây là các chuẩn đã tính, không bỏ lại $\int X_n^2$ chưa thực hiện. Trị riêng $0$ không có: $X=A+Bx$ thay vào từng cặp biên buộc $A=B=0$. Bỏ nghiệm $k=0$ ngoại lai của phương trình ở (d).
+
+\textbf{Bước 3. Biên tuần hoàn (e).}
+Các mode $1,\cos(2n\pi x/L),\sin(2n\pi x/L)$ có chuẩn $L,L/2,L/2$. Cộng hai tích bằng $\cos(a-b)$:
+\[G_e=\frac1L+\frac2L\sum_{n\ge1}e^{-K(2n\pi/L)^2t}\cos\frac{2n\pi(x-y)}L.\]
+Biểu diễn ảnh theo một chu kỳ là $G_e=\sum_{j\in\mathbb Z}g_K(x-y+jL,t)$; mỗi hạng dương và $\int_0^LG_e\,dy=\int_{\mathbb R}g_K\,dy=1$.
+
+\textbf{Bước 4. Chứng minh các tính chất cho từng nhân.}
+Trên $t\ge\varepsilon$, các hệ có $k_n$ tăng tuyến tính và chuẩn không suy biến, nên chuỗi đạo hàm hội tụ đều. Từ $X_n''=-k_n^2X_n$ suy $G_t=KG_{xx}=KG_{yy}$; từng $X_n$ cho đúng cặp biên (a)--(e); tích $X_n(x)X_n(y)$ cho đối xứng. Định lý khai triển Sturm–Liouville tự liên hợp ở (a)--(d), hoặc Fourier tuần hoàn ở (e), cho $\int G_jf\to f$ trong $L^2$ và tại điểm liên tục thích hợp. Trực giao cho tính nửa nhóm.
+
+Nguyên lý cực đại ở từng biên cho $\int G_jf\ge0$ nếu $f\ge0$, suy $G_j\ge0$ bằng dữ liệu tập trung. Cùng lập luận nửa nhóm và nguyên lý mạnh cho $G_j>0$ trong miền. $m_j=\int G_jdy$ có dữ liệu đầu $1$: ở (a)--(d), biên Dirichlet hoặc Robin hấp thụ làm $0<m_j<1$ trong miền, còn (e) giữ $m_e=1$. Tất cả mode ở (a)--(d) dương, nên $G_j\to0$; ở (e), $G_e\to1/L$. Do đó nghiệm lần lượt tiến về $0$ hoặc trung bình dữ liệu. Các kết luận về dương, khối lượng và giới hạn được chứng minh bằng đúng biên của từng trường hợp.

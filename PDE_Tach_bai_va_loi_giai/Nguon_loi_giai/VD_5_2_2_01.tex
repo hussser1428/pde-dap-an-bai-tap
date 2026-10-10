@@ -1,0 +1,17 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{fontspec,amsmath,amssymb,graphicx}
+\usepackage[margin=18mm]{geometry}
+\setmainfont{Times New Roman}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\allowdisplaybreaks
+\sloppy
+\emergencystretch=2em
+\begin{document}
+\section*{VD\_5\_2\_2\_01 — Lời giải bổ sung}
+Ví dụ chưa có lời giải trong bản in. Với đĩa bán kính $R$, dùng phép kéo dài điều hòa $\mathcal P_R[\varphi]$:
+\[\mathcal P_R[\varphi](r,\theta)=\frac{R^2-r^2}{2\pi}\int_0^{2\pi}\frac{\varphi(R\cos s,R\sin s)}{R^2+r^2-2Rr\cos(\theta-s)}ds.\]
+(i) $u=(R^2+x^2-y^2)/2-2y$.
+(ii) Biên $\min(x,0)=(x-|x|)/2$ cho
+\[u=\frac x2-\frac R\pi-\frac{2R}\pi\sum_{n\ge1}\frac{(-1)^{n+1}(r/R)^{2n}}{4n^2-1}\cos2n\theta.\]
+(iii) $u=1/2+(2/\pi)\sum_{n\text{ lẻ}}(r/R)^n\sin n\theta/n$. Các công thức đến từ Fourier của dữ liệu trên đường tròn; mọi nghiệm đều bị chặn tại tâm.\end{document}

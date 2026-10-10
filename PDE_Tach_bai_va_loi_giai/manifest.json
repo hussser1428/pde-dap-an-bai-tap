@@ -1,0 +1,6386 @@
+[
+  {
+    "id": "VD_1_2_2_1_01",
+    "kind": "VD",
+    "section": "1.2.2.1",
+    "number": 1,
+    "start": [
+      8,
+      216
+    ],
+    "end": [
+      8,
+      264
+    ],
+    "title": "Ví dụ 1 — Mục 1.2.2.1",
+    "file": "01_Phuong_trinh_cap_1/VD_1_2_2_1_01.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_1_2_2_1_02",
+    "kind": "VD",
+    "section": "1.2.2.1",
+    "number": 2,
+    "start": [
+      8,
+      264
+    ],
+    "end": [
+      8,
+      311
+    ],
+    "title": "Ví dụ 2 — Mục 1.2.2.1",
+    "file": "01_Phuong_trinh_cap_1/VD_1_2_2_1_02.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_1_2_2_1_03",
+    "kind": "VD",
+    "section": "1.2.2.1",
+    "number": 3,
+    "start": [
+      8,
+      311
+    ],
+    "end": [
+      8,
+      359
+    ],
+    "title": "Ví dụ 3 — Mục 1.2.2.1",
+    "file": "01_Phuong_trinh_cap_1/VD_1_2_2_1_03.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_1_2_2_1_04",
+    "kind": "VD",
+    "section": "1.2.2.1",
+    "number": 4,
+    "start": [
+      8,
+      359
+    ],
+    "end": [
+      8,
+      400
+    ],
+    "title": "Ví dụ 4 — Mục 1.2.2.1",
+    "file": "01_Phuong_trinh_cap_1/VD_1_2_2_1_04.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_1_2_2_2_01",
+    "kind": "VD",
+    "section": "1.2.2.2",
+    "number": 1,
+    "start": [
+      8,
+      558
+    ],
+    "end": [
+      8,
+      648
+    ],
+    "title": "Ví dụ 1 — Mục 1.2.2.2",
+    "file": "01_Phuong_trinh_cap_1/VD_1_2_2_2_01.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_1_2_2_2_02",
+    "kind": "VD",
+    "section": "1.2.2.2",
+    "number": 2,
+    "start": [
+      8,
+      648
+    ],
+    "end": [
+      8,
+      733
+    ],
+    "title": "Ví dụ 2 — Mục 1.2.2.2",
+    "file": "01_Phuong_trinh_cap_1/VD_1_2_2_2_02.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_1_2_2_2_03",
+    "kind": "VD",
+    "section": "1.2.2.2",
+    "number": 3,
+    "start": [
+      8,
+      733
+    ],
+    "end": [
+      8,
+      782
+    ],
+    "title": "Ví dụ 3 — Mục 1.2.2.2",
+    "file": "01_Phuong_trinh_cap_1/VD_1_2_2_2_03.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_1_2_2_2_04",
+    "kind": "VD",
+    "section": "1.2.2.2",
+    "number": 4,
+    "start": [
+      8,
+      782
+    ],
+    "end": [
+      8,
+      829
+    ],
+    "title": "Ví dụ 4 — Mục 1.2.2.2",
+    "file": "01_Phuong_trinh_cap_1/VD_1_2_2_2_04.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_1_2_2_2_05",
+    "kind": "VD",
+    "section": "1.2.2.2",
+    "number": 5,
+    "start": [
+      8,
+      829
+    ],
+    "end": [
+      8,
+      878
+    ],
+    "title": "Ví dụ 5 — Mục 1.2.2.2",
+    "file": "01_Phuong_trinh_cap_1/VD_1_2_2_2_05.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_1_2_2_2_06",
+    "kind": "VD",
+    "section": "1.2.2.2",
+    "number": 6,
+    "start": [
+      8,
+      878
+    ],
+    "end": [
+      8,
+      956
+    ],
+    "title": "Ví dụ 6 — Mục 1.2.2.2",
+    "file": "01_Phuong_trinh_cap_1/VD_1_2_2_2_06.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_1_2_3_01",
+    "kind": "BT",
+    "section": "1.2.3",
+    "number": 1,
+    "start": [
+      8,
+      997
+    ],
+    "end": [
+      8,
+      1207
+    ],
+    "title": "Bài tập thực hành 1 — Mục 1.2.3",
+    "file": "01_Phuong_trinh_cap_1/BT_1_2_3_01.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_1_2_3_02",
+    "kind": "BT",
+    "section": "1.2.3",
+    "number": 2,
+    "start": [
+      8,
+      1207
+    ],
+    "end": [
+      9,
+      421
+    ],
+    "title": "Bài tập thực hành 2 — Mục 1.2.3",
+    "file": "01_Phuong_trinh_cap_1/BT_1_2_3_02.pdf",
+    "original_pages": 2,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_1_2_3_03",
+    "kind": "BT",
+    "section": "1.2.3",
+    "number": 3,
+    "start": [
+      9,
+      421
+    ],
+    "end": [
+      9,
+      734
+    ],
+    "title": "Bài tập thực hành 3 — Mục 1.2.3",
+    "file": "01_Phuong_trinh_cap_1/BT_1_2_3_03.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_1_2_3_04",
+    "kind": "BT",
+    "section": "1.2.3",
+    "number": 4,
+    "start": [
+      9,
+      734
+    ],
+    "end": [
+      9,
+      882
+    ],
+    "title": "Bài tập thực hành 4 — Mục 1.2.3",
+    "file": "01_Phuong_trinh_cap_1/BT_1_2_3_04.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_1_2_3_05",
+    "kind": "BT",
+    "section": "1.2.3",
+    "number": 5,
+    "start": [
+      9,
+      882
+    ],
+    "end": [
+      9,
+      1125
+    ],
+    "title": "Bài tập thực hành 5 — Mục 1.2.3",
+    "file": "01_Phuong_trinh_cap_1/BT_1_2_3_05.pdf",
+    "original_pages": 1,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_1_3_1_2_01",
+    "kind": "VD",
+    "section": "1.3.1.2",
+    "number": 1,
+    "start": [
+      10,
+      1207
+    ],
+    "end": [
+      11,
+      92
+    ],
+    "title": "Ví dụ 1 — Mục 1.3.1.2",
+    "file": "01_Phuong_trinh_cap_1/VD_1_3_1_2_01.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_1_3_1_2_02",
+    "kind": "VD",
+    "section": "1.3.1.2",
+    "number": 2,
+    "start": [
+      11,
+      92
+    ],
+    "end": [
+      11,
+      443
+    ],
+    "title": "Ví dụ 2 — Mục 1.3.1.2",
+    "file": "01_Phuong_trinh_cap_1/VD_1_3_1_2_02.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_1_3_1_2_03",
+    "kind": "VD",
+    "section": "1.3.1.2",
+    "number": 3,
+    "start": [
+      11,
+      443
+    ],
+    "end": [
+      11,
+      769
+    ],
+    "title": "Ví dụ 3 — Mục 1.3.1.2",
+    "file": "01_Phuong_trinh_cap_1/VD_1_3_1_2_03.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_1_3_1_2_04",
+    "kind": "VD",
+    "section": "1.3.1.2",
+    "number": 4,
+    "start": [
+      11,
+      769
+    ],
+    "end": [
+      12,
+      394
+    ],
+    "title": "Ví dụ 4 — Mục 1.3.1.2",
+    "file": "01_Phuong_trinh_cap_1/VD_1_3_1_2_04.pdf",
+    "original_pages": 2,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_1_3_1_2_05",
+    "kind": "VD",
+    "section": "1.3.1.2",
+    "number": 5,
+    "start": [
+      12,
+      394
+    ],
+    "end": [
+      12,
+      736
+    ],
+    "title": "Ví dụ 5 — Mục 1.3.1.2",
+    "file": "01_Phuong_trinh_cap_1/VD_1_3_1_2_05.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_1_3_1_2_06",
+    "kind": "VD",
+    "section": "1.3.1.2",
+    "number": 6,
+    "start": [
+      12,
+      736
+    ],
+    "end": [
+      14,
+      816
+    ],
+    "title": "Ví dụ 6 — Mục 1.3.1.2",
+    "file": "01_Phuong_trinh_cap_1/VD_1_3_1_2_06.pdf",
+    "original_pages": 3,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_1_3_1_2_07",
+    "kind": "VD",
+    "section": "1.3.1.2",
+    "number": 7,
+    "start": [
+      14,
+      816
+    ],
+    "end": [
+      14,
+      1134
+    ],
+    "title": "Ví dụ 7 — Mục 1.3.1.2",
+    "file": "01_Phuong_trinh_cap_1/VD_1_3_1_2_07.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_1_3_1_2_08",
+    "kind": "VD",
+    "section": "1.3.1.2",
+    "number": 8,
+    "start": [
+      14,
+      1134
+    ],
+    "end": [
+      15,
+      661
+    ],
+    "title": "Ví dụ 8 — Mục 1.3.1.2",
+    "file": "01_Phuong_trinh_cap_1/VD_1_3_1_2_08.pdf",
+    "original_pages": 2,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_1_3_1_2_09",
+    "kind": "VD",
+    "section": "1.3.1.2",
+    "number": 9,
+    "start": [
+      15,
+      661
+    ],
+    "end": [
+      16,
+      90
+    ],
+    "title": "Ví dụ 9 — Mục 1.3.1.2",
+    "file": "01_Phuong_trinh_cap_1/VD_1_3_1_2_09.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_1_3_1_3_01",
+    "kind": "BT",
+    "section": "1.3.1.3",
+    "number": 1,
+    "start": [
+      16,
+      141
+    ],
+    "end": [
+      16,
+      319
+    ],
+    "title": "Bài tập thực hành 1 — Mục 1.3.1.3",
+    "file": "01_Phuong_trinh_cap_1/BT_1_3_1_3_01.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_1_3_1_3_02",
+    "kind": "BT",
+    "section": "1.3.1.3",
+    "number": 2,
+    "start": [
+      16,
+      319
+    ],
+    "end": [
+      16,
+      499
+    ],
+    "title": "Bài tập thực hành 2 — Mục 1.3.1.3",
+    "file": "01_Phuong_trinh_cap_1/BT_1_3_1_3_02.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_1_3_1_3_03",
+    "kind": "BT",
+    "section": "1.3.1.3",
+    "number": 3,
+    "start": [
+      16,
+      499
+    ],
+    "end": [
+      16,
+      761
+    ],
+    "title": "Bài tập thực hành 3 — Mục 1.3.1.3",
+    "file": "01_Phuong_trinh_cap_1/BT_1_3_1_3_03.pdf",
+    "original_pages": 1,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_1_3_1_3_04",
+    "kind": "BT",
+    "section": "1.3.1.3",
+    "number": 4,
+    "start": [
+      16,
+      761
+    ],
+    "end": [
+      16,
+      1096
+    ],
+    "title": "Bài tập thực hành 4 — Mục 1.3.1.3",
+    "file": "01_Phuong_trinh_cap_1/BT_1_3_1_3_04.pdf",
+    "original_pages": 1,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_1_3_1_3_05",
+    "kind": "BT",
+    "section": "1.3.1.3",
+    "number": 5,
+    "start": [
+      16,
+      1096
+    ],
+    "end": [
+      17,
+      147
+    ],
+    "title": "Bài tập thực hành 5 — Mục 1.3.1.3",
+    "file": "01_Phuong_trinh_cap_1/BT_1_3_1_3_05.pdf",
+    "original_pages": 2,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_1_3_1_3_06",
+    "kind": "BT",
+    "section": "1.3.1.3",
+    "number": 6,
+    "start": [
+      17,
+      147
+    ],
+    "end": [
+      17,
+      197
+    ],
+    "title": "Bài tập thực hành 6 — Mục 1.3.1.3",
+    "file": "01_Phuong_trinh_cap_1/BT_1_3_1_3_06.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_1_3_1_3_07",
+    "kind": "BT",
+    "section": "1.3.1.3",
+    "number": 7,
+    "start": [
+      17,
+      197
+    ],
+    "end": [
+      17,
+      344
+    ],
+    "title": "Bài tập thực hành 7 — Mục 1.3.1.3",
+    "file": "01_Phuong_trinh_cap_1/BT_1_3_1_3_07.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_1_3_1_3_08",
+    "kind": "BT",
+    "section": "1.3.1.3",
+    "number": 8,
+    "start": [
+      17,
+      344
+    ],
+    "end": [
+      17,
+      428
+    ],
+    "title": "Bài tập thực hành 8 — Mục 1.3.1.3",
+    "file": "01_Phuong_trinh_cap_1/BT_1_3_1_3_08.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_1_3_1_3_09",
+    "kind": "BT",
+    "section": "1.3.1.3",
+    "number": 9,
+    "start": [
+      17,
+      428
+    ],
+    "end": [
+      17,
+      483
+    ],
+    "title": "Bài tập thực hành 9 — Mục 1.3.1.3",
+    "file": "01_Phuong_trinh_cap_1/BT_1_3_1_3_09.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_1_3_1_3_10",
+    "kind": "BT",
+    "section": "1.3.1.3",
+    "number": 10,
+    "start": [
+      17,
+      483
+    ],
+    "end": [
+      17,
+      666
+    ],
+    "title": "Bài tập thực hành 10 — Mục 1.3.1.3",
+    "file": "01_Phuong_trinh_cap_1/BT_1_3_1_3_10.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_1_3_1_3_11",
+    "kind": "BT",
+    "section": "1.3.1.3",
+    "number": 11,
+    "start": [
+      17,
+      666
+    ],
+    "end": [
+      17,
+      910
+    ],
+    "title": "Bài tập thực hành 11 — Mục 1.3.1.3",
+    "file": "01_Phuong_trinh_cap_1/BT_1_3_1_3_11.pdf",
+    "original_pages": 1,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_1_3_2_2_01",
+    "kind": "VD",
+    "section": "1.3.2.2",
+    "number": 1,
+    "start": [
+      18,
+      1078
+    ],
+    "end": [
+      18,
+      1190
+    ],
+    "title": "Ví dụ 1 — Mục 1.3.2.2",
+    "file": "01_Phuong_trinh_cap_1/VD_1_3_2_2_01.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_1_3_2_2_02",
+    "kind": "VD",
+    "section": "1.3.2.2",
+    "number": 2,
+    "start": [
+      18,
+      1190
+    ],
+    "end": [
+      19,
+      433
+    ],
+    "title": "Ví dụ 2 — Mục 1.3.2.2",
+    "file": "01_Phuong_trinh_cap_1/VD_1_3_2_2_02.pdf",
+    "original_pages": 2,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_1_3_2_2_03",
+    "kind": "VD",
+    "section": "1.3.2.2",
+    "number": 3,
+    "start": [
+      19,
+      433
+    ],
+    "end": [
+      19,
+      1096
+    ],
+    "title": "Ví dụ 3 — Mục 1.3.2.2",
+    "file": "01_Phuong_trinh_cap_1/VD_1_3_2_2_03.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_1_3_2_2_04",
+    "kind": "VD",
+    "section": "1.3.2.2",
+    "number": 4,
+    "start": [
+      19,
+      1096
+    ],
+    "end": [
+      21,
+      454
+    ],
+    "title": "Ví dụ 4 — Mục 1.3.2.2",
+    "file": "01_Phuong_trinh_cap_1/VD_1_3_2_2_04.pdf",
+    "original_pages": 3,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_1_3_2_2_05",
+    "kind": "VD",
+    "section": "1.3.2.2",
+    "number": 5,
+    "start": [
+      21,
+      454
+    ],
+    "end": [
+      21,
+      1207
+    ],
+    "title": "Ví dụ 5 — Mục 1.3.2.2",
+    "file": "01_Phuong_trinh_cap_1/VD_1_3_2_2_05.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_1_3_2_2_06",
+    "kind": "VD",
+    "section": "1.3.2.2",
+    "number": 6,
+    "start": [
+      21,
+      1207
+    ],
+    "end": [
+      22,
+      1020
+    ],
+    "title": "Ví dụ 6 — Mục 1.3.2.2",
+    "file": "01_Phuong_trinh_cap_1/VD_1_3_2_2_06.pdf",
+    "original_pages": 2,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_1_3_2_3_01",
+    "kind": "BT",
+    "section": "1.3.2.3",
+    "number": 1,
+    "start": [
+      22,
+      1069
+    ],
+    "end": [
+      23,
+      92
+    ],
+    "title": "Bài tập thực hành 1 — Mục 1.3.2.3",
+    "file": "01_Phuong_trinh_cap_1/BT_1_3_2_3_01.pdf",
+    "original_pages": 1,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_1_3_2_3_02",
+    "kind": "BT",
+    "section": "1.3.2.3",
+    "number": 2,
+    "start": [
+      23,
+      92
+    ],
+    "end": [
+      23,
+      172
+    ],
+    "title": "Bài tập thực hành 2 — Mục 1.3.2.3",
+    "file": "01_Phuong_trinh_cap_1/BT_1_3_2_3_02.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_1_3_2_3_03",
+    "kind": "BT",
+    "section": "1.3.2.3",
+    "number": 3,
+    "start": [
+      23,
+      172
+    ],
+    "end": [
+      23,
+      286
+    ],
+    "title": "Bài tập thực hành 3 — Mục 1.3.2.3",
+    "file": "01_Phuong_trinh_cap_1/BT_1_3_2_3_03.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_1_3_2_3_04",
+    "kind": "BT",
+    "section": "1.3.2.3",
+    "number": 4,
+    "start": [
+      23,
+      286
+    ],
+    "end": [
+      23,
+      331
+    ],
+    "title": "Bài tập thực hành 4 — Mục 1.3.2.3",
+    "file": "01_Phuong_trinh_cap_1/BT_1_3_2_3_04.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_1_3_2_3_05",
+    "kind": "BT",
+    "section": "1.3.2.3",
+    "number": 5,
+    "start": [
+      23,
+      331
+    ],
+    "end": [
+      23,
+      410
+    ],
+    "title": "Bài tập thực hành 5 — Mục 1.3.2.3",
+    "file": "01_Phuong_trinh_cap_1/BT_1_3_2_3_05.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_1_3_2_3_06",
+    "kind": "BT",
+    "section": "1.3.2.3",
+    "number": 6,
+    "start": [
+      23,
+      410
+    ],
+    "end": [
+      23,
+      615
+    ],
+    "title": "Bài tập thực hành 6 — Mục 1.3.2.3",
+    "file": "01_Phuong_trinh_cap_1/BT_1_3_2_3_06.pdf",
+    "original_pages": 1,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_1_3_2_3_07",
+    "kind": "BT",
+    "section": "1.3.2.3",
+    "number": 7,
+    "start": [
+      23,
+      615
+    ],
+    "end": [
+      23,
+      662
+    ],
+    "title": "Bài tập thực hành 7 — Mục 1.3.2.3",
+    "file": "01_Phuong_trinh_cap_1/BT_1_3_2_3_07.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_1_3_2_3_08",
+    "kind": "BT",
+    "section": "1.3.2.3",
+    "number": 8,
+    "start": [
+      23,
+      662
+    ],
+    "end": [
+      23,
+      909
+    ],
+    "title": "Bài tập thực hành 8 — Mục 1.3.2.3",
+    "file": "01_Phuong_trinh_cap_1/BT_1_3_2_3_08.pdf",
+    "original_pages": 1,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_1_4_2_01",
+    "kind": "VD",
+    "section": "1.4.2",
+    "number": 1,
+    "start": [
+      24,
+      415
+    ],
+    "end": [
+      24,
+      956
+    ],
+    "title": "Ví dụ 1 — Mục 1.4.2",
+    "file": "01_Phuong_trinh_cap_1/VD_1_4_2_01.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_1_4_2_02",
+    "kind": "VD",
+    "section": "1.4.2",
+    "number": 2,
+    "start": [
+      24,
+      956
+    ],
+    "end": [
+      25,
+      797
+    ],
+    "title": "Ví dụ 2 — Mục 1.4.2",
+    "file": "01_Phuong_trinh_cap_1/VD_1_4_2_02.pdf",
+    "original_pages": 2,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_1_4_2_03",
+    "kind": "VD",
+    "section": "1.4.2",
+    "number": 3,
+    "start": [
+      25,
+      797
+    ],
+    "end": [
+      26,
+      469
+    ],
+    "title": "Ví dụ 3 — Mục 1.4.2",
+    "file": "01_Phuong_trinh_cap_1/VD_1_4_2_03.pdf",
+    "original_pages": 2,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_1_4_3_01",
+    "kind": "BT",
+    "section": "1.4.3",
+    "number": 1,
+    "start": [
+      26,
+      523
+    ],
+    "end": [
+      26,
+      853
+    ],
+    "title": "Bài tập thực hành 1 — Mục 1.4.3",
+    "file": "01_Phuong_trinh_cap_1/BT_1_4_3_01.pdf",
+    "original_pages": 1,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_1_4_3_02",
+    "kind": "BT",
+    "section": "1.4.3",
+    "number": 2,
+    "start": [
+      26,
+      853
+    ],
+    "end": [
+      26,
+      1095
+    ],
+    "title": "Bài tập thực hành 2 — Mục 1.4.3",
+    "file": "01_Phuong_trinh_cap_1/BT_1_4_3_02.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_1_5_2_01",
+    "kind": "VD",
+    "section": "1.5.2",
+    "number": 1,
+    "start": [
+      28,
+      764
+    ],
+    "end": [
+      32,
+      962
+    ],
+    "title": "Ví dụ 1 — Mục 1.5.2",
+    "file": "01_Phuong_trinh_cap_1/VD_1_5_2_01.pdf",
+    "original_pages": 5,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_1_5_2_02",
+    "kind": "VD",
+    "section": "1.5.2",
+    "number": 2,
+    "start": [
+      32,
+      962
+    ],
+    "end": [
+      36,
+      394
+    ],
+    "title": "Ví dụ 2 — Mục 1.5.2",
+    "file": "01_Phuong_trinh_cap_1/VD_1_5_2_02.pdf",
+    "original_pages": 5,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_1_5_3_01",
+    "kind": "BT",
+    "section": "1.5.3",
+    "number": 1,
+    "start": [
+      36,
+      573
+    ],
+    "end": [
+      36,
+      716
+    ],
+    "title": "Bài tập thực hành 1 — Mục 1.5.3",
+    "file": "01_Phuong_trinh_cap_1/BT_1_5_3_01.pdf",
+    "original_pages": 1,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_1_5_3_02",
+    "kind": "BT",
+    "section": "1.5.3",
+    "number": 2,
+    "start": [
+      36,
+      716
+    ],
+    "end": [
+      36,
+      862
+    ],
+    "title": "Bài tập thực hành 2 — Mục 1.5.3",
+    "file": "01_Phuong_trinh_cap_1/BT_1_5_3_02.pdf",
+    "original_pages": 1,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_1_5_3_03",
+    "kind": "BT",
+    "section": "1.5.3",
+    "number": 3,
+    "start": [
+      36,
+      862
+    ],
+    "end": [
+      36,
+      1002
+    ],
+    "title": "Bài tập thực hành 3 — Mục 1.5.3",
+    "file": "01_Phuong_trinh_cap_1/BT_1_5_3_03.pdf",
+    "original_pages": 1,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_1_5_3_04",
+    "kind": "BT",
+    "section": "1.5.3",
+    "number": 4,
+    "start": [
+      36,
+      1002
+    ],
+    "end": [
+      36,
+      1144
+    ],
+    "title": "Bài tập thực hành 4 — Mục 1.5.3",
+    "file": "01_Phuong_trinh_cap_1/BT_1_5_3_04.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_1_5_3_05",
+    "kind": "BT",
+    "section": "1.5.3",
+    "number": 5,
+    "start": [
+      36,
+      1144
+    ],
+    "end": [
+      37,
+      93
+    ],
+    "title": "Bài tập thực hành 5 — Mục 1.5.3",
+    "file": "01_Phuong_trinh_cap_1/BT_1_5_3_05.pdf",
+    "original_pages": 1,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_1_5_3_06",
+    "kind": "BT",
+    "section": "1.5.3",
+    "number": 6,
+    "start": [
+      37,
+      93
+    ],
+    "end": [
+      37,
+      241
+    ],
+    "title": "Bài tập thực hành 6 — Mục 1.5.3",
+    "file": "01_Phuong_trinh_cap_1/BT_1_5_3_06.pdf",
+    "original_pages": 1,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_1_5_3_07",
+    "kind": "BT",
+    "section": "1.5.3",
+    "number": 7,
+    "start": [
+      37,
+      241
+    ],
+    "end": [
+      37,
+      391
+    ],
+    "title": "Bài tập thực hành 7 — Mục 1.5.3",
+    "file": "01_Phuong_trinh_cap_1/BT_1_5_3_07.pdf",
+    "original_pages": 1,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_1_5_3_08",
+    "kind": "BT",
+    "section": "1.5.3",
+    "number": 8,
+    "start": [
+      37,
+      391
+    ],
+    "end": [
+      37,
+      540
+    ],
+    "title": "Bài tập thực hành 8 — Mục 1.5.3",
+    "file": "01_Phuong_trinh_cap_1/BT_1_5_3_08.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_1_5_3_09",
+    "kind": "BT",
+    "section": "1.5.3",
+    "number": 9,
+    "start": [
+      37,
+      540
+    ],
+    "end": [
+      37,
+      693
+    ],
+    "title": "Bài tập thực hành 9 — Mục 1.5.3",
+    "file": "01_Phuong_trinh_cap_1/BT_1_5_3_09.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_1_5_3_10",
+    "kind": "BT",
+    "section": "1.5.3",
+    "number": 10,
+    "start": [
+      37,
+      693
+    ],
+    "end": [
+      37,
+      843
+    ],
+    "title": "Bài tập thực hành 10 — Mục 1.5.3",
+    "file": "01_Phuong_trinh_cap_1/BT_1_5_3_10.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_1_5_3_11",
+    "kind": "BT",
+    "section": "1.5.3",
+    "number": 11,
+    "start": [
+      37,
+      843
+    ],
+    "end": [
+      37,
+      989
+    ],
+    "title": "Bài tập thực hành 11 — Mục 1.5.3",
+    "file": "01_Phuong_trinh_cap_1/BT_1_5_3_11.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_1_5_3_12",
+    "kind": "BT",
+    "section": "1.5.3",
+    "number": 12,
+    "start": [
+      37,
+      989
+    ],
+    "end": [
+      37,
+      1138
+    ],
+    "title": "Bài tập thực hành 12 — Mục 1.5.3",
+    "file": "01_Phuong_trinh_cap_1/BT_1_5_3_12.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_1_5_3_13",
+    "kind": "BT",
+    "section": "1.5.3",
+    "number": 13,
+    "start": [
+      37,
+      1138
+    ],
+    "end": [
+      38,
+      93
+    ],
+    "title": "Bài tập thực hành 13 — Mục 1.5.3",
+    "file": "01_Phuong_trinh_cap_1/BT_1_5_3_13.pdf",
+    "original_pages": 1,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_1_5_3_14",
+    "kind": "BT",
+    "section": "1.5.3",
+    "number": 14,
+    "start": [
+      38,
+      93
+    ],
+    "end": [
+      38,
+      249
+    ],
+    "title": "Bài tập thực hành 14 — Mục 1.5.3",
+    "file": "01_Phuong_trinh_cap_1/BT_1_5_3_14.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_1_5_3_15",
+    "kind": "BT",
+    "section": "1.5.3",
+    "number": 15,
+    "start": [
+      38,
+      249
+    ],
+    "end": [
+      38,
+      405
+    ],
+    "title": "Bài tập thực hành 15 — Mục 1.5.3",
+    "file": "01_Phuong_trinh_cap_1/BT_1_5_3_15.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_1_5_3_16",
+    "kind": "BT",
+    "section": "1.5.3",
+    "number": 16,
+    "start": [
+      38,
+      405
+    ],
+    "end": [
+      38,
+      562
+    ],
+    "title": "Bài tập thực hành 16 — Mục 1.5.3",
+    "file": "01_Phuong_trinh_cap_1/BT_1_5_3_16.pdf",
+    "original_pages": 1,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_1_5_3_17",
+    "kind": "BT",
+    "section": "1.5.3",
+    "number": 17,
+    "start": [
+      38,
+      562
+    ],
+    "end": [
+      38,
+      722
+    ],
+    "title": "Bài tập thực hành 17 — Mục 1.5.3",
+    "file": "01_Phuong_trinh_cap_1/BT_1_5_3_17.pdf",
+    "original_pages": 1,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_1_5_3_18",
+    "kind": "BT",
+    "section": "1.5.3",
+    "number": 18,
+    "start": [
+      38,
+      722
+    ],
+    "end": [
+      38,
+      870
+    ],
+    "title": "Bài tập thực hành 18 — Mục 1.5.3",
+    "file": "01_Phuong_trinh_cap_1/BT_1_5_3_18.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_1_6_2_01",
+    "kind": "VD",
+    "section": "1.6.2",
+    "number": 1,
+    "start": [
+      41,
+      251
+    ],
+    "end": [
+      43,
+      729
+    ],
+    "title": "Ví dụ 1 — Mục 1.6.2",
+    "file": "01_Phuong_trinh_cap_1/VD_1_6_2_01.pdf",
+    "original_pages": 3,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_1_6_2_02",
+    "kind": "VD",
+    "section": "1.6.2",
+    "number": 2,
+    "start": [
+      43,
+      729
+    ],
+    "end": [
+      45,
+      690
+    ],
+    "title": "Ví dụ 2 — Mục 1.6.2",
+    "file": "01_Phuong_trinh_cap_1/VD_1_6_2_02.pdf",
+    "original_pages": 3,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_1_6_2_03",
+    "kind": "VD",
+    "section": "1.6.2",
+    "number": 3,
+    "start": [
+      45,
+      690
+    ],
+    "end": [
+      48,
+      1143
+    ],
+    "title": "Ví dụ 3 — Mục 1.6.2",
+    "file": "01_Phuong_trinh_cap_1/VD_1_6_2_03.pdf",
+    "original_pages": 4,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_1_6_3_01",
+    "kind": "BT",
+    "section": "1.6.3",
+    "number": 1,
+    "start": [
+      48,
+      1194
+    ],
+    "end": [
+      49,
+      381
+    ],
+    "title": "Bài tập thực hành 1 — Mục 1.6.3",
+    "file": "01_Phuong_trinh_cap_1/BT_1_6_3_01.pdf",
+    "original_pages": 2,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_1_6_3_02",
+    "kind": "BT",
+    "section": "1.6.3",
+    "number": 2,
+    "start": [
+      49,
+      381
+    ],
+    "end": [
+      49,
+      775
+    ],
+    "title": "Bài tập thực hành 2 — Mục 1.6.3",
+    "file": "01_Phuong_trinh_cap_1/BT_1_6_3_02.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_1_6_3_03",
+    "kind": "BT",
+    "section": "1.6.3",
+    "number": 3,
+    "start": [
+      49,
+      775
+    ],
+    "end": [
+      49,
+      1129
+    ],
+    "title": "Bài tập thực hành 3 — Mục 1.6.3",
+    "file": "01_Phuong_trinh_cap_1/BT_1_6_3_03.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_1_6_3_04",
+    "kind": "BT",
+    "section": "1.6.3",
+    "number": 4,
+    "start": [
+      49,
+      1129
+    ],
+    "end": [
+      50,
+      278
+    ],
+    "title": "Bài tập thực hành 4 — Mục 1.6.3",
+    "file": "01_Phuong_trinh_cap_1/BT_1_6_3_04.pdf",
+    "original_pages": 2,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_1_6_3_05",
+    "kind": "BT",
+    "section": "1.6.3",
+    "number": 5,
+    "start": [
+      50,
+      278
+    ],
+    "end": [
+      50,
+      691
+    ],
+    "title": "Bài tập thực hành 5 — Mục 1.6.3",
+    "file": "01_Phuong_trinh_cap_1/BT_1_6_3_05.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_1_6_3_06",
+    "kind": "BT",
+    "section": "1.6.3",
+    "number": 6,
+    "start": [
+      50,
+      691
+    ],
+    "end": [
+      50,
+      1024
+    ],
+    "title": "Bài tập thực hành 6 — Mục 1.6.3",
+    "file": "01_Phuong_trinh_cap_1/BT_1_6_3_06.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_1_6_3_07",
+    "kind": "BT",
+    "section": "1.6.3",
+    "number": 7,
+    "start": [
+      50,
+      1024
+    ],
+    "end": [
+      51,
+      174
+    ],
+    "title": "Bài tập thực hành 7 — Mục 1.6.3",
+    "file": "01_Phuong_trinh_cap_1/BT_1_6_3_07.pdf",
+    "original_pages": 2,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_1_6_3_08",
+    "kind": "BT",
+    "section": "1.6.3",
+    "number": 8,
+    "start": [
+      51,
+      174
+    ],
+    "end": [
+      51,
+      591
+    ],
+    "title": "Bài tập thực hành 8 — Mục 1.6.3",
+    "file": "01_Phuong_trinh_cap_1/BT_1_6_3_08.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_1_6_3_09",
+    "kind": "BT",
+    "section": "1.6.3",
+    "number": 9,
+    "start": [
+      51,
+      591
+    ],
+    "end": [
+      51,
+      952
+    ],
+    "title": "Bài tập thực hành 9 — Mục 1.6.3",
+    "file": "01_Phuong_trinh_cap_1/BT_1_6_3_09.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_1_6_3_10",
+    "kind": "BT",
+    "section": "1.6.3",
+    "number": 10,
+    "start": [
+      51,
+      952
+    ],
+    "end": [
+      52,
+      190
+    ],
+    "title": "Bài tập thực hành 10 — Mục 1.6.3",
+    "file": "01_Phuong_trinh_cap_1/BT_1_6_3_10.pdf",
+    "original_pages": 2,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_1_6_3_11",
+    "kind": "BT",
+    "section": "1.6.3",
+    "number": 11,
+    "start": [
+      52,
+      190
+    ],
+    "end": [
+      52,
+      663
+    ],
+    "title": "Bài tập thực hành 11 — Mục 1.6.3",
+    "file": "01_Phuong_trinh_cap_1/BT_1_6_3_11.pdf",
+    "original_pages": 1,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_1_6_3_12",
+    "kind": "BT",
+    "section": "1.6.3",
+    "number": 12,
+    "start": [
+      52,
+      663
+    ],
+    "end": [
+      52,
+      1092
+    ],
+    "title": "Bài tập thực hành 12 — Mục 1.6.3",
+    "file": "01_Phuong_trinh_cap_1/BT_1_6_3_12.pdf",
+    "original_pages": 1,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "NC_1_7_01",
+    "kind": "NC",
+    "section": "1.7",
+    "number": 1,
+    "start": [
+      53,
+      96
+    ],
+    "end": [
+      53,
+      575
+    ],
+    "title": "Bài nâng cao 1 — Mục 1.7",
+    "file": "01_Phuong_trinh_cap_1/NC_1_7_01.pdf",
+    "original_pages": 1,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "NC_1_7_02",
+    "kind": "NC",
+    "section": "1.7",
+    "number": 2,
+    "start": [
+      53,
+      575
+    ],
+    "end": [
+      53,
+      989
+    ],
+    "title": "Bài nâng cao 2 — Mục 1.7",
+    "file": "01_Phuong_trinh_cap_1/NC_1_7_02.pdf",
+    "original_pages": 1,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "NC_1_7_03",
+    "kind": "NC",
+    "section": "1.7",
+    "number": 3,
+    "start": [
+      53,
+      989
+    ],
+    "end": [
+      54,
+      217
+    ],
+    "title": "Bài nâng cao 3 — Mục 1.7",
+    "file": "01_Phuong_trinh_cap_1/NC_1_7_03.pdf",
+    "original_pages": 2,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "NC_1_7_04",
+    "kind": "NC",
+    "section": "1.7",
+    "number": 4,
+    "start": [
+      54,
+      217
+    ],
+    "end": [
+      55,
+      1268
+    ],
+    "title": "Bài nâng cao 4 — Mục 1.7",
+    "file": "01_Phuong_trinh_cap_1/NC_1_7_04.pdf",
+    "original_pages": 2,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_2_2_01",
+    "kind": "VD",
+    "section": "2.2",
+    "number": 1,
+    "start": [
+      57,
+      247
+    ],
+    "end": [
+      60,
+      92
+    ],
+    "title": "Ví dụ 1 — Mục 2.2",
+    "file": "02_Phuong_trinh_cap_2/VD_2_2_01.pdf",
+    "original_pages": 3,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_2_2_02",
+    "kind": "VD",
+    "section": "2.2",
+    "number": 2,
+    "start": [
+      60,
+      92
+    ],
+    "end": [
+      61,
+      199
+    ],
+    "title": "Ví dụ 2 — Mục 2.2",
+    "file": "02_Phuong_trinh_cap_2/VD_2_2_02.pdf",
+    "original_pages": 2,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_2_2_03",
+    "kind": "VD",
+    "section": "2.2",
+    "number": 3,
+    "start": [
+      61,
+      199
+    ],
+    "end": [
+      61,
+      1189
+    ],
+    "title": "Ví dụ 3 — Mục 2.2",
+    "file": "02_Phuong_trinh_cap_2/VD_2_2_03.pdf",
+    "original_pages": 1,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_2_2_04",
+    "kind": "VD",
+    "section": "2.2",
+    "number": 4,
+    "start": [
+      61,
+      1189
+    ],
+    "end": [
+      63,
+      243
+    ],
+    "title": "Ví dụ 4 — Mục 2.2",
+    "file": "02_Phuong_trinh_cap_2/VD_2_2_04.pdf",
+    "original_pages": 3,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_2_2_05",
+    "kind": "VD",
+    "section": "2.2",
+    "number": 5,
+    "start": [
+      63,
+      243
+    ],
+    "end": [
+      64,
+      255
+    ],
+    "title": "Ví dụ 5 — Mục 2.2",
+    "file": "02_Phuong_trinh_cap_2/VD_2_2_05.pdf",
+    "original_pages": 2,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_2_2_06",
+    "kind": "VD",
+    "section": "2.2",
+    "number": 6,
+    "start": [
+      64,
+      255
+    ],
+    "end": [
+      68,
+      1132
+    ],
+    "title": "Ví dụ 6 — Mục 2.2",
+    "file": "02_Phuong_trinh_cap_2/VD_2_2_06.pdf",
+    "original_pages": 5,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_2_2_07",
+    "kind": "VD",
+    "section": "2.2",
+    "number": 7,
+    "start": [
+      68,
+      1132
+    ],
+    "end": [
+      72,
+      775
+    ],
+    "title": "Ví dụ 7 — Mục 2.2",
+    "file": "02_Phuong_trinh_cap_2/VD_2_2_07.pdf",
+    "original_pages": 5,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_2_2_08",
+    "kind": "VD",
+    "section": "2.2",
+    "number": 8,
+    "start": [
+      72,
+      775
+    ],
+    "end": [
+      76,
+      1187
+    ],
+    "title": "Ví dụ 8 — Mục 2.2",
+    "file": "02_Phuong_trinh_cap_2/VD_2_2_08.pdf",
+    "original_pages": 5,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_2_2_09",
+    "kind": "VD",
+    "section": "2.2",
+    "number": 9,
+    "start": [
+      76,
+      1187
+    ],
+    "end": [
+      85,
+      555
+    ],
+    "title": "Ví dụ 9 — Mục 2.2",
+    "file": "02_Phuong_trinh_cap_2/VD_2_2_09.pdf",
+    "original_pages": 10,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_2_3_01",
+    "kind": "BT",
+    "section": "2.3",
+    "number": 1,
+    "start": [
+      85,
+      606
+    ],
+    "end": [
+      86,
+      405
+    ],
+    "title": "Bài tập thực hành 1 — Mục 2.3",
+    "file": "02_Phuong_trinh_cap_2/BT_2_3_01.pdf",
+    "original_pages": 2,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_2_3_02",
+    "kind": "BT",
+    "section": "2.3",
+    "number": 2,
+    "start": [
+      86,
+      405
+    ],
+    "end": [
+      86,
+      870
+    ],
+    "title": "Bài tập thực hành 2 — Mục 2.3",
+    "file": "02_Phuong_trinh_cap_2/BT_2_3_02.pdf",
+    "original_pages": 1,
+    "solution_pages": 3,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_2_3_03",
+    "kind": "BT",
+    "section": "2.3",
+    "number": 3,
+    "start": [
+      86,
+      870
+    ],
+    "end": [
+      86,
+      1192
+    ],
+    "title": "Bài tập thực hành 3 — Mục 2.3",
+    "file": "02_Phuong_trinh_cap_2/BT_2_3_03.pdf",
+    "original_pages": 1,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_2_3_04",
+    "kind": "BT",
+    "section": "2.3",
+    "number": 4,
+    "start": [
+      86,
+      1192
+    ],
+    "end": [
+      87,
+      423
+    ],
+    "title": "Bài tập thực hành 4 — Mục 2.3",
+    "file": "02_Phuong_trinh_cap_2/BT_2_3_04.pdf",
+    "original_pages": 2,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_2_3_05",
+    "kind": "BT",
+    "section": "2.3",
+    "number": 5,
+    "start": [
+      87,
+      423
+    ],
+    "end": [
+      87,
+      747
+    ],
+    "title": "Bài tập thực hành 5 — Mục 2.3",
+    "file": "02_Phuong_trinh_cap_2/BT_2_3_05.pdf",
+    "original_pages": 1,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_2_3_06",
+    "kind": "BT",
+    "section": "2.3",
+    "number": 6,
+    "start": [
+      87,
+      747
+    ],
+    "end": [
+      87,
+      1019
+    ],
+    "title": "Bài tập thực hành 6 — Mục 2.3",
+    "file": "02_Phuong_trinh_cap_2/BT_2_3_06.pdf",
+    "original_pages": 1,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_2_3_07",
+    "kind": "BT",
+    "section": "2.3",
+    "number": 7,
+    "start": [
+      87,
+      1019
+    ],
+    "end": [
+      88,
+      96
+    ],
+    "title": "Bài tập thực hành 7 — Mục 2.3",
+    "file": "02_Phuong_trinh_cap_2/BT_2_3_07.pdf",
+    "original_pages": 1,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_2_3_08",
+    "kind": "BT",
+    "section": "2.3",
+    "number": 8,
+    "start": [
+      88,
+      96
+    ],
+    "end": [
+      88,
+      403
+    ],
+    "title": "Bài tập thực hành 8 — Mục 2.3",
+    "file": "02_Phuong_trinh_cap_2/BT_2_3_08.pdf",
+    "original_pages": 1,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_2_3_09",
+    "kind": "BT",
+    "section": "2.3",
+    "number": 9,
+    "start": [
+      88,
+      403
+    ],
+    "end": [
+      88,
+      727
+    ],
+    "title": "Bài tập thực hành 9 — Mục 2.3",
+    "file": "02_Phuong_trinh_cap_2/BT_2_3_09.pdf",
+    "original_pages": 1,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_2_3_10",
+    "kind": "BT",
+    "section": "2.3",
+    "number": 10,
+    "start": [
+      88,
+      727
+    ],
+    "end": [
+      88,
+      1018
+    ],
+    "title": "Bài tập thực hành 10 — Mục 2.3",
+    "file": "02_Phuong_trinh_cap_2/BT_2_3_10.pdf",
+    "original_pages": 1,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_2_3_11",
+    "kind": "BT",
+    "section": "2.3",
+    "number": 11,
+    "start": [
+      88,
+      1018
+    ],
+    "end": [
+      89,
+      249
+    ],
+    "title": "Bài tập thực hành 11 — Mục 2.3",
+    "file": "02_Phuong_trinh_cap_2/BT_2_3_11.pdf",
+    "original_pages": 2,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_2_3_12",
+    "kind": "BT",
+    "section": "2.3",
+    "number": 12,
+    "start": [
+      89,
+      249
+    ],
+    "end": [
+      89,
+      726
+    ],
+    "title": "Bài tập thực hành 12 — Mục 2.3",
+    "file": "02_Phuong_trinh_cap_2/BT_2_3_12.pdf",
+    "original_pages": 1,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_2_3_13",
+    "kind": "BT",
+    "section": "2.3",
+    "number": 13,
+    "start": [
+      89,
+      726
+    ],
+    "end": [
+      89,
+      1065
+    ],
+    "title": "Bài tập thực hành 13 — Mục 2.3",
+    "file": "02_Phuong_trinh_cap_2/BT_2_3_13.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_2_3_14",
+    "kind": "BT",
+    "section": "2.3",
+    "number": 14,
+    "start": [
+      89,
+      1065
+    ],
+    "end": [
+      90,
+      175
+    ],
+    "title": "Bài tập thực hành 14 — Mục 2.3",
+    "file": "02_Phuong_trinh_cap_2/BT_2_3_14.pdf",
+    "original_pages": 2,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_2_3_15",
+    "kind": "BT",
+    "section": "2.3",
+    "number": 15,
+    "start": [
+      90,
+      175
+    ],
+    "end": [
+      90,
+      513
+    ],
+    "title": "Bài tập thực hành 15 — Mục 2.3",
+    "file": "02_Phuong_trinh_cap_2/BT_2_3_15.pdf",
+    "original_pages": 1,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_2_3_16",
+    "kind": "BT",
+    "section": "2.3",
+    "number": 16,
+    "start": [
+      90,
+      513
+    ],
+    "end": [
+      90,
+      866
+    ],
+    "title": "Bài tập thực hành 16 — Mục 2.3",
+    "file": "02_Phuong_trinh_cap_2/BT_2_3_16.pdf",
+    "original_pages": 1,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_2_3_17",
+    "kind": "BT",
+    "section": "2.3",
+    "number": 17,
+    "start": [
+      90,
+      866
+    ],
+    "end": [
+      90,
+      1193
+    ],
+    "title": "Bài tập thực hành 17 — Mục 2.3",
+    "file": "02_Phuong_trinh_cap_2/BT_2_3_17.pdf",
+    "original_pages": 1,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_2_3_18",
+    "kind": "BT",
+    "section": "2.3",
+    "number": 18,
+    "start": [
+      90,
+      1193
+    ],
+    "end": [
+      91,
+      1268
+    ],
+    "title": "Bài tập thực hành 18 — Mục 2.3",
+    "file": "02_Phuong_trinh_cap_2/BT_2_3_18.pdf",
+    "original_pages": 2,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_3_1_2_01",
+    "kind": "VD",
+    "section": "3.1.2",
+    "number": 1,
+    "start": [
+      96,
+      475
+    ],
+    "end": [
+      97,
+      1146
+    ],
+    "title": "Ví dụ 1 — Mục 3.1.2",
+    "file": "03_Phuong_trinh_song/VD_3_1_2_01.pdf",
+    "original_pages": 2,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_3_1_2_02",
+    "kind": "VD",
+    "section": "3.1.2",
+    "number": 2,
+    "start": [
+      97,
+      1146
+    ],
+    "end": [
+      98,
+      674
+    ],
+    "title": "Ví dụ 2 — Mục 3.1.2",
+    "file": "03_Phuong_trinh_song/VD_3_1_2_02.pdf",
+    "original_pages": 2,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_3_1_2_03",
+    "kind": "VD",
+    "section": "3.1.2",
+    "number": 3,
+    "start": [
+      98,
+      674
+    ],
+    "end": [
+      99,
+      310
+    ],
+    "title": "Ví dụ 3 — Mục 3.1.2",
+    "file": "03_Phuong_trinh_song/VD_3_1_2_03.pdf",
+    "original_pages": 2,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_3_1_2_04",
+    "kind": "VD",
+    "section": "3.1.2",
+    "number": 4,
+    "start": [
+      99,
+      310
+    ],
+    "end": [
+      101,
+      854
+    ],
+    "title": "Ví dụ 4 — Mục 3.1.2",
+    "file": "03_Phuong_trinh_song/VD_3_1_2_04.pdf",
+    "original_pages": 3,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_3_1_2_05",
+    "kind": "VD",
+    "section": "3.1.2",
+    "number": 5,
+    "start": [
+      101,
+      854
+    ],
+    "end": [
+      103,
+      402
+    ],
+    "title": "Ví dụ 5 — Mục 3.1.2",
+    "file": "03_Phuong_trinh_song/VD_3_1_2_05.pdf",
+    "original_pages": 3,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_3_1_3_01",
+    "kind": "BT",
+    "section": "3.1.3",
+    "number": 1,
+    "start": [
+      103,
+      453
+    ],
+    "end": [
+      103,
+      877
+    ],
+    "title": "Bài tập thực hành 1 — Mục 3.1.3",
+    "file": "03_Phuong_trinh_song/BT_3_1_3_01.pdf",
+    "original_pages": 1,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_3_1_3_02",
+    "kind": "BT",
+    "section": "3.1.3",
+    "number": 2,
+    "start": [
+      103,
+      877
+    ],
+    "end": [
+      104,
+      92
+    ],
+    "title": "Bài tập thực hành 2 — Mục 3.1.3",
+    "file": "03_Phuong_trinh_song/BT_3_1_3_02.pdf",
+    "original_pages": 1,
+    "solution_pages": 3,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_3_1_3_03",
+    "kind": "BT",
+    "section": "3.1.3",
+    "number": 3,
+    "start": [
+      104,
+      92
+    ],
+    "end": [
+      104,
+      280
+    ],
+    "title": "Bài tập thực hành 3 — Mục 3.1.3",
+    "file": "03_Phuong_trinh_song/BT_3_1_3_03.pdf",
+    "original_pages": 1,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_3_1_3_04",
+    "kind": "BT",
+    "section": "3.1.3",
+    "number": 4,
+    "start": [
+      104,
+      280
+    ],
+    "end": [
+      104,
+      759
+    ],
+    "title": "Bài tập thực hành 4 — Mục 3.1.3",
+    "file": "03_Phuong_trinh_song/BT_3_1_3_04.pdf",
+    "original_pages": 1,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_3_1_3_05",
+    "kind": "BT",
+    "section": "3.1.3",
+    "number": 5,
+    "start": [
+      104,
+      759
+    ],
+    "end": [
+      105,
+      92
+    ],
+    "title": "Bài tập thực hành 5 — Mục 3.1.3",
+    "file": "03_Phuong_trinh_song/BT_3_1_3_05.pdf",
+    "original_pages": 1,
+    "solution_pages": 3,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_3_1_3_06",
+    "kind": "BT",
+    "section": "3.1.3",
+    "number": 6,
+    "start": [
+      105,
+      92
+    ],
+    "end": [
+      105,
+      145
+    ],
+    "title": "Bài tập thực hành 6 — Mục 3.1.3",
+    "file": "03_Phuong_trinh_song/BT_3_1_3_06.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_3_1_3_07",
+    "kind": "BT",
+    "section": "3.1.3",
+    "number": 7,
+    "start": [
+      105,
+      145
+    ],
+    "end": [
+      105,
+      477
+    ],
+    "title": "Bài tập thực hành 7 — Mục 3.1.3",
+    "file": "03_Phuong_trinh_song/BT_3_1_3_07.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_3_1_3_08",
+    "kind": "BT",
+    "section": "3.1.3",
+    "number": 8,
+    "start": [
+      105,
+      477
+    ],
+    "end": [
+      105,
+      939
+    ],
+    "title": "Bài tập thực hành 8 — Mục 3.1.3",
+    "file": "03_Phuong_trinh_song/BT_3_1_3_08.pdf",
+    "original_pages": 1,
+    "solution_pages": 3,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_3_1_3_09",
+    "kind": "BT",
+    "section": "3.1.3",
+    "number": 9,
+    "start": [
+      105,
+      939
+    ],
+    "end": [
+      106,
+      92
+    ],
+    "title": "Bài tập thực hành 9 — Mục 3.1.3",
+    "file": "03_Phuong_trinh_song/BT_3_1_3_09.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_3_1_3_10",
+    "kind": "BT",
+    "section": "3.1.3",
+    "number": 10,
+    "start": [
+      106,
+      92
+    ],
+    "end": [
+      106,
+      609
+    ],
+    "title": "Bài tập thực hành 10 — Mục 3.1.3",
+    "file": "03_Phuong_trinh_song/BT_3_1_3_10.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_3_1_3_11",
+    "kind": "BT",
+    "section": "3.1.3",
+    "number": 11,
+    "start": [
+      106,
+      609
+    ],
+    "end": [
+      106,
+      1120
+    ],
+    "title": "Bài tập thực hành 11 — Mục 3.1.3",
+    "file": "03_Phuong_trinh_song/BT_3_1_3_11.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_3_1_3_12",
+    "kind": "BT",
+    "section": "3.1.3",
+    "number": 12,
+    "start": [
+      106,
+      1120
+    ],
+    "end": [
+      107,
+      794
+    ],
+    "title": "Bài tập thực hành 12 — Mục 3.1.3",
+    "file": "03_Phuong_trinh_song/BT_3_1_3_12.pdf",
+    "original_pages": 2,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_3_2_2_01",
+    "kind": "VD",
+    "section": "3.2.2",
+    "number": 1,
+    "start": [
+      108,
+      645
+    ],
+    "end": [
+      109,
+      909
+    ],
+    "title": "Ví dụ 1 — Mục 3.2.2",
+    "file": "03_Phuong_trinh_song/VD_3_2_2_01.pdf",
+    "original_pages": 2,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_3_2_2_02",
+    "kind": "VD",
+    "section": "3.2.2",
+    "number": 2,
+    "start": [
+      109,
+      909
+    ],
+    "end": [
+      111,
+      572
+    ],
+    "title": "Ví dụ 2 — Mục 3.2.2",
+    "file": "03_Phuong_trinh_song/VD_3_2_2_02.pdf",
+    "original_pages": 3,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_3_2_2_03",
+    "kind": "VD",
+    "section": "3.2.2",
+    "number": 3,
+    "start": [
+      111,
+      572
+    ],
+    "end": [
+      114,
+      92
+    ],
+    "title": "Ví dụ 3 — Mục 3.2.2",
+    "file": "03_Phuong_trinh_song/VD_3_2_2_03.pdf",
+    "original_pages": 3,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_3_2_2_04",
+    "kind": "VD",
+    "section": "3.2.2",
+    "number": 4,
+    "start": [
+      114,
+      92
+    ],
+    "end": [
+      118,
+      93
+    ],
+    "title": "Ví dụ 4 — Mục 3.2.2",
+    "file": "03_Phuong_trinh_song/VD_3_2_2_04.pdf",
+    "original_pages": 4,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_3_2_2_05",
+    "kind": "VD",
+    "section": "3.2.2",
+    "number": 5,
+    "start": [
+      118,
+      93
+    ],
+    "end": [
+      121,
+      92
+    ],
+    "title": "Ví dụ 5 — Mục 3.2.2",
+    "file": "03_Phuong_trinh_song/VD_3_2_2_05.pdf",
+    "original_pages": 3,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_3_2_2_06",
+    "kind": "VD",
+    "section": "3.2.2",
+    "number": 6,
+    "start": [
+      121,
+      92
+    ],
+    "end": [
+      127,
+      1130
+    ],
+    "title": "Ví dụ 6 — Mục 3.2.2",
+    "file": "03_Phuong_trinh_song/VD_3_2_2_06.pdf",
+    "original_pages": 7,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_3_2_3_01",
+    "kind": "BT",
+    "section": "3.2.3",
+    "number": 1,
+    "start": [
+      127,
+      1183
+    ],
+    "end": [
+      128,
+      361
+    ],
+    "title": "Bài tập thực hành 1 — Mục 3.2.3",
+    "file": "03_Phuong_trinh_song/BT_3_2_3_01.pdf",
+    "original_pages": 2,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_3_2_3_02",
+    "kind": "BT",
+    "section": "3.2.3",
+    "number": 2,
+    "start": [
+      128,
+      361
+    ],
+    "end": [
+      128,
+      800
+    ],
+    "title": "Bài tập thực hành 2 — Mục 3.2.3",
+    "file": "03_Phuong_trinh_song/BT_3_2_3_02.pdf",
+    "original_pages": 1,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_3_2_3_03",
+    "kind": "BT",
+    "section": "3.2.3",
+    "number": 3,
+    "start": [
+      128,
+      800
+    ],
+    "end": [
+      128,
+      1137
+    ],
+    "title": "Bài tập thực hành 3 — Mục 3.2.3",
+    "file": "03_Phuong_trinh_song/BT_3_2_3_03.pdf",
+    "original_pages": 1,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_3_2_3_04",
+    "kind": "BT",
+    "section": "3.2.3",
+    "number": 4,
+    "start": [
+      128,
+      1137
+    ],
+    "end": [
+      129,
+      218
+    ],
+    "title": "Bài tập thực hành 4 — Mục 3.2.3",
+    "file": "03_Phuong_trinh_song/BT_3_2_3_04.pdf",
+    "original_pages": 2,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_3_2_3_05",
+    "kind": "BT",
+    "section": "3.2.3",
+    "number": 5,
+    "start": [
+      129,
+      218
+    ],
+    "end": [
+      129,
+      586
+    ],
+    "title": "Bài tập thực hành 5 — Mục 3.2.3",
+    "file": "03_Phuong_trinh_song/BT_3_2_3_05.pdf",
+    "original_pages": 1,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_3_2_3_06",
+    "kind": "BT",
+    "section": "3.2.3",
+    "number": 6,
+    "start": [
+      129,
+      586
+    ],
+    "end": [
+      129,
+      981
+    ],
+    "title": "Bài tập thực hành 6 — Mục 3.2.3",
+    "file": "03_Phuong_trinh_song/BT_3_2_3_06.pdf",
+    "original_pages": 1,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_3_2_3_07",
+    "kind": "BT",
+    "section": "3.2.3",
+    "number": 7,
+    "start": [
+      129,
+      981
+    ],
+    "end": [
+      130,
+      297
+    ],
+    "title": "Bài tập thực hành 7 — Mục 3.2.3",
+    "file": "03_Phuong_trinh_song/BT_3_2_3_07.pdf",
+    "original_pages": 2,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_3_2_3_08",
+    "kind": "BT",
+    "section": "3.2.3",
+    "number": 8,
+    "start": [
+      130,
+      297
+    ],
+    "end": [
+      130,
+      750
+    ],
+    "title": "Bài tập thực hành 8 — Mục 3.2.3",
+    "file": "03_Phuong_trinh_song/BT_3_2_3_08.pdf",
+    "original_pages": 1,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_3_2_3_09",
+    "kind": "BT",
+    "section": "3.2.3",
+    "number": 9,
+    "start": [
+      130,
+      750
+    ],
+    "end": [
+      131,
+      92
+    ],
+    "title": "Bài tập thực hành 9 — Mục 3.2.3",
+    "file": "03_Phuong_trinh_song/BT_3_2_3_09.pdf",
+    "original_pages": 1,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_3_2_3_10",
+    "kind": "BT",
+    "section": "3.2.3",
+    "number": 10,
+    "start": [
+      131,
+      92
+    ],
+    "end": [
+      131,
+      539
+    ],
+    "title": "Bài tập thực hành 10 — Mục 3.2.3",
+    "file": "03_Phuong_trinh_song/BT_3_2_3_10.pdf",
+    "original_pages": 1,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_3_2_3_11",
+    "kind": "BT",
+    "section": "3.2.3",
+    "number": 11,
+    "start": [
+      131,
+      539
+    ],
+    "end": [
+      131,
+      989
+    ],
+    "title": "Bài tập thực hành 11 — Mục 3.2.3",
+    "file": "03_Phuong_trinh_song/BT_3_2_3_11.pdf",
+    "original_pages": 1,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_3_2_3_12",
+    "kind": "BT",
+    "section": "3.2.3",
+    "number": 12,
+    "start": [
+      131,
+      989
+    ],
+    "end": [
+      132,
+      181
+    ],
+    "title": "Bài tập thực hành 12 — Mục 3.2.3",
+    "file": "03_Phuong_trinh_song/BT_3_2_3_12.pdf",
+    "original_pages": 2,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_3_2_3_13",
+    "kind": "BT",
+    "section": "3.2.3",
+    "number": 13,
+    "start": [
+      132,
+      181
+    ],
+    "end": [
+      132,
+      615
+    ],
+    "title": "Bài tập thực hành 13 — Mục 3.2.3",
+    "file": "03_Phuong_trinh_song/BT_3_2_3_13.pdf",
+    "original_pages": 1,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_3_2_3_14",
+    "kind": "BT",
+    "section": "3.2.3",
+    "number": 14,
+    "start": [
+      132,
+      615
+    ],
+    "end": [
+      132,
+      989
+    ],
+    "title": "Bài tập thực hành 14 — Mục 3.2.3",
+    "file": "03_Phuong_trinh_song/BT_3_2_3_14.pdf",
+    "original_pages": 1,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_3_2_3_15",
+    "kind": "BT",
+    "section": "3.2.3",
+    "number": 15,
+    "start": [
+      132,
+      989
+    ],
+    "end": [
+      133,
+      139
+    ],
+    "title": "Bài tập thực hành 15 — Mục 3.2.3",
+    "file": "03_Phuong_trinh_song/BT_3_2_3_15.pdf",
+    "original_pages": 2,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_3_2_3_16",
+    "kind": "BT",
+    "section": "3.2.3",
+    "number": 16,
+    "start": [
+      133,
+      139
+    ],
+    "end": [
+      133,
+      505
+    ],
+    "title": "Bài tập thực hành 16 — Mục 3.2.3",
+    "file": "03_Phuong_trinh_song/BT_3_2_3_16.pdf",
+    "original_pages": 1,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_3_2_3_17",
+    "kind": "BT",
+    "section": "3.2.3",
+    "number": 17,
+    "start": [
+      133,
+      505
+    ],
+    "end": [
+      133,
+      800
+    ],
+    "title": "Bài tập thực hành 17 — Mục 3.2.3",
+    "file": "03_Phuong_trinh_song/BT_3_2_3_17.pdf",
+    "original_pages": 1,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_3_2_3_18",
+    "kind": "BT",
+    "section": "3.2.3",
+    "number": 18,
+    "start": [
+      133,
+      800
+    ],
+    "end": [
+      133,
+      1119
+    ],
+    "title": "Bài tập thực hành 18 — Mục 3.2.3",
+    "file": "03_Phuong_trinh_song/BT_3_2_3_18.pdf",
+    "original_pages": 1,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_3_2_3_19",
+    "kind": "BT",
+    "section": "3.2.3",
+    "number": 19,
+    "start": [
+      133,
+      1119
+    ],
+    "end": [
+      134,
+      245
+    ],
+    "title": "Bài tập thực hành 19 — Mục 3.2.3",
+    "file": "03_Phuong_trinh_song/BT_3_2_3_19.pdf",
+    "original_pages": 2,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_3_2_3_20",
+    "kind": "BT",
+    "section": "3.2.3",
+    "number": 20,
+    "start": [
+      134,
+      245
+    ],
+    "end": [
+      134,
+      628
+    ],
+    "title": "Bài tập thực hành 20 — Mục 3.2.3",
+    "file": "03_Phuong_trinh_song/BT_3_2_3_20.pdf",
+    "original_pages": 1,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_3_2_3_21",
+    "kind": "BT",
+    "section": "3.2.3",
+    "number": 21,
+    "start": [
+      134,
+      628
+    ],
+    "end": [
+      134,
+      1011
+    ],
+    "title": "Bài tập thực hành 21 — Mục 3.2.3",
+    "file": "03_Phuong_trinh_song/BT_3_2_3_21.pdf",
+    "original_pages": 1,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_3_2_3_22",
+    "kind": "BT",
+    "section": "3.2.3",
+    "number": 22,
+    "start": [
+      134,
+      1011
+    ],
+    "end": [
+      135,
+      480
+    ],
+    "title": "Bài tập thực hành 22 — Mục 3.2.3",
+    "file": "03_Phuong_trinh_song/BT_3_2_3_22.pdf",
+    "original_pages": 2,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_3_2_3_LT_01",
+    "kind": "BT",
+    "section": "3.2.3.LT",
+    "number": 1,
+    "start": [
+      135,
+      493
+    ],
+    "end": [
+      135,
+      826
+    ],
+    "title": "Bài tập thực hành 1 — Mục 3.2.3.LT",
+    "file": "03_Phuong_trinh_song/BT_3_2_3_LT_01.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_3_2_3_LT_02",
+    "kind": "BT",
+    "section": "3.2.3.LT",
+    "number": 2,
+    "start": [
+      135,
+      826
+    ],
+    "end": [
+      135,
+      1150
+    ],
+    "title": "Bài tập thực hành 2 — Mục 3.2.3.LT",
+    "file": "03_Phuong_trinh_song/BT_3_2_3_LT_02.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_3_2_3_LT_03",
+    "kind": "BT",
+    "section": "3.2.3.LT",
+    "number": 3,
+    "start": [
+      135,
+      1150
+    ],
+    "end": [
+      136,
+      230
+    ],
+    "title": "Bài tập thực hành 3 — Mục 3.2.3.LT",
+    "file": "03_Phuong_trinh_song/BT_3_2_3_LT_03.pdf",
+    "original_pages": 2,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_3_3_2_01",
+    "kind": "VD",
+    "section": "3.3.2",
+    "number": 1,
+    "start": [
+      138,
+      560
+    ],
+    "end": [
+      140,
+      511
+    ],
+    "title": "Ví dụ 1 — Mục 3.3.2",
+    "file": "03_Phuong_trinh_song/VD_3_3_2_01.pdf",
+    "original_pages": 3,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_3_3_2_02",
+    "kind": "VD",
+    "section": "3.3.2",
+    "number": 2,
+    "start": [
+      140,
+      511
+    ],
+    "end": [
+      142,
+      616
+    ],
+    "title": "Ví dụ 2 — Mục 3.3.2",
+    "file": "03_Phuong_trinh_song/VD_3_3_2_02.pdf",
+    "original_pages": 3,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_3_3_2_03",
+    "kind": "VD",
+    "section": "3.3.2",
+    "number": 3,
+    "start": [
+      142,
+      616
+    ],
+    "end": [
+      145,
+      501
+    ],
+    "title": "Ví dụ 3 — Mục 3.3.2",
+    "file": "03_Phuong_trinh_song/VD_3_3_2_03.pdf",
+    "original_pages": 4,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_3_3_3_01",
+    "kind": "BT",
+    "section": "3.3.3",
+    "number": 1,
+    "start": [
+      145,
+      555
+    ],
+    "end": [
+      145,
+      1042
+    ],
+    "title": "Bài tập thực hành 1 — Mục 3.3.3",
+    "file": "03_Phuong_trinh_song/BT_3_3_3_01.pdf",
+    "original_pages": 1,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_3_3_3_02",
+    "kind": "BT",
+    "section": "3.3.3",
+    "number": 2,
+    "start": [
+      145,
+      1042
+    ],
+    "end": [
+      146,
+      92
+    ],
+    "title": "Bài tập thực hành 2 — Mục 3.3.3",
+    "file": "03_Phuong_trinh_song/BT_3_3_3_02.pdf",
+    "original_pages": 1,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_3_3_3_03",
+    "kind": "BT",
+    "section": "3.3.3",
+    "number": 3,
+    "start": [
+      146,
+      92
+    ],
+    "end": [
+      146,
+      314
+    ],
+    "title": "Bài tập thực hành 3 — Mục 3.3.3",
+    "file": "03_Phuong_trinh_song/BT_3_3_3_03.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_3_3_3_04",
+    "kind": "BT",
+    "section": "3.3.3",
+    "number": 4,
+    "start": [
+      146,
+      314
+    ],
+    "end": [
+      146,
+      607
+    ],
+    "title": "Bài tập thực hành 4 — Mục 3.3.3",
+    "file": "03_Phuong_trinh_song/BT_3_3_3_04.pdf",
+    "original_pages": 1,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_3_3_3_05",
+    "kind": "BT",
+    "section": "3.3.3",
+    "number": 5,
+    "start": [
+      146,
+      607
+    ],
+    "end": [
+      146,
+      1268
+    ],
+    "title": "Bài tập thực hành 5 — Mục 3.3.3",
+    "file": "03_Phuong_trinh_song/BT_3_3_3_05.pdf",
+    "original_pages": 1,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_3_4_2_01",
+    "kind": "VD",
+    "section": "3.4.2",
+    "number": 1,
+    "start": [
+      148,
+      243
+    ],
+    "end": [
+      151,
+      93
+    ],
+    "title": "Ví dụ 1 — Mục 3.4.2",
+    "file": "03_Phuong_trinh_song/VD_3_4_2_01.pdf",
+    "original_pages": 3,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_3_4_2_02",
+    "kind": "VD",
+    "section": "3.4.2",
+    "number": 2,
+    "start": [
+      151,
+      93
+    ],
+    "end": [
+      153,
+      88
+    ],
+    "title": "Ví dụ 2 — Mục 3.4.2",
+    "file": "03_Phuong_trinh_song/VD_3_4_2_02.pdf",
+    "original_pages": 2,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_3_4_3_01",
+    "kind": "BT",
+    "section": "3.4.3",
+    "number": 1,
+    "start": [
+      153,
+      139
+    ],
+    "end": [
+      153,
+      384
+    ],
+    "title": "Bài tập thực hành 1 — Mục 3.4.3",
+    "file": "03_Phuong_trinh_song/BT_3_4_3_01.pdf",
+    "original_pages": 1,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_3_4_3_02",
+    "kind": "BT",
+    "section": "3.4.3",
+    "number": 2,
+    "start": [
+      153,
+      384
+    ],
+    "end": [
+      153,
+      592
+    ],
+    "title": "Bài tập thực hành 2 — Mục 3.4.3",
+    "file": "03_Phuong_trinh_song/BT_3_4_3_02.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_3_4_3_03",
+    "kind": "BT",
+    "section": "3.4.3",
+    "number": 3,
+    "start": [
+      153,
+      592
+    ],
+    "end": [
+      153,
+      815
+    ],
+    "title": "Bài tập thực hành 3 — Mục 3.4.3",
+    "file": "03_Phuong_trinh_song/BT_3_4_3_03.pdf",
+    "original_pages": 1,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_3_4_3_04",
+    "kind": "BT",
+    "section": "3.4.3",
+    "number": 4,
+    "start": [
+      153,
+      815
+    ],
+    "end": [
+      153,
+      1078
+    ],
+    "title": "Bài tập thực hành 4 — Mục 3.4.3",
+    "file": "03_Phuong_trinh_song/BT_3_4_3_04.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_3_5_2_01",
+    "kind": "VD",
+    "section": "3.5.2",
+    "number": 1,
+    "start": [
+      155,
+      141
+    ],
+    "end": [
+      156,
+      483
+    ],
+    "title": "Ví dụ 1 — Mục 3.5.2",
+    "file": "03_Phuong_trinh_song/VD_3_5_2_01.pdf",
+    "original_pages": 2,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_3_5_2_02",
+    "kind": "VD",
+    "section": "3.5.2",
+    "number": 2,
+    "start": [
+      156,
+      483
+    ],
+    "end": [
+      159,
+      1268
+    ],
+    "title": "Ví dụ 2 — Mục 3.5.2",
+    "file": "03_Phuong_trinh_song/VD_3_5_2_02.pdf",
+    "original_pages": 4,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_3_5_3_01",
+    "kind": "BT",
+    "section": "3.5.3",
+    "number": 1,
+    "start": [
+      160,
+      138
+    ],
+    "end": [
+      160,
+      1037
+    ],
+    "title": "Bài tập thực hành 1 — Mục 3.5.3",
+    "file": "03_Phuong_trinh_song/BT_3_5_3_01.pdf",
+    "original_pages": 1,
+    "solution_pages": 3,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_3_5_3_02",
+    "kind": "BT",
+    "section": "3.5.3",
+    "number": 2,
+    "start": [
+      160,
+      1037
+    ],
+    "end": [
+      161,
+      770
+    ],
+    "title": "Bài tập thực hành 2 — Mục 3.5.3",
+    "file": "03_Phuong_trinh_song/BT_3_5_3_02.pdf",
+    "original_pages": 2,
+    "solution_pages": 3,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_3_5_3_03",
+    "kind": "BT",
+    "section": "3.5.3",
+    "number": 3,
+    "start": [
+      161,
+      770
+    ],
+    "end": [
+      161,
+      1044
+    ],
+    "title": "Bài tập thực hành 3 — Mục 3.5.3",
+    "file": "03_Phuong_trinh_song/BT_3_5_3_03.pdf",
+    "original_pages": 1,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_3_5_3_04",
+    "kind": "BT",
+    "section": "3.5.3",
+    "number": 4,
+    "start": [
+      161,
+      1044
+    ],
+    "end": [
+      162,
+      94
+    ],
+    "title": "Bài tập thực hành 4 — Mục 3.5.3",
+    "file": "03_Phuong_trinh_song/BT_3_5_3_04.pdf",
+    "original_pages": 1,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_3_5_3_05",
+    "kind": "BT",
+    "section": "3.5.3",
+    "number": 5,
+    "start": [
+      162,
+      94
+    ],
+    "end": [
+      162,
+      639
+    ],
+    "title": "Bài tập thực hành 5 — Mục 3.5.3",
+    "file": "03_Phuong_trinh_song/BT_3_5_3_05.pdf",
+    "original_pages": 1,
+    "solution_pages": 3,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_3_5_3_06",
+    "kind": "BT",
+    "section": "3.5.3",
+    "number": 6,
+    "start": [
+      162,
+      639
+    ],
+    "end": [
+      162,
+      1109
+    ],
+    "title": "Bài tập thực hành 6 — Mục 3.5.3",
+    "file": "03_Phuong_trinh_song/BT_3_5_3_06.pdf",
+    "original_pages": 1,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_3_5_3_07",
+    "kind": "BT",
+    "section": "3.5.3",
+    "number": 7,
+    "start": [
+      162,
+      1109
+    ],
+    "end": [
+      163,
+      346
+    ],
+    "title": "Bài tập thực hành 7 — Mục 3.5.3",
+    "file": "03_Phuong_trinh_song/BT_3_5_3_07.pdf",
+    "original_pages": 2,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_3_6_2_01",
+    "kind": "VD",
+    "section": "3.6.2",
+    "number": 1,
+    "start": [
+      167,
+      481
+    ],
+    "end": [
+      169,
+      410
+    ],
+    "title": "Ví dụ 1 — Mục 3.6.2",
+    "file": "03_Phuong_trinh_song/VD_3_6_2_01.pdf",
+    "original_pages": 3,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_3_6_2_02",
+    "kind": "VD",
+    "section": "3.6.2",
+    "number": 2,
+    "start": [
+      169,
+      410
+    ],
+    "end": [
+      172,
+      813
+    ],
+    "title": "Ví dụ 2 — Mục 3.6.2",
+    "file": "03_Phuong_trinh_song/VD_3_6_2_02.pdf",
+    "original_pages": 4,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_3_6_2_03",
+    "kind": "VD",
+    "section": "3.6.2",
+    "number": 3,
+    "start": [
+      172,
+      813
+    ],
+    "end": [
+      173,
+      555
+    ],
+    "title": "Ví dụ 3 — Mục 3.6.2",
+    "file": "03_Phuong_trinh_song/VD_3_6_2_03.pdf",
+    "original_pages": 2,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_3_6_2_04",
+    "kind": "VD",
+    "section": "3.6.2",
+    "number": 4,
+    "start": [
+      173,
+      555
+    ],
+    "end": [
+      174,
+      1019
+    ],
+    "title": "Ví dụ 4 — Mục 3.6.2",
+    "file": "03_Phuong_trinh_song/VD_3_6_2_04.pdf",
+    "original_pages": 2,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_3_6_2_05",
+    "kind": "VD",
+    "section": "3.6.2",
+    "number": 5,
+    "start": [
+      174,
+      1019
+    ],
+    "end": [
+      179,
+      1268
+    ],
+    "title": "Ví dụ 5 — Mục 3.6.2",
+    "file": "03_Phuong_trinh_song/VD_3_6_2_05.pdf",
+    "original_pages": 6,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_3_6_3_01",
+    "kind": "BT",
+    "section": "3.6.3",
+    "number": 1,
+    "start": [
+      180,
+      138
+    ],
+    "end": [
+      181,
+      651
+    ],
+    "title": "Bài tập thực hành 1 — Mục 3.6.3",
+    "file": "03_Phuong_trinh_song/BT_3_6_3_01.pdf",
+    "original_pages": 2,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_3_6_3_02",
+    "kind": "BT",
+    "section": "3.6.3",
+    "number": 2,
+    "start": [
+      181,
+      651
+    ],
+    "end": [
+      181,
+      1102
+    ],
+    "title": "Bài tập thực hành 2 — Mục 3.6.3",
+    "file": "03_Phuong_trinh_song/BT_3_6_3_02.pdf",
+    "original_pages": 1,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_3_6_3_03",
+    "kind": "BT",
+    "section": "3.6.3",
+    "number": 3,
+    "start": [
+      181,
+      1102
+    ],
+    "end": [
+      182,
+      837
+    ],
+    "title": "Bài tập thực hành 3 — Mục 3.6.3",
+    "file": "03_Phuong_trinh_song/BT_3_6_3_03.pdf",
+    "original_pages": 2,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_3_6_3_04",
+    "kind": "BT",
+    "section": "3.6.3",
+    "number": 4,
+    "start": [
+      182,
+      837
+    ],
+    "end": [
+      183,
+      93
+    ],
+    "title": "Bài tập thực hành 4 — Mục 3.6.3",
+    "file": "03_Phuong_trinh_song/BT_3_6_3_04.pdf",
+    "original_pages": 1,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_3_6_3_05",
+    "kind": "BT",
+    "section": "3.6.3",
+    "number": 5,
+    "start": [
+      183,
+      93
+    ],
+    "end": [
+      183,
+      244
+    ],
+    "title": "Bài tập thực hành 5 — Mục 3.6.3",
+    "file": "03_Phuong_trinh_song/BT_3_6_3_05.pdf",
+    "original_pages": 1,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_3_6_3_06",
+    "kind": "BT",
+    "section": "3.6.3",
+    "number": 6,
+    "start": [
+      183,
+      244
+    ],
+    "end": [
+      183,
+      538
+    ],
+    "title": "Bài tập thực hành 6 — Mục 3.6.3",
+    "file": "03_Phuong_trinh_song/BT_3_6_3_06.pdf",
+    "original_pages": 1,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_3_6_3_07",
+    "kind": "BT",
+    "section": "3.6.3",
+    "number": 7,
+    "start": [
+      183,
+      538
+    ],
+    "end": [
+      183,
+      1037
+    ],
+    "title": "Bài tập thực hành 7 — Mục 3.6.3",
+    "file": "03_Phuong_trinh_song/BT_3_6_3_07.pdf",
+    "original_pages": 1,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_3_6_3_08",
+    "kind": "BT",
+    "section": "3.6.3",
+    "number": 8,
+    "start": [
+      183,
+      1037
+    ],
+    "end": [
+      183,
+      1188
+    ],
+    "title": "Bài tập thực hành 8 — Mục 3.6.3",
+    "file": "03_Phuong_trinh_song/BT_3_6_3_08.pdf",
+    "original_pages": 1,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_3_6_3_09",
+    "kind": "BT",
+    "section": "3.6.3",
+    "number": 9,
+    "start": [
+      183,
+      1188
+    ],
+    "end": [
+      185,
+      1268
+    ],
+    "title": "Bài tập thực hành 9 — Mục 3.6.3",
+    "file": "03_Phuong_trinh_song/BT_3_6_3_09.pdf",
+    "original_pages": 3,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_4_1_2_01",
+    "kind": "VD",
+    "section": "4.1.2",
+    "number": 1,
+    "start": [
+      188,
+      381
+    ],
+    "end": [
+      189,
+      911
+    ],
+    "title": "Ví dụ 1 — Mục 4.1.2",
+    "file": "04_Phuong_trinh_nhiet/VD_4_1_2_01.pdf",
+    "original_pages": 2,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_4_1_2_02",
+    "kind": "VD",
+    "section": "4.1.2",
+    "number": 2,
+    "start": [
+      189,
+      911
+    ],
+    "end": [
+      191,
+      738
+    ],
+    "title": "Ví dụ 2 — Mục 4.1.2",
+    "file": "04_Phuong_trinh_nhiet/VD_4_1_2_02.pdf",
+    "original_pages": 3,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_4_1_2_03",
+    "kind": "VD",
+    "section": "4.1.2",
+    "number": 3,
+    "start": [
+      191,
+      738
+    ],
+    "end": [
+      194,
+      492
+    ],
+    "title": "Ví dụ 3 — Mục 4.1.2",
+    "file": "04_Phuong_trinh_nhiet/VD_4_1_2_03.pdf",
+    "original_pages": 4,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_4_1_3_01",
+    "kind": "BT",
+    "section": "4.1.3",
+    "number": 1,
+    "start": [
+      194,
+      543
+    ],
+    "end": [
+      194,
+      757
+    ],
+    "title": "Bài tập thực hành 1 — Mục 4.1.3",
+    "file": "04_Phuong_trinh_nhiet/BT_4_1_3_01.pdf",
+    "original_pages": 1,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_4_1_3_02",
+    "kind": "BT",
+    "section": "4.1.3",
+    "number": 2,
+    "start": [
+      194,
+      757
+    ],
+    "end": [
+      194,
+      1081
+    ],
+    "title": "Bài tập thực hành 2 — Mục 4.1.3",
+    "file": "04_Phuong_trinh_nhiet/BT_4_1_3_02.pdf",
+    "original_pages": 1,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_4_1_3_03",
+    "kind": "BT",
+    "section": "4.1.3",
+    "number": 3,
+    "start": [
+      194,
+      1081
+    ],
+    "end": [
+      195,
+      93
+    ],
+    "title": "Bài tập thực hành 3 — Mục 4.1.3",
+    "file": "04_Phuong_trinh_nhiet/BT_4_1_3_03.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_4_1_3_04",
+    "kind": "BT",
+    "section": "4.1.3",
+    "number": 4,
+    "start": [
+      195,
+      93
+    ],
+    "end": [
+      195,
+      286
+    ],
+    "title": "Bài tập thực hành 4 — Mục 4.1.3",
+    "file": "04_Phuong_trinh_nhiet/BT_4_1_3_04.pdf",
+    "original_pages": 1,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_4_1_3_05",
+    "kind": "BT",
+    "section": "4.1.3",
+    "number": 5,
+    "start": [
+      195,
+      286
+    ],
+    "end": [
+      195,
+      1268
+    ],
+    "title": "Bài tập thực hành 5 — Mục 4.1.3",
+    "file": "04_Phuong_trinh_nhiet/BT_4_1_3_05.pdf",
+    "original_pages": 1,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_4_2_2_01",
+    "kind": "VD",
+    "section": "4.2.2",
+    "number": 1,
+    "start": [
+      196,
+      885
+    ],
+    "end": [
+      197,
+      93
+    ],
+    "title": "Ví dụ 1 — Mục 4.2.2",
+    "file": "04_Phuong_trinh_nhiet/VD_4_2_2_01.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_4_2_2_02",
+    "kind": "VD",
+    "section": "4.2.2",
+    "number": 2,
+    "start": [
+      197,
+      93
+    ],
+    "end": [
+      197,
+      1007
+    ],
+    "title": "Ví dụ 2 — Mục 4.2.2",
+    "file": "04_Phuong_trinh_nhiet/VD_4_2_2_02.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_4_2_2_03",
+    "kind": "VD",
+    "section": "4.2.2",
+    "number": 3,
+    "start": [
+      197,
+      1007
+    ],
+    "end": [
+      197,
+      1157
+    ],
+    "title": "Ví dụ 3 — Mục 4.2.2",
+    "file": "04_Phuong_trinh_nhiet/VD_4_2_2_03.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_4_2_3_01",
+    "kind": "BT",
+    "section": "4.2.3",
+    "number": 1,
+    "start": [
+      197,
+      1207
+    ],
+    "end": [
+      198,
+      345
+    ],
+    "title": "Bài tập thực hành 1 — Mục 4.2.3",
+    "file": "04_Phuong_trinh_nhiet/BT_4_2_3_01.pdf",
+    "original_pages": 2,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_4_2_3_02",
+    "kind": "BT",
+    "section": "4.2.3",
+    "number": 2,
+    "start": [
+      198,
+      345
+    ],
+    "end": [
+      198,
+      617
+    ],
+    "title": "Bài tập thực hành 2 — Mục 4.2.3",
+    "file": "04_Phuong_trinh_nhiet/BT_4_2_3_02.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_4_2_3_03",
+    "kind": "BT",
+    "section": "4.2.3",
+    "number": 3,
+    "start": [
+      198,
+      617
+    ],
+    "end": [
+      199,
+      93
+    ],
+    "title": "Bài tập thực hành 3 — Mục 4.2.3",
+    "file": "04_Phuong_trinh_nhiet/BT_4_2_3_03.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_4_2_3_04",
+    "kind": "BT",
+    "section": "4.2.3",
+    "number": 4,
+    "start": [
+      199,
+      93
+    ],
+    "end": [
+      199,
+      441
+    ],
+    "title": "Bài tập thực hành 4 — Mục 4.2.3",
+    "file": "04_Phuong_trinh_nhiet/BT_4_2_3_04.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_4_2_3_05",
+    "kind": "BT",
+    "section": "4.2.3",
+    "number": 5,
+    "start": [
+      199,
+      441
+    ],
+    "end": [
+      199,
+      666
+    ],
+    "title": "Bài tập thực hành 5 — Mục 4.2.3",
+    "file": "04_Phuong_trinh_nhiet/BT_4_2_3_05.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_4_2_3_06",
+    "kind": "BT",
+    "section": "4.2.3",
+    "number": 6,
+    "start": [
+      199,
+      666
+    ],
+    "end": [
+      199,
+      893
+    ],
+    "title": "Bài tập thực hành 6 — Mục 4.2.3",
+    "file": "04_Phuong_trinh_nhiet/BT_4_2_3_06.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_4_2_3_07",
+    "kind": "BT",
+    "section": "4.2.3",
+    "number": 7,
+    "start": [
+      199,
+      893
+    ],
+    "end": [
+      199,
+      1117
+    ],
+    "title": "Bài tập thực hành 7 — Mục 4.2.3",
+    "file": "04_Phuong_trinh_nhiet/BT_4_2_3_07.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_4_2_3_08",
+    "kind": "BT",
+    "section": "4.2.3",
+    "number": 8,
+    "start": [
+      199,
+      1117
+    ],
+    "end": [
+      200,
+      290
+    ],
+    "title": "Bài tập thực hành 8 — Mục 4.2.3",
+    "file": "04_Phuong_trinh_nhiet/BT_4_2_3_08.pdf",
+    "original_pages": 2,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_4_3_2_01",
+    "kind": "VD",
+    "section": "4.3.2",
+    "number": 1,
+    "start": [
+      202,
+      139
+    ],
+    "end": [
+      202,
+      1268
+    ],
+    "title": "Ví dụ 1 — Mục 4.3.2",
+    "file": "04_Phuong_trinh_nhiet/VD_4_3_2_01.pdf",
+    "original_pages": 1,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_4_3_3_01",
+    "kind": "BT",
+    "section": "4.3.3",
+    "number": 1,
+    "start": [
+      203,
+      138
+    ],
+    "end": [
+      203,
+      760
+    ],
+    "title": "Bài tập thực hành 1 — Mục 4.3.3",
+    "file": "04_Phuong_trinh_nhiet/BT_4_3_3_01.pdf",
+    "original_pages": 1,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_4_3_3_02",
+    "kind": "BT",
+    "section": "4.3.3",
+    "number": 2,
+    "start": [
+      203,
+      760
+    ],
+    "end": [
+      203,
+      1093
+    ],
+    "title": "Bài tập thực hành 2 — Mục 4.3.3",
+    "file": "04_Phuong_trinh_nhiet/BT_4_3_3_02.pdf",
+    "original_pages": 1,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_4_4_2_01",
+    "kind": "VD",
+    "section": "4.4.2",
+    "number": 1,
+    "start": [
+      205,
+      626
+    ],
+    "end": [
+      207,
+      1268
+    ],
+    "title": "Ví dụ 1 — Mục 4.4.2",
+    "file": "04_Phuong_trinh_nhiet/VD_4_4_2_01.pdf",
+    "original_pages": 3,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_4_4_3_01",
+    "kind": "BT",
+    "section": "4.4.3",
+    "number": 1,
+    "start": [
+      208,
+      138
+    ],
+    "end": [
+      208,
+      274
+    ],
+    "title": "Bài tập thực hành 1 — Mục 4.4.3",
+    "file": "04_Phuong_trinh_nhiet/BT_4_4_3_01.pdf",
+    "original_pages": 1,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_4_4_3_02",
+    "kind": "BT",
+    "section": "4.4.3",
+    "number": 2,
+    "start": [
+      208,
+      274
+    ],
+    "end": [
+      208,
+      603
+    ],
+    "title": "Bài tập thực hành 2 — Mục 4.4.3",
+    "file": "04_Phuong_trinh_nhiet/BT_4_4_3_02.pdf",
+    "original_pages": 1,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_4_4_3_03",
+    "kind": "BT",
+    "section": "4.4.3",
+    "number": 3,
+    "start": [
+      208,
+      603
+    ],
+    "end": [
+      208,
+      883
+    ],
+    "title": "Bài tập thực hành 3 — Mục 4.4.3",
+    "file": "04_Phuong_trinh_nhiet/BT_4_4_3_03.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_4_4_3_04",
+    "kind": "BT",
+    "section": "4.4.3",
+    "number": 4,
+    "start": [
+      208,
+      883
+    ],
+    "end": [
+      208,
+      1157
+    ],
+    "title": "Bài tập thực hành 4 — Mục 4.4.3",
+    "file": "04_Phuong_trinh_nhiet/BT_4_4_3_04.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_4_4_3_05",
+    "kind": "BT",
+    "section": "4.4.3",
+    "number": 5,
+    "start": [
+      208,
+      1157
+    ],
+    "end": [
+      209,
+      263
+    ],
+    "title": "Bài tập thực hành 5 — Mục 4.4.3",
+    "file": "04_Phuong_trinh_nhiet/BT_4_4_3_05.pdf",
+    "original_pages": 2,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_4_4_3_06",
+    "kind": "BT",
+    "section": "4.4.3",
+    "number": 6,
+    "start": [
+      209,
+      263
+    ],
+    "end": [
+      209,
+      584
+    ],
+    "title": "Bài tập thực hành 6 — Mục 4.4.3",
+    "file": "04_Phuong_trinh_nhiet/BT_4_4_3_06.pdf",
+    "original_pages": 1,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_4_4_3_07",
+    "kind": "BT",
+    "section": "4.4.3",
+    "number": 7,
+    "start": [
+      209,
+      584
+    ],
+    "end": [
+      209,
+      970
+    ],
+    "title": "Bài tập thực hành 7 — Mục 4.4.3",
+    "file": "04_Phuong_trinh_nhiet/BT_4_4_3_07.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_4_4_3_08",
+    "kind": "BT",
+    "section": "4.4.3",
+    "number": 8,
+    "start": [
+      209,
+      970
+    ],
+    "end": [
+      209,
+      1268
+    ],
+    "title": "Bài tập thực hành 8 — Mục 4.4.3",
+    "file": "04_Phuong_trinh_nhiet/BT_4_4_3_08.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_4_5_2_01",
+    "kind": "VD",
+    "section": "4.5.2",
+    "number": 1,
+    "start": [
+      210,
+      946
+    ],
+    "end": [
+      212,
+      1186
+    ],
+    "title": "Ví dụ 1 — Mục 4.5.2",
+    "file": "04_Phuong_trinh_nhiet/VD_4_5_2_01.pdf",
+    "original_pages": 3,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_4_5_2_02",
+    "kind": "VD",
+    "section": "4.5.2",
+    "number": 2,
+    "start": [
+      212,
+      1186
+    ],
+    "end": [
+      214,
+      930
+    ],
+    "title": "Ví dụ 2 — Mục 4.5.2",
+    "file": "04_Phuong_trinh_nhiet/VD_4_5_2_02.pdf",
+    "original_pages": 3,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_4_5_3_01",
+    "kind": "BT",
+    "section": "4.5.3",
+    "number": 1,
+    "start": [
+      214,
+      978
+    ],
+    "end": [
+      214,
+      1194
+    ],
+    "title": "Bài tập thực hành 1 — Mục 4.5.3",
+    "file": "04_Phuong_trinh_nhiet/BT_4_5_3_01.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_4_5_3_02",
+    "kind": "BT",
+    "section": "4.5.3",
+    "number": 2,
+    "start": [
+      214,
+      1194
+    ],
+    "end": [
+      215,
+      143
+    ],
+    "title": "Bài tập thực hành 2 — Mục 4.5.3",
+    "file": "04_Phuong_trinh_nhiet/BT_4_5_3_02.pdf",
+    "original_pages": 2,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_4_5_3_03",
+    "kind": "BT",
+    "section": "4.5.3",
+    "number": 3,
+    "start": [
+      215,
+      143
+    ],
+    "end": [
+      215,
+      298
+    ],
+    "title": "Bài tập thực hành 3 — Mục 4.5.3",
+    "file": "04_Phuong_trinh_nhiet/BT_4_5_3_03.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_4_5_3_04",
+    "kind": "BT",
+    "section": "4.5.3",
+    "number": 4,
+    "start": [
+      215,
+      298
+    ],
+    "end": [
+      215,
+      454
+    ],
+    "title": "Bài tập thực hành 4 — Mục 4.5.3",
+    "file": "04_Phuong_trinh_nhiet/BT_4_5_3_04.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_4_5_3_05",
+    "kind": "BT",
+    "section": "4.5.3",
+    "number": 5,
+    "start": [
+      215,
+      454
+    ],
+    "end": [
+      215,
+      922
+    ],
+    "title": "Bài tập thực hành 5 — Mục 4.5.3",
+    "file": "04_Phuong_trinh_nhiet/BT_4_5_3_05.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_4_5_3_06",
+    "kind": "BT",
+    "section": "4.5.3",
+    "number": 6,
+    "start": [
+      215,
+      922
+    ],
+    "end": [
+      216,
+      698
+    ],
+    "title": "Bài tập thực hành 6 — Mục 4.5.3",
+    "file": "04_Phuong_trinh_nhiet/BT_4_5_3_06.pdf",
+    "original_pages": 2,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_4_6_2_01",
+    "kind": "VD",
+    "section": "4.6.2",
+    "number": 1,
+    "start": [
+      218,
+      352
+    ],
+    "end": [
+      219,
+      511
+    ],
+    "title": "Ví dụ 1 — Mục 4.6.2",
+    "file": "04_Phuong_trinh_nhiet/VD_4_6_2_01.pdf",
+    "original_pages": 2,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_4_6_2_02",
+    "kind": "VD",
+    "section": "4.6.2",
+    "number": 2,
+    "start": [
+      219,
+      511
+    ],
+    "end": [
+      220,
+      934
+    ],
+    "title": "Ví dụ 2 — Mục 4.6.2",
+    "file": "04_Phuong_trinh_nhiet/VD_4_6_2_02.pdf",
+    "original_pages": 2,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_4_6_2_03",
+    "kind": "VD",
+    "section": "4.6.2",
+    "number": 3,
+    "start": [
+      220,
+      934
+    ],
+    "end": [
+      222,
+      93
+    ],
+    "title": "Ví dụ 3 — Mục 4.6.2",
+    "file": "04_Phuong_trinh_nhiet/VD_4_6_2_03.pdf",
+    "original_pages": 2,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_4_6_2_04",
+    "kind": "VD",
+    "section": "4.6.2",
+    "number": 4,
+    "start": [
+      222,
+      93
+    ],
+    "end": [
+      222,
+      675
+    ],
+    "title": "Ví dụ 4 — Mục 4.6.2",
+    "file": "04_Phuong_trinh_nhiet/VD_4_6_2_04.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_4_6_2_05",
+    "kind": "VD",
+    "section": "4.6.2",
+    "number": 5,
+    "start": [
+      222,
+      675
+    ],
+    "end": [
+      222,
+      1268
+    ],
+    "title": "Ví dụ 5 — Mục 4.6.2",
+    "file": "04_Phuong_trinh_nhiet/VD_4_6_2_05.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_4_6_3_01",
+    "kind": "BT",
+    "section": "4.6.3",
+    "number": 1,
+    "start": [
+      223,
+      141
+    ],
+    "end": [
+      223,
+      272
+    ],
+    "title": "Bài tập thực hành 1 — Mục 4.6.3",
+    "file": "04_Phuong_trinh_nhiet/BT_4_6_3_01.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_4_6_3_02",
+    "kind": "BT",
+    "section": "4.6.3",
+    "number": 2,
+    "start": [
+      223,
+      272
+    ],
+    "end": [
+      223,
+      523
+    ],
+    "title": "Bài tập thực hành 2 — Mục 4.6.3",
+    "file": "04_Phuong_trinh_nhiet/BT_4_6_3_02.pdf",
+    "original_pages": 1,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_4_6_3_03",
+    "kind": "BT",
+    "section": "4.6.3",
+    "number": 3,
+    "start": [
+      223,
+      523
+    ],
+    "end": [
+      223,
+      694
+    ],
+    "title": "Bài tập thực hành 3 — Mục 4.6.3",
+    "file": "04_Phuong_trinh_nhiet/BT_4_6_3_03.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_4_6_3_04",
+    "kind": "BT",
+    "section": "4.6.3",
+    "number": 4,
+    "start": [
+      223,
+      694
+    ],
+    "end": [
+      224,
+      1097
+    ],
+    "title": "Bài tập thực hành 4 — Mục 4.6.3",
+    "file": "04_Phuong_trinh_nhiet/BT_4_6_3_04.pdf",
+    "original_pages": 2,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_4_6_3_05",
+    "kind": "BT",
+    "section": "4.6.3",
+    "number": 5,
+    "start": [
+      224,
+      1097
+    ],
+    "end": [
+      225,
+      96
+    ],
+    "title": "Bài tập thực hành 5 — Mục 4.6.3",
+    "file": "04_Phuong_trinh_nhiet/BT_4_6_3_05.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_4_6_3_06",
+    "kind": "BT",
+    "section": "4.6.3",
+    "number": 6,
+    "start": [
+      225,
+      96
+    ],
+    "end": [
+      225,
+      1268
+    ],
+    "title": "Bài tập thực hành 6 — Mục 4.6.3",
+    "file": "04_Phuong_trinh_nhiet/BT_4_6_3_06.pdf",
+    "original_pages": 1,
+    "solution_pages": 2,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_5_1_2_01",
+    "kind": "VD",
+    "section": "5.1.2",
+    "number": 1,
+    "start": [
+      229,
+      141
+    ],
+    "end": [
+      229,
+      1153
+    ],
+    "title": "Ví dụ 1 — Mục 5.1.2",
+    "file": "05_Phuong_trinh_Laplace/VD_5_1_2_01.pdf",
+    "original_pages": 1,
+    "solution_pages": 0,
+    "status": "Có đáp án/lời giải trong bản gốc"
+  },
+  {
+    "id": "VD_5_1_2_02",
+    "kind": "VD",
+    "section": "5.1.2",
+    "number": 2,
+    "start": [
+      229,
+      1153
+    ],
+    "end": [
+      232,
+      440
+    ],
+    "title": "Ví dụ 2 — Mục 5.1.2",
+    "file": "05_Phuong_trinh_Laplace/VD_5_1_2_02.pdf",
+    "original_pages": 4,
+    "solution_pages": 0,
+    "status": "Có đáp án/lời giải trong bản gốc"
+  },
+  {
+    "id": "VD_5_1_2_03",
+    "kind": "VD",
+    "section": "5.1.2",
+    "number": 3,
+    "start": [
+      232,
+      440
+    ],
+    "end": [
+      236,
+      872
+    ],
+    "title": "Ví dụ 3 — Mục 5.1.2",
+    "file": "05_Phuong_trinh_Laplace/VD_5_1_2_03.pdf",
+    "original_pages": 5,
+    "solution_pages": 0,
+    "status": "Có đáp án/lời giải trong bản gốc"
+  },
+  {
+    "id": "BT_5_1_3_01",
+    "kind": "BT",
+    "section": "5.1.3",
+    "number": 1,
+    "start": [
+      236,
+      924
+    ],
+    "end": [
+      237,
+      427
+    ],
+    "title": "Bài tập thực hành 1 — Mục 5.1.3",
+    "file": "05_Phuong_trinh_Laplace/BT_5_1_3_01.pdf",
+    "original_pages": 2,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_5_1_3_02",
+    "kind": "BT",
+    "section": "5.1.3",
+    "number": 2,
+    "start": [
+      237,
+      427
+    ],
+    "end": [
+      237,
+      596
+    ],
+    "title": "Bài tập thực hành 2 — Mục 5.1.3",
+    "file": "05_Phuong_trinh_Laplace/BT_5_1_3_02.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_5_1_3_03",
+    "kind": "BT",
+    "section": "5.1.3",
+    "number": 3,
+    "start": [
+      237,
+      596
+    ],
+    "end": [
+      237,
+      1017
+    ],
+    "title": "Bài tập thực hành 3 — Mục 5.1.3",
+    "file": "05_Phuong_trinh_Laplace/BT_5_1_3_03.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_5_1_3_04",
+    "kind": "BT",
+    "section": "5.1.3",
+    "number": 4,
+    "start": [
+      237,
+      1017
+    ],
+    "end": [
+      238,
+      183
+    ],
+    "title": "Bài tập thực hành 4 — Mục 5.1.3",
+    "file": "05_Phuong_trinh_Laplace/BT_5_1_3_04.pdf",
+    "original_pages": 2,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_5_1_3_05",
+    "kind": "BT",
+    "section": "5.1.3",
+    "number": 5,
+    "start": [
+      238,
+      183
+    ],
+    "end": [
+      238,
+      316
+    ],
+    "title": "Bài tập thực hành 5 — Mục 5.1.3",
+    "file": "05_Phuong_trinh_Laplace/BT_5_1_3_05.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_5_1_3_06",
+    "kind": "BT",
+    "section": "5.1.3",
+    "number": 6,
+    "start": [
+      238,
+      316
+    ],
+    "end": [
+      238,
+      412
+    ],
+    "title": "Bài tập thực hành 6 — Mục 5.1.3",
+    "file": "05_Phuong_trinh_Laplace/BT_5_1_3_06.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_5_1_3_07",
+    "kind": "BT",
+    "section": "5.1.3",
+    "number": 7,
+    "start": [
+      238,
+      412
+    ],
+    "end": [
+      238,
+      552
+    ],
+    "title": "Bài tập thực hành 7 — Mục 5.1.3",
+    "file": "05_Phuong_trinh_Laplace/BT_5_1_3_07.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_5_1_3_08",
+    "kind": "BT",
+    "section": "5.1.3",
+    "number": 8,
+    "start": [
+      238,
+      552
+    ],
+    "end": [
+      238,
+      1054
+    ],
+    "title": "Bài tập thực hành 8 — Mục 5.1.3",
+    "file": "05_Phuong_trinh_Laplace/BT_5_1_3_08.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_5_1_3_09",
+    "kind": "BT",
+    "section": "5.1.3",
+    "number": 9,
+    "start": [
+      238,
+      1054
+    ],
+    "end": [
+      238,
+      1268
+    ],
+    "title": "Bài tập thực hành 9 — Mục 5.1.3",
+    "file": "05_Phuong_trinh_Laplace/BT_5_1_3_09.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_5_2_2_01",
+    "kind": "VD",
+    "section": "5.2.2",
+    "number": 1,
+    "start": [
+      242,
+      582
+    ],
+    "end": [
+      242,
+      875
+    ],
+    "title": "Ví dụ 1 — Mục 5.2.2",
+    "file": "05_Phuong_trinh_Laplace/VD_5_2_2_01.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_5_2_2_02",
+    "kind": "VD",
+    "section": "5.2.2",
+    "number": 2,
+    "start": [
+      242,
+      875
+    ],
+    "end": [
+      242,
+      1081
+    ],
+    "title": "Ví dụ 2 — Mục 5.2.2",
+    "file": "05_Phuong_trinh_Laplace/VD_5_2_2_02.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_5_2_2_03",
+    "kind": "VD",
+    "section": "5.2.2",
+    "number": 3,
+    "start": [
+      242,
+      1081
+    ],
+    "end": [
+      243,
+      428
+    ],
+    "title": "Ví dụ 3 — Mục 5.2.2",
+    "file": "05_Phuong_trinh_Laplace/VD_5_2_2_03.pdf",
+    "original_pages": 2,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_5_2_3_01",
+    "kind": "BT",
+    "section": "5.2.3",
+    "number": 1,
+    "start": [
+      243,
+      481
+    ],
+    "end": [
+      243,
+      919
+    ],
+    "title": "Bài tập thực hành 1 — Mục 5.2.3",
+    "file": "05_Phuong_trinh_Laplace/BT_5_2_3_01.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_5_2_3_02",
+    "kind": "BT",
+    "section": "5.2.3",
+    "number": 2,
+    "start": [
+      243,
+      919
+    ],
+    "end": [
+      243,
+      959
+    ],
+    "title": "Bài tập thực hành 2 — Mục 5.2.3",
+    "file": "05_Phuong_trinh_Laplace/BT_5_2_3_02.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Mục đánh số trống — đã ghi chú"
+  },
+  {
+    "id": "VD_5_3_2_01",
+    "kind": "VD",
+    "section": "5.3.2",
+    "number": 1,
+    "start": [
+      245,
+      910
+    ],
+    "end": [
+      245,
+      1059
+    ],
+    "title": "Ví dụ 1 — Mục 5.3.2",
+    "file": "05_Phuong_trinh_Laplace/VD_5_3_2_01.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_5_3_2_02",
+    "kind": "VD",
+    "section": "5.3.2",
+    "number": 2,
+    "start": [
+      245,
+      1059
+    ],
+    "end": [
+      246,
+      799
+    ],
+    "title": "Ví dụ 2 — Mục 5.3.2",
+    "file": "05_Phuong_trinh_Laplace/VD_5_3_2_02.pdf",
+    "original_pages": 2,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_5_3_3_01",
+    "kind": "BT",
+    "section": "5.3.3",
+    "number": 1,
+    "start": [
+      246,
+      853
+    ],
+    "end": [
+      247,
+      148
+    ],
+    "title": "Bài tập thực hành 1 — Mục 5.3.3",
+    "file": "05_Phuong_trinh_Laplace/BT_5_3_3_01.pdf",
+    "original_pages": 2,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_5_3_3_02",
+    "kind": "BT",
+    "section": "5.3.3",
+    "number": 2,
+    "start": [
+      247,
+      148
+    ],
+    "end": [
+      247,
+      651
+    ],
+    "title": "Bài tập thực hành 2 — Mục 5.3.3",
+    "file": "05_Phuong_trinh_Laplace/BT_5_3_3_02.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_5_3_3_03",
+    "kind": "BT",
+    "section": "5.3.3",
+    "number": 3,
+    "start": [
+      247,
+      651
+    ],
+    "end": [
+      247,
+      1138
+    ],
+    "title": "Bài tập thực hành 3 — Mục 5.3.3",
+    "file": "05_Phuong_trinh_Laplace/BT_5_3_3_03.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_5_3_3_04",
+    "kind": "BT",
+    "section": "5.3.3",
+    "number": 4,
+    "start": [
+      247,
+      1138
+    ],
+    "end": [
+      247,
+      1268
+    ],
+    "title": "Bài tập thực hành 4 — Mục 5.3.3",
+    "file": "05_Phuong_trinh_Laplace/BT_5_3_3_04.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_5_4_2_01",
+    "kind": "VD",
+    "section": "5.4.2",
+    "number": 1,
+    "start": [
+      248,
+      1014
+    ],
+    "end": [
+      249,
+      707
+    ],
+    "title": "Ví dụ 1 — Mục 5.4.2",
+    "file": "05_Phuong_trinh_Laplace/VD_5_4_2_01.pdf",
+    "original_pages": 2,
+    "solution_pages": 0,
+    "status": "Có đáp án/lời giải trong bản gốc"
+  },
+  {
+    "id": "VD_5_4_2_02",
+    "kind": "VD",
+    "section": "5.4.2",
+    "number": 2,
+    "start": [
+      249,
+      707
+    ],
+    "end": [
+      249,
+      977
+    ],
+    "title": "Ví dụ 2 — Mục 5.4.2",
+    "file": "05_Phuong_trinh_Laplace/VD_5_4_2_02.pdf",
+    "original_pages": 1,
+    "solution_pages": 0,
+    "status": "Có đáp án/lời giải trong bản gốc"
+  },
+  {
+    "id": "VD_5_4_2_03",
+    "kind": "VD",
+    "section": "5.4.2",
+    "number": 3,
+    "start": [
+      249,
+      977
+    ],
+    "end": [
+      250,
+      472
+    ],
+    "title": "Ví dụ 3 — Mục 5.4.2",
+    "file": "05_Phuong_trinh_Laplace/VD_5_4_2_03.pdf",
+    "original_pages": 2,
+    "solution_pages": 0,
+    "status": "Có đáp án/lời giải trong bản gốc"
+  },
+  {
+    "id": "BT_5_4_3_01",
+    "kind": "BT",
+    "section": "5.4.3",
+    "number": 1,
+    "start": [
+      250,
+      526
+    ],
+    "end": [
+      250,
+      1042
+    ],
+    "title": "Bài tập thực hành 1 — Mục 5.4.3",
+    "file": "05_Phuong_trinh_Laplace/BT_5_4_3_01.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_5_4_3_02",
+    "kind": "BT",
+    "section": "5.4.3",
+    "number": 2,
+    "start": [
+      250,
+      1042
+    ],
+    "end": [
+      251,
+      93
+    ],
+    "title": "Bài tập thực hành 2 — Mục 5.4.3",
+    "file": "05_Phuong_trinh_Laplace/BT_5_4_3_02.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_5_4_3_03",
+    "kind": "BT",
+    "section": "5.4.3",
+    "number": 3,
+    "start": [
+      251,
+      93
+    ],
+    "end": [
+      251,
+      235
+    ],
+    "title": "Bài tập thực hành 3 — Mục 5.4.3",
+    "file": "05_Phuong_trinh_Laplace/BT_5_4_3_03.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_5_4_3_04",
+    "kind": "BT",
+    "section": "5.4.3",
+    "number": 4,
+    "start": [
+      251,
+      235
+    ],
+    "end": [
+      251,
+      316
+    ],
+    "title": "Bài tập thực hành 4 — Mục 5.4.3",
+    "file": "05_Phuong_trinh_Laplace/BT_5_4_3_04.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_5_4_3_05",
+    "kind": "BT",
+    "section": "5.4.3",
+    "number": 5,
+    "start": [
+      251,
+      316
+    ],
+    "end": [
+      251,
+      401
+    ],
+    "title": "Bài tập thực hành 5 — Mục 5.4.3",
+    "file": "05_Phuong_trinh_Laplace/BT_5_4_3_05.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_5_4_3_06",
+    "kind": "BT",
+    "section": "5.4.3",
+    "number": 6,
+    "start": [
+      251,
+      401
+    ],
+    "end": [
+      251,
+      549
+    ],
+    "title": "Bài tập thực hành 6 — Mục 5.4.3",
+    "file": "05_Phuong_trinh_Laplace/BT_5_4_3_06.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_5_4_3_07",
+    "kind": "BT",
+    "section": "5.4.3",
+    "number": 7,
+    "start": [
+      251,
+      549
+    ],
+    "end": [
+      251,
+      853
+    ],
+    "title": "Bài tập thực hành 7 — Mục 5.4.3",
+    "file": "05_Phuong_trinh_Laplace/BT_5_4_3_07.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_5_4_3_08",
+    "kind": "BT",
+    "section": "5.4.3",
+    "number": 8,
+    "start": [
+      251,
+      853
+    ],
+    "end": [
+      251,
+      934
+    ],
+    "title": "Bài tập thực hành 8 — Mục 5.4.3",
+    "file": "05_Phuong_trinh_Laplace/BT_5_4_3_08.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_5_4_3_09",
+    "kind": "BT",
+    "section": "5.4.3",
+    "number": 9,
+    "start": [
+      251,
+      934
+    ],
+    "end": [
+      251,
+      1066
+    ],
+    "title": "Bài tập thực hành 9 — Mục 5.4.3",
+    "file": "05_Phuong_trinh_Laplace/BT_5_4_3_09.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_5_4_3_10",
+    "kind": "BT",
+    "section": "5.4.3",
+    "number": 10,
+    "start": [
+      251,
+      1066
+    ],
+    "end": [
+      251,
+      1125
+    ],
+    "title": "Bài tập thực hành 10 — Mục 5.4.3",
+    "file": "05_Phuong_trinh_Laplace/BT_5_4_3_10.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_5_4_3_11",
+    "kind": "BT",
+    "section": "5.4.3",
+    "number": 11,
+    "start": [
+      251,
+      1125
+    ],
+    "end": [
+      251,
+      1206
+    ],
+    "title": "Bài tập thực hành 11 — Mục 5.4.3",
+    "file": "05_Phuong_trinh_Laplace/BT_5_4_3_11.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_5_4_3_12",
+    "kind": "BT",
+    "section": "5.4.3",
+    "number": 12,
+    "start": [
+      251,
+      1206
+    ],
+    "end": [
+      252,
+      93
+    ],
+    "title": "Bài tập thực hành 12 — Mục 5.4.3",
+    "file": "05_Phuong_trinh_Laplace/BT_5_4_3_12.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_5_4_3_13",
+    "kind": "BT",
+    "section": "5.4.3",
+    "number": 13,
+    "start": [
+      252,
+      93
+    ],
+    "end": [
+      252,
+      172
+    ],
+    "title": "Bài tập thực hành 13 — Mục 5.4.3",
+    "file": "05_Phuong_trinh_Laplace/BT_5_4_3_13.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_5_4_3_14",
+    "kind": "BT",
+    "section": "5.4.3",
+    "number": 14,
+    "start": [
+      252,
+      172
+    ],
+    "end": [
+      252,
+      252
+    ],
+    "title": "Bài tập thực hành 14 — Mục 5.4.3",
+    "file": "05_Phuong_trinh_Laplace/BT_5_4_3_14.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_5_4_3_15",
+    "kind": "BT",
+    "section": "5.4.3",
+    "number": 15,
+    "start": [
+      252,
+      252
+    ],
+    "end": [
+      252,
+      395
+    ],
+    "title": "Bài tập thực hành 15 — Mục 5.4.3",
+    "file": "05_Phuong_trinh_Laplace/BT_5_4_3_15.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_5_4_3_16",
+    "kind": "BT",
+    "section": "5.4.3",
+    "number": 16,
+    "start": [
+      252,
+      395
+    ],
+    "end": [
+      252,
+      505
+    ],
+    "title": "Bài tập thực hành 16 — Mục 5.4.3",
+    "file": "05_Phuong_trinh_Laplace/BT_5_4_3_16.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_5_4_3_17",
+    "kind": "BT",
+    "section": "5.4.3",
+    "number": 17,
+    "start": [
+      252,
+      505
+    ],
+    "end": [
+      252,
+      680
+    ],
+    "title": "Bài tập thực hành 17 — Mục 5.4.3",
+    "file": "05_Phuong_trinh_Laplace/BT_5_4_3_17.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_5_4_3_18",
+    "kind": "BT",
+    "section": "5.4.3",
+    "number": 18,
+    "start": [
+      252,
+      680
+    ],
+    "end": [
+      252,
+      727
+    ],
+    "title": "Bài tập thực hành 18 — Mục 5.4.3",
+    "file": "05_Phuong_trinh_Laplace/BT_5_4_3_18.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_5_4_3_19",
+    "kind": "BT",
+    "section": "5.4.3",
+    "number": 19,
+    "start": [
+      252,
+      727
+    ],
+    "end": [
+      252,
+      868
+    ],
+    "title": "Bài tập thực hành 19 — Mục 5.4.3",
+    "file": "05_Phuong_trinh_Laplace/BT_5_4_3_19.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_5_5_2_01",
+    "kind": "VD",
+    "section": "5.5.2",
+    "number": 1,
+    "start": [
+      253,
+      765
+    ],
+    "end": [
+      254,
+      96
+    ],
+    "title": "Ví dụ 1 — Mục 5.5.2",
+    "file": "05_Phuong_trinh_Laplace/VD_5_5_2_01.pdf",
+    "original_pages": 1,
+    "solution_pages": 0,
+    "status": "Có đáp án/lời giải trong bản gốc"
+  },
+  {
+    "id": "VD_5_5_2_02",
+    "kind": "VD",
+    "section": "5.5.2",
+    "number": 2,
+    "start": [
+      254,
+      96
+    ],
+    "end": [
+      254,
+      1059
+    ],
+    "title": "Ví dụ 2 — Mục 5.5.2",
+    "file": "05_Phuong_trinh_Laplace/VD_5_5_2_02.pdf",
+    "original_pages": 1,
+    "solution_pages": 0,
+    "status": "Có đáp án/lời giải trong bản gốc"
+  },
+  {
+    "id": "BT_5_5_3_01",
+    "kind": "BT",
+    "section": "5.5.3",
+    "number": 1,
+    "start": [
+      254,
+      1110
+    ],
+    "end": [
+      254,
+      1191
+    ],
+    "title": "Bài tập thực hành 1 — Mục 5.5.3",
+    "file": "05_Phuong_trinh_Laplace/BT_5_5_3_01.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_5_5_3_02",
+    "kind": "BT",
+    "section": "5.5.3",
+    "number": 2,
+    "start": [
+      254,
+      1191
+    ],
+    "end": [
+      255,
+      141
+    ],
+    "title": "Bài tập thực hành 2 — Mục 5.5.3",
+    "file": "05_Phuong_trinh_Laplace/BT_5_5_3_02.pdf",
+    "original_pages": 2,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_5_5_3_03",
+    "kind": "BT",
+    "section": "5.5.3",
+    "number": 3,
+    "start": [
+      255,
+      141
+    ],
+    "end": [
+      255,
+      221
+    ],
+    "title": "Bài tập thực hành 3 — Mục 5.5.3",
+    "file": "05_Phuong_trinh_Laplace/BT_5_5_3_03.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_5_5_3_04",
+    "kind": "BT",
+    "section": "5.5.3",
+    "number": 4,
+    "start": [
+      255,
+      221
+    ],
+    "end": [
+      255,
+      551
+    ],
+    "title": "Bài tập thực hành 4 — Mục 5.5.3",
+    "file": "05_Phuong_trinh_Laplace/BT_5_5_3_04.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_5_5_3_05",
+    "kind": "BT",
+    "section": "5.5.3",
+    "number": 5,
+    "start": [
+      255,
+      551
+    ],
+    "end": [
+      255,
+      633
+    ],
+    "title": "Bài tập thực hành 5 — Mục 5.5.3",
+    "file": "05_Phuong_trinh_Laplace/BT_5_5_3_05.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_5_5_3_06",
+    "kind": "BT",
+    "section": "5.5.3",
+    "number": 6,
+    "start": [
+      255,
+      633
+    ],
+    "end": [
+      255,
+      966
+    ],
+    "title": "Bài tập thực hành 6 — Mục 5.5.3",
+    "file": "05_Phuong_trinh_Laplace/BT_5_5_3_06.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_5_5_3_07",
+    "kind": "BT",
+    "section": "5.5.3",
+    "number": 7,
+    "start": [
+      255,
+      966
+    ],
+    "end": [
+      255,
+      1154
+    ],
+    "title": "Bài tập thực hành 7 — Mục 5.5.3",
+    "file": "05_Phuong_trinh_Laplace/BT_5_5_3_07.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_5_5_3_08",
+    "kind": "BT",
+    "section": "5.5.3",
+    "number": 8,
+    "start": [
+      255,
+      1154
+    ],
+    "end": [
+      256,
+      236
+    ],
+    "title": "Bài tập thực hành 8 — Mục 5.5.3",
+    "file": "05_Phuong_trinh_Laplace/BT_5_5_3_08.pdf",
+    "original_pages": 2,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_5_5_3_09",
+    "kind": "BT",
+    "section": "5.5.3",
+    "number": 9,
+    "start": [
+      256,
+      236
+    ],
+    "end": [
+      256,
+      339
+    ],
+    "title": "Bài tập thực hành 9 — Mục 5.5.3",
+    "file": "05_Phuong_trinh_Laplace/BT_5_5_3_09.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_5_5_3_10",
+    "kind": "BT",
+    "section": "5.5.3",
+    "number": 10,
+    "start": [
+      256,
+      339
+    ],
+    "end": [
+      256,
+      461
+    ],
+    "title": "Bài tập thực hành 10 — Mục 5.5.3",
+    "file": "05_Phuong_trinh_Laplace/BT_5_5_3_10.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_5_5_3_11",
+    "kind": "BT",
+    "section": "5.5.3",
+    "number": 11,
+    "start": [
+      256,
+      461
+    ],
+    "end": [
+      256,
+      675
+    ],
+    "title": "Bài tập thực hành 11 — Mục 5.5.3",
+    "file": "05_Phuong_trinh_Laplace/BT_5_5_3_11.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_5_5_3_12",
+    "kind": "BT",
+    "section": "5.5.3",
+    "number": 12,
+    "start": [
+      256,
+      675
+    ],
+    "end": [
+      256,
+      865
+    ],
+    "title": "Bài tập thực hành 12 — Mục 5.5.3",
+    "file": "05_Phuong_trinh_Laplace/BT_5_5_3_12.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_5_5_3_13",
+    "kind": "BT",
+    "section": "5.5.3",
+    "number": 13,
+    "start": [
+      256,
+      865
+    ],
+    "end": [
+      256,
+      1268
+    ],
+    "title": "Bài tập thực hành 13 — Mục 5.5.3",
+    "file": "05_Phuong_trinh_Laplace/BT_5_5_3_13.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_5_6_2_01",
+    "kind": "VD",
+    "section": "5.6.2",
+    "number": 1,
+    "start": [
+      260,
+      138
+    ],
+    "end": [
+      261,
+      395
+    ],
+    "title": "Ví dụ 1 — Mục 5.6.2",
+    "file": "05_Phuong_trinh_Laplace/VD_5_6_2_01.pdf",
+    "original_pages": 2,
+    "solution_pages": 0,
+    "status": "Có đáp án/lời giải trong bản gốc"
+  },
+  {
+    "id": "VD_5_6_2_02",
+    "kind": "VD",
+    "section": "5.6.2",
+    "number": 2,
+    "start": [
+      261,
+      395
+    ],
+    "end": [
+      262,
+      475
+    ],
+    "title": "Ví dụ 2 — Mục 5.6.2",
+    "file": "05_Phuong_trinh_Laplace/VD_5_6_2_02.pdf",
+    "original_pages": 2,
+    "solution_pages": 0,
+    "status": "Có đáp án/lời giải trong bản gốc"
+  },
+  {
+    "id": "VD_5_6_2_03",
+    "kind": "VD",
+    "section": "5.6.2",
+    "number": 3,
+    "start": [
+      262,
+      475
+    ],
+    "end": [
+      263,
+      519
+    ],
+    "title": "Ví dụ 3 — Mục 5.6.2",
+    "file": "05_Phuong_trinh_Laplace/VD_5_6_2_03.pdf",
+    "original_pages": 2,
+    "solution_pages": 0,
+    "status": "Có đáp án/lời giải trong bản gốc"
+  },
+  {
+    "id": "BT_5_6_3_01",
+    "kind": "BT",
+    "section": "5.6.3",
+    "number": 1,
+    "start": [
+      263,
+      573
+    ],
+    "end": [
+      263,
+      784
+    ],
+    "title": "Bài tập thực hành 1 — Mục 5.6.3",
+    "file": "05_Phuong_trinh_Laplace/BT_5_6_3_01.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_5_6_3_02",
+    "kind": "BT",
+    "section": "5.6.3",
+    "number": 2,
+    "start": [
+      263,
+      784
+    ],
+    "end": [
+      263,
+      1062
+    ],
+    "title": "Bài tập thực hành 2 — Mục 5.6.3",
+    "file": "05_Phuong_trinh_Laplace/BT_5_6_3_02.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_5_6_3_03",
+    "kind": "BT",
+    "section": "5.6.3",
+    "number": 3,
+    "start": [
+      263,
+      1062
+    ],
+    "end": [
+      264,
+      657
+    ],
+    "title": "Bài tập thực hành 3 — Mục 5.6.3",
+    "file": "05_Phuong_trinh_Laplace/BT_5_6_3_03.pdf",
+    "original_pages": 2,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_5_6_3_04",
+    "kind": "BT",
+    "section": "5.6.3",
+    "number": 4,
+    "start": [
+      264,
+      657
+    ],
+    "end": [
+      264,
+      1110
+    ],
+    "title": "Bài tập thực hành 4 — Mục 5.6.3",
+    "file": "05_Phuong_trinh_Laplace/BT_5_6_3_04.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_5_6_3_05",
+    "kind": "BT",
+    "section": "5.6.3",
+    "number": 5,
+    "start": [
+      264,
+      1110
+    ],
+    "end": [
+      265,
+      601
+    ],
+    "title": "Bài tập thực hành 5 — Mục 5.6.3",
+    "file": "05_Phuong_trinh_Laplace/BT_5_6_3_05.pdf",
+    "original_pages": 2,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_5_6_3_06",
+    "kind": "BT",
+    "section": "5.6.3",
+    "number": 6,
+    "start": [
+      265,
+      601
+    ],
+    "end": [
+      265,
+      1120
+    ],
+    "title": "Bài tập thực hành 6 — Mục 5.6.3",
+    "file": "05_Phuong_trinh_Laplace/BT_5_6_3_06.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_5_6_3_07",
+    "kind": "BT",
+    "section": "5.6.3",
+    "number": 7,
+    "start": [
+      265,
+      1120
+    ],
+    "end": [
+      266,
+      586
+    ],
+    "title": "Bài tập thực hành 7 — Mục 5.6.3",
+    "file": "05_Phuong_trinh_Laplace/BT_5_6_3_07.pdf",
+    "original_pages": 2,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_5_6_3_08",
+    "kind": "BT",
+    "section": "5.6.3",
+    "number": 8,
+    "start": [
+      266,
+      586
+    ],
+    "end": [
+      267,
+      597
+    ],
+    "title": "Bài tập thực hành 8 — Mục 5.6.3",
+    "file": "05_Phuong_trinh_Laplace/BT_5_6_3_08.pdf",
+    "original_pages": 2,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_5_6_3_09",
+    "kind": "BT",
+    "section": "5.6.3",
+    "number": 9,
+    "start": [
+      267,
+      597
+    ],
+    "end": [
+      267,
+      1268
+    ],
+    "title": "Bài tập thực hành 9 — Mục 5.6.3",
+    "file": "05_Phuong_trinh_Laplace/BT_5_6_3_09.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "VD_6_1_1_1_01",
+    "kind": "VD",
+    "section": "6.1.1.1",
+    "number": 1,
+    "start": [
+      271,
+      138
+    ],
+    "end": [
+      271,
+      735
+    ],
+    "title": "Ví dụ 1 — Mục 6.1.1.1",
+    "file": "06_Chuoi_Fourier/VD_6_1_1_1_01.pdf",
+    "original_pages": 1,
+    "solution_pages": 0,
+    "status": "Có đáp án/lời giải trong bản gốc"
+  },
+  {
+    "id": "VD_6_1_1_1_02",
+    "kind": "VD",
+    "section": "6.1.1.1",
+    "number": 2,
+    "start": [
+      271,
+      735
+    ],
+    "end": [
+      274,
+      909
+    ],
+    "title": "Ví dụ 2 — Mục 6.1.1.1",
+    "file": "06_Chuoi_Fourier/VD_6_1_1_1_02.pdf",
+    "original_pages": 4,
+    "solution_pages": 0,
+    "status": "Có đáp án/lời giải trong bản gốc"
+  },
+  {
+    "id": "VD_6_1_1_1_03",
+    "kind": "VD",
+    "section": "6.1.1.1",
+    "number": 3,
+    "start": [
+      274,
+      909
+    ],
+    "end": [
+      275,
+      791
+    ],
+    "title": "Ví dụ 3 — Mục 6.1.1.1",
+    "file": "06_Chuoi_Fourier/VD_6_1_1_1_03.pdf",
+    "original_pages": 2,
+    "solution_pages": 0,
+    "status": "Có đáp án/lời giải trong bản gốc"
+  },
+  {
+    "id": "BT_6_1_1_2_01",
+    "kind": "BT",
+    "section": "6.1.1.2",
+    "number": 1,
+    "start": [
+      275,
+      842
+    ],
+    "end": [
+      275,
+      1138
+    ],
+    "title": "Bài tập thực hành 1 — Mục 6.1.1.2",
+    "file": "06_Chuoi_Fourier/BT_6_1_1_2_01.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_6_1_1_2_02",
+    "kind": "BT",
+    "section": "6.1.1.2",
+    "number": 2,
+    "start": [
+      275,
+      1138
+    ],
+    "end": [
+      276,
+      93
+    ],
+    "title": "Bài tập thực hành 2 — Mục 6.1.1.2",
+    "file": "06_Chuoi_Fourier/BT_6_1_1_2_02.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_6_1_1_2_03",
+    "kind": "BT",
+    "section": "6.1.1.2",
+    "number": 3,
+    "start": [
+      276,
+      93
+    ],
+    "end": [
+      276,
+      288
+    ],
+    "title": "Bài tập thực hành 3 — Mục 6.1.1.2",
+    "file": "06_Chuoi_Fourier/BT_6_1_1_2_03.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_6_1_1_2_04",
+    "kind": "BT",
+    "section": "6.1.1.2",
+    "number": 4,
+    "start": [
+      276,
+      288
+    ],
+    "end": [
+      276,
+      627
+    ],
+    "title": "Bài tập thực hành 4 — Mục 6.1.1.2",
+    "file": "06_Chuoi_Fourier/BT_6_1_1_2_04.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_6_1_1_2_05",
+    "kind": "BT",
+    "section": "6.1.1.2",
+    "number": 5,
+    "start": [
+      276,
+      627
+    ],
+    "end": [
+      276,
+      746
+    ],
+    "title": "Bài tập thực hành 5 — Mục 6.1.1.2",
+    "file": "06_Chuoi_Fourier/BT_6_1_1_2_05.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  },
+  {
+    "id": "BT_6_1_1_2_06",
+    "kind": "BT",
+    "section": "6.1.1.2",
+    "number": 6,
+    "start": [
+      276,
+      746
+    ],
+    "end": [
+      276,
+      1030
+    ],
+    "title": "Bài tập thực hành 6 — Mục 6.1.1.2",
+    "file": "06_Chuoi_Fourier/BT_6_1_1_2_06.pdf",
+    "original_pages": 1,
+    "solution_pages": 1,
+    "status": "Có lời giải bổ sung"
+  }
+]

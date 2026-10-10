@@ -1,0 +1,285 @@
+%ID VD_3_1_2_02
+\textbf{Chi tiết hai tích phân nguồn.} Đặt $h=t-s$. Tích phân trong bằng
+\[s\left[\frac{y^2}{2}\right]_{x-h}^{x+h}
+=\frac s2[(x+h)^2-(x-h)^2]=2xsh.\]
+Nhân $1/2$ của Duhamel, tích phân ngoài là
+\[x\int_0^t(ts-s^2)ds=x\left[\frac{ts^2}{2}-\frac{s^3}{3}\right]_0^t
+=x(t^3/2-t^3/3)=xt^3/6.\]
+
+%ID VD_3_1_2_04
+\textbf{Chi tiết rút gọn câu (iii).} Ngoài mặt sóng, half-sum là $[(x-t)^2+(x+t)^2]/2=x^2+t^2$, còn tích phân là $3[(x+t)^2-(x-t)^2]/2=6xt$. Trong mặt sóng, half-difference là $[(x+t)^2-(t-x)^2]/2=2xt$, tích phân vận tốc là $3[(t+x)^2-(t-x)^2]/2=6xt$. Cộng thêm biên $(t-x)^2=x^2-2xt+t^2$ cho cùng $x^2+t^2+6xt$.
+
+%ID VD_3_1_2_05
+\textbf{Chi tiết so các vết cấp hai.} Trong miền phản xạ,
+\[\begin{aligned}
+u_{xx}&=h''(\tau)/a^2+(f''(s)-f''(r))/2+(g'(s)-g'(r))/(2a),\\
+u_{xt}&=-h''(\tau)/a+a(f''(s)+f''(r))/2+(g'(s)+g'(r))/2,\\
+u_{tt}&=h''(\tau)+a^2(f''(s)-f''(r))/2+a(g'(s)-g'(r))/2.
+\end{aligned}\]
+Ngoài miền phản xạ, viết $\xi=x-at$, $\eta=x+at$:
+\[\begin{aligned}
+u_{xx}&=(f''(\xi)+f''(\eta))/2+(g'(\eta)-g'(\xi))/(2a),\\
+u_{xt}&=a(f''(\eta)-f''(\xi))/2+(g'(\eta)+g'(\xi))/2,\\
+u_{tt}&=a^2(f''(\xi)+f''(\eta))/2+a(g'(\eta)-g'(\xi))/2.
+\end{aligned}\]
+Trên $x=at$, $r=\xi=\tau=0$, $s=\eta=2at$. Trừ từng cặp: các hạng tại $2at$ và mọi hạng $g'$ mất, còn lần lượt $h''(0)/a^2-f''(0)$, $af''(0)-h''(0)/a$, $h''(0)-a^2f''(0)$.
+
+%ID BT_3_1_3_02
+\textbf{Chi tiết phép thế nguyên hàm và lượng giác.} Ở (i),
+\[\frac{H(x+3t)-H(x-3t)}6
+=\frac{\cos(2x-6t)-\cos(2x+6t)}{12}
+=\frac{\sin2x\sin6t}{6}.\]
+Ở (ii), $[(x+5t)^2-(x-5t)^2]/20=xt$. Ở (iii), $[\sin(x+2t)-\sin(x-2t)]/4=\cos x\sin2t/2$. Ở (iv), phần tuyến tính của $H$ cho $(12t/2)/12=t/2$; phần $\sin2s/4$ cho $2\cos2x\sin12t/48=\cos2x\sin12t/24$.
+
+Ở (v), $f(s)=\sin s-\cos^2s=\sin s-1/2-\cos2s/2$, nên half-sum là $\sin x\cos t-1/2-\cos2x\cos2t/2$. Từ $\sin^3s=(3\sin s-\sin3s)/4$, nguyên hàm đã ghi cho
+\[\frac{H(x+t)-H(x-t)}2=\frac34\sin x\sin t-\frac1{12}\sin3x\sin3t.\]
+Ở (vi), trên $-1<s<0$, $H=\int_{-1}^s(r+1)dr=(s+1)^2/2$; trên $0<s<1$, $H=H(0)+\int_0^s(1-r)dr=1/2+s-s^2/2=1-(1-s)^2/2$. Sau $1$ giữ $H(1)=1$, bảo đảm không có bước nhảy của nguyên hàm.
+
+%ID BT_3_1_3_04
+\textbf{Chi tiết thông lượng trên từng cạnh tam giác Green.} Đặt $\ell(T)=x-a(t-T)$, $r(T)=x+a(t-T)$ và $M(T)=\int_{\ell(T)}^{r(T)}u_T(y,T)dy$. Quy tắc Leibniz cho
+\[M'=\int_\ell^r u_{TT}dy-a u_T(r,T)-a u_T(\ell,T).\]
+Tích phân $u_{TT}-a^2u_{yy}=F$ theo $y$, rồi thay dòng trên:
+\[\int_\ell^r Fdy=M'+a(u_T+a u_y)(\ell,T)+a(u_T-a u_y)(r,T).\]
+Cạnh trái có $\ell'=a$, nên $(u_T+a u_y)(\ell,T)=d[u(\ell(T),T)]/dT$; cạnh phải có $r'=-a$, nên $(u_T-a u_y)(r,T)=d[u(r(T),T)]/dT$. Tích phân mỗi cạnh từ $0$ đến $t$ cho
+\[a[u(x,t)-f(x-at)],\qquad a[u(x,t)-f(x+at)].\]
+Mặt đáy cho $M(t)-M(0)=0-\int_{x-at}^{x+at}g(y)dy$, vì ở đỉnh đoạn tích phân co về độ dài $0$. Cộng ba đóng góp được đẳng thức Green ở bước 4, rồi chia $2a$ thu half-sum, tích phân vận tốc và tích phân nguồn.
+
+%ID BT_3_1_3_05
+\textbf{Chi tiết giải các ODE nguồn.} (i) Đặt $u_F=xq$, có $q''=\cos t$, $q'(0)=q(0)=0$. Tích phân $q'=\sin t$, $q=1-\cos t$. (ii) Với $u_F=e^xq$, $q''-9q=1$: thử $q_p=-1/9$, phần thuần nhất $A\cosh3t+B\sinh3t$. Dữ liệu cho $A=1/9,B=0$. Nguồn $\sin t$ cho $r''=\sin t$, $r'=1-\cos t$, $r=t-\sin t$.
+
+(iii) $q''=x+t$, tích phân theo thời gian với $x$ cố định được $q'=xt+t^2/2$, $q=xt^2/2+t^3/6$. (iv) $q''=xt$ cho $q'=xt^2/2$, $q=xt^3/6$.
+
+(v) Tính trực tiếp $q=t\sin t/2$: $q'=(\sin t+t\cos t)/2$, $q''=\cos t-t\sin t/2$, nên $q''+q=\cos t$. Với $r=(\sin t-t\cos t)/2$, $r'=t\sin t/2$, $r''=(\sin t+t\cos t)/2$, nên $r''+r=\sin t$. Cả $q,r$ và đạo hàm đầu bằng $0$. (vi) $u_F=e^xq$ cho $q''-4q=-1$, $q_p=1/4$, $q=A\cosh2t+B\sinh2t+1/4$; dữ liệu cho $A=-1/4,B=0$.
+
+%ID BT_3_1_3_06
+\textbf{Chi tiết lần đạo hàm thứ nhất theo thời gian.} Với $s_t=r_t=a,\tau_t=1$,
+\[u_t=h'(\tau)+\frac a2[f'(s)-f'(r)]+\frac12[g(s)-g(r)].\]
+Lấy tiếp đạo hàm: $h'$ cho $h''$, hai hạng $f'$ cho $a^2(f''(s)-f''(r))/2$, hai hạng $g$ cho $a(g'(s)-g'(r))/2$. Tương tự, lấy đạo hàm $x$ của công thức $u_x$ cho
+\[u_{xx}=h''(\tau)/a^2+(f''(s)-f''(r))/2+(g'(s)-g'(r))/(2a),\]
+chứng minh trực tiếp $u_{tt}=a^2u_{xx}$.
+
+%ID BT_3_1_3_08
+\textbf{Chi tiết hai nhánh vận tốc ở (i).} Ngoài mặt sóng,
+\[\frac14\int_{x-2t}^{x+2t}\cos2s\,ds
+=\frac{\sin(2x+4t)-\sin(2x-4t)}8=\frac14\cos2x\sin4t.\]
+Trong mặt sóng, cận dưới là $2t-x$, nên hiệu sine bằng $\sin(4t+2x)-\sin(4t-2x)=2\cos4t\sin2x$; chia $8$ cho nhánh đã ghi.
+
+\textbf{Chi tiết rút gọn (v).} Trong miền phản xạ, biên là $\cos(2t-x)-\sin(2t-x)$. Half-difference của $f$ bằng
+\[-\sin2t\sin x-\cos2t\sin x.\]
+Khai triển biên thành $\cos2t\cos x+\sin2t\sin x-\sin2t\cos x+\cos2t\sin x$ rồi cộng, hai hạng chứa $\sin x$ triệt tiêu, còn $\cos x(\cos2t-\sin2t)$.
+
+%ID BT_3_1_3_12
+\textbf{Chi tiết thế vào miền cả hai mặt sóng đã phản xạ ở (i).} Đặt $p=2t-x$, $q=2\pi-x-2t$. Khi $\xi<0,\eta>\pi$, $p,q\in[0,\pi]$ và $u=-B(p)-A(q)$:
+\[u=-\frac{\sin(2t-x)}2-\frac{\sin(2\pi-x-2t)}2+\frac{q-p}{4}
+=\frac{\sin(x+2t)+\sin(x-2t)}2+\frac{2\pi-4t}{4}.\]
+Tổng sine bằng $2\sin x\cos2t$, hạng tuyến tính bằng $\pi/2-t$. Ở miền chỉ phản xạ trái, $-B(2t-x)+B(x+2t)$ cho hạng tuyến tính $[(x+2t)-(2t-x)]/4=x/2$. Ở miền chỉ phản xạ phải, $A(x-2t)-A(2\pi-x-2t)$ cho $[-(x-2t)+(2\pi-x-2t)]/4=(\pi-x)/2$.
+
+%ID VD_3_2_2_01
+\textbf{Chi tiết đạo hàm tại giao điểm hai mặt sóng.} Với $t=1/2$, bên trái $x=-1/2$, chỉ $x+t=x+1/2\in[-1,0]$ góp:
+\[u(x,1/2)=\tfrac12(x+1/2)(x+3/2),\quad u_x=x+1\to1/2.\]
+Bên phải, chỉ $x-t=x-1/2\in[-1,0]$ góp:
+\[u(x,1/2)=\tfrac12(x-1/2)(x+1/2),\quad u_x=x\to-1/2.\]
+Hai vết giá trị đều $0$, nhưng hai đạo hàm không bằng nhau, nên không thể gọi điểm giao là điểm trơn.
+
+%ID VD_3_2_2_06
+\textbf{Chi tiết nối nguyên hàm và phản chu kỳ.} Xung dương có diện tích $4(3/4-2/3)=1/3$. Phản xạ chẵn tại $1$ tạo thêm diện tích $1/3$ trên $(1,2)$, nên $H(2)=2/3$. Vì $g_e(s+2)=-g_e(s)$,
+\[H(s+2)=H(2)+\int_2^{s+2}g_e(r)dr=2/3-\int_0^sg_e(r)dr=2/3-H(s).\]
+Khi dịch $t$ thêm $2$, các đối số $x+t$ tăng $2$, $x-t$ giảm $2$; cả hai giá trị $H$ thành $2/3-H$ của giá trị cũ. Vì thế hiệu $H$ đổi dấu. Các giá trị $f_e$ cũng đổi dấu, cho $u(t+2)=-u(t)$.
+
+%ID BT_3_3_3_01
+\textbf{Chi tiết hai lần tích phân từng phần ở (i).} Đặt $k=n\pi$, $P=x(1-x)$, $P'=1-2x$, $P''=-2$.
+\[\begin{aligned}
+I&=\int_0^1P\sin kx\,dx
+=\left[-P\frac{\cos kx}{k}\right]_0^1+\frac1k\int_0^1P'\cos kx\,dx\\
+&=\frac1k\left[\frac{P'\sin kx}{k}\right]_0^1-\frac1{k^2}\int_0^1P''\sin kx\,dx\\
+&=\frac2{k^2}\left[-\frac{\cos kx}{k}\right]_0^1=\frac{2(1-(-1)^n)}{k^3}.
+\end{aligned}\]
+Hạng biên lần đầu hết vì $P(0)=P(1)=0$; lần sau hết vì $\sin0=\sin n\pi=0$. Hệ số vận tốc là $B_n=2I$; khi ghép nghiệm còn chia $\omega_n=k$. Với $n$ lẻ, $2I/k=8/k^4$, không bỏ hệ số chia tần số này.
+
+Ở (ii),(iii),(v), dùng $\int_0^L\sin(n\pi x/L)dx=L(1-(-1)^n)/(n\pi)$, rồi nhân $2/L$ và giá trị hằng của dữ liệu. Ở (iv), $\int fX_n=I/4$ nên $A_n=I/2=(1-(-1)^n)/k^3$. Ở (vi),
+\[-\int_0^{1/2}\sin kx\,dx=\frac{\cos(k/2)-1}{k},\quad
+\int_{1/2}^1\sin kx\,dx=\frac{\cos(k/2)-\cos k}{k}.\]
+Cộng rồi xét $n$ lẻ, $n\equiv0\pmod4$, $n\equiv2\pmod4$ cho lần lượt $0,0,-4/k$.
+
+%ID VD_3_3_2_01
+\textbf{Chi tiết tích phân câu (ii).} Từ tích–tổng,
+\[A_n=\frac1\pi\left[\frac{\sin((\pi-n)x)}{\pi-n}-\frac{\sin((\pi+n)x)}{\pi+n}\right]_0^\pi.\]
+Vì $\sin(\pi^2-n\pi)=\sin(\pi^2+n\pi)=(-1)^n\sin\pi^2$,
+\[A_n=\frac{(-1)^n\sin\pi^2}{\pi}\left(\frac1{\pi-n}-\frac1{\pi+n}\right)
+=\frac{2(-1)^nn\sin\pi^2}{\pi(\pi^2-n^2)}.\]
+
+%ID VD_3_3_2_02
+\textbf{Chi tiết tích–tổng và ngoại lệ $n=1$.} Với $n\ne1$,
+\[\begin{aligned}
+\int_0^\pi\sin x\cos nx\,dx
+&=\frac12\int_0^\pi[\sin((1+n)x)+\sin((1-n)x)]dx\\
+&=\frac{1+(-1)^n}{2}\left(\frac1{1+n}+\frac1{1-n}\right)
+=\frac{1+(-1)^n}{1-n^2}.
+\end{aligned}\]
+Nhân $2/\pi$ được $A_n$. Với $n=1$, tích phân riêng $\int_0^\pi\sin x\cos x\,dx=[\sin^2x/2]_0^\pi=0$. Mode hằng dùng chuẩn $\pi$, nên $A_0=\pi^{-1}[-\cos x]_0^\pi=2/\pi$, không dùng chuẩn $\pi/2$ của các mode khác.
+
+%ID VD_3_3_2_03
+\textbf{Chi tiết điều kiện biên, chuẩn và tích phân dữ liệu.} Từ $X''+k^2X=0$, $X=A\cos kx+B\sin kx$. $X(0)=0$ cho $A=0$; $X'(L)=Bk\cos kL=0$ với $Bk\ne0$ cho $\cos kL=0$. Chuẩn
+\[\int_0^L\sin^2k_nx\,dx=\left[x/2-\sin(2k_nx)/(4k_n)\right]_0^L=L/2.\]
+Với $L=\pi$,
+\[\int_0^\pi x\sin k_nx\,dx=
+\left[-x\cos(k_nx)/k_n+\sin(k_nx)/k_n^2\right]_0^\pi
+=(-1)^n/k_n^2.\]
+Đã dùng $\cos(k_n\pi)=0$, $\sin(k_n\pi)=(-1)^n$. Khai triển $g=3\sin(x/2)/4-\sin(3x/2)/4$ rồi chiếu lên hệ sine trực giao cho $B_0=3/4,B_1=-1/4$.
+
+%ID BT_3_3_3_02
+\textbf{Chi tiết hai tích phân của tam giác.} Đặt $k=n$, $b=\pi/2$. Đổi $y=\pi-x$ ở nửa sau:
+\[\int_b^\pi(\pi-x)\sin nx\,dx=(-1)^{n+1}\int_0^b y\sin ny\,dy.\]
+Tích phân từng phần còn lại là
+\[\int_0^b x\sin nx\,dx=\left[-x\cos nx/n+\sin nx/n^2\right]_0^b
+=-b\cos(nb)/n+\sin(nb)/n^2.\]
+Với $n$ chẵn, hai nửa triệt tiêu; với $n$ lẻ, $\cos(nb)=0$ và hệ số trước tích phân là $4/\pi$. Suy $A_n=4\sin(n\pi/2)/(\pi n^2)$ cho mọi $n$.
+
+%ID BT_3_3_3_04
+\textbf{Chi tiết tích phân câu (i).} Đặt $k=n\pi$:
+\[\begin{aligned}
+B_n&=2\left[\frac{(x-1/2)\sin kx}{k}\right]_0^1-\frac2k\int_0^1\sin kx\,dx\\
+&=-\frac2k\left[-\frac{\cos kx}{k}\right]_0^1
+=\frac{2((-1)^n-1)}{k^2}.
+\end{aligned}\]
+Vì $\sin0=\sin k=0$, hạng biên đầu hết. $B_0=\int_0^1(x-1/2)dx=0$. Ở (ii), trung bình $B_0=\pi^{-1}\int_0^\pi\sin x\,dx=2/\pi$; các mode khác dùng $2\sin x\cos nx=\sin((1+n)x)+\sin((1-n)x)$. Tích phân cho $B_n=2(1+(-1)^n)/[\pi(1-n^2)]$ khi $n\ne1$, còn $B_1=\pi^{-1}\int_0^\pi\sin2x\,dx=0$.
+
+%ID BT_3_3_3_05
+\textbf{Chi tiết điều kiện biên và tích phân dữ liệu.} $X=A\cos kx+B\sin kx$, $X'(0)=Bk=0$ cho $B=0$ khi $k>0$; $X(L)=A\cos kL=0$ cho $\cos kL=0$. Chuẩn $\int_0^L\cos^2k_nx\,dx=L/2$ vì $\sin(2k_nL)=0$. Với $L=\pi$,
+\[\begin{aligned}
+\int_0^\pi(\pi-x)\cos k_nx\,dx
+&=\left[\frac{(\pi-x)\sin k_nx}{k_n}\right]_0^\pi
++\frac1{k_n}\int_0^\pi\sin k_nx\,dx\\
+&=\frac{1-\cos(k_n\pi)}{k_n^2}=1/k_n^2.
+\end{aligned}\]
+Chiếu $g=(3\cos(x/2)+\cos(3x/2))/4$ lên hệ cos trực giao cho $B_0=3/4,B_1=1/4$, rồi chia tần số $k_0=1/2,k_1=3/2$ khi ghép nghiệm.
+
+%ID VD_3_4_2_01
+\textbf{Chi tiết hệ số nguồn và đáp ứng.} Tích phân từng phần:
+\[c_n=2\left[-\frac{x\cos(n\pi x)}{n\pi}+
+\frac{\sin(n\pi x)}{n^2\pi^2}\right]_0^1
+=-\frac{2(-1)^n}{n\pi}.\]
+Với $\alpha^2\ne\omega^2$, thử $C_p=A\cos\alpha t$: $(\omega^2-\alpha^2)A=1$. Tổng $C=A\cos\alpha t+B\cos\omega t+D\sin\omega t$ có dữ liệu không khi $B=-A,D=0$. Với $\alpha=\omega$, thử $C=bt\sin\omega t$; đạo hàm hai lần cho $C''+\omega^2C=2b\omega\cos\omega t$, nên $b=1/(2\omega)$. Trong câu (ii), $b_{xx}=0$, $b_{tt}=-\alpha^2x\cos\alpha t$; vì $u_{tt}-u_{xx}=0$, phần $w$ có nguồn $-b_{tt}=\alpha^2x\cos\alpha t$ và dữ liệu $w_0=-x,w_{t,0}=0$.
+
+%ID BT_3_4_3_01
+\textbf{Chi tiết đáp ứng sine và tích phân đa thức.} Không cộng hưởng, thử $R_p=A\sin\alpha t$, có $A=1/(\omega^2-\alpha^2)$. Viết $R=R_p+B\cos\omega t+D\sin\omega t$; dữ liệu $R(0)=0$ cho $B=0$, $R'(0)=0$ cho $D=-\alpha A/\omega$. Ở cộng hưởng, $-t\cos\omega t/(2\omega)$ có nguồn $\sin\omega t$ nhưng vận tốc đầu $-1/(2\omega)$; cộng $\sin\omega t/(2\omega^2)$ để bù.
+
+Trong (iii), đặt $I=\int_0^\pi x^2\sin nx\,dx$. Hai lần tích phân:
+\[\begin{aligned}
+I&=\left[-x^2\cos nx/n\right]_0^\pi+\frac2n\int_0^\pi x\cos nx\,dx,\\
+\int_0^\pi x\cos nx\,dx
+&=\left[x\sin nx/n+\cos nx/n^2\right]_0^\pi
+=\frac{(-1)^n-1}{n^2}.
+\end{aligned}\]
+Vậy $I=-\pi^2(-1)^n/n+2((-1)^n-1)/n^3$, rồi chia $\pi$ cho $A_n$.
+
+%ID BT_3_4_3_02
+\textbf{Chi tiết tích phân nguồn không gian hằng và hệ số cos.} Với $\alpha\ne0$,
+\[\int_0^t(t-s)\sin\alpha s\,ds
+=\left[-(t-s)\cos\alpha s/\alpha\right]_0^t-\frac1\alpha\int_0^t\cos\alpha s\,ds
+=t/\alpha-\sin\alpha t/\alpha^2.\]
+Với dữ liệu $x$, $d_0=\pi^{-1}[x^2/2]_0^\pi=\pi/2$ và
+\[d_n=\frac2\pi\left[x\sin nx/n+\cos nx/n^2\right]_0^\pi
+=\frac{2((-1)^n-1)}{\pi n^2}.\]
+Mode hằng giải $y_0''=\alpha^2d_0\sin\alpha t$ với $y_0'(0)=-\alpha d_0$: tích phân cho $y_0'=-\alpha d_0\cos\alpha t$, $y_0=-d_0\sin\alpha t$. Đây là phép bù tạo ra $(x-\pi/2)\sin\alpha t$.
+
+%ID VD_3_5_2_02
+\textbf{Chi tiết hai tích phân năng lượng và định thức.} Nhân PDE với $u_t$:
+\[\begin{aligned}
+\int_0^Lu_tu_{xxxx}dx
+&=[u_tu_{xxx}]_0^L-\int_0^Lu_{tx}u_{xxx}dx\\
+&=[u_tu_{xxx}-u_{tx}u_{xx}]_0^L+\int_0^Lu_{txx}u_{xx}dx.
+\end{aligned}\]
+Hạng tích phân cuối bằng $\frac12(d/dt)\int u_{xx}^2$; chuyển sang cùng động năng cho $E'$ đã viết.
+
+Đặt $C=\cosh\beta,c=\cos\beta,S=\sinh\beta,s=\sin\beta$. Hai điều kiện phải, sau chia đạo hàm cho $k$, là
+\[\begin{pmatrix}C-c&S-s\\S+s&C-c\end{pmatrix}\binom AB=\binom00.\]
+Định thức $(C-c)^2-(S-s)(S+s)=C^2-2Cc+c^2-S^2+s^2=2-2Cc$, vì $C^2-S^2=c^2+s^2=1$. Dòng đầu cho $B/A=-(C-c)/(S-s)$; dòng hai đúng khi định thức bằng $0$. Đây là nguồn gốc của $\sigma_n$.
+
+%ID BT_3_5_3_02
+\textbf{Chi tiết giải đủ các điều kiện của (a),(b).} Viết $C=\cosh\beta,c=\cos\beta,S=\sinh\beta,s=\sin\beta$.
+Ở (a), $X(L)=A(C-c)+B(S-s)=0$, $X''(L)/k^2=A(C+c)+B(S+s)=0$. Cộng hai dòng rồi chia $2$ cho $AC+BS=0$; lấy dòng sau trừ dòng trước rồi chia $2$ cho $Ac+Bs=0$. Định thức của hệ này là $Cs-Sc=0$, và $B/A=-C/S=-\coth\beta$.
+
+Ở (b), $X'(L)/k=A(S+s)+B(C-c)=0$, $X'''(L)/k^3=A(S-s)+B(C+c)=0$. Cộng cho $AS+BC=0$; lấy dòng đầu trừ dòng sau cho $As-Bc=0$. Định thức là $-Sc-Cs=0$, và $B/A=-S/C=-\tanh\beta$. Với $\beta>0$, $\sinh\beta,\cosh\beta$ khác $0$; $\cos\beta=0$ không thỏa các định thức, nên các phép chia để viết tan hợp lệ tại nghiệm.
+
+\textbf{Chi tiết ba kiểu còn lại.} Từ $X=A\cosh kx+B\sinh kx+C\cos kx+D\sin kx$, ở (c),(d), $X(0)=A+C=0$, $X''(0)/k^2=A-C=0$ cho $A=C=0$. (c) Hai dòng phải $B\sinh\beta+D\sin\beta=0$, $B\sinh\beta-D\sin\beta=0$ cho $B=0$, $\sin\beta=0$. (d) Hai dòng phải $B\cosh\beta+D\cos\beta=0$, $B\cosh\beta-D\cos\beta=0$ cho $B=0$, $\cos\beta=0$.
+
+Ở (e), $X'(0)/k=B+D=0$, $X'''(0)/k^3=B-D=0$ cho $B=D=0$. Hai dòng phải $A\sinh\beta-C\sin\beta=0$, $A\sinh\beta+C\sin\beta=0$ cho $A=0$, $\sin\beta=0$. Riêng $\lambda=0$, $X''''=0$ cho $X=A+Bx+Cx^2+Dx^3$; $X'''=0$ cho $D=0$, $X'(0)=0$ cho $B=0$, $X'(L)=0$ cho $C=0$, còn hằng $A$.
+
+%ID BT_3_5_3_05
+\textbf{Chi tiết đạo hàm ở (i).} Với $f=e^{-x}(\pi\cos\pi x+\sin\pi x)$, quy tắc tích cho
+\[f'=e^{-x}[-\pi\cos\pi x-\sin\pi x-\pi^2\sin\pi x+\pi\cos\pi x]
+=-(\pi^2+1)e^{-x}\sin\pi x.\]
+Đạo hàm tiếp: $f''=(\pi^2+1)e^{-x}(\sin\pi x-\pi\cos\pi x)$. Vì $2f'=-2(\pi^2+1)e^{-x}\sin\pi x$, cộng cho $f''+2f'=-(\pi^2+1)e^{-x}(\sin\pi x+\pi\cos\pi x)=-(\pi^2+1)f$.
+
+\textbf{Chi tiết đổi ẩn và tính hệ số ở (ii).} $u=e^{-z/2}v$ cho $u_z=e^{-z/2}(v_z-v/2)$, $u_{zz}=e^{-z/2}(v_{zz}-v_z+v/4)$. Cộng $u_z$ được $e^{-z/2}(v_{zz}-v/4)$. Vì $(e^z-1)(2-e^z)=-e^{2z}+3e^z-2$, dữ liệu mới là $-e^{5z/2}+3e^{3z/2}-2e^{z/2}$. Nguyên hàm
+\[\int e^{pz}\sin k_nz\,dz=
+\frac{e^{pz}(p\sin k_nz-k_n\cos k_nz)}{p^2+k_n^2}\]
+được kiểm tra bằng đạo hàm tích. Tại $0,\ell$, $\sin k_nz=0$, $\cos k_n\ell=(-1)^n$, nên
+\[A_n=\frac{2k_n}{\ell}\left[
+-\frac{1-(-1)^n2^{5/2}}{k_n^2+25/4}
++3\frac{1-(-1)^n2^{3/2}}{k_n^2+9/4}
+-2\frac{1-(-1)^n2^{1/2}}{k_n^2+1/4}\right].\]
+Với nguồn $c_nt$, nghiệm riêng $c_nt/\omega_n^2$ có vận tốc đầu $c_n/\omega_n^2$; trừ $c_n\sin\omega_nt/\omega_n^3$ để bù, cho đáp ứng dữ liệu không.
+
+\textbf{Chi tiết nguồn và hằng số của (iii).} Tích–tổng cho
+\[F_n=\left[\frac{\sin((1-k_n)x)}{1-k_n}
+-\frac{\sin((1+k_n)x)}{1+k_n}\right]_0^1
+=(-1)^n\sin1\left(\frac1{1-k_n}-\frac1{1+k_n}\right).\]
+Rút gọn cho $F_n=2(-1)^{n+1}k_n\sin1/(k_n^2-1)$. Đặt $H_n=F_n/k_n^2$; tổng nghiệm ODE là $T_n=H_n+e^{-t}(A\cos\omega_nt+B\sin\omega_nt)$. $T_n(0)=0$ cho $A=-H_n$; $T_n'(0)=c_n$ cho $-A+\omega_nB=c_n$, nên $B=(c_n-H_n)/\omega_n$. Thế lại và gom hai nhóm cho công thức ở bước 2.
+
+%ID BT_3_6_3_02
+\textbf{Chi tiết nghiệm biên nón và độ dài phương vị.} Phương trình bậc hai ở (a) có biệt thức
+\[4z^2\rho^2-4(1+\alpha^2)\rho^2(z^2-\alpha^2\rho^2)
+=4\alpha^2\rho^2[(1+\alpha^2)\rho^2-z^2].\]
+Nếu biểu thức dưới căn không âm và $\rho>0$, hai nghiệm là
+\[\mu_\pm=\frac{-z\pm\alpha\sqrt{(1+\alpha^2)\rho^2-z^2}}{(1+\alpha^2)\rho}.\]
+Giữ những nghiệm thuộc $[-1,1]$, thêm các điểm cắt cầu và dấu đã nêu, rồi kiểm tra bất đẳng thức gốc trên từng khoảng. Ở (b), $\cos\phi<v$ với $-1<v<1$ cho $\arccos v<\phi<2\pi-\arccos v$; độ dài là $2\pi-2\arccos v$. Hai điều kiện cùng là cận trên nên lấy $\min(B,C)$. Khi $r=0$, nón cho $\mu>\alpha/\sqrt{1+\alpha^2}$ và cầu cho $\rho<R$, nên tỷ lệ diện tích bằng $(1-\alpha/\sqrt{1+\alpha^2})/2$.
+
+%ID BT_3_6_3_03
+\textbf{Chi tiết nghiệm bậc hai tại điểm $(0,0,z)$.} Đặt $A=\rho^2+R^2+z^2-a^2$. Phương trình biên sau bình phương là
+\[4\rho^2(z^2+R^2)\mu^2+4Az\rho\mu+A^2-4R^2\rho^2=0.\]
+Với $\rho>0$, hai nghiệm thực nếu biểu thức dưới căn không âm:
+\[\mu_\pm=\frac{-Az\pm R\sqrt{4\rho^2(z^2+R^2)-A^2}}{2\rho(z^2+R^2)}.\]
+Giữ các nghiệm trong $[-1,1]$ và kiểm tra $A+2z\rho\mu=2R\rho\sqrt{1-\mu^2}$ để loại nghiệm ngoại lai. Chia khoảng ở các nghiệm còn lại rồi kiểm tra bất đẳng thức gốc trên từng khoảng để cộng độ dài; tại $t=0$ dùng dữ liệu $u=0$.
+
+\textbf{Chi tiết khai triển biên và cực đại trên trục.} Ở (a), $(\rho\sqrt{1-\mu^2}-R)^2+(z+\rho\mu)^2$ khai triển thành $\rho^2+R^2+z^2+2z\rho\mu-2R\rho\sqrt{1-\mu^2}$: hai hạng $\rho^2\mu^2$ triệt tiêu. Với $z=r=0$, đặt $q=\rho^2$,
+\[4R^2c^2U^2=4R^2q-(q+R^2-a^2)^2.\]
+Đạo hàm theo $q$ bằng $4R^2-2(q+R^2-a^2)=2(R^2+a^2-q)$, đạo hàm bậc hai bằng $-2$. Cực đại duy nhất là $q=R^2+a^2$; thay vào được $4R^2c^2U^2=4R^2a^2$, tức $U=a/c$. $q-(R-a)^2=2Ra>0$ và $(R+a)^2-q=2Ra>0$, nên điểm cực đại nằm trong miền có sóng. Ở (b), $C_-<\cos\phi<C_+$ cho độ dài phương vị bằng hiệu hai độ dài $A(C_+)-A(C_-)$ sau khi cắt cận.
+
+%ID BT_3_6_3_05
+\textbf{Chi tiết nguyên hàm và trạng thái dừng.} Trong nhánh chỏm,
+\[K_R(r,s)=\frac{R^2-r^2+2rs-s^2}{4r},\quad
+\int K_Rds=\frac{(R^2-r^2)s+rs^2-s^3/3}{4r}=A(s).\]
+Nếu $r\ge R$, trước $b=r-R$ tích phân bằng $0$, và
+\[J_\infty=A(r+R)-A(r-R)
+=\frac{2R(R^2-r^2)+4r^2R-(2r^2R+2R^3/3)}{4r}
+=\frac{R^3}{3r}.\]
+Nếu $r<R$, trước $b=R-r$ tích phân bằng $(R-r)^2/2$. Tính hiệu:
+\[A(R+r)-A(R-r)=Rr-\frac23r^2,\quad
+J_\infty=\frac{(R-r)^2}{2}+Rr-\frac23r^2=\frac{3R^2-r^2}{6}.\]
+Tại $r=R$, hai giá trị bằng $R^2/3$; đạo hàm trong $-r/3$ và ngoài $-R^3/(3r^2)$ cùng bằng $-R/3$.
+
+%ID BT_3_6_3_07
+\textbf{Chi tiết loại tích phân tung độ và kiểm tra hệ số.} Tại $X$ cố định, đặt $h^2=c^2t^2-(X-P_x)^2$ và $z=(Y-P_y)/h$. Khi $h>0$,
+\[\int\frac{dY}{\sqrt{h^2-(Y-P_y)^2}}
+=\int\frac{dz}{\sqrt{1-z^2}}=\arcsin z.\]
+Chỉ lấy giao của dải với $P_y-h<Y<P_y+h$, tương đương cắt $z$ vào $[-1,1]$, cho $B_X(l,v)$. Với vận tốc hằng $1$, dùng tọa độ cực quanh $P$:
+\[\int_{|Q-P|<ct}\frac{dQ}{\sqrt{c^2t^2-|Q-P|^2}}
+=2\pi\int_0^{ct}\frac{r\,dr}{\sqrt{c^2t^2-r^2}}
+=2\pi ct.\]
+Nhân $1/(2\pi c)$ cho $u=t$. Ở (a), khoảng cách từ $(0,100)$ đến hai đường $Y=2\pm2X$ là $|100-2|/\sqrt{1+4}=98/\sqrt5$, nên trước $2t<98/\sqrt5$ cả đĩa có vận tốc $2$.
+
+%ID BT_3_6_3_09
+\textbf{Chi tiết đạo hàm tích và truy hồi hệ số.} $\nabla_{x,y}q=(2x,2y)$, $q_t=-2t$, nên $|\nabla q|^2-q_t^2=4q$ và $\Box q=6$. Quy tắc dây chuyền:
+\[\Box q^j=j q^{j-1}\Box q+j(j-1)q^{j-2}(|\nabla q|^2-q_t^2)
+=[6j+4j(j-1)]q^{j-1}=2j(2j+1)q^{j-1}.\]
+Hạng chéo trong $\Box(q^jH)$ là
+\[2(\nabla q^j\cdot\nabla H-(q^j)_tH_t)
+=4jq^{j-1}(xH_x+yH_y+tH_t)=4jmq^{j-1}H.\]
+Gọi $H_k=\Box^k\Phi$, $C_k=2(k+1)(2d-2k-1)$. Thế chuỗi:
+\[\Box u=a_0C_0\Phi+\sum_{k\ge1}(a_{k-1}+C_ka_k)q^kH_k,\]
+vì hạng cuối $H_{k+1}$ hết khi bậc đa thức âm. Muốn $\Box u=-\Phi$ cần $a_0C_0=-1$, $a_{k-1}+C_ka_k=0$. Do đó
+\[a_k=\frac{(-1)^{k+1}}{C_0\cdots C_k}
+=\frac{(-1)^{k+1}(2d-2k-3)!!}{(2k+2)!!(2d-1)!!},\]
+vì tích các thừa số chẵn là $(2k+2)!!$, tích lẻ là $(2d-1)!!/(2d-2k-3)!!$.

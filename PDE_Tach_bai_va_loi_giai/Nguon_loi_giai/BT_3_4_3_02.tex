@@ -1,0 +1,53 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{fontspec,amsmath,amssymb,graphicx}
+\usepackage[margin=18mm]{geometry}
+\setmainfont{Times New Roman}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\allowdisplaybreaks
+\sloppy
+\emergencystretch=2em
+\begin{document}
+\section*{BT\_3\_4\_3\_02 — Lời giải bổ sung}
+\subsection*{Kiến thức và trình tự giải}
+\textbf{Bước 1 — Đưa điều kiện biên về thuần nhất.} Với $u(0,t)=\mu(t)$, $u(L,t)=\nu(t)$, đặt $b=(1-x/L)\mu+(x/L)\nu$. Với Neumann hai đầu đặt $b=\mu x+(\nu-\mu)x^2/(2L)$. Với Dirichlet–Neumann đặt $b=\mu+x\nu$. Viết $u=b+w$; khi đó $w$ có biên thuần nhất, nguồn $Q=F+a^2b_{xx}-b_{tt}$ và dữ liệu $f-b(x,0)$, $g-b_t(x,0)$.
+
+\textbf{Bước 2 — Chiếu nguồn và dữ liệu lên cùng hệ hàm riêng.} Tính $Q_n(t)=\int QX_n/\int X_n^2$, $A_n$, $B_n$. Không bỏ các dữ liệu mới phát sinh từ hàm nâng biên; chúng có thể khác không ngay khi dữ liệu gốc bằng không.
+
+\textbf{Bước 3 — Giải ODE có nguồn cho từng mode.}
+
+
+\[
+y_n''+\omega_n^2y_n=Q_n(t),\qquad
+y_n=A_n\cos\omega_nt+\frac{B_n}{\omega_n}\sin\omega_nt+\frac1{\omega_n}\int_0^t\sin(\omega_n(t-s))Q_n(s)ds.
+\]
+
+
+Với mode hằng Neumann, thay công thức bằng $y_0=A_0+B_0t+\int_0^t(t-s)Q_0(s)ds$.
+
+\textbf{Bước 4 — Xử lý cộng hưởng trước khi chia.} Nguồn $\cos\alpha t$ có đáp ứng dữ liệu không là $(\cos\alpha t-\cos\omega t)/(\omega^2-\alpha^2)$; tại $\alpha=\omega$ lấy $t\sin\omega t/(2\omega)$. Nguồn $\sin\alpha t$ có đáp ứng $(\sin\alpha t-(\alpha/\omega)\sin\omega t)/(\omega^2-\alpha^2)$; tại cộng hưởng là $\sin\omega t/(2\omega^2)-t\cos\omega t/(2\omega)$. Không thế vào phân số $0/0$.
+
+\textbf{Bước 5 — Cộng lại hàm nâng và kiểm tra duy nhất.} Thế $u=b+\sum y_nX_n$ vào PDE và mọi dữ liệu. Với hiệu hai nghiệm, nguồn và biên bằng không; nhân phương trình với $w_t$, tích phân từng phần để có $E'=0$, $E(0)=0$, suy $w=0$. Các góc không tương thích phải được ghi riêng.
+
+\textbf{Chi tiết xác nhận tích phân nguồn.} Với $D(t)=\omega^{-1}\int_0^t\sin(\omega(t-s))Q(s)ds$, lần đạo hàm đầu cho $D'=\int_0^t\cos(\omega(t-s))Q(s)ds$, vì $\sin0=0$. Lần sau cho $D''=Q(t)-\omega\int_0^t\sin(\omega(t-s))Q(s)ds=Q-\omega^2D$. Do $D(0)=D'(0)=0$, tích phân này thêm đúng nguồn mà giữ nguyên hai dữ liệu đầu.
+\subsection*{Lời giải áp dụng cho bài}
+\textbf{Bước 1. Giữ mode hằng Neumann.} Hệ hàm riêng trên $(0,\pi)$ là $1,\cos nx$. Mode hằng dùng $y_0''=Q_0$; các mode $n\ge1$ dùng ODE dao động và $R_\omega$ như Bài 1.
+
+\textbf{Bước 2. Câu (i).} Biên Neumann không, $a=1$, nguồn $\sin\alpha t$ không phụ thuộc $x$. Chỉ mode $0$ có nguồn khác không. Với dữ liệu không,
+\[u=\int_0^t(t-s)\sin\alpha s\,ds=t/\alpha-\sin\alpha t/\alpha^2.\]
+Thế lại cho $u_{tt}=\sin\alpha t$, $u_{xx}=0$, dữ liệu không. Nếu $\alpha=0$, lấy giới hạn $u=0$.
+
+\textbf{Bước 3. Câu (ii).} $a=2$, $\mu=\nu=\sin\alpha t$, nguồn không. Lấy $b=x\sin\alpha t$, $w=u-b$, suy $Q=\alpha^2x\sin\alpha t$, $w_0=0$, $w_{t,0}=-\alpha x$. Khai triển $x$ theo cos có $d_0=\pi/2$, $d_n=2((-1)^n-1)/(\pi n^2)$, do tích phân từng phần.
+
+\textbf{Bước 4. Giải từng ODE và ghép.} Mode hằng là $y_0=-d_0\sin\alpha t$ (đạo hàm đầu $-\alpha d_0$ và $y_0''=\alpha^2d_0\sin\alpha t$). Các mode khác là $y_n=d_n[-\alpha\sin2nt/(2n)+\alpha^2R_{2n}]$. Do đó
+\[u=(x-\pi/2)\sin\alpha t+\sum_{n\ge1}d_n[-\alpha\sin2nt/(2n)+\alpha^2R_{2n}(\alpha,t)]\cos nx.\]
+Hàm nâng cho đúng đạo hàm biên; các ODE cho đúng PDE. Tại góc, $g'=0$ trái $\mu'(0)=\nu'(0)=\alpha$, nên không $C^2$ đến góc nếu $\alpha\ne0$. Tại $\alpha=2n$ phải dùng nhánh cộng hưởng, không chia mẫu bằng không.
+
+\textbf{Chi tiết tích phân nguồn không gian hằng và hệ số cos.} Với $\alpha\ne0$,
+\[\int_0^t(t-s)\sin\alpha s\,ds
+=\left[-(t-s)\cos\alpha s/\alpha\right]_0^t-\frac1\alpha\int_0^t\cos\alpha s\,ds
+=t/\alpha-\sin\alpha t/\alpha^2.\]
+Với dữ liệu $x$, $d_0=\pi^{-1}[x^2/2]_0^\pi=\pi/2$ và
+\[d_n=\frac2\pi\left[x\sin nx/n+\cos nx/n^2\right]_0^\pi
+=\frac{2((-1)^n-1)}{\pi n^2}.\]
+Mode hằng giải $y_0''=\alpha^2d_0\sin\alpha t$ với $y_0'(0)=-\alpha d_0$: tích phân cho $y_0'=-\alpha d_0\cos\alpha t$, $y_0=-d_0\sin\alpha t$. Đây là phép bù tạo ra $(x-\pi/2)\sin\alpha t$.\end{document}

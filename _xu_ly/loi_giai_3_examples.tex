@@ -1,0 +1,374 @@
+%ID VD_3_1_2_01
+\textbf{Bước 1. Tách li độ và vận tốc.} Với $a=1$ ở (i), (iii), (iv), và $a=2$ ở (ii), dùng
+\[u=\tfrac12[f(x-at)+f(x+at)]+\frac{H(x+at)-H(x-at)}{2a},\qquad H'=g.\]
+\textbf{Bước 2. Tính từng trường hợp.}
+
+(i) $g=0$, nên $H=0$. Công thức $\sin(x-t)+\sin(x+t)=2\sin x\cos t$ cho $u=\sin x\cos t$.
+
+(ii) Chỉ đổi độ dịch thành $2t$: $u=\sin x\cos2t$. Hai chu kỳ cơ bản lần lượt là $2\pi$ và $\pi$.
+
+(iii) $f=0$, $g(s)=s|s|$. Trên $s>0$, nguyên hàm là $s^3/3$; trên $s<0$, là $-s^3/3$. Nối tại $0$ được $H(s)=|s|^3/3$, do đó
+\[u=\frac{|x+t|^3-|x-t|^3}{6}.\]
+Hệ số $1/2$ ở nguyên hàm trong bản scan không đúng: $(|s|^3/3)'=s|s|$. Hàm $g$ thuộc $C^1$, nên nghiệm thuộc $C^2$, kể cả trên $x\pm t=0$; đạo hàm cấp ba có thể nhảy.
+
+(iv) $g(s)=|s|$ có nguyên hàm $H=s|s|/2$, nên
+\[u=\frac{(x+t)|x+t|-(x-t)|x-t|}{4}.\]
+Vì $H\in C^1$ nhưng không $C^2$ tại $0$, nghiệm $C^1$ và không $C^2$ trên hai đặc trưng $x=\pm t$.
+
+\textbf{Bước 3. Kiểm tra.} Tại $t=0$, hai hiệu nguyên hàm bằng không; đạo hàm theo $t$ cho $g(x)$. Mỗi hạng chỉ phụ thuộc $x\pm at$ nên thỏa PDE nơi đạo hàm tồn tại. Hai nghiệm (iii), (iv) tăng theo $t$ ở những điểm thích hợp, nên không tuần hoàn.
+
+%ID VD_3_1_2_02
+\textbf{Bước 1. Giải phần có nguồn với dữ liệu không.} Nguồn $F(x,t)=xt$, $a=1$. Tích phân trong của Duhamel là
+\[\int_{x-(t-s)}^{x+(t-s)}ys\,dy=2xs(t-s).\]
+Suy $u_F=x\int_0^t s(t-s)ds=xt^3/6$.
+
+\textbf{Bước 2. Thêm phần thuần nhất.} Ở (i), $f=g=0$, nên $u=xt^3/6$. Ở (ii), $f=\sin x$, $g=x|x|$, nguyên hàm đúng là $|x|^3/3$:
+\[u=\sin x\cos t+\frac{|x+t|^3-|x-t|^3}{6}+\frac{xt^3}{6}.\]
+\textbf{Bước 3. Kiểm tra.} $(u_F)_{tt}=xt$, $(u_F)_{xx}=0$, $u_F(x,0)=(u_F)_t(x,0)=0$. Phần còn lại thỏa phương trình thuần nhất và cho đúng $f,g$. Dữ liệu $g\in C^1$ bảo đảm nghiệm $C^2$; không cần loại hai đường $x=\pm t$ ở mức đạo hàm cấp hai.
+
+\textbf{Chi tiết hai tích phân nguồn.} Đặt $h=t-s$. Tích phân trong bằng
+\[s\left[\frac{y^2}{2}\right]_{x-h}^{x+h}
+=\frac s2[(x+h)^2-(x-h)^2]=2xsh.\]
+Nhân $1/2$ của Duhamel, tích phân ngoài là
+\[x\int_0^t(ts-s^2)ds=x\left[\frac{ts^2}{2}-\frac{s^3}{3}\right]_0^t
+=x(t^3/2-t^3/3)=xt^3/6.\]
+
+%ID VD_3_1_2_03
+\textbf{Bước 1. Đặt tích phân trong.} Viết $V=(2a)^{-1}\int_0^t G(x,t,s)ds$, với
+\[G=\int_{x-a(t-s)}^{x+a(t-s)}F(y,s)dy.\]
+Ở đây $s$ là tham số khi lấy đạo hàm theo $t$.
+
+\textbf{Bước 2. Đạo hàm các cận.} Với $F_\pm=F(x\pm a(t-s),s)$,
+\[G_t=a(F_++F_-),\quad G_x=F_+-F_-,\quad G_{tt}=a^2(F_{x,+}-F_{x,-})=a^2G_{xx}.\]
+Khi $s=t$, $G=0$ và $G_t=2aF(x,t)$.
+
+\textbf{Bước 3. Đạo hàm tích phân ngoài.} Quy tắc Leibniz cho
+\[V_t=\frac1{2a}\int_0^tG_tds,\qquad V_{tt}=F(x,t)+\frac1{2a}\int_0^tG_{tt}ds.\]
+Do đó $V_{tt}-a^2V_{xx}=F$. Tại $t=0$ cả $V,V_t$ bằng không. Các đạo hàm trên hợp lệ nếu $F$ có các đạo hàm liên tục cần dùng (chẳng hạn $F\in C^1$ theo không gian và liên tục theo thời gian). Thêm nghiệm d'Alembert của dữ liệu $f,g$ được nghiệm đầy đủ.
+
+%ID VD_3_1_2_04
+\textbf{Bước 1. Xác định hai miền.} Với biên $u(0,t)=h(t)$, ở $x\ge at$ dùng dữ liệu đầu; ở $x<at$ thêm tín hiệu biên tại thời điểm trễ $t-x/a$ và lấy hiệu hai giá trị $f$.
+
+\textbf{Bước 2. Tính cụ thể.}
+
+(i) $a=1$, $f=g=0$, $h=t^3$. Trước khi sóng biên đến, $u=0$; sau đó $u=(t-x)^3$. Gộp lại $u=(t-x)_+^3$. Hàm này $C^2$ trên đường $x=t$.
+
+(ii) $a=2$, $f=\sin x$, $g=1$, $h=0$. Ngoài mặt sóng, phần vận tốc là $t$. Trong mặt sóng, đoạn tích phân $[2t-x,2t+x]$ dài $2x$, cho $x/2$. Phần li độ ở cả hai miền bằng $\sin x\cos2t$. Vì vậy
+\[u=\sin x\cos2t+\min(t,x/2).\]
+Nghiệm liên tục nhưng không $C^1$ trên $x=2t$: vận tốc đầu $g(0)=1$ trái với $h'(0)=0$.
+
+(iii) $a=1$, $f=x^2$, $g=6x$, $h=t^2$. Ngoài mặt sóng, half-sum bằng $x^2+t^2$, tích phân vận tốc bằng $6xt$. Trong mặt sóng,
+\[(t-x)^2+\tfrac12[(x+t)^2-(t-x)^2]+\tfrac12\int_{t-x}^{t+x}6sds=x^2+t^2+6xt.\]
+\textbf{Bước 3. Kiểm tra.} Nghiệm (iii) có $u_{tt}=u_{xx}=2$, $u(x,0)=x^2$, $u_t(x,0)=6x$, $u(0,t)=t^2$. Ba điều kiện tương thích tại góc đều đúng.
+
+\textbf{Chi tiết rút gọn câu (iii).} Ngoài mặt sóng, half-sum là $[(x-t)^2+(x+t)^2]/2=x^2+t^2$, còn tích phân là $3[(x+t)^2-(x-t)^2]/2=6xt$. Trong mặt sóng, half-difference là $[(x+t)^2-(t-x)^2]/2=2xt$, tích phân vận tốc là $3[(t+x)^2-(t-x)^2]/2=6xt$. Cộng thêm biên $(t-x)^2=x^2-2xt+t^2$ cho cùng $x^2+t^2+6xt$.
+
+%ID VD_3_1_2_05
+\textbf{Bước 1. Điều kiện cần ở góc.} Nếu $u\in C^2$ đến $(0,0)$ thì $u(0,0)=f(0)=h(0)$, $u_t(0,0)=g(0)=h'(0)$. Từ PDE ở góc, $h''(0)=u_{tt}(0,0)=a^2f''(0)$.
+
+\textbf{Bước 2. So sánh hai công thức trên $x=at$.} Đặt $s=x+at$, $r=at-x$. Công thức trong là $h(t-x/a)+(f(s)-f(r))/2+(2a)^{-1}\int_r^s g$. Ngoài là half-sum $f(x-at),f(s)$ cộng tích phân $g$. Tại $r=0$, chênh lệch vết trong trừ ngoài của $u$ là $h(0)-f(0)$.
+
+\textbf{Bước 3. Đạo hàm cấp một.} Trong miền phản xạ,
+\[u_x=-h'(t-x/a)/a+\tfrac12[f'(s)+f'(r)]+\frac{g(s)+g(r)}{2a}.\]
+Ngoài miền phản xạ, $u_x=(f'(s)+f'(x-at))/2+(g(s)-g(x-at))/(2a)$. Hiệu vết là $(g(0)-h'(0))/a$; tương tự hiệu vết $u_t$ là $h'(0)-g(0)$.
+
+\textbf{Bước 4. Đạo hàm cấp hai.} Hiệu vết $u_{xx}$ bằng $h''(0)/a^2-f''(0)$, vì các hạng $g'$ trùng nhau. Hiệu $u_{xt}$ bằng $af''(0)-h''(0)/a$; $u_{tt}$ bằng $h''(0)-a^2f''(0)$. Như vậy ba điều kiện đã nêu đủ để ghép thành $C^2$, nếu $f\in C^2,g\in C^1,h\in C^2$. Nghiệm thỏa dữ liệu và PDE theo công thức; tính duy nhất suy từ hai sóng chạy hoặc năng lượng của hiệu hai nghiệm.
+
+\textbf{Chi tiết so các vết cấp hai.} Trong miền phản xạ,
+\[\begin{aligned}
+u_{xx}&=h''(\tau)/a^2+(f''(s)-f''(r))/2+(g'(s)-g'(r))/(2a),\\
+u_{xt}&=-h''(\tau)/a+a(f''(s)+f''(r))/2+(g'(s)+g'(r))/2,\\
+u_{tt}&=h''(\tau)+a^2(f''(s)-f''(r))/2+a(g'(s)-g'(r))/2.
+\end{aligned}\]
+Ngoài miền phản xạ, viết $\xi=x-at$, $\eta=x+at$:
+\[\begin{aligned}
+u_{xx}&=(f''(\xi)+f''(\eta))/2+(g'(\eta)-g'(\xi))/(2a),\\
+u_{xt}&=a(f''(\eta)-f''(\xi))/2+(g'(\eta)+g'(\xi))/2,\\
+u_{tt}&=a^2(f''(\xi)+f''(\eta))/2+a(g'(\eta)-g'(\xi))/2.
+\end{aligned}\]
+Trên $x=at$, $r=\xi=\tau=0$, $s=\eta=2at$. Trừ từng cặp: các hạng tại $2at$ và mọi hạng $g'$ mất, còn lần lượt $h''(0)/a^2-f''(0)$, $af''(0)-h''(0)/a$, $h''(0)-a^2f''(0)$.
+
+%ID VD_3_2_2_01
+\textbf{Bước 1. Chia dữ liệu và hai sóng.} $a=1$, $f(s)=s(s+1)$ trên $[-1,0]$, bằng $0$ ngoài đoạn, $g=0$. Vì vậy $A=B=f/2$, không cần nguyên hàm vận tốc.
+
+\textbf{Bước 2. Dịch từng đoạn.} Sóng phải $A(x-t)$ khác không khi $t-1<x<t$, sóng trái $B(x+t)$ khác không khi $-t-1<x<-t$. Nghiệm chính xác là
+\[u(x,t)=\tfrac12(x-t)(x-t+1)\chi_{[-1,0]}(x-t)+\tfrac12(x+t)(x+t+1)\chi_{[-1,0]}(x+t).\]
+Khi hai đoạn chồng nhau, cộng hai đa thức; khi chỉ một đoạn hiện diện lấy một hạng; ngoài cả hai đoạn lấy $0$. Đây cũng là cách dựng các hình trong sách.
+
+\textbf{Bước 3. Xét tính trơn.} $f$ bằng $0$ tại hai đầu nên $u$ liên tục. $f'$ trong đoạn bằng $2s+1$, có bước nhảy tại $-1,0$, nên các đường gãy cấp một là $x\pm t=-1,0$. Ở giao điểm $(-1/2,1/2)$, lát cắt $u(x,1/2)$ có đạo hàm trái theo $x$ bằng $1/2$, đạo hàm phải bằng $-1/2$; vì vậy điểm ấy vẫn không $C^1$. Tại giao của các mặt sóng phải so trực tiếp các đạo hàm một phía, không mặc nhiên giả sử chúng triệt tiêu.
+
+\textbf{Bước 4. Kiểm tra.} Thế $t=0$ cho $u=f$, còn đạo hàm theo $t$ của hai sóng đối nhau nên vận tốc đầu bằng $0$ nơi $f'$ tồn tại. Mỗi đa thức của $x\pm t$ thỏa PDE; toàn nghiệm đúng theo nghĩa yếu trên các đường gãy.
+
+\textbf{Chi tiết đạo hàm tại giao điểm hai mặt sóng.} Với $t=1/2$, bên trái $x=-1/2$, chỉ $x+t=x+1/2\in[-1,0]$ góp:
+\[u(x,1/2)=\tfrac12(x+1/2)(x+3/2),\quad u_x=x+1\to1/2.\]
+Bên phải, chỉ $x-t=x-1/2\in[-1,0]$ góp:
+\[u(x,1/2)=\tfrac12(x-1/2)(x+1/2),\quad u_x=x\to-1/2.\]
+Hai vết giá trị đều $0$, nhưng hai đạo hàm không bằng nhau, nên không thể gọi điểm giao là điểm trơn.
+
+%ID VD_3_2_2_02
+\textbf{Bước 1. Tích phân vận tốc.} $f=0$, $g=\chi_{[-1,0]}$, $a=1$. Chọn
+\[H(s)=\begin{cases}0&s\le-1,\\s+1&-1<s<0,\\1&s\ge0.\end{cases}\]
+Hai hằng số đuôi đã nối liên tục với nhánh giữa.
+
+\textbf{Bước 2. Tách và ghép sóng.} $A=-H/2$, $B=H/2$, nên $u=(H(x+t)-H(x-t))/2$. Tương đương
+\[u=\tfrac12\big[\min(x+t,0)-\max(x-t,-1)\big]_+.\]
+Biểu thức trong ngoặc là độ dài giao của khoảng ảnh hưởng với hỗ trợ vận tốc. Trên mỗi miền mà các min/max chọn cùng nhánh, $u$ là affine theo $x,t$.
+
+\textbf{Bước 3. Miền gãy và giá trị lâu dài.} $H$ liên tục nên $u$ liên tục. $H'$ nhảy tại $-1,0$, phát sinh các đường $x\pm t=-1,0$ mất trơn cấp một. Với mỗi $x$ cố định, khi $t>\max(|x|,|x+1|)$, toàn đoạn $[-1,0]$ nằm trong khoảng ảnh hưởng, nên $u=1/2$. Kiểm tra tại $t=0$ có hiệu $H=0$ và $u_t=g$ tại các điểm liên tục của dữ liệu.
+
+%ID VD_3_2_2_03
+\textbf{Bước 1. Phản xạ Dirichlet.} $a=2$, $f=0$, $g=\chi_{[1,2]}$ trên nửa trục, biên $u(0,t)=0$. Mở rộng vận tốc lẻ: bằng $1$ trên $(1,2)$, $-1$ trên $(-2,-1)$, bằng $0$ còn lại.
+
+\textbf{Bước 2. Nguyên hàm chẵn.} Với $H(0)=0$, trên đối số dương $H=0$ trước $1$, $s-1$ trên $(1,2)$, $1$ sau $2$; phản xạ được $H(s)=[|s|-1]_0^1$. Vì thế
+\[A=-H/4,\quad B=H/4,\qquad u=\frac{[|x+2t|-1]_0^1-[|x-2t|-1]_0^1}{4}.\]
+\textbf{Bước 3. Kiểm tra biên và mặt sóng.} Tại $x=0$, hai cận có cùng trị tuyệt đối nên $u=0$. $u_t(x,0)=H'(x)=g(x)$ tại điểm liên tục. Nghiệm liên tục nhưng không $C^1$ trên các nhánh $x\pm2t=\pm1,\pm2$ nằm trong $x,t>0$. Chúng chia đồ thị thành các đoạn thẳng. Tại mỗi $x$ cố định, sau $t>(x+2)/2$, hai đuôi bằng nhau và $u=0$.
+
+%ID VD_3_2_2_04
+\textbf{Bước 1. Phản xạ Neumann.} Dữ liệu như Ví dụ 3, nhưng $u_x(0,t)=0$. Mở rộng vận tốc chẵn thành $\chi_{[1,2]}(|s|)$, nên nguyên hàm phải lẻ, không dùng nguyên hàm chẵn của ví dụ trước.
+
+\textbf{Bước 2. Tính hai sóng.}
+\[H(s)=\operatorname{sgn}(s)[|s|-1]_0^1,\quad A=-H/4,\quad B=H/4,\quad u=\frac{H(x+2t)-H(x-2t)}4.\]
+Trước $x=2t$ vẫn có thể dùng các cận dương; sau đó giá trị $H(x-2t)$ âm, tạo xung phản xạ cùng dấu.
+
+\textbf{Bước 3. Kiểm tra.} $u_x(0,t)=(H'(2t)-H'(-2t))/4=0$. $u$ liên tục, gãy cấp một trên $x\pm2t=\pm1,\pm2$. Độ dịch đúng là $2t$ vì PDE có hệ số $4$; những chỗ ghi $x\pm t$ trong hình/công thức cần hiểu theo tốc độ thật. Sau $t>(x+2)/2$, hai đuôi $H$ là $1,-1$, nên $u=1/2$, khác phản xạ Dirichlet trở về $0$.
+
+%ID VD_3_2_2_05
+\textbf{Bước 1. Phản xạ hai biên cố định.} $a=L=1$, $f=\chi_{[1/4,1/3]}$, $g=4\chi_{[2/3,3/4]}$. Mở rộng lẻ tại $0,1$ cho chu kỳ $2$. Đặt $r=\operatorname{mod}(s,2)$: $f_e(s)=f(r)$ nếu $r\le1$, $-f(2-r)$ nếu $r>1$; vận tốc mở rộng tương tự.
+
+\textbf{Bước 2. Nguyên hàm trong một chu kỳ.} Trên $[0,1]$, $H(s)=4[s-2/3]_0^{1/12}$; nó tăng từ $0$ lên $1/3$. Trên $[1,2]$, $H(s)=H(2-s)$, sau đó mở rộng chu kỳ $2$. Sự giảm trên nửa sau do vận tốc phản xạ âm, nên $H(2)=0$.
+
+\textbf{Bước 3. Ghép nghiệm.}
+\[u=\tfrac12[f_e(x-t)+f_e(x+t)]+\tfrac12[H(x+t)-H(x-t)].\]
+Hai sóng chạy là $A=f_e/2-H/2$, $B=f_e/2+H/2$. Tính từng hình bằng giảm các đối số về $[0,2]$, rồi chọn các nhánh trên; không cần viết một danh sách dài công thức thời gian.
+
+\textbf{Bước 4. Chu kỳ và tính trơn.} Cả $f_e,H$ có chu kỳ $2$, nên $u(t+2)=u(t)$. Li độ bước nhảy gây gián đoạn trên các đường $x\pm t=\pm1/4+2k,\pm1/3+2k$; vận tốc gây gãy cấp một trên $x\pm t=\pm2/3+2k,\pm3/4+2k$, $k\in\mathbb Z$. Ngoài các đường ấy, nghiệm affine cộng hằng. Biên $u(0,t)=u(1,t)=0$ theo tính lẻ tại hai đầu; dữ liệu ban đầu đúng trong miền theo nghĩa yếu.
+
+%ID VD_3_2_2_06
+\textbf{Bước 1. Phản xạ biên hỗn hợp.} Dữ liệu giống Ví dụ 5, nhưng $u(0,t)=0$, $u_x(1,t)=0$. Trên $[0,2]$, mở rộng $f_e(s)=f(s)$ nếu $s\le1$, $f(2-s)$ nếu $s\ge1$; sau đó $f_e(s+2)=-f_e(s)$ và chu kỳ $4$. Làm tương tự với $g_e$.
+
+\textbf{Bước 2. Tính nguyên hàm bốn nhánh.} Đặt $h(s)=4[s-2/3]_0^{1/12}$ trên $[0,1]$. Trên $[0,4]$:
+\[H(s)=\begin{cases}h(s)&0\le s\le1,\\2/3-h(2-s)&1\le s\le2,\\2/3-H(s-2)&2\le s\le4.\end{cases}\]
+Hạng $2/3$ là tích phân vận tốc trên $[0,2]$; toàn chu kỳ $4$ có trung bình bằng $0$, nên mở rộng $H$ chu kỳ $4$.
+
+\textbf{Bước 3. Nghiệm và phản chu kỳ.} Vẫn dùng $u=(f_e(x-t)+f_e(x+t))/2+(H(x+t)-H(x-t))/2$. Ta có $H(s+2)=2/3-H(s)$, nên
+\[u(x,t+2)=-u(x,t),\qquad u(x,t+4)=u(x,t).\]
+Vì dữ liệu khác không, không có chu kỳ $2$; câu yêu cầu chu kỳ $2$ trong sách cần sửa thành phản chu kỳ $2$ và chu kỳ $4$. Mode đầu khác không (tích phân $f\sin(\pi x/2)>0$), xác nhận chu kỳ cơ bản $4$.
+
+\textbf{Bước 4. Kiểm tra biên.} $f_e,g_e$ lẻ tại $0$, chẵn tại $1$, nên nghiệm có đúng vết Dirichlet và Neumann nơi vết đạo hàm tồn tại. Các bước nhảy dữ liệu lan dọc $x\pm t=b$, trong đó $b$ là các điểm biên hỗ trợ cùng các ảnh phản xạ đã xây dựng. Mức trơn là nghiệm từng miền/ nghiệm yếu, không $C^2$ trên toàn hình chữ nhật.
+
+\textbf{Chi tiết nối nguyên hàm và phản chu kỳ.} Xung dương có diện tích $4(3/4-2/3)=1/3$. Phản xạ chẵn tại $1$ tạo thêm diện tích $1/3$ trên $(1,2)$, nên $H(2)=2/3$. Vì $g_e(s+2)=-g_e(s)$,
+\[H(s+2)=H(2)+\int_2^{s+2}g_e(r)dr=2/3-\int_0^sg_e(r)dr=2/3-H(s).\]
+Khi dịch $t$ thêm $2$, các đối số $x+t$ tăng $2$, $x-t$ giảm $2$; cả hai giá trị $H$ thành $2/3-H$ của giá trị cũ. Vì thế hiệu $H$ đổi dấu. Các giá trị $f_e$ cũng đổi dấu, cho $u(t+2)=-u(t)$.
+
+%ID VD_3_3_2_01
+\textbf{Bước 1. Chọn sine theo biên cố định.} Trên $(0,L)$, $X_n=\sin(n\pi x/L)$, $\omega_n=an\pi/L$. Hệ số của li độ là $A_n$, của vận tốc là $B_n$; nghiệm mode là $(A_n\cos\omega_nt+B_n\sin\omega_nt/\omega_n)X_n$.
+
+\textbf{Bước 2. Câu (i).} $a=L=1$, $f=\sin\pi x$, $g=\sin^3\pi x=(3\sin\pi x-\sin3\pi x)/4$. Trực giao cho $A_1=1$, $B_1=3/4$, $B_3=-1/4$, các hệ số khác bằng $0$. Do đó
+\[u=\sin\pi x\cos\pi t+\frac3{4\pi}\sin\pi x\sin\pi t-\frac1{12\pi}\sin3\pi x\sin3\pi t.\]
+Đạo hàm thời gian tại $0$ khôi phục $g$; từng mode thỏa PDE và biên. Nghiệm $C^\infty$, chu kỳ cơ bản $2$.
+
+\textbf{Bước 3. Câu (ii).} $a=2$, $L=\pi$, dữ liệu trong sách là $f(x)=\sin(\pi x)$, không phải $\sin x$. Dùng $2\sin\pi x\sin nx=\cos((\pi-n)x)-\cos((\pi+n)x)$:
+\[A_n=\frac2\pi\int_0^\pi\sin(\pi x)\sin nx\,dx
+=\frac{2(-1)^nn\sin(\pi^2)}{\pi(\pi^2-n^2)},\qquad B_n=0.\]
+Không có mẫu số bằng không vì $n$ nguyên. Nghiệm là $u=\sum_{n\ge1}A_n\cos2nt\sin nx$, chu kỳ $\pi$.
+
+\textbf{Bước 4. Nêu mức trơn đúng.} $f(\pi)=\sin(\pi^2)\ne0$, trái biên $u(\pi,t)=0$. Do đó câu (ii) không có nghiệm liên tục đến góc $(\pi,0)$ với mọi dữ liệu nguyên văn. Chuỗi xác định nghiệm theo nghĩa $L^2$/ từng miền; bước nhảy của mở rộng lẻ phát sinh mặt sóng từ đầu phải. Câu (i) không có vấn đề tương thích ấy.
+
+\textbf{Chi tiết tích phân câu (ii).} Từ tích–tổng,
+\[A_n=\frac1\pi\left[\frac{\sin((\pi-n)x)}{\pi-n}-\frac{\sin((\pi+n)x)}{\pi+n}\right]_0^\pi.\]
+Vì $\sin(\pi^2-n\pi)=\sin(\pi^2+n\pi)=(-1)^n\sin\pi^2$,
+\[A_n=\frac{(-1)^n\sin\pi^2}{\pi}\left(\frac1{\pi-n}-\frac1{\pi+n}\right)
+=\frac{2(-1)^nn\sin\pi^2}{\pi(\pi^2-n^2)}.\]
+
+%ID VD_3_3_2_02
+\textbf{Bước 1. Giữ mode hằng của Neumann.} Hệ hàm riêng là $X_0=1$, $X_n=\cos(n\pi x/L)$, $n\ge1$. Mode $0$ bằng $A_0+B_0t$ với hệ số là trung bình của dữ liệu.
+
+\textbf{Bước 2. Câu (i).} $a=L=1$, $f=0$, $g=\cos^2\pi x=(1+\cos2\pi x)/2$. Vì vậy $B_0=1/2$, $B_2=1/2$, còn lại bằng $0$:
+\[u=t/2+\cos2\pi x\sin2\pi t/(4\pi).\]
+Đạo hàm không gian là bội của $\sin2\pi x$, bằng không ở hai đầu. Đạo hàm thời gian tại $0$ cho đúng $g$. Hạng tuyến tính khiến nghiệm không tuần hoàn dù phần dao động có chu kỳ $1$.
+
+\textbf{Bước 3. Câu (ii).} $a=2$, $L=\pi$, $f=\sin x$, $g=0$. $A_0=2/\pi$. Tích–tổng cho
+\[A_n=\frac2\pi\int_0^\pi\sin x\cos nx\,dx
+=\frac{2(1+(-1)^n)}{\pi(1-n^2)}\quad(n\ne1),\qquad A_1=0.\]
+Tại $n=1$ phải tích phân riêng, không dùng mẫu bằng $0$. Chỉ còn các mode chẵn:
+\[u=\frac2\pi+\sum_{m\ge1}\frac4{\pi(1-4m^2)}\cos4mt\cos2mx.\]
+\textbf{Bước 4. Chu kỳ và trơn.} Mode $m=1$ khác không cho chu kỳ cơ bản $\pi/2$. Dữ liệu $f'(0)=1$, $f'(\pi)=-1$ không thỏa biên Neumann; mở rộng chẵn có góc, nên không có nghiệm $C^1$ trên toàn miền qua các mặt phản xạ. Chuỗi và công thức phản xạ xác định cùng nghiệm liên tục từng miền.
+
+\textbf{Chi tiết tích–tổng và ngoại lệ $n=1$.} Với $n\ne1$,
+\[\begin{aligned}
+\int_0^\pi\sin x\cos nx\,dx
+&=\frac12\int_0^\pi[\sin((1+n)x)+\sin((1-n)x)]dx\\
+&=\frac{1+(-1)^n}{2}\left(\frac1{1+n}+\frac1{1-n}\right)
+=\frac{1+(-1)^n}{1-n^2}.
+\end{aligned}\]
+Nhân $2/\pi$ được $A_n$. Với $n=1$, tích phân riêng $\int_0^\pi\sin x\cos x\,dx=[\sin^2x/2]_0^\pi=0$. Mode hằng dùng chuẩn $\pi$, nên $A_0=\pi^{-1}[-\cos x]_0^\pi=2/\pi$, không dùng chuẩn $\pi/2$ của các mode khác.
+
+%ID VD_3_3_2_03
+\textbf{Bước 1. Trị riêng Dirichlet–Neumann.} $X(0)=0$, $X'(L)=0$. Tích phân từng phần cho $\lambda\int X^2=\int(X')^2>0$ vì nghiệm hằng thỏa $X(0)=0$ chỉ là $0$. Với $\lambda=k^2$, $X=C\sin kx$, $\cos kL=0$, nên $k_n=(n+1/2)\pi/L$, $n\ge0$.
+
+\textbf{Bước 2. Trực giao và hệ số.} Với hai trị riêng, trừ $X_m''X_n-X_n''X_m$ và tích phân. Hạng biên $[X_m'X_n-X_n'X_m]_0^L=0$, nên tích vô hướng bằng $0$ nếu khác trị riêng. Chuẩn là $L/2$, suy $A_n=(2/L)\int f\sin k_nx$, $B_n=(2/L)\int g\sin k_nx$.
+
+\textbf{Bước 3. Ghép nghiệm.} $u=\sum_{n\ge0}(A_n\cos ak_nt+B_n\sin ak_nt/(ak_n))\sin k_nx$. Mỗi mode đổi dấu sau $2L/a$ và có chu kỳ $4L/a$. Tính duy nhất theo năng lượng: thông lượng ở $0$ hết vì $u_t=0$, ở $L$ hết vì $u_x=0$.
+
+\textbf{Bước 4. Dữ liệu cụ thể.} $a=1$, $L=\pi$, $f=x$, $g=\sin^3(x/2)$. Với $k_n=n+1/2$, tích phân từng phần cho $\int_0^\pi x\sin k_nx=(-1)^n/k_n^2$, nên $A_n=2(-1)^n/(\pi k_n^2)$. Từ công thức sin lập phương, $B_0=3/4$, $B_1=-1/4$:
+\[u=\sum_{n\ge0}\frac{2(-1)^n}{\pi k_n^2}\cos k_nt\sin k_nx
++\frac32\sin(t/2)\sin(x/2)-\frac16\sin(3t/2)\sin(3x/2).\]
+Chu kỳ cơ bản $4\pi$. $f'(\pi)=1$ trái biên Neumann, nên nghiệm không $C^1$ qua mặt sóng từ góc phải; đây là nghiệm năng lượng/từng miền, không nghiệm cổ điển toàn bao đóng.
+
+\textbf{Chi tiết điều kiện biên, chuẩn và tích phân dữ liệu.} Từ $X''+k^2X=0$, $X=A\cos kx+B\sin kx$. $X(0)=0$ cho $A=0$; $X'(L)=Bk\cos kL=0$ với $Bk\ne0$ cho $\cos kL=0$. Chuẩn
+\[\int_0^L\sin^2k_nx\,dx=\left[x/2-\sin(2k_nx)/(4k_n)\right]_0^L=L/2.\]
+Với $L=\pi$,
+\[\int_0^\pi x\sin k_nx\,dx=
+\left[-x\cos(k_nx)/k_n+\sin(k_nx)/k_n^2\right]_0^\pi
+=(-1)^n/k_n^2.\]
+Đã dùng $\cos(k_n\pi)=0$, $\sin(k_n\pi)=(-1)^n$. Khai triển $g=3\sin(x/2)/4-\sin(3x/2)/4$ rồi chiếu lên hệ sine trực giao cho $B_0=3/4,B_1=-1/4$.
+
+\textbf{Chi tiết trực giao và dấu trị riêng.} Nhân $-X''=\lambda X$ bởi $X$, tích phân:
+\[\lambda\int_0^LX^2dx=-[X'X]_0^L+\int_0^L(X')^2dx=\int_0^L(X')^2dx.\]
+Hạng biên hết vì mỗi đầu có $X=0$ hoặc $X'=0$. Nếu $\lambda=0$, $\int(X')^2=0$ cho $X$ hằng; khi có một đầu Dirichlet, hằng đó bằng $0$. Với hai trị riêng,
+\[(\lambda_m-\lambda_n)\int_0^LX_mX_n\,dx
+=\int_0^L(-X_m''X_n+X_n''X_m)dx
+=[-X_m'X_n+X_n'X_m]_0^L=0.\]
+Nếu $\lambda_m\ne\lambda_n$, chia hiệu trị riêng cho tích vô hướng bằng $0$.
+
+%ID VD_3_4_2_01
+\textbf{Bước 1. Hệ sine và đáp ứng nguồn cos.} $a=L=1$, $X_n=\sin(n\pi x)$, $\omega_n=n\pi$. Khai triển $x$ có hệ số $c_n=2\int_0^1x\sin(n\pi x)dx=2(-1)^{n+1}/(n\pi)$. Đặt
+\[C_\omega(\alpha,t)=\frac{\cos\alpha t-\cos\omega t}{\omega^2-\alpha^2},\qquad
+C_\omega(\omega,t)=\frac{t\sin\omega t}{2\omega}.\]
+Đây là nghiệm $C''+\omega^2C=\cos\alpha t$, $C(0)=C'(0)=0$; nhánh cộng hưởng lấy giới hạn hoặc tích phân Duhamel.
+
+\textbf{Bước 2. Câu (i), biên không và nguồn $x\cos\alpha t$.} Dữ liệu đầu không, nên $y_n=c_nC_{\omega_n}$ và $u=\sum_{n\ge1}c_nC_{n\pi}\sin(n\pi x)$. Nếu $\alpha=m\pi$, chỉ mode $m$ dùng nhánh cộng hưởng, không chia $0$.
+
+\textbf{Bước 3. Câu (ii), nguồn không và biên phải $\cos\alpha t$.} Lấy $b=x\cos\alpha t$, $w=u-b$. Khi đó $Q=\alpha^2x\cos\alpha t$, $w(x,0)=-x$, $w_t(x,0)=0$. Suy
+\[u=x\cos\alpha t+\sum_{n\ge1}c_n[-\cos(n\pi t)+\alpha^2C_{n\pi}(\alpha,t)]\sin(n\pi x).\]
+\textbf{Bước 4. Kiểm tra và góc.} Hàm nâng cho đúng biên, ODE cho nguồn của $w$ rồi triệt tiêu với $b_{tt}$. Tại $t=0$ khai triển $-x$ bù li độ của $b$ trong miền. Nhưng ở $(1,0)$, biên phải bằng $1$ trái li độ đầu $0$, nên câu (ii) không có nghiệm liên tục trên toàn bao đóng. Câu (i) có nguồn không khớp gia tốc biên tại góc phải nếu đòi $C^2$ đến góc; chuỗi vẫn giải trong miền với cách hiểu thích hợp.
+
+\textbf{Chi tiết hệ số nguồn và đáp ứng.} Tích phân từng phần:
+\[c_n=2\left[-\frac{x\cos(n\pi x)}{n\pi}+
+\frac{\sin(n\pi x)}{n^2\pi^2}\right]_0^1
+=-\frac{2(-1)^n}{n\pi}.\]
+Với $\alpha^2\ne\omega^2$, thử $C_p=A\cos\alpha t$: $(\omega^2-\alpha^2)A=1$. Tổng $C=A\cos\alpha t+B\cos\omega t+D\sin\omega t$ có dữ liệu không khi $B=-A,D=0$. Với $\alpha=\omega$, thử $C=bt\sin\omega t$; đạo hàm hai lần cho $C''+\omega^2C=2b\omega\cos\omega t$, nên $b=1/(2\omega)$. Trong câu (ii), $b_{xx}=0$, $b_{tt}=-\alpha^2x\cos\alpha t$; vì $u_{tt}-u_{xx}=0$, phần $w$ có nguồn $-b_{tt}=\alpha^2x\cos\alpha t$ và dữ liệu $w_0=-x,w_{t,0}=0$.
+
+%ID VD_3_4_2_02
+\textbf{Bước 1. Tính duy nhất.} Với hiệu $v$ của hai nghiệm cùng dữ liệu và biên Neumann, $v_{tt}=a^2v_{xx}$, $v_x(0,t)=v_x(L,t)=0$. Đạo hàm $E=\frac12\int(v_t^2+a^2v_x^2)$ cho $E'=a^2[v_tv_x]_0^L=0$. $E(0)=0$ suy $v_t=v_x=0$; li độ đầu bằng $0$ xác định hằng số là $0$.
+
+\textbf{Bước 2. Nâng biên tổng quát.} Với $u_x(0,t)=\mu(t)$, $u_x(L,t)=\nu(t)$, chọn $b=\mu x+(\nu-\mu)x^2/(2L)$, vì $b_x(0)=\mu$, $b_x(L)=\nu$. Đặt $w=u-b$; nguồn mới là $Q=F+a^2(\nu-\mu)/L-b_{tt}$, hai dữ liệu mới là $f-b_0$, $g-b_{t,0}$.
+
+\textbf{Bước 3. Tách mode.} Với $X_0=1$, $X_n=\cos(n\pi x/L)$, lấy hệ số $A_0,B_0,Q_0$ là trung bình và các hệ số $n\ge1$ là $2/L$ lần tích phân với $X_n$. Mode hằng giải $y_0''=Q_0$, nên $y_0=A_0+B_0t+\int_0^t(t-s)Q_0(s)ds$. Mode còn lại giải
+\[y_n=A_n\cos\omega_nt+\frac{B_n}{\omega_n}\sin\omega_nt+\frac1{\omega_n}\int_0^t\sin(\omega_n(t-s))Q_n(s)ds.\]
+\textbf{Bước 4. Trở lại nghiệm.} $u=b+y_0+\sum_{n\ge1}y_nX_n$. Kiểm tra $t=0$ sau khi cộng hàm nâng; kiểm tra từng đạo hàm biên. Công thức mode hằng khác các mode dao động, nên không áp dụng mẫu $1/\omega_0$. Nếu dữ liệu không tương thích $f'(0)=\mu(0)$, $g'(0)=\mu'(0)$ (và tương tự đầu phải), nêu rõ mức trơn và xét nghiệm yếu thay vì khẳng định cổ điển đến góc.
+
+\textbf{Chi tiết tích phân từng phần trong đạo hàm năng lượng.} Đặt $E=\frac12\int_0^L(u_t^2+a^2u_x^2+\kappa u^2)dx$. Với $u_{tt}-a^2u_{xx}+\gamma u_t+\kappa u=F$,
+\[\begin{aligned}
+E'&=\int_0^L(u_tu_{tt}+a^2u_xu_{xt}+\kappa uu_t)dx\\
+&=\int_0^Lu_t(a^2u_{xx}-\gamma u_t-\kappa u+F)dx
++a^2\int_0^Lu_xu_{xt}dx+\kappa\int_0^Luu_tdx\\
+&=a^2[u_tu_x]_0^L-a^2\int_0^Lu_{tx}u_xdx
++a^2\int_0^Lu_xu_{xt}dx-\gamma\int_0^Lu_t^2dx+\int_0^LFu_tdx\\
+&=a^2[u_tu_x]_0^L-\gamma\int_0^Lu_t^2dx+\int_0^LFu_tdx.
+\end{aligned}\]
+Hai hạng $\kappa uu_t$ triệt tiêu ngay khi thế PDE; hai tích phân $u_xu_{xt}$ triệt tiêu sau tích phân từng phần. Với biên Dirichlet thuần nhất, đạo hàm vết theo $t$ cho $u_t=0$; với biên Neumann thuần nhất, $u_x=0$. Nếu định nghĩa năng lượng không có $1/2$, nhân cả đẳng thức đạo hàm với $2$.
+
+\textbf{Chi tiết đạo hàm đáp ứng mode nguồn.} Đặt $D_n(t)=\omega_n^{-1}\int_0^t\sin(\omega_n(t-s))Q_n(s)ds$. Vì $\sin0=0$,
+\[D_n'=\int_0^t\cos(\omega_n(t-s))Q_n(s)ds,\quad
+D_n''=Q_n(t)-\omega_n\int_0^t\sin(\omega_n(t-s))Q_n(s)ds=Q_n-\omega_n^2D_n.\]
+Tại $0$, $D_n=D_n'=0$. Vì thế tích phân vừa cho đúng nguồn, vừa giữ nguyên cả hai dữ liệu ban đầu của các hạng thuần nhất. Với mode hằng, $D_0=\int_0^t(t-s)Q_0(s)ds$, $D_0'=\int_0^tQ_0(s)ds$, $D_0''=Q_0(t)$, không chia cho $\omega_0=0$.
+
+%ID VD_3_5_2_01
+\textbf{Bước 1. Năng lượng của sóng có cản.} PDE là $u_{tt}+u_t=4u_{xx}$, biên cố định trên $(0,\pi)$. Với $E=\frac12\int(u_t^2+4u_x^2)$, tích phân từng phần cho $E'=4[u_tu_x]_0^\pi-\int u_t^2=-\int u_t^2\le0$. Do vậy năng lượng giảm; hiệu hai nghiệm cùng dữ liệu có năng lượng đầu $0$, chứng minh duy nhất.
+
+\textbf{Bước 2. Tách biến và bỏ cản bằng đổi ẩn.} Mode $\sin nx$ có $T_n''+T_n'+4n^2T_n=0$. Đặt $T_n=e^{-t/2}Y_n$, được $Y_n''+(4n^2-1/4)Y_n=0$, $Y_n(0)=A_n$, $Y_n'(0)=B_n+A_n/2$. Đặt $\omega_n=\sqrt{4n^2-1/4}$:
+\[T_n=e^{-t/2}[A_n\cos\omega_nt+(B_n+A_n/2)\sin\omega_nt/\omega_n].\]
+Hạng $A_n/2$ cần để bù đạo hàm của $e^{-t/2}$.
+
+\textbf{Bước 3. Dữ liệu cụ thể.} $f=\sin^3x$ cho $A_1=3/4$, $A_3=-1/4$, các hệ số khác $0$. $g=1$ cho $B_n=2(1-(-1)^n)/(\pi n)$. Nghiệm $u=\sum_{n\ge1}T_n\sin nx$ với các hệ số này.
+
+\textbf{Bước 4. Kiểm tra.} Tại $t=0$, $T_n=A_n$, $T_n'=B_n$, đúng cả hai dữ liệu. Biên đúng theo sine và ODE chứng minh PDE. Tuy nhiên $g(0)=g(\pi)=1$ trái biên cố định, nên công thức là nghiệm năng lượng, có mặt gãy từ góc; không có nghiệm $C^1$ trên toàn bao đóng. Đẳng thức năng lượng vẫn đúng trong lớp năng lượng bằng xấp xỉ dữ liệu.
+
+\textbf{Chi tiết tích phân của dữ liệu hằng.} Với $k_n=n\pi/L$,
+\[\int_0^L\sin k_nx\,dx=\left[-\frac{\cos k_nx}{k_n}\right]_0^L=\frac{1-(-1)^n}{k_n}.\]
+Nhân $2/L$ cho hệ số của hằng $1$ là $2(1-(-1)^n)/(n\pi)$; hằng $-1$ đổi dấu. Khi chiếu vận tốc, còn chia $\omega_n$ trong hệ số $\sin\omega_nt$; khi chiếu li độ, hệ số $\cos\omega_nt$ giữ nguyên.
+
+\textbf{Chi tiết tích phân từng phần trong đạo hàm năng lượng.} Đặt $E=\frac12\int_0^L(u_t^2+a^2u_x^2+\kappa u^2)dx$. Với $u_{tt}-a^2u_{xx}+\gamma u_t+\kappa u=F$,
+\[\begin{aligned}
+E'&=\int_0^L(u_tu_{tt}+a^2u_xu_{xt}+\kappa uu_t)dx\\
+&=\int_0^Lu_t(a^2u_{xx}-\gamma u_t-\kappa u+F)dx
++a^2\int_0^Lu_xu_{xt}dx+\kappa\int_0^Luu_tdx\\
+&=a^2[u_tu_x]_0^L-a^2\int_0^Lu_{tx}u_xdx
++a^2\int_0^Lu_xu_{xt}dx-\gamma\int_0^Lu_t^2dx+\int_0^LFu_tdx\\
+&=a^2[u_tu_x]_0^L-\gamma\int_0^Lu_t^2dx+\int_0^LFu_tdx.
+\end{aligned}\]
+Hai hạng $\kappa uu_t$ triệt tiêu ngay khi thế PDE; hai tích phân $u_xu_{xt}$ triệt tiêu sau tích phân từng phần. Với biên Dirichlet thuần nhất, đạo hàm vết theo $t$ cho $u_t=0$; với biên Neumann thuần nhất, $u_x=0$. Nếu định nghĩa năng lượng không có $1/2$, nhân cả đẳng thức đạo hàm với $2$.
+
+\textbf{Chi tiết đổi ẩn trong ODE có cản.} Với $T=e^{-t/2}Y$,
+\[T'=e^{-t/2}(Y'-Y/2),\quad T''=e^{-t/2}(Y''-Y'+Y/4).\]
+Do đó $T''+T'+\Omega^2T=e^{-t/2}[Y''+(\Omega^2-1/4)Y]$. Dữ liệu $T(0)=A,T'(0)=B$ trở thành $Y(0)=A,Y'(0)=B+A/2$. Nếu $\Omega=0$, giải trực tiếp $T''+T'=0$: đặt $Z=T'$, $Z=Be^{-t}$, rồi $T=A+B(1-e^{-t})$.
+
+%ID VD_3_5_2_02
+\textbf{Bước 1. Năng lượng đúng của dầm.} $u_{tt}=-a^2u_{xxxx}$, hai đầu ngàm $u=u_x=0$. Nhân với $u_t$ và tích phân hai lần:
+\[E=\tfrac12\int_0^L(u_t^2+a^2u_{xx}^2)dx,\qquad E'=a^2[u_{tx}u_{xx}-u_tu_{xxx}]_0^L=0.\]
+Do $u_t=u_{tx}=0$ ở hai đầu. Năng lượng có $u_x^2$ trong đề không phù hợp toán tử cấp bốn; cần sửa thành $u_{xx}^2$. Với hiệu hai nghiệm, $E=0$ suy $u_t=u_{xx}=0$; hàm affine còn lại bị biên ngàm và dữ liệu đầu buộc bằng $0$, nên duy nhất.
+
+\textbf{Bước 2. Trị riêng dương và trực giao.} $X''''=\lambda X$, $X=X'=0$ ở hai đầu. Tích phân hai lần cho $\lambda\int X^2=\int(X'')^2$. Nếu $\lambda=0$, $X$ affine rồi biên loại hết; vậy $\lambda>0$. Trừ tích phân hai phương trình cho $(\lambda_m-\lambda_n)\int X_mX_n=0$ vì hạng biên $[X_m'''X_n-X_m''X_n'-X_n'''X_m+X_n''X_m']$ bằng $0$.
+
+\textbf{Bước 3. Giải đủ bốn điều kiện.} Đặt $\lambda=k^4$, $\beta=kL$. Hai điều kiện trái cho $X=A(\cosh kx-\cos kx)+B(\sinh kx-\sin kx)$. Hai điều kiện phải tạo định thức $2(1-\cosh\beta\cos\beta)=0$, nên $\cosh\beta\cos\beta=1$. Chỉ lấy nghiệm dương; $\beta=0$ là nghiệm giả của cơ sở suy biến. Nghiệm đầu $\beta_1\approx4.730040745$. Chọn
+\[X_n=\cosh k_nx-\cos k_nx-\sigma_n(\sinh k_nx-\sin k_nx),\quad
+\sigma_n=\frac{\cosh\beta_n-\cos\beta_n}{\sinh\beta_n-\sin\beta_n}.\]
+Phương trình đặc trưng bảo đảm cả $X_n(L)=X_n'(L)=0$.
+
+\textbf{Bước 4. Chiếu dữ liệu và ghép.} $A_n=\int fX_n/\int X_n^2$, $B_n=\int gX_n/\int X_n^2$, tần số $\omega_n=ak_n^2$. Nghiệm $u=\sum(A_n\cos\omega_nt+B_n\sin\omega_nt/\omega_n)X_n$. Kiểm tra bốn biên bằng hàm riêng, hai dữ liệu bằng hệ số; không dùng tần số $ak_n$ của phương trình sóng cấp hai. Với dữ liệu đủ trơn và tương thích thu nghiệm cổ điển; với dữ liệu năng lượng hiểu chuỗi trong không gian thích hợp.
+
+\textbf{Chi tiết hai tích phân năng lượng và định thức.} Nhân PDE với $u_t$:
+\[\begin{aligned}
+\int_0^Lu_tu_{xxxx}dx
+&=[u_tu_{xxx}]_0^L-\int_0^Lu_{tx}u_{xxx}dx\\
+&=[u_tu_{xxx}-u_{tx}u_{xx}]_0^L+\int_0^Lu_{txx}u_{xx}dx.
+\end{aligned}\]
+Hạng tích phân cuối bằng $\frac12(d/dt)\int u_{xx}^2$; chuyển sang cùng động năng cho $E'$ đã viết.
+
+Đặt $C=\cosh\beta,c=\cos\beta,S=\sinh\beta,s=\sin\beta$. Hai điều kiện phải, sau chia đạo hàm cho $k$, là
+\[\begin{pmatrix}C-c&S-s\\S+s&C-c\end{pmatrix}\binom AB=\binom00.\]
+Định thức $(C-c)^2-(S-s)(S+s)=C^2-2Cc+c^2-S^2+s^2=2-2Cc$, vì $C^2-S^2=c^2+s^2=1$. Dòng đầu cho $B/A=-(C-c)/(S-s)$; dòng hai đúng khi định thức bằng $0$. Đây là nguồn gốc của $\sigma_n$.
+
+%ID VD_3_6_2_01
+\textbf{Bước 1. Đưa Kirchhoff về diện tích chỏm.} Tốc độ $c=2$, li độ đầu không, vận tốc là chỉ thị $z>0$. Tại $P=(x,y,z)$, điểm trên mặt cầu là $P+2t\omega$ và thuộc miền vận tốc khi $z+2t\omega_z>0$. Đặt $\mu=\omega_z$; diện tích hướng có $\mu$ trong một khoảng bằng $2\pi$ nhân độ dài khoảng ấy.
+
+\textbf{Bước 2. Cắt ngưỡng vào $[-1,1]$.} Điều kiện là $\mu>-z/(2t)$. Nếu $z\ge2t$, cả mặt cầu nằm phía trên; nếu $z\le-2t$, không có phần nào; nếu $|z|<2t$, độ dài khoảng là $1+z/(2t)$. Vì $u=t|E|/2$,
+\[u(P,t)=\begin{cases}t&z\ge2t,\\t/2+z/4&|z|<2t,\\0&z\le-2t.\end{cases}\]
+\textbf{Bước 3. Kiểm tra.} Ngoài các mặt $z=\pm2t$, mỗi nhánh affine nên $u_{tt}=4\Delta u=0$. $u(P,0)=0$; với $z\ne0$, $u_t(P,0)$ là $1$ hoặc $0$ đúng dữ liệu. Nghiệm liên tục nhưng gãy cấp một trên các mặt sóng. Tại $z=0$ dữ liệu chỉ thị gián đoạn nên không có vết cổ điển thống nhất; công thức cho $u=t/2$, là cách hiểu từ trung bình mặt cầu.
+
+%ID VD_3_6_2_02
+\textbf{Bước 1. Chọn trục theo điểm quan sát.} $c=2$, $\psi=\chi_{B_R(0)}$, $r=|P|$, $\rho=2t$. Nếu $r>0$, lấy trục của $\mu$ hướng về tâm từ $P$. Khi đó $|P+\rho\omega|^2=r^2+\rho^2-2r\rho\mu$.
+
+\textbf{Bước 2. Bất đẳng thức quả cầu.} Điều kiện nằm trong $B_R$ tương đương $\mu>(r^2+\rho^2-R^2)/(2r\rho)$. Tỷ lệ diện tích chỏm là ngưỡng đã cắt:
+\[K_R(r,t)=t\left[\frac{R^2-(r-2t)^2}{8rt}\right]_0^1,\qquad [s]_0^1=\min(1,\max(0,s)).\]
+\textbf{Bước 3. Giải thích các nhánh.} Nếu $r<R$ và $2t<R-r$, cả mặt cầu ở trong, $u=t$. Nếu $|R-r|<2t<R+r$, chỉ một chỏm giao, $u=[R^2-(r-2t)^2]/(8r)$. Nếu không giao, $u=0$. Với $r=0$, tính riêng: $u=t$ khi $2t<R$, $0$ khi $2t>R$; giá trị tại $2t=R$ phụ thuộc quy ước chỉ thị trên toàn mặt cầu, với quả cầu mở là $0$.
+
+\textbf{Bước 4. Kiểm tra.} Khi điểm ban đầu nằm trong quả cầu, nhánh đầu cho vận tốc $1$; ở ngoài cho $0$. Thời gian đến/đi là khoảng cách tới mặt cầu chia tốc độ. Dữ liệu gián đoạn cho nghiệm không cổ điển trên các mặt sóng; trường hợp tâm quan sát có thể có bước nhảy khi toàn mặt cầu đồng thời đi qua biên.
+
+%ID VD_3_6_2_03
+\textbf{Bước 1. Dùng phương pháp hạ chiều.} Dữ liệu hai chiều $u_0=0$, $u_{t,0}=f(x)$ không phụ thuộc $y$. Mở rộng sang ba chiều cũng không phụ thuộc $y,z$. Kirchhoff cho $u=t(4\pi)^{-1}\int_{S^2}f(x+ct\omega_x)d\omega$.
+
+\textbf{Bước 2. Tích phân góc.} Chọn trục cực là trục $x$, $\mu=\omega_x$, $d\omega=d\phi\,d\mu$. Tích phân theo $\phi$ cho $2\pi$, nên $u=(t/2)\int_{-1}^1f(x+ct\mu)d\mu$. Đổi $s=x+ct\mu$, $ds=ct\,d\mu$:
+\[u(x,y,t)=\frac1{2c}\int_{x-ct}^{x+ct}f(s)ds.\]
+\textbf{Bước 3. Kiểm tra bằng d'Alembert.} Nghiệm không phụ thuộc $y$, nên $\Delta u=u_{xx}$. Công thức vừa tìm đúng d'Alembert một chiều với li độ không và vận tốc $f$. Tại $0$ tích phân có độ dài $0$, còn đạo hàm thời gian cho $f(x)$. Nếu $f$ không trơn, công thức vẫn có nghĩa và mức trơn được xét tại các cận chạm điểm gãy của $f$.
+
+%ID VD_3_6_2_04
+\textbf{Bước 1. Tách hai nguồn vận tốc.} $c=2$, $u_0=0$, $\psi=\chi_{[0,1]}(x)-\chi_{[0,1]}(y)$. Tuyến tính cho hiệu của một nghiệm chỉ phụ thuộc $x$ và một nghiệm chỉ phụ thuộc $y$.
+
+\textbf{Bước 2. Tính độ dài giao.} Đặt $h(s)=[s]_0^1$, nguyên hàm của $\chi_{[0,1]}$. Theo Ví dụ 3,
+\[u=\frac14\{h(x+2t)-h(x-2t)-h(y+2t)+h(y-2t)\}.\]
+Mỗi hiệu $h$ bằng độ dài giao $[q-2t,q+2t]\cap[0,1]$ với $q=x$ hoặc $y$, nên có thể đọc mọi nhánh từ min/max.
+
+\textbf{Bước 3. Kiểm tra và đối xứng.} Tại $t=0$, $u=0$; đạo hàm thời gian cho $\chi_{[0,1]}(x)-\chi_{[0,1]}(y)$. Hai phần thỏa PDE một chiều, nên tổng thỏa PDE hai chiều. Đổi $x,y$ đổi dấu, do đó $u(x,x,t)=0$. Khi cả hai khoảng ảnh hưởng đã bao trọn $[0,1]$, hai phần cùng bằng $1/4$ và triệt tiêu. Các mặt gãy là $x\pm2t=0,1$ và $y\pm2t=0,1$.
+
+%ID VD_3_6_2_05
+\textbf{Bước 1. Duhamel cho nguồn bật trong một đơn vị thời gian.} $c=2$, dữ liệu đầu không, $F(P,s)=\chi_{[0,1]}(s)\chi_{B_2(0)}(P)$. Xung tại thời điểm $s$ có nghiệm $K_2(r,t-s)$, $r=|P|$, nên
+\[u=\int_0^{\min(t,1)}K_2(r,t-s)ds=J_2(r,t)-J_2(r,(t-1)_+).\]
+\textbf{Bước 2. Tính nguyên hàm chỏm với tốc độ tổng quát.} Với $R,c>0$, đặt $b=|R-r|/c$, $d=(R+r)/c$, $q=[t]_b^d$ và
+\[A(s)=\frac{(R^2-r^2)s+rcs^2-c^2s^3/3}{4rc}.\]
+Ở phần giao chỏm, $K_R=[R^2-(r-cs)^2]/(4rc)=A'(s)$. Nếu $r<R$, trước $b$ có $K_R=s$; nếu $r\ge R$, trước $b$ bằng $0$. Do đó, với $r>0$,
+\[J_R(r,t)=\tfrac12\min(t,(R-r)_+/c)^2+A(q)-A(b).\]
+Với $r=0$, $J_R(0,t)=\frac12\min(t,R/c)^2$.
+
+\textbf{Bước 3. Áp dụng $R=c=2$ và kiểm tra.} Thay hai bộ thời gian $t,(t-1)_+$ vào công thức; mọi nhánh đều là đa thức và min/max. Duhamel đảm bảo hai dữ liệu đầu không và PDE có đúng nguồn. Khi $t\ge1+(r+2)/2$, cả hai $J$ đã đạt cùng hằng số, nên $u=0$ tại điểm ấy: xung nguồn hữu hạn đi qua hoàn toàn trong ba chiều.

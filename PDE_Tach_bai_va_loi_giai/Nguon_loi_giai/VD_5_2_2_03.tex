@@ -1,0 +1,17 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{fontspec,amsmath,amssymb,graphicx}
+\usepackage[margin=18mm]{geometry}
+\setmainfont{Times New Roman}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\allowdisplaybreaks
+\sloppy
+\emergencystretch=2em
+\begin{document}
+\section*{VD\_5\_2\_2\_03 — Lời giải bổ sung}
+(i) Pháp tuyến ngoài trên đường tròn là $e_r$, nên biên $u_r(R,\theta)=\varphi(R\cos\theta,R\sin\theta)$.
+(ii) Hiệu $w$ có $\Delta w=0,\partial_\nu w=0$; Green cho $\int|\nabla w|^2=0$, nên mọi nghiệm sai khác hằng.
+(iii) Với $\Delta u=F$, điều kiện cần và đủ Neumann là $\int_{\partial D}\varphi=\int_DF$. Có thể giải bằng một nghiệm riêng $P$ của $\Delta P=F$, rồi khai triển biên $h=\varphi-P_r$ có trung bình 0:
+\[u=P+C+\sum_{n\ge1}\frac{r^n}{nR^{n-1}}(h_n^c\cos n\theta+h_n^s\sin n\theta).\]
+Nếu $F$ chưa được chỉ định trong đề thì kết quả phải phụ thuộc $F$ như công thức này.
+(iv) Khi $F=0,R=1$, trung bình $x^2-2xy+k$ là $1/2+k$, nên $k=-1/2$; nghiệm $u=(x^2-y^2)/4-xy+C$. Nếu $F$ khác 0, phải thay điều kiện $k$ bằng $\int_DF/(2\pi)-1/2$ và thêm nghiệm riêng; bản in không ghi $F$ cho câu này.\end{document}

@@ -1,0 +1,29 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{fontspec,amsmath,amssymb,graphicx}
+\usepackage[margin=18mm]{geometry}
+\setmainfont{Times New Roman}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\allowdisplaybreaks
+\sloppy
+\emergencystretch=2em
+\begin{document}
+\section*{BT\_5\_1\_3\_01 — Lời giải bổ sung}
+Đặt $S_{D,n}(q)=2D^{-1}\int_0^Dq(s)\sin(n\pi s/D)ds$, $k_n=n\pi/L,\ell_n=n\pi/M$. Chồng chất bốn bài có một cạnh khác 0 cho công thức đã tính hệ số:
+\begin{align*}
+u={}&\sum_{n\ge1}\sin k_nx\frac{S_{L,n}(\varphi_0)\sinh k_n(M-y)+S_{L,n}(\varphi_1)\sinh k_ny}{\sinh k_nM}\\
+&+\sum_{n\ge1}\sin\ell_ny\frac{S_{M,n}(\psi_0)\sinh\ell_n(L-x)+S_{M,n}(\psi_1)\sinh\ell_nx}{\sinh\ell_nL}.
+\end{align*}
+Để áp dụng từng câu, các hệ số không bằng 0 là:
+
+(i) $L=1,M=\pi$, $S(\varphi_1)=(3\delta_{n1}-\delta_{n3})/4$, $S(\psi_1)=2(1-(-1)^n)/(\pi n)$.
+(ii) $L=M=1$, $S(\varphi_0)=S(\psi_0)=S(\psi_1)=2(1-(-1)^n)/(\pi n)$; cũng có thể viết $u=1-$chuỗi một cạnh trên với dữ liệu 1.
+(iii) $u=\sin x\sinh y/\sinh\pi$.
+(iv) $S(\varphi_1)=4(1-(-1)^n)/(n^3\pi^3)$.
+(v) $S(\varphi_1)=4\sin(n\pi/2)/(n^2\pi^2)$.
+(vi) $L=2,M=1$, $S(\varphi_1)=2[1+(-1)^n-2\cos(n\pi/2)]/(n\pi)$.
+(vii) $u=\sin2\pi x\sinh(2\pi(1-y))/\sinh2\pi$.
+(viii) $L=1,M=2$, $S(\varphi_0)=8/[\pi n(4-n^2)]$ nếu $n$ lẻ, bằng 0 nếu $n$ chẵn.
+(ix) $S(\varphi_0)=\delta_{n2}$, $S(\varphi_1)=-2\cos(n\pi/2)/(n\pi)$.
+
+Thay các hệ số trên vào hai chuỗi là nghiệm của từng trường hợp. Đạo hàm trong miền cho $\Delta u=0$; trên cạnh hội tụ về dữ liệu tại điểm liên tục, và về trung bình ở điểm gián đoạn. Nếu dữ liệu ở góc không khớp, không có nghiệm liên tục trên cả hình chữ nhật đóng; chuỗi vẫn giải bài trong miền và trên các cạnh mở.\end{document}

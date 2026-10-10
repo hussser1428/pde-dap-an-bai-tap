@@ -1,0 +1,21 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{fontspec,amsmath,amssymb,graphicx}
+\usepackage[margin=18mm]{geometry}
+\setmainfont{Times New Roman}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\allowdisplaybreaks
+\sloppy
+\emergencystretch=2em
+\begin{document}
+\section*{BT\_5\_6\_3\_06 — Lời giải bổ sung}
+(a) Với $k_n=(n+1/2)\pi$, $\ell_m=(m+1/2)\pi$, $X_n=\sin k_nx,Y_m=\cos\ell_my$, $\lambda=k_n^2+\ell_m^2$, đặt
+\[f_{nm}=4\int_0^1\int_0^1xX_nY_m\,dxdy,\quad F_{nm}=4\int_0^1\int_0^1xyX_nY_m\,dxdy.\]
+Nghiệm $u=\sum[f_{nm}e^{-\lambda t}+F_{nm}(1-e^{-\lambda t})/\lambda]X_nY_m$.
+
+(b) Đặt $u=e^{-x}v$. Toán tử thành $v_{xx}+v_{yy}-v$, với $v(0)=0,v_x(1)=v(1)$, $v_y(y=0)=0,v(y=1)=0$. Cơ sở $X_0=x$, $X_n=\sin k_nx$ với các nghiệm dương $\tan k_n=k_n$, và $Y_m=\cos\ell_my$. Đặt $\lambda_{nm}=k_n^2+1+\ell_m^2$ ($k_0=0$), $q_{nm}=\iint qX_nY_m/\iint X_n^2Y_m^2$. Dữ liệu của $v$ là $xe^x$, nguồn $txy e^x$:
+\[u=e^{-x}\sum X_nY_m\left[(xe^x)_{nm}e^{-\lambda t}+(xy e^x)_{nm}\left(\frac t\lambda-\frac{1-e^{-\lambda t}}{\lambda^2}\right)\right].\]
+
+(c) Dòng biến ở biên bị đảo thứ tự trong bản in; dùng cùng điều kiện hình học như (b). Sau $u=e^{-x}v$, hạng $+u$ khử $-v$, nguồn $ye^x$. Với $\Lambda=k_n^2+\ell_m^2>0$,
+\[u=e^{-x}\sum\frac{(ye^x)_{nm}}\Lambda(1-e^{-\Lambda t})X_nY_m.\]
+Các hệ số trên là tích phân một chiều của hàm sơ cấp, không chứa ẩn số chưa giải.\end{document}

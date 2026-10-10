@@ -1,0 +1,48 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{fontspec,amsmath,amssymb,graphicx}
+\usepackage[margin=18mm]{geometry}
+\setmainfont{Times New Roman}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\allowdisplaybreaks
+\sloppy
+\emergencystretch=2em
+\begin{document}
+\section*{BT\_2\_3\_14 — Lời giải bổ sung}
+\subsection*{Kiến thức và trình tự giải}
+\textbf{Mục tiêu.} Tận dụng phần cấp hai có dạng bình phương một đạo hàm theo hướng để giảm PDE thành ODE có tham số.
+
+\textbf{Bước 1 — Nhận ra hướng đạo hàm.} Nếu $D=a\partial_x+b\partial_y$ có hệ số hằng, $D^2u=a^2u_{xx}+2ab u_{xy}+b^2u_{yy}$. Với hệ số biến thiên phải dùng
+
+
+\[
+D^2u=a^2u_{xx}+2ab u_{xy}+b^2u_{yy}+(Da)u_x+(Db)u_y.
+\]
+
+
+So sánh cả hạng cấp một trước khi kết luận PDE bằng $D^2u+\lambda Du+\mu u=f$.
+
+\textbf{Bước 2 — Tìm bất biến $s$ và biến tiến $z$.} Giải $Ds=0$, chọn $Dz=k\ne0$. Kiểm tra $J=\partial(s,z)/\partial(x,y)\ne0$. Khi $k$ hằng, $D=k\partial_z$; PDE trở thành ODE theo $z$, trong đó $s$ là tham số. Nếu còn $v_s$, phải giữ lại, chỉ các trường hợp nó triệt tiêu mới giải trực tiếp như ODE.
+
+\textbf{Bước 3 — Giải ODE.} Với $v_{zz}=g(s,z)$, tích phân hai lần cho $v=zF(s)+G(s)+\int_{z_0}^z(z-t)g(s,t)dt$. Với $a v_{zz}+b v_z+c v=g$, giải đa thức $a\lambda^2+b\lambda+c=0$, giữ hai hàm tùy ý theo $s$. Nghiệm kép có thêm hệ số $z$; có thể tìm nghiệm riêng dạng mũ hoặc đa thức.
+
+\textbf{Bước 4 — Dùng dữ liệu đúng biến.} Tính $u_x=s_xv_s+z_xv_z$ và $u_y=s_yv_s+z_yv_z$. Nếu dữ liệu ở $s=0$, chỉ biết $F(0),G(0)$ hoặc đạo hàm của chúng; không suy ra toàn bộ các hàm. So sánh hệ số của $e^z$, $z$, $z^2$ để tìm các hằng số tương thích.
+
+\textbf{Bước 5 — Kiểm tra tính duy nhất và nghiệm cụ thể.} Khi đường dữ liệu gặp tất cả đặc trưng một cách độc lập, giải hệ cho $F,G$. Khi đường dữ liệu là một đặc trưng, mô tả các hàm còn tùy ý và đưa hai lựa chọn rõ ràng. Cuối cùng thế lại phương trình gốc, không chỉ ODE mới.
+\subsection*{Lời giải áp dụng cho bài}
+\textbf{(a) Nhận dạng toán tử.} $A=e^{2x}$, $B=e^x$, $C=1$ cho $\delta=0$. Đặt $D=e^x\partial_x+\partial_y$. Do $De^x=e^{2x}$,
+\[D^2u=e^{2x}u_{xx}+2e^xu_{xy}+u_{yy}+e^{2x}u_x,\]
+đúng toàn bộ vế trái. Đặc trưng $dy/dx=e^{-x}$ có bất biến $s=y+e^{-x}$. Chọn $z=y$, $J=-e^{-x}\ne0$, $Ds=0$, $Dz=1$. Phép đổi ngược $x=-\log(s-z)$, miền $s-z>0$. Dạng chính tắc
+\[v_{zz}=(s-z)^{-2}.\]
+
+\textbf{(b) Tích phân.} Vì $[-\log(s-z)]_z=(s-z)^{-1}$ và đạo hàm tiếp bằng $(s-z)^{-2}$,
+\[v=-\log(s-z)+zF(s)+G(s),\quad
+u=x+yF(y+e^{-x})+G(y+e^{-x}).\]
+
+\textbf{(c) Dữ liệu tại $x=0$.} Khi đó $s=y+1$. Dữ liệu giá trị cho $yF(y+1)+G(y+1)=2y+1$. Vì $s_x=-e^{-x}$,
+\[u_x=1-e^{-x}[yF'(s)+G'(s)],\]
+nên dữ liệu đạo hàm cho $yF'(y+1)+G'(y+1)=1$. Lấy đạo hàm dữ liệu giá trị theo $y$ rồi trừ dòng này, suy ra $F(y+1)=1$. Do đó $F=1$ và $G(s)=s$:
+\[\boxed{u=x+2y+e^{-x}.}\]
+Kiểm tra $u_x=1-e^{-x}$, $u_{xx}=e^{-x}$, $u_{xy}=u_{yy}=0$, nên vế trái bằng $e^{2x}$. Tại $x=0$, $u=2y+1$, $u_x=0$. Dữ liệu xác định $F,G$ trên toàn trục, nên nghiệm duy nhất trên $\mathbb R^2$.
+\begin{center}\includegraphics[width=.97\linewidth,height=11cm,keepaspectratio]{Do_thi/BT_2_3_14.png}\end{center}
+\textit{Đồ thị minh họa; với nghiệm số, xem phương pháp và tham số trong mã Python kèm theo.}\end{document}

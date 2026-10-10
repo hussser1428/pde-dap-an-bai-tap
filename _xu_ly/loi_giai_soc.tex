@@ -1,0 +1,200 @@
+%ID BT_1_6_3_01
+\textbf{Bước 1 — Thông lượng và đặc trưng.} Burgers có $F=u^2/2$. Dữ liệu 2 trái, 1 phải tại $x=1$ cho $X=\xi+2t$ ở trái, $X=\xi+t$ ở phải. Hai họ giao trong $1+t<x<1+2t$.
+
+\textbf{Bước 2 — Rankine–Hugoniot.} $s'=(2^2/2-1^2/2)/(2-1)=3/2$, $s(0)=1$, nên $s=1+3t/2$.
+
+\textbf{Bước 3 — Nghiệm và kiểm tra.} $u=2$ khi $x<s$, $u=1$ khi $x>s$. Sốc nằm giữa hai mép vùng giao và $1<3/2<2$, nên entropy đúng. Các vùng hằng thỏa PDE; khi $t\downarrow0$ có đúng bước nhảy tại 1. Vẽ đặc trưng vào sốc và đồ thị bước nhảy tại $1+3t/2$ để đọc chuyển động.
+
+%ID BT_1_6_3_02
+\textbf{Bước 1 — Thông lượng lõm.} $F=u-u^2$, $F'=1-2u$. Dữ liệu 0 trái, 1 phải tại 1 cho tốc độ 1 và $-1$. Hai họ hội tụ, tạo sốc dù bước nhảy tăng; nguyên nhân là $F''=-2<0$.
+
+\textbf{Bước 2 — Tốc độ sốc.} $F(0)=F(1)=0$, nên $s'=[F(0)-F(1)]/(0-1)=0$. Từ $s(0)=1$, $s=1$.
+
+\textbf{Bước 3 — Nghiệm và kiểm tra.} $u=0$ khi $x<1$, $u=1$ khi $x>1$. $-1<0<1$ kiểm tra entropy; đường sốc đứng yên nhưng đặc trưng vẫn đi vào từ cả hai phía. Nghiệm giữ nguyên dữ liệu ban đầu.
+
+%ID BT_1_6_3_03
+\textbf{Bước 1 — Dữ liệu đầu và biên.} Trong $x<0$, trạng thái đầu là 1, tốc độ $F'(1)=-1$; trạng thái biên tại 0 là 2, tốc độ $F'(2)=-3$, truyền vào nửa trục âm. Hai trạng thái nối theo thứ tự 1 bên trái, 2 bên phải.
+
+\textbf{Bước 2 — Tính sốc.} Với $F=u-u^2$, $F(1)=0,F(2)=-2$, nên $s'=[0-(-2)]/(1-2)=-2$. Sốc xuất phát ở góc $(0,0)$, $s=-2t$.
+
+\textbf{Bước 3 — Công thức và thử lại.} $u=1$ khi $x<-2t$, $u=2$ khi $-2t<x<0$. Entropy: $-3<-2<-1$; biên $x\uparrow0$ cho 2, còn mỗi $x<0$ cố định khi $t\downarrow0$ cho 1. Đây là nghiệm yếu với dữ liệu góc không liên tục.
+
+%ID BT_1_6_3_04
+\textbf{Bước 1 — Thông lượng và hướng truyền.} $F=u^3/3$, $F'=u^2$. Trong $x>0$, trạng thái biên 2 nằm trái, trạng thái đầu 1 nằm phải. Tốc độ là 4 và 1, đều hướng vào nửa trục dương.
+
+\textbf{Bước 2 — Sốc từ góc.} $s'=(8/3-1/3)/(2-1)=7/3$, $s(0)=0$, nên $s=7t/3$.
+
+\textbf{Bước 3 — Nghiệm và kiểm tra.} $u=2$ trên $0<x<7t/3$, $u=1$ trên $x>7t/3$. $1<7/3<4$ bảo đảm sốc nén; vết tại $x=0$ là 2 và giới hạn $t\downarrow0$ ở mọi $x>0$ là 1. Không dùng tốc độ $u$ của Burgers vì ở bài này tốc độ đặc trưng là $u^2$.
+
+%ID BT_1_6_3_05
+\textbf{Bước 1 — Nhận dạng hai quạt.} Burgers có bước $-1\to1$ tại $-1$ và $1\to2$ tại 1. Cả hai tăng nên là quạt giãn. Quạt thứ nhất có mép $-1-t,-1+t$ và giá trị $(x+1)/t$. Quạt thứ hai có mép $1+t,1+2t$ và giá trị $(x-1)/t$.
+
+\textbf{Bước 2 — Xét tương tác.} Mép phải quạt đầu và mép trái quạt sau cùng tốc độ 1, khoảng cách luôn $[1+t]-[-1+t]=2$. Vì vậy hai quạt không gặp nhau.
+
+\textbf{Bước 3 — Ghép nghiệm.}
+\[u=\begin{cases}-1,&x\le-1-t,\\(x+1)/t,&-1-t<x<-1+t,\\1,&-1+t\le x\le1+t,\\(x-1)/t,&1+t<x<1+2t,\\2,&x\ge1+2t.\end{cases}\]
+Ở các mép, công thức biến thiên bằng trạng thái hằng kề bên. Mỗi quạt có $u_t+uu_x=0$ và dữ liệu khi $t\downarrow0$ đúng từng đoạn.
+
+%ID BT_1_6_3_06
+\textbf{Bước 1 — Quạt của thông lượng lõm.} $F=u-u^2$, tốc độ $1-2u$. Trạng thái 2 bên trái cho tốc độ $-3$, trạng thái 1 bên phải cho $-1$, nên tách xa và tạo quạt ở nửa trục $x<0$.
+
+\textbf{Bước 2 — Nhánh biến thiên.} Đặt $z=x/t$, giải $F'(u)=1-2u=z$, được $u=(1-z)/2$. Mép là $x=-3t,-t$.
+
+\textbf{Bước 3 — Ghép và kiểm tra.}
+\[u=\begin{cases}2,&x\le-3t,\\(1-x/t)/2,&-3t<x<-t,\\1,&-t\le x<0.\end{cases}\]
+Trong quạt $u_t=x/(2t^2)$, $u_x=-1/(2t)$, $1-2u=x/t$, nên $u_t+(1-2u)u_x=0$. Vết biên là 1, còn trạng thái đầu ở $x<0$ là 2. Các tia trong quạt là $x=(1-2k)t$, $1\le k\le2$.
+
+%ID BT_1_6_3_07
+\textbf{Bước 1 — Xét độ lõm trên khoảng dữ liệu.} $F=u-u^3$, $F'=1-3u^2$, $F''=-6u<0$ trên $[1,2]$. Trạng thái 2 trái có tốc độ $-11$, 1 phải có tốc độ $-2$, nên là quạt giãn.
+
+\textbf{Bước 2 — Giải trong quạt.} $1-3u^2=x/t$ cho $u=\sqrt{(1-x/t)/3}$; chọn căn dương vì dữ liệu nằm trong $[1,2]$. Mép là $-11t,-2t$.
+
+\textbf{Bước 3 — Nghiệm và kiểm tra.}
+\[u=\begin{cases}2,&x\le-11t,\\\sqrt{(1-x/t)/3},&-11t<x<-2t,\\1,&-2t\le x<0.\end{cases}\]
+Đẳng thức $F'(u)=x/t$ bảo đảm PDE tự đồng dạng; các mép cho 2 và 1. Biên tại 0 bằng 1 và khi $t\downarrow0$ mọi điểm $x<0$ trở về 2.
+
+%ID BT_1_6_3_08
+\textbf{Bước 1 — Hai sốc của $F=u-u^2$.} Dữ liệu 0, $1/2$, 1 với bước tại 0 và 1. Công thức tốc độ rút gọn thành $\sigma=1-(u_L+u_R)$. Suy $\sigma_1=1/2$, $\sigma_2=-1/2$, $s_1=t/2$, $s_2=1-t/2$.
+
+\textbf{Bước 2 — Thời điểm gặp.} $t/2=1-t/2$ cho $t_*=1,x_*=1/2$. Với $0<t<1$, nghiệm là 0 ở $x<s_1$, $1/2$ giữa hai sốc, 1 ở $x>s_2$.
+
+\textbf{Bước 3 — Sốc sau gặp.} Nối trực tiếp 0 và 1, tốc độ mới $1-(0+1)=0$. Dùng $s(1)=1/2$, đường mới là $s=1/2$. Với $t\ge1$, $u=0$ trái đường, $u=1$ phải đường.
+
+\textbf{Bước 4 — Kiểm tra.} Các tốc độ nằm giữa đặc trưng: $0<1/2<1$, $-1<-1/2<0$, $-1<0<1$. Đường sóng ghép đúng điểm gặp; không tiếp tục hai đường sốc cũ sau $t=1$.
+
+\textbf{Chi tiết rút gọn tốc độ.} Với $F(u)=u-u^2$,
+\[\frac{F(u_L)-F(u_R)}{u_L-u_R}
+=\frac{(u_L-u_R)-(u_L^2-u_R^2)}{u_L-u_R}
+=1-u_L-u_R.\]
+Thế $(u_L,u_R)=(0,1/2)$ cho $1/2$, $(1/2,1)$ cho $-1/2$, và $(0,1)$ cho $0$ sau tương tác.
+
+%ID BT_1_6_3_09
+\textbf{Bước 1 — Tốc độ hai sốc.} $F=u^3/3$, các trạng thái 2,1,0, bước tại 0,1. $\sigma_1=(8-1)/[3(2-1)]=7/3$, $\sigma_2=(1-0)/[3(1-0)]=1/3$. Vì vậy $s_1=7t/3$, $s_2=1+t/3$.
+
+\textbf{Bước 2 — Tìm giao.} $7t/3=1+t/3$ cho $t_*=1/2$, $x_*=7/6$. Trước đó, $u=2$ trái $s_1$, 1 giữa hai sốc, 0 phải $s_2$.
+
+\textbf{Bước 3 — Sau gặp.} Trạng thái 1 biến mất. Sốc nối 2 với 0 có $\sigma=8/[3\cdot2]=4/3$, nên
+\[s=7/6+(4/3)(t-1/2)=4t/3+1/2.\]
+Với $t\ge1/2$, $u=2$ trái sốc, 0 phải sốc.
+
+\textbf{Bước 4 — Kiểm tra entropy.} Tốc độ đặc trưng $u^2$ cho $1<7/3<4$, $0<1/3<1$, $0<4/3<4$. Đường mới đi qua điểm gặp và các trạng thái hằng giải PDE.
+
+%ID BT_1_6_3_10
+\textbf{Bước 1 — Sóng ban đầu.} $F=u^3/3$, xung 1 trên $(-1,1)$, 0 ngoài. Tại $-1$, bước $0\to1$ tạo quạt với $u^2=(x+1)/t$, nên $u=\sqrt{(x+1)/t}$ trên $-1<x<-1+t$. Tại 1, bước $1\to0$ tạo sốc $s_1=1+t/3$.
+
+\textbf{Bước 2 — Thời điểm gặp.} $-1+t=1+t/3$ cho $t_*=3$, $x_*=2$. Khi $0<t<3$, $u=0$ ở $x\le-1$, bằng căn trong quạt, bằng 1 trên $-1+t\le x<s_1$, bằng 0 sau sốc.
+
+\textbf{Bước 3 — Sốc khi phía trái là quạt.} $u_L=\sqrt{(s+1)/t}$, $u_R=0$, nên $s'=u_L^2/3=(s+1)/(3t)$. Tích phân:
+\[\log(s+1)=\tfrac13\log t+\text{hằng},\quad s+1=Ct^{1/3}.\]
+Dùng $s(3)=2$ cho $C=3^{2/3}$. Với $t\ge3$, $s=3^{2/3}t^{1/3}-1$, $u=\sqrt{(x+1)/t}$ trên $-1<x<s$, bằng 0 ngoài.
+
+\textbf{Bước 4 — Kiểm tra.} Entropy $0<s'=u_L^2/3<u_L^2$. Khối lượng sau gặp là $2(s+1)^{3/2}/(3\sqrt t)=2$, bằng chiều dài xung ban đầu. Đường sốc liên tục ở $t=3$.
+
+\textbf{Chi tiết ODE và khối lượng sau gặp.} Đặt $q=s+1>0$, có $q'=q/(3t)$, nên $q'/q=1/(3t)$. Tích phân từ $3$ đến $t$ cho $\log(q/3)=\frac13\log(t/3)$, tức $q=3^{2/3}t^{1/3}$. Khối lượng là
+\[\int_{-1}^{s}\sqrt{\frac{x+1}{t}}dx
+=\frac1{\sqrt t}\left[\frac23(x+1)^{3/2}\right]_{-1}^{s}
+=\frac{2q^{3/2}}{3\sqrt t}=2.\]
+
+%ID BT_1_6_3_11
+\textbf{Bước 1 — Sóng trước gặp.} $F=u-u^2/2$ lõm, $F'=1-u$. Bước $1\to2$ ở 0 tạo sốc tốc độ $1-(1+2)/2=-1/2$, $s_1=-t/2$. Bước $2\to1$ ở 1 tạo quạt có mép $1-t,1$ và nhánh $u=1+(1-x)/t$.
+
+\textbf{Bước 2 — Thời điểm gặp và nghiệm trước gặp.} $-t/2=1-t$ cho $t_*=2,x_*=-1$. Với $0<t<2$,
+\[u=\begin{cases}1,&x<s_1,\\2,&s_1<x\le1-t,\\1+(1-x)/t,&1-t<x<1,\\1,&x\ge1.\end{cases}\]
+
+\textbf{Bước 3 — Sốc trong quạt.} Sau gặp, trạng thái trái là 1, phải là $1+(1-s)/t$. Tốc độ
+\[s'=1-\frac{u_L+u_R}{2}=\frac{s-1}{2t}.\]
+Tích phân $(1-s)=C\sqrt t$, dùng $s(2)=-1$ cho $C=\sqrt2$, nên $s=1-\sqrt{2t}$. Với $t\ge2$, $u=1$ khi $x<s$, bằng $1+(1-x)/t$ khi $s<x<1$, bằng 1 khi $x\ge1$.
+
+\textbf{Bước 4 — Kiểm tra.} Ở sốc, tốc độ phải $-(1-s)/t$, trái 0, còn $s'=-(1-s)/(2t)$ nằm giữa. Mép tại 1 liên tục, vị trí sốc ghép ở 2. Khối lượng phần dư $u-1$ sau gặp bằng $(1-s)^2/(2t)=1$, đúng xung ban đầu.
+
+\textbf{Chi tiết tích phân sau tương tác.} Đặt $q=1-s>0$. Từ $s'=(s-1)/(2t)$ suy $q'=q/(2t)$. Tích phân $q'/q=1/(2t)$ từ $2$ cho $\log(q/2)=\frac12\log(t/2)$; vậy $q=\sqrt{2t}$, $s=1-\sqrt{2t}$. Phần dư khối lượng là $\int_s^1(1-x)dx/t=(1-s)^2/(2t)=1$.
+
+%ID BT_1_6_3_12
+\textbf{Bước 1 — Sóng trong nửa trục dương.} Burgers có giá trị biên 1, trạng thái đầu 2 trên $(0,1)$ rồi 0. Góc biên tạo quạt nối 1 đến 2: mép $t,2t$, $u=x/t$ trong quạt. Bước tại 1 tạo sốc 2 xuống 0 với $s_1=1+t$.
+
+\textbf{Bước 2 — Tương tác thứ nhất.} $2t=1+t$ cho $t_1=1,x_1=2$. Khi $0<t<1$, $u=1$ trên $0<x\le t$, $u=x/t$ trên $t<x<2t$, $u=2$ trên $2t\le x<s_1$, 0 phía phải.
+
+\textbf{Bước 3 — Sốc xuyên qua quạt.} Với $u_L=s/t,u_R=0$, $s'=s/(2t)$ cho $s=C\sqrt t$. Dùng $s(1)=2$, được $s=2\sqrt t$. Sốc gặp mép trái $x=t$ khi $2\sqrt t=t$, tức $t_2=4,x_2=4$. Với $1\le t<4$, $u=1$ trên $0<x\le t$, $u=x/t$ trên $t<x<s$, 0 phía phải.
+
+\textbf{Bước 4 — Sau tương tác thứ hai.} Quạt đã bị sốc hấp thụ hết; trái sốc là 1, phải 0 nên tốc độ $1/2$. Từ $s(4)=4$, $s=4+(t-4)/2=t/2+2$. Với $t\ge4$, $u=1$ trên $0<x<s$, 0 phía phải.
+
+\textbf{Bước 5 — Kiểm tra.} Hai vị trí ghép đúng tại $t=1,4$. Trong quạt PDE đúng; từng sốc có tốc độ nửa trạng thái trái nên thỏa entropy. Biên luôn bằng 1; khối lượng tăng theo thông lượng vào $F(1)=1/2$, phù hợp nhánh cuối có độ dài $t/2+2$.
+
+\textbf{Chi tiết hai lần tích phân và kiểm tra khối lượng.} Trong quạt, $s'=s/(2t)$ cho $\log(s/2)=\frac12\log t$ bởi $s(1)=2$, nên $s=2\sqrt t$. Giải $2\sqrt t=t$ với $t>0$: chia $\sqrt t$ được $\sqrt t=2$, tức $t=4$ (loại $t=0$ ngoài giai đoạn). Sau đó $s'=1/2$ cho $s-4=(t-4)/2$. Khối lượng ở ba giai đoạn:
+\[\begin{aligned}
+M&=t+\int_t^{2t}\frac xtdx+2(1+t-2t)=2+t/2 &&(0<t<1),\\
+M&=t+\int_t^{2\sqrt t}\frac xtdx=t+\frac{4t-t^2}{2t}=2+t/2 &&(1\le t<4),\\
+M&=\int_0^{t/2+2}1\,dx=2+t/2 &&(t\ge4).
+\end{aligned}\]
+Do đó $M'=1/2$ ở mọi giai đoạn, đúng thông lượng vào $F(1)$.
+
+%ID NC_1_7_01
+\textbf{Bước 1 — Đặc trưng ở đoạn dốc.} Burgers có $u_0=1$ bên trái 0, $u_0=1-\xi$ trên $(0,1)$, 0 bên phải 1. Trên đoạn dốc, $X=\xi+(1-\xi)t=t+\xi(1-t)$, $U=1-\xi$.
+
+\textbf{Bước 2 — Khử trước thời điểm vỡ.} Với $t<1$, $X_\xi=1-t>0$, $\xi=(x-t)/(1-t)$, nên $u=(1-x)/(1-t)$ trên $t<x<1$. Nghiệm bằng 1 khi $x\le t$, bằng 0 khi $x\ge1$. Tại $t=1$ cả đoạn hội tụ ở $x=1$.
+
+\textbf{Bước 3 — Sau thời điểm vỡ.} Sốc nối 1 và 0 của luật Burgers gốc có tốc độ $1/2$, đi từ $(1,1)$, nên $s=1+(t-1)/2=(t+1)/2$. $u=1$ bên trái, 0 bên phải sốc; $0<1/2<1$ cho entropy.
+
+\textbf{Bước 4 — Giải thích phép nhân $u^\alpha$.} Trong vùng trơn và nơi phép tính lũy thừa hợp lệ, nhân PDE rồi lấy nguyên hàm cho
+\[\partial_t\frac{u^{\alpha+1}}{\alpha+1}+\partial_x\frac{u^{\alpha+2}}{\alpha+2}=0.\]
+Với $\alpha\ge0$, sốc $1\to0$ của luật này có tốc độ
+\[\sigma_\alpha=\frac{1/(\alpha+2)}{1/(\alpha+1)}=\frac{\alpha+1}{\alpha+2}.\]
+Nó chỉ bằng $1/2$ khi $\alpha=0$. Vì vậy phép nhân giữ tương đương cho nghiệm trơn, không giữ cùng điều kiện sốc của nghiệm yếu. Không thể yêu cầu cùng đường sốc thỏa mọi luật đã nhân; phải dùng luật gốc và entropy.
+
+%ID NC_1_7_02
+\textbf{Bước 1 — Đặc trưng và thời điểm đầu mất khả nghịch.} Burgers có $u_0=1$ trên $\xi<-1$, $u_0=\xi^2$ trên $-1<\xi<0$, 0 trên $\xi>0$. Đoạn biến thiên cho $X=\xi+\xi^2t$, $X_\xi=1+2\xi t$. Giá trị nhỏ nhất tiến về 0 tại $t=1/2,\xi=-1$, nên sốc xuất hiện từ $(-1/2,1/2)$.
+
+\textbf{Bước 2 — Nghiệm trước sốc.} Giải $t\xi^2+\xi-x=0$ và chọn nhánh về $\xi=x$ khi $t\downarrow0$:
+\[\xi(x,t)=\frac{-1+\sqrt{1+4tx}}{2t}.\]
+Với $0<t\le1/2$, $u=1$ khi $x<-1+t$, $u=\xi(x,t)^2$ khi $-1+t<x<0$, $u=0$ khi $x>0$.
+
+\textbf{Bước 3 — Sốc trong đoạn biến thiên.} Gọi $\xi_s\in(-1,0)$ là nhãn sát phải sốc, $s=\xi_s+\xi_s^2t$. Trái là 1, phải $\xi_s^2$, nên $s'=(1+\xi_s^2)/2$. Đạo hàm biểu thức $s$:
+\[(1+2t\xi_s)\xi_s'=(1-\xi_s^2)/2.\]
+Đổi coi $t$ là hàm của $\xi_s$:
+\[\frac{dt}{d\xi_s}-\frac{4\xi_s}{1-\xi_s^2}t=\frac2{1-\xi_s^2}.\]
+Thừa số tích phân $(1-\xi_s^2)^2$ cho
+\[\frac{d}{d\xi_s}[(1-\xi_s^2)^2t]=2(1-\xi_s^2).\]
+Tích phân và dùng giới hạn ở $\xi_s=-1,t=1/2$ cho
+\[t=\frac{2(2-\xi_s)}{3(1-\xi_s)^2},\qquad s=\xi_s+\xi_s^2t.\]
+Vế phải tăng từ $1/2$ đến $4/3$ khi $\xi_s$ tăng từ $-1$ đến 0, nên xác định nhãn duy nhất. Với $1/2<t<4/3$, $u=1$ trái $s$, $u=\xi(x,t)^2$ giữa $s$ và 0, $u=0$ phải 0; chọn nhánh căn như bước 2.
+
+\textbf{Bước 4 — Sau sốc tới $x=0$.} Tại $\xi_s=0$, $t=4/3,s=0$. Sau đó sốc nối 1 với 0, $s' =1/2$, nên $s=(t-4/3)/2$; $u=1$ trái, 0 phải. Mọi vị trí ghép liên tục; trong giai đoạn giữa, $\xi_s^2<(1+\xi_s^2)/2<1$ cho entropy.
+
+\textbf{Chi tiết tích phân và khử nhân tử.} Gọi $z=\xi_s$. Tích phân $( (1-z^2)^2t)'=2(1-z^2)$ theo $z$ cho $(1-z^2)^2t=2z-2z^3/3+C$. Khi $z\to-1$, vế trái về $0$, nên $C=4/3$. Phân tích
+\[2z-\tfrac23z^3+\tfrac43=\tfrac23(2-z)(z+1)^2,\quad
+(1-z^2)^2=(1-z)^2(1+z)^2.\]
+Trên $-1<z<0$, khử $(1+z)^2$ được $t=2(2-z)/[3(1-z)^2]$. Đạo hàm $dt/dz=2(3-z)/[3(1-z)^3]>0$, và giới hạn tại $z=-1,0$ là $1/2,4/3$, chứng minh nhãn xác định duy nhất.
+
+%ID NC_1_7_03
+\textbf{Bước 1 — Khử hai nhánh ban đầu.} Xung tam giác Burgers có $u_0=\xi+1$ trên $(-1,0)$, $1-\xi$ trên $(0,1)$, 0 ngoài. Nhánh tăng: $X=\xi+(\xi+1)t$ cho $u=(x+1)/(t+1)$ trên $-1<x<t$. Nhánh giảm: $X=\xi+(1-\xi)t$ cho $u=(1-x)/(1-t)$ trên $t<x<1$, khi $t<1$.
+
+\textbf{Bước 2 — Nghiệm trước vỡ.}
+\[u=\begin{cases}(x+1)/(t+1),&-1<x\le t,\\(1-x)/(1-t),&t<x<1,\\0,&x\le-1\ \text{hoặc}\ x\ge1,\end{cases}\quad0<t<1.\]
+Hai nhánh bằng 1 tại $x=t$; nhánh giảm có $X_\xi=1-t$, hội tụ ở $(1,1)$.
+
+\textbf{Bước 3 — Sốc sau vỡ.} Trái sốc là $u_L=(s+1)/(t+1)$, phải 0, nên $s'=(s+1)/[2(t+1)]$. Tích phân cho $s+1=C\sqrt{t+1}$; dùng $s(1)=1$, $C=\sqrt2$. Do đó $s=\sqrt{2(t+1)}-1$ và với $t\ge1$, $u=(x+1)/(t+1)$ trên $-1<x<s$, bằng 0 ngoài.
+
+\textbf{Bước 4 — Kiểm tra.} Trong nhánh tăng, $u_t=-(x+1)/(t+1)^2$, $uu_x=(x+1)/(t+1)^2$. Sốc thỏa bảo toàn và entropy, ghép đúng $(1,1)$. Khối lượng sau vỡ $(s+1)^2/[2(t+1)]=1$, bằng diện tích tam giác ban đầu.
+
+%ID NC_1_7_04
+\textbf{Bước 1 — Xác định dữ liệu hợp lệ.} Dòng cuối nguyên văn ghi $u_0=0$ khi $|x|>0$, chồng lên các đoạn khác, nên không xác định một hàm. Phần dưới giải phiên bản sửa $u_0=0$ khi $|x|>2$: các trạng thái lần lượt là 0 trên $x<-2$, 1 trên $(-2,-1)$, 4 trên $(-1,1)$, 1 trên $(1,2)$, 0 trên $x>2$.
+
+\textbf{Bước 2 — Sóng ban đầu.} Với Burgers, hai quạt là $R_0=(x+2)/t$ từ $-2$, mép $a=-2+t$; $R_1=(x+1)/t$ từ $-1$, mép $b=-1+t,c=-1+4t$. Hai sốc 4 xuống 1, 1 xuống 0 có $s_1=1+5t/2$, $s_2=2+t/2$.
+
+\textbf{Bước 3 — Hai sốc gặp nhau.} $s_1=s_2$ cho $t_1=1/2,x_1=9/4$. Sau gặp, sốc 4 xuống 0 có tốc độ 2, nên $s=2t+5/4$. Nó gặp mép phải $c$ của quạt $R_1$ khi $2t+5/4=-1+4t$, tức $t_2=9/8,x_2=7/2$.
+
+\textbf{Bước 4 — Sốc đi qua quạt $R_1$.} Trái sốc $u_L=(s+1)/t$, phải 0, nên $s'=(s+1)/(2t)$. Từ $s(9/8)=7/2$, được $s=3\sqrt{2t}-1$. Sốc tới mép trái $b=-1+t$ khi $3\sqrt{2t}=t$, tức $t_3=18,x_3=17$.
+
+\textbf{Bước 5 — Từ trạng thái 1 sang quạt $R_0$.} Sau $18$, sốc nối 1 với 0 có tốc độ $1/2$: $s=t/2+8$. Nó gặp mép phải $a=-2+t$ khi $t/2+8=-2+t$, tức $t_4=20,x_4=18$. Từ đó $u_L=(s+2)/t$, nên $s'=(s+2)/(2t)$; dùng $s(20)=18$ cho $s=\sqrt{20t}-2$.
+
+\textbf{Bước 6 — Viết đủ các miền.} Với $0<t<1/2$,
+\[u=\begin{cases}0,&x\le-2,\\R_0,&-2<x<a,\\1,&a\le x\le b,\\R_1,&b<x<c,\\4,&c\le x<s_1,\\1,&s_1<x<s_2,\\0,&x>s_2.\end{cases}\]
+Với $1/2\le t<9/8$, $s=2t+5/4$,
+\[u=\begin{cases}0,&x\le-2,\\R_0,&-2<x<a,\\1,&a\le x\le b,\\R_1,&b<x<c,\\4,&c\le x<s,\\0,&x>s.\end{cases}\]
+Với $9/8\le t<18$, $s=3\sqrt{2t}-1$,
+\[u=\begin{cases}0,&x\le-2,\\R_0,&-2<x<a,\\1,&a\le x\le b,\\R_1,&b<x<s,\\0,&x>s.\end{cases}\]
+Với $18\le t<20$, $s=t/2+8$, nghiệm bằng 0 khi $x\le-2$, bằng $R_0$ khi $-2<x<a$, bằng 1 khi $a\le x<s$, bằng 0 khi $x>s$. Với $t\ge20$, $s=\sqrt{20t}-2$, chỉ còn $u=R_0$ trên $-2<x<s$, bằng 0 ngoài.
+
+\textbf{Bước 7 — Kiểm tra.} Các đường sốc ghép liên tục ở bốn thời điểm vừa tính. Tốc độ luôn bằng trung bình hai trạng thái, nên bảo toàn và entropy đúng. Khối lượng ban đầu $1+8+1=10$; giai đoạn cuối có $\int_{-2}^s(x+2)dx/t=(s+2)^2/(2t)=10$. Kết quả thuộc phiên bản dữ liệu đã sửa và phải ghi rõ điều đó.
+
+\textbf{Chi tiết hằng số trên các nhánh cong.} Khi sốc đi qua quạt $R_1$, đặt $q=s+1$, $q'/q=1/(2t)$, nên $q=C\sqrt t$. Dùng $q(9/8)=9/2$ cho $C=(9/2)/\sqrt{9/8}=3\sqrt2$. Sau giai đoạn trạng thái $1$, tại $t=20$ có $s=18$; trong quạt $R_0$, đặt $q=s+2$, $q'/q=1/(2t)$ và $q(20)=20$, nên $q=\sqrt{20t}$. Vì vậy nhánh cuối $s=\sqrt{20t}-2$. Các hằng số khác nhau vì sốc đi qua hai quạt có tâm lần lượt $-1$ và $-2$.

@@ -1,0 +1,111 @@
+%ID VD_1_2_2_1_01
+\textbf{Bước 1 — Xác định cấp.} Liệt kê $u_{xxx}$ cấp 3, các đạo hàm còn lại có cấp thấp hơn. Bình phương $(u_y)^2$ vẫn chỉ chứa đạo hàm cấp 1. Do đó cấp cao nhất là $m=3$.
+
+\textbf{Bước 2 — Xét phần chính.} Đạo hàm $u_{xxx}$ xuất hiện ở lũy thừa 1 với hệ số 1, không phụ thuộc $u$ hay đạo hàm của $u$.
+
+\textbf{Bước 3 — Xét phần cấp thấp.} Hạng $(u_y)^2$ phi tuyến nên toàn phương trình không tuyến tính. Vì phi tuyến chỉ ở cấp thấp và hệ số phần chính chỉ phụ thuộc biến độc lập, kết luận: \textbf{nửa tuyến tính, cấp 3}.
+
+%ID VD_1_2_2_1_02
+\textbf{Bước 1 — Đếm cấp.} Đạo hàm cao nhất xuất hiện là $u_x$, nên $m=1$; $u^3$ là hạng không có đạo hàm.
+
+\textbf{Bước 2 — Xét tính tuyến tính theo đạo hàm cấp 1.} Coi $p=u_x$ như một biến đại số. Biểu thức lượng giác và bình phương chứa $p$ không có dạng $A(x,y,u)p+B(x,y,u)$. Như vậy phi tuyến xuất hiện ngay ở đạo hàm cấp cao nhất.
+
+\textbf{Kết luận.} Phương trình \textbf{hoàn toàn phi tuyến, cấp 1}. Hạng $u^3$ không làm tăng cấp và không phải lý do chính để phân biệt hoàn toàn phi tuyến với nửa tuyến tính.
+
+%ID VD_1_2_2_1_03
+\textbf{Bước 1 — Xác định cấp.} Các đạo hàm $u_{xx},u_{xy},u_{yy}$ đều có cấp 2, nên $m=2$.
+
+\textbf{Bước 2 — Đọc các hệ số.} Các hệ số tương ứng là $x,x-y,-y$, chỉ phụ thuộc $x,y$. Mỗi đạo hàm xuất hiện tuyến tính; không có tích giữa các đạo hàm hoặc tích với ẩn $u$.
+
+\textbf{Bước 3 — Xét nguồn.} Phương trình đã có dạng $Lu=0$, nên thuần nhất. Kết luận: \textbf{tuyến tính thuần nhất, cấp 2}. Hệ số thay đổi theo vị trí không làm mất tính tuyến tính.
+
+%ID VD_1_2_2_1_04
+\textbf{Bước 1 — Xác định cấp.} $u_{xx}$ là đạo hàm cao nhất, nên $m=2$.
+
+\textbf{Bước 2 — Xét dạng của phần cấp 2.} Đạo hàm $u_{xx}$ xuất hiện tuyến tính, nhưng hệ số là $u^2$, phụ thuộc chính ẩn cần tìm. Vì thế không thể xem phương trình là tuyến tính hoặc nửa tuyến tính theo định nghĩa trong sách.
+
+\textbf{Kết luận.} Phương trình \textbf{tựa tuyến tính, cấp 2}. Tại $u=0$, hệ số phần chính có thể triệt tiêu; cần lưu ý sự suy biến khi giải, nhưng phân loại biểu thức chung vẫn như trên.
+
+%ID BT_1_2_3_01
+\textbf{Bước 1: xác định điều cần phân loại.} Theo phần lý thuyết trong sách, ``bậc'' của câu này được hiểu là \emph{cấp phương trình}: cấp cao nhất của đạo hàm riêng xuất hiện. Số mũ của đạo hàm và hàm như $\log u,e^u$ không làm tăng cấp đạo hàm.
+
+\textbf{Bước 2: xét từng phương trình.}
+(a) $u_{xx}+u_{yy}=0$: hai đạo hàm đều cấp 2, nên cấp 2.
+(b) $u_{xxx}+u_{xy}+a(x)u_y+\log u=f(x,y)$: $u_{xxx}$ cấp 3, $u_{xy}$ cấp 2, $u_y$ cấp 1; $\log u$ cấp 0. Cấp cao nhất bằng 3. Nếu nghiệm thực, $\log u$ cần $u>0$ nhưng không thay đổi cấp.
+(c) $u_x+cu_y=d$: các đạo hàm đều cấp 1, nên cấp 1.
+(d) $uu_{xx}+u_y^2+e^u=0$: $u_{xx}$ cấp 2; $(u_y)^2$ vẫn chỉ là bình phương của đạo hàm cấp 1. Do đó cấp 2.
+
+\textbf{Kết luận:} các cấp lần lượt là $\boxed{2,3,1,2}$.
+
+%ID BT_1_2_3_02
+\textbf{Bước 1: dùng định nghĩa theo cấp cao nhất $m$.} Tuyến tính: ẩn và mọi đạo hàm xuất hiện tuyến tính, hệ số chỉ phụ thuộc biến độc lập. Nửa tuyến tính: đạo hàm cấp $m$ tuyến tính với hệ số chỉ phụ thuộc biến độc lập, nhưng các hạng cấp thấp có thể phi tuyến. Tựa tuyến tính: đạo hàm cấp $m$ tuyến tính, hệ số có thể phụ thuộc $u$ và các đạo hàm cấp thấp hơn. Hoàn toàn phi tuyến: biểu thức không tuyến tính theo đạo hàm cấp $m$. Chỉ hỏi thuần nhất khi phương trình đã tuyến tính.
+
+\textbf{Bước 2: áp dụng từng ý.}
+(a) $e^{\Delta u}=x$. Vì $\Delta u=u_{xx}+u_{yy}$ nằm trong hàm mũ, biểu thức đã cho hoàn toàn phi tuyến cấp 2. Tuy nhiên, nghiệm thực chỉ có trên $x>0$, và ở đó lấy log được phương trình tương đương $\Delta u=\log x$, tuyến tính không thuần nhất. Cần phân biệt phân loại \emph{biểu thức được in} và dạng tương đương sau biến đổi.
+
+(b) $u_t+u_{txx}+uu_x=0$. Đạo hàm cao nhất $u_{txx}$ cấp 3, tuyến tính với hệ số 1. Tích $uu_x$ phi tuyến ở cấp thấp. Kết luận: nửa tuyến tính cấp 3.
+
+(c) $u_t+(f(u))_x=0$. Quy tắc dây chuyền cho $u_t+f'(u)u_x=0$. Hạng cấp 1 tuyến tính theo $u_t,u_x$ nhưng hệ số $f'(u)$ phụ thuộc $u$, nên tựa tuyến tính cấp 1. Ngoại lệ: nếu $f(u)=au+b$, được $u_t+au_x=0$, tuyến tính thuần nhất.
+
+(d) $u_{xx}+u_{yy}-2u=x^2$. Các hạng của $u$ tuyến tính, hệ số hằng, vế phải khác 0: tuyến tính không thuần nhất cấp 2.
+
+(e) $u_{xy}=u$. Chuyển vế thành $u_{xy}-u=0$: tuyến tính thuần nhất cấp 2. Việc vế phải ban đầu là $u$ không làm phương trình không thuần nhất; phải gom tất cả hạng chứa ẩn về cùng vế.
+
+(f) $uu_x+xu_y=0$. Tuyến tính theo hai đạo hàm cấp 1, nhưng hệ số của $u_x$ là $u$. Kết luận: tựa tuyến tính cấp 1.
+
+(g) $u_x(1+u_y)=u_{xx}$. Viết $u_{xx}-u_x-u_xu_y=0$. Đạo hàm cấp 2 $u_{xx}$ tuyến tính, hệ số 1; phi tuyến $u_xu_y$ chỉ ở cấp 1. Kết luận: nửa tuyến tính cấp 2.
+
+(h) $(\sin u_x)u_x+u_y=e^x$. Đạo hàm cấp cao nhất là cấp 1 và $u_x\sin u_x$ không tuyến tính theo $u_x$. Kết luận: hoàn toàn phi tuyến cấp 1.
+
+\textbf{Bước 3: kiểm tra cách phân biệt.} Các ý (b),(g) có phi tuyến nhưng chỉ ở cấp thấp, nên nửa tuyến tính. Các ý (c),(f) có hệ số đạo hàm cấp cao nhất phụ thuộc ẩn, nên tựa tuyến tính. Các ý (a),(h) phi tuyến ngay ở đạo hàm cấp cao nhất. Với các phương trình phi tuyến không dùng phân biệt ``thuần nhất/không thuần nhất'' theo định nghĩa toán tử tuyến tính.
+
+%ID BT_1_2_3_03
+\textbf{Bước 1: tính đạo hàm của nghiệm thử.} Với $u=e^{rx+sy}$,
+\[u_x=ru,\quad u_y=su,\quad u_{xx}=r^2u,\quad u_{xy}=rsu,\quad u_{yy}=s^2u.\]
+Vì $u\ne0$, sau khi thế vào PDE có thể chia cho $u$ để có phương trình đại số theo $r,s$. Đề dùng nghiệm dạng đặc biệt; một họ nghiệm mũ không tự động là nghiệm tổng quát của mọi PDE.
+
+(a) $2u_x+3u_y-2u=0$ cho $2r+3s-2=0$. Với mỗi $s\in\mathbb R$, chọn $r=1-3s/2$, được một nghiệm $e^{(1-3s/2)x+sy}$. Để có nghiệm tổng quát, dùng bất biến $\xi=3x-2y$, đặt $u=e^xF(\xi)$. Tính đạo hàm cho $2u_x+3u_y=2u$, nên toàn bộ nghiệm là $u=e^xF(3x-2y)$.
+
+(b) Vì PDE có ba biến, dùng $u=e^{rx+sy+tz}$. Khi đó $u_{xyz}=rst\,u$, nên điều kiện là $rst=1$. Chọn $r,s\ne0$ tùy ý và $t=1/(rs)$; ví dụ $u=e^{x+y+z}$. Tuyến tính cho phép cộng hữu hạn các mode này. Không thể bỏ biến $z$ vì nghiệm không phụ thuộc $z$ có $u_{xyz}=0$.
+
+(c) $4u_{xx}-4u_{xy}+4u_{yy}=0$ cho $r^2-rs+s^2=0$. Viết $(r-s/2)^2+3s^2/4=0$: với $r,s$ thực chỉ có $r=s=0$, tức mode hằng. Với số phức, $r=(1\pm i\sqrt3)s/2$; phần thực và phần ảo của mode phức cho nghiệm thực. Nghiệm mũ thực không mô tả hết nghiệm điều hòa của phương trình elliptic này.
+
+(d) $u_{xx}+u_{yy}=u$ cho $r^2+s^2=1$. Tham số hóa $r=\cos\theta,s=\sin\theta$, được $u_\theta=e^{x\cos\theta+y\sin\theta}$. Các ví dụ $e^x,e^y,e^{(x+y)/\sqrt2}$ đều đúng; cộng các nghiệm do tính tuyến tính vẫn cho nghiệm. Thế các đạo hàm ở bước 1 kiểm tra trực tiếp từng công thức.
+
+\textbf{Chi tiết tìm họ nghiệm ở (a).} Đặc trưng là $X'=2,Y'=3,U'=2U$. Tích phân từ $(x_0,y_0,u_0)$ được $X=x_0+2s,Y=y_0+3s,U=u_0e^{2s}$. Vì $3X-2Y=3x_0-2y_0$ và $e^{-X}U=e^{-x_0}u_0$, đặt giá trị bất biến thứ hai là $F(3X-2Y)$. Đổi về $x,y$ được $u=e^xF(3x-2y)$. Kiểm tra bằng các đạo hàm $u_x=e^x(F+3F')$, $u_y=-2e^xF'$: $2u_x+3u_y-2u=e^x(2F+6F'-6F'-2F)=0$.
+
+%ID BT_1_2_3_04
+\textbf{Bước 1: tìm hai họ đặc trưng.} Nếu $a\ne0$, phương trình $am^2-bm+c=0$ có hai nghiệm thực phân biệt $m_1,m_2$ vì $\Delta=b^2-4ac>0$. Ta có $m_1+m_2=b/a$, $m_1m_2=c/a$.
+
+\textbf{Bước 2: đổi biến.} Đặt $\xi=y-m_1x,\eta=y-m_2x,u=v(\xi,\eta)$. Jacobian bằng $m_2-m_1\ne0$, nên phép đổi không suy biến. Quy tắc dây chuyền:
+\begin{align*}
+u_{xx}&=m_1^2v_{\xi\xi}+2m_1m_2v_{\xi\eta}+m_2^2v_{\eta\eta},\\
+u_{xy}&=-m_1v_{\xi\xi}-(m_1+m_2)v_{\xi\eta}-m_2v_{\eta\eta},\\
+u_{yy}&=v_{\xi\xi}+2v_{\xi\eta}+v_{\eta\eta}.
+\end{align*}
+Hai hệ số của $v_{\xi\xi},v_{\eta\eta}$ bằng 0. Hệ số hỗn hợp bằng $2am_1m_2-b(m_1+m_2)+2c=-\Delta/a\ne0$. Do đó PDE tương đương $v_{\xi\eta}=0$.
+
+\textbf{Bước 3: tích phân.} Từ $\partial_\eta(v_\xi)=0$, $v_\xi=A(\xi)$. Tích phân theo $\xi$ cho $v=F(\xi)+G(\eta)$. Suy
+\[\boxed{u=F(y-m_1x)+G(y-m_2x).}\]
+Đây là dạng yêu cầu với $\alpha=-m_1,\beta=1,\gamma=-m_2,\delta=1$.
+
+\textbf{Trường hợp $a=0$.} Khi đó $b\ne0$, PDE là $\partial_y(bu_x+cu_y)=0$. Đặt $\xi=x,\eta=y-(c/b)x$, tính được $bu_{xy}+cu_{yy}=b v_{\xi\eta}$. Vẫn có $u=F(x)+G(y-(c/b)x)$, hai dạng tuyến tính độc lập.
+
+\textbf{Kiểm tra:} thế đạo hàm của $F(y-m_ix)$ cho hệ số $am_i^2-bm_i+c=0$; từng hạng giải PDE, và tổng cũng giải do tuyến tính.
+
+%ID BT_1_2_3_05
+(a) Xem $y$ là tham số: $u_x=-u$. Nhân $e^x$ cho $(e^xu)_x=0$, nên $u=e^{-x}C(y)$. Kiểm tra $u_x+u=0$.
+
+(b) Xem $x$ là tham số. ODE theo $y$ là $u_{yy}-x^2u=0$, có phương trình đặc trưng $\lambda^2-x^2=0$. Với $x\ne0$, $u=A(x)e^{xy}+B(x)e^{-xy}$. Với $x=0$, ODE thành $u_{yy}=0$, nên vết là affine theo $y$. Một dạng thống nhất, không mất nghiệm ở $x=0$, là
+\[u=A(x)\cosh(xy)+B(x)\frac{\sinh(xy)}x,\]
+trong đó $\sinh(xy)/x=y$ tại $x=0$ theo giới hạn. Hệ số $A,B$ đủ trơn cho lớp nghiệm mong muốn.
+
+(c) Đặt $v=u_x$, được $v_x-v=0$, nên $v=B(y)e^x$. Tích phân theo $x$ cho $u=A(y)+B(y)e^x$. Đạo hàm lại cho $u_{xx}=u_x$.
+
+(d) Với nghiệm thực, $u_x^2+u_y^2=0$ là tổng hai số không âm; buộc $u_x=u_y=0$. Do đó $u$ hằng trên từng thành phần liên thông. Nếu vế phải là $k\ne0$: $k<0$ thì vô nghiệm thực; $k>0$ là eikonal $|\nabla u|=\sqrt k$. Một họ nghiệm đơn giản $u=ax+by+c$, $a^2+b^2=k$, nhưng không phải toàn bộ nghiệm.
+
+Để dựng nghiệm cục bộ tổng quát từ dữ liệu $u(\gamma(s))=h(s)$, chọn $P(s)$ thỏa $|P(s)|^2=k$ và $P(s)\cdot\gamma'(s)=h'(s)$. Hệ đặc trưng của $F=p^2+q^2-k$ có $P'=0$, $X'=2P$, $U'=2k$, nên
+\[X=\gamma(s)+2tP(s),\qquad U=h(s)+2kt.\]
+Khử $(s,t)$ ở nơi Jacobian của $X$ khác 0, được nghiệm $u(X)=U$. Đây là dạng áp dụng phương pháp đặc trưng, phân biệt với chỉ đưa ra ví dụ affine.
+
+\textbf{Chi tiết xử lý điểm $x=0$ ở (b).} Chọn hai hệ số từ các vết tại $y=0$: $A(x)=u(x,0)$, $B(x)=u_y(x,0)$. Khi $x\ne0$, giải hệ $C+D=A$, $x(C-D)=B$ cho $C=(A+B/x)/2,D=(A-B/x)/2$, rồi gom hai hàm mũ thành $A\cosh(xy)+B\sinh(xy)/x$. Khai triển $\sinh(xy)/x=y+x^2y^3/3!+\cdots$ cho giới hạn $y$ và vết $u(0,y)=A(0)+B(0)y$; không loại nghiệm tuyến tính này khi hai nghiệm mũ trùng nhau.

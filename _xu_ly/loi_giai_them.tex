@@ -1,0 +1,32 @@
+%ID VD_4_2_2_01
+\textbf{Bước 1. Đọc đúng dữ liệu.} Đề là $u_t=u_{xx}$ trên $0<x<1$, biên $u(0,t)=u(1,t)=0$ và $f=\sin^2(\pi x)$. Ký hiệu trong bản scan là $\pi$, không phải tần số nguyên $n$; không cần đặt lại miền hay giới hạn $n$.
+\textbf{Bước 2. Chọn hai nghiệm so sánh.} Đặt $v=0$, $V=e^{-\pi^2t}\sin\pi x$. Tính $V_t=-\pi^2V=V_{xx}$, $V(0,t)=V(1,t)=0$. Trên $[0,1]$, $0\le\sin\pi x\le1$, nên $0\le\sin^2\pi x\le\sin\pi x$.
+\textbf{Bước 3. Áp dụng cực đại cho hai hiệu.} $v-u=-u$ giải phương trình nhiệt, dữ liệu đầu và biên không dương, nên $-u\le0$. Tương tự $u-V$ có dữ liệu đầu $\sin\pi x(\sin\pi x-1)\le0$ và biên $0$, nên $u-V\le0$. Kết luận
+\[0\le u(x,t)\le e^{-\pi^2t}\sin\pi x,\quad 0\le x\le1,\ t\ge0.\]
+Nếu cần chứng minh cực đại yếu, xét mỗi hiệu trừ $\varepsilon e^t$; toán tử $\partial_t-\partial_{xx}$ cho giá trị âm nghiêm ngặt, loại cực đại dương, rồi cho $\varepsilon\downarrow0$.
+
+%ID VD_4_2_2_03
+\textbf{Bước 1. Đổi biên Neumann thành điểm trong bằng phản xạ.} Mở rộng $u$ chẵn qua $0$, rồi chẵn qua $L$, và tuần hoàn chu kỳ $2L$. $u_x(0,t)=u_x(L,t)=0$ làm đạo hàm cấp một ghép liên tục; đạo hàm cấp hai và $u_t$ ghép theo tính chẵn và PDE, nên hàm mở rộng giải phương trình nhiệt với $t>0$.
+\textbf{Bước 2. Áp dụng cực đại trên đường tròn.} Đặt $m=\min_{[0,L]}f$, $M=\max_{[0,L]}f$. Hai hằng $m,M$ đều giải PDE và có biên Neumann. Với $w=u-M$, xét $w_\varepsilon=w-\varepsilon e^t$ trên miền tuần hoàn. Vì $(\partial_t-K\partial_{xx})w_\varepsilon=-\varepsilon e^t<0$, cực đại dương không thể ở $t>0$; ở $t=0$ cũng không dương. Do đó $u\le M+\varepsilon e^t$, cho $\varepsilon\downarrow0$ suy $u\le M$. Thay $u$ bằng $-u$ suy $u\ge m$.
+\textbf{Bước 3. Kết luận.}
+\[\min_{y\in[0,L]}u(y,0)\le u(x,t)\le\max_{y\in[0,L]}u(y,0).\]
+Nếu dữ liệu không khớp đạo hàm tại góc, phản xạ vẫn dùng cho $t>0$; tính liên tục của nghiệm đến mặt đầu đủ để áp dụng cực đại.
+
+%ID VD_4_3_2_01
+\textbf{Bước 1. Nhận diện hàm Green từ chuỗi Neumann.}
+Với $u_t=Ku_{xx}$, $u_x(0,t)=u_x(L,t)=0$, hệ riêng là $X_0=1$, $\lambda_0=0$, $N_0=L$ và $X_n=\cos(n\pi x/L)$, $\lambda_n=(n\pi/L)^2$, $N_n=L/2$. Chiếu dữ liệu rồi đổi tổng–tích phân với $t>0$:
+\begin{align*}
+u(x,t)&=\frac1L\int_0^Lf(y)dy+
+\sum_{n\ge1}\frac2L e^{-K(n\pi/L)^2t}\cos(n\pi x/L)\int_0^Lf(y)\cos(n\pi y/L)dy\\
+&=\int_0^LG_N(x,y,t)f(y)dy,\\
+G_N(x,y,t)&=\frac1L+\frac2L\sum_{n\ge1}e^{-K(n\pi/L)^2t}
+\cos(n\pi x/L)\cos(n\pi y/L).
+\end{align*}
+\textbf{Bước 2. Kiểm tra đạo hàm, biên và đối xứng.}
+Mỗi đạo hàm cấp hữu hạn bị chặn bởi hằng nhân $n^m e^{-K(n\pi/L)^2\varepsilon}$ khi $t\ge\varepsilon>0$; tổng này hội tụ. Do đó được đạo hàm từng số hạng. Đạo hàm theo $t$ nhân $-K(n\pi/L)^2$, đạo hàm theo $x$ hai lần nhân $-(n\pi/L)^2$, nên $G_{Nt}=KG_{Nxx}=KG_{Nyy}$. Tích hai cosine đối xứng theo $x,y$ và tuần hoàn $2L$ theo từng biến; đạo hàm theo $x$ chứa sine, bằng $0$ tại $0,L$.
+\textbf{Bước 3. Tính khối lượng và chứng minh dương.} Vì $\int_0^L\cos(n\pi y/L)dy=0$,
+\[\int_0^LG_N(x,y,t)dy=1.\]
+Đặt $g_K(z,t)=(4\pi Kt)^{-1/2}e^{-z^2/(4Kt)}$. Phản xạ chẵn và tuần hoàn cho
+\[G_N(x,y,t)=\sum_{j\in\mathbb Z}\{g_K(x-y+2jL,t)+g_K(x+y+2jL,t)\}.\]
+Có thể kiểm tra đẳng thức bằng hệ số Fourier: nhân tuần hoàn $\sum_jg_K(z+2jL,t)$ có hệ số $(2L)^{-1}e^{-K(n\pi/L)^2t}$; cộng hai ảnh và dùng $\cos(a-b)+\cos(a+b)=2\cos a\cos b$ trả lại chuỗi trên. Mỗi Gauss dương nên $G_N>0$.
+\textbf{Bước 4. Dữ liệu đầu, nửa nhóm và giới hạn.} Với $f$ liên tục, xấp xỉ đơn vị của nhân nhiệt trên hàm mở rộng chẵn cho $u\to f$ đều. Trực giao cosine cho $\int_0^LG_N(x,z,s)G_N(z,y,t)dz=G_N(x,y,s+t)$. Vì $G_N>0$ và tổng trọng số $1$, $\min f\le u\le\max f$; tính đối xứng cho $\int_0^Lu(x,t)dx=\int f$. Các mode dương giảm theo mũ, nên $u\to L^{-1}\int f$ đều. Không đòi $\int G_N$ bằng $1$ bằng một phép tích phân trên toàn trục: tích phân chuẩn hóa ở đây là trên một đoạn $[0,L]$.

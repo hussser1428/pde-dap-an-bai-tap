@@ -1,0 +1,17 @@
+{
+  "six_canonical_substitutions": [
+    2.7914011369034597e-07,
+    1.3794076867412741e-06,
+    5.377986500576526e-08,
+    3.2025636720334205e-07,
+    2.2814664157877473e-08,
+    1.7849635298716748e-06
+  ],
+  "intermediate_fourier_integrals_max_error": 2.55351295663786e-15,
+  "green_flux_max_error": 1.1102230246251565e-16,
+  "beam_determinant": "passed",
+  "expanded_cauchy_formulas_and_torus_roots": "passed",
+  "markdown_derivative_primes": "passed",
+  "reviewed_items": 205,
+  "expanded_items": 98
+}

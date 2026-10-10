@@ -1,0 +1,69 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{fontspec,amsmath,amssymb,graphicx}
+\usepackage[margin=18mm]{geometry}
+\setmainfont{Times New Roman}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\allowdisplaybreaks
+\sloppy
+\emergencystretch=2em
+\begin{document}
+\section*{VD\_3\_2\_2\_06 — Lời giải bổ sung}
+\subsection*{Kiến thức và trình tự giải}
+\textbf{Bước 1 — Liệt kê các khoảng của dữ liệu.} Ghi đủ điểm đầu, điểm cuối hỗ trợ, điểm gãy và bước nhảy của $f,g$. Nếu có biên, phản xạ chẵn hoặc lẻ trước khi tích phân; trên đoạn hữu hạn tiếp tục phản xạ đến một chu kỳ hoàn chỉnh.
+
+\textbf{Bước 2 — Tính nguyên hàm liên tục.} Lấy $H'=\widetilde g$ trên từng khoảng và chọn hằng số để hai vết của $H$ bằng nhau. Viết $[s]_p^q=\min(q,\max(p,s))$ hoặc $(s)_+=\max(s,0)$ khi cần gộp nhiều nhánh. Một nguyên hàm liên tục tránh tạo ra bước nhảy giả trong nghiệm.
+
+\textbf{Bước 3 — Xác định sóng phải và sóng trái.} Đặt $A(s)=\widetilde f(s)/2-H(s)/(2a)$, $B(s)=\widetilde f(s)/2+H(s)/(2a)$; khi đó $u=A(x-at)+B(x+at)$. Với từng $t$ được yêu cầu, dịch đồ thị $A$ sang phải $at$ và $B$ sang trái $at$, rồi cộng tung độ. Các đường $x-at=b$ và $x+at=b$ chia mặt phẳng thành các miền có công thức đơn giản.
+
+\textbf{Bước 4 — Xét liên tục, đạo hàm và giao của các mặt sóng.} Nếu $f$ có bước nhảy, $u$ thường có bước nhảy; nếu $f$ liên tục và $g$ bị chặn thì $u$ liên tục. Tại thời điểm cố định,
+
+
+\[
+u_x=\frac{\widetilde f'(x-at)+\widetilde f'(x+at)}2+\frac{\widetilde g(x+at)-\widetilde g(x-at)}{2a}.
+\]
+
+
+Tính giới hạn trái/phải của biểu thức này tại từng vị trí ứng viên. Có thể có triệt tiêu khi hai đường gặp nhau, nên không chỉ liệt kê đường rồi khẳng định mọi đạo hàm đều mất. Với tính $C^1$ theo cả $x,t$, còn kiểm tra $u_t$. Với $C^2$, xét tiếp các góc của $g$ và đạo hàm cấp hai của $f$.
+
+\textbf{Bước 5 — Tính thời điểm đến, giới hạn và ngưỡng.} Sóng ở $(x,t)$ chỉ nhận dữ liệu trong $[x-at,x+at]$. Giải bất đẳng thức giao hỗ trợ để tìm thời điểm đến và đi qua. Nếu $H$ hằng ngoài đoạn hỗ trợ, dùng các giá trị hằng này để tính giới hạn khi $t\to\infty$. Nếu hỏi áp suất cực đại, viết hàm từng khoảng thời gian và so sánh cực trị, bước nhảy cùng hai giá trị một phía.
+
+\textbf{Bước 1 — Đọc đúng điều kiện biên.} Biên $u(0,t)=0$ dùng mở rộng lẻ; biên $u_x(0,t)=0$ dùng mở rộng chẵn. Với dữ liệu trên $x\ge0$, đặt $\widetilde f(-s)=-f(s)$ hoặc $f(s)$ tương ứng, làm tương tự cho $g$. Mở rộng lẻ là $C^2$ nếu $f(0)=f''(0)=0$, và mở rộng lẻ của $g$ là $C^1$ nếu $g(0)=0$. Mở rộng chẵn đòi $f'(0)=g'(0)=0$ cho mức trơn ấy.
+
+\textbf{Bước 2 — Lập nguyên hàm sau khi phản xạ.} Đặt $H(s)=\int_0^s\widetilde g(r)dr$. Nếu $\widetilde g$ lẻ thì $H$ chẵn; nếu $\widetilde g$ chẵn thì $H$ lẻ. Chính nguyên hàm, chứ không phải vận tốc, xuất hiện trong
+
+
+\[
+u=\frac{\widetilde f(x-at)+\widetilde f(x+at)}2+\frac{H(x+at)-H(x-at)}{2a}.
+\]
+
+
+\textbf{Bước 3 — Tách miền trước và sau khi chạm biên.} Với $u(0,t)=h(t)$, ở $x\ge at$ dùng d'Alembert với dữ liệu gốc. Ở $0<x<at$:
+
+
+\[
+u=h(t-x/a)+\frac{f(x+at)-f(at-x)}2+\frac1{2a}\int_{at-x}^{at+x}g(s)ds.
+\]
+
+
+Với $u_x(0,t)=h(t)$, dùng nghiệm của các mở rộng chẵn rồi trừ $a\int_0^{t-x/a}h(s)ds$ trên miền $x<at$. Tính riêng đạo hàm theo $x$ của hạng này để kiểm tra biên.
+
+\textbf{Bước 4 — Trên đoạn hữu hạn, phản xạ ở cả hai đầu.} Dirichlet ở hai đầu cho mở rộng lẻ tại $0,L$, chu kỳ không gian $2L$. Neumann ở hai đầu cho mở rộng chẵn tại $0,L$, cũng chu kỳ $2L$. Một đầu lẻ, một đầu chẵn cho $\widetilde f(s+2L)=-\widetilde f(s)$ và chu kỳ $4L$, tương tự $g$. Vì thế chu kỳ thời gian thường là $2L/a$ hoặc $4L/a$. Với Neumann hai đầu còn phải xét trung bình $g$: trung bình khác không sinh hạng tuyến tính theo $t$, nên nghiệm không tuần hoàn.
+
+\textbf{Bước 5 — Kiểm tra góc và đường ghép.} Biên Dirichlet không thuần nhất cần $h(0)=f(0)$, $h'(0)=g(0)$, $h''(0)=a^2f''(0)$ để có nghiệm $C^2$ cho phương trình thuần nhất. So sánh hai vết trên $x=at$, gồm $u,u_x,u_t$ rồi đạo hàm cấp hai. Nếu không tương thích, nêu rõ mức trơn còn lại thay vì khẳng định nghiệm cổ điển trên toàn miền.
+\subsection*{Lời giải áp dụng cho bài}
+\textbf{Bước 1. Phản xạ biên hỗn hợp.} Dữ liệu giống Ví dụ 5, nhưng $u(0,t)=0$, $u_x(1,t)=0$. Trên $[0,2]$, mở rộng $f_e(s)=f(s)$ nếu $s\le1$, $f(2-s)$ nếu $s\ge1$; sau đó $f_e(s+2)=-f_e(s)$ và chu kỳ $4$. Làm tương tự với $g_e$.
+
+\textbf{Bước 2. Tính nguyên hàm bốn nhánh.} Đặt $h(s)=4[s-2/3]_0^{1/12}$ trên $[0,1]$. Trên $[0,4]$:
+\[H(s)=\begin{cases}h(s)&0\le s\le1,\\2/3-h(2-s)&1\le s\le2,\\2/3-H(s-2)&2\le s\le4.\end{cases}\]
+Hạng $2/3$ là tích phân vận tốc trên $[0,2]$; toàn chu kỳ $4$ có trung bình bằng $0$, nên mở rộng $H$ chu kỳ $4$.
+
+\textbf{Bước 3. Nghiệm và phản chu kỳ.} Vẫn dùng $u=(f_e(x-t)+f_e(x+t))/2+(H(x+t)-H(x-t))/2$. Ta có $H(s+2)=2/3-H(s)$, nên
+\[u(x,t+2)=-u(x,t),\qquad u(x,t+4)=u(x,t).\]
+Vì dữ liệu khác không, không có chu kỳ $2$; câu yêu cầu chu kỳ $2$ trong sách cần sửa thành phản chu kỳ $2$ và chu kỳ $4$. Mode đầu khác không (tích phân $f\sin(\pi x/2)>0$), xác nhận chu kỳ cơ bản $4$.
+
+\textbf{Bước 4. Kiểm tra biên.} $f_e,g_e$ lẻ tại $0$, chẵn tại $1$, nên nghiệm có đúng vết Dirichlet và Neumann nơi vết đạo hàm tồn tại. Các bước nhảy dữ liệu lan dọc $x\pm t=b$, trong đó $b$ là các điểm biên hỗ trợ cùng các ảnh phản xạ đã xây dựng. Mức trơn là nghiệm từng miền/ nghiệm yếu, không $C^2$ trên toàn hình chữ nhật.
+
+\textbf{Chi tiết nối nguyên hàm và phản chu kỳ.} Xung dương có diện tích $4(3/4-2/3)=1/3$. Phản xạ chẵn tại $1$ tạo thêm diện tích $1/3$ trên $(1,2)$, nên $H(2)=2/3$. Vì $g_e(s+2)=-g_e(s)$,
+\[H(s+2)=H(2)+\int_2^{s+2}g_e(r)dr=2/3-\int_0^sg_e(r)dr=2/3-H(s).\]
+Khi dịch $t$ thêm $2$, các đối số $x+t$ tăng $2$, $x-t$ giảm $2$; cả hai giá trị $H$ thành $2/3-H$ của giá trị cũ. Vì thế hiệu $H$ đổi dấu. Các giá trị $f_e$ cũng đổi dấu, cho $u(t+2)=-u(t)$.\end{document}

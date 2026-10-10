@@ -1,0 +1,128 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{fontspec,amsmath,amssymb,graphicx}
+\usepackage[margin=18mm]{geometry}
+\setmainfont{Times New Roman}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\allowdisplaybreaks
+\sloppy
+\emergencystretch=2em
+\begin{document}
+\section*{BT\_3\_5\_3\_01 — Lời giải bổ sung}
+\subsection*{Kiến thức và trình tự giải}
+\textbf{Bước 1 — Chọn năng lượng theo toán tử.} Với sóng dùng $E=\frac12\int(u_t^2+a^2u_x^2)dx$. Với Klein–Gordon có thêm $u$, thêm $\frac12\int u^2dx$. Với dầm $u_{tt}=-a^2u_{xxxx}$ dùng $E=\frac12\int(u_t^2+a^2u_{xx}^2)dx$, không thay $u_{xx}$ bằng $u_x$.
+
+\textbf{Bước 2 — Đạo hàm và tích phân từng phần.} Với $u_{tt}-a^2u_{xx}+\gamma u_t+\kappa u=F$, năng lượng có hạng $\kappa u^2$ cho
+
+
+\[
+E'=a^2[u_tu_x]_0^L-\gamma\int u_t^2dx+\int Fu_tdx.
+\]
+
+
+Với dầm, tích phân hai lần cho $E'=a^2[u_{tx}u_{xx}-u_tu_{xxx}]_0^L$. Viết riêng từng hạng biên rồi dùng điều kiện biên và đạo hàm theo thời gian của điều kiện đó để cho chúng bằng không.
+
+\textbf{Bước 3 — Suy hệ quả.} Không cản, không nguồn thì $E$ bảo toàn. Có cản $\gamma>0$ thì $E'\le0$; nếu $E$ không có hệ số $1/2$, $E'=-2\gamma\int u_t^2\ge-2\gamma E$, suy $e^{-2\gamma t}E(0)\le E(t)\le E(0)$. Với hiệu hai nghiệm cùng dữ liệu, $E(0)=0$ nên có duy nhất.
+
+\textbf{Bước 4 — Tách biến nếu phải tìm nghiệm cụ thể.} Sóng có cản $\gamma=1$ cho $T''+T'+a^2\lambda T=0$. Đặt $T=e^{-t/2}Y$, thu $Y''+(a^2\lambda-1/4)Y=0$, $Y(0)=A$, $Y'(0)=B+A/2$. Phân biệt dao động, nghiệm kép và hàm hyperbolic. Dầm cho $X''''=k^4X$, $T''+a^2k^4T=0$; dùng đủ bốn điều kiện biên để tìm phương trình của $kL$.
+
+\textbf{Bước 5 — Kiểm tra hệ số và khẳng định của đề.} Năng lượng đầu chứa cả $g^2$ và các đạo hàm của $f$. Thử $f=0$, $g\ne0$ để phát hiện công thức bỏ vận tốc. Với dầm, nghiệm $k=0$ phải giải trực tiếp bằng đa thức bậc ba; nghiệm $0$ của phương trình lượng giác–hyperbolic có thể chỉ là nghiệm giả do cơ sở suy biến.
+
+\textbf{Chi tiết phép triệt tiêu tích phân.} Đạo hàm động năng cho $\int u_tu_{tt}$; dùng PDE thay $u_{tt}$. Với sóng, $\int u_tu_{xx}=[u_tu_x]-\int u_{tx}u_x$, và tích phân cuối triệt tiêu đạo hàm thế năng $\int u_xu_{xt}$. Với dầm,
+
+
+\[
+\int u_tu_{xxxx}=[u_tu_{xxx}-u_{tx}u_{xx}]+\int u_{txx}u_{xx}.
+\]
+
+
+Tích phân cuối triệt tiêu đạo hàm $\frac12\int u_{xx}^2$ sau khi nhân hệ số và giữ đúng dấu PDE. Viết hạng biên trước, sau đó mới dùng điều kiện của từng đầu.
+
+\textbf{Bước 1 — Tách biến và chọn bài toán trị riêng theo biên.} Đặt $u=X(x)T(t)$ trong $u_{tt}=a^2u_{xx}$, suy $X''+\lambda X=0$, $T''+a^2\lambda T=0$. Tích phân từng phần cho $\lambda\int X^2=\int (X')^2$ khi hạng biên bằng không; do đó $\lambda\ge0$. Giải cả trường hợp $\lambda=0$ trước khi xét $\lambda=k^2>0$.
+
+\textbf{Bước 2 — Tìm hệ hàm riêng.} Trên $(0,L)$: Dirichlet hai đầu dùng $\sin(n\pi x/L)$, $n\ge1$; Neumann hai đầu dùng $1$ và $\cos(n\pi x/L)$; Dirichlet–Neumann dùng $\sin((n+1/2)\pi x/L)$, $n\ge0$; Neumann–Dirichlet dùng cos của các tần số nửa nguyên ấy. Chuẩn bình phương của mode khác không là $L/2$, của mode hằng là $L$.
+
+\textbf{Bước 3 — Chiếu cả hai dữ liệu.} Với mode khác không đặt
+
+
+\[
+A_n=\frac2L\int_0^L fX_n\,dx,\quad B_n=\frac2L\int_0^L gX_n\,dx,\quad \omega_n=ak_n.
+\]
+
+
+Tích phân từng khoảng nếu dữ liệu chia đoạn; dùng tích phân từng phần hoặc công thức tích–tổng khi là đa thức/lượng giác. Hệ số $B_n$ là hệ số của vận tốc, nên hệ số đứng trước $\sin\omega_nt$ phải là $B_n/\omega_n$.
+
+\textbf{Bước 4 — Ghép nghiệm và xét mode hằng.}
+
+
+\[
+u=\sum_n\left(A_n\cos\omega_nt+\frac{B_n}{\omega_n}\sin\omega_nt\right)X_n.
+\]
+
+
+Với Neumann hai đầu, thêm $A_0+B_0t$, trong đó $A_0=L^{-1}\int f$, $B_0=L^{-1}\int g$. Với tần số bị thay đổi bởi hạng $u$ hoặc cản $u_t$, giải lại ODE của từng mode; không dùng nguyên tần số $ak_n$.
+
+\textbf{Bước 5 — Kiểm tra biên, dữ liệu và hội tụ.} Mỗi mode thỏa biên; tại $t=0$ hai chuỗi cho khai triển của $f,g$. Nếu dữ liệu không tương thích ở góc, giải theo nghĩa năng lượng hoặc từng miền và nêu đường mất tính trơn; không đạo hàm một chuỗi yếu tùy ý. Chu kỳ được suy từ tất cả mode có hệ số khác không, kể cả mode hằng; hai tần số có tỷ số vô tỷ ngăn một chu kỳ chung.
+
+\textbf{Chi tiết tính tích phân hệ số.} Với $k=n\pi/L$, hai nguyên hàm thường dùng là
+
+
+\[
+\int x\sin kx\,dx=-x\cos kx/k+\sin kx/k^2,\qquad
+\int x\cos kx\,dx=x\sin kx/k+\cos kx/k^2.
+\]
+
+
+Với đa thức $P$, ghi cả hai lần tích phân:
+
+
+\[
+\int_0^L P\sin kx\,dx
+=\left[-P\cos kx/k\right]_0^L+
+\left[P'\sin kx/k^2\right]_0^L-
+\frac1{k^2}\int_0^L P''\sin kx\,dx.
+\]
+
+
+Chỉ bỏ hạng biên sau khi thế $0,L$ và điều kiện thực sự của $P$. Nếu dữ liệu chia đoạn, áp dụng công thức trên từng đoạn, rồi cộng các hạng tại điểm chia. Cuối cùng nhân nghịch đảo chuẩn của hàm riêng; nếu hệ số là của vận tốc, chia thêm tần số khi ghép nghiệm. Với mẫu số bằng $0$ trong tích–tổng, quay lại tích phân gốc để tính riêng.
+\subsection*{Lời giải áp dụng cho bài}
+\textbf{Bước 1. Sửa khẳng định bảo toàn và chứng minh duy nhất.} Phương trình (3.5.46) là $u_{tt}+u_t=a^2u_{xx}$. Với $I=\frac12\int(u_t^2+a^2u_x^2)$, $I'=a^2[u_tu_x]_0^L-\int u_t^2$. Ở biên Dirichlet, $u_t=0$; ở biên Neumann, $u_x=0$. Cả ba kiểu biên đều cho $I'=-\int u_t^2$, không bảo toàn nói chung. Hiệu hai nghiệm có $I(0)=0$, suy $u_t=u_x=0$, rồi dữ liệu đầu buộc hằng số bằng $0$.
+
+\textbf{Bước 2. Ba bài trị riêng.} Tách $X''+\lambda X=0$. Tích phân cho $\lambda\int X^2=\int(X')^2$; hai kiểu hỗn hợp loại mode hằng, còn Neumann hai đầu giữ nó. Trừ hai phương trình chứng minh trực giao như mục 3.3. Cụ thể:
+
+(a) $X(0)=X'(L)=0$: $X_n=\sin k_nx$, $k_n=(n+1/2)\pi/L$, $n\ge0$.
+
+(b) $X'(0)=X(L)=0$: cùng $k_n$, $X_n=\cos k_nx$.
+
+(c) $X'(0)=X'(L)=0$: $X_0=1$, $X_n=\cos(n\pi x/L)$, $n\ge1$. Chuẩn là $L$ cho mode $0$, $L/2$ cho mode khác không.
+
+\textbf{Bước 3. Giải ODE và chiếu cả hai dữ liệu.} Đặt $A_n=\int fX_n/\int X_n^2$, $B_n=\int gX_n/\int X_n^2$. $T_n''+T_n'+a^2\lambda_nT_n=0$. Đổi $T_n=e^{-t/2}Y_n$ cho $Y_n''+(a^2\lambda_n-1/4)Y_n=0$. Nếu $\omega_n^2=a^2\lambda_n-1/4>0$,
+\[T_n=e^{-t/2}[A_n\cos\omega_nt+(B_n+A_n/2)\sin\omega_nt/\omega_n].\]
+Nếu $\omega_n=0$, dùng $e^{-t/2}[A_n+(B_n+A_n/2)t]$. Nếu $\omega_n^2<0$, thay cos/sin bằng cosh/sinh với $\sqrt{-\omega_n^2}$. Mode hằng là $A_0+B_0(1-e^{-t})$, giải trực tiếp $T_0''+T_0'=0$.
+
+\textbf{Bước 4. Nghiệm và ví dụ cho cả ba kiểu.} $u=\sum T_nX_n$. Với $a=L=1$, lấy lần lượt $f=\sin(\pi x/2)$, $f=\cos(\pi x/2)$, $f=\cos\pi x$, tất cả $g=0$. Chỉ có một mode, $A=1$, $B=0$, nên nghiệm là $X(x)e^{-t/2}(\cos\omega t+\sin\omega t/(2\omega))$, với $\omega=\sqrt{\pi^2/4-1/4}$ cho (a),(b), $\sqrt{\pi^2-1/4}$ cho (c). Đồ thị thể hiện giảm biên độ; ví dụ mode hằng $f=1,g=0$ ở (c) cho nghiệm hằng $1$, phù hợp vì năng lượng đạo hàm bằng $0$.
+
+\textbf{Chi tiết tích phân từng phần trong đạo hàm năng lượng.} Đặt $E=\frac12\int_0^L(u_t^2+a^2u_x^2+\kappa u^2)dx$. Với $u_{tt}-a^2u_{xx}+\gamma u_t+\kappa u=F$,
+\[\begin{aligned}
+E'&=\int_0^L(u_tu_{tt}+a^2u_xu_{xt}+\kappa uu_t)dx\\
+&=\int_0^Lu_t(a^2u_{xx}-\gamma u_t-\kappa u+F)dx
++a^2\int_0^Lu_xu_{xt}dx+\kappa\int_0^Luu_tdx\\
+&=a^2[u_tu_x]_0^L-a^2\int_0^Lu_{tx}u_xdx
++a^2\int_0^Lu_xu_{xt}dx-\gamma\int_0^Lu_t^2dx+\int_0^LFu_tdx\\
+&=a^2[u_tu_x]_0^L-\gamma\int_0^Lu_t^2dx+\int_0^LFu_tdx.
+\end{aligned}\]
+Hai hạng $\kappa uu_t$ triệt tiêu ngay khi thế PDE; hai tích phân $u_xu_{xt}$ triệt tiêu sau tích phân từng phần. Với biên Dirichlet thuần nhất, đạo hàm vết theo $t$ cho $u_t=0$; với biên Neumann thuần nhất, $u_x=0$. Nếu định nghĩa năng lượng không có $1/2$, nhân cả đẳng thức đạo hàm với $2$.
+
+\textbf{Chi tiết trực giao và dấu trị riêng.} Nhân $-X''=\lambda X$ bởi $X$, tích phân:
+\[\lambda\int_0^LX^2dx=-[X'X]_0^L+\int_0^L(X')^2dx=\int_0^L(X')^2dx.\]
+Hạng biên hết vì mỗi đầu có $X=0$ hoặc $X'=0$. Nếu $\lambda=0$, $\int(X')^2=0$ cho $X$ hằng; khi có một đầu Dirichlet, hằng đó bằng $0$. Với hai trị riêng,
+\[(\lambda_m-\lambda_n)\int_0^LX_mX_n\,dx
+=\int_0^L(-X_m''X_n+X_n''X_m)dx
+=[-X_m'X_n+X_n'X_m]_0^L=0.\]
+Nếu $\lambda_m\ne\lambda_n$, chia hiệu trị riêng cho tích vô hướng bằng $0$.
+
+\textbf{Chi tiết đổi ẩn trong ODE có cản.} Với $T=e^{-t/2}Y$,
+\[T'=e^{-t/2}(Y'-Y/2),\quad T''=e^{-t/2}(Y''-Y'+Y/4).\]
+Do đó $T''+T'+\Omega^2T=e^{-t/2}[Y''+(\Omega^2-1/4)Y]$. Dữ liệu $T(0)=A,T'(0)=B$ trở thành $Y(0)=A,Y'(0)=B+A/2$. Nếu $\Omega=0$, giải trực tiếp $T''+T'=0$: đặt $Z=T'$, $Z=Be^{-t}$, rồi $T=A+B(1-e^{-t})$.
+\begin{center}\includegraphics[width=.97\linewidth,height=11cm,keepaspectratio]{Do_thi/BT_3_5_3_01.png}\end{center}
+\textit{Đồ thị minh họa; với nghiệm số, xem phương pháp và tham số trong mã Python kèm theo.}\end{document}

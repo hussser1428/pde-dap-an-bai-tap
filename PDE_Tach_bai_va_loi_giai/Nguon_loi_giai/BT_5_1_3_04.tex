@@ -1,0 +1,18 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{fontspec,amsmath,amssymb,graphicx}
+\usepackage[margin=18mm]{geometry}
+\setmainfont{Times New Roman}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\allowdisplaybreaks
+\sloppy
+\emergencystretch=2em
+\begin{document}
+\section*{BT\_5\_1\_3\_04 — Lời giải bổ sung}
+Biên dưới $u_y=u$, trên $u_y=-u$ tương đương $\partial_\nu u=-u$ ở cả hai cạnh; hai cạnh đứng Neumann. Với hiệu $w$,
+\[\int_\Omega|\nabla w|^2=-\int_{y=0,M}w^2\le0.\]
+Do đó $w=0$. Kết luận ``vô số nghiệm sai khác hằng số'' của đề là sai: cộng hằng khác 0 phá điều kiện Robin.
+
+Câu (ii), $L=M=1,u_x(0,y)=1,u_x(1,y)=0$. Gọi $Y_j=\cos k_jy+\sin k_jy/k_j$, với $(1-k_j^2)\sin k_j+2k_j\cos k_j=0$, $k_j>0$, $N_j=\int_0^1Y_j^2$, $d_j=\int_0^1Y_j/N_j$. Tách biến theo $y$ cho
+\[u(x,y)=-\sum_j\frac{d_j\cosh(k_j(1-x))}{k_j\sinh k_j}Y_j(y).\]
+Đạo hàm $x$ cho đúng dữ liệu hai cạnh; $Y_j$ thỏa Robin. Đây là nghiệm duy nhất.\end{document}

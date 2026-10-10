@@ -1,0 +1,40 @@
+{
+  "chapter2_items": 27,
+  "pde_residuals": {
+    "BT3_1": 3.789496250128366e-08,
+    "BT4_1": 4.834733715597395e-07,
+    "BT4_2": 6.895731360145874e-06,
+    "BT5_1": 2.854494240978056e-08,
+    "BT5_2": 8.917978178146768e-08,
+    "BT6_1": 6.627848077700449e-06,
+    "BT7_1": 7.008881113268473e-07,
+    "BT8_1": 9.836140035801577e-08,
+    "BT8_2": 6.53472912670594e-07,
+    "BT9_1": 1.598805532410097e-07,
+    "BT9_2": 1.5817981342536314e-06,
+    "BT10_1": 1.9527934824736803e-07,
+    "BT11_1": 2.5701663020072374e-08,
+    "BT14_1": 9.366372388797117e-08,
+    "BT15_1": 1.8574651816649634e-09,
+    "BT15_2": 1.7521098238937327e-08,
+    "BT16_1": 9.127394284824675e-09,
+    "BT17_1": 2.410407021202765e-08,
+    "BT18_1": 5.675988123954312e-09
+  },
+  "data_checks": 193,
+  "max_data_error": 3.0278550422480066e-07,
+  "three_dimensional_canonical_forms": "passed",
+  "spherical_and_toroidal_hessians": [
+    1.1390792531429383e-07,
+    5.323117946431921e-08,
+    9.557669899962207e-08,
+    4.454653854679691e-07,
+    1.8355481756771042e-07,
+    1.1416588030499497e-07
+  ],
+  "variable_coefficient_canonical_form": "passed",
+  "characteristic_compatibility": "passed",
+  "wave_boundary_control": "passed",
+  "example6_sign_discrepancy": "confirmed against printed PDE",
+  "artifacts": "27 Markdown/PDF/LaTeX sets passed"
+}

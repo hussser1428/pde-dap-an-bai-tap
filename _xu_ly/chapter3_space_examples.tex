@@ -1,0 +1,38 @@
+%ID VD_3_6_2_01
+\textbf{Bước 1. Đưa Kirchhoff về diện tích chỏm.} Tốc độ $c=2$, li độ đầu không, vận tốc là chỉ thị $z>0$. Tại $P=(x,y,z)$, điểm trên mặt cầu là $P+2t\omega$ và thuộc miền vận tốc khi $z+2t\omega_z>0$. Đặt $\mu=\omega_z$; diện tích hướng có $\mu$ trong một khoảng bằng $2\pi$ nhân độ dài khoảng ấy.
+
+\textbf{Bước 2. Cắt ngưỡng vào $[-1,1]$.} Điều kiện là $\mu>-z/(2t)$. Nếu $z\ge2t$, cả mặt cầu nằm phía trên; nếu $z\le-2t$, không có phần nào; nếu $|z|<2t$, độ dài khoảng là $1+z/(2t)$. Vì $u=t|E|/2$,
+\[u(P,t)=\begin{cases}t&z\ge2t,\\t/2+z/4&|z|<2t,\\0&z\le-2t.\end{cases}\]
+\textbf{Bước 3. Kiểm tra.} Ngoài các mặt $z=\pm2t$, mỗi nhánh affine nên $u_{tt}=4\Delta u=0$. $u(P,0)=0$; với $z\ne0$, $u_t(P,0)$ là $1$ hoặc $0$ đúng dữ liệu. Nghiệm liên tục nhưng gãy cấp một trên các mặt sóng. Tại $z=0$ dữ liệu chỉ thị gián đoạn nên không có vết cổ điển thống nhất; công thức cho $u=t/2$, là cách hiểu từ trung bình mặt cầu.
+%ID VD_3_6_2_02
+\textbf{Bước 1. Chọn trục theo điểm quan sát.} $c=2$, $\psi=\chi_{B_R(0)}$, $r=|P|$, $\rho=2t$. Nếu $r>0$, lấy trục của $\mu$ hướng về tâm từ $P$. Khi đó $|P+\rho\omega|^2=r^2+\rho^2-2r\rho\mu$.
+
+\textbf{Bước 2. Bất đẳng thức quả cầu.} Điều kiện nằm trong $B_R$ tương đương $\mu>(r^2+\rho^2-R^2)/(2r\rho)$. Tỷ lệ diện tích chỏm là ngưỡng đã cắt:
+\[K_R(r,t)=t\left[\frac{R^2-(r-2t)^2}{8rt}\right]_0^1,\qquad [s]_0^1=\min(1,\max(0,s)).\]
+\textbf{Bước 3. Giải thích các nhánh.} Nếu $r<R$ và $2t<R-r$, cả mặt cầu ở trong, $u=t$. Nếu $|R-r|<2t<R+r$, chỉ một chỏm giao, $u=[R^2-(r-2t)^2]/(8r)$. Nếu không giao, $u=0$. Với $r=0$, tính riêng: $u=t$ khi $2t<R$, $0$ khi $2t>R$; giá trị tại $2t=R$ phụ thuộc quy ước chỉ thị trên toàn mặt cầu, với quả cầu mở là $0$.
+
+\textbf{Bước 4. Kiểm tra.} Khi điểm ban đầu nằm trong quả cầu, nhánh đầu cho vận tốc $1$; ở ngoài cho $0$. Thời gian đến/đi là khoảng cách tới mặt cầu chia tốc độ. Dữ liệu gián đoạn cho nghiệm không cổ điển trên các mặt sóng; trường hợp tâm quan sát có thể có bước nhảy khi toàn mặt cầu đồng thời đi qua biên.
+%ID VD_3_6_2_03
+\textbf{Bước 1. Dùng phương pháp hạ chiều.} Dữ liệu hai chiều $u_0=0$, $u_{t,0}=f(x)$ không phụ thuộc $y$. Mở rộng sang ba chiều cũng không phụ thuộc $y,z$. Kirchhoff cho $u=t(4\pi)^{-1}\int_{S^2}f(x+ct\omega_x)d\omega$.
+
+\textbf{Bước 2. Tích phân góc.} Chọn trục cực là trục $x$, $\mu=\omega_x$, $d\omega=d\phi\,d\mu$. Tích phân theo $\phi$ cho $2\pi$, nên $u=(t/2)\int_{-1}^1f(x+ct\mu)d\mu$. Đổi $s=x+ct\mu$, $ds=ct\,d\mu$:
+\[u(x,y,t)=\frac1{2c}\int_{x-ct}^{x+ct}f(s)ds.\]
+\textbf{Bước 3. Kiểm tra bằng d'Alembert.} Nghiệm không phụ thuộc $y$, nên $\Delta u=u_{xx}$. Công thức vừa tìm đúng d'Alembert một chiều với li độ không và vận tốc $f$. Tại $0$ tích phân có độ dài $0$, còn đạo hàm thời gian cho $f(x)$. Nếu $f$ không trơn, công thức vẫn có nghĩa và mức trơn được xét tại các cận chạm điểm gãy của $f$.
+%ID VD_3_6_2_04
+\textbf{Bước 1. Tách hai nguồn vận tốc.} $c=2$, $u_0=0$, $\psi=\chi_{[0,1]}(x)-\chi_{[0,1]}(y)$. Tuyến tính cho hiệu của một nghiệm chỉ phụ thuộc $x$ và một nghiệm chỉ phụ thuộc $y$.
+
+\textbf{Bước 2. Tính độ dài giao.} Đặt $h(s)=[s]_0^1$, nguyên hàm của $\chi_{[0,1]}$. Theo Ví dụ 3,
+\[u=\frac14\{h(x+2t)-h(x-2t)-h(y+2t)+h(y-2t)\}.\]
+Mỗi hiệu $h$ bằng độ dài giao $[q-2t,q+2t]\cap[0,1]$ với $q=x$ hoặc $y$, nên có thể đọc mọi nhánh từ min/max.
+
+\textbf{Bước 3. Kiểm tra và đối xứng.} Tại $t=0$, $u=0$; đạo hàm thời gian cho $\chi_{[0,1]}(x)-\chi_{[0,1]}(y)$. Hai phần thỏa PDE một chiều, nên tổng thỏa PDE hai chiều. Đổi $x,y$ đổi dấu, do đó $u(x,x,t)=0$. Khi cả hai khoảng ảnh hưởng đã bao trọn $[0,1]$, hai phần cùng bằng $1/4$ và triệt tiêu. Các mặt gãy là $x\pm2t=0,1$ và $y\pm2t=0,1$.
+%ID VD_3_6_2_05
+\textbf{Bước 1. Duhamel cho nguồn bật trong một đơn vị thời gian.} $c=2$, dữ liệu đầu không, $F(P,s)=\chi_{[0,1]}(s)\chi_{B_2(0)}(P)$. Xung tại thời điểm $s$ có nghiệm $K_2(r,t-s)$, $r=|P|$, nên
+\[u=\int_0^{\min(t,1)}K_2(r,t-s)ds=J_2(r,t)-J_2(r,(t-1)_+).\]
+\textbf{Bước 2. Tính nguyên hàm chỏm với tốc độ tổng quát.} Với $R,c>0$, đặt $b=|R-r|/c$, $d=(R+r)/c$, $q=[t]_b^d$ và
+\[A(s)=\frac{(R^2-r^2)s+rcs^2-c^2s^3/3}{4rc}.\]
+Ở phần giao chỏm, $K_R=[R^2-(r-cs)^2]/(4rc)=A'(s)$. Nếu $r<R$, trước $b$ có $K_R=s$; nếu $r\ge R$, trước $b$ bằng $0$. Do đó, với $r>0$,
+\[J_R(r,t)=\tfrac12\min(t,(R-r)_+/c)^2+A(q)-A(b).\]
+Với $r=0$, $J_R(0,t)=\frac12\min(t,R/c)^2$.
+
+\textbf{Bước 3. Áp dụng $R=c=2$ và kiểm tra.} Thay hai bộ thời gian $t,(t-1)_+$ vào công thức; mọi nhánh đều là đa thức và min/max. Duhamel đảm bảo hai dữ liệu đầu không và PDE có đúng nguồn. Khi $t\ge1+(r+2)/2$, cả hai $J$ đã đạt cùng hằng số, nên $u=0$ tại điểm ấy: xung nguồn hữu hạn đi qua hoàn toàn trong ba chiều.

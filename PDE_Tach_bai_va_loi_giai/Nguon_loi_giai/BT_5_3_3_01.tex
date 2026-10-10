@@ -1,0 +1,14 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{fontspec,amsmath,amssymb,graphicx}
+\usepackage[margin=18mm]{geometry}
+\setmainfont{Times New Roman}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\allowdisplaybreaks
+\sloppy
+\emergencystretch=2em
+\begin{document}
+\section*{BT\_5\_3\_3\_01 — Lời giải bổ sung}
+Tổng thông lượng trên hai cung là $b\int f_2-a\int f_1$, hai cạnh góc thông lượng 0. Vì $\Delta u=0$, điều kiện cần là $a\int f_1=b\int f_2$. Đặt $z=\ln(r/a)$, $H=\ln(b/a)$, $k_n=2n$, $c_{in}=4\pi^{-1}\int_0^{\pi/2}f_i\cos2n\theta$, $c_{i0}=2\pi^{-1}\int f_i$. Nghiệm là
+\[u=C+ac_{10}\ln(r/a)+\sum_{n\ge1}\frac{bc_{2n}\cosh(k_nz)-ac_{1n}\cosh(k_n(H-z))}{k_n\sinh k_nH}\cos2n\theta.\]
+Đạo hàm theo $r$ cho đúng $f_i$; mode 0 cần $ac_{10}=bc_{20}$, chính là điều kiện đã cho. Vì thế điều kiện đủ; năng lượng cho duy nhất modulo hằng, nên không duy nhất nếu chưa chuẩn hóa.\end{document}

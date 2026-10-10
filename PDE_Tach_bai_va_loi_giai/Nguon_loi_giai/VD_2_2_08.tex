@@ -1,0 +1,62 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{fontspec,amsmath,amssymb,graphicx}
+\usepackage[margin=18mm]{geometry}
+\setmainfont{Times New Roman}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\allowdisplaybreaks
+\sloppy
+\emergencystretch=2em
+\begin{document}
+\section*{VD\_2\_2\_08 — Lời giải bổ sung}
+\subsection*{Kiến thức và trình tự giải}
+\textbf{Mục tiêu.} Giải phương trình hyperbolic sau khi đã tìm hai tọa độ đặc trưng độc lập.
+
+\textbf{Bước 1 — Phân loại, tìm đặc trưng và thay đạo hàm.} Làm đủ các bước của phép đưa về chính tắc. Viết cả phép đổi ngược để biểu diễn vế phải $\widetilde f(\xi,\eta)=f(x(\xi,\eta),y(\xi,\eta))$.
+
+\textbf{Bước 2 — Tích phân phương trình chính tắc.} Với $v_{\xi\eta}=g$, giữ biến kia cố định khi tích phân:
+
+
+\[
+v=F(\xi)+G(\eta)+\int_{\xi_0}^{\xi}\int_{\eta_0}^{\eta}g(a,b)\,db\,da.
+\]
+
+
+Nếu tìm được một nghiệm riêng $P(x,y)$ dễ hơn, viết $u=P+F(\xi)+G(\eta)$. Với $v_{\xi\eta}+\alpha v_\eta=0$, đặt $w=v_\eta$, giải $w_\xi+\alpha w=0$ rồi tích phân theo $\eta$; thu được $v=F(\xi)+e^{-\alpha\xi}G(\eta)$.
+
+\textbf{Bước 3 — Đổi cả dữ liệu.} Thế tọa độ đường dữ liệu vào $\xi,\eta$, dùng quy tắc dây chuyền cho đạo hàm được cho. Trên đường không đặc trưng, hai dữ liệu thường xác định hai hàm $F,G$. Trên đường đặc trưng, có biến không thay đổi, nên dữ liệu chỉ xác định giá trị hoặc đạo hàm của một hàm tại một điểm; phải tìm điều kiện tương thích và nêu phần tùy ý còn lại.
+
+\textbf{Bước 4 — Lập đẳng thức hình bình hành.} Với $v=F(\xi)+G(\eta)$, bốn đỉnh theo hai họ đặc trưng thỏa $v_{11}+v_{22}=v_{12}+v_{21}$. Nếu có số hạng mũ, trước hết nhân trọng số để được tổng hai hàm một biến. Với vế phải $g$, hiệu bốn đỉnh bằng tích phân kép của $g$ trên hình chữ nhật trong tọa độ mới.
+
+\textbf{Bước 5 — Xác định miền được dữ liệu quyết định.} Hai đặc trưng đi qua điểm đang xét phải gặp đoạn dữ liệu phù hợp. Với phương trình sóng $v_{tt}=v_{zz}$ trên $z>0$, dữ liệu lúc $t=0$ xác định duy nhất miền $z>t$; ở $0<z<t$, cần thêm dữ liệu biên $z=0$. Với đặc trưng cong, dùng miền trong các tọa độ mới rồi đổi lại.
+
+\textbf{Bước 6 — Kiểm tra.} Thế nghiệm vào cả PDE và từng điều kiện. Nếu đề yêu cầu hai nghiệm, chỉ rõ hai lựa chọn khác nhau cho hàm tùy ý và chứng minh phần chênh lệch thỏa phương trình thuần nhất, đồng thời triệt tiêu trên đường dữ liệu.
+\subsection*{Lời giải áp dụng cho bài}
+\textbf{Bước chung.} Đặt $\xi=x-y$, $\eta=x-2y$ như Ví dụ 6. Phương trình thành $v_{\xi\eta}+v_\eta=0$, nên
+\[v=F(\xi)+e^{-\xi}G(\eta),\qquad
+u_y=-F'(\xi)+e^{-\xi}G(\eta)-2e^{-\xi}G'(\eta).\]
+Các công thức dữ liệu dưới đây đều được suy ra từ hai dòng này.
+
+\textbf{(i) Cauchy trên $y=0$.} Lúc này $\xi=\eta=x$:
+\[F(x)+e^{-x}G(x)=u_0(x),\qquad
+-F'(x)+e^{-x}G(x)-2e^{-x}G'(x)=u_1(x).\]
+Lấy đạo hàm phương trình thứ nhất theo $x$ rồi cộng với phương trình thứ hai cho $-e^{-x}G'=u_0'+u_1$. Do đó $G'=-e^x(u_0'+u_1)$ và $F=u_0-e^{-x}G$. Hằng số của $G$ triệt tiêu khi thế lại:
+\[\boxed{u(x,y)=u_0(x-y)-e^{-(x-y)}\int_{x-y}^{x-2y}e^t[u_0'(t)+u_1(t)]dt.}\]
+Hai đặc trưng qua $(x,y)$ gặp $y=0$ ở $x-y$ và $x-2y$, nên dữ liệu trên toàn trục xác định duy nhất toàn mặt phẳng, với giả thiết trơn thích hợp.
+
+\textbf{(ii) Cauchy trên đặc trưng $y=x$.} Khi đó $\xi=0$, $\eta=-x$. Dữ liệu giá trị cho $F(0)+G(-x)=\varphi(x)$, suy ra $G'(-x)=-\varphi'(x)$. Thế vào dữ liệu đạo hàm:
+\[\psi(x)=\varphi(x)+2\varphi'(x)-F(0)-F'(0).\]
+Vậy điều kiện cần và đủ là
+\[\boxed{\psi-\varphi-2\varphi'=C\quad\text{là hằng số}.}\]
+Chuẩn hóa $F(0)=0$ bằng cách chuyển một số hạng giữa $F$ và $G$. Khi đó $G(\eta)=\varphi(-\eta)$, $F'(0)=-C$, và toàn bộ nghiệm là
+\[u=F(x-y)+e^{-(x-y)}\varphi(2y-x),\quad F(0)=0,\quad F'(0)=-C.\]
+Chọn $F(s)=-Cs$ hoặc $F(s)=-Cs+s^2$ cho hai nghiệm khác nhau. Đường dữ liệu là đặc trưng nên không có duy nhất.
+
+\textbf{(iii) Darboux--Goursat.} Hai đường $y=x$ và $x=2y$ tương ứng $\xi=0$, $\eta=0$. Tại giao điểm, bắt buộc $u_0(0)=u_1(0)=k$. Chọn $F(0)=0$: dữ liệu thứ nhất cho $G(\eta)=u_0(-\eta)$; dữ liệu thứ hai cho $F(\xi)=u_1(\xi)-e^{-\xi}k$. Do đó
+\[\boxed{u=u_1(x-y)+e^{-(x-y)}[u_0(2y-x)-k].}\]
+Thế $(x,x)$ và $(2x,x)$ kiểm tra lần lượt được $u_0(x)$, $u_1(x)$. Khi điều kiện tại giao điểm đúng và dữ liệu đủ trơn, công thức là nghiệm duy nhất.
+
+\textbf{Chi tiết giải PDE và khử hằng số.} Phần chính từ phép đổi $\xi=x-y,\eta=x-2y$ bằng $-v_{\xi\eta}$; $u_x+u_y=-v_\eta$. Do đó PDE là $v_{\xi\eta}+v_\eta=0$. Đặt $w=v_\eta$, nhân $e^\xi$ cho $(e^\xi w)_\xi=0$, nên $w=e^{-\xi}A(\eta)$; tích phân theo $\eta$ cho $v=F(\xi)+e^{-\xi}G(\eta)$. Ở (i),
+\[G(\eta)-G(\xi)=-\int_\xi^\eta e^r[u_0'(r)+u_1(r)]dr,\quad
+v=u_0(\xi)+e^{-\xi}[G(\eta)-G(\xi)].\]
+Mọi hằng số cộng vào $G$ mất trong hiệu này. Ở (iii), tại $(x,x)$ có $\xi=0,\eta=-x$, nên $u=u_1(0)+u_0(x)-k=u_0(x)$; tại $(2x,x)$ có $\xi=x,\eta=0$, nên $u=u_1(x)+e^{-x}(u_0(0)-k)=u_1(x)$.\end{document}

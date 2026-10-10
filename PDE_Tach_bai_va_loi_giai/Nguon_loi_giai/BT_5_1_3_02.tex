@@ -1,0 +1,20 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{fontspec,amsmath,amssymb,graphicx}
+\usepackage[margin=18mm]{geometry}
+\setmainfont{Times New Roman}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\allowdisplaybreaks
+\sloppy
+\emergencystretch=2em
+\begin{document}
+\section*{BT\_5\_1\_3\_02 — Lời giải bổ sung}
+Điều kiện (5.1.14) là $u_x(0,y)=\psi_0(y),u_x(L,y)=\psi_1(y)$, còn biên dưới/trên là Dirichlet. Đặt hệ số cosine $c_0(q)=L^{-1}\int q$, $c_n(q)=2L^{-1}\int q\cos(n\pi x/L)$; hệ số sine $s_n(q)=2M^{-1}\int q\sin(n\pi y/M)$.
+\begin{align*}
+u={}&c_0(\varphi_0)(1-y/M)+c_0(\varphi_1)y/M\\
+&+\sum_{n\ge1}\cos k_nx\frac{c_n(\varphi_0)\sinh k_n(M-y)+c_n(\varphi_1)\sinh k_ny}{\sinh k_nM}\\
+&+\sum_{n\ge1}\sin\ell_ny\frac{s_n(\psi_1)\cosh\ell_nx-s_n(\psi_0)\cosh\ell_n(L-x)}{\ell_n\sinh\ell_nL}.
+\end{align*}
+(i) $c_0(\varphi_1)=4/(3\pi)$, $c_n(\varphi_1)=24/[\pi(1-n^2)(9-n^2)]$ nếu $n$ chẵn, bằng 0 nếu $n$ lẻ; $s_n(\psi_1)=2(1-(-1)^n)/(\pi n)$. Các hệ số còn lại 0.
+(ii) $c_0(\varphi_0)=1$, các cosine khác 0; $s_n(\psi_0)=s_n(\psi_1)=2(1-(-1)^n)/(\pi n)$. Thế vào công thức.
+(iii) $u=\cos x\sinh y/\sinh\pi$. Các công thức thỏa đạo hàm biên trực tiếp; năng lượng cho tính duy nhất.\end{document}

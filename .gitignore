@@ -1,0 +1,34 @@
+# Files created while rendering, recognizing scans, and compiling.
+__pycache__/
+*.py[cod]
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.new.pdf
+_xu_ly/*.png
+_xu_ly/pages/
+_xu_ly/ocr/
+_xu_ly/pdf_build/
+_xu_ly/graphs/
+_xu_ly/backup_*/
+_xu_ly/compile*.txt
+_xu_ly/master.*
+_xu_ly/test.*
+_xu_ly/solutions.json
+_xu_ly/markdown_manifest.json
+
+# Local editor settings and credentials.
+.vscode/
+.idea/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.aws/
+.codex/
+

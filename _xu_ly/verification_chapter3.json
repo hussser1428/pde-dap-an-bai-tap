@@ -1,0 +1,21 @@
+{
+  "22_primitives_vs_original_velocity_integrals": 7.375064114967245e-09,
+  "Neumann_Bai_11_boundary_and_tail": "passed",
+  "meeting_wavefronts_boundary_values_and_one_sided_derivatives": "passed",
+  "half_line_case_v_initial_data_boundary_PDE": "passed",
+  "forced_PDE_max_residual": 6.349986172438093e-07,
+  "resonance_and_zero_data": "passed",
+  "50_Fourier_coefficients_vs_quadrature": "passed",
+  "beam_corrected_roots_and_four_boundary_conditions": [
+    3.926602312047919,
+    2.3650203724313523
+  ],
+  "mixed_boundary_antiperiod_2_period_4": "passed",
+  "radial_source_primitive_vs_Duhamel_integral": "passed",
+  "cone_polynomial_sign_source_trace": "passed",
+  "coverage": {
+    "total": 85,
+    "examples": 23,
+    "exercises": 62
+  }
+}

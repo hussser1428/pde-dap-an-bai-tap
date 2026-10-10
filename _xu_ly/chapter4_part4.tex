@@ -1,0 +1,204 @@
+%ID VD_4_4_2_01
+\textbf{Bước 1. Công thức mode có nguồn.}
+Với Dirichlet thuần nhất trên $(0,\pi)$, đặt $u=\sum T_n\sin nx$. Chiếu PDE cho $T_n'+n^2T_n=F_n$, $T_n(0)=f_n$. Nhân với $e^{n^2t}$ rồi tích phân:
+\[T_n=f_ne^{-n^2t}+\int_0^te^{-n^2(t-s)}F_n(s)ds.\]
+\textbf{Bước 2. Ví dụ 1(i), $F=1,f=0$.}
+\[F_n=\frac2\pi[-\cos ny/n]_0^\pi=\frac{2(1-(-1)^n)}{\pi n}.\]
+Vì $\int_0^te^{-n^2(t-s)}ds=(1-e^{-n^2t})/n^2$,
+\[u=\sum_{n\ge1}\frac{2(1-(-1)^n)}{\pi n^3}(1-e^{-n^2t})\sin nx.\]
+Trạng thái dừng giải $P''=-1$, $P(0)=P(\pi)=0$, nên $P=x(\pi-x)/2$. Hệ số sine của $P$ chính là $F_n/n^2$; do đó $u\to P$, không tiến về hằng $1$. Đồ thị trong sách cần được đối chiếu với nghiệm này.
+
+\textbf{Bước 3. Ví dụ 1(ii), biên $T_1,T_2$, nguồn và dữ liệu đầu bằng không.}
+Đặt $b=T_1+(T_2-T_1)x/\pi$ và $w=u-b$. $b_t=b_{xx}=0$, nên $w_t=w_{xx}$, biên $0$, dữ liệu đầu $-b$. Tích phân từng phần:
+\[\int_0^\pi b\sin nx\,dx
+=\left[-\frac{b\cos nx}n\right]_0^\pi+\frac{b'}n\int_0^\pi\cos nx\,dx
+=\frac{T_1-(-1)^nT_2}n.\]
+Vì vậy
+\[u=b-\sum_{n\ge1}\frac{2(T_1-(-1)^nT_2)}{\pi n}e^{-n^2t}\sin nx.\]
+Biên được bảo đảm bởi $b$, mặt đầu trong miền bằng $0$ theo khai triển sine của $b$, và $u\to b$ đều lúc thời gian dài. Nếu $T_1$ hoặc $T_2$ khác $0$, không có liên tục tại góc tương ứng với dữ liệu đầu $0$.
+
+\textbf{Bước 4. Ví dụ 2 nằm tiếp trong cùng phần scan: Neumann có nguồn.}
+Với $u_x(0)=\mu,u_x(L)=\nu$, chọn $b=\mu x+(\nu-\mu)x^2/(2L)$. Khi đó $w=u-b$ có biên Neumann $0$, nguồn $Q=F+K(\nu-\mu)/L-b_t$, dữ liệu $f-b_0$. Nhân Green Neumann cho $w=\int G_N(f-b_0)+\int_0^t\int G_NQ$. Cũng có công thức trực tiếp
+\[u=\int_0^LG_N(x,y,t)f(y)dy+
+\int_0^t\!\int_0^LG_N(x,y,t-s)F(y,s)dy\,ds+
+K\int_0^t\{G_N(x,L,t-s)\nu(s)-G_N(x,0,t-s)\mu(s)\}ds.\]
+Dấu hai đầu được suy từ $K[G_Nu_y-(G_N)_yu]_0^L$.
+Với $K=2,L=1,\mu=\nu=f=0,F=e^{-t}\cos^2\pi x$, dùng $\cos^2\pi x=(1+\cos2\pi x)/2$. Chỉ có mode $0,2$:
+\[T_0'=\tfrac12e^{-t},\quad T_2'+8\pi^2T_2=\tfrac12e^{-t},\quad T_0(0)=T_2(0)=0.\]
+Tích phân cho
+\[u=\frac{1-e^{-t}}2+\frac{e^{-t}-e^{-8\pi^2t}}{2(8\pi^2-1)}\cos2\pi x.\]
+Đúng biên, nguồn, mặt đầu; giới hạn bằng $1/2$. Hai ví dụ có đánh số 1 và 2 được giữ chung ở đây vì cùng nằm trong ảnh đề của mục này.
+
+%ID BT_4_4_3_01
+\textbf{Bước 1. Khử biên Dirichlet và dùng Duhamel.}
+Đặt $b=\mu+(\nu-\mu)x/L$, $w=u-b$. Khi đó $w_t=Kw_{xx}+F-b_t$, biên $0$, mặt đầu $f-b_0$. Với $k_n=n\pi/L$ và hệ số sine chuẩn $q_n=(2/L)\int q\sin k_nx$,
+\[u=b+\sum_{n\ge1}\left[(f-b_0)_ne^{-Kk_n^2t}
++\int_0^te^{-Kk_n^2(t-s)}(F-b_t)_n(s)ds\right]\sin k_nx.\]
+
+\textbf{Bước 2. Câu (i).} $K=1,L=2,b=1+x$, $q=f-b=x^2-2x-2$, $k=n\pi/2$. Tích phân hai lần cho
+\begin{align*}
+d_n=\int_0^2q\sin kx\,dx
+&=\left[-q\cos kx/k\right]_0^2-\frac1{k^2}\int_0^2q''\sin kx\,dx\\
+&=\frac{2((-1)^n-1)}k-\frac{2(1-(-1)^n)}{k^3}
+=-2(1-(-1)^n)(k^{-1}+k^{-3}).
+\end{align*}
+Nguồn bằng $0$, nên
+\[u=1+x-\sum_{n\ge1}2(1-(-1)^n)(k_n^{-1}+k_n^{-3})e^{-k_n^2t}\sin k_nx.\]
+Thời gian dài các mode mất đi đều: $u\to1+x$. $f(0)=-1\ne1$, $f(2)=1\ne3$, nên không liên tục tại hai góc; chuỗi trả lại $f$ trong miền và biên được giữ bởi $b$ khi $t>0$.
+
+\textbf{Bước 3. Câu (ii).} $b=0,f=2x-x^2,F=1-|x-1|$, $k=n\pi/2$. Vì $f(0)=f(2)=0,f''=-2$,
+\[f_n=-\frac1{k^2}\int_0^2f''\sin kx\,dx=\frac{2(1-(-1)^n)}{k^3}.\]
+Tách nguồn tại $1$, dùng nguyên hàm của $x\sin kx$:
+\begin{align*}
+F_n&=\int_0^1x\sin kx\,dx+\int_1^2(2-x)\sin kx\,dx\\
+&=\left[-\frac{x\cos kx}k+\frac{\sin kx}{k^2}\right]_0^1
++\left[-\frac{(2-x)\cos kx}k-\frac{\sin kx}{k^2}\right]_1^2
+=\frac{2\sin k}{k^2}.
+\end{align*}
+Do nguồn hằng theo thời gian,
+\[u=\sum_{n\ge1}\left[\frac{2(1-(-1)^n)}{k_n^3}e^{-k_n^2t}
++\frac{2\sin k_n}{k_n^4}(1-e^{-k_n^2t})\right]\sin k_nx.\]
+Trạng thái dừng giải $-P''=F$, biên $0$. Đối xứng quanh $1$ cho
+\[P(x)=\begin{cases}x/2-x^3/6,&0\le x\le1,\\(2-x)/2-(2-x)^3/6,&1\le x\le2.\end{cases}\]
+Hai vết $P,P'$ tại $1$ bằng nhau; $P''=-F$, $P(0)=P(2)=0$. Các hệ số dừng bằng $F_n/k_n^2$, nên $u\to P$ đều.
+
+%ID BT_4_4_3_02
+\textbf{Bước 1. Công thức Neumann có nguồn và biên không thuần nhất.}
+Chọn $b=\mu x+(\nu-\mu)x^2/(2L)$, $w=u-b$, $Q=F+K(\nu-\mu)/L-b_t$, $q=f-b_0$. Đặt $q_0=L^{-1}\int q$, $q_n=(2/L)\int q\cos(n\pi x/L)$, tương tự $Q_n$. Khi đó
+\[u=b+q_0+\int_0^tQ_0(s)ds+
+\sum_{n\ge1}\left[q_ne^{-Kk_n^2t}+
+\int_0^te^{-Kk_n^2(t-s)}Q_n(s)ds\right]\cos k_nx.\]
+Mode $0$ không được bỏ.
+
+\textbf{Bước 2. Câu (i), $K=1,L=\pi,F=\cos x,f=\cos x+\cos2x$, biên $0$.}
+Trực giao cosine cho $f_1=f_2=1$, $F_1=1$, các hệ số khác bằng $0$. Hai ODE là $T_1'+T_1=1,T_1(0)=1$ và $T_2'+4T_2=0,T_2(0)=1$. Suy $T_1=1,T_2=e^{-4t}$:
+\[u=\cos x+e^{-4t}\cos2x,\qquad u\to\cos x.\]
+Kiểm tra $u_t=-4e^{-4t}\cos2x=u_{xx}+\cos x$, $u_x(0)=u_x(\pi)=0$, mặt đầu đúng.
+Nếu thay đạo hàm trái bằng $1$, phải đọc đầu phải là $\pi$ theo miền; dòng $2\pi$ trong đề không thuộc đoạn. Khi đó
+\[\frac d{dt}\int_0^\pi u\,dx=[u_x]_0^\pi+\int_0^\pi\cos x\,dx=-1.\]
+Tổng nhiệt giảm tuyến tính, không có giới hạn dừng hữu hạn. Tương đương, bài dừng $P''+\cos x=0$ buộc $P'(\pi)-P'(0)=0$, trái với $0-1=-1$.
+
+\textbf{Bước 3. Câu (ii), $\mu=\nu=A,F=0$.}
+Đặt $b=Ax$. $b_t=b_{xx}=0$, nên $w=u-Ax$ giải Neumann thuần nhất với $q=f-Ax$. Giới hạn đều của $w$ là $q_0=L^{-1}\int_0^L(f(y)-Ay)dy$. Do đó
+\[v(x)=Ax+\frac1L\int_0^Lf(y)dy-\frac{AL}2.\]
+Tính $v''=0$, $v'(0)=v'(L)=A$, đúng bài dừng. Hằng được xác định bởi bảo toàn $\int u=\int f$; các nghiệm dừng khác $Ax+C$ có tổng nhiệt khác và không phải giới hạn của cùng dữ liệu.
+
+%ID BT_4_4_3_03
+\textbf{Bước 1. Biên Neumann–Dirichlet và Green.}
+Chọn $b=\nu+\mu(x-L)$, có $b_x(0)=\mu,b(L)=\nu$, $b_{xx}=0$. Khi $w=u-b$, nguồn $Q=F-b_t$, dữ liệu $q=f-b_0$, cơ sở $X_n=\cos k_nx$, $k_n=(n+1/2)\pi/L$, $N_n=L/2$. Nhân $G=\sum X_n(x)X_n(y)e^{-Kk_n^2t}/N_n$ cho
+\[u=b+\int_0^LGq+\int_0^t\!\int_0^LG(x,y,t-s)Q(y,s)dy\,ds.\]
+Công thức trực tiếp, suy bằng $K[Gu_y-G_yu]_0^L$, có thêm các biên $-K\int_0^t\{G(x,0,t-s)\mu(s)+G_y(x,L,t-s)\nu(s)\}ds$ vào phần dữ liệu đầu và nguồn của $u$.
+
+\textbf{Bước 2. Tính hệ số câu cụ thể.}
+$K=2,L=1,\mu=\nu=f=0,F=e^{-t}\cos^2\pi x$, nên $b=0$. Với $k=(n+1/2)\pi$, dùng tích–tổng:
+\begin{align*}
+C_n=2\int_0^1\cos^2\pi y\cos ky\,dy
+&=\frac{\sin k}k+\frac12\left(\frac{\sin(k+2\pi)}{k+2\pi}
++\frac{\sin(k-2\pi)}{k-2\pi}\right)\\
+&=\frac{2\sin k(k^2-2\pi^2)}{k(k^2-4\pi^2)}
+=\frac{2(-1)^n(k^2-2\pi^2)}{k(k^2-4\pi^2)}.
+\end{align*}
+\textbf{Bước 3. Thực hiện tích phân thời gian.}
+$T_n'+2k_n^2T_n=C_ne^{-t},T_n(0)=0$, nên
+\[T_n=C_ne^{-2k_n^2t}\int_0^te^{(2k_n^2-1)s}ds
+=C_n\frac{e^{-t}-e^{-2k_n^2t}}{2k_n^2-1}.\]
+Vậy $u=\sum_{n\ge0}T_n\cos k_nx$. Mỗi cosine có $X_n'(0)=0,X_n(1)=0$; ODE chứng minh đúng nguồn và $T_n(0)=0$ trả lại mặt đầu. Hai số mũ đều âm, nên $u\to0$ đều.
+
+%ID BT_4_4_3_04
+\textbf{Bước 1. Khử Robin trái–Dirichlet phải.}
+Với $b=a+dx$, $b(0)-b_x(0)=a-d=\mu$, $b(L)=a+dL=\nu$, nên $d=(\nu-\mu)/(L+1)$, $a=\mu+d$. $w=u-b$ có nguồn $Q=F-b_t$, dữ liệu $q=f-b_0$.
+$X=\cos kx+\sin kx/k$ thỏa $X(0)-X'(0)=0$; $X(L)=0$ cho $k\cos kL+\sin kL=0$. Chuẩn
+\[N(k)=\frac L2(1+k^{-2})+\frac{\sin2kL}{4k}(1-k^{-2})+\frac{\sin^2kL}{k^2}.\]
+Nhân Green $G=\sum XXe^{-Kk^2t}/N$ cho $u=b+\int Gq+\int_0^t\int GQ$. Công thức trực tiếp cho $u$ có hạng biên $K\int_0^t[G(x,0,t-s)\mu(s)-G_y(x,L,t-s)\nu(s)]ds$, vì $G_y(0)=G(0),G(L)=0$.
+
+\textbf{Bước 2. Tính hệ số cụ thể $K=2,L=1$, các biên và mặt đầu bằng $0$.}
+Đặt
+\[A(k)=\int_0^1\cos^2\pi y\cos ky\,dy
+=\frac{\sin k(k^2-2\pi^2)}{k(k^2-4\pi^2)},\quad
+B(k)=\int_0^1\cos^2\pi y\sin ky\,dy
+=\frac{(1-\cos k)(k^2-2\pi^2)}{k(k^2-4\pi^2)}.\]
+Các đẳng thức có được bằng $\cos^2\pi y=(1+\cos2\pi y)/2$ và tích–tổng, rồi tích phân $\cos ry,\sin ry$ trên $0,1$. Các nghiệm riêng không bằng $0,2\pi$, nên các mẫu ở đây không bằng không. Hệ số nguồn là
+\[C_n=\frac{A(k_n)+B(k_n)/k_n}{N(k_n)},\qquad k_n\cos k_n+\sin k_n=0.\]
+\textbf{Bước 3. Giải ODE và ghép.}
+\[u=\sum_{n\ge1}\frac{A(k_n)+B(k_n)/k_n}{N(k_n)}
+\frac{e^{-t}-e^{-2k_n^2t}}{2k_n^2-1}
+\left(\cos k_nx+\frac{\sin k_nx}{k_n}\right).\]
+Thương thời gian xuất phát từ $e^{-2k_n^2t}\int_0^te^{(2k_n^2-1)s}ds$; nếu trùng tốc độ thì dùng $te^{-t}$. Mỗi mode thỏa hai biên; $T_n'+2k_n^2T_n=C_ne^{-t}$ cho đúng nguồn, $T_n(0)=0$ cho dữ liệu đầu. Tất cả tốc độ giảm dương, nên giới hạn bằng $0$.
+
+%ID BT_4_4_3_05
+\textbf{Bước 1. Khử Neumann trái–Robin phải.}
+Lấy $b=\nu-\mu(L+1)+\mu x$. Khi đó $b_x(0)=\mu$, $b(L)+b_x(L)=\nu$, $b_{xx}=0$; $w=u-b$ có nguồn $Q=F-b_t$, mặt đầu $q=f-b_0$. $X'(0)=0$ cho $X=\cos kx$, biên phải cho $\cos kL-k\sin kL=0$, chuẩn $N(k)=L/2+\sin2kL/(4k)$. Đặt $G=\sum X(x)X(y)e^{-Kk^2t}/N$. Công thức Green là $u=b+\int Gq+\int_0^t\int GQ$; nếu dùng dữ liệu gốc, hạng biên là $K\int_0^t[G(x,L,t-s)\nu(s)-G(x,0,t-s)\mu(s)]ds$.
+
+\textbf{Bước 2. Tính nguồn cụ thể.}
+$K=2,L=1,\mu=\nu=f=0$. Đặt $k_n>0$ là nghiệm $k\sin k=\cos k$. Từ tích–tổng,
+\begin{align*}
+A(k)&=\int_0^1\cos^2\pi y\cos ky\,dy\\
+&=\frac{\sin k}{2k}+\frac14\left(\frac{\sin(k+2\pi)}{k+2\pi}+\frac{\sin(k-2\pi)}{k-2\pi}\right)
+=\frac{\sin k(k^2-2\pi^2)}{k(k^2-4\pi^2)}.
+\end{align*}
+Vậy $C_n=A(k_n)/N(k_n)$, $N(k_n)=1/2+\sin2k_n/(4k_n)$.
+\textbf{Bước 3. Tích phân thời gian và kiểm tra.}
+\[u=\sum_{n\ge1}\frac{A(k_n)}{N(k_n)}
+\frac{e^{-t}-e^{-2k_n^2t}}{2k_n^2-1}\cos k_nx.\]
+Thế $T_n$ vào $T_n'+2k_n^2T_n=C_ne^{-t}$ trả lại nguồn; $T_n(0)=0$. $X_n'(0)=0$ và $X_n(1)+X_n'(1)=0$ trả lại hai biên. Nếu một mẫu thời gian bằng $0$, biểu thức được hiểu bằng $te^{-t}$, không bỏ mode đó. Vì các trị riêng đều dương, nghiệm tiến đều về $0$.
+
+%ID BT_4_4_3_06
+\textbf{Bước 1. Giải hệ nâng hai biên Robin.}
+Với $b=a+dx$, $a-d=\mu$, $a+dL+d=\nu$. Trừ hai phương trình được $d=(\nu-\mu)/(L+2)$, $a=\mu+d$. Đặt $w=u-b$, $Q=F-b_t$, $q=f-b_0$. Hàm riêng là $X=\cos kx+\sin kx/k$; biên trái đúng sẵn, biên phải cho
+\[(1-k^2)\sin kL+2k\cos kL=0.\]
+Lấy $k>0$. Ở $k=0$, $X=A+Bx$ cho $A=B$ và $A+B(L+1)=0$, suy $A=B=0$, nên không có trị riêng $0$.
+\textbf{Bước 2. Chuẩn và Green.}
+\[N(k)=\frac L2(1+k^{-2})+\frac{\sin2kL}{4k}(1-k^{-2})+\frac{\sin^2kL}{k^2},\quad
+G=\sum\frac{X_n(x)X_n(y)}{N(k_n)}e^{-Kk_n^2t}.\]
+Vậy $u=b+\int Gq+\int_0^t\int GQ$. Công thức trên dữ liệu gốc có hai hạng biên cùng dấu dương:
+\[K\int_0^t\{G(x,0,t-s)\mu(s)+G(x,L,t-s)\nu(s)\}ds.\]
+Thật vậy $G_y(0)=G(0)$ và $G_y(L)=-G(L)$ trong $K[Gu_y-G_yu]_0^L$.
+\textbf{Bước 3. Tính các tích phân của câu cụ thể $K=2,L=1$, dữ liệu đầu và biên $0$.}
+Tích–tổng trên $[0,1]$ cho
+\[A(k)=\frac{\sin k(k^2-2\pi^2)}{k(k^2-4\pi^2)},\qquad
+B(k)=\frac{(1-\cos k)(k^2-2\pi^2)}{k(k^2-4\pi^2)}.\]
+Chúng lần lượt là tích phân của $\cos^2\pi y$ nhân với $\cos ky$ và $\sin ky$. Do đó $C_n=(A(k_n)+B(k_n)/k_n)/N(k_n)$, không còn tích phân không gian chưa tính.
+\textbf{Bước 4. Mode nguồn.}
+\[T_n=C_ne^{-2k_n^2t}\int_0^te^{(2k_n^2-1)s}ds
+=C_n\frac{e^{-t}-e^{-2k_n^2t}}{2k_n^2-1},\qquad
+u=\sum_{n\ge1}T_nX_n.\]
+Thương bằng $te^{-t}$ khi $2k_n^2=1$. ODE và từng hàm riêng kiểm tra đầy đủ PDE, biên, mặt đầu; các mode giảm cho giới hạn $0$.
+
+%ID BT_4_4_3_07
+\textbf{Bước 1. Biên Dirichlet–Neumann và công thức Green.}
+Lấy $b=\mu+x\nu$, $w=u-b$, $Q=F-b_t$, $q=f-b_0$. Biên thuần nhất có $X_n=\sin k_nx$, $k_n=(n+1/2)\pi/L$, $N_n=L/2$. Nhân $G=\sum XXe^{-Kk^2t}/N$ cho $u=b+\int Gq+\int_0^t\int GQ$. Công thức trực tiếp có hạng biên
+\[K\int_0^t\{G_y(x,0,t-s)\mu(s)+G(x,L,t-s)\nu(s)\}ds,\]
+do $G(0)=0,G_y(L)=0$. Dòng tham chiếu (4.4.34) trong đề phải đọc theo biên Dirichlet–Neumann (4.4.33) được nêu ngay trước.
+
+\textbf{Bước 2. Dữ kiện cụ thể.}
+$K=L=1,\mu=1-e^{-t},\nu=e^{-t}-1$, $f=F=0$. Khi đó $b=(1-x)(1-e^{-t})$, $b_t=(1-x)e^{-t}$, $q=0$, $Q=-(1-x)e^{-t}$.
+Với $k=(n+1/2)\pi$, $\cos k=0,\sin k=(-1)^n$,
+\begin{align*}
+c_n&=2\int_0^1(1-y)\sin ky\,dy\\
+&=2\left[\frac{-(1-y)\cos ky}k-\frac{\sin ky}{k^2}\right]_0^1
+=2\left(\frac1k-\frac{(-1)^n}{k^2}\right).
+\end{align*}
+\textbf{Bước 3. Tích phân và ghép.}
+$T_n'+k_n^2T_n=-c_ne^{-t}$, $T_n(0)=0$, nên
+\[u=(1-x)(1-e^{-t})
+-\sum_{n\ge0}c_n\frac{e^{-t}-e^{-k_n^2t}}{k_n^2-1}\sin k_nx.\]
+$k_n$ nửa nguyên nhân $\pi$, không bằng $1$. Thế biên: tại $0$, chuỗi bằng $0$, $u=1-e^{-t}$; đạo hàm tại $1$ của chuỗi bằng $0$, $u_x=e^{-t}-1$. Tại $t=0$ mọi hạng bằng $0$. Nguồn phụ $-b_t$ bị triệt tiêu khi cộng lại $b_t$, cho PDE gốc không nguồn.
+\textbf{Bước 4. Giới hạn.} $b\to1-x$ đều. Các hệ số quá độ $O(k_n^{-3})$ và hai mũ giảm cho chuỗi tiến đều về $0$, nên $\lim_{t\to\infty}u=1-x$.
+
+%ID BT_4_4_3_08
+\textbf{Bước 1. Cơ sở cosine và mode trung bình.}
+Đặt $f_0=\int_0^1f$, $g_0=\int_0^1g$, $f_n=2\int_0^1f(y)\cos n\pi y\,dy$, $g_n=2\int_0^1g(y)\cos n\pi y\,dy$, $n\ge1$. Hai biên Neumann $0$ cho
+\[u=T_0+\sum_{n\ge1}T_n\cos n\pi x.\]
+Chiếu PDE: $T_0'=g_0e^{-2t},T_0(0)=f_0$; $T_n'+n^2\pi^2T_n=g_ne^{-2t},T_n(0)=f_n$.
+\textbf{Bước 2. Giải từng ODE, kể cả mode $0$.}
+\[T_0=f_0+\frac{g_0}2(1-e^{-2t}),\quad
+T_n=f_ne^{-n^2\pi^2t}+g_ne^{-n^2\pi^2t}
+\int_0^te^{(n^2\pi^2-2)s}ds.\]
+Vì $n^2\pi^2>2$, tích phân cuối bằng $(e^{(n^2\pi^2-2)t}-1)/(n^2\pi^2-2)$:
+\[u=f_0+\frac{g_0}2(1-e^{-2t})+
+\sum_{n\ge1}\left[f_ne^{-n^2\pi^2t}
++g_n\frac{e^{-2t}-e^{-n^2\pi^2t}}{n^2\pi^2-2}\right]\cos n\pi x.\]
+\textbf{Bước 3. Kiểm tra và giới hạn đều.}
+Đạo hàm cosine bằng $0$ ở hai đầu; ODE kiểm tra PDE; $T_n(0)=f_n$ trả lại mặt đầu. Nếu $f,g\in L^1$, $|f_n|\le2\|f\|_1$, $|g_n|\le2\|g\|_1$. Phần đầu của chuỗi bị chặn bởi $2\|f\|_1\sum e^{-n^2\pi^2t}\to0$. Phần nguồn bị chặn bởi $2\|g\|_1(e^{-2t}+e^{-\pi^2t})\sum(n^2\pi^2-2)^{-1}\to0$. Suy
+\[\lim_{t\to\infty}u(x,t)=\int_0^1f(y)dy+\frac12\int_0^1g(y)dy\]
+đều theo $x$. Tích phân PDE cho tổng nhiệt $E'=g_0e^{-2t}$ cũng kiểm tra độc lập mode trung bình và giới hạn này.

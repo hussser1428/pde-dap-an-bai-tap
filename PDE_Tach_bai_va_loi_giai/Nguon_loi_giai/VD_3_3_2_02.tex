@@ -1,0 +1,81 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{fontspec,amsmath,amssymb,graphicx}
+\usepackage[margin=18mm]{geometry}
+\setmainfont{Times New Roman}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\allowdisplaybreaks
+\sloppy
+\emergencystretch=2em
+\begin{document}
+\section*{VD\_3\_3\_2\_02 — Lời giải bổ sung}
+\subsection*{Kiến thức và trình tự giải}
+\textbf{Bước 1 — Tách biến và chọn bài toán trị riêng theo biên.} Đặt $u=X(x)T(t)$ trong $u_{tt}=a^2u_{xx}$, suy $X''+\lambda X=0$, $T''+a^2\lambda T=0$. Tích phân từng phần cho $\lambda\int X^2=\int (X')^2$ khi hạng biên bằng không; do đó $\lambda\ge0$. Giải cả trường hợp $\lambda=0$ trước khi xét $\lambda=k^2>0$.
+
+\textbf{Bước 2 — Tìm hệ hàm riêng.} Trên $(0,L)$: Dirichlet hai đầu dùng $\sin(n\pi x/L)$, $n\ge1$; Neumann hai đầu dùng $1$ và $\cos(n\pi x/L)$; Dirichlet–Neumann dùng $\sin((n+1/2)\pi x/L)$, $n\ge0$; Neumann–Dirichlet dùng cos của các tần số nửa nguyên ấy. Chuẩn bình phương của mode khác không là $L/2$, của mode hằng là $L$.
+
+\textbf{Bước 3 — Chiếu cả hai dữ liệu.} Với mode khác không đặt
+
+
+\[
+A_n=\frac2L\int_0^L fX_n\,dx,\quad B_n=\frac2L\int_0^L gX_n\,dx,\quad \omega_n=ak_n.
+\]
+
+
+Tích phân từng khoảng nếu dữ liệu chia đoạn; dùng tích phân từng phần hoặc công thức tích–tổng khi là đa thức/lượng giác. Hệ số $B_n$ là hệ số của vận tốc, nên hệ số đứng trước $\sin\omega_nt$ phải là $B_n/\omega_n$.
+
+\textbf{Bước 4 — Ghép nghiệm và xét mode hằng.}
+
+
+\[
+u=\sum_n\left(A_n\cos\omega_nt+\frac{B_n}{\omega_n}\sin\omega_nt\right)X_n.
+\]
+
+
+Với Neumann hai đầu, thêm $A_0+B_0t$, trong đó $A_0=L^{-1}\int f$, $B_0=L^{-1}\int g$. Với tần số bị thay đổi bởi hạng $u$ hoặc cản $u_t$, giải lại ODE của từng mode; không dùng nguyên tần số $ak_n$.
+
+\textbf{Bước 5 — Kiểm tra biên, dữ liệu và hội tụ.} Mỗi mode thỏa biên; tại $t=0$ hai chuỗi cho khai triển của $f,g$. Nếu dữ liệu không tương thích ở góc, giải theo nghĩa năng lượng hoặc từng miền và nêu đường mất tính trơn; không đạo hàm một chuỗi yếu tùy ý. Chu kỳ được suy từ tất cả mode có hệ số khác không, kể cả mode hằng; hai tần số có tỷ số vô tỷ ngăn một chu kỳ chung.
+
+\textbf{Chi tiết tính tích phân hệ số.} Với $k=n\pi/L$, hai nguyên hàm thường dùng là
+
+
+\[
+\int x\sin kx\,dx=-x\cos kx/k+\sin kx/k^2,\qquad
+\int x\cos kx\,dx=x\sin kx/k+\cos kx/k^2.
+\]
+
+
+Với đa thức $P$, ghi cả hai lần tích phân:
+
+
+\[
+\int_0^L P\sin kx\,dx
+=\left[-P\cos kx/k\right]_0^L+
+\left[P'\sin kx/k^2\right]_0^L-
+\frac1{k^2}\int_0^L P''\sin kx\,dx.
+\]
+
+
+Chỉ bỏ hạng biên sau khi thế $0,L$ và điều kiện thực sự của $P$. Nếu dữ liệu chia đoạn, áp dụng công thức trên từng đoạn, rồi cộng các hạng tại điểm chia. Cuối cùng nhân nghịch đảo chuẩn của hàm riêng; nếu hệ số là của vận tốc, chia thêm tần số khi ghép nghiệm. Với mẫu số bằng $0$ trong tích–tổng, quay lại tích phân gốc để tính riêng.
+\subsection*{Lời giải áp dụng cho bài}
+\textbf{Bước 1. Giữ mode hằng của Neumann.} Hệ hàm riêng là $X_0=1$, $X_n=\cos(n\pi x/L)$, $n\ge1$. Mode $0$ bằng $A_0+B_0t$ với hệ số là trung bình của dữ liệu.
+
+\textbf{Bước 2. Câu (i).} $a=L=1$, $f=0$, $g=\cos^2\pi x=(1+\cos2\pi x)/2$. Vì vậy $B_0=1/2$, $B_2=1/2$, còn lại bằng $0$:
+\[u=t/2+\cos2\pi x\sin2\pi t/(4\pi).\]
+Đạo hàm không gian là bội của $\sin2\pi x$, bằng không ở hai đầu. Đạo hàm thời gian tại $0$ cho đúng $g$. Hạng tuyến tính khiến nghiệm không tuần hoàn dù phần dao động có chu kỳ $1$.
+
+\textbf{Bước 3. Câu (ii).} $a=2$, $L=\pi$, $f=\sin x$, $g=0$. $A_0=2/\pi$. Tích–tổng cho
+\[A_n=\frac2\pi\int_0^\pi\sin x\cos nx\,dx
+=\frac{2(1+(-1)^n)}{\pi(1-n^2)}\quad(n\ne1),\qquad A_1=0.\]
+Tại $n=1$ phải tích phân riêng, không dùng mẫu bằng $0$. Chỉ còn các mode chẵn:
+\[u=\frac2\pi+\sum_{m\ge1}\frac4{\pi(1-4m^2)}\cos4mt\cos2mx.\]
+\textbf{Bước 4. Chu kỳ và trơn.} Mode $m=1$ khác không cho chu kỳ cơ bản $\pi/2$. Dữ liệu $f'(0)=1$, $f'(\pi)=-1$ không thỏa biên Neumann; mở rộng chẵn có góc, nên không có nghiệm $C^1$ trên toàn miền qua các mặt phản xạ. Chuỗi và công thức phản xạ xác định cùng nghiệm liên tục từng miền.
+
+\textbf{Chi tiết tích–tổng và ngoại lệ $n=1$.} Với $n\ne1$,
+\[\begin{aligned}
+\int_0^\pi\sin x\cos nx\,dx
+&=\frac12\int_0^\pi[\sin((1+n)x)+\sin((1-n)x)]dx\\
+&=\frac{1+(-1)^n}{2}\left(\frac1{1+n}+\frac1{1-n}\right)
+=\frac{1+(-1)^n}{1-n^2}.
+\end{aligned}\]
+Nhân $2/\pi$ được $A_n$. Với $n=1$, tích phân riêng $\int_0^\pi\sin x\cos x\,dx=[\sin^2x/2]_0^\pi=0$. Mode hằng dùng chuẩn $\pi$, nên $A_0=\pi^{-1}[-\cos x]_0^\pi=2/\pi$, không dùng chuẩn $\pi/2$ của các mode khác.\end{document}

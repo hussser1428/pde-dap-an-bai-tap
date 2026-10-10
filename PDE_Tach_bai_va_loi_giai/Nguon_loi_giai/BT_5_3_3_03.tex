@@ -1,0 +1,19 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{fontspec,amsmath,amssymb,graphicx}
+\usepackage[margin=18mm]{geometry}
+\setmainfont{Times New Roman}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\allowdisplaybreaks
+\sloppy
+\emergencystretch=2em
+\begin{document}
+\section*{BT\_5\_3\_3\_03 — Lời giải bổ sung}
+Đặt $z=\ln(r/r_1),H=\ln(r_2/r_1)$. Gọi $a_{i0},a_{in},b_{in}$ là các hệ số Fourier của $f_i$ (mode hằng là trung bình). Khi đó
+\begin{align*}
+u={}&a_{10}(1-z/H)+a_{20}z/H\\
+&+\sum_{n\ge1}\frac{[a_{1n}\sinh n(H-z)+a_{2n}\sinh nz]\cos n\theta}{\sinh nH}\\
+&+\sum_{n\ge1}\frac{[b_{1n}\sinh n(H-z)+b_{2n}\sinh nz]\sin n\theta}{\sinh nH}.
+\end{align*}
+Với $r_1=3,r_2=6$, $f_1=5\cos\theta,f_2=10\sin\theta$,
+\[u=\left(\frac{20}r-\frac{5r}9\right)\cos\theta+\left(\frac{20r}9-\frac{20}r\right)\sin\theta.\]\end{document}

@@ -1,0 +1,63 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{fontspec,amsmath,amssymb,graphicx}
+\usepackage[margin=18mm]{geometry}
+\setmainfont{Times New Roman}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\allowdisplaybreaks
+\sloppy
+\emergencystretch=2em
+\begin{document}
+\section*{BT\_4\_6\_3\_02 — Lời giải bổ sung}
+\subsection*{Kiến thức và trình tự giải}
+\textbf{Bước 1 — Chọn nhân nhiệt theo miền và hệ số.} Trên $\mathbb R$, $g_K(z,t)=(4\pi Kt)^{-1/2}e^{-z^2/(4Kt)}$, $u=g_K*f$. Trên nửa trục, thác triển lẻ cho Dirichlet $0$, chẵn cho Neumann $0$; sau đổi $y\mapsto-y$ ở nửa âm:
+
+
+\[
+H_D(x,y,t)=g_K(x-y,t)-g_K(x+y,t),\qquad
+H_N(x,y,t)=g_K(x-y,t)+g_K(x+y,t).
+\]
+
+
+Kiểm tra $H_D(0,y,t)=0$, $\partial_xH_N(0,y,t)=0$. Nửa trục phải có một điều kiện biên; dữ liệu đầu một mình không xác định duy nhất.
+
+\textbf{Bước 2 — Tính các tích phân không gian.} Mode $\sin ky,\cos ky$ biến thành $e^{-Kk^2t}\sin kx,e^{-Kk^2t}\cos kx$. Với Gauss $e^{-\alpha(y-m)^2}$, $\alpha>0$, hoàn thành bình phương:
+
+
+\[
+-\frac{(x-y)^2}{4Kt}-\alpha(y-m)^2
+=-\frac{1+4\alpha Kt}{4Kt}\left(y-\frac{x+4\alpha Ktm}{1+4\alpha Kt}\right)^2
+-\frac{\alpha(x-m)^2}{1+4\alpha Kt}.
+\]
+
+
+Đổi biến để $\int_{\mathbb R}e^{-z^2}dz=\sqrt\pi$, suy $(g_K*f)(x)=e^{-\alpha(x-m)^2/(1+4\alpha Kt)}/\sqrt{1+4\alpha Kt}$. Với dữ liệu chỉ thị đoạn, cận hữu hạn tạo $\operatorname{erf}$; với $e^{-y}$ trên nửa trục, cận $0,\infty$ tạo $\operatorname{erfc}$, trong đó $\operatorname{erf}z=2\int_0^ze^{-r^2}dr/\sqrt\pi$, $\operatorname{erfc}z=1-\operatorname{erf}z$.
+
+\textbf{Bước 3 — Thêm nguồn và biên.} Nguồn cho $u=g_K*f+\int_0^tg_K(\cdot,t-s)*F(\cdot,s)\,ds$, hoặc thay $g_K$ bằng $H_D,H_N$. Biên Dirichlet $\mu(t)$ trên nửa trục thêm
+
+
+\[
+\int_0^t\frac{x\,e^{-x^2/[4K(t-s)]}}{\sqrt{4\pi K}(t-s)^{3/2}}\mu(s)ds.
+\]
+
+
+Nguồn một mode giảm cùng tốc độ khuếch tán cho tích phân thời gian hằng sau khi gom mũ, nên xuất hiện $te^{-Kk^2t}$.
+
+\textbf{Bước 4 — Đổi biến khi hệ số phụ thuộc thời gian hoặc có vận chuyển.} Với $u_t=a(t)u_{xx}+b(t)u_x+c(t)u$, đặt $A=\int_0^ta$, $B=\int_0^tb$, $C=\int_0^tc$, $u=e^Cv(x+B,A)$. Tính $u_t=e^C(cv+bv_z+av_\tau)$, $u_x=e^Cv_z$, $u_{xx}=e^Cv_{zz}$, suy $v_\tau=v_{zz}$. Dấu dịch là $x+B$, không phải $x-B$. Với hạng $xu_x$, dùng $z=e^{\pm t}x$ và chọn đồng hồ $\tau'(t)=e^{\pm2t}$.
+
+\textbf{Bước 5 — Nhiều chiều và kiểm tra.} Nhân $n$ chiều là tích các nhân một chiều. Dữ liệu dạng tích tách được tích phân không gian bằng Fubini; nguồn dạng tích vẫn phải tích phân theo một thời gian chung $s$. Kiểm tra PDE bằng đạo hàm Duhamel: đạo hàm cận trên trả lại $F(x,t)$, phần còn lại bằng $K\Delta u$. Nhân Gauss là xấp xỉ đơn vị, nên trả lại dữ liệu tại điểm liên tục; dữ liệu nhảy không cho nghiệm liên tục đến mọi điểm lúc đầu.
+\subsection*{Lời giải áp dụng cho bài}
+\textbf{Bước 1. Thác triển chẵn đúng biên Neumann.}
+Đặt $\widetilde f(y)=f(|y|)$. Gauss chẵn bảo đảm nghiệm toàn trục chẵn theo $x$, nên $u_x(0,t)=0$. Tách hai nửa của tích chập rồi đổi $y\mapsto-y$:
+\[u=\int_0^\infty[g_K(x-y,t)+g_K(x+y,t)]f(y)dy.\]
+\textbf{Bước 2. Tính câu $K=2,f=e^{-y}$.}
+Hai số mũ là
+\[-(x-y)^2/(8t)-y=-(y+4t-x)^2/(8t)+2t-x,\]
+\[-(x+y)^2/(8t)-y=-(y+4t+x)^2/(8t)+2t+x.\]
+Đổi biến $z=(y+4t\mp x)/\sqrt{8t}$, các cận thành $(4t\mp x)/\sqrt{8t},\infty$. Dùng $\int_a^\infty e^{-z^2}dz=\sqrt\pi\,\operatorname{erfc}(a)/2$ cho
+\[u=\frac12e^{2t-x}\operatorname{erfc}\frac{4t-x}{\sqrt{8t}}
++\frac12e^{2t+x}\operatorname{erfc}\frac{4t+x}{\sqrt{8t}}.\]
+\textbf{Bước 3. Kiểm tra.}
+Hai hạng đổi chỗ khi $x\mapsto-x$, nên $u$ chẵn, $u_x(0,t)=0$. Với $x>0,t\downarrow0$, hai erfc lần lượt về $2,0$, nên $u\to e^{-x}$. Nhân ảnh cho $u_t=2u_{xx}$. $f'(0)=-1$ khác Neumann $0$, nên không trơn đạo hàm đến góc, dù giá trị nghiệm liên tục đến mặt đầu.
+\begin{center}\includegraphics[width=.97\linewidth,height=11cm,keepaspectratio]{Do_thi/BT_4_6_3_02.png}\end{center}
+\textit{Đồ thị minh họa; với nghiệm số, xem phương pháp và tham số trong mã Python kèm theo.}\end{document}

@@ -1,0 +1,26 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{fontspec,amsmath,amssymb,graphicx}
+\usepackage[margin=18mm]{geometry}
+\setmainfont{Times New Roman}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\allowdisplaybreaks
+\sloppy
+\emergencystretch=2em
+\begin{document}
+\section*{BT\_5\_6\_3\_08 — Lời giải bổ sung}
+Đặt $S_{nm}=\sin n\pi x\sin m\pi y$, $\lambda_{nm}=\pi^2(n^2+m^2)$, $q_{nm}=4\iint qS_{nm}$. Các hệ số cần dùng: $(xy)_{nm}=4(-1)^{n+m}/(nm\pi^2)$; $(1)_{nm}=4(1-(-1)^n)(1-(-1)^m)/(nm\pi^2)$; $(x)_{nm}=4(-1)^{n+1}(1-(-1)^m)/(nm\pi^2)$.
+
+(i) $u=\sum(xy)_{nm}e^{-\lambda t}S_{nm}$.
+(ii) $u=\sum(1)_{nm}[e^{-2\lambda t}+t/(2\lambda)-(1-e^{-2\lambda t})/(4\lambda^2)]S_{nm}$.
+(iii) Đổi thời gian $\tau=t^2$: $u=\sum(1)_{nm}e^{-\lambda t^2}S_{nm}$.
+(iv) Biên Neumann và dữ liệu 1: chỉ phụ thuộc $x$. Fourier cosine của $x$ là $1/2+\sum 2[(-1)^n-1]\cos n\pi x/(n^2\pi^2)$, nên
+\[u=1+t/2+\sum_{n\ge1}\frac{2[(-1)^n-1]}{n^4\pi^4}(1-e^{-n^2\pi^2t})\cos n\pi x.\]
+
+(v) Bản in ghi $u_t=\Delta u$ và còn cho $u_t(x,y,0)=0$. Trong miền mở, dữ liệu $xy$ có $\Delta(xy)=0$, nên điều kiện thêm tương thích và nghiệm chính là (i); không phải phương trình sóng nếu giữ dấu $u_t$.
+(vi) Bản in ghi phương trình nhiệt $u_t=2\Delta u+tx$ với $u(0)=0$ nhưng $u_t(0)=1$. Thế $t=0$ vào phương trình trong miền buộc $u_t(0)=0$, nên không có nghiệm cổ điển thỏa cả hai điều kiện. Bỏ điều kiện dư sai cho
+\[u=\sum(x)_{nm}\left[\frac t{2\lambda}-\frac{1-e^{-2\lambda t}}{4\lambda^2}\right]S_{nm}.\]
+Nếu ý định là sóng $u_{tt}=2\Delta u+tx$, nghiệm là $\sum[(1)_{nm}\sin(\sqrt{2\lambda}t)/\sqrt{2\lambda}+(x)_{nm}(t/(2\lambda)-\sin(\sqrt{2\lambda}t)/(2\lambda)^{3/2})]S_{nm}$.
+
+(vii, lần đánh số vi thứ hai) Đặt $u=P+w$, với $P$ điều hòa, $P_x(0)=P_y(y=0)=0,P(1,y)=1,P(x,1)=x$. Tính $P$ bằng chồng hai chuỗi cos nửa nguyên: $X_n=\cos((n+1/2)\pi x)$; phép kéo dài cạnh trên $x$ có hệ số $2\int_0^1xX_n dx$, nhân $\cosh(k_ny)/\cosh k_n$; phép kéo dài cạnh phải 1 tương tự theo $y$. Sau đó
+\[u=P+\sum c_{nm}e^{-(k_n^2+k_m^2)t}\cos k_nx\cos k_my,\quad c_{nm}=4\iint(xy-P)\cos k_nx\cos k_my.\]\end{document}

@@ -1,0 +1,60 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{fontspec,amsmath,amssymb,graphicx}
+\usepackage[margin=18mm]{geometry}
+\setmainfont{Times New Roman}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\allowdisplaybreaks
+\sloppy
+\emergencystretch=2em
+\begin{document}
+\section*{BT\_4\_4\_3\_02 — Lời giải bổ sung}
+\subsection*{Kiến thức và trình tự giải}
+\textbf{Bước 1 — Khử điều kiện biên không thuần nhất.} Viết $u=b+w$ với $b$ thỏa đúng biên. Dirichlet hai đầu: $b=\mu+(\nu-\mu)x/L$. Neumann hai đầu: $b=\mu x+(\nu-\mu)x^2/(2L)$. Neumann–Dirichlet: $b=\nu+\mu(x-L)$; Dirichlet–Neumann: $b=\mu+x\nu$. Robin trái–Dirichlet phải: $b=\mu+d+dx$, $d=(\nu-\mu)/(L+1)$. Neumann trái–Robin phải: $b=\nu-\mu(L+1)+\mu x$. Hai Robin: $b=\mu+d+dx$, $d=(\nu-\mu)/(L+2)$.
+
+\textbf{Bước 2 — Tính lại nguồn và dữ liệu đầu.} Từ $u_t=Ku_{xx}+F$ suy $w_t=Kw_{xx}+Q$, $Q=F+Kb_{xx}-b_t$, $w(x,0)=f(x)-b(x,0)$. Tính $b_t,b_{xx}$ trước khi chiếu; với hàm nâng bậc hai Neumann, $Kb_{xx}$ không bằng không. Nếu dùng trạng thái dừng $P$, giải $KP''+F=0$ và đúng biên rồi đặt $w=u-P$.
+
+\textbf{Bước 3 — Chiếu và giải ODE bằng nhân tử.} Với $N_n=\int X_n^2$, đặt $d_n=N_n^{-1}\int(f-b_0)X_n$, $Q_n(t)=N_n^{-1}\int QX_n$. Phương trình mode là $T_n'+K\lambda_nT_n=Q_n$. Nhân với $e^{K\lambda_nt}$, tích phân từ $0$ đến $t$, rồi chia:
+
+
+\[
+T_n=d_ne^{-K\lambda_nt}+\int_0^te^{-K\lambda_n(t-s)}Q_n(s)ds,\qquad
+u=b+\sum_nT_nX_n.
+\]
+
+
+Đây cũng là công thức Green $u=b+\int G(f-b_0)+\int_0^t\int GQ$ cho biên đã được khử.
+
+\textbf{Bước 4 — Thực hiện tích phân thời gian.} Với $Q_n(s)=C_ne^{-\rho s}$, đặt $d=K\lambda_n$:
+
+
+\[
+\int_0^te^{-d(t-s)}C_ne^{-\rho s}ds
+=C_ne^{-dt}\int_0^te^{(d-\rho)s}ds
+=C_n\frac{e^{-\rho t}-e^{-dt}}{d-\rho}.
+\]
+
+
+Nếu $d=\rho$, kết quả là $C_nte^{-dt}$. Với nguồn hằng, kết quả $C_n(1-e^{-dt})/d$ khi $d>0$; mode $d=0$ phải dùng $\int_0^tQ_0(s)ds$. Nguồn đa thức thời gian tích phân từng phần hoặc giải ODE với nghiệm riêng đa thức.
+
+\textbf{Bước 5 — Kiểm tra và tìm giới hạn.} Mỗi mode đúng PDE, biên; $T_n(0)=d_n$ trả lại dữ liệu đầu sau khi cộng $b_0$. Tách mode hằng Neumann: $\frac d{dt}\int u=K(\nu-\mu)+\int F$. Trạng thái dừng chỉ tồn tại nếu tổng nguồn và thông lượng cân bằng. Với các mode dương, kiểm tra hội tụ đủ để lấy giới hạn đều; không bỏ một mode bằng không hoặc mode tăng.
+\subsection*{Lời giải áp dụng cho bài}
+\textbf{Bước 1. Công thức Neumann có nguồn và biên không thuần nhất.}
+Chọn $b=\mu x+(\nu-\mu)x^2/(2L)$, $w=u-b$, $Q=F+K(\nu-\mu)/L-b_t$, $q=f-b_0$. Đặt $q_0=L^{-1}\int q$, $q_n=(2/L)\int q\cos(n\pi x/L)$, tương tự $Q_n$. Khi đó
+\[u=b+q_0+\int_0^tQ_0(s)ds+
+\sum_{n\ge1}\left[q_ne^{-Kk_n^2t}+
+\int_0^te^{-Kk_n^2(t-s)}Q_n(s)ds\right]\cos k_nx.\]
+Mode $0$ không được bỏ.
+
+\textbf{Bước 2. Câu (i), $K=1,L=\pi,F=\cos x,f=\cos x+\cos2x$, biên $0$.}
+Trực giao cosine cho $f_1=f_2=1$, $F_1=1$, các hệ số khác bằng $0$. Hai ODE là $T_1'+T_1=1,T_1(0)=1$ và $T_2'+4T_2=0,T_2(0)=1$. Suy $T_1=1,T_2=e^{-4t}$:
+\[u=\cos x+e^{-4t}\cos2x,\qquad u\to\cos x.\]
+Kiểm tra $u_t=-4e^{-4t}\cos2x=u_{xx}+\cos x$, $u_x(0)=u_x(\pi)=0$, mặt đầu đúng.
+Nếu thay đạo hàm trái bằng $1$, phải đọc đầu phải là $\pi$ theo miền; dòng $2\pi$ trong đề không thuộc đoạn. Khi đó
+\[\frac d{dt}\int_0^\pi u\,dx=[u_x]_0^\pi+\int_0^\pi\cos x\,dx=-1.\]
+Tổng nhiệt giảm tuyến tính, không có giới hạn dừng hữu hạn. Tương đương, bài dừng $P''+\cos x=0$ buộc $P'(\pi)-P'(0)=0$, trái với $0-1=-1$.
+
+\textbf{Bước 3. Câu (ii), $\mu=\nu=A,F=0$.}
+Đặt $b=Ax$. $b_t=b_{xx}=0$, nên $w=u-Ax$ giải Neumann thuần nhất với $q=f-Ax$. Giới hạn đều của $w$ là $q_0=L^{-1}\int_0^L(f(y)-Ay)dy$. Do đó
+\[v(x)=Ax+\frac1L\int_0^Lf(y)dy-\frac{AL}2.\]
+Tính $v''=0$, $v'(0)=v'(L)=A$, đúng bài dừng. Hằng được xác định bởi bảo toàn $\int u=\int f$; các nghiệm dừng khác $Ax+C$ có tổng nhiệt khác và không phải giới hạn của cùng dữ liệu.\end{document}

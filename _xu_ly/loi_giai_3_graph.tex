@@ -1,0 +1,348 @@
+%ID BT_3_2_3_01
+\textbf{Bước 1. Đọc dữ liệu và chọn phản xạ.} Toàn trục, $a=2$, $f=0$, $g=s$ trên $[-1,0]$, bằng không bên ngoài.
+
+\textbf{Bước 2. Tính từng nhánh và nối nguyên hàm.} Tích phân từ $-1$ đến $s$ cho $(s^2-1)/2$; trước $-1$ lấy $0$, sau $0$ giữ $-1/2$. Do đó $H$ liên tục ở cả hai đầu.
+\[f_e(s)=0,\qquad H(s)=\tfrac12(\operatorname{clip}(s,-1,0)^2-1).\]
+Ở đây $\operatorname{clip}(s,p,q)=\min(q,\max(p,s))$; $\operatorname{mod}(s,L)\in[0,L)$ kể cả với $s<0$.
+
+\textbf{Bước 3. Xác định hai sóng chạy và ghép nghiệm.} $A=f_e/2-H/(2a)$, $B=f_e/2+H/(2a)$. Thay hai cận:
+\[u(x,t)=\frac{f_e(x-2t)+f_e(x+2t)}2+\frac{H(x+2t)-H(x-2t)}{4}.\]
+
+\textbf{Bước 4. Trả lời các yêu cầu và kiểm tra.} Tại $t=1$, cận $x+2=-1$ cho $x=-3$, cận $x-2=-1$ cho $x=1$. Bước nhảy của $g$ ở $-1$ khác không nên hai điểm này không có $u_x$. Ở $0$, $g$ nối về $0$ nên $u_x$ vẫn tồn tại; chỉ $u_{xx}$ gãy.
+
+Tại $t=0$, hiệu nguyên hàm bằng $0$ và đạo hàm thời gian cho $H'(x)=g(x)$ trong miền dữ liệu; half-sum cho đúng li độ. Mỗi hạng là sóng của $x\pm at$, nên thỏa PDE ngoài các mặt gãy và theo nghĩa phân phối trên toàn miền. Đồ thị hai sóng ban đầu và các lát cắt thời gian được tính trực tiếp từ các nhánh trên.
+
+%ID BT_3_2_3_02
+\textbf{Bước 1. Đọc dữ liệu và chọn phản xạ.} Toàn trục, $a=2$, $f=(1-|s|)_+$, $g=\chi_{[1,2]}$.
+
+\textbf{Bước 2. Tính từng nhánh và nối nguyên hàm.} $H=0$ trước $1$, $s-1$ trên $[1,2]$, $1$ sau $2$. Các nhánh của $f$ có hệ số góc $0,1,-1,0$ tại $-1,0,1$.
+\[f_e(s)=(1-|s|)_+,\qquad H(s)=\operatorname{clip}(s-1,0,1).\]
+Ở đây $\operatorname{clip}(s,p,q)=\min(q,\max(p,s))$; $\operatorname{mod}(s,L)\in[0,L)$ kể cả với $s<0$.
+
+\textbf{Bước 3. Xác định hai sóng chạy và ghép nghiệm.} $A=f_e/2-H/(2a)$, $B=f_e/2+H/(2a)$. Thay hai cận:
+\[u(x,t)=\frac{f_e(x-2t)+f_e(x+2t)}2+\frac{H(x+2t)-H(x-2t)}{4}.\]
+
+\textbf{Bước 4. Trả lời các yêu cầu và kiểm tra.} $f,H$ liên tục nên $u$ liên tục ở mọi $(x,t)$, kể cả $t=1$. Ở $t=1$, vị trí ứng viên của $u_x$ là $-3,-2,-1,0,1,2,3,4$; cộng các bước nhảy theo công thức đạo hàm để xét từng lát cắt. Trong hai biến, các đường xuất phát từ $-1,0,1$ của $f$ và $1,2$ của $g$ là các mặt sóng cấp một.
+
+Tại $t=0$, hiệu nguyên hàm bằng $0$ và đạo hàm thời gian cho $H'(x)=g(x)$ trong miền dữ liệu; half-sum cho đúng li độ. Mỗi hạng là sóng của $x\pm at$, nên thỏa PDE ngoài các mặt gãy và theo nghĩa phân phối trên toàn miền. Đồ thị hai sóng ban đầu và các lát cắt thời gian được tính trực tiếp từ các nhánh trên.
+
+%ID BT_3_2_3_03
+\textbf{Bước 1. Đọc dữ liệu và chọn phản xạ.} Toàn trục, $a=3$, $f=\chi_{[-1,1]}$, $g=s\chi_{[1,2]}$.
+
+\textbf{Bước 2. Tính từng nhánh và nối nguyên hàm.} Trên $[1,2]$, $\int_1^s r,dr=(s^2-1)/2$; sau $2$ giữ $3/2$. Phần li độ là hai xung biên độ $1/2$, chạy ngược chiều.
+\[f_e(s)=\chi_{[-1,1]}(s),\qquad H(s)=\tfrac12(\operatorname{clip}(s,1,2)^2-1).\]
+Ở đây $\operatorname{clip}(s,p,q)=\min(q,\max(p,s))$; $\operatorname{mod}(s,L)\in[0,L)$ kể cả với $s<0$.
+
+\textbf{Bước 3. Xác định hai sóng chạy và ghép nghiệm.} $A=f_e/2-H/(2a)$, $B=f_e/2+H/(2a)$. Thay hai cận:
+\[u(x,t)=\frac{f_e(x-3t)+f_e(x+3t)}2+\frac{H(x+3t)-H(x-3t)}{6}.\]
+
+\textbf{Bước 4. Trả lời các yêu cầu và kiểm tra.} Tại $t=1$, hai đoạn li độ là $[-4,-2]$ và $[2,4]$, có bước nhảy tại $-4,-2,2,4$. Phần $H$ liên tục nên không thể khử các bước nhảy ấy. Trong hai biến, ở giao điểm hai đường, cần so vết theo nhiều hướng; triệt tiêu trên một lát cắt không xóa mất kỳ dị hai chiều.
+
+Tại $t=0$, hiệu nguyên hàm bằng $0$ và đạo hàm thời gian cho $H'(x)=g(x)$ trong miền dữ liệu; half-sum cho đúng li độ. Mỗi hạng là sóng của $x\pm at$, nên thỏa PDE ngoài các mặt gãy và theo nghĩa phân phối trên toàn miền. Đồ thị hai sóng ban đầu và các lát cắt thời gian được tính trực tiếp từ các nhánh trên.
+
+%ID BT_3_2_3_04
+\textbf{Bước 1. Đọc dữ liệu và chọn phản xạ.} Toàn trục, $a=2$, $f=\chi_{[-2,-1]}$, $g=s\chi_{[0,1]}$.
+
+\textbf{Bước 2. Tính từng nhánh và nối nguyên hàm.} $H=0$ trước $0$, $s^2/2$ trên $[0,1]$, $1/2$ sau $1$. $g$ liên tục tại $0$, có bước nhảy từ $1$ về $0$ tại $1$.
+\[f_e(s)=\chi_{[-2,-1]}(s),\qquad H(s)=\tfrac12\operatorname{clip}(s,0,1)^2.\]
+Ở đây $\operatorname{clip}(s,p,q)=\min(q,\max(p,s))$; $\operatorname{mod}(s,L)\in[0,L)$ kể cả với $s<0$.
+
+\textbf{Bước 3. Xác định hai sóng chạy và ghép nghiệm.} $A=f_e/2-H/(2a)$, $B=f_e/2+H/(2a)$. Thay hai cận:
+\[u(x,t)=\frac{f_e(x-2t)+f_e(x+2t)}2+\frac{H(x+2t)-H(x-2t)}{4}.\]
+
+\textbf{Bước 4. Trả lời các yêu cầu và kiểm tra.} $u$ gián đoạn trên các nhánh $x\pm2t=-2,-1$. Vận tốc chỉ làm gãy $u_x$ trên $x\pm2t=1$; tại $x\pm2t=0$ chỉ gãy đạo hàm cấp hai. Ở $t=1$, các bước nhảy li độ nằm tại $-4,-3,0,1$.
+
+Tại $t=0$, hiệu nguyên hàm bằng $0$ và đạo hàm thời gian cho $H'(x)=g(x)$ trong miền dữ liệu; half-sum cho đúng li độ. Mỗi hạng là sóng của $x\pm at$, nên thỏa PDE ngoài các mặt gãy và theo nghĩa phân phối trên toàn miền. Đồ thị hai sóng ban đầu và các lát cắt thời gian được tính trực tiếp từ các nhánh trên.
+
+%ID BT_3_2_3_05
+\textbf{Bước 1. Đọc dữ liệu và chọn phản xạ.} Toàn trục, $a=4$, $f=10\chi_{[-1,1]}$, $g=\chi_{[-1,1]}$.
+
+\textbf{Bước 2. Tính từng nhánh và nối nguyên hàm.} $H(s)=0$ khi $s\le-1$, $s+1$ khi $-1<s<1$, $2$ khi $s\ge1$. Tại $x=10$, sóng phải đến lúc $10-4t=1$ và rời lúc $10-4t=-1$.
+\[f_e(s)=10\chi_{[-1,1]}(s),\qquad H(s)=\operatorname{clip}(s+1,0,2).\]
+Ở đây $\operatorname{clip}(s,p,q)=\min(q,\max(p,s))$; $\operatorname{mod}(s,L)\in[0,L)$ kể cả với $s<0$.
+
+\textbf{Bước 3. Xác định hai sóng chạy và ghép nghiệm.} $A=f_e/2-H/(2a)$, $B=f_e/2+H/(2a)$. Thay hai cận:
+\[u(x,t)=\frac{f_e(x-4t)+f_e(x+4t)}2+\frac{H(x+4t)-H(x-4t)}{8}.\]
+
+\textbf{Bước 4. Trả lời các yêu cầu và kiểm tra.} Đó là $t=9/4$ và $11/4$. Trong khoảng giữa, $u(10,t)=5+(4t-9)/8$; trước đó $0$, sau đó $1/4$. Cực đại $21/4<6$, kể cả vết một phía tại bước nhảy. Không đạt ngưỡng phá hủy.
+
+Tại $t=0$, hiệu nguyên hàm bằng $0$ và đạo hàm thời gian cho $H'(x)=g(x)$ trong miền dữ liệu; half-sum cho đúng li độ. Mỗi hạng là sóng của $x\pm at$, nên thỏa PDE ngoài các mặt gãy và theo nghĩa phân phối trên toàn miền. Đồ thị hai sóng ban đầu và các lát cắt thời gian được tính trực tiếp từ các nhánh trên.
+
+%ID BT_3_2_3_06
+\textbf{Bước 1. Đọc dữ liệu và chọn phản xạ.} Nửa trục Dirichlet, $a=3$, $f=s(s-1)$ trên $[0,1]$, $g=6$.
+
+\textbf{Bước 2. Tính từng nhánh và nối nguyên hàm.} Mở rộng lẻ của $f$ là $\operatorname{sgn}(s)|s|(|s|-1)\chi_{[0,1]}(|s|)$. Mở rộng lẻ của $g$ là $6\operatorname{sgn}(s)$, nên $H=6|s|$.
+\[f_e(s)=\operatorname{sgn}(s)|s|(|s|-1)\chi_{[0,1]}(|s|),\qquad H(s)=6|s|.\]
+Ở đây $\operatorname{clip}(s,p,q)=\min(q,\max(p,s))$; $\operatorname{mod}(s,L)\in[0,L)$ kể cả với $s<0$.
+
+\textbf{Bước 3. Xác định hai sóng chạy và ghép nghiệm.} $A=f_e/2-H/(2a)$, $B=f_e/2+H/(2a)$. Thay hai cận:
+\[u(x,t)=\frac{f_e(x-3t)+f_e(x+3t)}2+\frac{H(x+3t)-H(x-3t)}{6}.\]
+
+\textbf{Bước 4. Trả lời các yêu cầu và kiểm tra.} Ở $t=1/3$, $x-1=0$ cho bước nhảy của $g$, tức $x=1$. Góc của $f$ tại $s=1$ cho $x=2$; các góc khác nằm ngoài $x>0$. $f$ nối đạo hàm ở $0$, nên không khử bước nhảy vận tốc tại $x=1$.
+
+Tại $t=0$, hiệu nguyên hàm bằng $0$ và đạo hàm thời gian cho $H'(x)=g(x)$ trong miền dữ liệu; half-sum cho đúng li độ. Mỗi hạng là sóng của $x\pm at$, nên thỏa PDE ngoài các mặt gãy và theo nghĩa phân phối trên toàn miền. Đồ thị hai sóng ban đầu và các lát cắt thời gian được tính trực tiếp từ các nhánh trên.
+
+%ID BT_3_2_3_07
+\textbf{Bước 1. Đọc dữ liệu và chọn phản xạ.} Nửa trục Neumann, $a=1$, $f=0$, $g=s-1$ trên $[0,1]$, bằng không ngoài đoạn.
+
+\textbf{Bước 2. Tính từng nhánh và nối nguyên hàm.} Mở rộng chẵn $\widetilde g=(|s|-1)\chi_{[0,1]}(|s|)$. Tích phân từ $0$ cho $s^2/2-s$ ở $s\in[0,1]$, sau đó giữ $-1/2$; phản xạ nguyên hàm lẻ.
+\[f_e(s)=0,\qquad H(s)=\operatorname{sgn}(s)(m^2/2-m),\quad m=\min(|s|,1).\]
+Ở đây $\operatorname{clip}(s,p,q)=\min(q,\max(p,s))$; $\operatorname{mod}(s,L)\in[0,L)$ kể cả với $s<0$.
+
+\textbf{Bước 3. Xác định hai sóng chạy và ghép nghiệm.} $A=f_e/2-H/(2a)$, $B=f_e/2+H/(2a)$. Thay hai cận:
+\[u(x,t)=\frac{f_e(x-1t)+f_e(x+1t)}2+\frac{H(x+1t)-H(x-1t)}{2}.\]
+
+\textbf{Bước 4. Trả lời các yêu cầu và kiểm tra.} Vì $\widetilde g$ liên tục cả ở $0,\pm1$, $u_x$ tồn tại ở mọi $x$ tại $t=1$. Khi $t\ge2$ tại $x=1$, hai cận đã ở hai phía ngoài hỗ trợ, $H(1+t)=-1/2$, $H(1-t)=1/2$, nên $u=-1/2$.
+
+Tại $t=0$, hiệu nguyên hàm bằng $0$ và đạo hàm thời gian cho $H'(x)=g(x)$ trong miền dữ liệu; half-sum cho đúng li độ. Mỗi hạng là sóng của $x\pm at$, nên thỏa PDE ngoài các mặt gãy và theo nghĩa phân phối trên toàn miền. Đồ thị hai sóng ban đầu và các lát cắt thời gian được tính trực tiếp từ các nhánh trên.
+
+%ID BT_3_2_3_08
+\textbf{Bước 1. Đọc dữ liệu và chọn phản xạ.} Nửa trục Neumann, $a=3$, $f=s(2-s)$ trên $[0,2]$, $g=6$.
+
+\textbf{Bước 2. Tính từng nhánh và nối nguyên hàm.} Mở rộng chẵn $f=|s|(2-|s|)\chi_{[0,2]}(|s|)$ và $g=6$, nên $H=6s$. Hiệu $H$ góp đúng $6t$.
+\[f_e(s)=|s|(2-|s|)\chi_{[0,2]}(|s|),\qquad H(s)=6s.\]
+Ở đây $\operatorname{clip}(s,p,q)=\min(q,\max(p,s))$; $\operatorname{mod}(s,L)\in[0,L)$ kể cả với $s<0$.
+
+\textbf{Bước 3. Xác định hai sóng chạy và ghép nghiệm.} $A=f_e/2-H/(2a)$, $B=f_e/2+H/(2a)$. Thay hai cận:
+\[u(x,t)=\frac{f_e(x-3t)+f_e(x+3t)}2+\frac{H(x+3t)-H(x-3t)}{6}.\]
+
+\textbf{Bước 4. Trả lời các yêu cầu và kiểm tra.} Ở $t=1/3$, $x-1=0$ là góc của mở rộng chẵn $f$, cho $x=1$; $x-1=2$ cho $x=3$. Các góc ở cận phải không cho điểm dương khác. Sau $t>1$ tại $x=1$, phần li độ hết, $u=6t\to\infty$.
+
+Tại $t=0$, hiệu nguyên hàm bằng $0$ và đạo hàm thời gian cho $H'(x)=g(x)$ trong miền dữ liệu; half-sum cho đúng li độ. Mỗi hạng là sóng của $x\pm at$, nên thỏa PDE ngoài các mặt gãy và theo nghĩa phân phối trên toàn miền. Đồ thị hai sóng ban đầu và các lát cắt thời gian được tính trực tiếp từ các nhánh trên.
+
+%ID BT_3_2_3_09
+\textbf{Bước 1. Đọc dữ liệu và chọn phản xạ.} Nửa trục Dirichlet, $a=1$, $f=0$, $g=2s-2$ trên $[0,2]$.
+
+\textbf{Bước 2. Tính từng nhánh và nối nguyên hàm.} Mở rộng lẻ là $\operatorname{sgn}(s)(2|s|-2)\chi_{[0,2]}(|s|)$. Tích phân dương cho $s^2-2s$; tại $2$ bằng $0$, sau đó giữ $0$. Nguyên hàm chẵn.
+\[f_e(s)=0,\qquad H(s)=m^2-2m,\quad m=\min(|s|,2).\]
+Ở đây $\operatorname{clip}(s,p,q)=\min(q,\max(p,s))$; $\operatorname{mod}(s,L)\in[0,L)$ kể cả với $s<0$.
+
+\textbf{Bước 3. Xác định hai sóng chạy và ghép nghiệm.} $A=f_e/2-H/(2a)$, $B=f_e/2+H/(2a)$. Thay hai cận:
+\[u(x,t)=\frac{f_e(x-1t)+f_e(x+1t)}2+\frac{H(x+1t)-H(x-1t)}{2}.\]
+
+\textbf{Bước 4. Trả lời các yêu cầu và kiểm tra.} Tại $t=1$, các cận gặp bước nhảy ở $0,2$ tại $x=1,3$; các bước nhảy khác không cho vị trí dương mới. Sau $t\ge3$ ở $x=1$, cả hai giá trị nguyên hàm đều $0$, nên giới hạn bằng $0$.
+
+Tại $t=0$, hiệu nguyên hàm bằng $0$ và đạo hàm thời gian cho $H'(x)=g(x)$ trong miền dữ liệu; half-sum cho đúng li độ. Mỗi hạng là sóng của $x\pm at$, nên thỏa PDE ngoài các mặt gãy và theo nghĩa phân phối trên toàn miền. Đồ thị hai sóng ban đầu và các lát cắt thời gian được tính trực tiếp từ các nhánh trên.
+
+%ID BT_3_2_3_10
+\textbf{Bước 1. Đọc dữ liệu và chọn phản xạ.} Nửa trục Neumann, $a=1$, $f=0$, $g=2-s$ trên $[0,2]$.
+
+\textbf{Bước 2. Tính từng nhánh và nối nguyên hàm.} Mở rộng chẵn là $(2-|s|)\chi_{[0,2]}(|s|)$. Tích phân dương cho $2s-s^2/2$, tại $2$ bằng $2$; nguyên hàm lẻ có hai đuôi $\pm2$.
+\[f_e(s)=0,\qquad H(s)=\operatorname{sgn}(s)(2m-m^2/2),\quad m=\min(|s|,2).\]
+Ở đây $\operatorname{clip}(s,p,q)=\min(q,\max(p,s))$; $\operatorname{mod}(s,L)\in[0,L)$ kể cả với $s<0$.
+
+\textbf{Bước 3. Xác định hai sóng chạy và ghép nghiệm.} $A=f_e/2-H/(2a)$, $B=f_e/2+H/(2a)$. Thay hai cận:
+\[u(x,t)=\frac{f_e(x-1t)+f_e(x+1t)}2+\frac{H(x+1t)-H(x-1t)}{2}.\]
+
+\textbf{Bước 4. Trả lời các yêu cầu và kiểm tra.} $\widetilde g$ liên tục nên tại $t=1$, $u_x$ tồn tại mọi $x>0$. Ở $x=1/2$, khi $t\ge5/2$, hiệu hai đuôi là $4$, chia $2$ cho $u=2$. Góc của $\widetilde g$ tại $0$ ảnh hưởng cấp hai, không ảnh hưởng tồn tại $u_x$.
+
+Tại $t=0$, hiệu nguyên hàm bằng $0$ và đạo hàm thời gian cho $H'(x)=g(x)$ trong miền dữ liệu; half-sum cho đúng li độ. Mỗi hạng là sóng của $x\pm at$, nên thỏa PDE ngoài các mặt gãy và theo nghĩa phân phối trên toàn miền. Đồ thị hai sóng ban đầu và các lát cắt thời gian được tính trực tiếp từ các nhánh trên.
+
+%ID BT_3_2_3_11
+\textbf{Bước 1. Đọc dữ liệu và chọn phản xạ.} Nửa trục Neumann $u_x(0,t)=0$, $a=1$, $f=0$, $g=\chi_{[1,2]}$.
+
+\textbf{Bước 2. Tính từng nhánh và nối nguyên hàm.} Biên trong bản scan là Neumann: phải mở rộng chẵn $\widetilde g=\chi_{[1,2]}(|s|)$. Tích phân dương cho $[s-1]_0^1$; nguyên hàm lẻ là $\operatorname{sgn}(s)[|s|-1]_0^1$. Công thức lẻ của vận tốc trong lời giải cũ là nhầm biên.
+\[f_e(s)=0,\qquad H(s)=\operatorname{sgn}(s)\operatorname{clip}(|s|-1,0,1).\]
+Ở đây $\operatorname{clip}(s,p,q)=\min(q,\max(p,s))$; $\operatorname{mod}(s,L)\in[0,L)$ kể cả với $s<0$.
+
+\textbf{Bước 3. Xác định hai sóng chạy và ghép nghiệm.} $A=f_e/2-H/(2a)$, $B=f_e/2+H/(2a)$. Thay hai cận:
+\[u(x,t)=\frac{f_e(x-1t)+f_e(x+1t)}2+\frac{H(x+1t)-H(x-1t)}{2}.\]
+
+\textbf{Bước 4. Trả lời các yêu cầu và kiểm tra.} Vì $H$ lẻ, $H'(-s)=H'(s)$, nên $u_x(0,t)=(\widetilde g(t)-\widetilde g(-t))/2=0$. Nghiệm liên tục; đạo hàm cấp một gãy trên $x\pm t=\pm1,\pm2$ ở phần nằm trong nửa trục.
+
+Tại $t=0$, hiệu nguyên hàm bằng $0$ và đạo hàm thời gian cho $H'(x)=g(x)$ trong miền dữ liệu; half-sum cho đúng li độ. Mỗi hạng là sóng của $x\pm at$, nên thỏa PDE ngoài các mặt gãy và theo nghĩa phân phối trên toàn miền. Đồ thị hai sóng ban đầu và các lát cắt thời gian được tính trực tiếp từ các nhánh trên.
+
+%ID BT_3_2_3_12
+\textbf{Bước 1. Đọc dữ liệu và chọn phản xạ.} Nửa trục Neumann, $a=2$, $f=0$, $g=\chi_{[1,2]}$.
+
+\textbf{Bước 2. Tính từng nhánh và nối nguyên hàm.} Mở rộng chẵn và nguyên hàm giống Bài 11. Chỉ tốc độ đổi từ $1$ thành $2$, nên độ dịch là $2t$ và hệ số tích phân là $1/4$.
+\[f_e(s)=0,\qquad H(s)=\operatorname{sgn}(s)\operatorname{clip}(|s|-1,0,1).\]
+Ở đây $\operatorname{clip}(s,p,q)=\min(q,\max(p,s))$; $\operatorname{mod}(s,L)\in[0,L)$ kể cả với $s<0$.
+
+\textbf{Bước 3. Xác định hai sóng chạy và ghép nghiệm.} $A=f_e/2-H/(2a)$, $B=f_e/2+H/(2a)$. Thay hai cận:
+\[u(x,t)=\frac{f_e(x-2t)+f_e(x+2t)}2+\frac{H(x+2t)-H(x-2t)}{4}.\]
+
+\textbf{Bước 4. Trả lời các yêu cầu và kiểm tra.} $u_x(0,t)=0$ bởi tính chẵn của vận tốc mở rộng. $H$ liên tục nên $u$ liên tục; $H'$ nhảy ở $\pm1,\pm2$ nên các đường mất trơn cấp một là $x\pm2t=\pm1,\pm2$. Khi $t>(x+2)/2$, $u=1/2$ tại mỗi điểm cố định.
+
+Tại $t=0$, hiệu nguyên hàm bằng $0$ và đạo hàm thời gian cho $H'(x)=g(x)$ trong miền dữ liệu; half-sum cho đúng li độ. Mỗi hạng là sóng của $x\pm at$, nên thỏa PDE ngoài các mặt gãy và theo nghĩa phân phối trên toàn miền. Đồ thị hai sóng ban đầu và các lát cắt thời gian được tính trực tiếp từ các nhánh trên.
+
+%ID BT_3_2_3_13
+\textbf{Bước 1. Đọc dữ liệu và chọn phản xạ.} Nửa trục Dirichlet, $a=2$, $f=0$, $g=s\chi_{[1,2]}$.
+
+\textbf{Bước 2. Tính từng nhánh và nối nguyên hàm.} Mở rộng lẻ; trên đối số dương, $H=0$ trước $1$, $(s^2-1)/2$ trên $[1,2]$, $3/2$ sau $2$. Phản xạ $H$ chẵn, nên dạng gộp dùng $|s|$.
+\[f_e(s)=0,\qquad H(s)=\tfrac12(\operatorname{clip}(|s|,1,2)^2-1).\]
+Ở đây $\operatorname{clip}(s,p,q)=\min(q,\max(p,s))$; $\operatorname{mod}(s,L)\in[0,L)$ kể cả với $s<0$.
+
+\textbf{Bước 3. Xác định hai sóng chạy và ghép nghiệm.} $A=f_e/2-H/(2a)$, $B=f_e/2+H/(2a)$. Thay hai cận:
+\[u(x,t)=\frac{f_e(x-2t)+f_e(x+2t)}2+\frac{H(x+2t)-H(x-2t)}{4}.\]
+
+\textbf{Bước 4. Trả lời các yêu cầu và kiểm tra.} Tại $x=0$, hai giá trị $H$ bằng nhau nên $u=0$. Nghiệm liên tục nhưng các bước nhảy của $g$ ở $\pm1,\pm2$ phát sinh các mặt gãy cấp một. Sau $t>(x+2)/2$, cả hai đuôi của $H$ bằng $3/2$, nên nghiệm trở về $0$.
+
+Tại $t=0$, hiệu nguyên hàm bằng $0$ và đạo hàm thời gian cho $H'(x)=g(x)$ trong miền dữ liệu; half-sum cho đúng li độ. Mỗi hạng là sóng của $x\pm at$, nên thỏa PDE ngoài các mặt gãy và theo nghĩa phân phối trên toàn miền. Đồ thị hai sóng ban đầu và các lát cắt thời gian được tính trực tiếp từ các nhánh trên.
+
+%ID BT_3_2_3_14
+\textbf{Bước 1. Đọc dữ liệu và chọn phản xạ.} Nửa trục Neumann, $a=3$, $f=0$, $g=s\chi_{[2,3]}$.
+
+\textbf{Bước 2. Tính từng nhánh và nối nguyên hàm.} Mở rộng chẵn. Trên $s>0$, nguyên hàm là $0$ trước $2$, $(s^2-4)/2$ trên $[2,3]$, $5/2$ sau $3$; phản xạ nguyên hàm lẻ.
+\[f_e(s)=0,\qquad H(s)=\tfrac12\operatorname{sgn}(s)(\operatorname{clip}(|s|,2,3)^2-4).\]
+Ở đây $\operatorname{clip}(s,p,q)=\min(q,\max(p,s))$; $\operatorname{mod}(s,L)\in[0,L)$ kể cả với $s<0$.
+
+\textbf{Bước 3. Xác định hai sóng chạy và ghép nghiệm.} $A=f_e/2-H/(2a)$, $B=f_e/2+H/(2a)$. Thay hai cận:
+\[u(x,t)=\frac{f_e(x-3t)+f_e(x+3t)}2+\frac{H(x+3t)-H(x-3t)}{6}.\]
+
+\textbf{Bước 4. Trả lời các yêu cầu và kiểm tra.} Nghiệm liên tục, $u_x(0,t)=0$, các đường gãy cấp một là $x\pm3t=\pm2,\pm3$. Sau $t>(x+3)/3$, hiệu hai đuôi là $5$, nên $u=5/6$. Điều này khác trường hợp Dirichlet có hai đuôi nguyên hàm bằng nhau.
+
+Tại $t=0$, hiệu nguyên hàm bằng $0$ và đạo hàm thời gian cho $H'(x)=g(x)$ trong miền dữ liệu; half-sum cho đúng li độ. Mỗi hạng là sóng của $x\pm at$, nên thỏa PDE ngoài các mặt gãy và theo nghĩa phân phối trên toàn miền. Đồ thị hai sóng ban đầu và các lát cắt thời gian được tính trực tiếp từ các nhánh trên.
+
+%ID BT_3_2_3_15
+\textbf{Bước 1. Đọc dữ liệu và chọn phản xạ.} Đoạn $(0,1)$, Dirichlet hai đầu, $a=1$, $f=0$, $g=1$.
+
+\textbf{Bước 2. Tính từng nhánh và nối nguyên hàm.} Mở rộng lẻ tại $0,1$ cho vận tốc bằng $1$ trên $(0,1)$, $-1$ trên $(1,2)$ rồi chu kỳ $2$. Tích phân cho $H=s$ ở $[0,1]$, $2-s$ ở $[1,2]$; trung bình vận tốc một chu kỳ bằng $0$.
+\[f_e(s)=0,\qquad H(s)=1-|\operatorname{mod}(s,2)-1|.\]
+Ở đây $\operatorname{clip}(s,p,q)=\min(q,\max(p,s))$; $\operatorname{mod}(s,L)\in[0,L)$ kể cả với $s<0$.
+
+\textbf{Bước 3. Xác định hai sóng chạy và ghép nghiệm.} $A=f_e/2-H/(2a)$, $B=f_e/2+H/(2a)$. Thay hai cận:
+\[u(x,t)=\frac{f_e(x-1t)+f_e(x+1t)}2+\frac{H(x+1t)-H(x-1t)}{2}.\]
+
+\textbf{Bước 4. Trả lời các yêu cầu và kiểm tra.} $H(s+2)=H(s)$ nên nghiệm có chu kỳ thời gian $2$. Chiếu $g$ lên sine: $B_n=2\int_0^1\sin(n\pi x)dx=2(1-(-1)^n)/(n\pi)$. Chia $\omega_n=n\pi$ cho chuỗi ở dưới. $g$ khác không ở góc biên nên nghiệm không $C^1$ qua mặt sóng từ các góc.
+
+Tách biến cho $u=\sum_{n\text{ lẻ}}4\sin(n\pi t)\sin(n\pi x)/(n^2\pi^2)$. Dữ liệu $g=1$ tại hai đầu không tương thích nên đây là nghiệm yếu; chu kỳ thời gian 2.
+
+Tại $t=0$, hiệu nguyên hàm bằng $0$ và đạo hàm thời gian cho $H'(x)=g(x)$ trong miền dữ liệu; half-sum cho đúng li độ. Mỗi hạng là sóng của $x\pm at$, nên thỏa PDE ngoài các mặt gãy và theo nghĩa phân phối trên toàn miền. Đồ thị hai sóng ban đầu và các lát cắt thời gian được tính trực tiếp từ các nhánh trên.
+
+\textbf{Chi tiết tích phân của dữ liệu hằng.} Với $k_n=n\pi/L$,
+\[\int_0^L\sin k_nx\,dx=\left[-\frac{\cos k_nx}{k_n}\right]_0^L=\frac{1-(-1)^n}{k_n}.\]
+Nhân $2/L$ cho hệ số của hằng $1$ là $2(1-(-1)^n)/(n\pi)$; hằng $-1$ đổi dấu. Khi chiếu vận tốc, còn chia $\omega_n$ trong hệ số $\sin\omega_nt$; khi chiếu li độ, hệ số $\cos\omega_nt$ giữ nguyên.
+
+%ID BT_3_2_3_16
+\textbf{Bước 1. Đọc dữ liệu và chọn phản xạ.} Đoạn $(0,\pi)$, Neumann hai đầu, $a=2$, $f=x$, $g=0$.
+
+\textbf{Bước 2. Tính từng nhánh và nối nguyên hàm.} Mở rộng chẵn tại $0,\pi$: trên $[0,2\pi]$, $f_e=s$ trước $\pi$ và $2\pi-s$ sau $\pi$. Đó là hàm tam giác chu kỳ $2\pi$; $H=0$.
+\[f_e(s)=\pi-|\operatorname{mod}(s,2\pi)-\pi|,\qquad H(s)=0.\]
+Ở đây $\operatorname{clip}(s,p,q)=\min(q,\max(p,s))$; $\operatorname{mod}(s,L)\in[0,L)$ kể cả với $s<0$.
+
+\textbf{Bước 3. Xác định hai sóng chạy và ghép nghiệm.} $A=f_e/2-H/(2a)$, $B=f_e/2+H/(2a)$. Thay hai cận:
+\[u(x,t)=\frac{f_e(x-2t)+f_e(x+2t)}2+\frac{H(x+2t)-H(x-2t)}{4}.\]
+
+\textbf{Bước 4. Trả lời các yêu cầu và kiểm tra.} $A_0=\pi/2$. Tích phân từng phần cho $A_n=(2/\pi)((-1)^n-1)/n^2$, chỉ còn $n$ lẻ. Ghép với $\omega_n=2n$ cho chuỗi bên dưới và chu kỳ $\pi$. $f'(0)=f'(\pi)=1$ không thỏa biên Neumann, nên có góc phản xạ.
+
+Tách biến cho $u=\pi/2-(4/\pi)\sum_{n\text{ lẻ}}\cos(2nt)\cos(nx)/n^2$. Chu kỳ $\pi$. Dữ liệu $f=x$ không có đạo hàm biên 0, nên không có nghiệm cổ điển tại các góc.
+
+Tại $t=0$, hiệu nguyên hàm bằng $0$ và đạo hàm thời gian cho $H'(x)=g(x)$ trong miền dữ liệu; half-sum cho đúng li độ. Mỗi hạng là sóng của $x\pm at$, nên thỏa PDE ngoài các mặt gãy và theo nghĩa phân phối trên toàn miền. Đồ thị hai sóng ban đầu và các lát cắt thời gian được tính trực tiếp từ các nhánh trên.
+
+\textbf{Chi tiết hệ số cos của dữ liệu $x$.} Trên $(0,\pi)$, trung bình là $A_0=\pi^{-1}\int_0^\pi x\,dx=\pi/2$. Với $n\ge1$,
+\[\int_0^\pi x\cos nx\,dx=\left[\frac{x\sin nx}{n}\right]_0^\pi-\frac1n\int_0^\pi\sin nx\,dx
+=\frac{(-1)^n-1}{n^2}.\]
+Nhân $2/\pi$ cho $2((-1)^n-1)/(\pi n^2)$. Nếu dữ liệu này là li độ thì giữ hệ số với $\cos2nt$; nếu là vận tốc thì chia $2n$ và nhân $\sin2nt$. Vì $n$ lẻ có $(-1)^n-1=-2$, hệ số lần lượt là $-4/(\pi n^2)$ và $-2/(\pi n^3)$.
+
+%ID BT_3_2_3_17
+\textbf{Bước 1. Đọc dữ liệu và chọn phản xạ.} Đoạn $(0,1)$, Neumann tại $0$, Dirichlet tại $1$, $a=2$, $f=1-x$, $g=0$.
+
+\textbf{Bước 2. Tính từng nhánh và nối nguyên hàm.} Phản xạ chẵn tại $0$, lẻ tại $1$ cho trên $[0,4]$ hai nhánh $1-s$ ở $[0,2]$, $s-3$ ở $[2,4]$. Vì thế có công thức chính xác $f_e(s)=|\operatorname{mod}(s,4)-2|-1$.
+\[f_e(s)=|\operatorname{mod}(s,4)-2|-1,\qquad H(s)=0.\]
+Ở đây $\operatorname{clip}(s,p,q)=\min(q,\max(p,s))$; $\operatorname{mod}(s,L)\in[0,L)$ kể cả với $s<0$.
+
+\textbf{Bước 3. Xác định hai sóng chạy và ghép nghiệm.} $A=f_e/2-H/(2a)$, $B=f_e/2+H/(2a)$. Thay hai cận:
+\[u(x,t)=\frac{f_e(x-2t)+f_e(x+2t)}2+\frac{H(x+2t)-H(x-2t)}{4}.\]
+
+\textbf{Bước 4. Trả lời các yêu cầu và kiểm tra.} $f_e(s+2)=-f_e(s)$ nên $u(t+1)=-u(t)$, chu kỳ $2$. Với $k_n=(n+1/2)\pi$, tích phân $2\int_0^1(1-x)\cos(k_nx)dx=2/k_n^2$ cho chuỗi. Góc tại phản xạ đầu $0$ xuất phát từ $f'(0)=-1$ không tương thích.
+
+Mô hình $u_{tt}=4u_{xx}$, $u_x(0,t)=0,u(1,t)=0$, $f=1-x,g=0$. Với $k_n=(n+1/2)\pi$, nghiệm $u=\sum_{n\ge0}2\cos(2k_nt)\cos(k_nx)/k_n^2$. Chu kỳ 2; dữ liệu không tương thích đạo hàm tại đầu tự do.
+
+Tại $t=0$, hiệu nguyên hàm bằng $0$ và đạo hàm thời gian cho $H'(x)=g(x)$ trong miền dữ liệu; half-sum cho đúng li độ. Mỗi hạng là sóng của $x\pm at$, nên thỏa PDE ngoài các mặt gãy và theo nghĩa phân phối trên toàn miền. Đồ thị hai sóng ban đầu và các lát cắt thời gian được tính trực tiếp từ các nhánh trên.
+
+\textbf{Chi tiết chiếu li độ lên hệ cos nửa nguyên.} $k_n=(n+1/2)\pi$, $\cos k_n=0$, chuẩn $\int_0^1\cos^2k_nx\,dx=1/2$. Tích phân từng phần:
+\[\int_0^1(1-x)\cos k_nx\,dx=\left[\frac{(1-x)\sin k_nx}{k_n}\right]_0^1+\frac1{k_n}\int_0^1\sin k_nx\,dx
+=\frac{1-\cos k_n}{k_n^2}=\frac1{k_n^2}.\]
+Chia chuẩn $1/2$ cho hệ số $2/k_n^2$; vận tốc đầu bằng $0$ nên không có phần sine theo thời gian.
+
+%ID BT_3_2_3_18
+\textbf{Bước 1. Đọc dữ liệu và chọn phản xạ.} Đoạn $(0,1)$, $a=2$, hai biên $u=1$, dữ liệu đầu $f=0$, $g=1$.
+
+\textbf{Bước 2. Tính từng nhánh và nối nguyên hàm.} Lấy hàm nâng $b=1$, $w=u-1$ có biên không, $w_0=-1$, $w_{t,0}=1$. Mở rộng lẻ chu kỳ $2$ của $-1$ và nguyên hàm tam giác của vận tốc được dùng trong công thức; cuối cùng phải cộng lại $1$.
+\[f_e(s)=\widetilde f=-1\text{ trên }(0,1),\text{ thác triển lẻ chu kỳ }2,\qquad H(s)=1-|\operatorname{mod}(s,2)-1|.\]
+Chọn giá trị mở rộng li độ bằng $0$ tại các số nguyên (trung bình hai vết), để công thức có đúng giá trị biên tại cả thời điểm hai mặt sóng gặp nhau.
+Ở đây $\operatorname{clip}(s,p,q)=\min(q,\max(p,s))$; $\operatorname{mod}(s,L)\in[0,L)$ kể cả với $s<0$.
+
+\textbf{Bước 3. Xác định hai sóng chạy và ghép nghiệm.} $A=f_e/2-H/(2a)$, $B=f_e/2+H/(2a)$. Thay hai cận:
+\[u(x,t)=\frac{f_e(x-2t)+f_e(x+2t)}2+\frac{H(x+2t)-H(x-2t)}{4}+1.\]
+
+\textbf{Bước 4. Trả lời các yêu cầu và kiểm tra.} Hệ số li độ $A_n=-2(1-(-1)^n)/(n\pi)$, vận tốc $B_n=2(1-(-1)^n)/(n\pi)$, tần số $2n\pi$. Dữ liệu li độ và biên mâu thuẫn ngay ở góc nên không có nghiệm cổ điển trên bao đóng; chuỗi và sóng chạy cho nghiệm trong miền với các bước nhảy.
+
+Chọn $v=1$, $w=u-1$ có biên 0, $w(x,0)=-1,w_t(x,0)=1$. Nghiệm $u=1+\sum_{n\text{ lẻ}}[-4\cos(2n\pi t)/(n\pi)+2\sin(2n\pi t)/(n^2\pi^2)]\sin(n\pi x)$. Góc dữ liệu $u(x,0)=0$ mâu thuẫn biên 1: chỉ có nghiệm yếu với mặt sóng.
+
+Tại $t=0$, hiệu nguyên hàm bằng $0$ và đạo hàm thời gian cho $H'(x)=g(x)$ trong miền dữ liệu; half-sum cho đúng li độ sau khi cộng hàm nâng biên. Mỗi hạng là sóng của $x\pm at$, nên thỏa PDE ngoài các mặt gãy và theo nghĩa phân phối trên toàn miền. Đồ thị hai sóng ban đầu và các lát cắt thời gian được tính trực tiếp từ các nhánh trên.
+
+\textbf{Chi tiết tích phân của dữ liệu hằng.} Với $k_n=n\pi/L$,
+\[\int_0^L\sin k_nx\,dx=\left[-\frac{\cos k_nx}{k_n}\right]_0^L=\frac{1-(-1)^n}{k_n}.\]
+Nhân $2/L$ cho hệ số của hằng $1$ là $2(1-(-1)^n)/(n\pi)$; hằng $-1$ đổi dấu. Khi chiếu vận tốc, còn chia $\omega_n$ trong hệ số $\sin\omega_nt$; khi chiếu li độ, hệ số $\cos\omega_nt$ giữ nguyên.
+
+%ID BT_3_2_3_19
+\textbf{Bước 1. Đọc dữ liệu và chọn phản xạ.} Đoạn $(0,\pi)$, $a=2$, $u_x(0,t)=u_x(\pi,t)=1$, $f=x$, $g=x$.
+
+\textbf{Bước 2. Tính từng nhánh và nối nguyên hàm.} Lấy $b=x$. Phần $w=u-x$ có li độ $0$, vận tốc $x$ và biên Neumann không. Mở rộng chẵn vận tốc thành tam giác $q(s)=\pi-|\operatorname{mod}(s,2\pi)-\pi|$. Tích phân từng nhánh cho $H$ ở dưới, mỗi nửa chu kỳ góp $\pi^2/2$.
+\[f_e(s)=0,\qquad H(s)=k\pi^2/2+J(r),\ r=s-k\pi,\ k=\lfloor s/\pi\rfloor;\ J(r)=r^2/2\ (k\text{ chẵn}),\ \pi r-r^2/2\ (k\text{ lẻ}).\]
+Ở đây $\operatorname{clip}(s,p,q)=\min(q,\max(p,s))$; $\operatorname{mod}(s,L)\in[0,L)$ kể cả với $s<0$.
+
+\textbf{Bước 3. Xác định hai sóng chạy và ghép nghiệm.} $A=f_e/2-H/(2a)$, $B=f_e/2+H/(2a)$. Thay hai cận:
+\[u(x,t)=\frac{f_e(x-2t)+f_e(x+2t)}2+\frac{H(x+2t)-H(x-2t)}{4}+x.\]
+
+\textbf{Bước 4. Trả lời các yêu cầu và kiểm tra.} Trung bình vận tốc là $\pi/2$, sinh hạng $\pi t/2$. Các mode còn lại có $B_n=2(( -1)^n-1)/(\pi n^2)$, chia $2n$ cho hệ số thời gian. Nghiệm không tuần hoàn; tương thích cấp hai ở góc không đúng vì $g'=1$ nhưng đạo hàm thời gian của biên bằng $0$.
+
+Chọn $v=x$. $w=u-x$ có biên Neumann 0, dữ liệu $w=0,w_t=x$. Nghiệm $u=x+\pi t/2-(2/\pi)\sum_{n\text{ lẻ}}\sin(2nt)\cos(nx)/n^3$. Có mode tuyến tính nên không tuần hoàn.
+
+Tại $t=0$, hiệu nguyên hàm bằng $0$ và đạo hàm thời gian cho $H'(x)=g(x)$ trong miền dữ liệu; half-sum cho đúng li độ sau khi cộng hàm nâng biên. Mỗi hạng là sóng của $x\pm at$, nên thỏa PDE ngoài các mặt gãy và theo nghĩa phân phối trên toàn miền. Đồ thị hai sóng ban đầu và các lát cắt thời gian được tính trực tiếp từ các nhánh trên.
+
+\textbf{Chi tiết hệ số cos của dữ liệu $x$.} Trên $(0,\pi)$, trung bình là $A_0=\pi^{-1}\int_0^\pi x\,dx=\pi/2$. Với $n\ge1$,
+\[\int_0^\pi x\cos nx\,dx=\left[\frac{x\sin nx}{n}\right]_0^\pi-\frac1n\int_0^\pi\sin nx\,dx
+=\frac{(-1)^n-1}{n^2}.\]
+Nhân $2/\pi$ cho $2((-1)^n-1)/(\pi n^2)$. Nếu dữ liệu này là li độ thì giữ hệ số với $\cos2nt$; nếu là vận tốc thì chia $2n$ và nhân $\sin2nt$. Vì $n$ lẻ có $(-1)^n-1=-2$, hệ số lần lượt là $-4/(\pi n^2)$ và $-2/(\pi n^3)$.
+
+%ID BT_3_2_3_20
+\textbf{Bước 1. Đọc dữ liệu và chọn phản xạ.} Đoạn $(0,\pi)$, Dirichlet hai đầu, $a=2$, $f=0$, vận tốc $g$; minh họa $g=\min(x,\pi-x)$.
+
+\textbf{Bước 2. Tính từng nhánh và nối nguyên hàm.} Với $g$ tổng quát, mở rộng lẻ chu kỳ $2\pi$. Với tam giác cụ thể, tích phân lần lượt trên $[0,\pi/2]$ và $[\pi/2,\pi]$, rồi phản xạ nguyên hàm chẵn và tuần hoàn, được $H$ dưới đây.
+\[f_e(s)=0,\qquad H(s)=J(r),\quad r=\operatorname{mod}(s,2\pi).\]
+\[J(r)=\begin{cases}r^2/2&0\le r\le\pi/2,\\\pi r-r^2/2-\pi^2/4&\pi/2<r\le\pi,\\J(2\pi-r)&\pi<r<2\pi.\end{cases}\]
+Ở đây $\operatorname{clip}(s,p,q)=\min(q,\max(p,s))$; $\operatorname{mod}(s,L)\in[0,L)$ kể cả với $s<0$.
+
+\textbf{Bước 3. Xác định hai sóng chạy và ghép nghiệm.} $A=f_e/2-H/(2a)$, $B=f_e/2+H/(2a)$. Thay hai cận:
+\[u(x,t)=\frac{f_e(x-2t)+f_e(x+2t)}2+\frac{H(x+2t)-H(x-2t)}{4}.\]
+
+\textbf{Bước 4. Trả lời các yêu cầu và kiểm tra.} Lấy đạo hàm ở biên: $u_x(0,t)=\widetilde g(2t)/2$. Đổi biến $s=2t$ cho $\int_0^{\pi/2}|u_x(0,t)|^2dt=\frac18\int_0^\pi g(s)^2ds$. Tích phân trên thời gian lớn hơn chỉ thêm số không âm, chứng minh yêu cầu với $T\ge\pi/2$. Hai tích phân của tam giác cho $B_n=4\sin(n\pi/2)/(\pi n^2)$, nên chia $2n$ cho chuỗi.
+
+Mô hình biên cố định $u_{tt}=4u_{xx}$ trên $(0,\pi)$, $f=0,u_t=g$. $u_x(0,t)=\widetilde g(2t)/2$. Do đó $\int_0^{\pi/2}|u_x(0,t)|^2dt=\frac18\int_0^\pi g^2$, suy bất đẳng thức với $T\ge\pi/2$. Với $g=\min(x,\pi-x)$, $u=\sum_{n\ge1}2\sin(n\pi/2)\sin(2nt)\sin(nx)/(\pi n^3)$.
+
+Tại $t=0$, hiệu nguyên hàm bằng $0$ và đạo hàm thời gian cho $H'(x)=g(x)$ trong miền dữ liệu; half-sum cho đúng li độ. Mỗi hạng là sóng của $x\pm at$, nên thỏa PDE ngoài các mặt gãy và theo nghĩa phân phối trên toàn miền. Đồ thị hai sóng ban đầu và các lát cắt thời gian được tính trực tiếp từ các nhánh trên.
+
+\textbf{Chi tiết hệ số của tam giác.} Với $f(x)=\min(x,\pi-x)$, chia tại $b=\pi/2$. Đổi $y=\pi-x$ ở nửa sau cho
+\[\int_0^\pi f(x)\sin nx\,dx=(1+(-1)^{n+1})\int_0^b x\sin nx\,dx.\]
+Tích phân cuối bằng $[-x\cos nx/n+\sin nx/n^2]_0^b=-b\cos(nb)/n+\sin(nb)/n^2$. Nếu $n$ chẵn, hệ số trước tích phân bằng $0$; nếu $n$ lẻ, $\cos(nb)=0$. Nhân $2/\pi$ được $4\sin(n\pi/2)/(\pi n^2)$.
+
+%ID BT_3_2_3_21
+\textbf{Bước 1. Đọc dữ liệu và chọn phản xạ.} Đoạn $(0,1)$, Dirichlet tại $0$, Neumann tại $1$, $a=1$, $f=0$, vận tốc $g$; minh họa $g=1$.
+
+\textbf{Bước 2. Tính từng nhánh và nối nguyên hàm.} Mở rộng lẻ tại $0$ và chẵn tại $1$ cho chu kỳ $4$, đổi dấu sau $2$. Với $g=1$, vận tốc mở rộng là $1$ trên $(0,2)$, $-1$ trên $(2,4)$. Nguyên hàm có nhánh $s$ rồi $4-s$; thêm hằng số không đổi nghiệm.
+\[f_e(s)=0,\qquad H(s)=1-|\operatorname{mod}(s,4)-2|.\]
+Ở đây $\operatorname{clip}(s,p,q)=\min(q,\max(p,s))$; $\operatorname{mod}(s,L)\in[0,L)$ kể cả với $s<0$.
+
+\textbf{Bước 3. Xác định hai sóng chạy và ghép nghiệm.} $A=f_e/2-H/(2a)$, $B=f_e/2+H/(2a)$. Thay hai cận:
+\[u(x,t)=\frac{f_e(x-1t)+f_e(x+1t)}2+\frac{H(x+1t)-H(x-1t)}{2}.\]
+
+\textbf{Bước 4. Trả lời các yêu cầu và kiểm tra.} Với $g$ tổng quát, $u_x(0,t)=\widetilde g(t)=g(t)$ khi $0<t<1$. Do đó $\int_0^1g^2=\int_0^1|u_x(0,t)|^2dt\le\int_0^T|u_x(0,t)|^2dt$ với $T\ge1$. Với $g=1$, công thức dưới có chu kỳ $4$ và đổi dấu sau $2$; không có chu kỳ $2$ cho nghiệm khác không.
+
+Tại $t=0$, hiệu nguyên hàm bằng $0$ và đạo hàm thời gian cho $H'(x)=g(x)$ trong miền dữ liệu; half-sum cho đúng li độ. Mỗi hạng là sóng của $x\pm at$, nên thỏa PDE ngoài các mặt gãy và theo nghĩa phân phối trên toàn miền. Đồ thị hai sóng ban đầu và các lát cắt thời gian được tính trực tiếp từ các nhánh trên.
+
+%ID BT_3_2_3_22
+\textbf{Bước 1. Đọc dữ liệu và chọn phản xạ.} Đoạn $(0,1)$, Dirichlet hai đầu, $a=1$, $g=0$, $f=4x$ trên $[0,1/4]$, $2-4x$ trên $[1/4,1/2]$, $0$ trên $[1/2,1]$.
+
+\textbf{Bước 2. Tính từng nhánh và nối nguyên hàm.} Mở rộng lẻ tại hai đầu và chu kỳ $2$. Vì vận tốc bằng không, hai sóng chạy đều bằng một nửa $f_e$; không cần tích phân. Công thức này mô tả cả phản xạ tại các thời gian lớn hơn.
+\[f_e(s)=\widetilde f\text{ là thác triển lẻ chu kỳ }2\text{ của tam giác trong đề},\qquad H(s)=0.\]
+Ở đây $\operatorname{clip}(s,p,q)=\min(q,\max(p,s))$; $\operatorname{mod}(s,L)\in[0,L)$ kể cả với $s<0$.
+
+\textbf{Bước 3. Xác định hai sóng chạy và ghép nghiệm.} $A=f_e/2-H/(2a)$, $B=f_e/2+H/(2a)$. Thay hai cận:
+\[u(x,t)=\frac{f_e(x-1t)+f_e(x+1t)}2+\frac{H(x+1t)-H(x-1t)}{2}.\]
+
+\textbf{Bước 4. Trả lời các yêu cầu và kiểm tra.} Với $1/2<x<1$, trước $t=x-1/2$, cả hai cận đều ở vùng dữ liệu không hoặc chưa có sóng phản xạ, nên $u=0$. Ngay sau thời điểm ấy, cận trái vào phần tam giác dương, nên $u\ne0$. Đó là thời điểm đến (giá trị đúng tại thời điểm đến vẫn $0$). Suốt $0\le t\le1/4$, các điểm cân bằng là $[3/4,1]$ cùng đầu cố định $0$. Với tốc độ $c$, thời điểm đến là $(x-1/2)/c$; vùng cân bằng suốt khoảng thời gian này là $[1/2+c/4,1]$ nếu cận không vượt $1$, cộng hai đầu cố định. Nếu $c\ge2$ chỉ còn hai đầu. Nếu đồng thời đổi khoảng thời gian thành $[0,1/(4c)]$, vùng giữ nguyên là $[3/4,1]$ cùng $0$.
+
+Tại $t=0$, hiệu nguyên hàm bằng $0$ và đạo hàm thời gian cho $H'(x)=g(x)$ trong miền dữ liệu; half-sum cho đúng li độ. Mỗi hạng là sóng của $x\pm at$, nên thỏa PDE ngoài các mặt gãy và theo nghĩa phân phối trên toàn miền. Đồ thị hai sóng ban đầu và các lát cắt thời gian được tính trực tiếp từ các nhánh trên.

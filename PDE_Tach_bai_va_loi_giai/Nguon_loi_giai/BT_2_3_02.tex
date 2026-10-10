@@ -1,0 +1,166 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{fontspec,amsmath,amssymb,graphicx}
+\usepackage[margin=18mm]{geometry}
+\setmainfont{Times New Roman}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\allowdisplaybreaks
+\sloppy
+\emergencystretch=2em
+\begin{document}
+\section*{BT\_2\_3\_02 — Lời giải bổ sung}
+\subsection*{Kiến thức và trình tự giải}
+\textbf{Mục tiêu.} Phân loại và đưa phương trình tuyến tính cấp hai về dạng chính tắc, có giữ đầy đủ các hạng cấp thấp.
+
+\textbf{Bước 1 — Chuẩn hóa hệ số.} Viết
+
+
+\[
+A u_{xx}+2B u_{xy}+C u_{yy}+D u_x+E u_y+K u=f.
+\]
+
+
+Hệ số $B$ bằng một nửa hệ số in trước $u_{xy}$. Tính $\delta=B^2-AC$: dương là hyperbolic, âm là elliptic, bằng $0$ là parabolic nếu phần cấp hai còn khác $0$. Phải xét theo từng miền khi hệ số thay đổi hoặc suy biến.
+
+\textbf{Bước 2 — Chọn biến mới.} Với hyperbolic, giải $A(dy)^2-2Bdxdy+C(dx)^2=0$ để tìm hai bất biến $\xi,\eta$ của hai họ đặc trưng. Với parabolic, chỉ có một họ: lấy bất biến $s$ và một biến $z$ độc lập. Với elliptic, không có hai họ đặc trưng thực; hoàn thành bình phương của phần chính để loại hạng hỗn hợp rồi cân bằng hai hệ số dương. Mọi trường hợp đều kiểm tra Jacobian khác $0$.
+
+\textbf{Bước 3 — Viết công thức thay đạo hàm.} Nếu $u(x,y)=v(\xi,\eta)$ thì
+
+
+\[
+\begin{aligned}
+u_x&=\xi_xv_\xi+\eta_xv_\eta,\\
+u_{xx}&=\xi_x^2v_{\xi\xi}+2\xi_x\eta_xv_{\xi\eta}
++\eta_x^2v_{\eta\eta}+\xi_{xx}v_\xi+\eta_{xx}v_\eta.
+\end{aligned}
+\]
+
+
+Làm tương tự cho $u_{xy},u_{yy}$. Có thể dùng toán tử $\partial_x,\partial_y$ để rút ngắn, nhưng phải nêu các đạo hàm của hệ số nếu đổi biến phi tuyến.
+
+\textbf{Bước 4 — Gom hệ số và chia hợp lệ.} Hệ số mới của $v_{\xi\xi}$ là $A\xi_x^2+2B\xi_x\xi_y+C\xi_y^2$; hệ số của $v_{\xi\eta}$ là $2[A\xi_x\eta_x+B(\xi_x\eta_y+\xi_y\eta_x)+C\xi_y\eta_y]$. Hệ số mới của $v_\xi$ là $A\xi_{xx}+2B\xi_{xy}+C\xi_{yy}+D\xi_x+E\xi_y$. Chỉ chia cho hệ số khác $0$ trên miền đang xét.
+
+\textbf{Bước 5 — Với ba biến.} Lập ma trận đối xứng $M$ của phần cấp hai; hệ số hỗn hợp được chia đôi. Dùng hoàn thành bình phương để tìm số hướng dương, âm và bằng $0$. Nếu $\xi=T x$, ma trận mới là $TMT^T$. Cho rõ ma trận $T$ và kiểm tra nó khả nghịch; chỉ ghi dấu của dạng toàn phương chưa đủ để thực hiện phép đổi biến.
+
+\textbf{Chi tiết gom hệ số sau đổi biến.} Với $Lu=Au_{xx}+2Bu_{xy}+Cu_{yy}+Du_x+Eu_y+Ku$, tính riêng
+
+
+\[
+\begin{aligned}
+a&=A\xi_x^2+2B\xi_x\xi_y+C\xi_y^2,\\
+2b&=2[A\xi_x\eta_x+B(\xi_x\eta_y+\xi_y\eta_x)+C\xi_y\eta_y],\\
+c&=A\eta_x^2+2B\eta_x\eta_y+C\eta_y^2,\\
+d&=A\xi_{xx}+2B\xi_{xy}+C\xi_{yy}+D\xi_x+E\xi_y,\\
+e&=A\eta_{xx}+2B\eta_{xy}+C\eta_{yy}+D\eta_x+E\eta_y.
+\end{aligned}
+\]
+
+
+Khi đó $Lu=av_{\xi\xi}+2bv_{\xi\eta}+cv_{\eta\eta}+dv_\xi+ev_\eta+Kv$. Trong lời giải từng ý, thế các số hoặc hàm hệ số vào từng dòng trước khi rút gọn. Với ba biến, tính $TM$ trước, rồi lấy tích vô hướng mỗi hàng của $TM$ với mỗi hàng của $T$ để có $TMT^T$.
+
+\textbf{Lưu ý riêng của bài.} Các đường $\sin x=0$ hoặc $x=0$ có thể đổi loại hoặc làm phép đổi biến mất khả nghịch. Phân loại tại các đường ấy riêng; dạng chính tắc elliptic chỉ viết trên từng miền mở không chứa chúng.
+\subsection*{Lời giải áp dụng cho bài}
+\textbf{Quy ước.} Viết hệ số hỗn hợp là $2B$, tính $\delta=B^2-AC$; đặt $u=v(\xi,\eta)$. Với các đổi biến $\xi=h(x)$, $\eta=y+k(x)$, công thức chung là
+\begin{align*}
+u_x&=h'v_\xi+k'v_\eta,\quad u_y=v_\eta,\\
+u_{xx}&=h'^2v_{\xi\xi}+2h'k'v_{\xi\eta}+k'^2v_{\eta\eta}+h''v_\xi+k''v_\eta,\\
+u_{xy}&=h'v_{\xi\eta}+k'v_{\eta\eta},\quad u_{yy}=v_{\eta\eta}.
+\end{align*}
+Vì vậy chỉ cần nêu $h',k'$ và gom hệ số như dưới đây. Trong các dạng mới, $x,y$ được hiểu là hàm của $\xi,\eta$ trên miền đổi biến đã chọn.
+
+\textbf{(i.a)} Phần chính $u_{xx}+4u_{xy}+5u_{yy}$ có $\delta=4-5=-1$. Chọn $\xi=x$, $\eta=y-2x$, $J=1$. $h'=1$, $k'=-2$ cho phần chính $v_{\xi\xi}+v_{\eta\eta}$. Đọc hạng cuối theo dạng $xu_x-u$, kết quả
+\[v_{\xi\xi}+v_{\eta\eta}+\xi v_\xi-2\xi v_\eta-v=0.\]
+\textit{Lưu ý bản in: cuối dòng (a) là chuỗi dấu $=u=0$. Nếu hiểu đúng từng dấu bằng thì còn yêu cầu $u=0$, chỉ có nghiệm không; dạng chính tắc trên dùng cách đọc phương trình $u_{xx}+4u_{xy}+5u_{yy}+xu_x=u$. Việc phân loại phần cấp hai giống nhau trong cả hai cách đọc.}
+
+\textbf{(i.b)} $\delta=16x^2-(\sin^2x+16x^2)=-\sin^2x$. Elliptic trên mỗi miền $\sin x\ne0$, parabolic tại $x\in\pi\mathbb Z$. Chọn $\xi=-\cos x$, $\eta=y-2x^2$: $h'=\sin x$, $h''=\cos x$, $k'=-4x$, $k''=-4$, $J=\sin x$. Hệ số hỗn hợp triệt tiêu, hệ số hai đạo hàm thuần đều là $\sin^2x$:
+\[\sin^2x(v_{\xi\xi}+v_{\eta\eta})+(\cos x+\sin^2x)v_\xi-(4+4x\sin x)v_\eta-v=0.\]
+Có thể chia cho $\sin^2x$ chỉ trên các miền vừa nêu.
+
+\textbf{(i.c)} $\delta=\sin^2x-(\sin^2x+4x^2)=-4x^2$. Chọn $\xi=x^2$, $\eta=y+\cos x$: $h'=2x$, $h''=2$, $k'=-\sin x$, $k''=-\cos x$, $J=2x$. Thu được
+\[4x^2(v_{\xi\xi}+v_{\eta\eta})+(2+2x^2)v_\xi-(\cos x+x\sin x+1)v_\eta=0.\]
+Elliptic trên $x>0$ và $x<0$; trên $x=0$ phần chính chỉ còn $u_{xx}$, nên parabolic. Không dùng $x^2$ như tọa độ khả nghịch qua $x=0$.
+
+\textbf{(i.d)} Đặt $a(x)=9\sin^2x+16x^2$, $a'=18\sin x\cos x+32x$. $\delta=16x^2-a=-9\sin^2x$. Trên từng khoảng $\sin x\ne0$, chọn
+\[\xi=\int_{x_*}^x\frac{3\sin t}{a(t)}dt,\qquad
+\eta=y-\int_{x_*}^x\frac{4t}{a(t)}dt.\]
+Đặt $h=\xi_x=3\sin x/a$, $k=\eta_x=-4x/a$. Hệ số hỗn hợp $2h(ak+4x)=0$; hai hệ số thuần đều $9\sin^2x/a$. Hệ số cấp một tính rõ:
+\[a h'+h=3\cos x-\frac{3\sin x\,a'}a+\frac{3\sin x}a,\qquad
+ak'+k=-4+\frac{4xa'}a-\frac{4x}a.\]
+Dạng chính tắc:
+\[\frac{9\sin^2x}a(v_{\xi\xi}+v_{\eta\eta})+(ah'+h)v_\xi+(ak'+k)v_\eta-v=0.\]
+Ở ý này hệ số của $u_x$ trong đề là $1$, vì vậy không nhân thêm $x$ vào hai hệ số cấp một.
+Jacobian $h\ne0$. Tại $x\in\pi\mathbb Z\setminus\{0\}$, phần chính là $(4x\partial_x+\partial_y)^2$ về các hạng cấp hai, hạng một không được tự lấy từ bình phương này; đó là parabolic. Tại $x=0$, phần chính $u_{yy}$ vẫn khác $0$, cũng parabolic.
+
+\textbf{(i.e)} $\delta=0$ mọi nơi. Đặt $\xi=x$, $\eta=y-\cos x$, $k'=\sin x$, $k''=\cos x$, $J=1$. Khi thế vào phần chính $u_{xx}-2\sin x\,u_{xy}+\sin^2x\,u_{yy}$, còn $v_{\xi\xi}+\cos x\,v_\eta$. Dạng parabolic là
+\[v_{\xi\xi}+y v_\xi+(\cos x+y\sin x-x)v_\eta=0.\]
+
+\textbf{(i.f)} $\delta=\sin^2x+\cos^2x+3=4>0$. Đặc trưng $dy/dx=\sin x\pm2$ cho $y+\cos x\mp2x=\mathrm{const}$. Chọn $\xi=y+\cos x-2x$, $\eta=y+\cos x+2x$, $J=-4$. Tính $\xi_{xx}=\eta_{xx}=-\cos x$, $\xi_y=\eta_y=1$; phần chính thuần triệt tiêu, hỗn hợp bằng $-16v_{\xi\eta}$. Do đó
+\[-16v_{\xi\eta}+(x-\cos x)(v_\xi+v_\eta)=xy.\]
+
+\textbf{(ii) Ba biến: đưa về chính tắc bằng ma trận.} Gọi $M$ là ma trận đối xứng của phần chính. Nếu dạng toàn phương $\lambda^TM\lambda=\sum_j\varepsilon_j(b_j\cdot\lambda)^2$ và $B$ có các hàng $b_j$, thì $M=B^T\operatorname{diag}(\varepsilon_j)B$. Chọn tọa độ mới $\xi=B^{-T}(x,y,z)^T$ để ma trận mới đúng bằng $\operatorname{diag}(\varepsilon_j)$.
+
+\textbf{(ii.a)} Hoàn thành bình phương:
+\[Q=(\lambda_x+\lambda_y+\lambda_z)^2+(\lambda_y-\lambda_z)^2+\lambda_z^2.\]
+Ba dấu dương: elliptic. Chọn $\xi=x$, $\eta=y-x$, $\zeta=z+y-2x$; định thức $1$. Dạng chính tắc $v_{\xi\xi}+v_{\eta\eta}+v_{\zeta\zeta}=0$.
+
+\textbf{(ii.b)}
+\[Q=(\lambda_x+2\lambda_y+6\lambda_z)^2+3\lambda_y^2-3(\lambda_y+3\lambda_z)^2.\]
+Hai dấu dương, một dấu âm: hyperbolic. Chọn
+\[\xi=x,\quad\eta=\frac{3y-z}{3\sqrt3},\quad\zeta=\frac{z-6x}{3\sqrt3}.\]
+Định thức $1/9\ne0$. Dạng chính tắc $v_{\xi\xi}+v_{\eta\eta}-v_{\zeta\zeta}=0$.
+
+\textbf{(ii.c)}
+\[Q=3(\lambda_x-\lambda_y/3+\lambda_z/3)^2+\frac53(\lambda_y+7\lambda_z/5)^2-\frac35\lambda_z^2.\]
+Hai dấu dương, một dấu âm: hyperbolic. Chọn
+\[\xi=\frac{x}{\sqrt3},\quad\eta=\sqrt{\frac35}\left(y+\frac x3\right),\quad
+\zeta=\sqrt{\frac53}\left(z-\frac75y-\frac45x\right).\]
+Định thức $1/\sqrt3\ne0$. Dạng chính tắc cũng là $v_{\xi\xi}+v_{\eta\eta}-v_{\zeta\zeta}=0$. Với cả ba ý, có thể kiểm tra trực tiếp bằng phép nhân $TMT^T$; các hạng hỗn hợp đều bằng $0$.
+
+\textbf{Chi tiết gom hệ số cho sáu phương trình hai biến.} Với $Lu=Au_{xx}+2Bu_{xy}+Cu_{yy}+Du_x+Eu_y+Ku$, phép đổi $\xi=h(x),\eta=y+k(x)$ cho
+\[\begin{aligned}
+L u={}&Ah'^2v_{\xi\xi}+2h'(Ak'+B)v_{\xi\eta}
++(Ak'^2+2Bk'+C)v_{\eta\eta}\\
+&+(Ah''+Dh')v_\xi+(Ak''+Dk'+E)v_\eta+Kv.
+\end{aligned}\]
+Các hệ số dưới đây được tính trước khi chia bất kỳ biểu thức nào:
+
+(a) $A=1,B=2,C=5,D=x$: hỗn hợp $2(1)(-2+2)=0$; thuần theo $\eta$ là $4-8+5=1$. Cấp một: $0+x=x$, $0-2x=-2x$.
+
+(b) $A=1,B=4x,C=\sin^2x+16x^2,D=\sin x$: hỗn hợp $2\sin x(-4x+4x)=0$; thuần theo $\eta$ là $16x^2-32x^2+\sin^2x+16x^2=\sin^2x$. Cấp một: $\cos x+\sin x\sin x=\cos x+\sin^2x$, $-4+\sin x(-4x)=-4-4x\sin x$.
+
+(c) $A=1,B=\sin x,C=\sin^2x+4x^2,D=x,E=-1$: hỗn hợp $4x(-\sin x+\sin x)=0$; thuần theo $\eta$ là $\sin^2x-2\sin^2x+\sin^2x+4x^2=4x^2$. Cấp một: $2+x(2x)=2+2x^2$, $-\cos x-x\sin x-1$.
+
+(d) Giữ ký hiệu $h=\xi_x,k=\eta_x$ của ý này: $Ah^2=a(3\sin x/a)^2=9\sin^2x/a$; hỗn hợp $2h(ak+4x)=0$; thuần theo $\eta$ là
+\[\frac{16x^2}a-\frac{32x^2}a+1=\frac{a-16x^2}a=\frac{9\sin^2x}a.\]
+Đạo hàm thương $h'=3\cos x/a-3\sin x\,a'/a^2$, $k'=-4/a+4xa'/a^2$ rồi nhân $a$ và cộng $h,k$ cho hai hệ số cấp một đã ghi.
+
+(e) $h'=1,k'=\sin x,A=1,B=-\sin x,C=\sin^2x,D=y,E=-x$: hỗn hợp $2(\sin x-\sin x)=0$, thuần theo $\eta$ là $\sin^2x-2\sin^2x+\sin^2x=0$. Cấp một $y$, $\cos x+y\sin x-x$.
+
+(f) Đặt $p=-\sin x-2,q=-\sin x+2$. Ba đạo hàm là
+\[u_{xx}=p^2v_{\xi\xi}+2pqv_{\xi\eta}+q^2v_{\eta\eta}-\cos x(v_\xi+v_\eta),\quad
+u_{xy}=pv_{\xi\xi}+(p+q)v_{\xi\eta}+qv_{\eta\eta},\quad
+u_{yy}=v_{\xi\xi}+2v_{\xi\eta}+v_{\eta\eta}.\]
+Với $B=\sin x,C=\sin^2x-4$, các hệ số thuần là $(p+\sin x)^2-4=0$ và $(q+\sin x)^2-4=0$; hỗn hợp là
+\[2[pq+\sin x(p+q)+\sin^2x-4]
+=2[(\sin^2x-4)-2\sin^2x+\sin^2x-4]=-16.\]
+Hạng $xu_y=x(v_\xi+v_\eta)$ cộng vào hệ số hai đạo hàm cấp một, cho $(x-\cos x)(v_\xi+v_\eta)$.
+
+\textbf{Chi tiết nhân ma trận cho ba phương trình ba biến.} Gọi $T$ là ma trận các hàng gradient tọa độ mới, $N=TMT^T$.
+
+(ii.a)
+\[M=\begin{pmatrix}1&1&1\\1&2&0\\1&0&3\end{pmatrix},\quad
+T=\begin{pmatrix}1&0&0\\-1&1&0\\-2&1&1\end{pmatrix},\quad
+TM=\begin{pmatrix}1&1&1\\0&1&-1\\0&0&1\end{pmatrix}.\]
+Nhân từng hàng của $TM$ với ba hàng của $T$: hàng đầu cho $1,-1+1,-2+1+1$; hàng hai cho $0,1,1-1$; hàng ba cho $0,0,1$. Vậy $N=\operatorname{diag}(1,1,1)$.
+
+(ii.b) Đặt $b=1/(3\sqrt3)$, nên
+\[M=\begin{pmatrix}1&2&6\\2&4&3\\6&3&9\end{pmatrix},\quad
+T=\begin{pmatrix}1&0&0\\0&3b&-b\\-6b&0&b\end{pmatrix},\quad
+TM=\begin{pmatrix}1&2&6\\0&9b&0\\0&-9b&-27b\end{pmatrix}.\]
+Các tích trên đường chéo là $1$, $27b^2=1$, $-27b^2=-1$; ngoài đường chéo là $6b-6b=0$, $0$, $-27b^2+27b^2=0$. Vậy $N=\operatorname{diag}(1,1,-1)$.
+
+(ii.c) Đặt $a=1/\sqrt3,b=\sqrt{3/5},c=\sqrt{5/3}$. Khi đó
+\[M=\begin{pmatrix}3&-1&1\\-1&2&2\\1&2&3\end{pmatrix},\quad
+T=\begin{pmatrix}a&0&0\\b/3&b&0\\-4c/5&-7c/5&c\end{pmatrix},\quad
+TM=\begin{pmatrix}3a&-a&a\\0&5b/3&7b/3\\0&0&-3c/5\end{pmatrix}.\]
+Đường chéo là $3a^2=1,5b^2/3=1,-3c^2/5=-1$. Hai tích hàng đầu với hàng sau là $ab-ab=0$ và $(-12+7+5)ac/5=0$; tích hàng hai với hàng ba là $-7bc/3+7bc/3=0$. Vậy $N=\operatorname{diag}(1,1,-1)$, xác nhận mọi hệ số hỗn hợp bằng $0$.\end{document}

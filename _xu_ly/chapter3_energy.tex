@@ -1,0 +1,123 @@
+%ID VD_3_5_2_01
+\textbf{Bước 1. Năng lượng của sóng có cản.} PDE là $u_{tt}+u_t=4u_{xx}$, biên cố định trên $(0,\pi)$. Với $E=\frac12\int(u_t^2+4u_x^2)$, tích phân từng phần cho $E'=4[u_tu_x]_0^\pi-\int u_t^2=-\int u_t^2\le0$. Do vậy năng lượng giảm; hiệu hai nghiệm cùng dữ liệu có năng lượng đầu $0$, chứng minh duy nhất.
+
+\textbf{Bước 2. Tách biến và bỏ cản bằng đổi ẩn.} Mode $\sin nx$ có $T_n''+T_n'+4n^2T_n=0$. Đặt $T_n=e^{-t/2}Y_n$, được $Y_n''+(4n^2-1/4)Y_n=0$, $Y_n(0)=A_n$, $Y_n'(0)=B_n+A_n/2$. Đặt $\omega_n=\sqrt{4n^2-1/4}$:
+\[T_n=e^{-t/2}[A_n\cos\omega_nt+(B_n+A_n/2)\sin\omega_nt/\omega_n].\]
+Hạng $A_n/2$ cần để bù đạo hàm của $e^{-t/2}$.
+
+\textbf{Bước 3. Dữ liệu cụ thể.} $f=\sin^3x$ cho $A_1=3/4$, $A_3=-1/4$, các hệ số khác $0$. $g=1$ cho $B_n=2(1-(-1)^n)/(\pi n)$. Nghiệm $u=\sum_{n\ge1}T_n\sin nx$ với các hệ số này.
+
+\textbf{Bước 4. Kiểm tra.} Tại $t=0$, $T_n=A_n$, $T_n'=B_n$, đúng cả hai dữ liệu. Biên đúng theo sine và ODE chứng minh PDE. Tuy nhiên $g(0)=g(\pi)=1$ trái biên cố định, nên công thức là nghiệm năng lượng, có mặt gãy từ góc; không có nghiệm $C^1$ trên toàn bao đóng. Đẳng thức năng lượng vẫn đúng trong lớp năng lượng bằng xấp xỉ dữ liệu.
+%ID VD_3_5_2_02
+\textbf{Bước 1. Năng lượng đúng của dầm.} $u_{tt}=-a^2u_{xxxx}$, hai đầu ngàm $u=u_x=0$. Nhân với $u_t$ và tích phân hai lần:
+\[E=\tfrac12\int_0^L(u_t^2+a^2u_{xx}^2)dx,\qquad E'=a^2[u_{tx}u_{xx}-u_tu_{xxx}]_0^L=0.\]
+Do $u_t=u_{tx}=0$ ở hai đầu. Năng lượng có $u_x^2$ trong đề không phù hợp toán tử cấp bốn; cần sửa thành $u_{xx}^2$. Với hiệu hai nghiệm, $E=0$ suy $u_t=u_{xx}=0$; hàm affine còn lại bị biên ngàm và dữ liệu đầu buộc bằng $0$, nên duy nhất.
+
+\textbf{Bước 2. Trị riêng dương và trực giao.} $X''''=\lambda X$, $X=X'=0$ ở hai đầu. Tích phân hai lần cho $\lambda\int X^2=\int(X'')^2$. Nếu $\lambda=0$, $X$ affine rồi biên loại hết; vậy $\lambda>0$. Trừ tích phân hai phương trình cho $(\lambda_m-\lambda_n)\int X_mX_n=0$ vì hạng biên $[X_m'''X_n-X_m''X_n'-X_n'''X_m+X_n''X_m']$ bằng $0$.
+
+\textbf{Bước 3. Giải đủ bốn điều kiện.} Đặt $\lambda=k^4$, $\beta=kL$. Hai điều kiện trái cho $X=A(\cosh kx-\cos kx)+B(\sinh kx-\sin kx)$. Hai điều kiện phải tạo định thức $2(1-\cosh\beta\cos\beta)=0$, nên $\cosh\beta\cos\beta=1$. Chỉ lấy nghiệm dương; $\beta=0$ là nghiệm giả của cơ sở suy biến. Nghiệm đầu $\beta_1\approx4.730040745$. Chọn
+\[X_n=\cosh k_nx-\cos k_nx-\sigma_n(\sinh k_nx-\sin k_nx),\quad
+\sigma_n=\frac{\cosh\beta_n-\cos\beta_n}{\sinh\beta_n-\sin\beta_n}.\]
+Phương trình đặc trưng bảo đảm cả $X_n(L)=X_n'(L)=0$.
+
+\textbf{Bước 4. Chiếu dữ liệu và ghép.} $A_n=\int fX_n/\int X_n^2$, $B_n=\int gX_n/\int X_n^2$, tần số $\omega_n=ak_n^2$. Nghiệm $u=\sum(A_n\cos\omega_nt+B_n\sin\omega_nt/\omega_n)X_n$. Kiểm tra bốn biên bằng hàm riêng, hai dữ liệu bằng hệ số; không dùng tần số $ak_n$ của phương trình sóng cấp hai. Với dữ liệu đủ trơn và tương thích thu nghiệm cổ điển; với dữ liệu năng lượng hiểu chuỗi trong không gian thích hợp.
+%ID BT_3_5_3_01
+\textbf{Bước 1. Sửa khẳng định bảo toàn và chứng minh duy nhất.} Phương trình (3.5.46) là $u_{tt}+u_t=a^2u_{xx}$. Với $I=\frac12\int(u_t^2+a^2u_x^2)$, $I'=a^2[u_tu_x]_0^L-\int u_t^2$. Ở biên Dirichlet, $u_t=0$; ở biên Neumann, $u_x=0$. Cả ba kiểu biên đều cho $I'=-\int u_t^2$, không bảo toàn nói chung. Hiệu hai nghiệm có $I(0)=0$, suy $u_t=u_x=0$, rồi dữ liệu đầu buộc hằng số bằng $0$.
+
+\textbf{Bước 2. Ba bài trị riêng.} Tách $X''+\lambda X=0$. Tích phân cho $\lambda\int X^2=\int(X')^2$; hai kiểu hỗn hợp loại mode hằng, còn Neumann hai đầu giữ nó. Trừ hai phương trình chứng minh trực giao như mục 3.3. Cụ thể:
+
+(a) $X(0)=X'(L)=0$: $X_n=\sin k_nx$, $k_n=(n+1/2)\pi/L$, $n\ge0$.
+
+(b) $X'(0)=X(L)=0$: cùng $k_n$, $X_n=\cos k_nx$.
+
+(c) $X'(0)=X'(L)=0$: $X_0=1$, $X_n=\cos(n\pi x/L)$, $n\ge1$. Chuẩn là $L$ cho mode $0$, $L/2$ cho mode khác không.
+
+\textbf{Bước 3. Giải ODE và chiếu cả hai dữ liệu.} Đặt $A_n=\int fX_n/\int X_n^2$, $B_n=\int gX_n/\int X_n^2$. $T_n''+T_n'+a^2\lambda_nT_n=0$. Đổi $T_n=e^{-t/2}Y_n$ cho $Y_n''+(a^2\lambda_n-1/4)Y_n=0$. Nếu $\omega_n^2=a^2\lambda_n-1/4>0$,
+\[T_n=e^{-t/2}[A_n\cos\omega_nt+(B_n+A_n/2)\sin\omega_nt/\omega_n].\]
+Nếu $\omega_n=0$, dùng $e^{-t/2}[A_n+(B_n+A_n/2)t]$. Nếu $\omega_n^2<0$, thay cos/sin bằng cosh/sinh với $\sqrt{-\omega_n^2}$. Mode hằng là $A_0+B_0(1-e^{-t})$, giải trực tiếp $T_0''+T_0'=0$.
+
+\textbf{Bước 4. Nghiệm và ví dụ cho cả ba kiểu.} $u=\sum T_nX_n$. Với $a=L=1$, lấy lần lượt $f=\sin(\pi x/2)$, $f=\cos(\pi x/2)$, $f=\cos\pi x$, tất cả $g=0$. Chỉ có một mode, $A=1$, $B=0$, nên nghiệm là $X(x)e^{-t/2}(\cos\omega t+\sin\omega t/(2\omega))$, với $\omega=\sqrt{\pi^2/4-1/4}$ cho (a),(b), $\sqrt{\pi^2-1/4}$ cho (c). Đồ thị thể hiện giảm biên độ; ví dụ mode hằng $f=1,g=0$ ở (c) cho nghiệm hằng $1$, phù hợp vì năng lượng đạo hàm bằng $0$.
+%ID BT_3_5_3_02
+\textbf{Bước 1. Năng lượng và tính duy nhất.} Dầm $u_{tt}=-a^2u_{xxxx}$ dùng $E=\frac12\int(u_t^2+a^2u_{xx}^2)$, không phải năng lượng chứa $u_x^2$. Tích phân hai lần cho $E'=a^2[u_{tx}u_{xx}-u_tu_{xxx}]_0^L$. Mỗi cặp điều kiện trong đề làm cả hai tích biên bằng $0$: ngàm có $u_t=u_{tx}=0$; tựa có $u_t=u_{xx}=0$; đầu trượt có $u_{tx}=u_{xxx}=0$. Do đó $E$ bảo toàn. Hiệu hai nghiệm có $E=0$, $u_t=u_{xx}=0$, rồi dữ liệu đầu loại hàm affine còn lại, chứng minh duy nhất.
+
+\textbf{Bước 2. Đọc đúng năm kiểu biên của bản scan.} (a) ngàm trái, tựa phải: $X(0)=X'(0)=X(L)=X''(L)=0$. (b) ngàm trái, trượt phải: $X(0)=X'(0)=X'(L)=X'''(L)=0$. Hai kiểu này khác hai đầu ngàm/ngàm–tự do của lời giải cũ.
+
+\textbf{Bước 3. Giải phương trình đặc trưng.} Đặt $X''''=k^4X$, $\beta=kL$. Với (a),(b), hai điều kiện trái cho $X=A(\cosh kx-\cos kx)+B(\sinh kx-\sin kx)$.
+
+(a) Từ $X(L)=X''(L)=0$, cộng/trừ suy $A\cosh\beta+B\sinh\beta=0$, $A\cos\beta+B\sin\beta=0$. Định thức cho $\cosh\beta\sin\beta-\sinh\beta\cos\beta=0$, hay $\tan\beta=\tanh\beta$. Chọn
+\[X=\cosh kx-\cos kx-\coth\beta(\sinh kx-\sin kx).\]
+Nghiệm dương đầu $\beta_1\approx3.926602312$.
+
+(b) Từ $X'(L)=X'''(L)=0$, suy $A\sinh\beta+B\cosh\beta=0$, $A\sin\beta-B\cos\beta=0$. Định thức cho $\sinh\beta\cos\beta+\cosh\beta\sin\beta=0$, hay $\tan\beta=-\tanh\beta$. Chọn
+\[X=\cosh kx-\cos kx-\tanh\beta(\sinh kx-\sin kx),\]
+nghiệm dương đầu $\beta_1\approx2.365020372$.
+
+(c) Tựa hai đầu $X=X''=0$: điều kiện trái loại cos/cosh, điều kiện phải loại sinh, nên $k_n=n\pi/L$, $X_n=\sin k_nx$, $n\ge1$.
+
+(d) Tựa trái, trượt phải $X(0)=X''(0)=X'(L)=X'''(L)=0$: còn sine và sinh; cộng/trừ hai điều kiện phải loại sinh rồi cho $\cos kL=0$. $k_n=(n+1/2)\pi/L$, $X_n=\sin k_nx$, $n\ge0$.
+
+(e) $X'=X'''=0$ hai đầu: $X_n=\cos(n\pi x/L)$, $n\ge1$, cộng mode $X_0=1$, $\lambda_0=0$.
+
+\textbf{Bước 4. Dương, trực giao và nghiệm.} Tích phân hai lần cho $\lambda\int X^2=\int(X'')^2\ge0$ dưới cả năm kiểu biên. Nếu $\lambda=0$, $X$ affine; chỉ (e) giữ hằng. Các nghiệm $\beta=0$ trong (a),(b) phải loại bằng kiểm tra đa thức, không coi là mode. Trừ hai phương trình tích phân chứng minh trực giao với các trị riêng khác nhau. Lấy $A_n=\int fX_n/\int X_n^2$, $B_n=\int gX_n/\int X_n^2$:
+\[u=\sum_n[A_n\cos(ak_n^2t)+B_n\sin(ak_n^2t)/(ak_n^2)]X_n.\]
+Ở (e) thêm $\bar f+t\bar g$. Với $a=L=1$, mỗi kiểu lấy $f$ là hàm riêng dương đầu vừa tìm, $g=0$, cho ví dụ $u=X_1\cos(k_1^2t)$; đồ thị kèm đủ năm kiểu biên và không dùng nhầm các phương trình $\cos\beta\cosh\beta=\pm1$.
+%ID BT_3_5_3_03
+\textbf{Bước 1. Hệ sine và dữ liệu tam giác.} PDE $u_{tt}=u_{xx}-u$ trên $(0,\pi)$, biên không. $f=\min(x,\pi-x)$, $g=0$ có $A_n=4\sin(n\pi/2)/(\pi n^2)$, tính bằng tách tích phân tại $\pi/2$ như Bài 3.3.3.2.
+
+\textbf{Bước 2. Giải đúng tần số mới.} $T_n''+(n^2+1)T_n=0$, $T_n(0)=A_n$, $T_n'(0)=0$. Do đó
+\[u=\sum_{n\ge1}\frac{4\sin(n\pi/2)}{\pi n^2}\cos(\sqrt{n^2+1}\,t)\sin nx.\]
+Hạng $+1$ dưới căn đến từ $-u$ trong PDE, không thể dùng tần số $n$.
+
+\textbf{Bước 3. Không có chu kỳ chung.} Hệ số mode $1,3$ đều khác không. Nếu chu kỳ $T>0$ tồn tại, chiếu lên hai mode cho $\sqrt2T$ và $\sqrt{10}T$ đều là bội của $2\pi$, buộc tỷ số $\sqrt5$ hữu tỷ, mâu thuẫn. Vậy nghiệm này không tuần hoàn.
+
+\textbf{Bước 4. Kiểm tra và mức trơn.} Mỗi mode thỏa PDE/biên và đúng dữ liệu. Tam giác có góc nên nghiệm thuộc lớp năng lượng, không cổ điển qua mặt truyền góc. Năng lượng bảo toàn phải chứa $u^2$: $\frac12\int(u_t^2+u_x^2+u^2)$.
+%ID BT_3_5_3_04
+\textbf{Bước 1. Tách phương trình điện báo.} Với $u_{tt}+u_t+u=u_{xx}$, hai biên cố định trên $(0,1)$, đặt $u=\sum T_n\sin(n\pi x)$. ODE là $T_n''+T_n'+(n^2\pi^2+1)T_n=0$.
+
+\textbf{Bước 2. Đổi ẩn và dữ liệu.} $A_n=2\int_0^1f(x)\sin(n\pi x)dx$, vận tốc đầu bằng $0$. Đặt $T_n=e^{-t/2}Y_n$ cho $Y_n''+(n^2\pi^2+3/4)Y_n=0$, $Y_n(0)=A_n$, $Y_n'(0)=A_n/2$.
+
+\textbf{Bước 3. Nghiệm.}
+\[u=e^{-t/2}\sum_{n\ge1}A_n\left[\cos\omega_nt+\frac{\sin\omega_nt}{2\omega_n}\right]\sin(n\pi x),\qquad\omega_n=\sqrt{n^2\pi^2+3/4}.\]
+\textbf{Bước 4. Kiểm tra.} Tại $0$, đạo hàm của ngoặc là $A_n/2$, triệt tiêu đạo hàm $-A_n/2$ của hệ số mũ; vì thế vận tốc đầu đúng bằng $0$. Biên theo sine và PDE theo ODE. Năng lượng có thêm $u^2$, đạo hàm bằng $-\int u_t^2$, chứng minh duy nhất trong lớp thích hợp. Cần $f$ tương thích biên nếu đòi nghiệm trơn đến góc; công thức hệ số áp dụng cho dữ liệu năng lượng.
+%ID BT_3_5_3_05
+\textbf{Câu (i): tìm một hàm riêng của toán tử có đạo hàm cấp một.} Đặt $f=e^{-x}(\pi\cos\pi x+\sin\pi x)$. Đạo hàm trực tiếp cho $f'=-(\pi^2+1)e^{-x}\sin\pi x$, nên biên $f'(0)=f'(1)=0$. Đạo hàm thêm cho $f''+2f'=-(\pi^2+1)f$. Vì vậy $u=fT$ dẫn tới $T''+(\pi^2+1)T=0$, $T(0)=1,T'(0)=0$:
+\[u=f(x)\cos(\sqrt{\pi^2+1}\,t).\]
+Các tính toán trên kiểm tra đồng thời PDE, biên Neumann và dữ liệu đầu.
+
+\textbf{Câu (ii), bước 1: đổi tọa độ và khử đạo hàm cấp một.} $z=\log(1+x)$, $\ell=\log2$. Vì $\partial_x=e^{-z}\partial_z$, $\partial_x((1+x)^2u_x)=u_{zz}+u_z$. Đặt $u=e^{-z/2}v$; tính $u_{zz}+u_z=e^{-z/2}(v_{zz}-v/4)$. Nguồn $t/\sqrt{1+x}=te^{-z/2}$, nên $v_{tt}=v_{zz}-v/4+t$, biên Dirichlet ở $z=0,\ell$.
+
+\textbf{Câu (ii), bước 2: chiếu và giải nguồn tuyến tính.} $v_0=e^{z/2}(e^z-1)(2-e^z)$, $v_{t,0}=0$. Với $k_n=n\pi/\ell$, $\omega_n=\sqrt{k_n^2+1/4}$,
+\[A_n=\frac2\ell\int_0^\ell e^{z/2}(e^z-1)(2-e^z)\sin k_nz\,dz,\quad c_n=\frac{2(1-(-1)^n)}{n\pi}.\]
+ODE $T_n''+\omega_n^2T_n=c_nt$ cho nghiệm riêng dữ liệu không $c_n(t/\omega_n^2-\sin\omega_nt/\omega_n^3)$. Vì vậy
+\[u=e^{-z/2}\sum_{n\ge1}\left[A_n\cos\omega_nt+c_n\left(\frac t{\omega_n^2}-\frac{\sin\omega_nt}{\omega_n^3}\right)\right]\sin k_nz.\]
+Tích phân của $A_n$ là tích phân sơ cấp: khai triển $v_0=-e^{5z/2}+3e^{3z/2}-2e^{z/2}$ rồi dùng
+\[\int_0^\ell e^{pz}\sin k_nz\,dz=\frac{k_n(1-(-1)^ne^{p\ell})}{p^2+k_n^2}.\]
+Thay $p=5/2,3/2,1/2$ cùng các hệ số $-1,3,-2$ cho hệ số tường minh.
+
+\textbf{Câu (iii), bước 1: chiếu nguồn và vận tốc.} PDE $u_{tt}+2u_t=u_{xx}+\sin x$, biên không trên $(0,1)$, $f=0,g=1$. Với $k_n=n\pi$, $\omega_n=\sqrt{k_n^2-1}$, vận tốc có $c_n=2(1-(-1)^n)/(n\pi)$. Tích–tổng cho nguồn
+\[F_n=2\int_0^1\sin x\sin k_nx\,dx=\frac{2(-1)^{n+1}k_n\sin1}{k_n^2-1}.\]
+\textbf{Câu (iii), bước 2: giải ODE có cản.} $T_n''+2T_n'+k_n^2T_n=F_n$, $T_n(0)=0$, $T_n'(0)=c_n$. Nghiệm riêng tĩnh $F_n/k_n^2$ được bù hai dữ liệu đầu bởi phần thuần nhất:
+\[u=\sum_{n\ge1}\left[c_ne^{-t}\frac{\sin\omega_nt}{\omega_n}+\frac{F_n}{k_n^2}\left\{1-e^{-t}\left(\cos\omega_nt+\frac{\sin\omega_nt}{\omega_n}\right)\right\}\right]\sin k_nx.\]
+Thế $t=0$ kiểm tra hai dữ liệu; từng ODE kiểm tra PDE. $g=1$ không tương thích biên cố định ở góc, nên câu (iii) không có nghiệm cổ điển toàn bao đóng; nguồn cũng có vết không phù hợp nếu đòi cấp hai đến biên.
+%ID BT_3_5_3_06
+\textbf{Bước 1. Đạo hàm năng lượng Klein–Gordon.} Với $u_{tt}-u_{xx}+u=0$, đặt $E=\int_0^L(u^2+u_t^2+u_x^2)dx$. Tích phân từng phần:
+\[E'=2\int_0^Lu_t(u_{tt}-u_{xx}+u)dx+2[u_tu_x]_0^L=0.\]
+Ở biên cố định, $u_t=0$, nên thông lượng hết.
+
+\textbf{Bước 2. Thế dữ liệu đầu và sửa câu (i).}
+\[E(t)=E(0)=\int_0^L(f^2+g^2+(f')^2)dx.\]
+Công thức in thiếu $g^2$. Nó chỉ đúng nếu thêm $g=0$. Lấy $f=0$, $g=\sin(\pi x/L)$: tại $t=0$ vế trái là $L/2$, còn vế phải in bằng $0$, nên yêu cầu nguyên văn sai.
+
+\textbf{Bước 3. Câu (ii).} Khai triển và tích phân hạng chéo:
+\[\int_0^L|f+f'|^2dx=\int_0^L(f^2+(f')^2)dx+[f^2]_0^L.\]
+Nếu $f(0)=f(L)$ thì hạng biên hết; để bằng năng lượng còn cần $g=0$. Dưới biên cố định tương thích, hai giá trị $f$ đều $0$, nhưng điều đó không xóa năng lượng vận tốc. Công thức đúng tổng quát là $E=\int|f+f'|^2+\int g^2$ khi hai giá trị đầu bằng nhau. Đoạn không gian ghi $(0,1)$ cùng cận $L$ cần thống nhất; chứng minh đúng trên mọi $(0,L)$.
+%ID BT_3_5_3_07
+\textbf{Bước 1. Đạo hàm năng lượng.} Với $u_{tt}+\xi u_t=u_{xx}$, $\xi\ge0$, biên cố định, $E=\int_0^L(u_t^2+u_x^2)dx$. Nhân PDE với $2u_t$ và tích phân từng phần:
+\[E'=2[u_tu_x]_0^L-2\xi\int_0^Lu_t^2dx=-2\xi\int_0^Lu_t^2dx.\]
+Hạng biên hết vì đạo hàm thời gian của vết Dirichlet bằng $0$.
+
+\textbf{Bước 2. Ước lượng trên.} Tích phân bình phương không âm, nên $E'\le0$ và $E(t)\le E(0)$.
+
+\textbf{Bước 3. Ước lượng dưới.} $\int u_t^2\le E$, nên $E'\ge-2\xi E$. Do đó $(e^{2\xi t}E)'=e^{2\xi t}(E'+2\xi E)\ge0$. So với giá trị đầu:
+\[e^{-2\xi t}E(0)\le E(t)\le E(0).\]
+\textbf{Bước 4. Kiểm tra hệ số.} Vì định nghĩa $E$ không có $1/2$, hệ số đạo hàm là $2\xi$. Với $\xi=0$, hai cận bằng nhau và thu bảo toàn năng lượng. Với $E(0)=0$ suy nghiệm duy nhất bằng $0$ khi li độ đầu cũng bằng $0$. Các công thức đúng trên đoạn $(0,L)$ sau khi thống nhất ký hiệu cận phải của đề.

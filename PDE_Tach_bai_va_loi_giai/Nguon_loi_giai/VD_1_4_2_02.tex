@@ -1,0 +1,53 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{fontspec,amsmath,amssymb,graphicx}
+\usepackage[margin=18mm]{geometry}
+\setmainfont{Times New Roman}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\allowdisplaybreaks
+\sloppy
+\emergencystretch=2em
+\begin{document}
+\section*{VD\_1\_4\_2\_02 — Lời giải bổ sung}
+\subsection*{Kiến thức và trình tự giải}
+\textbf{Mục tiêu.} Với $u_t+a(x,t,u)u_x=b(x,t,u)$, đặc trưng phụ thuộc cả giá trị nghiệm nên phải giải đồng thời đường đi và ẩn.
+
+\textbf{Bước 1 — Gắn nhãn điểm xuất phát.} Gọi $\xi$ là tọa độ ở $t=0$, đặt $X(0;\xi)=\xi$, $U(0;\xi)=f(\xi)$. Dọc đường, $U(t;\xi)=u(X(t;\xi),t)$.
+
+\textbf{Bước 2 — Lập và giải hệ.} Quy tắc dây chuyền cho
+
+\[
+X'=a(X,t,U),\qquad U'=b(X,t,U).
+\]
+
+Nếu ODE của $U$ giải được trước, thế kết quả vào $X'$ rồi tích phân từ 0 đến $t$, giữ đúng điều kiện $X(0)=\xi$. Chẳng hạn $U'=\lambda U$ cho $U=e^{\lambda t}f(\xi)$. Nếu chia cho $U$ hoặc $U+1$, xét riêng các nghiệm hằng bị loại.
+
+\textbf{Bước 3 — Khử nhãn $\xi$.} Giải $x=X(t;\xi)$ để tìm $\xi=\xi(x,t)$ rồi thay vào $u=U(t;\xi)$. Khi không khử được bằng công thức đơn giản, ghi nghiệm tham số và phương trình xác định $\xi$.
+
+\textbf{Bước 4 — Tìm miền còn nghiệm cổ điển.} Tính $X_\xi$. Khi $X_\xi\ne0$, có thể khử nhãn cục bộ. Vì $u_x=U_\xi/X_\xi$, mẫu số tiến về 0 có thể gây đạo hàm vô hạn. Với $u_t+a(u)u_x=0$, ta có $X=\xi+a(f(\xi))t$, $X_\xi=1+a'(f(\xi))f'(\xi)t$. Tìm thời điểm dương đầu tiên mẫu này bằng 0.
+
+\textbf{Bước 5 — Nếu dữ liệu có bước nhảy.} Viết $F'(u)=a(u)$ để có dạng bảo toàn $u_t+(F(u))_x=0$. Đặc trưng hội tụ dẫn đến sốc, tách xa dẫn đến quạt giãn; dùng Rankine–Hugoniot và điều kiện entropy như phần kiến thức về sốc. Giá trị ở chỗ đặc trưng giao nhau không được chọn tùy ý.
+
+\textbf{Bước 6 — Thử lại.} Kiểm tra phương trình trong vùng trơn, dữ liệu ở $t=0$, miền khả nghịch và mọi đường ghép. Với dữ liệu chỉ trên một đoạn, giữ điều kiện nhãn $\xi$ nằm trong đoạn đó.
+\subsection*{Lời giải áp dụng cho bài}
+\textbf{Ý (a).} $u_t+uu_x=0$, $u(x,0)=3x$. $U'=0$ cho $U=3\xi$; $X'=U$ cho $X=\xi(1+3t)$. Khử $\xi=x/(1+3t)$:
+\[u=3x/(1+3t).\]
+$X_\xi=1+3t>0$ khi $t\ge0$, nên nghiệm cổ điển trên toàn miền thời gian dương. $u_t=-9x/(1+3t)^2$, $uu_x=9x/(1+3t)^2$.
+
+\textbf{Ý (b).} $u_t-u^2u_x=3u$, $u(x,0)=f(x)$. Giải $U'=3U$ trước: $U=e^{3t}f(\xi)$. Sau đó
+\[X'= -e^{6t}f(\xi)^2,\quad X=\xi-\frac{e^{6t}-1}{6}f(\xi)^2.\]
+Nghiệm là $u=e^{3t}f(\xi)$, với $\xi$ xác định từ $x=X$. Tính $X_\xi=1-(e^{6t}-1)f(\xi)f'(\xi)/3$; chỉ khử được cục bộ ở nơi khác 0. Giữ nhãn và phương trình khử là cách giải phù hợp khi $f$ tùy ý.
+
+\textbf{Ý (c).} $u_t-t^2uu_x=-u$. $U=e^{-t}f(\xi)$; $X'= -t^2e^{-t}f(\xi)$. Dùng tích phân từng phần hai lần:
+\[\int_0^t s^2e^{-s}ds=2-(t^2+2t+2)e^{-t}=:J(t).\]
+Suy $X=\xi-J(t)f(\xi)$, $u=e^{-t}f(\xi)$. Miền khử cần $1-J(t)f'(\xi)\ne0$; tại $t=0$, $J=0$, cho đúng dữ liệu.
+
+\textbf{Ý (d).} $u_t+t^2uu_x=5$, $u(x,0)=x$. $U'=5$ cho $U=\xi+5t$. Tích phân $X'=t^2(\xi+5t)$:
+\[X=\xi(1+t^3/3)+5t^4/4,\quad \xi=\frac{x-5t^4/4}{1+t^3/3}.\]
+Do đó $u=(x-5t^4/4)/(1+t^3/3)+5t$. Với $t\ge0$, $X_\xi=1+t^3/3>0$. Trên mỗi nhánh trên, $dU/dt=u_t+X'u_x$ bằng đúng nguồn của PDE và dữ liệu tại 0 được giữ, nên công thức tham số thỏa bài.
+
+\textbf{Chi tiết tích phân ở (c).} Đặt $J(t)=\int_0^t s^2e^{-s}ds$. Lần thứ nhất:
+\[J=-t^2e^{-t}+2\int_0^t se^{-s}ds.\]
+Lần thứ hai:
+\[\int_0^t se^{-s}ds=-te^{-t}+\int_0^t e^{-s}ds=-te^{-t}+1-e^{-t}.\]
+Thế lại được $J=2-(t^2+2t+2)e^{-t}$, rồi $X-\xi=-f(\xi)J(t)$. Ở (b), tích phân tương tự trực tiếp: $X-\xi=-f(\xi)^2\int_0^te^{6s}ds=-f(\xi)^2(e^{6t}-1)/6$.\end{document}

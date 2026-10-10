@@ -1,0 +1,38 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{fontspec,amsmath,amssymb,graphicx}
+\usepackage[margin=18mm]{geometry}
+\setmainfont{Times New Roman}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\allowdisplaybreaks
+\sloppy
+\emergencystretch=2em
+\begin{document}
+\section*{VD\_1\_2\_2\_2\_02 — Lời giải bổ sung}
+\subsection*{Kiến thức và trình tự giải}
+\textbf{Mục tiêu.} Đưa phương trình về ODE bằng cách giữ cố định các biến không được lấy đạo hàm, hoặc đặt một đạo hàm/hợp thức trung gian.
+
+\textbf{Bước 1 — Chọn biến và tham số.} Với $u_x=f(x,y)$, cố định $y$ và tích phân theo $x$. Khi đó “hằng số” tích phân có thể khác nhau ở mỗi $y$, nên phải viết $C(y)$. Với ba biến, tích phân theo $x$ cho một hàm $C(y,z)$.
+
+\textbf{Bước 2 — Tích phân đúng số lần.} Chẳng hạn $u_{xx}=f$ cho $u_x=\int f\,dx+A(y)$, rồi $u=\int(\int f\,dx)dx+xA(y)+B(y)$. Với đạo hàm hỗn hợp, có thể đặt $v=u_x$ hoặc $v=yu_y+2u$ nếu PDE chứa đúng $v_x$. Mỗi lần tích phân phải giữ hàm tùy ý theo các biến còn lại.
+
+\textbf{Bước 3 — Giải ODE tuyến tính nếu còn hạng chứa ẩn.} Với $u_x+P(x)u=Q(x,y)$, đặt $M(x)=e^{\int P(x)dx}$. Do $M'=PM$, quy tắc đạo hàm tích cho
+
+\[
+(Mu)_x=M(u_x+Pu)=MQ,\qquad
+u=M^{-1}\left[\int MQ\,dx+C(y)\right].
+\]
+
+Ghi rõ $P$, $M$ và cách tính tích phân trong từng bài. Với ODE cấp 2 có hệ số hằng theo biến đang tích phân, thử $e^{\lambda x}$ và giải phương trình đặc trưng; nghiệm kép cần thêm $xe^{\lambda x}$.
+
+\textbf{Bước 4 — Xét trường hợp suy biến trước khi chia.} Chia cho $x$, $y$ hoặc $u$ chỉ hợp lệ ở nơi chúng khác 0. Trên đường bị loại, dùng phương trình gốc để tìm ràng buộc. Nếu cần nghiệm trơn qua đường đó, xét giới hạn và đạo hàm của công thức vừa tìm.
+
+\textbf{Bước 5 — Dùng dữ liệu và kiểm tra.} Thế điều kiện đầu/biên để xác định các hàm tùy ý, rồi lấy đạo hàm của nghiệm và thay lại phương trình. Nêu rõ miền và độ trơn cần thiết. Nếu chỉ tìm nghiệm dạng mũ, đó là một họ nghiệm thử; không tự gọi là toàn bộ nghiệm tổng quát.
+\subsection*{Lời giải áp dụng cho bài}
+\textbf{Bước 1 — Giảm đạo hàm hỗn hợp.} Từ $u_{xyz}=0$, cố định $y,z$ và tích phân theo $x$, được $u_{yz}=a(y,z)$.
+
+\textbf{Bước 2 — Tích phân theo $y$, rồi $z$.} Chọn một nguyên hàm $b(y,z)$ của $a$ theo $y$, được $u_z=b(y,z)+c(x,z)$. Tích phân theo $z$:
+\[u(x,y,z)=B(y,z)+C(x,z)+A(x,y).\]
+Mỗi hàm tùy ý bỏ một biến; điều này giữ đủ các hằng số tích phân của ba lần lấy nguyên hàm. Công thức có ý nghĩa trên miền tích hoặc cục bộ nơi các phép tích phân được thực hiện.
+
+\textbf{Bước 3 — Kiểm tra.} $A$ không phụ thuộc $z$, $B$ không phụ thuộc $x$, $C$ không phụ thuộc $y$, nên đạo hàm $xyz$ của từng hạng bằng 0. Vì vậy tổng thỏa PDE.\end{document}

@@ -1,0 +1,30 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{fontspec,amsmath,amssymb,graphicx}
+\usepackage[margin=18mm]{geometry}
+\setmainfont{Times New Roman}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\allowdisplaybreaks
+\sloppy
+\emergencystretch=2em
+\begin{document}
+\section*{BT\_4\_2\_3\_04 — Lời giải bổ sung}
+\subsection*{Kiến thức và trình tự giải}
+\textbf{Bước 1 — Viết toán tử và biên parabol.} Đặt $P=\partial_t-a(x,t)\partial_{xx}-b(x,t)\partial_x-c(x,t)$ với $a\ge0$, $c\le0$. Biên parabol gồm mặt $t=0$ và các biên không gian; mặt $t=T$ vẫn thuộc miền được ước lượng. Với phương trình nhiệt, $a=K>0$, $b=c=0$.
+
+\textbf{Bước 2 — Loại cực đại dương bằng dấu đạo hàm.} Tại cực đại dương nội miền, $w_x=0$, $w_{xx}\le0$, $w_t=0$; nếu cực đại trên mặt thời gian trên thì đạo hàm một phía cho $w_t\ge0$. Suy $Pw\ge0$, mâu thuẫn $Pw<0$. Với $Pw\le0$, xét $w_\varepsilon=w-\varepsilon e^{\gamma t}$, $\gamma>0$: $Pw_\varepsilon=Pw-\varepsilon(\gamma-c)e^{\gamma t}<0$. Chứng minh $w_\varepsilon\le0$ rồi cho $\varepsilon\downarrow0$.
+
+\textbf{Bước 3 — So sánh hai hàm bằng hiệu.} Để chứng minh $v\le u\le V$, kiểm tra $Pv\le Pu\le PV$ và thứ tự của dữ liệu đầu, biên. Áp dụng bước 2 cho $v-u$ và $u-V$. Nếu có nguồn dương, hằng số không nhất thiết là nghiệm trên, nên phải tính $PV-Pu$; không dùng cực đại của dữ liệu để chặn một bài có nguồn mà chưa kiểm tra.
+
+\textbf{Bước 4 — Xử lý Neumann, Robin và tuần hoàn.} Neumann thuần nhất có thể phản xạ chẵn qua đầu mút; điểm biên trở thành điểm trong. Robin viết theo pháp tuyến ngoài $\partial_\nu u+\sigma u=0$, $\sigma\ge0$. Tại cực đại dương không hằng, bổ đề Hopf cho $\partial_\nu u>0$, trái với $\partial_\nu u=-\sigma u\le0$. Với Robin phải thêm mức $0$ vào cận hằng nếu dữ liệu mang một dấu. Biên tuần hoàn ghép hai đầu thành đường tròn; không còn biên không gian.
+
+\textbf{Bước 5 — Miền vô hạn và nguồn bị chặn.} Trên toàn trục/nửa trục, cần nghiệm bị chặn trên mỗi dải thời gian (hoặc điều kiện tăng trưởng đủ dùng). Dùng rào $\varepsilon((x-x_0)^2+2Kt)$ trên đoạn lớn, áp dụng cực đại trên miền hữu hạn rồi cho $\varepsilon\downarrow0$; cách này loại ảnh hưởng từ vô cực. Nếu $|Pu|\le N$ và $|u|\le M$ trên biên parabol, đặt $V=M+Nt$. Vì $PV=N-cV\ge N$, suy $|u|\le M+Nt\le M+NT$. $M$ ở đây là cận của $|u|$, không phải cực đại có dấu.
+\subsection*{Lời giải áp dụng cho bài}
+\textbf{(a) Tìm nghiệm dừng.} Đặt $u=p(x)$, PDE thành $-p''=1$. Tích phân hai lần: $p=-x^2/2+Ax+B$. Từ $p(0)=p(1)=0$, $B=0,A=1/2$, nên $p=x(1-x)/2$.
+\textbf{(b) Chọn và kiểm tra hai rào.} Đặt $v=p(1-e^{-8t})$. Vì $p''=-1$,
+\[v_t=8pe^{-8t},\quad v_{xx}=-(1-e^{-8t}),\quad
+v_t-v_{xx}=1+e^{-8t}(8p-1).\]
+Trên $[0,1]$, $0\le p\le1/8$, nên $8p-1\le0$, suy $Pv\le1=Pu= Pp$, với $P=\partial_t-\partial_{xx}$. Hai rào có biên $0$, và $v(x,0)=0=u(x,0)\le p(x)$.
+\textbf{Áp dụng so sánh.} $P(v-u)\le0$, dữ liệu của $v-u$ không dương, nên $v\le u$. Tương tự $P(u-p)=0$, dữ liệu đầu $-p\le0$, nên $u\le p$. Kết luận
+\[\frac{x(1-x)}2(1-e^{-8t})\le u(x,t)\le\frac{x(1-x)}2.\]
+Hai rào cùng tiến về $p$ đều, nên còn có $u\to p$ đều theo $x$.\end{document}

@@ -1,0 +1,140 @@
+%ID BT_5_1_3_01
+Đặt $S_{D,n}(q)=2D^{-1}\int_0^Dq(s)\sin(n\pi s/D)ds$, $k_n=n\pi/L,\ell_n=n\pi/M$. Chồng chất bốn bài có một cạnh khác 0 cho công thức đã tính hệ số:
+\begin{align*}
+u={}&\sum_{n\ge1}\sin k_nx\frac{S_{L,n}(\varphi_0)\sinh k_n(M-y)+S_{L,n}(\varphi_1)\sinh k_ny}{\sinh k_nM}\\
+&+\sum_{n\ge1}\sin\ell_ny\frac{S_{M,n}(\psi_0)\sinh\ell_n(L-x)+S_{M,n}(\psi_1)\sinh\ell_nx}{\sinh\ell_nL}.
+\end{align*}
+Để áp dụng từng câu, các hệ số không bằng 0 là:
+
+(i) $L=1,M=\pi$, $S(\varphi_1)=(3\delta_{n1}-\delta_{n3})/4$, $S(\psi_1)=2(1-(-1)^n)/(\pi n)$.
+(ii) $L=M=1$, $S(\varphi_0)=S(\psi_0)=S(\psi_1)=2(1-(-1)^n)/(\pi n)$; cũng có thể viết $u=1-$chuỗi một cạnh trên với dữ liệu 1.
+(iii) $u=\sin x\sinh y/\sinh\pi$.
+(iv) $S(\varphi_1)=4(1-(-1)^n)/(n^3\pi^3)$.
+(v) $S(\varphi_1)=4\sin(n\pi/2)/(n^2\pi^2)$.
+(vi) $L=2,M=1$, $S(\varphi_1)=2[1+(-1)^n-2\cos(n\pi/2)]/(n\pi)$.
+(vii) $u=\sin2\pi x\sinh(2\pi(1-y))/\sinh2\pi$.
+(viii) $L=1,M=2$, $S(\varphi_0)=8/[\pi n(4-n^2)]$ nếu $n$ lẻ, bằng 0 nếu $n$ chẵn.
+(ix) $S(\varphi_0)=\delta_{n2}$, $S(\varphi_1)=-2\cos(n\pi/2)/(n\pi)$.
+
+Thay các hệ số trên vào hai chuỗi là nghiệm của từng trường hợp. Đạo hàm trong miền cho $\Delta u=0$; trên cạnh hội tụ về dữ liệu tại điểm liên tục, và về trung bình ở điểm gián đoạn. Nếu dữ liệu ở góc không khớp, không có nghiệm liên tục trên cả hình chữ nhật đóng; chuỗi vẫn giải bài trong miền và trên các cạnh mở.
+%ID BT_5_1_3_02
+Điều kiện (5.1.14) là $u_x(0,y)=\psi_0(y),u_x(L,y)=\psi_1(y)$, còn biên dưới/trên là Dirichlet. Đặt hệ số cosine $c_0(q)=L^{-1}\int q$, $c_n(q)=2L^{-1}\int q\cos(n\pi x/L)$; hệ số sine $s_n(q)=2M^{-1}\int q\sin(n\pi y/M)$.
+\begin{align*}
+u={}&c_0(\varphi_0)(1-y/M)+c_0(\varphi_1)y/M\\
+&+\sum_{n\ge1}\cos k_nx\frac{c_n(\varphi_0)\sinh k_n(M-y)+c_n(\varphi_1)\sinh k_ny}{\sinh k_nM}\\
+&+\sum_{n\ge1}\sin\ell_ny\frac{s_n(\psi_1)\cosh\ell_nx-s_n(\psi_0)\cosh\ell_n(L-x)}{\ell_n\sinh\ell_nL}.
+\end{align*}
+(i) $c_0(\varphi_1)=4/(3\pi)$, $c_n(\varphi_1)=24/[\pi(1-n^2)(9-n^2)]$ nếu $n$ chẵn, bằng 0 nếu $n$ lẻ; $s_n(\psi_1)=2(1-(-1)^n)/(\pi n)$. Các hệ số còn lại 0.
+(ii) $c_0(\varphi_0)=1$, các cosine khác 0; $s_n(\psi_0)=s_n(\psi_1)=2(1-(-1)^n)/(\pi n)$. Thế vào công thức.
+(iii) $u=\cos x\sinh y/\sinh\pi$. Các công thức thỏa đạo hàm biên trực tiếp; năng lượng cho tính duy nhất.
+%ID BT_5_1_3_03
+Với hiệu $w$ của hai nghiệm, $\int_\Omega|\nabla w|^2=\int_{\partial\Omega}w\partial_\nu w=0$, nên $w$ hằng; vì vậy nếu có một nghiệm thì mọi nghiệm là $u+C$.
+
+Điều kiện tương thích (dùng đạo hàm tọa độ trong đề) là
+\[\int_0^L(\varphi_1-\varphi_0)dx+\int_0^M(\psi_1-\psi_0)dy=0.\]
+Đủ tồn tại nghiệm yếu Neumann, duy nhất sau khi ấn định trung bình; để có nghiệm cổ điển đến góc còn cần độ trơn và tương thích góc.
+
+(iii) Dữ liệu cho $\int(\varphi_1-\varphi_0)=-1/2$, hai cạnh kia 0. Do đó \textbf{không có nghiệm}; không được triển khai Fourier bỏ qua mode 0.
+%ID BT_5_1_3_04
+Biên dưới $u_y=u$, trên $u_y=-u$ tương đương $\partial_\nu u=-u$ ở cả hai cạnh; hai cạnh đứng Neumann. Với hiệu $w$,
+\[\int_\Omega|\nabla w|^2=-\int_{y=0,M}w^2\le0.\]
+Do đó $w=0$. Kết luận ``vô số nghiệm sai khác hằng số'' của đề là sai: cộng hằng khác 0 phá điều kiện Robin.
+
+Câu (ii), $L=M=1,u_x(0,y)=1,u_x(1,y)=0$. Gọi $Y_j=\cos k_jy+\sin k_jy/k_j$, với $(1-k_j^2)\sin k_j+2k_j\cos k_j=0$, $k_j>0$, $N_j=\int_0^1Y_j^2$, $d_j=\int_0^1Y_j/N_j$. Tách biến theo $y$ cho
+\[u(x,y)=-\sum_j\frac{d_j\cosh(k_j(1-x))}{k_j\sinh k_j}Y_j(y).\]
+Đạo hàm $x$ cho đúng dữ liệu hai cạnh; $Y_j$ thỏa Robin. Đây là nghiệm duy nhất.
+%ID BT_5_1_3_05
+Tìm đa thức bậc hai: $u=x^2/2-ax-y^2/2+by+C$. Khi đó $\Delta u=1-1=0$, $u_x=x-a$, $u_y=b-y$, đúng bốn điều kiện. Tất cả nghiệm sai khác nhau một hằng vì đây là Neumann thuần. Tổng thông lượng ngoài $ab-ab=0$, nên tương thích với mọi $a,b>0$.
+%ID BT_5_1_3_06
+Đặt $b=x^2y^2/2$, $w=u-b$. Khi đó $w_x(0)=w_x(1)=0$, $\Delta w=-x^2-y^2$, $w(x,0)=x$, $w(x,1)=-x^2/2$. Dùng cơ sở cosine $X_n=\cos n\pi x$, $q_0=\int_0^1q,q_n=2\int_0^1qX_n$:
+\[w=\sum_{n\ge0}W_n(y)X_n(x).\]
+Đặt $a_n=(x)_n$, $b_n=(-x^2/2)_n$, $F_n(y)=(-x^2-y^2)_n$ (đều là tích phân đa thức hữu hạn). Với $k=n\pi>0$,
+\[W_n=\frac{a_n\sinh k(1-y)+b_n\sinh ky}{\sinh k}+\int_0^1\frac{-\sinh(k\min(y,s))\sinh(k[1-\max(y,s)])}{k\sinh k}F_n(s)ds.\]
+Mode 0: $a_0=1/2,b_0=-1/6,F_0=-1/3-y^2$, nên
+\[W_0=1/2-5y/12-y^2/6-y^4/12.\]
+Thế vào $u=b+w$ là nghiệm; công thức Green đã giải mọi ODE hệ số.
+%ID BT_5_1_3_07
+Sine Fourier $h_n=2\pi^{-1}\int_0^\pi h(x)\sin nx\,dx$. Điều kiện giảm ở vô cực loại $e^{ny}$:
+\[u=\sum_{n\ge1}h_ne^{-ny}\sin nx.\]
+Nếu bỏ điều kiện ở vô cực, có thể cộng tùy ý $c_n\sinh(ny)\sin nx$, ít nhất các tổng hữu hạn, nên mất tính duy nhất. Trong lớp nghiệm bị chặn, điều kiện giảm vẫn suy ra và nghiệm trên duy nhất.
+%ID BT_5_1_3_08
+(i) Theo $y$, dùng $Y_j=\cos k_jy-\sin k_jy/k_j$, vì $Y'(0)=-Y(0),Y'(1)=0$. Các mode gồm cả khả năng trị riêng âm: viết chung $-Y_j''=\lambda_jY_j$, $d_j=\int_0^1Y_j/\int_0^1Y_j^2$. Mỗi hệ số $V_j$ giải $V_j''-\lambda_jV_j=0$, $V_j(0)=-d_j,V_j(1)=d_j$. Với $\lambda_j>0$,
+\[V_j=d_j\frac{\sinh(\sqrt{\lambda_j}x)-\sinh(\sqrt{\lambda_j}(1-x))}{\sinh\sqrt{\lambda_j}}.\]
+Với $\lambda_j=-\kappa_j^2<0$, thay sinh bởi sin. Ở đây trị riêng âm duy nhất thỏa $\kappa\tanh\kappa=1$ và $\kappa<\pi$, nên không có cộng hưởng với hai biên Dirichlet theo $x$. $u=\sum V_jY_j$.
+
+(ii) $u=-\sum_{n\text{ lẻ}}4\sin nx\sinh(n(\pi-y))/[\pi n\sinh n\pi]$.
+
+(iii) Miền ghi $(0,\pi)\times(0,1)$ nhưng biên ghi $x=1,y=\pi$: không khép miền, không xác định duy nhất như bản in. Nếu miền dự kiến là $(0,1)\times(0,\pi)$, dùng công thức bốn cạnh Dirichlet với cạnh dưới và phải bằng 1, hai cạnh còn lại 0.
+
+(iv) Đặt $X=x-\pi$. Nghiệm là $1-2v$, với
+\[v=\sum_{n\text{ lẻ}}\frac4{\pi n}\sin nX\frac{\sinh ny+\sinh(n(\pi-y))}{\sinh n\pi}.\]
+
+(v) $u=1+w$, $w=0$ ở $x=\pi,2\pi$, $w_y(x,0)=-1,w_y(x,\pi)=0$. Do đó
+\[w=\sum_{n\text{ lẻ}}\frac4{\pi n^2}\frac{\cosh(n(\pi-y))}{\sinh n\pi}\sin(n(x-\pi)).\]
+%ID BT_5_1_3_09
+Hai cạnh khác 0 có hệ số sine của $x$ hoặc $y$ bằng $2(-1)^{n+1}/(n\pi)$. Do đó
+\[u=\sum_{n\ge1}\frac{2(-1)^{n+1}}{n\pi\sinh n\pi}[\sin n\pi x\sinh n\pi y+\sin n\pi y\sinh n\pi x].\]
+Mặt khác $u=xy$ có $u_{xx}=u_{yy}=0$ và đúng bốn biên. Tính duy nhất Dirichlet suy chuỗi trên bằng $xy$ trong hình vuông.
+%ID VD_5_2_2_01
+Ví dụ chưa có lời giải trong bản in. Với đĩa bán kính $R$, dùng phép kéo dài điều hòa $\mathcal P_R[\varphi]$:
+\[\mathcal P_R[\varphi](r,\theta)=\frac{R^2-r^2}{2\pi}\int_0^{2\pi}\frac{\varphi(R\cos s,R\sin s)}{R^2+r^2-2Rr\cos(\theta-s)}ds.\]
+(i) $u=(R^2+x^2-y^2)/2-2y$.
+(ii) Biên $\min(x,0)=(x-|x|)/2$ cho
+\[u=\frac x2-\frac R\pi-\frac{2R}\pi\sum_{n\ge1}\frac{(-1)^{n+1}(r/R)^{2n}}{4n^2-1}\cos2n\theta.\]
+(iii) $u=1/2+(2/\pi)\sum_{n\text{ lẻ}}(r/R)^n\sin n\theta/n$. Các công thức đến từ Fourier của dữ liệu trên đường tròn; mọi nghiệm đều bị chặn tại tâm.
+%ID VD_5_2_2_02
+(i) $u=x(x^2+y^2-R^2)/8$, vì $\Delta[x(x^2+y^2)]=8x$, và biên 0.
+(ii) $u=(r^2-R^2)/4+\mathcal P_R[\min(x,0)]$, với $\mathcal P_R$ có chuỗi ở ví dụ trước. Hạng đầu có Laplace bằng 1 và biên 0, hạng sau điều hòa và đúng dữ liệu biên.
+%ID VD_5_2_2_03
+(i) Pháp tuyến ngoài trên đường tròn là $e_r$, nên biên $u_r(R,\theta)=\varphi(R\cos\theta,R\sin\theta)$.
+(ii) Hiệu $w$ có $\Delta w=0,\partial_\nu w=0$; Green cho $\int|\nabla w|^2=0$, nên mọi nghiệm sai khác hằng.
+(iii) Với $\Delta u=F$, điều kiện cần và đủ Neumann là $\int_{\partial D}\varphi=\int_DF$. Có thể giải bằng một nghiệm riêng $P$ của $\Delta P=F$, rồi khai triển biên $h=\varphi-P_r$ có trung bình 0:
+\[u=P+C+\sum_{n\ge1}\frac{r^n}{nR^{n-1}}(h_n^c\cos n\theta+h_n^s\sin n\theta).\]
+Nếu $F$ chưa được chỉ định trong đề thì kết quả phải phụ thuộc $F$ như công thức này.
+(iv) Khi $F=0,R=1$, trung bình $x^2-2xy+k$ là $1/2+k$, nên $k=-1/2$; nghiệm $u=(x^2-y^2)/4-xy+C$. Nếu $F$ khác 0, phải thay điều kiện $k$ bằng $\int_DF/(2\pi)-1/2$ và thêm nghiệm riêng; bản in không ghi $F$ cho câu này.
+%ID BT_5_2_3_01
+Đặt $q=r/R$. (i) $u=1/2+(2/\pi)\sum_{n\text{ lẻ}}q^n\sin n\theta/n$.
+(ii) Biên $2y\chi_{y>0}=y+|y|$ cho
+\[u=y+\frac{2R}\pi-\frac{4R}\pi\sum_{n\ge1}\frac{q^{2n}}{4n^2-1}\cos2n\theta.\]
+(iii) $u=1-x$.
+(iv) $u=(R^2+x^2-y^2)/2$.
+(v) $u=(R^2-x^2+y^2)/2$.
+(vi) $u=xy$.
+(vii) $u=1+3y/\pi$.
+Các đa thức được chọn điều hòa và khớp biên; hai trường hợp phân đoạn lấy hệ số Fourier trên đường tròn rồi nhân $(r/R)^n$.
+%ID BT_5_2_3_02
+Trong bản PDF, bài số 2 chỉ có số thứ tự, không có nội dung hoặc dữ kiện trước tiêu đề mục 5.3. Vì vậy không có đề toán để lập lời giải. File giữ dấu bài 2 để không bỏ sót mục được đánh số; không tự tạo một đề khác.
+%ID VD_5_3_2_01
+Với hình quạt $0<r<R,0<\theta<\alpha$, đặt $b=(1-\theta/\alpha)g_0(r)+(\theta/\alpha)g_1(r)$, $w=u-b$, $H=F-\Delta b$, $h(\theta)=\varphi(\theta)-b(R,\theta)$. Đặt $k_n=n\pi/\alpha$, $H_n=2\alpha^{-1}\int_0^\alpha H\sin k_n\theta$, $h_n$ tương tự. Khi đó
+\[u=b+\sum_{n\ge1}\left[h_n(r/R)^{k_n}+\int_0^R\mathcal G_n(r,s)H_n(s)s\,ds\right]\sin k_n\theta,\]
+\[\mathcal G_n=-\frac1{2k_n}\left[(r_</r_>)^{k_n}-(r_<r_>/R^2)^{k_n}\right].\]
+Đây là Green của ODE xuyên tâm, bị chặn tại 0 và bằng 0 tại $R$. Năng lượng Dirichlet cho duy nhất. Để nghiệm liên tục tại đỉnh, $g_0(0)=g_1(0)$ và dữ liệu phải tương thích.
+Câu cụ thể (i) $\alpha=\pi/2,F=0,g_0=g_1=0,\varphi=xy$: $u=xy$ vì điều hòa và đúng cả ba biên. (ii) $\alpha=\pi,F=1$, mọi biên 0: đặt $k_n=n$, $H_n=2(1-(-1)^n)/(\pi n)$. Với $n$ lẻ,
+\[u=\sum_{n\text{ lẻ}}\frac{H_n}{4-n^2}[r^2-R^2(r/R)^n]\sin n\theta.\]
+Các mode chẵn bằng 0; mode cộng hưởng $n=2$ không có nguồn nên không xuất hiện. Thế Laplace cho $1$.
+%ID VD_5_3_2_02
+Trong bản in, biên cạnh là $-u_\theta(r,0)=g_0(r),u_\theta(r,\alpha)=g_1(r)$; thông lượng pháp tuyến thực tế lần lượt là $g_0/r,g_1/r$, vì đạo hàm theo góc có thừa số $1/r$. Biên cung có thông lượng $\varphi$. Green cho duy nhất modulo hằng. Điều kiện tương thích:
+\[\int_0^R\frac{g_0+g_1}{r}dr+R\int_0^\alpha\varphi(\theta)d\theta=\int_0^R\int_0^\alpha F(r,\theta)r\,d\theta dr.\]
+Có thể khử biên cạnh bằng $b$ rồi khai triển cosine $\cos(n\pi\theta/\alpha)$; mỗi hệ số giải $(rW_n')'-k_n^2W_n/r=r(F-\Delta b)_n$, với đạo hàm đã cho tại $R$. Mode 0 chính là điều kiện tương thích trên, hằng tích phân còn lại tùy ý.
+
+Câu (iii) của ví dụ chỉ ghi $R=1,\varphi=x^2-2xy+k$; chưa ghi $F,\alpha,g_0,g_1$. Vì vậy không đủ xác định một nghiệm cụ thể trong hình quạt. Khi các dữ liệu đó được chọn, phương trình trên xác định $k$ và các hệ số. Nếu ý định là đĩa toàn phần, $F=0$, thì $k=-1/2,u=(x^2-y^2)/4-xy+C$ như ví dụ 5.2.2.3; đây là một bài đã sửa, không phải dữ kiện gốc.
+%ID BT_5_3_3_01
+Tổng thông lượng trên hai cung là $b\int f_2-a\int f_1$, hai cạnh góc thông lượng 0. Vì $\Delta u=0$, điều kiện cần là $a\int f_1=b\int f_2$. Đặt $z=\ln(r/a)$, $H=\ln(b/a)$, $k_n=2n$, $c_{in}=4\pi^{-1}\int_0^{\pi/2}f_i\cos2n\theta$, $c_{i0}=2\pi^{-1}\int f_i$. Nghiệm là
+\[u=C+ac_{10}\ln(r/a)+\sum_{n\ge1}\frac{bc_{2n}\cosh(k_nz)-ac_{1n}\cosh(k_n(H-z))}{k_n\sinh k_nH}\cos2n\theta.\]
+Đạo hàm theo $r$ cho đúng $f_i$; mode 0 cần $ac_{10}=bc_{20}$, chính là điều kiện đã cho. Vì thế điều kiện đủ; năng lượng cho duy nhất modulo hằng, nên không duy nhất nếu chưa chuẩn hóa.
+%ID BT_5_3_3_02
+Đặt $z=\ln r,H=\ln2$. (i) Khai triển $1=\sum_{n\text{ lẻ}}4\sin n\theta/(\pi n)$:
+\[u=\sum_{n\text{ lẻ}}\frac4{\pi n}\frac{\sinh(n(H-z))+\sinh nz}{\sinh nH}\sin n\theta.\]
+(ii) $u=(4/r-r)\sin\theta/3$.
+(iii) Trên vành khuyên toàn phần, $u=(4/r-r)\cos\theta/3+2(r-1/r)\sin\theta/3$. Các biểu thức đều là tổ hợp $r^n,r^{-n}$ nên điều hòa và thỏa đúng hai cung.
+%ID BT_5_3_3_03
+Đặt $z=\ln(r/r_1),H=\ln(r_2/r_1)$. Gọi $a_{i0},a_{in},b_{in}$ là các hệ số Fourier của $f_i$ (mode hằng là trung bình). Khi đó
+\begin{align*}
+u={}&a_{10}(1-z/H)+a_{20}z/H\\
+&+\sum_{n\ge1}\frac{[a_{1n}\sinh n(H-z)+a_{2n}\sinh nz]\cos n\theta}{\sinh nH}\\
+&+\sum_{n\ge1}\frac{[b_{1n}\sinh n(H-z)+b_{2n}\sinh nz]\sin n\theta}{\sinh nH}.
+\end{align*}
+Với $r_1=3,r_2=6$, $f_1=5\cos\theta,f_2=10\sin\theta$,
+\[u=\left(\frac{20}r-\frac{5r}9\right)\cos\theta+\left(\frac{20r}9-\frac{20}r\right)\sin\theta.\]
+%ID BT_5_3_3_04
+Nghiệm điều hòa trơn tại tâm có dạng $a_0+\sum r^n(a_n\cos n\theta+b_n\sin n\theta)$. Biên $u_r-u=0$ tại $r=1$ cho $a_0=0$, $(n-1)a_n=(n-1)b_n=0$. Chỉ mode $n=1$ còn lại. Tất cả nghiệm là $u=Ax+By$; đây là Robin với dấu âm, nên khác bài Robin có dấu dương cho duy nhất.

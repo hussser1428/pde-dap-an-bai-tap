@@ -1,0 +1,43 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{fontspec,amsmath,amssymb,graphicx}
+\usepackage[margin=18mm]{geometry}
+\setmainfont{Times New Roman}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\allowdisplaybreaks
+\sloppy
+\emergencystretch=2em
+\begin{document}
+\section*{BT\_1\_6\_3\_06 — Lời giải bổ sung}
+\subsection*{Kiến thức và trình tự giải}
+\textbf{Mục tiêu.} Với dữ liệu gián đoạn hoặc khi đặc trưng giao nhau, tìm nghiệm yếu thỏa entropy của luật bảo toàn $u_t+(F(u))_x=0$.
+
+\textbf{Bước 1 — Xác định thông lượng và đặc trưng.} Nếu PDE là $u_t+a(u)u_x=0$, tích phân $F'=a$. Trong vùng trơn, $u=u_0(\xi)$ và $x=\xi+F'(u_0(\xi))t$. Tính riêng tốc độ cho mỗi đoạn dữ liệu. Burgers dùng $F=u^2/2$; $u_t+u^2u_x=0$ dùng $F=u^3/3$.
+
+\textbf{Bước 2 — Nhận diện sóng tại mỗi bước nhảy.} Gọi $u_L,u_R$ là giá trị trái, phải. So sánh $F'(u_L)$ và $F'(u_R)$. Với $F$ lồi trên khoảng trạng thái, $u_L>u_R$ tạo sốc, $u_L<u_R$ tạo quạt giãn; với $F$ lõm, thứ tự trạng thái đảo lại. Nếu độ lồi đổi dấu, phải xét thêm cấu trúc entropy, không dùng quy tắc lồi trên toàn khoảng.
+
+\textbf{Bước 3 — Tính đường sốc từ bảo toàn.} Với $x=s(t)$,
+
+\[
+s'(t)=\frac{F(u_L)-F(u_R)}{u_L-u_R}.
+\]
+
+Nếu hai trạng thái hằng, tốc độ $\sigma$ hằng, nên $s=x_0+\sigma t$. Kiểm tra entropy bằng $F'(u_R)<\sigma<F'(u_L)$ đối với sốc nén có hai trạng thái phân biệt trong các bài này. Giá trị ngay trên đường sốc không ảnh hưởng nghiệm yếu.
+
+\textbf{Bước 4 — Tính quạt giãn.} Từ $(x_0,0)$, đặt $z=(x-x_0)/t$, $u=V(z)$. Thế PDE cho $(F'(V)-z)V'=0$. Trong nhánh biến thiên, $F'(V)=z$, nên giải phương trình này tìm $V$. Mép quạt là $x=x_0+F'(u_L)t$ và $x=x_0+F'(u_R)t$, theo thứ tự tốc độ tăng; ghép liên tục với hai trạng thái ngoài. Chọn căn đúng dấu theo khoảng giá trị của dữ liệu.
+
+\textbf{Bước 5 — Tìm mọi thời điểm tương tác.} Giải phương trình giao của hai sốc, sốc với mép quạt, hoặc quạt với quạt. Trước thời điểm gặp, ghép các sóng riêng. Sau khi gặp, tính lại hai trạng thái sát đường sốc. Nếu một phía nằm trong quạt, trạng thái đó phụ thuộc $s(t)$ và $t$, nên Rankine–Hugoniot trở thành ODE mới. Dùng $s(t_*)=x_*$ để tìm hằng số, rồi tiếp tục tìm lần tương tác sau.
+
+\textbf{Bước 6 — Viết nghiệm theo từng khoảng thời gian.} Với mỗi khoảng, ghi rõ các miền $x$, thứ tự đường phân cách và công thức của $u$. Trên nửa trục, kiểm tra chiều truyền từ biên vào miền và thế điều kiện biên. Với dữ liệu trơn từng đoạn, tính $\partial x/\partial\xi$ để tìm thời điểm đầu tiên mất nghiệm cổ điển.
+
+\textbf{Bước 7 — Kiểm tra.} Trong mỗi vùng trơn, thay vào PDE. Trên mỗi sốc, kiểm tra Rankine–Hugoniot và entropy; ở mép quạt, kiểm tra liên tục. Đối chiếu dữ liệu khi $t\downarrow0$, sự liên tục của vị trí sóng qua thời điểm gặp và khối lượng nếu dữ liệu có giá hữu hạn. Nhân PDE với một hàm của $u$ chỉ giữ tương đương cho nghiệm trơn; không tự áp luật đã nhân để tính cùng đường sốc.
+
+\textbf{Chi tiết tích phân đường sốc nằm trong quạt.} Nếu $s'=s/(2t)$ và $s(t_*)=x_*>0$, chia cho $s$ rồi tích phân từ $t_*$ đến $t$: $\log(s/x_*)=\frac12\log(t/t_*)$, nên $s=x_*\sqrt{t/t_*}$. Nếu quạt có tâm $x_0$, thay $s$ bằng $s-x_0$ trước khi tách biến. Khi trạng thái sát sốc thay đổi tại lần gặp tiếp theo, lập ODE mới và lấy vị trí tại lần gặp làm dữ liệu; không giữ hằng số của giai đoạn trước.
+\subsection*{Lời giải áp dụng cho bài}
+\textbf{Bước 1 — Quạt của thông lượng lõm.} $F=u-u^2$, tốc độ $1-2u$. Trạng thái 2 bên trái cho tốc độ $-3$, trạng thái 1 bên phải cho $-1$, nên tách xa và tạo quạt ở nửa trục $x<0$.
+
+\textbf{Bước 2 — Nhánh biến thiên.} Đặt $z=x/t$, giải $F'(u)=1-2u=z$, được $u=(1-z)/2$. Mép là $x=-3t,-t$.
+
+\textbf{Bước 3 — Ghép và kiểm tra.}
+\[u=\begin{cases}2,&x\le-3t,\\(1-x/t)/2,&-3t<x<-t,\\1,&-t\le x<0.\end{cases}\]
+Trong quạt $u_t=x/(2t^2)$, $u_x=-1/(2t)$, $1-2u=x/t$, nên $u_t+(1-2u)u_x=0$. Vết biên là 1, còn trạng thái đầu ở $x<0$ là 2. Các tia trong quạt là $x=(1-2k)t$, $1\le k\le2$.\end{document}

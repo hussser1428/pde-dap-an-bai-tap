@@ -1,0 +1,93 @@
+%ID BT_5_4_3_01
+(a)--(c) Với hàm xuyên tâm $r^p$, $\Delta r^p=p(p+n-2)r^{p-2}$. Vì $r>0$, Laplace bằng 0 đúng khi $p=0$ hoặc $p=2-n$. Trong $n=3,p=-1$ cho $1/r$ điều hòa ngoài gốc.
+
+(d) Đặt $v=x-\xi$, $|\xi|=1$, $1-|x|^2=-|v|^2-2v\cdot\xi$. Khi đó nhân Poisson bằng $-|v|^{2-n}-2(v\cdot\xi)|v|^{-n}$. Với $n\ne2$, hạng sau là đạo hàm theo hướng của $|v|^{2-n}$ chia $2-n$; do đó điều hòa. Với $n=2$, dùng $(v\cdot\xi)|v|^{-2}=\partial_\xi\ln|v|$, cũng điều hòa. Miền đúng là $\mathbb R^n\setminus\{\xi\}$; ký hiệu $\mathbb R^3$ ở dòng cuối đề chỉ phù hợp khi $n=3$.
+%ID BT_5_4_3_02
+(a) Quy tắc tích cho $\Delta(u^2)=2u\Delta u+2|\nabla u|^2=2|\nabla u|^2\ge0$.
+(b) Tính giá trị trung bình và Cauchy--Schwarz trên quả cầu bán kính $R$ cho $|u(x)|^2\le |B_R|^{-1}\int_{B_R(x)}u^2\le |B_R|^{-1}\|u\|_{L^2(\mathbb R^n)}^2$. Cho $R\to\infty$, vế phải về 0, nên $u=0$.
+%ID BT_5_4_3_03
+Nếu $\Omega$ là một khoảng liên thông, $u''=0$ suy $u'=m$, $u=mx+b$; chiều ngược hiển nhiên. Nếu $\Omega$ chỉ là tập mở như đề ghi, khẳng định một cặp $m,b$ chung là sai: trên $(0,1)\cup(2,3)$ lấy $u=0$ ở khoảng đầu và $u=1$ ở khoảng sau. Kết luận đúng là affine riêng trên từng thành phần liên thông; cần thêm liên thông để có một cặp toàn miền.
+%ID BT_5_4_3_04
+$u=6x^2yz-y^3z-yz^3$ cho $u_{xx}=12yz$, $u_{yy}=-6yz$, $u_{zz}=-6yz$. Tổng bằng 0, nên điều hòa.
+%ID BT_5_4_3_05
+Với đa thức in trong đề,
+\begin{align*}
+u_{xx}&=138xy^2z-40x^3z-6xz^3,\\
+u_{yy}&=46x^3z-96xy^2z-14xz^3,\\
+u_{zz}&=-42xy^2z-6x^3z+20xz^3.
+\end{align*}
+Các hệ số của $xy^2z,x^3z,xz^3$ lần lượt triệt tiêu, nên $\Delta u=0$.
+%ID BT_5_4_3_06
+$u_r=(1-r^{-2})\cos\theta,u_{rr}=2r^{-3}\cos\theta,u_{\theta\theta}=-(r+r^{-1})\cos\theta$. Thế vào $u_{rr}+u_r/r+u_{\theta\theta}/r^2$ được 0 với $r>0$.
+%ID BT_5_4_3_07
+Đặt $y=x/|x|^2,r=|x|$. Đạo hàm $\partial_i y_j=r^{-2}(\delta_{ij}-2x_ix_j/r^2)$, ma trận trong ngoặc trực giao. Quy tắc dây chuyền, cộng các đạo hàm cấp hai và hạng từ $r^{2-n}$ cho đồng nhất thức Kelvin:
+\[\Delta_x[r^{2-n}u(y)]=r^{-n-2}(\Delta_yu)(y).\]
+Vì vậy công thức đúng là $r^{-n-2}f(x/r^2)$; số mũ $-n-2$ cần giữ đúng. Nửa không gian $x_2>0$ bất biến qua phép đảo, nên miền hợp lệ. Với $f=0$, $v$ điều hòa.
+%ID BT_5_4_3_08
+$\Delta(uv)=u\Delta v+v\Delta u+2\nabla u\cdot\nabla v=2\nabla u\cdot\nabla v$. Do đó $uv$ điều hòa khi và chỉ khi tích vô hướng bằng 0.
+%ID BT_5_4_3_09
+$\Delta(u^2)=2|\nabla u|^2$. Nếu $u^2$ điều hòa, $\nabla u=0$; liên thông suy $u$ hằng. Chiều ngược cũng đúng.
+%ID BT_5_4_3_10
+Viết ma trận $T=A$. Với mọi ma trận đối xứng có vết 0, đa thức $u(y)=y^THy$ điều hòa. Giả thiết cho $0=\Delta(u\circ A)=2\operatorname{tr}(HAA^T)$. Trực giao với mọi $H$ vết 0 buộc $AA^T=c^2I$, $c\ge0$. Nếu $c=0$ thì $A=0$; nếu $c>0$, $A=cQ$ với $Q$ trực giao. Đây là kết luận, kể cả phép biến đổi 0.
+%ID BT_5_4_3_11
+Với $u=f(r)$, $(r^{n-1}f')'=0$. Nghiệm trên miền thủng là $C+Dr^{2-n}$ ($n\ne2$) hoặc $C+D\ln r$ ($n=2$). Trơn tại tâm quả cầu buộc $D=0$, nên $u$ hằng. Trong $n=1$, tính chẵn và affine cũng buộc hằng.
+%ID BT_5_4_3_12
+Đa thức thuần nhất $p$ bậc $m$ có $p(x/r^2)=r^{-2m}p(x)$. Kelvin của $p$ là $r^{2-n-2m}p(x)$; vì Kelvin giữ điều hòa, $p(x)/r^{2m+n-2}$ điều hòa ngoài gốc.
+%ID BT_5_4_3_13
+Ký hiệu $B$ trong đề dùng $|x|\le1$: nếu $u$ liên tục trên quả cầu đóng thì Heine--Cantor buộc liên tục đều, nên yêu cầu như vậy không thể thỏa. Với ý định là quả cầu mở, trong đĩa lấy
+\[u(x,y)=\operatorname{Re}\exp\left[-\frac{1+x+iy}{1-x-iy}\right].\]
+Hàm giải tích vì cực $z=1$ nằm ngoài miền; $\operatorname{Re}(1+z)/(1-z)>0$ nên $|u|\le1$. Khi $z\to1$ theo bán kính, $u\to0$; theo các đường có phần thực thương tiến về một hằng và phần ảo thay đổi, $u$ có nhiều giá trị giới hạn. Do đó không liên tục đều. Có thể mở rộng ví dụ sang $n\ge2$ bằng cách không phụ thuộc các tọa độ còn lại.
+%ID BT_5_4_3_14
+Đặt $v(x,y)=u(x,y)+u(x,-y)$. Đây là hàm điều hòa chẵn theo $y$, và $v(x,0)=0$, $v_y(x,0)=0$. Từ $v_{yy}=-\Delta_xv$, tất cả đạo hàm theo $y$ trên siêu phẳng đều 0 theo quy nạp. Hàm điều hòa giải tích, nên $v=0$ gần siêu phẳng, rồi trên toàn miền nhờ tính duy nhất giải tích. Suy $u(x,-y)=-u(x,y)$.
+%ID BT_5_4_3_15
+Ước lượng đạo hàm nội suy từ công thức Poisson: $|D^ku(x_0)|\le C_kR^{-k}\sup_{B_R(x_0)}|u|\le C'_kR^{-k}(1+(R+|x_0|)^p)$. Chọn số nguyên $k>p$, cho $R\to\infty$ được $D^ku=0$ với mọi $x_0$. Taylor suy $u$ là đa thức bậc không quá $\lfloor p\rfloor$.
+%ID BT_5_4_3_16
+Đặt $d=1-|x|$, dùng quả cầu $B_{d/2}(x)\subset B$. Công thức Poisson đạo hàm cho $|\nabla u(x)|\le C_nd^{-1}\|u\|_\infty$. Suy $\sup_B(1-|x|)|\nabla u(x)|\le C_n\|u\|_\infty<\infty$.
+%ID BT_5_4_3_17
+Chuẩn $\|u\|=|u(0)|+\sup_B(1-|x|)|\nabla u|$ có tính đồng nhất và tam giác; chuẩn 0 buộc $\nabla u=0,u(0)=0$, nên $u=0$. Với dãy Cauchy $u_j$, tích phân trên đoạn từ 0 đến $x$ cho
+\[|u_j(x)-u_k(x)|\le\|u_j-u_k\|\left[1+\log\frac1{1-|x|}\right].\]
+Do đó hội tụ đều trên compact đến $u$. Tính giá trị trung bình hoặc ước lượng đạo hàm cho $u$ điều hòa và $\nabla u_j\to\nabla u$ trên compact. Cho $k\to\infty$ trong $\sup(1-|x|)|\nabla(u_j-u_k)|\le\varepsilon$ được cùng cận cho $u_j-u$; giá trị tại 0 cũng hội tụ. Vậy $u_j\to u$ theo chuẩn, chứng minh Banach.
+%ID BT_5_4_3_18
+Trong đĩa, $u(z)=\operatorname{Re}\log(1-z)=\log|1-z|$ điều hòa và không bị chặn khi $z\to1$. Vì $|\nabla u|=1/|1-z|\le1/(1-|z|)$, điều kiện Bloch thỏa. Trong $n\ge2$, lấy hàm chỉ phụ thuộc $x_1,x_2$; $|1-(x_1+ix_2)|\ge1-|x|$ cho cùng cận.
+%ID BT_5_4_3_19
+Đặt $d=1-|x|$, $B_{d/2}(x)\subset B$. Trên quả cầu này, $|\nabla u|\le2M/d$ với $M=\sup(1-|x|)|\nabla u|$. Mỗi $u_{x_i}$ điều hòa. Ước lượng đạo hàm bậc $|\alpha|-1$ của $u_{x_i}$ cho $|D^\alpha u(x)|\le C_\alpha M d^{-|\alpha|}$. Nhân $d^{|\alpha|}$ rồi lấy supremum được kết luận.
+%ID BT_5_5_3_01
+Giá trị trung bình trên đường tròn: $u(0)=\frac1{2\pi}\int_0^{2\pi}\cos^2t\sin^2t\,dt=1/8$, vì $\cos^2t\sin^2t=(1-\cos4t)/8$.
+%ID BT_5_5_3_02
+Biên có cực đại 4 khi $\sin2\theta=1$ và cực tiểu $-2$ khi $\sin2\theta=-1$. Cực đại trên đĩa đóng bằng 4, đạt trên biên tại $\theta=\pi/4,5\pi/4$. Giá trị tâm là trung bình bằng 1. Nghiệm cụ thể $u=1+3r^2\sin2\theta/4=1+3xy/2$.
+%ID BT_5_5_3_03
+Hàm là nhân Poisson với cực $(1,0)$. Nó điều hòa trong đĩa mở, dương, nhưng không liên tục và không bị chặn ở cực: $u(r,0)=(1+r)/(1-r)\to\infty$. Ở các điểm biên khác cực, giới hạn bằng 0. Nguyên lý cực đại đòi liên tục trên miền đóng nên không áp dụng như đề phát biểu cho quả cầu đóng chứa cực. Không có mâu thuẫn: hàm không đạt cực đại/cực tiểu trong miền mở.
+%ID BT_5_5_3_04
+Mỗi hàm có Laplace 0 bằng đạo hàm trực tiếp (ở (e) ngoài gốc). Xét các cạnh/đường tròn theo cực đại:
+(a) max $4$ tại $(2,0)$, min $-1$ tại $(0,1)$.
+(b) max $e$ tại $(0,1)$, min 0 trên $x=\pm\pi/2$.
+(c) max $5/4$ tại $(1,1/2)$, min $-1$ tại $(0,1)$.
+(d) max $e$ tại $(1,0)$, min $-e$ tại $(1,\pm\pi)$.
+(e) $u=\cos\theta/r$: max 1 tại $(1,0)$, min $-1$ tại $(-1,0)$.
+(f) $u=(r^2/2)\sin2\theta$: max 2 tại $(\sqrt2,\sqrt2),(-\sqrt2,-\sqrt2)$; min $-2$ tại $(\sqrt2,-\sqrt2),(-\sqrt2,\sqrt2)$.
+%ID BT_5_5_3_05
+$u=2\log r$ có $u_{rr}+u_r/r=0$ với $r>1$, và $u_r=2/r>0$. Vì vậy không có cực trị địa phương trong $D$. Infimum 0 khi $r\downarrow1$ không đạt; supremum $+\infty$ khi $r\to\infty$.
+%ID BT_5_5_3_06
+Dùng trung bình điều hòa trên đường tròn tâm của đối số:
+(a) $e^x\cos y$ tại $(0,0)$ cho $I_1=1$.
+(b) $3+x(1+y)$ điều hòa; tại $(0,0)$ cho $I_2=3$.
+(c) $\cos x\cosh y$ điều hòa; tại $(1,2)$ cho $I_3=\cos1\cosh2$.
+(d) $\sin x\sinh y$ điều hòa; tại $(1,2)$ cho $I_4=\sin1\sinh2$.
+%ID BT_5_5_3_07
+Trên biên $x^4+y^4=1$, đặt $a=x^2,b=y^2\ge0$ thì $a^2+b^2=1$, nên $1\le a+b\le\sqrt2$. Hai dấu bằng đạt tại các trục và tại $a=b=1/\sqrt2$. Dữ liệu biên không hằng, nên nguyên lý cực đại mạnh cho $1<u<\sqrt2$ ở mọi điểm trong miền.
+%ID BT_5_5_3_08
+Nhân Poisson dương nên $h\ge0$ suy $u\ge0$. Nếu $h$ không đồng nhất 0 và liên tục, tích phân nhân dương cho $u>0$. Nếu $h=0$, duy nhất Dirichlet cho $u=0$.
+Với $r=1/2$, $P_r(\theta)=(1-r^2)/(1-2r\cos\theta+r^2)$ nằm giữa $(1-r)/(1+r)=1/3$ và $(1+r)/(1-r)=3$. Vì trung bình $h$ bằng $u(0)=1$, tích phân cho $1/3\le u\le3$.
+%ID BT_5_5_3_09
+Bochner: $\Delta|\nabla u|^2=2\sum_{i,j}u_{ij}^2+2\nabla u\cdot\nabla\Delta u=2\sum u_{ij}^2\ge0$. Nguyên lý cực đại cho hàm dưới điều hòa suy supremum ở biên. Nếu giá trị cực đại đạt trong miền, nguyên lý mạnh buộc $|\nabla u|^2$ hằng và $D^2u=0$, tức $u$ affine; khi ấy cực đại cũng đạt trong miền. Vì thế chữ ``chỉ'' trong đề cần ngoại lệ affine/hằng.
+%ID BT_5_5_3_10
+Đặt $v=K(1-|x|^2)/(2n)$, $\Delta v=-K$. Do $|\Delta u|\le K$, $\Delta(u-v)\ge0$ và $\Delta(u+v)\le0$. Cả hai bằng 0 trên biên. Cực đại/cực tiểu cho $-v\le u\le v$, mạnh hơn cận $-K/(2n)\le u\le K/(2n)$ cần chứng minh.
+%ID BT_5_5_3_11
+Nếu $u$ hằng trên một đĩa mở, tính giải tích và liên thông suy hằng trên toàn $D(1)$, trái giả thiết. Với $0<r_1<r_2$, cực đại trên $\overline D(r_1)$ nhỏ nghiêm ngặt cực đại trên $\overline D(r_2)$: nếu bằng nhau, $u$ đạt cực đại ở điểm nội của đĩa lớn nên hằng. Với $r_1=0$, dùng cực đại mạnh tương tự. Vì vậy $\phi$ tăng nghiêm ngặt, kéo theo không giảm.
+%ID BT_5_5_3_12
+Không được suy trực tiếp $u_t\to0$ từ hội tụ $u\to A$. Lấy $\eta\in C_c^\infty(B_R)$, $T>0$:
+\[\int[u(x,t+T)-u(x,t)]\eta dx=\int_t^{t+T}\int u(x,s)\Delta\eta(x)dx\,ds.\]
+Hội tụ đều cho vế trái về 0, vế phải về $T\int A\Delta\eta$. Do đó $\Delta A=0$ theo phân phối; tính trơn nội của nghiệm điều hòa suy $A$ là hàm điều hòa cổ điển.
+%ID BT_5_5_3_13
+(a) Phát biểu thiếu giả thiết $\Delta u=0$: với $u$ chỉ $C^2$ tùy ý, công thức đúng là $\int_{\partial\Omega}u\partial_\nu u=\int_\Omega(|\nabla u|^2+u\Delta u)$, không luôn không âm. Phản ví dụ trên quả cầu đơn vị: $u=2-|x|^2$, tích phân biên $=-2|\partial B|<0$. Nếu thêm điều hòa, tích phân bằng $\int|\nabla u|^2\ge0$, bằng 0 đúng khi $u$ hằng.
+(b) Hiệu $w$ của hai nghiệm cùng $f,\beta$ là điều hòa và $\partial_\nu w=-\alpha w$. Vì $\alpha>0$ hầu khắp, $\int|\nabla w|^2=-\int\alpha w^2\le0$ suy $w=0$. Vậy bài Robin có nhiều nhất một nghiệm.

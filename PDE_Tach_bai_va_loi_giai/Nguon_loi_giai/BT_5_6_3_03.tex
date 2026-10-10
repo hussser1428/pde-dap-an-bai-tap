@@ -1,0 +1,17 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{fontspec,amsmath,amssymb,graphicx}
+\usepackage[margin=18mm]{geometry}
+\setmainfont{Times New Roman}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\allowdisplaybreaks
+\sloppy
+\emergencystretch=2em
+\begin{document}
+\section*{BT\_5\_6\_3\_03 — Lời giải bổ sung}
+(a) Neumann hình chữ nhật: $\phi_{nm}=\cos(n\pi x/a)\cos(m\pi y/b)$, $\lambda_{nm}=(n\pi/a)^2+(m\pi/b)^2$, $n,m\ge0$, có $\lambda_{00}=0$.
+(b) Dirichlet trái/dưới, Neumann phải/trên: $\phi_{nm}=\sin((n+1/2)\pi x/a)\sin((m+1/2)\pi y/b)$, $\lambda$ là tổng hai bình phương, $n,m\ge0$. Dòng $\partial_x\phi(x,b)$ của đề phải sửa thành $\partial_y\phi(x,b)$ để là Neumann ở cạnh trên. Giữ $\partial_x$ nguyên văn thì đây là đạo hàm tiếp tuyến, suy $\phi$ hằng trên cạnh trên; cùng Dirichlet ở góc trái buộc cạnh trên bằng 0, tức bài Dirichlet trên, có mode $\sin(m\pi y/b)$, $m\ge1$.
+(c) Tách $\phi=XY$: giải hai bài một chiều
+\[aX''+cX'=-\lambda_xX,\ X(0)=X(a_{\rm dom})=0;\quad bY''+dY'=-\lambda_yY,\ Y(0)=Y(b_{\rm dom})=0.\]
+Trị riêng $\lambda=\lambda_x+\lambda_y$, hàm riêng $XY$. Khi $a(x),b(y)>0$, trọng số $\rho_x=a^{-1}e^{\int c/a}$, $\rho_y=b^{-1}e^{\int d/b}$ đưa về Sturm--Liouville; dữ kiện hàm tùy ý chỉ cho kết quả qua hai ODE này, không có danh sách số cụ thể.
+(d) Đề có miền $0<x<e$, hệ số $x^2$ suy biến ở 0. Đặt $z=\ln x\in(-\infty,1)$; toán tử thành $\partial_{zz}+\partial_{yy}$. Không có phổ rời rạc như hình chữ nhật hữu hạn. Trong lớp trơn và liên tục bằng 0 ở $x=0,e$, không có hàm riêng tách biến không tầm thường: mode tăng/giảm mũ theo $z$ không thể đồng thời giảm ở $-\infty$ và triệt tiêu ở 1, mode dao động không có giới hạn 0 tại $-\infty$. Với không gian trọng số $dx\,dy/x$, phổ liên tục có hàm riêng suy rộng $\sin(k(1-\ln x))\sin(m\pi y)$, $\lambda=k^2+m^2\pi^2$, $k\ge0,m\ge1$. Nếu miền dự định là $(1,e)$, phổ rời rạc là $\sin(n\pi\ln x)\sin(m\pi y)$ với $\lambda=(n^2+m^2)\pi^2$.\end{document}

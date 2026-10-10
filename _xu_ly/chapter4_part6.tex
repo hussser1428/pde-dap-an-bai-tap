@@ -1,0 +1,236 @@
+%ID VD_4_6_2_01
+\textbf{Bước 1. Nhân nhiệt trên toàn trục.}
+Đặt $g_K(z,t)=(4\pi Kt)^{-1/2}e^{-z^2/(4Kt)}$. Nghiệm $u=\int_{\mathbb R}g_K(x-y,t)f(y)dy$. Tích phân của $g_K$ bằng $1$, và biến đổi Fourier của nó là $e^{-Kt\xi^2}$, nên một mode $\cos ky$ biến thành $e^{-Kk^2t}\cos kx$.
+\textbf{Bước 2. Câu (i), $K=1,f=\cos^23x$.}
+$\cos^23x=(1+\cos6x)/2$, suy
+\[u=\frac12+\frac12e^{-36t}\cos6x.\]
+Kiểm tra $u_t=-18e^{-36t}\cos6x=u_{xx}$, $u(x,0)=\cos^23x$.
+\textbf{Bước 3. Câu (ii), $K=2,f=e^{-x^2}$.}
+\[u=\frac1{\sqrt{8\pi t}}\int_{\mathbb R}
+\exp\left(-\frac{(x-y)^2}{8t}-y^2\right)dy.\]
+Hoàn thành bình phương:
+\[-\frac{(x-y)^2}{8t}-y^2
+=-\frac{1+8t}{8t}\left(y-\frac{x}{1+8t}\right)^2-\frac{x^2}{1+8t}.\]
+Đặt $z=\sqrt{(1+8t)/(8t)}(y-x/(1+8t))$, $dy=\sqrt{8t/(1+8t)}dz$. Tích phân $\int e^{-z^2}dz=\sqrt\pi$ cho
+\[u=\frac1{\sqrt{1+8t}}\exp\left(-\frac{x^2}{1+8t}\right).\]
+\textbf{Bước 4. Kiểm tra đạo hàm.} Đặt $D=1+8t$. $u_t/u=-4/D+8x^2/D^2$, $u_{xx}/u=-2/D+4x^2/D^2$, nên $u_t=2u_{xx}$. Khi $t\downarrow0$, $D\to1$ trả lại $f$.
+
+%ID VD_4_6_2_02
+\textbf{Bước 1. Thác triển lẻ.}
+Với $u(0,t)=0$, đặt $\widetilde f(y)=f(y)$ khi $y>0$, $\widetilde f(y)=-f(-y)$ khi $y<0$. Vì Gauss chẵn, nghiệm toàn trục của dữ liệu lẻ vẫn lẻ, nên bằng $0$ tại $x=0$. Tách tích phân và đổi $y\mapsto-y$ trên nửa âm:
+\[u=\int_0^\infty[g_K(x-y,t)-g_K(x+y,t)]f(y)dy.\]
+\textbf{Bước 2. Câu cụ thể $K=2,f=e^{-y}$.}
+Đặt $I_\pm=\int_0^\infty g_2(x\mp y,t)e^{-y}dy$, trong đó $I_+$ dùng $x-y$, $I_-$ dùng $x+y$. Hoàn thành bình phương:
+\begin{align*}
+-\frac{(x-y)^2}{8t}-y&=-\frac{(y+4t-x)^2}{8t}+2t-x,\\
+-\frac{(x+y)^2}{8t}-y&=-\frac{(y+4t+x)^2}{8t}+2t+x.
+\end{align*}
+Đổi biến $z=(y+4t\mp x)/\sqrt{8t}$; cận $y=0$ trở thành $(4t\mp x)/\sqrt{8t}$, và dùng $\int_a^\infty e^{-z^2}dz=\sqrt\pi\,\operatorname{erfc}(a)/2$:
+\[I_+=\tfrac12e^{2t-x}\operatorname{erfc}\frac{4t-x}{\sqrt{8t}},\quad
+I_-=\tfrac12e^{2t+x}\operatorname{erfc}\frac{4t+x}{\sqrt{8t}}.\]
+Vậy
+\[u=\frac12e^{2t-x}\operatorname{erfc}\frac{4t-x}{\sqrt{8t}}
+-\frac12e^{2t+x}\operatorname{erfc}\frac{4t+x}{\sqrt{8t}}.\]
+\textbf{Bước 3. Kiểm tra.} Tại $x=0$ hai hạng triệt tiêu. Với $x>0,t\downarrow0$, đối số thứ nhất tiến về $-\infty$ nên erfc tiến về $2$, đối số thứ hai về $\infty$ nên erfc về $0$; suy $u\to e^{-x}$. Nhân ảnh giải PDE nên $u_t=2u_{xx}$. $f(0)=1$ không khớp biên $0$, nên không liên tục ở góc $(0,0)$; nghiệm trơn với $x\ge0,t>0$.
+
+%ID VD_4_6_2_03
+\textbf{Bước 1. Chuyển bài $u_t=u_{xx}+xu$ về nhiệt.}
+Đặt $u=e^{tx+t^3/3}v(z,t)$, $z=x+t^2$. Tính
+\begin{align*}
+u_t&=e^{tx+t^3/3}\{(x+t^2)v+2tv_z+v_t\},\\
+u_{xx}+xu&=e^{tx+t^3/3}\{(t^2+x)v+2tv_z+v_{zz}\}.
+\end{align*}
+Do đó $v_t=v_{zz}$, $v(z,0)=f(z)$. Phép đổi biến này biện minh công thức cho $f$ liên tục bị chặn mà không cần đánh giá $\widehat f$ tại tần số phức.
+\textbf{Bước 2. Fourier cho bài đã đổi.} Với quy ước $\widehat v=\int e^{-i\xi z}v\,dz$, $\widehat v_t=-\xi^2\widehat v$, suy $\widehat v=e^{-t\xi^2}\widehat f$. Biến đổi ngược cho $v=g_1*f$. Vì vậy
+\[u=e^{tx+t^3/3}\int_{\mathbb R}g_1(x+t^2-y,t)f(y)dy.\]
+Gom mũ:
+\[tx+t^3/3-\frac{(x+t^2-y)^2}{4t}
+=-\frac{(x-y)^2}{4t}+\frac{t(x+y)}2+\frac{t^3}{12}.\]
+Vậy
+\[u=\int_{\mathbb R}G(x,y,t)f(y)dy,\qquad
+G=\frac1{\sqrt{4\pi t}}
+\exp\left[-\frac{(x-y)^2}{4t}+\frac{t(x+y)}2+\frac{t^3}{12}\right].\]
+\textbf{Bước 3. Kiểm tra Green.} $G>0$, đối xứng theo $x,y$, trơn với $t>0$. Với $\ell=\log G$,
+\[\ell_x=-\frac{x-y}{2t}+\frac t2,\quad \ell_{xx}=-\frac1{2t},\quad
+\ell_t=-\frac1{2t}+\frac{(x-y)^2}{4t^2}+\frac{x+y}2+\frac{t^2}4.\]
+Ta có $\ell_t=\ell_{xx}+\ell_x^2+x$, suy $G_t=G_{xx}+xG$. Từ biểu diễn Gauss đã dịch,
+\[\int_{\mathbb R}G(x,y,t)dy=e^{tx+t^3/3}.\]
+Nhân không có tổng bằng $1$ do hạng phản ứng $xu$.
+\textbf{Bước 4. Dữ liệu đầu và sự tập trung.} Với $x$ trong tập compact, hệ số $e^{tx+t^3/3}\to1$ và tâm $x+t^2\to x$. Gauss là xấp xỉ đơn vị, nên $u(x,t)\to f(x)$ tại điểm liên tục, cũng liên tục khi $(x,t)\to(x_0,0)$. Với $\delta>0$, tích phân nhân trên $|y-x|>\delta$ tiến về $0$. Điều kiện này phải là khoảng cách $|y-x|$, không phải $|x|$ như một dòng sai biến trong bản in. Công thức không bảo đảm nghiệm bị chặn theo $x$ khi $t>0$, vì phản ứng tuyến tính theo $x$ có thể làm nghiệm tăng theo mũ.
+
+%ID VD_4_6_2_04
+\textbf{Bước 1. Nhận dạng một mode cộng hưởng.}
+Nguồn $e^{-t}\cos x$ và mặt đầu $0$ cho phép đặt $u=T(t)\cos x$. Khi đó $u_{xx}=-T\cos x$, PDE thành $T'+T=e^{-t}$, $T(0)=0$.
+\textbf{Bước 2. Thực hiện tích phân.} Nhân với $e^t$:
+\[(e^tT)'=1,\quad e^tT=t,\quad T=te^{-t}.\]
+Tương đương Duhamel: $u=\int_0^te^{-(t-s)}e^{-s}\cos x\,ds=e^{-t}\cos x\int_0^tds$.
+\textbf{Bước 3. Kiểm tra.}
+\[u=te^{-t}\cos x,\quad u_t=(1-t)e^{-t}\cos x,\quad
+u_{xx}=-te^{-t}\cos x.\]
+Suy $u_t-u_{xx}=e^{-t}\cos x$ và $u(x,0)=0$. Thừa số $t$ xuất hiện vì tốc độ giảm của nguồn bằng tốc độ giảm của mode nhiệt.
+
+%ID VD_4_6_2_05
+\textbf{(a) Nhân nhiều chiều tách tích.}
+Với $u_t=K\Delta u$ trên $\mathbb R^n$, nhân là
+\[g_K^{(n)}(x-y,t)=\prod_{j=1}^n g_K(x_j-y_j,t).\]
+Dữ liệu $f(y)=\prod f_j(y_j)$ cho, nhờ Fubini,
+\[u(x,t)=\int_{\mathbb R^n}\prod_{j=1}^n[g_K(x_j-y_j,t)f_j(y_j)]dy
+=\prod_{j=1}^nu_j(x_j,t).\]
+Kiểm tra trực tiếp cũng được: $u_t=\sum_j(u_j)_t\prod_{i\ne j}u_i$, còn $K\Delta u=\sum_jK(u_j)_{x_jx_j}\prod_{i\ne j}u_i$, bằng nhau vì mỗi $u_j$ giải nhiệt một chiều. Tại $t=0$, tích trả lại $f$.
+\textbf{(b) $n=2,K=1,f_1=\cos x_1,f_2=\sin x_2$.}
+Mode một chiều cho $u_1=e^{-t}\cos x_1$, $u_2=e^{-t}\sin x_2$. Vì vậy
+\[u=e^{-2t}\cos x_1\sin x_2.\]
+$u_t=-2u$, $\Delta u=-u-u=-2u$, và mặt đầu đúng. Tốc độ giảm tổng là tổng hai trị riêng $1+1=2$.
+
+%ID BT_4_6_3_01
+\textbf{Bước 1. Dùng tích chập Gauss.} $u=g_K*f$, $g_K=(4\pi Kt)^{-1/2}e^{-z^2/(4Kt)}$.
+\textbf{Bước 2. Câu (i), $K=4,f=\sin^3x$.}
+Từ $\sin3x=3\sin x-4\sin^3x$, $f=(3\sin x-\sin3x)/4$. Nhân nhiệt làm mode $k$ giảm với $Kk^2$, nên
+\[u=\frac34e^{-4t}\sin x-\frac14e^{-36t}\sin3x.\]
+Thế $t=0$ trả lại $f$; từng hạng có $u_t=4u_{xx}$.
+\textbf{Bước 3. Câu (ii), $K=2,f=e^{-x^2+x}$.}
+Hoàn thành bình phương ban đầu: $-y^2+y=1/4-(y-1/2)^2$. Trong tích chập,
+\[-\frac{(x-y)^2}{8t}-(y-1/2)^2
+=-\frac{1+8t}{8t}\left(y-\frac{x+4t}{1+8t}\right)^2
+-\frac{(x-1/2)^2}{1+8t}.\]
+Đổi biến $z=\sqrt{(1+8t)/(8t)}(y-(x+4t)/(1+8t))$ và tích phân Gauss cho
+\[u=\frac{e^{1/4}}{\sqrt{1+8t}}
+\exp\left[-\frac{(x-1/2)^2}{1+8t}\right].\]
+Đặt $D=1+8t$, đạo hàm $u_t/u=-4/D+8(x-1/2)^2/D^2$, $u_{xx}/u=-2/D+4(x-1/2)^2/D^2$ kiểm tra $u_t=2u_{xx}$. $D\to1$ trả lại $e^{-x^2+x}$.
+
+%ID BT_4_6_3_02
+\textbf{Bước 1. Thác triển chẵn đúng biên Neumann.}
+Đặt $\widetilde f(y)=f(|y|)$. Gauss chẵn bảo đảm nghiệm toàn trục chẵn theo $x$, nên $u_x(0,t)=0$. Tách hai nửa của tích chập rồi đổi $y\mapsto-y$:
+\[u=\int_0^\infty[g_K(x-y,t)+g_K(x+y,t)]f(y)dy.\]
+\textbf{Bước 2. Tính câu $K=2,f=e^{-y}$.}
+Hai số mũ là
+\[-(x-y)^2/(8t)-y=-(y+4t-x)^2/(8t)+2t-x,\]
+\[-(x+y)^2/(8t)-y=-(y+4t+x)^2/(8t)+2t+x.\]
+Đổi biến $z=(y+4t\mp x)/\sqrt{8t}$, các cận thành $(4t\mp x)/\sqrt{8t},\infty$. Dùng $\int_a^\infty e^{-z^2}dz=\sqrt\pi\,\operatorname{erfc}(a)/2$ cho
+\[u=\frac12e^{2t-x}\operatorname{erfc}\frac{4t-x}{\sqrt{8t}}
++\frac12e^{2t+x}\operatorname{erfc}\frac{4t+x}{\sqrt{8t}}.\]
+\textbf{Bước 3. Kiểm tra.}
+Hai hạng đổi chỗ khi $x\mapsto-x$, nên $u$ chẵn, $u_x(0,t)=0$. Với $x>0,t\downarrow0$, hai erfc lần lượt về $2,0$, nên $u\to e^{-x}$. Nhân ảnh cho $u_t=2u_{xx}$. $f'(0)=-1$ khác Neumann $0$, nên không trơn đạo hàm đến góc, dù giá trị nghiệm liên tục đến mặt đầu.
+
+%ID BT_4_6_3_03
+\textbf{Bước 1. Tích phân ba hệ số.}
+Đặt $A(t)=\int_0^ta(s)ds$, $B(t)=\int_0^tb(s)ds$, $C(t)=\int_0^tc(s)ds$. Đề giả thiết $a(t)\ge a_0>0$, nên $A(t)\ge a_0t>0$ khi $t>0$.
+\textbf{Bước 2. Tính đầy đủ phép đổi biến.}
+Đặt $z=x+B(t)$, $\tau=A(t)$ và $u=e^{C(t)}v(z,\tau)$. Quy tắc dây chuyền cho
+\[u_t=e^C(cv+bv_z+av_\tau),\quad
+u_x=e^Cv_z,\quad u_{xx}=e^Cv_{zz}.\]
+Thay vào $u_t=au_{xx}+bu_x+cu$ rồi triệt tiêu $bv_z,cv$ được $a(v_\tau-v_{zz})=0$, suy $v_\tau=v_{zz}$. Tại $t=0$, $A=B=C=0$, nên $v(z,0)=f(z)$.
+\textbf{Bước 3. Fourier và biến đổi ngược.}
+$\widehat v_\tau=-\xi^2\widehat v$ cho $\widehat v=e^{-\tau\xi^2}\widehat f$. Biến đổi ngược thành tích chập Gauss:
+\[u(x,t)=\frac{e^{C(t)}}{\sqrt{4\pi A(t)}}\int_{\mathbb R}
+\exp\left[-\frac{(x+B(t)-y)^2}{4A(t)}\right]f(y)dy.\]
+\textbf{Bước 4. Kiểm tra.}
+Phép tính bước 2 kiểm tra PDE; xấp xỉ đơn vị của Gauss và $B,C\to0$ trả lại dữ liệu đầu tại điểm liên tục. Dấu dịch $x+B$ đúng vì khi $a=c=0$, nghiệm của $u_t=b(t)u_x$ là $f(x+B(t))$. Do nhân dương, $|u|\le e^{C(t)}\|f\|_\infty$ trên mỗi dải thời gian hữu hạn.
+
+%ID BT_4_6_3_04
+\textbf{Bước 1. Quy ước Fourier và các công thức dùng chung.}
+$\widehat f(\xi)=\int e^{-i\xi x}f(x)dx$, biến đổi ngược $(2\pi)^{-1}\int e^{i\xi x}\widehat f(\xi)d\xi$. Tích phân từng phần cho $\widehat{u_{xx}}=-\xi^2\widehat u$, $\widehat{u_{xxx}}=-i\xi^3\widehat u$, $\widehat{u_{xxxx}}=\xi^4\widehat u$. Đạo hàm theo $\xi$ cho $\widehat{xu_x}=-\widehat u-\xi\widehat u_\xi$. Ký hiệu $g_K(z,t)=(4\pi Kt)^{-1/2}e^{-z^2/(4Kt)}$.
+
+\textbf{(i) $u_t=u_{xx}+xu_x$.}
+Đặt $W=\widehat u$: $W_t+\xi W_\xi=-(1+\xi^2)W$. Đặc trưng $\xi(s)=\xi_0e^s$ cho
+\[W(\xi_0e^t,t)=e^{-t}\exp[-\xi_0^2(e^{2t}-1)/2]\widehat f(\xi_0).\]
+Vì $\xi_0=e^{-t}\xi$,
+\[W=e^{-t}e^{-\xi^2(1-e^{-2t})/2}\widehat f(e^{-t}\xi).\]
+Đổi biến $\eta=e^{-t}\xi$ trong biến đổi ngược, đặt $z=e^tx,\tau=(e^{2t}-1)/2$, được
+\[u(x,t)=(g_1(\cdot,\tau)*f)(e^tx).\]
+Kiểm tra: $u_t=zv_z+e^{2t}v_\tau$, $u_{xx}=e^{2t}v_{zz}$, $xu_x=zv_z$, nên $v_\tau=v_{zz}$.
+
+\textbf{(ii) $u_t=u_{xxx}$.}
+$W_t=-i\xi^3W$ cho $W=e^{-it\xi^3}\widehat f$. Do đó
+\[u=\mathcal F^{-1}(e^{-it\xi^3}\widehat f)=A_t*f,\qquad
+A_t(x)=(3t)^{-1/3}\operatorname{Ai}(-x/(3t)^{1/3}).\]
+Để thấy dấu Airy, đổi $\eta=(3t)^{1/3}\xi$ trong $(2\pi)^{-1}\int e^{i\xi x-it\xi^3}d\xi$ rồi đổi $\eta\mapsto-\eta$, được tích phân Airy có pha $\eta^3/3-\eta x/(3t)^{1/3}$. Với dữ liệu Schwartz, công thức cho nghiệm cổ điển; với $L^2$ là nghiệm Fourier trong $L^2$. Với dữ liệu chỉ liên tục bị chặn như đề, $f$ là phân phối tempered và phép nhân $e^{-it\xi^3}\widehat f$ hợp lệ vì các đạo hàm của thừa số có tăng trưởng đa thức; kết quả được hiểu trong $\mathcal S'$. Không khẳng định tích phân $A_t*f$ hội tụ tuyệt đối hoặc nghiệm tự động là hàm cổ điển.
+
+\textbf{(iii) $u_t=-u_{xxxx}+xu_x$.}
+$W_t+\xi W_\xi=-(1+\xi^4)W$. Cùng đặc trưng $\xi=\xi_0e^t$ cho
+\[W=e^{-t}e^{-\xi^4(1-e^{-4t})/4}\widehat f(e^{-t}\xi).\]
+Đặt $z=e^tx$, $\tau=(e^{4t}-1)/4$ và
+\[B_\tau(z)=\frac1{2\pi}\int_{\mathbb R}e^{i\xi z-\tau\xi^4}d\xi.\]
+Đổi biến Fourier ngược cho $u=(B_\tau*f)(e^tx)$. Kiểm tra $u_t=zv_z+e^{4t}v_\tau$, $u_{xxxx}=e^{4t}v_{zzzz}$, nên $v_\tau=-v_{zzzz}$. $B_\tau$ là hàm Schwartz với $\tau>0$, nhưng không phải nhân Gauss dương.
+
+\textbf{(iv) $u_t=u_{xx}-xu_x$.}
+$W_t-\xi W_\xi=(1-\xi^2)W$. Đặc trưng $\xi=\xi_0e^{-t}$ cho $W=e^t e^{-\xi^2(e^{2t}-1)/2}\widehat f(e^t\xi)$. Đổi biến trong Fourier ngược, đặt $z=e^{-t}x$, $\tau=(1-e^{-2t})/2$:
+\[u(x,t)=(g_1(\cdot,\tau)*f)(e^{-t}x).\]
+Kiểm tra $u_t=-zv_z+e^{-2t}v_\tau$, $u_{xx}=e^{-2t}v_{zz}$, $-xu_x=-zv_z$, nên đúng PDE. Ở (i),(iii),(iv), khi $t\downarrow0$, $z\to x,\tau\to0$, các nhân trả lại $f$.
+
+\textbf{(v) $u_t=u_{xx}+tx$ trên nửa trục.}
+Bản in lặp lại $u(x,0)=0$ hai lần, không cho biên tại $x=0$. Một nghiệm riêng là $u_p=xt^2/2$: $(u_p)_t=tx$, $(u_p)_{xx}=0$, $u_p(x,0)=0$. Nếu bổ sung $u(0,t)=0$ và lớp tăng trưởng phù hợp, đây là nghiệm của bài bổ sung. Với bản in, còn họ nghiệm
+\[u=\frac{xt^2}2+\int_0^t
+\frac{x e^{-x^2/[4(t-s)]}}{2\sqrt\pi(t-s)^{3/2}}\mu(s)ds,\]
+với $\mu$ trơn tùy ý vanishing gần $0$. Hạng thêm giải nhiệt, dữ liệu đầu $0$ và có biên $\mu$, nên chứng minh không duy nhất khi thiếu biên. Dòng rời về $f=\chi_{(0,1)}$ không thống nhất với dữ liệu đầu $0$ đã in; không tự đưa nó vào nghiệm của hệ này.
+
+\textbf{(vi) Dirichlet nửa trục, hệ số $k>0$.}
+Thác triển lẻ $f(y)=1/(1+y^2)$ cho
+\[u=\int_0^\infty
+\frac{e^{-(x-y)^2/(4kt)}-e^{-(x+y)^2/(4kt)}}{\sqrt{4\pi kt}}
+\frac{dy}{1+y^2}.\]
+Hệ số $k$ phải có trong cả mẫu và số mũ. Hai ảnh triệt tiêu tại $x=0$; Gauss xấp xỉ đơn vị trả lại $f$ khi $x>0,t\downarrow0$; đạo hàm nhân cho $u_t=ku_{xx}$. Giá trị đầu $f(0)=1$ không khớp biên $0$ tại góc.
+
+\textbf{(vii),(viii) Nguồn trên nửa trục nhưng thiếu biên.}
+Đặt $H(x,y,t)=g_1(x-y,t)-g_1(x+y,t)$ và $P(x,t)=xe^{-x^2/(4t)}/(2\sqrt\pi\,t^{3/2})$. Với một biên Dirichlet được \emph{bổ sung} là $\mu(t)$, công thức Duhamel cho
+\[u=\int_0^\infty H(x,y,t)f(y)dy+
+\int_0^t\!\int_0^\infty H(x,y,t-s)F(y)dy\,ds+
+\int_0^tP(x,t-s)\mu(s)ds.\]
+Ở (vii), $f(y)=1/(1+y^2)$, $F(y)=e^{-y}$; ở (viii), $f=0$, $F(y)=e^{-y}/(1+y^2)$. Để kiểm tra hạng biên, đổi $r=t-s$:
+\[\int_0^tP(x,r)dr=\operatorname{erfc}\frac{x}{2\sqrt t}\longrightarrow1
+\quad(x\downarrow0).\]
+Khối lượng của $P(x,r)$ tập trung tại $r=0$ khi $x\downarrow0$, nên hạng này tiến về $\mu(t)$ nếu $\mu$ liên tục. Nó giải nhiệt và có mặt đầu $0$ với $x>0$. Chọn hai hàm $\mu$ khác nhau vanishing gần $0$ cho hai nghiệm cùng PDE và dữ liệu đầu, khác biên; do đó đề gốc không xác định duy nhất. Các tích phân không gian với $1/(1+y^2)$ là biểu diễn chính xác; chúng không phải tích phân sơ cấp cần giả tạo một nguyên hàm.
+
+\textbf{(ix) Neumann, dữ liệu $e^{-x}$, $K=1$.}
+Nhân ảnh chẵn cho $u=\int_0^\infty[g_1(x-y,t)+g_1(x+y,t)]e^{-y}dy$. Hoàn thành bình phương:
+\[-(x\mp y)^2/(4t)-y=-(y+2t\mp x)^2/(4t)+t\mp x.\]
+Đổi biến $z=(y+2t\mp x)/\sqrt{4t}$ rồi dùng erfc:
+\[u=\frac12e^{t-x}\operatorname{erfc}\frac{2t-x}{\sqrt{4t}}
++\frac12e^{t+x}\operatorname{erfc}\frac{2t+x}{\sqrt{4t}}.\]
+Hàm chẵn theo $x$ cho $u_x(0,t)=0$, hai giới hạn erfc cho $u(x,0)=e^{-x}$ với $x>0$; nhân ảnh kiểm tra PDE.
+
+\textbf{(x) Dirichlet bằng $1$.}
+Đặt $w=u-1$. Khi đó $w_t=w_{xx}$, $w(0,t)=0$, $w(x,0)=1/(1+x^2)-1$. Thác triển lẻ cho
+\[u=1+\int_0^\infty H(x,y,t)\left(\frac1{1+y^2}-1\right)dy.\]
+Tại $x=0$ nhân $H$ bằng $0$, nên $u=1$. Mặt đầu trả lại $f$, và phép cộng hằng không đổi PDE. Dữ liệu góc về giá trị khớp vì $f(0)=1$.
+
+%ID BT_4_6_3_05
+\textbf{Bước 1. Tách dữ liệu đầu và nguồn.}
+Với $K=2$, $f=\chi_{[-2,2]}$, $F=e^{-2t}\sin x$, Duhamel cho $u=u_0+u_F$:
+\[u_0=\frac1{\sqrt{8\pi t}}\int_{-2}^2e^{-(x-y)^2/(8t)}dy,\qquad
+u_F=\int_0^te^{-2(t-s)}e^{-2s}\sin x\,ds.\]
+\textbf{Bước 2. Thực hiện từng tích phân.}
+Đặt $z=(y-x)/\sqrt{8t}$. Các cận là $(-2-x)/\sqrt{8t}$ và $(2-x)/\sqrt{8t}$; dùng erf lẻ:
+\[u_0=\frac12\left[\operatorname{erf}\frac{x+2}{\sqrt{8t}}
+-\operatorname{erf}\frac{x-2}{\sqrt{8t}}\right].\]
+Trong $u_F$, hai mũ gom thành $e^{-2t}$ độc lập $s$, nên $u_F=te^{-2t}\sin x$. Vậy
+\[u=\frac12\left[\operatorname{erf}\frac{x+2}{\sqrt{8t}}
+-\operatorname{erf}\frac{x-2}{\sqrt{8t}}\right]+te^{-2t}\sin x.\]
+\textbf{Bước 3. Kiểm tra.}
+$u_0$ giải nhiệt không nguồn. $(u_F)_t-2(u_F)_{xx}=(1-2t)e^{-2t}\sin x+2te^{-2t}\sin x=e^{-2t}\sin x$. Khi $t\downarrow0$, $u_F\to0$, $u_0\to1$ nếu $|x|<2$, về $0$ nếu $|x|>2$, về $1/2$ tại $x=\pm2$. Giá trị tại hai điểm nhảy không bằng giá trị $1$ của chỉ thị đoạn đóng; điều kiện đầu phải hiểu theo $L^p$ hoặc ở điểm liên tục, không có nghiệm liên tục đến các điểm nhảy đó.
+
+%ID BT_4_6_3_06
+\textbf{(a) Duhamel nhiều chiều và tách tích phân không gian.}
+Với $f=0,F(x,t)=g(t)\prod_{j=1}^nF_j(x_j)$, nhân nhiệt $n$ chiều là $\prod_jg_K(x_j-y_j,t-s)$. Vì vậy
+\begin{align*}
+u(x,t)&=\int_0^t\!\int_{\mathbb R^n}
+g(s)\prod_{j=1}^n[g_K(x_j-y_j,t-s)F_j(y_j)]dy\,ds\\
+&=\int_0^tg(s)\prod_{j=1}^n
+\left(\int_{\mathbb R}g_K(x_j-y_j,t-s)F_j(y_j)dy_j\right)ds.
+\end{align*}
+Fubini tách các tích phân không gian; không tách tích phân thời gian thành tích của $n$ tích phân, vì tất cả thừa số dùng cùng thời gian $s$.
+\textbf{(b) $n=2,K=1,g(s)=\sin s,F_1=\cos x,F_2=e^{-2y^2}$.}
+Đặt $\tau=t-s$. Mode cosine cho $g_1(\cdot,\tau)*F_1=e^{-\tau}\cos x$. Với Gauss, hoàn thành bình phương
+\[-(y-z)^2/(4\tau)-2z^2
+=-\frac{1+8\tau}{4\tau}\left(z-\frac y{1+8\tau}\right)^2
+-\frac{2y^2}{1+8\tau},\]
+nên $g_1*F_2=e^{-2y^2/(1+8\tau)}/\sqrt{1+8\tau}$. Do đó
+\[u(x,y,t)=\cos x\int_0^t
+\frac{\sin s\,e^{-(t-s)}}{\sqrt{1+8(t-s)}}
+\exp\left[-\frac{2y^2}{1+8(t-s)}\right]ds.\]
+Tích phân thời gian hữu hạn trên hàm đã biết là biểu diễn tường minh; không có nguyên hàm sơ cấp thông thường cần tính tiếp.
+\textbf{Kiểm tra bằng đạo hàm Duhamel.}
+Gọi $V(x,y,\tau)=e^{-\tau}\cos x\,e^{-2y^2/(1+8\tau)}/\sqrt{1+8\tau}$, thì $V_\tau=\Delta V$, $V(x,y,0)=\cos x\,e^{-2y^2}$. Do đó
+\[u_t=\sin t\,V(x,y,0)+\int_0^t\sin s\,V_\tau(x,y,t-s)ds
+=\sin t\cos x\,e^{-2y^2}+\Delta u.\]
+Tại $t=0$ tích phân bằng $0$, đúng mặt đầu.
